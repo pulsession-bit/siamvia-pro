@@ -14,6 +14,10 @@ export const translations = {
       member: "Espace Membre",
       eligibility: "Éligibilité"
     },
+    meta: {
+      title: "Siam Visa Pro | Expert Visa Thaïlande - DTV, Tourisme & Retraite",
+      description: "Obtenez votre visa pour la Thaïlande sans stress. Experts en Visa DTV, Touristique et Retraite. Accompagnement complet, Portfolio optimisé et suivi E-Visa."
+    },
     hero: {
       new_badge: "NOUVEAU : VISA DTV DISPONIBLE",
       title_line1: "Votre Visa pour la Thaïlande,",
@@ -86,7 +90,32 @@ export const translations = {
       who_softpower_desc: "Apprentissage (Muay Thai, Cuisine, Soins médicaux).",
       portfolio_title: "Besoin d'aide pour le Portfolio ?",
       portfolio_desc: "L'ambassade demande un \"Portfolio Professionnel\" pour prouver votre statut. Nous le créons pour vous.",
-      portfolio_btn: "Voir nos packs"
+      portfolio_btn: "Voir nos packs",
+      highs_title: "Points Forts",
+      highs: [
+        "Validité exceptionnelle de 5 ans",
+        "Séjours de 180 jours par entrée (+180 j. d'extension)",
+        "Droit de travailler légalement à distance",
+        "Couvre également le conjoint et les enfants"
+      ],
+      lows_title: "Points de Vigilance",
+      lows: [
+        "Preuve financière de 500 000 THB obligatoire",
+        "Exigence d'un Portfolio Professionnel solide",
+        "Délais de traitement plus longs (5-15 jours)",
+        "Frais consulaires plus élevés (~350€)"
+      ],
+      faq_title: "Questions Fréquentes - Visa DTV",
+      faqs: [
+        { q: "Puis-je sortir et rentrer en Thaïlande avec mon visa DTV ?", a: "Oui, c'est un visa à entrées multiples (Multi-Entries). Vous pouvez voyager autant de fois que vous le souhaitez pendant les 5 ans de validité sans que cela n'annule votre visa." },
+        { q: "Dois-je payer des impôts en Thaïlande avec ce visa ?", a: "En règle générale, si vous travaillez pour une entreprise étrangère et que vos revenus ne sont pas versés sur un compte thaïlandais, vous n'êtes pas résident fiscal au titre du DTV (à confirmer selon votre situation spécifique)." },
+        { q: "Mes proches peuvent-ils m'accompagner ?", a: "Oui, votre conjoint et vos enfants de moins de 20 ans peuvent obtenir un visa DTV \"Dependant\" lié au vôtre, avec les mêmes avantages de durée." },
+        { q: "Quelle est la valeur ajoutée de Siam Visa Pro par rapport à une demande en solo ?", a: "Faire sa demande seul comporte des risques de refus liés à un dossier imprécis. Siam Visa Pro combine l'expertise humaine et la puissance de l'IA : nos outils d'intelligence artificielle analysent votre éligibilité en temps réel pour détecter les points faibles de votre dossier, tandis que nos experts optimisent votre portfolio et vos documents. Vous bénéficiez d'une double vérification — technologique et humaine — pour garantir le taux d'approbation le plus élevé possible." }
+      ],
+      meta: {
+        title: "Visa DTV Thaïlande (Destination Thailand Visa) | Expertise Siam Visa Pro",
+        description: "Vivez et travaillez en Thaïlande pendant 5 ans avec le visa DTV. Nous optimisons votre Portfolio et garantissons votre éligibilité."
+      }
     },
     services_page: {
       hero_title: "Nos Services & Tarifs",
@@ -120,7 +149,11 @@ export const translations = {
       vip_feat3: "Rédaction lettre de motivation RH",
       vip_feat4: "Assistance prioritaire WhatsApp",
       vip_feat5: "Consultation stratégique (30 min)",
-      vip_feat6: "Gestion des demandes additionnelles"
+      vip_feat6: "Gestion des demandes additionnelles",
+      meta: {
+        title: "Nos Services & Tarifs | Accompagnement Visa Thaïlande",
+        description: "Découvrez nos offres : Audit, Sérénité ou VIP/DTV. Choisissez le niveau d'expertise dont vous avez besoin pour votre visa thaïlandais."
+      }
     },
     eligibility: {
       steps: ["Profil", "Finance", "Analyse"],
@@ -239,7 +272,32 @@ export const translations = {
       warning_desc: "Le visa touristique ne vous autorise PAS à travailler en Thaïlande, même à distance. Pour le télétravail, optez pour le visa DTV.",
       cta_title: "Besoin d'aide pour votre visa touristique ?",
       cta_desc: "Nous vérifions vos documents et gérons votre demande E-Visa pour maximiser vos chances d'approbation.",
-      cta_btn: "Commander ce visa"
+      cta_btn: "Commander ce visa",
+      highs_title: "Points Forts",
+      highs: [
+        "Procédure simple et rapide",
+        "Frais consulaires peu élevés (~35€)",
+        "Idéal pour tester la vie en Thaïlande",
+        "Extension possible de 30 jours"
+      ],
+      lows_title: "Points de Vigilance",
+      lows: [
+        "Durée totale limitée à 90 jours",
+        "Travail strictement interdit (même remote)",
+        "Entrée unique (fin du visa si sortie du pays)",
+        "Nécessite une preuve de sortie du territoire"
+      ],
+      faq_title: "Questions Fréquentes - Visa Touristique",
+      faqs: [
+        { q: "Puis-je transformer mon visa touristique en un autre visa sur place ?", a: "C'est possible dans certains cas (ex: vers un visa Mariage ou Retraite), mais cela dépend de l'immigration locale. Souvent, il est plus simple et rapide de refaire une demande à l'extérieur." },
+        { q: "Puis-je prolonger mon visa de 30 jours plusieurs fois ?", a: "Non, l'extension de 30 jours du visa touristique TR ne peut être effectuée qu'une seule fois par entrée auprès d'un bureau de l'Immigration." },
+        { q: "Que se passe-t-il si je reste après la date de fin de mon visa ?", a: "Vous serez en \"Overstay\". L'amende est de 500 THB par jour de dépassement, à régler à l'aéroport. Un dépassement important peut entraîner une interdiction de territoire." },
+        { q: "Quelle est la valeur ajoutée de Siam Visa Pro par rapport à une demande en solo ?", a: "Faire sa demande seul comporte des risques de refus liés à un dossier imprécis. Siam Visa Pro combine l'expertise humaine et la puissance de l'IA : nos outils d'intelligence artificielle analysent votre éligibilité en temps réel pour détecter les points faibles de votre dossier, tandis que nos experts optimisent votre portfolio et vos documents. Vous bénéficiez d'une double vérification — technologique et humaine — pour garantir le taux d'approbation le plus élevé possible." }
+      ],
+      meta: {
+        title: "Visa Touristique Thaïlande (TR) | E-Visa Rapide & Facile",
+        description: "Demandez votre visa touristique pour la Thaïlande en ligne. Vérification des documents et gestion complète par Siam Visa Pro."
+      }
     },
     retirement_page: {
       badge: "Longue Durée",
@@ -280,7 +338,28 @@ export const translations = {
       warning_desc: "Le visa retraite doit être renouvelé chaque année en Thaïlande. Les fonds doivent rester sur le compte pendant toute la durée du visa.",
       cta_title: "Besoin d'accompagnement pour votre visa retraite ?",
       cta_desc: "Notre Pack Sérénité Retraite inclut l'analyse de votre assurance, la vérification de tous vos documents et la gestion complète de votre demande E-Visa.",
-      cta_btn: "Me faire accompagner"
+      cta_btn: "Me faire accompagner",
+      highs_title: "Points Forts",
+      highs: [
+        "Renouvelable chaque année sur place",
+        "Permet de vivre sereinement en Thaïlande",
+        "Pas de sortie du territoire obligatoire",
+        "Accès au système bancaire thaï facilté"
+      ],
+      lows_title: "Points de Vigilance",
+      lows: [
+        "Strictement réservé aux plus de 50 ans",
+        "Fonds de 800 000 THB bloqués sur compte",
+        "Coût élevé de l'assurance santé (visa O-A)",
+        "Rapport de présence obligatoire tous les 90 jours"
+      ],
+      faq_title: "Questions Fréquentes - Visa Retraite",
+      faqs: [
+        { q: "L'argent (800 000 THB) doit-il rester bloqué toute l'année ?", a: "Les fonds doivent être présents 2 mois avant la demande et 3 mois après l'obtention. Le reste de l'année, le solde ne doit jamais descendre sous les 400 000 THB." },
+        { q: "Puis-je travailler avec un visa retraite ?", a: "Non, toute forme de travail (rémunéré ou bénévole) est strictement interdite. Si vous souhaitez travailler en ligne, le visa DTV est plus adapté." },
+        { q: "Dois-je sortir du pays pour renouveler mon visa ?", a: "Non, l'extension de votre visa retraite se fait chaque année directement auprès du bureau de l'Immigration en Thaïlande, sans obligation de sortie." },
+        { q: "Quelle est la valeur ajoutée de Siam Visa Pro par rapport à une demande en solo ?", a: "Faire sa demande seul comporte des risques de refus liés à un dossier imprécis. Siam Visa Pro combine l'expertise humaine et la puissance de l'IA : nos outils d'intelligence artificielle analysent votre éligibilité en temps réel pour détecter les points faibles de votre dossier, tandis que nos experts optimisent votre portfolio et vos documents. Vous bénéficiez d'une double vérification — technologique et humaine — pour garantir le taux d'approbation le plus élevé possible." }
+      ]
     },
     faq_page: {
       title: "Questions Fréquentes",
@@ -295,7 +374,11 @@ export const translations = {
       ],
       not_found_title: "Vous ne trouvez pas votre réponse ?",
       not_found_desc: "Nos experts sont là pour analyser votre situation spécifique.",
-      not_found_btn: "Vérifier mon éligibilité gratuitement"
+      not_found_btn: "Vérifier mon éligibilité gratuitement",
+      meta: {
+        title: "FAQ Visa Thaïlande | Réponses à vos questions - Siam Visa Pro",
+        description: "Questions fréquentes sur les visas thaïlandais (DTV, TR, Non-O). Retrouvez toutes les réponses pour préparer votre séjour."
+      }
     },
     terms_page: {
       title: "Conditions Générales",
@@ -384,6 +467,10 @@ export const translations = {
       contact: "Contact",
       member: "Client Area",
       eligibility: "Eligibility"
+    },
+    meta: {
+      title: "Siam Visa Pro | Thailand Visa Expert - DTV, Tourist & Retirement",
+      description: "Get your Thai visa stress-free. Experts in DTV, Tourist and Retirement visas. Global support and optimized Portfolio."
     },
     contact_page: {
       title: "Contact Us",
@@ -475,7 +562,32 @@ export const translations = {
       who_softpower_desc: "Learning (Muay Thai, Cooking, Medical treatment).",
       portfolio_title: "Need help with the Portfolio?",
       portfolio_desc: "The embassy requires a \"Professional Portfolio\" to prove your status. We create it for you.",
-      portfolio_btn: "See our packs"
+      portfolio_btn: "See our packs",
+      highs_title: "Highlights",
+      highs: [
+        "Exceptional 5-year validity",
+        "180-day stays per entry (+180 day extension)",
+        "Legal right to work remotely",
+        "Covers spouse and children as well"
+      ],
+      lows_title: "Points of Attention",
+      lows: [
+        "Mandatory 500,000 THB financial proof",
+        "Strong Professional Portfolio required",
+        "Longer processing times (5-15 days)",
+        "Higher consular fees (~$350)"
+      ],
+      faq_title: "DTV Visa - Frequently Asked Questions",
+      faqs: [
+        { q: "Can I enter and leave Thailand multiple times with my DTV visa?", a: "Yes, it is a Multiple-Entry visa. You can travel as many times as you want during the 5-year validity period without canceling your visa." },
+        { q: "Do I have to pay taxes in Thailand with this visa?", a: "Generally, if you work for a foreign company and your income is not paid into a Thai account, you are not a tax resident under the DTV (to be confirmed according to your specific situation)." },
+        { q: "Can my family accompany me?", a: "Yes, your spouse and children under 20 can obtain a 'Dependant' DTV visa linked to yours, with the same duration advantages." },
+        { q: "What is the added value of Siam Visa Pro compared to a solo application?", a: "Applying alone carries risks of refusal due to an imprecise file. Siam Visa Pro combines human expertise and the power of AI: our artificial intelligence tools analyze your eligibility in real-time to detect the weak points of your file, while our experts optimize your portfolio and your documents. You benefit from a double verification — technological and human — to guarantee the highest possible approval rate." }
+      ],
+      meta: {
+        title: "Thailand DTV Visa (Destination Thailand Visa) | Siam Visa Pro Expertise",
+        description: "Live and work in Thailand for 5 years with the DTV visa. We optimize your Portfolio and ensure your eligibility."
+      }
     },
     services_page: {
       hero_title: "Services & Pricing",
@@ -610,7 +722,28 @@ export const translations = {
       warning_desc: "The tourist visa does NOT authorize you to work in Thailand, even remotely. For remote work, choose the DTV visa.",
       cta_title: "Need help with your tourist visa?",
       cta_desc: "We verify your documents and manage your E-Visa application to maximize your chances of approval.",
-      cta_btn: "Order this visa"
+      cta_btn: "Order this visa",
+      highs_title: "Highlights",
+      highs: [
+        "Simple and fast procedure",
+        "Low consular fees (approx $35)",
+        "Ideal for testing life in Thailand",
+        "30-day extension possible"
+      ],
+      lows_title: "Points of Attention",
+      lows: [
+        "Total duration limited to 90 days",
+        "Work strictly forbidden (even remote)",
+        "Single entry (visa ends if you leave)",
+        "Requires proof of onward travel"
+      ],
+      faq_title: "Frequently Asked Questions - Tourist Visa",
+      faqs: [
+        { q: "Can I convert my tourist visa to another visa locally?", a: "It is possible in some cases (e.g., to a Marriage or Retirement visa), but it depends on the local immigration. Often, it is simpler and faster to reapply outside." },
+        { q: "Can I extend my visa by 30 days multiple times?", a: "No, the TR tourist visa 30-day extension can only be done once per entry at an Immigration office." },
+        { q: "What happens if I stay past my visa end date?", a: "You will be on 'Overstay'. The fine is 500 THB per day of overstay, payable at the airport. Significant overstay can lead to a ban from entering the country." },
+        { q: "What is the added value of Siam Visa Pro compared to a solo application?", a: "Applying on your own carries risks of refusal due to an imprecise file. Siam Visa Pro combines human expertise and the power of AI: our artificial intelligence tools analyze your eligibility in real-time to detect your file's weak points, while our experts optimize your portfolio and your documents. You benefit from a double check — technological and human — to guarantee the highest possible approval rate." }
+      ]
     },
     retirement_page: {
       badge: "Long Term",
@@ -651,7 +784,28 @@ export const translations = {
       warning_desc: "The retirement visa must be renewed annually in Thailand. Funds must remain in the account for the entire duration of the visa.",
       cta_title: "Need support for your retirement visa?",
       cta_desc: "Our Retirement Serenity Pack includes insurance analysis, verification of all your documents, and complete management of your E-Visa application.",
-      cta_btn: "Get support"
+      cta_btn: "Get support",
+      highs_title: "Highlights",
+      highs: [
+        "Renewable every year locally",
+        "Live peacefully in Thailand",
+        "No mandatory exit required",
+        "Easier access to Thai banking"
+      ],
+      lows_title: "Points of Attention",
+      lows: [
+        "Strictly reserved for over 50s",
+        "800,000 THB funds frozen in account",
+        "High health insurance cost (O-A visa)",
+        "Mandatory 90-day reporting"
+      ],
+      faq_title: "Frequently Asked Questions - Retirement Visa",
+      faqs: [
+        { q: "Does the money (800,000 THB) need to remain frozen all year?", a: "The funds must be present 2 months before the request and 3 months after approval. For the rest of the year, the balance must never fall below 400,000 THB." },
+        { q: "Can I work with a retirement visa?", a: "No, any form of work (paid or volunteer) is strictly forbidden. If you want to work online, the DTV visa is more suitable." },
+        { q: "Do I need to leave the country to renew my visa?", a: "No, your retirement visa extension is done every year directly at the Immigration office in Thailand, without a mandatory exit." },
+        { q: "What is the added value of Siam Visa Pro compared to a solo application?", a: "Applying on your own carries risks of refusal due to an imprecise file. Siam Visa Pro combines human expertise and the power of AI: our artificial intelligence tools analyze your eligibility in real-time to detect your file's weak points, while our experts optimize your portfolio and your documents. You benefit from a double check — technological and human — to guarantee the highest possible approval rate." }
+      ]
     },
     faq_page: {
       title: "Frequently Asked Questions",
@@ -662,7 +816,7 @@ export const translations = {
         { q: "How long does it take to get the visa?", a: "Processing times vary by embassy. Generally: 3 to 10 business days for a tourist visa, and 5 to 15 business days for a DTV (as the file is more complex to verify)." },
         { q: "Does the money (500,000 THB) need to be blocked?", a: "For the DTV, money does not need to be blocked, but it must be visible on your bank statement at the time of application. You must show you have the funds." },
         { q: "What happens if my visa is refused?", a: "The embassy never refunds visa fees. That's why we recommend our Audit or Serenity Pack to check your file BEFORE payment to the embassy." },
-        { q: "Can you guarantee visa approval?", a: "No agency can guarantee 100% the decision of a consular officer (it is illegal to claim so). However, we guarantee your file strictly respects the criteria, maximizing your chances (99% success)." }
+        { q: "Can you guarantee visa approval?", a: "No agency can guarantee 100% the decision of a consular officer (it is illegal to claim so). However, we guarantee your file strictly respects the criteria, which maximizes your chances (99% success)." }
       ],
       not_found_title: "Can't find your answer?",
       not_found_desc: "Our experts are here to analyze your specific situation.",
@@ -756,6 +910,10 @@ export const translations = {
       member: "Kundenbereich",
       eligibility: "Berechtigung"
     },
+    meta: {
+      title: "Siam Visa Pro | Thailand Visum Experte - DTV, Tourismus & Ruhestand",
+      description: "Holen Sie sich Ihr Thailand-Visum stressfrei. Experten für DTV-, Touristen- und Ruhestandsvisa. Volle Unterstützung und optimiertes Portfolio."
+    },
     hero: {
       new_badge: "NEU: DTV VISUM VERFÜGBAR",
       title_line1: "Ihr Visum für Thailand,",
@@ -839,7 +997,11 @@ export const translations = {
       vip_feat3: "Verfassen des HR-Anschreibens",
       vip_feat4: "Priorisierter WhatsApp-Support",
       vip_feat5: "Strategische Beratung (30 Min.)",
-      vip_feat6: "Verwaltung zusätzlicher Anfragen"
+      vip_feat6: "Verwaltung zusätzlicher Anfragen",
+      meta: {
+        title: "Unsere Services & Preise | Thailand Visum Unterstützung",
+        description: "Entdecken Sie unsere Angebote: Audit, Sorglos oder VIP/DTV. Wählen Sie die richtige Unterstützung für Ihr Thailand-Visum."
+      }
     },
     eligibility: {
       steps: ["Profil", "Finanzen", "Analyse"],
@@ -964,7 +1126,28 @@ export const translations = {
       who_softpower_desc: "Lernen (Muay Thai, Kochen, medizinische Behandlung).",
       portfolio_title: "Hilfe beim Portfolio benötigt?",
       portfolio_desc: "Die Botschaft verlangt ein 'Professionelles Portfolio'. Wir erstellen es für Sie.",
-      portfolio_btn: "Pakete ansehen"
+      portfolio_btn: "Pakete ansehen",
+      highs_title: "Stärken",
+      highs: [
+        "Außergewöhnliche Gültigkeit von 5 Jahren",
+        "180 Tage Aufenthalt pro Einreise (+180 Tage Verlängerung)",
+        "Recht auf legales mobiles Arbeiten",
+        "Deckt auch Ehepartner und Kinder ab"
+      ],
+      lows_title: "Wichtige Hinweise",
+      lows: [
+        "Finanznachweis von 500.000 THB obligatorisch",
+        "Anforderung an ein solides professionelles Portfolio",
+        "Längere Bearbeitungszeiten (5-15 Tage)",
+        "Höhere Konsulatsgebühren (~350€)"
+      ],
+      faq_title: "Häufig gestellte Fragen - DTV Visum",
+      faqs: [
+        { q: "Kann ich mit meinem DTV-Visum aus- und wieder nach Thailand einreisen?", a: "Ja, es ist ein Visum für mehrfache Einreisen (Multiple-Entries). Sie können während der 5-jährigen Gültigkeit so oft reisen, wie Sie möchten, ohne dass Ihr Visum ungültig wird." },
+        { q: "Muss ich mit diesem Visum in Thailand Steuern zahlen?", a: "Generell gilt: Wenn Sie für ein ausländisches Unternehmen arbeiten und Ihr Einkommen nicht auf ein thailändisches Konto überwiesen wird, sind Sie im Rahmen des DTV nicht steuerpflichtig (muss je nach Einzelfall bestätigt werden)." },
+        { q: "Können mich meine Angehörigen begleiten?", a: "Ja, Ihr Ehepartner und Ihre Kinder unter 20 Jahren können ein 'Dependant' DTV-Visum erhalten, das an Ihres gekoppelt ist und die gleiche Gültigkeitsdauer hat." },
+        { q: "Was ist der Mehrwert von Siam Visa Pro im Vergleich zu einer Eigenbeantragung?", a: "Eine Eigenbeantragung birgt Risiken von Ablehnungen aufgrund ungenauer Unterlagen. Siam Visa Pro kombiniert menschliche Expertise mit der Kraft der KI: Unsere KI-Tools analysieren Ihre Eignung in Echtzeit, um Schwachstellen in Ihrem Dossier zu erkennen, während unsere Experten Ihr Portfolio und Ihre Dokumente optimieren. Sie profitieren von einer doppelten Prüfung – technologisch und menschlich – um die höchstmögliche Genehmigungsrate zu garantieren." }
+      ]
     },
     tourist_page: {
       badge: "Tourismus & Freizeit",
@@ -1028,7 +1211,28 @@ export const translations = {
       warning_desc: "Das Touristenvisum berechtigt Sie NICHT dazu, in Thailand zu arbeiten, auch nicht aus der Ferne. Für Fernarbeit wählen Sie das DTV-Visum.",
       cta_title: "Hilfe bei Ihrem Touristenvisum benötigt?",
       cta_desc: "Wir prüfen Ihre Dokumente und verwalten Ihren E-Visum-Antrag, um Ihre Chancen auf Genehmigung zu maximieren.",
-      cta_btn: "Dieses Visum bestellen"
+      cta_btn: "Dieses Visum bestellen",
+      highs_title: "Stärken",
+      highs: [
+        "Einfacher und schneller Prozess",
+        "Günstige Konsulatsgebühren",
+        "Keine hohen Ersparnisse erforderlich",
+        "Ideal für Entdeckungstouren"
+      ],
+      lows_title: "Einschränkungen",
+      lows: [
+        "Kurze Dauer (max. 90 Tage)",
+        "Nur eine Einreise (Single Entry)",
+        "Arbeit (auch remote) streng verboten",
+        "Erfordert ein Ausreiseticket"
+      ],
+      faq_title: "Häufig gestellte Fragen - Touristenvisum",
+      faqs: [
+        { q: "Kann ich mein Touristenvisum vor Ort in ein anderes Visum umwandeln?", a: "Dies ist in einigen Fällen möglich (z. B. in ein Ehe- oder Ruhestandsvisum), hängt jedoch von der lokalen Einwanderungsbehörde ab. Oft ist es einfacher und schneller, einen neuen Antrag im Ausland zu stellen." },
+        { q: "Kann ich mein Visum mehrmals um 30 Tage verlängern?", a: "Nein, die 30-tägige Verlängerung des TR-Touristenvisums kann nur einmal pro Einreise bei einem Immigration Office vorgenommen werden." },
+        { q: "Was passiert, wenn ich nach Ablauf meines Visums im Land bleibe?", a: "Sie befinden sich im 'Overstay'. Die Strafe beträgt 500 THB pro Tag, zahlbar am Flughafen. Ein erheblicher Overstay kann zu einem Einreiseverbot führen." },
+        { q: "Was ist der Mehrwert von Siam Visa Pro im Vergleich zu einer Eigenbeantragung?", a: "Eine Eigenbeantragung birgt Risiken von Ablehnungen aufgrund ungenauer Unterlagen. Siam Visa Pro kombiniert menschliche Expertise mit der Kraft der KI: Unsere KI-Tools analysieren Ihre Eignung in Echtzeit, um Schwachstellen in Ihrem Dossier zu erkennen, während unsere Experten Ihr Portfolio und Ihre Dokumente optimieren. Sie profitieren von einer doppelten Prüfung – technologisch und menschlich – um die höchstmögliche Genehmigungsrate zu garantieren." }
+      ]
     },
     retirement_visa_page: {
       hero_title: "Ruhestandsvisum (Non-O / O-A)",
@@ -1049,7 +1253,28 @@ export const translations = {
       warning_desc: "Das Ruhestandsvisum muss jedes Jahr in Thailand erneuert werden. Die Mittel müssen während der gesamten Dauer des Visums auf dem Konto bleiben.",
       cta_title: "Benötigen Sie Unterstützung für Ihr Ruhestandsvisum?",
       cta_desc: "Unser Ruhestand-Sorglos-Paket umfasst die Analyse Ihrer Versicherung, la vérification de tous vos documents et la gestion complète de votre demande E-Visa.",
-      cta_btn: "Unterstützung erhalten"
+      cta_btn: "Unterstützung erhalten",
+      highs_title: "Stärken",
+      highs: [
+        "Langfristige Stabilität",
+        "Keine Altersgrenze nach oben",
+        "Einfache Verlängerung vor Ort",
+        "Zugang zu Seniorenvorteilen"
+      ],
+      lows_title: "Einschränkungen",
+      lows: [
+        "Mindestalter 50 Jahre",
+        "800.000 THB müssen auf dem Konto bleiben",
+        "Teure Versicherungspflicht",
+        "Keine Arbeitserlaubnis"
+      ],
+      faq_title: "Häufig gestellte Fragen - Ruhestandsvisum",
+      faqs: [
+        { q: "Muss das Geld (800.000 THB) das ganze Jahr über gesperrt bleiben?", a: "Die Mittel müssen 2 Monate vor Antragstellung und 3 Monate nach Genehmigung vorhanden sein. Den Rest des Jahres darf das Guthaben niemals unter 400.000 THB fallen." },
+        { q: "Kann ich mit einem Ruhestandsvisum arbeiten?", a: "Nein, jede Form von Arbeit (bezahlt oder ehrenamtlich) ist strengstens untersagt. Wenn Sie online arbeiten möchten, ist das DTV-Visum besser geeignet." },
+        { q: "Muss ich das Land verlassen, um mein Visum zu verlängern?", a: "Nein, die Verlängerung Ihres Ruhestandsvisums erfolgt jedes Jahr direkt beim Immigration Office in Thailand, ohne Ausreisepflicht." },
+        { q: "Was ist der Mehrwert von Siam Visa Pro im Vergleich zu einer Eigenbeantragung?", a: "Eine Eigenbeantragung birgt Risiken von Ablehnungen aufgrund ungenauer Unterlagen. Siam Visa Pro kombiniert menschliche Expertise mit der Kraft der KI: Unsere KI-Tools analysieren Ihre Eignung in Echtzeit, um Schwachstellen in Ihrem Dossier zu erkennen, während unsere Experten Ihr Portfolio und Ihre Dokumente optimieren. Sie profitieren von einer doppelten Prüfung – technologisch und menschlich – um die höchstmögliche Genehmigungsrate zu garantieren." }
+      ]
     },
     faq_page: {
       title: "Häufig gestellte Fragen",
@@ -1111,6 +1336,10 @@ export const translations = {
       contact: "Contacto",
       member: "Área Cliente",
       eligibility: "Elegibilidad"
+    },
+    meta: {
+      title: "Siam Visa Pro | Experto en Visas Tailandia - DTV, Turismo y Jubilación",
+      description: "Obtenga su visa para Tailandia sin estrés. Expertos en visas DTV, de Turista y de Jubilación. Soporte completo y Portfolio optimizado."
     },
     hero: {
       new_badge: "NUEVO: VISA DTV DISPONIBLE",
@@ -1320,7 +1549,28 @@ export const translations = {
       who_softpower_desc: "Aprendizaje (Muay Thai, Cocina).",
       portfolio_title: "¿Ayuda con el Portafolio?",
       portfolio_desc: "Creamos su portafolio profesional.",
-      portfolio_btn: "Ver paquetes"
+      portfolio_btn: "Ver paquetes",
+      highs_title: "Puntos Fuertes",
+      highs: [
+        "Validez excepcional de 5 años",
+        "Estancias de 180 días por entrada (+180 días de extensión)",
+        "Derecho a trabajar legalmente a distancia",
+        "Cubre también al cónyuge e hijos"
+      ],
+      lows_title: "Puntos de Vigilancia",
+      lows: [
+        "Prueba financiera de 500,000 THB obligatoria",
+        "Requisito de un portafolio profesional sólido",
+        "Plazos de procesamiento más largos (5-15 días)",
+        "Tasas consulares más elevadas (~350€)"
+      ],
+      faq_title: "Preguntas Frecuentes - Visa DTV",
+      faqs: [
+        { q: "¿Puedo salir y entrar en Tailandia con mi visa DTV?", a: "Sí, es una visa de entradas múltiples (Multi-Entries). Puede viajar tantas veces como desee durante los 5 años de validez sin que ello anule su visa." },
+        { q: "¿Debo pagar impuestos en Tailandia con esta visa?", a: "En regla general, si trabaja para una empresa extranjera y sus ingresos no se depositan en una cuenta tailandesa, no es residente fiscal bajo el DTV (confirmar según su situación específica)." },
+        { q: "¿Pueden acompañarme mis familiares?", a: "Sí, su cónyuge e hijos menores de 20 años pueden obtener una visa DTV 'Dependant' vinculada a la suya, con los mismos beneficios de duración." },
+        { q: "¿Cuál es el valor añadido de Siam Visa Pro frente a una solicitud por cuenta propia?", a: "Solicitar por cuenta propia conlleva riesgos de rechazo por documentos imprecisos. Siam Visa Pro combina la experiencia humana con el poder de la IA: nuestras herramientas de IA analizan su elegibilidad en tiempo real para detectar puntos débiles, mientras nuestros expertos optimizan su portafolio. Se beneficia de una doble verificación —tecnológica y humana— para garantizar la mayor tasa de aprobación." }
+      ]
     },
     tourist_page: {
       badge: "Turismo y Ocio",
@@ -1384,7 +1634,28 @@ export const translations = {
       warning_desc: "La visa de turista NO le autoriza a trabajar en Tailandia, ni siquiera de forma remota. Para el teletrabajo, opte por la visa DTV.",
       cta_title: "¿Necesita ayuda con su visa de turista?",
       cta_desc: "Verificamos sus documentos y gestionamos su solicitud de E-Visa para maximizar sus posibilidades de aprobación.",
-      cta_btn: "Pedir esta visa"
+      cta_btn: "Pedir esta visa",
+      highs_title: "Puntos Fuertes",
+      highs: [
+        "Proceso simple y rápido",
+        "Tasas consulares económicas",
+        "No requiere grandes ahorros",
+        "Ideal para estancias de exploración"
+      ],
+      lows_title: "Limitaciones",
+      lows: [
+        "Duración corta (máx. 90 días)",
+        "Una sola entrada (Single Entry)",
+        "Trabajo (incluso remoto) estrictamente prohibido",
+        "Requiere billete de salida confirmado"
+      ],
+      faq_title: "Preguntas Frecuentes - Visa Turista",
+      faqs: [
+        { q: "¿Puedo transformar mi visa de turista en otra visa allí mismo?", a: "Es posible en algunos casos (ej: hacia una visa de Matrimonio o Jubilación), pero depende de la inmigración local. A menudo es más sencillo y rápido volver a solicitar fuera." },
+        { q: "¿Puedo prolongar mi visa de 30 días varias veces?", a: "No, la extensión de 30 días de la visa de turista TR solo se puede realizar una vez por entrada ante una oficina de Inmigración." },
+        { q: "¿Qué pasa si me quedo después de la fecha de fin de mi visa?", a: "Estará en 'Overstay'. La multa es de 500 THB por día de retraso. Un retraso importante puede suponer la prohibición de entrada al país." },
+        { q: "¿Cuál es el valor añadido de Siam Visa Pro frente a una solicitud por cuenta propia?", a: "Solicitar por cuenta propia conlleva riesgos de rechazo por documentos imprecisos. Siam Visa Pro combina la experiencia humana con el poder de la IA: nuestras herramientas de IA analizan su elegibilidad en tiempo real para detectar puntos débiles, mientras nuestros expertos optimizan su portafolio. Se beneficia de una doble verificación —tecnológica y humana— para garantizar la mayor tasa de aprobación." }
+      ]
     },
     retirement_visa_page: {
       hero_title: "Visa de Retiro (Non-O / O-A)",
@@ -1403,9 +1674,30 @@ export const translations = {
       pitfall3_desc: "Cada embajada tiene sus propios requisitos. Un documento faltante = rechazo automático.",
       warning_title: "Importante saber",
       warning_desc: "La visa de retiro debe renovarse cada año en Tailandia. Los fondos deben permanecer en la cuenta durante toda la duración de la visa.",
-      cta_title: "¿Necesita acompañamiento para su visa de retiro?",
-      cta_desc: "Nuestro Pack Serenidad Retiro incluye el análisis de su seguro, la verificación de todos sus documentos y la gestión completa de su solicitud de E-Visa.",
-      cta_btn: "Obtener ayuda"
+      cta_title: "¿Necesita ayuda con su visa de retiro?",
+      cta_desc: "Nuestro Pack Serenidad Retiro incluye el análisis de su seguro, la verificación de todos sus documentos y la gestión completa de su solicitud E-Visa.",
+      cta_btn: "Obtener ayuda",
+      highs_title: "Puntos Fuertes",
+      highs: [
+        "Estabilidad a largo plazo",
+        "Sin límite de edad superior",
+        "Renovación sencilla en el lugar",
+        "Acceso a beneficios para jubilados"
+      ],
+      lows_title: "Limitaciones",
+      lows: [
+        "Edad mínima 50 años",
+        "Los 800,000 THB deben permanecer en la cuenta",
+        "Seguro obligatorio costoso",
+        "Sin permiso de trabajo"
+      ],
+      faq_title: "Preguntas Frecuentes - Visa Retiro",
+      faqs: [
+        { q: "¿El dinero (800,000 THB) debe permanecer bloqueado todo el año?", a: "Los fondos deben estar presentes 2 meses antes de la solicitud y 3 meses después de la aprobación. El resto del año, el saldo nunca debe bajar de 400,000 THB." },
+        { q: "¿Puedo trabajar con una visa de retiro?", a: "No, cualquier forma de trabajo (remunerado o voluntario) está estrictamente prohibida. Si desea trabajar online, la visa DTV es más adecuada." },
+        { q: "¿Debo salir del país para renovar mi visa?", a: "No, la extensión de su visa de retiro se realiza cada año directamente en la oficina de Inmigración en Tailandia, sin obligación de salida." },
+        { q: "¿Cuál es el valor añadido de Siam Visa Pro frente a una solicitud por cuenta propia?", a: "Solicitar por cuenta propia conlleva riesgos de rechazo por documentos imprecisos. Siam Visa Pro combina la experiencia humana con el poder de la IA: nuestras herramientas de IA analizan su elegibilidad en tiempo real para detectar puntos débiles, mientras nuestros expertos optimizan su portafolio. Se beneficia de una doble verificación —tecnológica y humana— para garantizar la mayor tasa de aprobación." }
+      ]
     },
     faq_page: {
       title: "Preguntas Frecuentes",
@@ -1467,6 +1759,10 @@ export const translations = {
       contact: "Contatti",
       member: "Area Clienti",
       eligibility: "Idoneità"
+    },
+    meta: {
+      title: "Siam Visa Pro | Esperto Visti Thailandia - DTV, Turismo e Pensionamento",
+      description: "Ottieni il tuo visto per la Thailandia senza stress. Esperti in visti DTV, Turistico e Pensionamento. Supporto completo e Portfolio ottimizzato."
     },
     hero: {
       new_badge: "NUOVO: VISTO DTV DISPONIBILE",
@@ -1675,8 +1971,29 @@ export const translations = {
       who_softpower: "Soft Power",
       who_softpower_desc: "Corsi (Muay Thai, Cucina).",
       portfolio_title: "Serve il Portfolio?",
-      portfolio_desc: "Lo creiamo noi per te.",
-      portfolio_btn: "Vedi pacchetti"
+      portfolio_desc: "L'ambasciata richiede un 'Portfolio Professionale'. Lo creiamo noi per te.",
+      portfolio_btn: "Vedi i pacchetti",
+      highs_title: "Punti di Forza",
+      highs: [
+        "Validità eccezionale di 5 anni",
+        "180 giorni per ingresso (+180 gg di estensione)",
+        "Diritto di lavorare legalmente da remoto",
+        "Copre anche coniuge e figli"
+      ],
+      lows_title: "Punti di Attenzione",
+      lows: [
+        "Prova finanziaria di 500.000 THB obbligatoria",
+        "Requisito di un portfolio professionale solido",
+        "Tempi di elaborazione più lunghi (5-15 giorni)",
+        "Tasse consolari più elevate (~350€)"
+      ],
+      faq_title: "Domande Frequenti - Visto DTV",
+      faqs: [
+        { q: "Posso uscire e rientrare in Thailandia con il mio visto DTV?", a: "Sì, è un visto a ingressi multipli (Multi-Entries). Puoi viaggiare tutte le volte che vuoi durante i 5 anni di validità senza che il visto venga annullato." },
+        { q: "Devo pagare le tasse in Thailandia con questo visto?", a: "In generale, se lavori per un'azienda straniera e il tuo reddito non viene versato su un conto tailandese, non sei residente fiscale ai fini del DTV (da confermare in base alla tua situazione specifica)." },
+        { q: "I miei familiari possono accompagnarmi?", a: "Sì, il coniuge e i figli sotto i 20 anni possono ottenere un visto DTV 'Dependant' collegato al tuo, con gli stessi vantaggi di durata." },
+        { q: "Qual è il valore aggiunto di Siam Visa Pro rispetto a una richiesta individuale?", a: "Presentare la domanda da soli comporta rischi di rifiuto a causa di documenti imprecisi. Siam Visa Pro combina l'esperienza umana con la potenza dell'IA: i nostri strumenti di intelligenza artificiale analizzano la tua idoneità in tempo reale per rilevare i punti deboli, mentre i nostri esperti ottimizzano il tuo portfolio. Benefici di un doppio controllo —tecnologico e umano— per garantire il massimo tasso di approvazione." }
+      ]
     },
     tourist_page: {
       badge: "Turismo e Svago",
@@ -1739,8 +2056,29 @@ export const translations = {
       warning_title: "Attenzione",
       warning_desc: "Il visto turistico NON ti autorizza a lavorare in Thailandia, nemmeno da remoto. Per il telelavoro, scegli il visto DTV.",
       cta_title: "Serve aiuto per il tuo visto turistico?",
-      cta_desc: "Controlliamo i tuoi documenti e gestiamo la tua richiesta E-Visa per massimizzare le tue possibilità di approvazione.",
-      cta_btn: "Ordina questo visto"
+      cta_desc: "Controlliamo i tuoi documenti e gestiamo la tua richiesta di E-Visa per massimizzare le tue possibilità di approvazione.",
+      cta_btn: "Ordina questo visto",
+      highs_title: "Punti di Forza",
+      highs: [
+        "Processo semplice e veloce",
+        "Tasse consolari economiche",
+        "Nessun risparmio elevato richiesto",
+        "Ideale per esplorare il paese"
+      ],
+      lows_title: "Limitazioni",
+      lows: [
+        "Breve durata (max 90 giorni)",
+        "Ingresso singolo (Single Entry)",
+        "Lavoro (anche remoto) severamente vietato",
+        "Richiede biglietto di uscita confermato"
+      ],
+      faq_title: "Domande Frequenti - Visto Turistico",
+      faqs: [
+        { q: "Posso convertire il mio visto turistico in un altro visto sul posto?", a: "È possibile in alcuni casi (es: verso un visto per Matrimonio o Pensionati), ma dipende dall'immigrazione locale. Spesso è più semplice e veloce fare una nuova richiesta fuori dal paese." },
+        { q: "Posso prolungare il mio visto di 30 giorni più volte?", a: "No, l'estensione di 30 giorni del visto turistico TR può essere effettuata solo una volta per ingresso presso un ufficio dell'Immigrazione." },
+        { q: "Cosa succede se rimango oltre la data di fine del mio visto?", a: "Sarai in 'Overstay'. La multa è di 500 THB per ogni giorno di ritardo, da pagare in aeroporto. Un ritardo significativo può comportare il divieto di ingresso nel paese." },
+        { q: "Qual è il valore aggiunto di Siam Visa Pro rispetto a una richiesta individuale?", a: "Presentare la domanda da soli comporta rischi di rifiuto a causa di documenti imprecisi. Siam Visa Pro combina l'esperienza umana con la potenza dell'IA: i nostri strumenti di intelligenza artificiale analizzano la tua idoneità in tempo reale per rilevare i punti deboli, mentre i nostri esperti ottimizzano il tuo portfolio. Benefici di un doppio controllo —tecnologico e umano— per garantire il massimo tasso di approvazione." }
+      ]
     },
     retirement_visa_page: {
       hero_title: "Visto Pensionati (Non-O / O-A)",
@@ -1761,7 +2099,28 @@ export const translations = {
       warning_desc: "Il visto per pensionati deve essere rinnovato ogni anno in Thailandia. I fondi devono rimanere sul conto per tutta la durata del visto.",
       cta_title: "Serve assistenza per il tuo visto per pensionati?",
       cta_desc: "Il nostro Pacchetto Serenity Pensionati include l'analisi della tua assicurazione, la verifica di tutti i tuoi documenti e la gestione completa della tua richiesta E-Visa.",
-      cta_btn: "Ottieni assistenza"
+      cta_btn: "Ottieni assistenza",
+      highs_title: "Punti di Forza",
+      highs: [
+        "Stabilità a lungo termine",
+        "Nessun limite di età superiore",
+        "Rinnovo semplice sul posto",
+        "Accesso a benefici per pensionati"
+      ],
+      lows_title: "Limitazioni",
+      lows: [
+        "Età minima 50 anni",
+        "Gli 800.000 THB devono rimanere sul conto",
+        "Assicurazione obbligatoria costosa",
+        "Nessun permesso di lavoro"
+      ],
+      faq_title: "Domande Frequenti - Visto Pensionati",
+      faqs: [
+        { q: "Il denaro (800.000 THB) deve rimanere bloccato tutto l'anno?", a: "I fondi devono essere presenti 2 mesi prima della richiesta e 3 mesi dopo l'approvazione. Per il resto dell'anno, il saldo non deve mai scendere sotto i 400.000 THB." },
+        { q: "Posso lavorare con un visto per pensionati?", a: "No, qualsiasi forma di lavoro (retribuito o volontario) è severamente vietata. Se desideri lavorare online, il visto DTV è più adatto." },
+        { q: "Devo lasciare il paese per rinnovare il mio visto?", a: "No, l'estensione del tuo visto per pensionati viene effettuata ogni anno direttamente presso l'ufficio Immigrazione in Thailandia, senza obbligo di uscita." },
+        { q: "Qual è il valore aggiunto di Siam Visa Pro rispetto a una richiesta individuale?", a: "Presentare la domanda da soli comporta rischi di rifiuto a causa di documenti imprecisi. Siam Visa Pro combina l'esperienza umana con la potenza dell'IA: i nostri strumenti di intelligenza artificiale analizzano la tua idoneità in tempo reale per rilevare i punti deboli, mentre i nostri esperti ottimizzano il tuo portfolio. Benefici di un doppio controllo —tecnologico e umano— per garantire il massimo tasso di approvazione." }
+      ]
     },
     faq_page: {
       title: "Domande Frequenti",
@@ -1823,6 +2182,10 @@ export const translations = {
       contact: "ติดต่อเรา",
       member: "พื้นที่สมาชิก",
       eligibility: "ตรวจสอบสิทธิ์"
+    },
+    meta: {
+      title: "Siam Visa Pro | ผู้เชี่ยวชาญด้านวีซ่าไทย - DTV, ท่องเที่ยว และเกษียณอายุ",
+      description: "รับวีซ่าไทยของคุณโดยปราศจากความเครียด ผู้เชี่ยวชาญด้านวีซ่า DTV, ท่องเที่ยว และเกษียณอายุ พร้อมการสนับสนุนเต็มรูปแบบและการจัดการพอร์ตโฟลิโอ"
     },
     hero: {
       new_badge: "ใหม่: วีซ่า DTV พร้อมให้บริการ",
@@ -2031,8 +2394,29 @@ export const translations = {
       who_softpower: "Soft Power",
       who_softpower_desc: "เรียนมวยไทย ทำอาหาร",
       portfolio_title: "ต้องการ Portfolio?",
-      portfolio_desc: "เราทำให้คุณได้",
-      portfolio_btn: "ดูแพ็คเกจ"
+      portfolio_desc: "สถานทูตต้องการ 'Portfolio วิชาชีพ' เพื่อพิสูจน์สถานะของคุณ เราจะสร้างให้คุณเอง",
+      portfolio_btn: "ดูแพ็กเกจของเรา",
+      highs_title: "จุดเด่น",
+      highs: [
+        "มีอายุการใช้งานนานถึง 5 ปี",
+        "พำนักได้ 180 วันต่อการเข้าหนึ่งครั้ง (+ขยายเวลาได้ 180 วัน)",
+        "สิทธิ์ในการทำงานทางไกลอย่างถูกกฎหมาย",
+        "ครอบคลุมคู่สมรสและบุตร"
+      ],
+      lows_title: "ข้อควรระวัง",
+      lows: [
+        "ต้องมีหลักฐานทางการเงิน 500,000 บาท",
+        "ต้องมีพอร์ตโฟลิโอวิชาชีพที่น่าเชื่อถือ",
+        "ระยะเวลาดำเนินการนานกว่า (5-15 วัน)",
+        "ค่าธรรมเนียมสถานกงสุลสูงกว่า (~13,000 บาท)"
+      ],
+      faq_title: "คำถามที่พบบ่อย - วีซ่า DTV",
+      faqs: [
+        { q: "ฉันสามารถเดินทางเข้าออกประเทศไทยด้วยวีซ่า DTV ได้หรือไม่?", a: "ได้ วีซ่านี้เป็นแบบเดินทางเข้าออกได้หลายครั้ง (Multiple-Entries) คุณสามารถเดินทางได้บ่อยตามต้องการตลอดอายุ 5 ปี" },
+        { q: "ฉันต้องเสียภาษีในประเทศไทยด้วยวีซ่านี้หรือไม่?", a: "โดยทั่วไป หากคุณทำงานให้กับบริษัทต่างชาติและรายได้ไม่ได้โอนเข้าบัญชีไทย คุณอาจไม่ต้องเสียภาษี (ควรตรวจสอบตามสถานการณ์เฉพาะของคุณ)" },
+        { q: "ครอบครัวของฉันสามารถติดตามมาได้หรือไม่?", a: "ได้ คู่สมรสและบุตรอายุต่ำกว่า 20 ปีสามารถขอวีซ่า DTV แบบ 'ผู้ติดตาม' ได้" },
+        { q: "Siam Visa Pro ช่วยคุณได้มากกว่าการยื่นเองอย่างไร?", a: "การยื่นเองมีความเสี่ยงที่จะถูกปฏิเสธเนื่องจากเอกสารไม่ครบถ้วน Siam Visa Pro รวมความเชี่ยวชาญของมนุษย์และพลังของ AI เพื่อวิเคราะห์โอกาสและตรวจสอบจุดอ่อนในเอกสารของคุณ พร้อมทั้งจัดทำพอร์ตโฟลิโอให้ เพื่อให้อัตราการอนุมัติสูงที่สุด" }
+      ]
     },
     tourist_page: {
       badge: "ท่องเที่ยว",
@@ -2093,10 +2477,31 @@ export const translations = {
       doc4: "การจองโรงแรมสำหรับวันแรกๆ",
       doc5: "รายการเดินบัญชี (ยอดเงิน > 20,000 บาท)",
       warning_title: "ข้อควรระวัง",
-      warning_desc: "วีซ่าท่องเที่ยวไม่อนุญาตให้ทำงานในไทย รวมถึงการทำงานทางไกล สำหรับการทำงานทางไกลโปรดเลือกวีซ่า DTV",
-      cta_title: "ต้องการความช่วยเหลือเรื่องวีซ่าท่องเที่ยว?",
-      cta_desc: "เราตรวจสอบเอกสารและจัดการคำขอ E-Visa ให้คุณเพื่อเพิ่มโอกาสในการอนุมัติสูงสุด",
-      cta_btn: "สั่งซื้อวีซ่านี้"
+      warning_desc: "วีซ่าท่องเที่ยวไม่อนุญาตให้คุณทำงานในประเทศไทย รวมถึงการทำงานทางไกล (Remote Work) หากต้องการทำงานทางไกล โปรดเลือกวีซ่า DTV",
+      cta_title: "ต้องการความช่วยเหลือเกี่ยวกับวีซ่าท่องเที่ยวของคุณหรือไม่?",
+      cta_desc: "เราจะตรวจสอบเอกสารและจัดการคำขอ E-Visa ให้คุณเพื่อเพิ่มโอกาสในการได้รับการอนุมัติ",
+      cta_btn: "สั่งซื้อวีซ่านี้",
+      highs_title: "จุดเด่น",
+      highs: [
+        "ขั้นตอนง่ายและรวดเร็ว",
+        "ค่าธรรมเนียมกงสุลราคาประหยัด",
+        "ไม่ต้องมีเงินเงินออมจำนวนมาก",
+        "เหมาะสำหรับการเดินทางสำรวจ"
+      ],
+      lows_title: "ข้อจำกัด",
+      lows: [
+        "ระยะเวลาสั้น (สูงสุด 90 วัน)",
+        "เข้าได้ครั้งเดียว (Single Entry)",
+        "ห้ามทำงานโดยเด็ดขาด (รวมถึง Remote Work)",
+        "ต้องมีตั๋วเครื่องบินขากลับ"
+      ],
+      faq_title: "คำถามที่พบบ่อย - วีซ่าท่องเที่ยว",
+      faqs: [
+        { q: "ฉันสามารถเปลี่ยนวีซ่าท่องเที่ยวเป็นวีซ่าอื่นในไทยได้หรือไม่?", a: "ในบางกรณีสามารถทำได้ (เช่น เป็นวีซ่าแต่งงานหรือเกษียณอายุ) แต่ขึ้นอยู่กับสำนักงานตรวจคนเข้าเมืองแต่ละแห่ง บ่อยครั้งการขอใหม่จากนอกประเทศจะง่ายกว่า" },
+        { q: "ฉันสามารถต่ออายุวีซ่า 30 วันได้หลายครั้งหรือไม่?", a: "ไม่ได้ การต่ออายุ 30 วันสำหรับวีซ่าท่องเที่ยว TR ทำได้เพียงครั้งเดียวต่อการเข้าประเทศหนึ่งครั้ง" },
+        { q: "จะเกิดอะไรขึ้นหากฉันอยู่เกินกำหนดวีซ่า?", a: "คุณจะอยู่ในสถานะ 'Overstay' มีค่าปรับวันละ 500 บาทที่สนามบิน หากอยู่นานเกินไปอาจถูกห้ามเข้าประเทศ" },
+        { q: "Siam Visa Pro ช่วยคุณได้มากกว่าการยื่นเองอย่างไร?", a: "การยื่นเองมีความเสี่ยงที่จะถูกปฏิเสธเนื่องจากเอกสารไม่ครบถ้วน Siam Visa Pro รวมความเชี่ยวชาญของมนุษย์และพลังของ AI เพื่อวิเคราะห์โอกาสและตรวจสอบจุดอ่อนในเอกสารของคุณ พร้อมทั้งจัดทำพอร์ตโฟลิโอให้ เพื่อให้อัตราการอนุมัติสูงที่สุด" }
+      ]
     },
     retirement_visa_page: {
       hero_title: "วีซ่าเกษียณ (Non-O / O-A)",
@@ -2114,10 +2519,31 @@ export const translations = {
       pitfall3_title: "เอกสารไม่ครบถ้วน",
       pitfall3_desc: "แต่ละสถานทูตมีข้อกำหนดต่างกัน เอกสารขาดเพียงชิ้นเดียวเท่ากับถูกปฏิเสธทันที",
       warning_title: "ข้อมูลสำคัญ",
-      warning_desc: "วีซ่าเกษียณต้องต่ออายุทุกปีในประเทศไทย และต้องคงเงินไว้ในบัญชีตลอดระยะเวลาของวีซ่า",
-      cta_title: "ต้องการผู้ช่วยดูแลวีซ่าเกษียณของคุณ?",
-      cta_desc: "Pack Sérénité Retraite ของเราครอบคลุมตั้งแต่การวิเคราะห์ประกัน ตรวจสอบเอกสาร และจัดการ E-Visa ครบวงจร",
-      cta_btn: "รับการสนับสนุน"
+      warning_desc: "วีซ่าเกษียณอายุต้องต่ออายุทุกปีในประเทศไทย และเงินต้องคงอยู่ในบัญชีตลอดระยะเวลาของวีซ่า",
+      cta_title: "ต้องการความช่วยเหลือเกี่ยวกับวีซ่าเกษียณอายุของคุณหรือไม่?",
+      cta_desc: "แพ็กเกจ Retirement Care ของเราครอบคลุมการวิเคราะห์ประกัน การตรวจสอบเอกสาร และการจัดการ E-Visa ครบวงจร",
+      cta_btn: "รับความช่วยเหลือ",
+      highs_title: "จุดเด่น",
+      highs: [
+        "ความมั่นคงในระยะยาว",
+        "ไม่มีการจำกัดอายุสูงสุด",
+        "ต่ออายุได้ง่ายภายในประเทศ",
+        "สิทธิ์ในการรับสิทธิประโยชน์สำหรับผู้สูงอายุ"
+      ],
+      lows_title: "ข้อจำกัด",
+      lows: [
+        "อายุขั้นต่ำ 50 ปี",
+        "เงิน 800,000 บาทต้องคงอยู่ในบัญชี",
+        "ต้องทำประกันภัยราคาแพง",
+        "ไม่มีใบอนุญาตทำงาน"
+      ],
+      faq_title: "คำถามที่พบบ่อย - วีซ่าเกษียณอายุ",
+      faqs: [
+        { q: "เงิน 800,000 บาทต้องค้างอยู่ในบัญชีตลอดปีหรือไม่?", a: "ต้องมีเงินในบัญชีก่อนยื่น 2 เดือนและหลังอนุมัติ 3 เดือน หลังจากนั้นยอดเงินต้องไม่ต่ำกว่า 400,000 บาทตลอดปี" },
+        { q: "ฉันสามารถทำงานด้วยวีซ่าเกษียณอายุได้หรือไม่?", a: "ไม่ได้ ห้ามทำงานทุกรูปแบบ (รวมถึงงานอาสาสมัคร) หากต้องการทำงานออนไลน์ วีซ่า DTV จะเหมาะสมกว่า" },
+        { q: "ฉันต้องออกนอกประเทศเพื่อต่ออายุวีซ่าหรือไม่?", a: "ไม่ต้อง การต่ออายุวีซ่าเกษียณอายุสามารถทำได้ที่สำนักงานตรวจคนเข้าเมืองในไทยได้เลย" },
+        { q: "Siam Visa Pro ช่วยคุณได้มากกว่าการยื่นเองอย่างไร?", a: "การยื่นเองมีความเสี่ยงที่จะถูกปฏิเสธเนื่องจากเอกสารไม่ครบถ้วน Siam Visa Pro รวมความเชี่ยวชาญของมนุษย์และพลังของ AI เพื่อวิเคราะห์โอกาสและตรวจสอบจุดอ่อนในเอกสารของคุณ พร้อมทั้งจัดทำพอร์ตโฟลิโอให้ เพื่อให้อัตราการอนุมัติสูงที่สุด" }
+      ]
     },
     faq_page: {
       title: "คำถามที่พบบ่อย",
@@ -2179,6 +2605,10 @@ export const translations = {
       contact: "Контакты",
       member: "Кабинет",
       eligibility: "Проверка"
+    },
+    meta: {
+      title: "Siam Visa Pro | Эксперт по визам в Таиланд - DTV, Туризм и Пенсия",
+      description: "Получите визу в Таиланд без стресса. Эксперты по DTV, туристическим и пенсионным визам. Полная поддержка и оптимизированное портфолио."
     },
     hero: {
       new_badge: "НОВИНКА: ДОСТУПНА ВИЗА DTV",
@@ -2280,7 +2710,7 @@ export const translations = {
       purpose_label: "Ваш проект в Таиланде?",
       btn_back: "Назад",
       btn_analyze: "Анализ",
-      loading_title: "ИИ анализирует профиль...",
+      loading_title: "ИИ анализирует ваш профиль...",
       loading_desc: "Сравнение с критериями иммиграции.",
       result_title: "Результат",
       probability: "Вероятность",
@@ -2387,8 +2817,29 @@ export const translations = {
       who_softpower: "Soft Power",
       who_softpower_desc: "Муай Тай, Кулинария.",
       portfolio_title: "Нужно портфолио?",
-      portfolio_desc: "Мы создадим его для вас.",
-      portfolio_btn: "Смотреть пакеты"
+      portfolio_desc: "Посольство требует качественное «Профессиональное портфолио». Мы создадим его для вас.",
+      portfolio_btn: "Посмотреть пакеты",
+      highs_title: "Преимущества",
+      highs: [
+        "Исключительный срок действия — 5 лет",
+        "180 дней пребывания за один въезд (+180 дней продления)",
+        "Право на легальную удаленную работу",
+        "Распространяется также на супруга(у) и детей"
+      ],
+      lows_title: "Нюансы",
+      lows: [
+        "Обязательное наличие 500 000 THB на счету",
+        "Требование к солидному портфолио",
+        "Более длительные сроки обработки (5–15 дней)",
+        "Высокие консульские сборы (~350€)"
+      ],
+      faq_title: "Часто задаваемые вопросы - Виза DTV",
+      faqs: [
+        { q: "Могу ли я выезжать и возвращаться в Таиланд с визой DTV?", a: "Да, это многократная виза (Multi-Entry). Вы можете путешествовать сколько угодно раз в течение 5 лет без аннулирования визы." },
+        { q: "Нужно ли мне платить налоги в Таиланде с этой визой?", a: "Как правило, если вы работаете на иностранную компанию и доходы не поступают на тайский счет, вы не являетесь налоговым резидентом (уточняйте детали у экспертов)." },
+        { q: "Могут ли близкие поехать со мной?", a: "Да, супруг(а) и дети до 20 лет могут получить зависимую визу DTV на тот же срок." },
+        { q: "В чем ценность Siam Visa Pro по сравнению с самостоятельной подачей?", a: "Самостоятельная подача сопряжена с рисками отказа из-за неточного оформления документов. Siam Visa Pro сочетает человеческий опыт и возможности ИИ: наш искусственный интеллект анализирует ваши шансы в реальном времени для выявления слабых мест, а эксперты оптимизируют ваше портфолио. Вы получаете двойную проверку — технологическую и экспертную — для гарантии максимального процента одобрения." }
+      ]
     },
     tourist_page: {
       badge: "Туризм и Отдых",
@@ -2451,8 +2902,29 @@ export const translations = {
       warning_title: "Внимание",
       warning_desc: "Туристическая виза НЕ дает права на работу в Таиланде, даже удаленно. Для удаленной работы выбирайте визу DTV.",
       cta_title: "Нужна помощь с туристической визой?",
-      cta_desc: "Мы проверим ваши документы и оформим E-Visa, чтобы максимизировать шансы на одобрение.",
-      cta_btn: "Заказать эту визу"
+      cta_desc: "Мы проверим ваши документы и оформим электронную визу, чтобы максимально повысить шансы на одобрение.",
+      cta_btn: "Заказать визу",
+      highs_title: "Преимущества",
+      highs: [
+        "Простой и быстрый процесс",
+        "Низкие консульские сборы",
+        "Не требуются крупные накопления",
+        "Идеально для первого знакомства со страной"
+      ],
+      lows_title: "Ограничения",
+      lows: [
+        "Короткий срок (макс. 90 дней)",
+        "Один въезд (Single Entry)",
+        "Работа (даже удаленная) строго запрещена",
+        "Требуется подтвержденный авиабилет из страны"
+      ],
+      faq_title: "Часто задаваемые вопросы - Туристическая виза",
+      faqs: [
+        { q: "Можно ли сменить турвизу на другую внутри страны?", a: "Это возможно в ряде случаев (например, на пенсионную или семейную), но зависит от иммиграционной службы. Часто проще и быстрее оформить новую визу в соседней стране." },
+        { q: "Можно ли продлевать турвизу несколько раз?", a: "Нет, продление на 30 дней для визы TR делается только один раз за один въезд в иммиграционном офисе." },
+        { q: "Что будет, если я останусь в стране дольше срока действия визы?", a: "Это называется 'Overstay'. Штраф составляет 500 бат за каждый день просрочки. Длительная просрочка может привести к запрету на въезд." },
+        { q: "В чем ценность Siam Visa Pro по сравнению с самостоятельной подачей?", a: "Самостоятельная подача сопряжена с рисками отказа из-за неточного оформления документов. Siam Visa Pro сочетает человеческий опыт и возможности ИИ: наш искусственный интеллект анализирует ваши шансы в реальном времени для выявления слабых мест, а эксперты оптимизируют ваше портфолио. Вы получаете двойную проверку — технологическую и экспертную — для гарантии максимального процента одобрения." }
+      ]
     },
     retirement_visa_page: {
       hero_title: "Пенсионная виза (Non-O / O-A)",
@@ -2470,10 +2942,31 @@ export const translations = {
       pitfall3_title: "Неполные документы",
       pitfall3_desc: "У каждого посольства свои требования. Один недостающий документ = автоматический отказ.",
       warning_title: "Важно знать",
-      warning_desc: "Пенсионную визу необходимо продлевать каждый год в Таиланде. Средства должны оставаться на счету в течение всего срока действия визы.",
-      cta_title: "Нужно сопровождение для пенсионной визы?",
-      cta_desc: "Наш пакет «Спокойная пенсия» включает анализ страховки, проверку всех документов и полное управление процессом E-Visa.",
-      cta_btn: "Получить сопровождение"
+      warning_desc: "Пенсионную визу нужно продлевать каждый год в Таиланде. Средства должны оставаться на счету в течение всего срока действия визы.",
+      cta_title: "Нужна помощь с пенсионной визой?",
+      cta_desc: "Наш пакет «Пенсия без забот» включает анализ страховки, проверку всех документов и полное сопровождение E-Visa.",
+      cta_btn: "Получить помощь",
+      highs_title: "Преимущества",
+      highs: [
+        "Долгосрочная стабильность",
+        "Нет верхней планки возраста",
+        "Легкое продление внутри страны",
+        "Доступ к льготам для пенсионеров"
+      ],
+      lows_title: "Ограничения",
+      lows: [
+        "Минимальный возраст 50 лет",
+        "800 000 бат должны оставаться на счету",
+        "Обязательная дорогая страховка",
+        "Запрет на любую трудовую деятельность"
+      ],
+      faq_title: "Часто задаваемые вопросы - Пенсионная виза",
+      faqs: [
+        { q: "Должны ли 800 000 бат быть заморожены круглый год?", a: "Деньги должны быть на счету за 2 месяца до подачи и 3 месяца после. В остальное время баланс не должен опускаться ниже 400 000 бат." },
+        { q: "Можно ли работать с пенсионной визой?", a: "Нет, любая работа (оплачиваемая или волонтерская) строго запрещена. Для работы онлайн используйте визу DTV." },
+        { q: "Нужно ли выезжать из страны для продления визы?", a: "Нет, продление пенсионной визы делается ежегодно в иммиграционном офисе в Таиланде без необходимости выезда." },
+        { q: "В чем ценность Siam Visa Pro по сравнению с самостоятельной подачей?", a: "Самостоятельная подача сопряжена с рисками отказа из-за неточного оформления документов. Siam Visa Pro сочетает человеческий опыт и возможности ИИ: наш искусственный интеллект анализирует ваши шансы в реальном времени для выявления слабых мест, а эксперты оптимизируют ваше портфолио. Вы получаете двойную проверку — технологическую и экспертную — для гарантии максимального процента одобрения." }
+      ]
     },
     faq_page: {
       title: "Частые вопросы",
@@ -2535,6 +3028,10 @@ export const translations = {
       contact: "联系我们",
       member: "会员中心",
       eligibility: "资格审查"
+    },
+    meta: {
+      title: "Siam Visa Pro | 泰国签证专家 - DTV, 旅游与退休",
+      description: "轻松获得您的泰国签证。DTV、旅游和退休签证专家。提供全面支持和优化组合。"
     },
     hero: {
       new_badge: "新推出：DTV 签证现已可用",
@@ -2743,8 +3240,29 @@ export const translations = {
       who_softpower: "软实力",
       who_softpower_desc: "泰拳，烹饪。",
       portfolio_title: "需要作品集？",
-      portfolio_desc: "我们为您制作。",
-      portfolio_btn: "查看套餐"
+      portfolio_desc: "大使馆要求一份“专业作品集”以证明您的身份。我们将为您量身打造。",
+      portfolio_btn: "查看服务套餐",
+      highs_title: "核心优势",
+      highs: [
+        "长达5年的卓越有效期",
+        "每次入境可停留180天（+180天延期）",
+        "合法远程工作的权利",
+        "涵盖配偶及子女"
+      ],
+      lows_title: "注意事项",
+      lows: [
+        "必须提供50万泰铢的财务证明",
+        "需要稳健的专业作品集",
+        "处理时间较长（5-15天）",
+        "领事费用较高（约350欧元）"
+      ],
+      faq_title: "常见问题 - DTV 签证",
+      faqs: [
+        { q: "持有 DTV 签证可以自由出入泰国吗？", a: "可以。这是一种多次入境签证（Multi-Entries）。在5年有效期内，您可以无限次出入，签证保持有效。" },
+        { q: "持有该签证需要在泰国缴税吗？", a: "通常情况下，如果您为外国公司工作且收入未存入泰国账户，则不属于 DTV 下的税务居民（需根据您的具体情况确认）。" },
+        { q: "我的家属可以随行吗？", a: "可以。您的配偶和20岁以下的子女可以获得与您关联的“Dependant” DTV 签证，享受相同的时长优势。" },
+        { q: "与自行申请相比，Siam Visa Pro 的价值体现在哪里？", a: "自行申请常因材料不准确而面临拒签风险。Siam Visa Pro 将人类专家的经验与 AI 的力量相结合：我们的 AI 工具实时分析您的资格，识别申请中的弱点，而我们的专家则优化您的作品集。您将受益于技术与人工的双重检查，确保获得最高的获签率。" }
+      ]
     },
     tourist_page: {
       badge: "旅游休闲",
@@ -2805,10 +3323,31 @@ export const translations = {
       doc4: "前几天的酒店预订证明",
       doc5: "银行流水 (余额 > 20,000 泰铢)",
       warning_title: "注意",
-      warning_desc: "旅游签证不允许您在泰国工作，即使是远程工作也不行。如需远程办公，请选择 DTV 签证。",
+      warning_desc: "旅游签证不允许您在泰国工作，包括远程工作。如需远程工作，请选择 DTV 签证。",
       cta_title: "需要旅游签证方面的帮助吗？",
-      cta_desc: "我们为您核对文件并管理电子签证申请，以最大程度提高您的获批概率。",
-      cta_btn: "预订此签证"
+      cta_desc: "我们将检查您的材料并管理您的电子签证申请，以最大限度提高获签率。",
+      cta_btn: "订购此签证",
+      highs_title: "核心优势",
+      highs: [
+        "流程简单快捷",
+        "领事费用经济",
+        "不需要高额储蓄",
+        "适合探索性旅游"
+      ],
+      lows_title: "限制条件",
+      lows: [
+        "停留时间短（最多90天）",
+        "单次入境（Single Entry）",
+        "严禁工作（包括远程工作）",
+        "需要提供离境机票"
+      ],
+      faq_title: "常见问题 - 旅游签证",
+      faqs: [
+        { q: "我可以在当地将旅游签证转换为其他签证吗？", a: "在某些情况下是可以的（如转换为结婚或退休签证），但这取决于当地移民局的处理。通常在境外重新申请会更简单快捷。" },
+        { q: "我可以多次延长30天签证吗？", a: "不可以。TR 旅游签证的30天延期在每次入境时只能办理一次。" },
+        { q: "如果我在签证到期后继续停留会怎样？", a: "这被称为“逾期滞留”（Overstay）。在机场需缴纳每天500泰铢的罚款。严重逾期可能导致被禁止入境。" },
+        { q: "与自行申请相比，Siam Visa Pro 的价值体现在哪里？", a: "自行申请常因材料不准确而面临拒签风险。Siam Visa Pro 将人类专家的经验与 AI 的力量相结合：我们的 AI 工具实时分析您的资格，识别申请中的弱点，而我们的专家则优化您的作品集。您将受益于技术与人工的双重检查，确保获得最高的获签率。" }
+      ]
     },
     retirement_visa_page: {
       hero_title: "退休签证 (Non-O / O-A)",
@@ -2829,7 +3368,28 @@ export const translations = {
       warning_desc: "退休签证需每年在泰国续签。签证期间资金必须保留在账户中。",
       cta_title: "需要退休签证的陪同办理服务吗？",
       cta_desc: "我们的退休无忧套餐包括保险分析、所有文件验证以及电子签证申请的全流程管理。",
-      cta_btn: "获取帮助"
+      cta_btn: "获取帮助",
+      highs_title: "核心优势",
+      highs: [
+        "长期稳定性",
+        "无上限年龄限制",
+        "在当地续签简便",
+        "享受退休人员福利"
+      ],
+      lows_title: "限制条件",
+      lows: [
+        "最低年龄50岁",
+        "账户需保留80万泰铢储备",
+        "必须购买昂贵的保险",
+        "严禁任何形式的工作"
+      ],
+      faq_title: "常见问题 - 退休签证",
+      faqs: [
+        { q: "80万泰铢必须全年存放在账户中吗？", a: "申请前需存满2个月，获批后需保留3个月。一年中的其余时间，余额不得低于40万泰铢。" },
+        { q: "持有退休签证可以工作吗？", a: "不可以。严禁任何形式的工作（包括有偿或志愿者）。如果您想进行远程工作，DTV 签证更合适。" },
+        { q: "续签时需要离境吗？", a: "不需要。退休签证的延期每年直接在泰国移民局办理，无需离境。" },
+        { q: "与自行申请相比，Siam Visa Pro 的价值体现在哪里？", a: "自行申请常因材料不准确而面临拒签风险。Siam Visa Pro 将人类专家的经验与 AI 的力量相结合：我们的 AI 工具实时分析您的资格，识别申请中的弱点，而我们的专家则优化您的作品集。您将受益于技术与人工的双重检查，确保获得最高的获签率。" }
+      ]
     },
     faq_page: {
       title: "常见问题",
@@ -2891,6 +3451,10 @@ export const translations = {
       contact: "お問い合わせ",
       member: "会員エリア",
       eligibility: "資格確認"
+    },
+    meta: {
+      title: "Siam Visa Pro | タイビザ専門家 - DTV, 観光 & 退職",
+      description: "ストレスなくタイビザを取得。DTV、観光、退職者ビザの専門家。フルサポートと最適化されたポートフォリオを提供します。"
     },
     hero: {
       new_badge: "新着：DTVビザの取り扱い開始",
@@ -3099,8 +3663,29 @@ export const translations = {
       who_softpower: "ソフトパワー",
       who_softpower_desc: "ムエタイ、料理。",
       portfolio_title: "ポートフォリオが必要？",
-      portfolio_desc: "私たちが作成します。",
-      portfolio_btn: "プランを見る"
+      portfolio_desc: "大使館は、ステータスを証明するために「プロフェッショナル・ポートフォリオ」を要求します。当社があなたのために作成します。",
+      portfolio_btn: "パッケージを見る",
+      highs_title: "主な利点",
+      highs: [
+        "5年という驚異的な有効期間",
+        "1回入国につき180日間の滞在（+180日の延長可能）",
+        "合法的なリモートワークの権利",
+        "配偶者および子供も対象"
+      ],
+      lows_title: "注意事項",
+      lows: [
+        "50万バーツ以上の預金証明が必須",
+        "強力な職務経歴書（ポートフォリオ）が必要",
+        "審査期間が比較的長い（5〜15日）",
+        "領事手数料が他より高い（約5万円）"
+      ],
+      faq_title: "よくある質問 - DTVビザ",
+      faqs: [
+        { q: "DTVビザでタイを出入国できますか？", a: "はい、数次入国（マルチプルエントリ）ビザです。5年間の有効期間内であれば、ビザを失効させることなく何度でも出入国が可能です。" },
+        { q: "このビザでタイで納税する必要がありますか？", a: "一般的に、外国企業に雇用され、給与がタイ国内の銀行口座に振り込まれていない場合、DTVによる居住者課税の対象にはなりません（個別の状況については専門家にご確認ください）。" },
+        { q: "家族を帯同できますか？", a: "はい、配偶者および20歳未満のお子様は、あなたのビザに紐付いた「Dependant」ビザを取得でき、同じ期間の滞在が可能です。" },
+        { q: "自分で申請するのと比べて、Siam Visa Proを利用する価値は何ですか？", a: "個人申請では、書類の不備による却下のリスクがあります。Siam Visa Proは人間の専門知識とAIの力を組み合わせます。当社のAIツールがリアルタイムで適格性を分析して弱点を検出し、専門家がポートフォリオを最適化します。テクノロジーと人間のダブルチェックにより、最高水準の承認率を保証します。" }
+      ]
     },
     tourist_page: {
       badge: "観光＆レジャー",
@@ -3163,8 +3748,29 @@ export const translations = {
       warning_title: "注意",
       warning_desc: "観光ビザでは、リモートワークを含めタイ国内での就労は一切認められていません。リモートワーカーの方はDTVビザをご検討ください。",
       cta_title: "観光ビザの申請でお困りですか？",
-      cta_desc: "書類のチェックからE-Visaの申請代行まで、承認率を最大限に高めるサポートをいたします。",
-      cta_btn: "このビザを注文する"
+      cta_desc: "必要書類を不備なく揃え、e-Visa申請を代行することで、承認率を最大限に高めます。",
+      cta_btn: "このビザを申し込む",
+      highs_title: "主な利点",
+      highs: [
+        "シンプルで迅速なプロセス",
+        "手頃な領事手数料",
+        "多額の貯蓄証明は不要",
+        "観光や下見に最適"
+      ],
+      lows_title: "制限事項",
+      lows: [
+        "滞在期間が短い（最長90日）",
+        "1回限りの入国（シングルエントリ）",
+        "就労は厳禁（リモートワーク含む）",
+        "出国便のチケットが必要"
+      ],
+      faq_title: "よくある質問 - 観光ビザ",
+      faqs: [
+        { q: "現地で観光ビザを他のビザに変更できますか？", a: "一部の資格（結婚やリタイアメントビザ等）への変更は可能ですが、現地の出入国管理局の判断によります。多くの場合、一度国外で再申請する方が確実で早いです。" },
+        { q: "30日の延長を複数回行えますか？", a: "いいえ、観光ビザ（TR）の30日延長は、1回の入国につき1回のみ入国管理局で申請可能です。" },
+        { q: "ビザの期限を過ぎて滞在するとどうなりますか？", a: "オーバーステイとなり、空港で1日につき500バーツの罰金が課せられます。長期の超過は将来的な入国禁止措置に繋がる恐れがあります。" },
+        { q: "自分で申請するのと比べて、Siam Visa Proを利用する価値は何ですか？", a: "個人申請では、書類の不備による却下のリスクがあります。Siam Visa Proは人間の専門知識とAIの力を組み合わせます。当社のAIツールがリアルタイムで適格性を分析して弱点を検出し、専門家がポートフォリオを最適化します。テクノロジーと人間のダブルチェックにより、最高水準の承認率を保証します。" }
+      ]
     },
     retirement_visa_page: {
       hero_title: "退職者ビザ (Non-O / O-A)",
@@ -3182,10 +3788,31 @@ export const translations = {
       pitfall3_title: "書類の不備",
       pitfall3_desc: "各国の大使館ごとに独自の要件があります。書類が1枚でも欠ければ自動的に拒否されます。",
       warning_title: "重要事項",
-      warning_desc: "退職者ビザは毎年タイ国内で更新する必要があります。また、ビザの有効期間中は資金を口座に維持しなければなりません。",
-      cta_title: "退職者ビザの申請サポートが必要ですか？",
-      cta_desc: "私たちの安心パックには、保険の分析、全書類の確認、そしてE-Visa申請の完全代行が含まれています。",
-      cta_btn: "相談する"
+      warning_desc: "リタイアメントビザは毎年タイ国内で更新が必要です。また、ビザの有効期間中は所定の資金を口座に維持する必要があります。",
+      cta_title: "リタイアメントビザの申請でお困りですか？",
+      cta_desc: "当社のリタイアメント安心サポートでは、保険の分析から書類チェック、e-Visa申請管理までトータルでサポートします。",
+      cta_btn: "サポートを申し込む",
+      highs_title: "主な利点",
+      highs: [
+        "長期的な安定性",
+        "年齢の上限なし",
+        "現地での更新が容易",
+        "シニア向け特典の利用が可能"
+      ],
+      lows_title: "制限事項",
+      lows: [
+        "50歳以上の年齢制限",
+        "80万バーツを口座に維持する必要あり",
+        "高額な保険加入が必須",
+        "就労不可"
+      ],
+      faq_title: "よくある質問 - リタイアメントビザ",
+      faqs: [
+        { q: "80万バーツは1年中口座に凍結しておく必要がありますか？", a: "申請の2か月前から、および承認後3か月間は全額保持が必要です。それ以外の期間は、残高が40万バーツを下回らないように維持する必要があります。" },
+        { q: "リタイアメントビザで働くことはできますか？", a: "いいえ、有償・無償を問わず一切の就労が禁止されています。リモートワークをご希望の場合はDTVビザが適しています。" },
+        { q: "更新のために出国する必要がありますか？", a: "いいえ、リタイアメントビザの更新（延長）は、毎年タイ国内の入国管理局で完結します。" },
+        { q: "自分で申請するのと比べて、Siam Visa Proを利用する価値は何ですか？", a: "個人申請では、書類の不備による却下のリスクがあります。Siam Visa Proは人間の専門知識とAIの力を組み合わせます。当社のAIツールがリアルタイムで適格性を分析して弱点を検出し、専門家がポートフォリオを最適化します。テクノロジーと人間のダブルチェックにより、最高水準の承認率を保証します。" }
+      ]
     },
     faq_page: {
       title: "よくある質問",
@@ -3247,6 +3874,10 @@ export const translations = {
       contact: "문의하기",
       member: "회원 공간",
       eligibility: "자격 확인"
+    },
+    meta: {
+      title: "Siam Visa Pro | 태국 비자 전문가 - DTV, 관광 및 은퇴",
+      description: "스트레스 없이 태국 비자를 받으세요. DTV, 관광 및 은퇴 비자 전문가. 전체 지원 및 최적화된 포트폴리오 제공."
     },
     hero: {
       new_badge: "신규: DTV 비자 출시",
@@ -3455,8 +4086,29 @@ export const translations = {
       who_softpower: "소프트 파워",
       who_softpower_desc: "무에타이, 요리.",
       portfolio_title: "포트폴리오 필요?",
-      portfolio_desc: "제작해 드립니다.",
-      portfolio_btn: "패키지 보기"
+      portfolio_desc: "대사관은 자격 증명을 위해 '전문 포트폴리오'를 요구합니다. 저희가 직접 제작해 드립니다.",
+      portfolio_btn: "패키지 보기",
+      highs_title: "주요 장점",
+      highs: [
+        "5년이라는 파격적인 유효 기간",
+        "입국당 180일 체류 가능 (+180일 연장 가능)",
+        "합법적인 원격 근무 권리",
+        "배우자 및 자녀 동반 가능"
+      ],
+      lows_title: "주의 사항",
+      lows: [
+        "50만 바트의 재정 증명 필수",
+        "확실한 전문 포트폴리오 요구",
+        "비교적 긴 처리 기간 (5-15일)",
+        "높은 영사 수수료 (약 50만원)"
+      ],
+      faq_title: "자주 묻는 질문 - DTV 비자",
+      faqs: [
+        { q: "DTV 비자로 태국 출입국이 자유로운가요?", a: "네, 복수 입국(Multi-Entries) 비자입니다. 5년 유효 기간 동안 비자 취소 없이 원하는 만큼 출입국이 가능합니다." },
+        { q: "이 비자로 태국에서 세금을 내야 하나요?", a: "일반적으로 외국 회사에서 근무하고 수입이 태국 계좌로 송금되지 않는 경우, DTV 규정에 따라 납세 의무가 없습니다 (개별 상황에 따라 확인 필요)." },
+        { q: "가족이 동반할 수 있나요?", a: "네, 배우자와 20세 미만 자녀는 귀하의 비자와 연계된 'Dependant' DTV 비자를 동일한 기간 동안 취득할 수 있습니다." },
+        { q: "직접 신청하는 것보다 Siam Visa Pro를 이용하면 어떤 점이 좋나요?", a: "혼자 신청할 경우 서류 미비로 인해 거절될 위험이 큽니다. Siam Visa Pro는 인간의 전문성과 AI의 기술을 결합합니다. AI 도구가 실시간으로 승인 가능성을 분석해 약점을 찾아내고, 전문가가 포트폴리오를 최적화합니다. 기술과 전문가의 이중 점검으로 최고의 승인율을 보장합니다." }
+      ]
     },
     tourist_page: {
       badge: "관광 & 레저",
@@ -3482,6 +4134,47 @@ export const translations = {
       upsell_desc: "DTV를 추천합니다.",
       upsell_link: "DTV 보기"
     },
+    tourist_visa_page: {
+      hero_title: "관광 비자 (TR)",
+      hero_subtitle: "최대 90일 동안 태국을 탐험할 수 있는 가장 대중적인 선택.",
+      rules_title: "이용 규칙",
+      duration_title: "체류 기간",
+      duration_desc: "입국 시 60일 체류 가능하며, 현지 이민국에서 30일 추가 연장이 가능합니다.",
+      validity_title: "비자 유효 기간",
+      validity_desc: "비자는 발급일로부터 3개월 동안 유효하며, 단수 입국용입니다.",
+      docs_title: "필요 서류",
+      doc1: "최소 6개월 이상 유효한 여권",
+      doc2: "규격에 맞는 여권 사진",
+      doc3: "왕복 항공권 (출국일 90일 이내)",
+      doc4: "초기 체류 기간의 호텔 예약 확인서",
+      doc5: "은행 잔고 증명서 (20,000 바트 이상)",
+      warning_title: "주의 사항",
+      warning_desc: "관광 비자로는 원격 근무를 포함하여 태국 내에서 일할 수 없습니다. 원격 근무자의 경우 DTV 비자를 선택하세요.",
+      cta_title: "관광 비자 신청에 도움이 필요하신가요?",
+      cta_desc: "저희가 서류를 검토하고 전자비자 신청을 관리하여 승인 확률을 최대로 높여 드립니다.",
+      cta_btn: "이 비자 신청하기",
+      highs_title: "주요 장점",
+      highs: [
+        "간편하고 빠른 절차",
+        "저렴한 영사 수수료",
+        "고액의 잔고 증명 불필요",
+        "탐색형 여행에 최적"
+      ],
+      lows_title: "제한 사항",
+      lows: [
+        "짧은 체류 기간 (최대 90일)",
+        "단수 입국 (Single Entry)",
+        "근무 엄격 금지 (원격 근무 포함)",
+        "출국 항공권 필수"
+      ],
+      faq_title: "자주 묻는 질문 - 관광 비자",
+      faqs: [
+        { q: "현지에서 관광 비자를 다른 비자로 변경할 수 있나요?", a: "일부 경우(결혼 또는 은퇴 비자 등) 가능하지만 현지 이민국 판단에 따릅니다. 보통 국외에서 새로 신청하는 것이 더 빠르고 간편합니다." },
+        { q: "30일 연장을 여러 번 할 수 있나요?", a: "아니요, TR 관광 비자의 30일 연장은 1회 입국당 1회만 이민국에서 가능합니다." },
+        { q: "비자 만료일 이후에 체류하게 되면 어떻게 되나요?", a: "오버스태이(Overstay)가 됩니다. 공항에서 하루당 500 바트의 벌금을 내야 하며, 장기 체류 시 입국 금지 조치가 취해질 수 있습니다." },
+        { q: "직접 신청하는 것보다 Siam Visa Pro를 이용하면 어떤 점이 좋나요?", a: "혼자 신청할 경우 서류 미비로 인해 거절될 위험이 큽니다. Siam Visa Pro는 인간의 전문성과 AI의 기술을 결합합니다. AI 도구가 실시간으로 승인 가능성을 분석해 약점을 찾아내고, 전문가가 포트폴리오를 최적화합니다. 기술과 전문가의 이중 점검으로 최고의 승인율을 보장합니다." }
+      ]
+    },
     retirement_page: {
       badge: "장기 체류",
       title: "은퇴 비자 (Non-O / O-A)",
@@ -3502,26 +4195,6 @@ export const translations = {
       price_desc: "보험 분석 + 서류 정리 + E-Visa 신청 대행",
       btn_support: "도움 받기"
     },
-    tourist_visa_page: {
-      hero_title: "관광 비자 (TR)",
-      hero_subtitle: "최대 90일 동안 태국을 탐험할 수 있는 가장 대중적인 선택.",
-      rules_title: "이용 규칙",
-      duration_title: "체류 기간",
-      duration_desc: "입국 시 60일 체류 가능하며, 현지 이민국에서 30일 추가 연장이 가능합니다.",
-      validity_title: "비자 유효 기간",
-      validity_desc: "비자는 발급일로부터 3개월 동안 유효하며, 단수 입국용입니다.",
-      docs_title: "필요 서류",
-      doc1: "최소 6개월 이상 유효한 여권",
-      doc2: "규격에 맞는 여권 사진",
-      doc3: "왕복 항공권 (출국일 90일 이내)",
-      doc4: "초기 체류 기간의 호텔 예약 확인서",
-      doc5: "은행 잔고 증명서 (20,000 바트 이상)",
-      warning_title: "주의 사항",
-      warning_desc: "관광 비자로는 원격 근무를 포함하여 태국 내에서 일할 수 없습니다. 원격 근무자의 경우 DTV 비자를 선택하세요.",
-      cta_title: "관광 비자 신청에 도움이 필요하신가요?",
-      cta_desc: "서류 확인부터 E-Visa 신청 관리까지, 승인 확률을 높일 수 있도록 도와드립니다.",
-      cta_btn: "이 비자 신청하기"
-    },
     retirement_visa_page: {
       hero_title: "은퇴 비자 (Non-O / O-A)",
       hero_subtitle: "태국의 태양 아래에서 평온하게 은퇴 생활을 만끽하세요.",
@@ -3538,10 +4211,31 @@ export const translations = {
       pitfall3_title: "서류 미비",
       pitfall3_desc: "각 대사관마다 고유한 요구 사항이 있습니다. 서류 하나라도 누락되면 즉시 거절됩니다.",
       warning_title: "중요 정보",
-      warning_desc: "은퇴 비자는 매년 태국에서 갱신해야 합니다. 비자 유지 기간 동안 자금은 계좌에 보존되어야 합니다.",
-      cta_title: "은퇴 비자 신청 동행 서비스가 필요하신가요?",
-      cta_desc: "저희의 '은퇴 평온 패키지'는 보험 분석, 모든 서류 검토 및 E-Visa 신청의 전 과정을 관리해 드립니다.",
-      cta_btn: "도움 받기"
+      warning_desc: "은퇴 비자는 매년 태국에서 갱신해야 하며, 비자 기간 내내 자금을 계좌에 유지해야 합니다.",
+      cta_title: "은퇴 비자 신청 도움이 필요하신가요?",
+      cta_desc: "Retirement Care 패키지는 보험 분석부터 서류 점검, 전자비자 신청 대행까지 원스톱으로 지원합니다.",
+      cta_btn: "도움 받기",
+      highs_title: "주요 장점",
+      highs: [
+        "장기적인 안정성",
+        "연령 상한선 없음",
+        "현지에서 간편한 갱신",
+        "은퇴자 혜택 이용 가능"
+      ],
+      lows_title: "제한 사항",
+      lows: [
+        "최소 연령 50세",
+        "계좌에 80만 바트 유지 필수",
+        "비싼 의료보험 가입 의무",
+        "근무 불가"
+      ],
+      faq_title: "자주 묻는 질문 - 은퇴 비자",
+      faqs: [
+        { q: "80만 바트가 일년 내내 묶여 있어야 하나요?", a: "신청 전 2개월, 승인 후 3개월 동안 유지해야 하며, 나머지 기간에는 잔고가 40만 바트 아래로 내려가면 안 됩니다." },
+        { q: "은퇴 비자로 일할 수 있나요?", a: "아니요, 유료 또는 자원봉사 등 모든 형태의 근무가 엄격히 금지됩니다. 온라인 근무를 원하시면 DTV 비자가 더 적합합니다." },
+        { q: "갱신을 위해 출국해야 하나요?", a: "아니요, 은퇴 비자 연장은 매년 태국 이민국에서 직접 이루어지며 출국 의무는 없습니다." },
+        { q: "직접 신청하는 것보다 Siam Visa Pro를 이용하면 어떤 점이 좋나요?", a: "혼자 신청할 경우 서류 미비로 인해 거절될 위험이 큽니다. Siam Visa Pro는 인간의 전문성과 AI의 기술을 결합합니다. AI 도구가 실시간으로 승인 가능성을 분석해 약점을 찾아내고, 전문가가 포트폴리오를 최적화합니다. 기술과 전문가의 이중 점검으로 최고의 승인율을 보장합니다." }
+      ]
     },
     faq_page: {
       title: "자주 묻는 질문",
@@ -3603,6 +4297,10 @@ export const translations = {
       contact: "اتصل بنا",
       member: "منطقة الأعضاء",
       eligibility: "الأهلية"
+    },
+    meta: {
+      title: "Siam Visa Pro | خبير تأشيرات تايلاند - DTV، السياحة والتقاعد",
+      description: "احصل على تأشيرة تايلاند الخاصة بك دون ضغوط. خبراء في تأشيرات DTV والسياحة والتقاعد. دعم كامل وحقيبة أعمال محسنة."
     },
     hero: {
       new_badge: "جديد: تأشيرة DTV متاحة الآن",
@@ -3811,8 +4509,29 @@ export const translations = {
       who_softpower: "القوة الناعمة",
       who_softpower_desc: "مواي تاي، طبخ.",
       portfolio_title: "تحتاج محفظة؟",
-      portfolio_desc: "نحن ننشئها لك.",
-      portfolio_btn: "شاهد الباقات"
+      portfolio_desc: "تطلب السفارة 'حقيبة أعمال مهنية' لإثبات وضعك. نحن ننشئها لك.",
+      portfolio_btn: "عرض باقاتنا",
+      highs_title: "نقاط القوة",
+      highs: [
+        "صلاحية استثنائية لمدة 5 سنوات",
+        "إقامة لمدة 180 يومًا لكل دخول (+180 يوم تمديد)",
+        "الحق في العمل عن بعد بشكل قانوني",
+        "يغطي الزوج/الزوجة والأطفال"
+      ],
+      lows_title: "نقاط الحذر",
+      lows: [
+        "إثبات مالي بقيمة 500,000 بات إلزامي",
+        "متطلبات حقيبة أعمال مهني قوي",
+        "مواعيد معالجة أطول (5-15 يومًا)",
+        "رسوم قنصلية أعلى (~350 يورو)"
+      ],
+      faq_title: "الأسئلة الشائعة - تأشيرة DTV",
+      faqs: [
+        { q: "هل يمكنني الخروج والعودة إلى تايلاند بتأشيرة DTV؟", a: "نعم، إنها تأشيرة دخول متعددة (Multi-Entries). يمكنك السفر بقدر ما تشاء خلال 5 سنوات دون إلغاء التأشيرة." },
+        { q: "هل يجب أن أدفع ضرائب في تايلاند بهذه التأشيرة؟", a: "بشكل عام، إذا كنت تعمل لشركة أجنبية ولم يتم تحويل دخلك إلى حساب تايلاندي، فأنت لست مقيماً ضريبياً (يتم التأكيد حسب حالتك)." },
+        { q: "هل يمكن لعائلتي مرافقتي؟", a: "نعم، يمكن لزوجك وأطفالك تحت 20 عاماً الحصول على تأشيرة DTV 'Dependant' مرتبطة بتأشيرتك." },
+        { q: "ما هي القيمة المضافة لـ Siam Visa Pro مقارنة بالتقديم الفردي؟", a: "ينطوي التقديم الفردي على مخاطر الرفض بسبب المستندات غير الدقيقة. تجمع Siam Visa Pro بين الخبرة البشرية وقوة الذكاء الاصطناعي: تقوم أدوات الذكاء الاصطناعي لدينا بتحليل أهليتك في الوقت الفعلي لاكتشاف نقاط الضعف، بينما يقوم خبراؤنا بتحسين حقيبة أعمالك. ستستفيد من فحص مزدوج —تقني وبشري— لضمان أعلى معدل موافقة ممكن." }
+      ]
     },
     tourist_page: {
       badge: "سياحة وترفيه",
@@ -3838,6 +4557,47 @@ export const translations = {
       upsell_desc: "DTV أفضل للعمل.",
       upsell_link: "اكتشف DTV"
     },
+    tourist_visa_page: {
+      hero_title: "تأشيرة سياحية (TR)",
+      hero_subtitle: "الخيار الكلاسيكي لاستكشاف تايلاند لمدة تصل إلى 90 يوماً.",
+      rules_title: "قواعد اللعبة",
+      duration_title: "مدة الإقامة",
+      duration_desc: "60 يوماً عند الوصول، قابلة للتمديد لمدة 30 يوماً إضافية في الموقع.",
+      validity_title: "صلاحية التأشيرة",
+      validity_desc: "التأشيرة صالحة لمدة 3 أشهر من تاريخ الإصدار لدخول واحد.",
+      docs_title: "المستندات المطلوبة",
+      doc1: "جواز سفر صالح لمدة 6 أشهر على الأقل",
+      doc2: "صورة شخصية مطابقة للمواصفات",
+      doc3: "تذكرة طيران ذهاب وعودة (المغادرة < 90 يوماً)",
+      doc4: "حجز فندق للأيام الأولى",
+      doc5: "كشف حساب بنكي (الرصيد > 20,000 بات)",
+      warning_title: "تنبيه",
+      warning_desc: "التأشيرة السياحية لا تسمح لك بالعمل في تايلاند، حتى عن بعد. للعمل عن بعد، اختر تأشيرة DTV.",
+      cta_title: "هل تحتاج إلى مساعدة في تأشيرتك السياحية؟",
+      cta_desc: "نقوم بفحص مستنداتك وإدارة طلب التأشيرة الإلكترونية الخاص بك لزيادة فرصك في القبول.",
+      cta_btn: "اطلب هذه التأشيرة",
+      highs_title: "نقاط القوة",
+      highs: [
+        "إجراءات بسيطة وسريعة",
+        "رسوم قنصلية منخفضة",
+        "لا يتطلب إثبات رصيد بنكي كبير",
+        "مثالية للسفر الاستكشافي"
+      ],
+      lows_title: "القيود",
+      lows: [
+        "مدة إقامة قصيرة (90 يوماً كحد أقصى)",
+        "دخول واحد (Single Entry)",
+        "يمنع العمل بشكل صارم (بما في ذلك العمل عن بعد)",
+        "تذكرة مغادرة إلزامية"
+      ],
+      faq_title: "الأسئلة الشائعة - التأشيرة السياحية",
+      faqs: [
+        { q: "هل يمكنني تحويل التأشيرة السياحية إلى نوع آخر من التأشيرات محلياً؟", a: "في بعض الحالات (مثل تأشيرة الزواج أو التقاعد) نعم، ولكن هذا يعتمد على تقدير مكتب الهجرة المحلي. عادة ما يكون التقديم الجديد من خارج البلاد أسرع وأسهل." },
+        { q: "هل يمكنني تمديد الإقامة لمدة 30 يوماً عدة مرات؟", a: "لا، تمديد الـ 30 يوماً لتأشيرة TR السياحية متاح مرة واحدة فقط لكل دخول في مكتب الهجرة." },
+        { q: "ماذا يحدث إذا تجاوزت مدة الإقامة المسموح بها؟", a: "ستكون في حالة 'تجاوز مدة الإقامة' (Overstay). سيتعين عليك دفع غرامة قدرها 500 بات يومياً في المطار، وقد يؤدي تجاوز المدة الطويلة إلى حظر دخولك إلى البلاد." },
+        { q: "ما هي القيمة المضافة لـ Siam Visa Pro مقارنة بالتقديم الفردي؟", a: "ينطوي التقديم الفردي على مخاطر الرفض بسبب المستندات غير الدقيقة. تجمع Siam Visa Pro بين الخبرة البشرية وقوة الذكاء الاصطناعي: تقوم أدوات الذكاء الاصطناعي لدينا بتحليل أهليتك في الوقت الفعلي لاكتشاف نقاط الضعف، بينما يقوم خبراؤنا بتحسين حقيبة أعمالك. ستستفيد من فحص مزدوج —تقني وبشري— لضمان أعلى معدل موافقة ممكن." }
+      ]
+    },
     retirement_page: {
       badge: "طويلة الأمد",
       title: "تأشيرة تقاعد (Non-O / O-A)",
@@ -3858,26 +4618,6 @@ export const translations = {
       price_desc: "تحليل التأمين + إعداد الملف + التأشيرة الإلكترونية",
       btn_support: "احصل على مساعدة"
     },
-    tourist_visa_page: {
-      hero_title: "تأشيرة سياحية (TR)",
-      hero_subtitle: "الخيار الكلاسيكي لاستكشاف تايلاند لمدة تصل إلى 90 يوماً.",
-      rules_title: "قواعد اللعبة",
-      duration_title: "مدة الإقامة",
-      duration_desc: "60 يوماً عند الوصول، قابلة للتمديد لمدة 30 يوماً إضافية في الموقع.",
-      validity_title: "صلاحية التأشيرة",
-      validity_desc: "التأشيرة صالحة لمدة 3 أشهر من تاريخ الإصدار لدخول واحد.",
-      docs_title: "المستندات المطلوبة",
-      doc1: "جواز سفر صالح لمدة 6 أشهر على الأقل",
-      doc2: "صورة شخصية مطابقة للمواصفات",
-      doc3: "تذكرة طيران ذهاب وعودة (المغادرة < 90 يوماً)",
-      doc4: "حجز فندق للأيام الأولى",
-      doc5: "كشف حساب بنكي (الرصيد > 20,000 بات)",
-      warning_title: "تنبيه",
-      warning_desc: "التأشيرة السياحية لا تسمح لك بالعمل في تايلاند، حتى عن بعد. للعمل عن بعد، اختر تأشيرة DTV.",
-      cta_title: "هل تحتاج إلى مساعدة في تأشيرتك السياحية؟",
-      cta_desc: "نقوم بفحص مستنداتك وإدارة طلب التأشيرة الإلكترونية الخاص بك لزيادة فرصك في القبول.",
-      cta_btn: "اطلب هذه التأشيرة"
-    },
     retirement_visa_page: {
       hero_title: "تأشيرة تقاعد (Non-O / O-A)",
       hero_subtitle: "استمتع بتقاعدك تحت شمس تايلاند بكل طمأنينة.",
@@ -3894,10 +4634,31 @@ export const translations = {
       pitfall3_title: "مستندات غير مكتملة",
       pitfall3_desc: "كل سفارة لها متطلباتها الخاصة. مستند واحد مفقود = رفض تلقائي.",
       warning_title: "معلومات هامة",
-      warning_desc: "يجب تجديد تأشيرة التقاعد كل عام في تايلاند. يجب أن تظل الأموال في الحساب طوال مدة التأشيرة.",
-      cta_title: "هل تحتاج إلى مرافقة للحصول على تأشيرة التقاعد الخاصة بك؟",
-      cta_desc: "تشمل باقة رعاية المتقاعدين الخاصة بنا تحليل التأمين الخاص بك، والتحقق من جميع مستنداتك والإدارة الكاملة لطلب التأشيرة الإلكترونية الخاص بك.",
-      cta_btn: "احصل على مساعدة"
+      warning_desc: "تأشيرة التقاعد يجب تجديدها كل عام في تايلاند. يجب أن تظل الأموال في الحساب طوال مدة التأشيرة.",
+      cta_title: "هل تحتاج إلى مساعدة في تأشيرة التقاعد الخاصة بك؟",
+      cta_desc: "باقة Retirement Care الخاصة بنا تشمل تحليل التأمين، والتحقق من جميع الوثائق، وإدارة طلب E-Visa بالكامل.",
+      cta_btn: "احصل على المساعدة",
+      highs_title: "نقاط القوة",
+      highs: [
+        "استقرار على المدى الطويل",
+        "لا يوجد حد أقصى للسن",
+        "تجديد سهل في الموقع",
+        "الوصول إلى مزايا المتقاعدين"
+      ],
+      lows_title: "القيود",
+      lows: [
+        "الحد الأدنى للسن 50 عاماً",
+        "يجب بقاء 800,000 بات في الحساب",
+        "تأمين إلزامي مكلف",
+        "لا يوجد تصريح عمل"
+      ],
+      faq_title: "الأسئلة الشائعة - تأشيرة التقاعد",
+      faqs: [
+        { q: "هل يجب أن تظل الأموال (800,000 بات) مجمدة طوال العام؟", a: "يجب توفر الأموال قبل شهرين من الطلب و3 أشهر بعد الموافقة. لبقية العام، يجب ألا يقل الرصيد عن 400,000 بات." },
+        { q: "هل يمكنني العمل بتأشيرة تقاعد؟", a: "لا، يمنع العمل بكل أشكاله. إذا كنت ترغب في العمل عبر الإنترنت، فإن تأشيرة DTV هي الأنسب." },
+        { q: "هل يجب أن أغادر البلاد لتجديد التأشيرة؟", a: "لا، يتم تمديد تأشيرة التقاعد سنوياً مباشرة في مكتب الهجرة في تايلاند." },
+        { q: "ما هي القيمة المضافة لـ Siam Visa Pro مقارنة بالتقديم الفردي؟", a: "ينطوي التقديم الفردي على مخاطر الرفض بسبب المستندات غير الدقيقة. تجمع Siam Visa Pro بين الخبرة البشرية وقوة الذكاء الاصطناعي: تقوم أدوات الذكاء الاصطناعي لدينا بتحليل أهليتك في الوقت الفعلي لاكتشاف نقاط الضعف، بينما يقوم خبراؤنا بتحسين حقيبة أعمالك. ستستفيد من فحص مزدوج —تقني وبشري— لضمان أعلى معدل موافقة ممكن." }
+      ]
     },
     faq_page: {
       title: "أسئلة شائعة",

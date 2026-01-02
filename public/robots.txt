@@ -1,12 +1,37 @@
-# User-agent: *
+# https://www.robotstxt.org/robotstxt.html
+# Siam Visa Pro - Robots configuration
+
+# Standard Search Engines - ALLOWED
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: DuckDuckBot
+User-agent: Slurp
+User-agent: Baiduspider
+User-agent: Yandex
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Social Media & Messaging Crawlers - ALLOWED for link previews
+User-agent: Facebot
+User-agent: facebookexternalhit
+User-agent: Twitterbot
+User-agent: LinkedInBot
+User-agent: WhatsApp
 Allow: /
 
-# Sitemap
-Sitemap: https://siamvisapro.com/sitemap.xml
-
-# Disallow admin and API routes
+# General global rules
 User-agent: *
+Allow: /
 Disallow: /api/
 Disallow: /admin/
 Disallow: /_next/
 Disallow: /legacy_vite/
+Disallow: /cgi-bin/
+
+# Host and Sitemap
+Host: https://siamvisapro.com
+Sitemap: https://siamvisapro.com/sitemap.xml

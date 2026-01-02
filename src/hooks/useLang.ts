@@ -21,19 +21,21 @@ export function useCurrentLang(): SupportedLang {
     return 'fr';
 }
 
-export function useLangPath(path: string): string {
+export function useLangPath() {
     const lang = useCurrentLang();
 
-    // Remove leading slash if present
-    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    return (path: string) => {
+        // Remove leading slash if present
+        const cleanPath = path.startsWith('/') ? path.slice(1) : path;
 
-    // Check if it's a known page key
-    const pageKey = (cleanPath === '' ? 'home' : cleanPath) as PageKey;
+        // Check if it's a known page key
+        const pageKey = (cleanPath === '' ? 'home' : cleanPath) as PageKey;
 
-    try {
-        return getTranslatedPath(pageKey, lang);
-    } catch (e) {
-        // Fallback to simple language prefix if not in map
-        return `/${lang}/${cleanPath}`;
-    }
+        try {
+            return getTranslatedPath(pageKey, lang);
+        } catch (e) {
+            // Fallback to simple language prefix if not in map
+            return `/${lang}/${cleanPath}`;
+        }
+    };
 }

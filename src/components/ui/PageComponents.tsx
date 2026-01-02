@@ -218,3 +218,107 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
         </a>
     );
 };
+
+/**
+ * Highs & Lows Component
+ */
+interface HighsLowsProps {
+    highsTitle: string;
+    highs: string[];
+    lowsTitle: string;
+    lows: string[];
+}
+
+import { CheckCircle2, AlertCircle } from 'lucide-react';
+
+export const HighsLows: React.FC<HighsLowsProps> = ({
+    highsTitle,
+    highs,
+    lowsTitle,
+    lows
+}) => {
+    return (
+        <div className="grid md:grid-cols-2 gap-8 my-16">
+            <div className="bg-green-50 rounded-2xl p-8 border border-green-100 shadow-sm transition hover:shadow-md">
+                <div className="flex items-center gap-3 mb-6">
+                    <div className="bg-green-100 p-2 rounded-lg">
+                        <CheckCircle2 className="h-6 w-6 text-green-600" />
+                    </div>
+                    <h3 className="text-xl font-bold text-green-900">{highsTitle}</h3>
+                </div>
+                <ul className="space-y-4">
+                    {highs.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                            <div className="h-1.5 w-1.5 rounded-full bg-green-500 mt-2.5 flex-shrink-0" />
+                            <span className="text-green-800 font-medium leading-relaxed">{item}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <div className="bg-red-50 rounded-2xl p-8 border border-red-100 shadow-sm transition hover:shadow-md">
+                <div className="flex items-center gap-3 mb-6">
+                    <div className="bg-red-100 p-2 rounded-lg">
+                        <AlertCircle className="h-6 w-6 text-red-600" />
+                    </div>
+                    <h3 className="text-xl font-bold text-red-900">{lowsTitle}</h3>
+                </div>
+                <ul className="space-y-4">
+                    {lows.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                            <div className="h-1.5 w-1.5 rounded-full bg-red-500 mt-2.5 flex-shrink-0" />
+                            <span className="text-red-800 font-medium leading-relaxed">{item}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    );
+};
+
+/**
+ * FAQ Accordion Component
+ */
+interface FAQAccordionProps {
+    title: string;
+    faqs: { q: string; a: React.ReactNode }[];
+}
+
+import { ChevronDown, ChevronUp } from 'lucide-react';
+
+export const FAQAccordion: React.FC<FAQAccordionProps> = ({ title, faqs }) => {
+    const [openIndex, setOpenIndex] = React.useState<number | null>(0);
+
+    return (
+        <div className="my-16">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">{title}</h2>
+            <div className="max-w-3xl mx-auto space-y-4">
+                {faqs.map((faq, index) => (
+                    <div
+                        key={index}
+                        className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition"
+                    >
+                        <button
+                            className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                            onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                        >
+                            <span className={`font-bold transition-colors ${openIndex === index ? 'text-amber-600' : 'text-slate-800'}`}>
+                                {faq.q}
+                            </span>
+                            {openIndex === index ? (
+                                <ChevronUp className="h-5 w-5 text-amber-500" />
+                            ) : (
+                                <ChevronDown className="h-5 w-5 text-slate-400" />
+                            )}
+                        </button>
+                        {openIndex === index && (
+                            <div className="px-6 pb-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-50 pt-4">
+                                {faq.a}
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};

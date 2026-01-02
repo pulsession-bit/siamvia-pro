@@ -4,8 +4,30 @@ import { CartProvider } from '@/contexts/CartContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CartDrawer from '@/components/CartDrawer';
+import { translations } from '@/utils/translations';
+import { Metadata } from 'next';
 
 const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+    const { lang } = await params;
+    const t = translations[lang as keyof typeof translations] || translations.en;
+
+    // Fallback to home metadata if available
+    const meta = (t as any).meta || { title: "Siam Visa Pro", description: "Thailand Visa Expert" };
+
+    return {
+        title: meta.title,
+        description: meta.description,
+        alternates: {
+            canonical: `https://siamvisapro.com/${lang}`,
+            languages: languages.reduce((acc, l) => {
+                acc[l] = `https://siamvisapro.com/${l}`;
+                return acc;
+            }, {} as Record<string, string>),
+        },
+    };
+}
 
 // This is a Server Component - generateStaticParams works here
 export function generateStaticParams() {

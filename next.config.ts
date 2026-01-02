@@ -16,6 +16,8 @@ const nextConfig: NextConfig = {
         'tourist-visa': 'visa-touristique-thailande',
         'retirement-visa': 'visa-retraite-thailande',
         services: 'services-et-tarifs',
+        contact: 'nous-contacter',
+        faq: 'questions-frequentes',
         terms: 'conditions-generales'
       },
       en: {
@@ -23,6 +25,8 @@ const nextConfig: NextConfig = {
         'tourist-visa': 'thailand-tourist-visa',
         'retirement-visa': 'thailand-retirement-visa',
         services: 'services-and-rates',
+        contact: 'contact-us',
+        faq: 'frequently-asked-questions',
         terms: 'terms-and-conditions'
       },
       de: {
@@ -31,6 +35,7 @@ const nextConfig: NextConfig = {
         'retirement-visa': 'thailand-ruhestandsvisum',
         services: 'leistungen-und-preise',
         contact: 'kontakt',
+        faq: 'haeufig-gestellte-fragen',
         terms: 'allgemeine-geschaeftsbedingungen'
       },
       es: {

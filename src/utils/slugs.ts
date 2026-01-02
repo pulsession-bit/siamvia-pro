@@ -8,8 +8,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'tourist-visa': 'visa-touristique-thailande',
         'retirement-visa': 'visa-retraite-thailande',
         services: 'services-et-tarifs',
-        contact: 'contact',
-        faq: 'faq',
+        contact: 'nous-contacter',
+        faq: 'questions-frequentes',
         terms: 'conditions-generales'
     },
     en: {
@@ -18,8 +18,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'tourist-visa': 'thailand-tourist-visa',
         'retirement-visa': 'thailand-retirement-visa',
         services: 'services-and-rates',
-        contact: 'contact',
-        faq: 'faq',
+        contact: 'contact-us',
+        faq: 'frequently-asked-questions',
         terms: 'terms-and-conditions'
     },
     de: {
@@ -29,7 +29,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'retirement-visa': 'thailand-ruhestandsvisum',
         services: 'leistungen-und-preise',
         contact: 'kontakt',
-        faq: 'faq',
+        faq: 'haeufig-gestellte-fragen',
         terms: 'allgemeine-geschaeftsbedingungen'
     },
     es: {

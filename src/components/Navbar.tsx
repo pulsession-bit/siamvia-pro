@@ -5,7 +5,7 @@ import { Plane, Menu, X, ChevronDown, Globe } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useLanguage } from '../contexts/LanguageContext';
-import { useCurrentLang } from '../hooks/useLang';
+import { useCurrentLang, useLangPath } from '../hooks/useLang';
 import { REVERSE_MAP, PageKey, getTranslatedPath } from '../utils/slugs';
 
 const languages = [
@@ -32,11 +32,7 @@ const Navbar: React.FC = () => {
 
   const SCORING_ENGINE_URL = 'https://desk.siamvisapro.com';
 
-  // Helper to create language-aware path
-  const langPath = (path: string) => {
-    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-    return `/${currentLang}/${cleanPath}`;
-  };
+  const langPath = useLangPath();
 
   // Helper to switch language while staying on same page
   const switchLanguage = (newLang: string) => {

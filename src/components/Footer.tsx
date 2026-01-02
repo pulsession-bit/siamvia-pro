@@ -4,7 +4,7 @@ import React from 'react';
 import { Mail, Phone, MapPin, ShieldCheck, Landmark } from 'lucide-react';
 import Link from 'next/link';
 import { useLanguage } from '../contexts/LanguageContext';
-import { useCurrentLang } from '../hooks/useLang';
+import { useCurrentLang, useLangPath } from '../hooks/useLang';
 
 // WhatsApp Logo Component for Footer
 const WhatsAppIcon = ({ className }: { className?: string }) => (
@@ -17,11 +17,7 @@ const Footer: React.FC = () => {
   const { t } = useLanguage();
   const lang = useCurrentLang();
 
-  // Helper to create language-aware path
-  const langPath = (path: string) => {
-    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-    return `/${lang}/${cleanPath}`;
-  };
+  const langPath = useLangPath();
 
   return (
     <footer className="bg-slate-900 text-white pt-16 pb-8 border-t border-slate-800">
