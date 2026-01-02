@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useCurrentLang } from '../hooks/useLang';
+import { REVERSE_MAP, PageKey, getTranslatedPath } from '../utils/slugs';
 
 const languages = [
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
@@ -40,9 +41,20 @@ const Navbar: React.FC = () => {
   // Helper to switch language while staying on same page
   const switchLanguage = (newLang: string) => {
     // Get current path without language prefix
-    const pathWithoutLang = pathname?.replace(/^\/(fr|en|de|es|it|th|ru|zh|ja|ko|ar)/, '') || '';
-    // Navigate to same page in new language
-    router.push(`/${newLang}${pathWithoutLang}`);
+    const pathWithoutLang = pathname?.replace(/^\/([a-z]{2})/, '') || '';
+    const cleanPath = pathWithoutLang.startsWith('/') ? pathWithoutLang.slice(1) : pathWithoutLang;
+
+    // Check if current slug is a translated version of a page
+    const currentLangSlugs = REVERSE_MAP[currentLang] || {};
+    const pageKey = (cleanPath === '' ? 'home' : currentLangSlugs[cleanPath]) as PageKey;
+
+    if (pageKey) {
+      // We found the page key, now get the slug in the new language
+      router.push(getTranslatedPath(pageKey, newLang));
+    } else {
+      // Fallback: stay on same path but with new language prefix
+      router.push(`/${newLang}/${cleanPath}`);
+    }
   };
 
   return (
