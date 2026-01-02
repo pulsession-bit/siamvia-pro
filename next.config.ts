@@ -52,6 +52,7 @@ const nextConfig: NextConfig = {
         terms: 'termini-e-condizioni'
       },
       th: {
+        dtv: 'visa-dtv-thailand',
         'tourist-visa': 'วีซ่าท่องเที่ยว',
         'retirement-visa': 'วีซ่าเกษียณอายุ',
         services: 'บริการและราคา',

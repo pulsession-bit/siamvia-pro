@@ -46,7 +46,8 @@ const Navbar: React.FC = () => {
 
     // Check if current slug is a translated version of a page
     const currentLangSlugs = REVERSE_MAP[currentLang] || {};
-    const pageKey = (cleanPath === '' ? 'home' : currentLangSlugs[cleanPath]) as PageKey;
+    const decodedPath = decodeURIComponent(cleanPath);
+    const pageKey = (decodedPath === '' ? 'home' : currentLangSlugs[decodedPath]) as PageKey;
 
     if (pageKey) {
       // We found the page key, now get the slug in the new language
