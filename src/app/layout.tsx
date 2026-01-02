@@ -1,11 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import CartDrawer from '@/components/CartDrawer';
-import { LanguageProvider } from '@/contexts/LanguageContext';
-import { CartProvider } from '@/contexts/CartContext';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -58,14 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <LanguageProvider>
-          <CartProvider>
-            <Navbar />
-            <CartDrawer />
-            <main className="min-h-screen pt-20">{children}</main>
-            <Footer />
-          </CartProvider>
-        </LanguageProvider>
+        {children}
         <SpeedInsights />
       </body>
     </html>
