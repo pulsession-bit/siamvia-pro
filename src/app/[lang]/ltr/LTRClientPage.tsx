@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Check, Shield, TrendingUp, Award, DollarSign } from 'lucide-react';
+import { Check, Shield, TrendingUp, Award, DollarSign, Briefcase, Users, Globe } from 'lucide-react';
 import { ExpertAppointmentForm } from '@/components/ExpertAppointmentForm';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { HighsLows, FAQAccordion } from '@/components/ui/PageComponents';
+import { HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
 
 const LTRClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -121,41 +121,25 @@ const LTRClientPage: React.FC = () => {
                 </div>
             </section>
 
-            {/* Tax & Wealth Highlight */}
-            <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] -mr-32 -mt-32"></div>
-                <div className="max-w-7xl mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-16 items-center">
-                    <div>
-                        <h3 className="text-3xl md:text-5xl font-black mb-6 leading-tight">
-                            Optimisation Fiscale & <span className="text-amber-500">Liberté</span>
-                        </h3>
-                        <p className="text-slate-300 text-lg leading-relaxed mb-8">
-                            Contrairement au Visa Elite qui est un pur visa touristique de luxe, le LTR est un visa de résident qui vous permet de travailler et d'optimiser votre fiscalité (17% flat tax pour les professionnels qualifiés).
-                        </p>
-                        <ul className="space-y-4">
-                            <li className="flex items-center gap-4">
-                                <div className="bg-amber-500/20 p-2 rounded-lg text-amber-500"><DollarSign size={20} /></div>
-                                <span className="font-bold">Pas d'impôt sur les revenus étrangers</span>
-                            </li>
-                            <li className="flex items-center gap-4">
-                                <div className="bg-amber-500/20 p-2 rounded-lg text-amber-500"><Shield size={20} /></div>
-                                <span className="font-bold">Protection des actifs</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-3xl">
-                        <h4 className="text-xl font-bold mb-6 text-center border-b border-white/10 pb-4">Profils Éligibles</h4>
-                        <div className="grid gap-4">
-                            {content.categories.map((cat, i) => (
-                                <div key={i} className="bg-white/10 p-4 rounded-xl flex items-center justify-between hover:bg-amber-500/20 transition cursor-default">
-                                    <span className="font-medium">{cat}</span>
-                                    <Check className="text-amber-500 w-5 h-5" />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
+
+            {/* High Value Feature Block */}
+            <HighValueBlock
+                title={t('ltr_page.high_value.title') || "Optimisation Fiscale"}
+                highlight={t('ltr_page.high_value.highlight') || "& Liberté"}
+                description={t('ltr_page.high_value.description') || "Le LTR n'est pas qu'un visa, c'est un statut de résident privilégié qui vous permet de travailler légalement et d'optimiser votre fiscalité avec un taux forfaitaire de 17% pour les professionnels qualifiés."}
+                listItems={[
+                    { icon: DollarSign, text: t('ltr_page.high_value.item1') || "17% Flat Tax (Professionnels)" },
+                    { icon: Briefcase, text: t('ltr_page.high_value.item2') || "Permis de Travail Inclus" },
+                    { icon: Globe, text: t('ltr_page.high_value.item3') || "Exonération Revenus Étrangers" }
+                ]}
+                cardTitle={t('ltr_page.high_value.card_title') || "Avantages Exclusifs"}
+                cardItems={[
+                    t('ltr_page.high_value.card_item1') || "Fast Track Aéroport VIP",
+                    t('ltr_page.high_value.card_item2') || "Pas de Rapport 90 Jours",
+                    t('ltr_page.high_value.card_item3') || "4 Dépendants Inclus",
+                    t('ltr_page.high_value.card_item4') || "Résidence Fiscale Privilégiée"
+                ]}
+            />
 
             {/* Pros & Cons / Comparison */}
             <HighsLows

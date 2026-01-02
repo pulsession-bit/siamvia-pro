@@ -94,20 +94,20 @@ const EliteClientPage: React.FC = () => {
                     </div>
 
                     <HighValueBlock
-                        title="Prestige & Sérénité"
-                        highlight="Absolue"
-                        description="Pas de files d'attente, pas de rapports de 90 jours compliqués, pas de tracas. Juste le plaisir de vivre en Thaïlande avec un statut VIP garanti par l'État."
+                        title={t('elite_page.high_value.title') || "Prestige & Sérénité"}
+                        highlight={t('elite_page.high_value.highlight') || "Absolue"}
+                        description={t('elite_page.high_value.description') || "Pas de files d'attente, pas de rapports de 90 jours compliqués, pas de tracas. Juste le plaisir de vivre en Thaïlande avec un statut VIP garanti par l'État."}
                         listItems={[
-                            { icon: Plane, text: "Fast Track Aéroport VIP" },
-                            { icon: Crown, text: "Adhésion 5 à 20 Ans" },
-                            { icon: Phone, text: "Conciergerie 24/7" }
+                            { icon: Plane, text: t('elite_page.high_value.item1') || "Fast Track Aéroport VIP" },
+                            { icon: Crown, text: t('elite_page.high_value.item2') || "Adhésion 5 à 20 Ans" },
+                            { icon: Phone, text: t('elite_page.high_value.item3') || "Conciergerie 24/7" }
                         ]}
-                        cardTitle="Services Inclus"
+                        cardTitle={t('elite_page.high_value.card_title') || "Services Inclus"}
                         cardItems={[
-                            "Service Limousine",
-                            "Privilèges Golf & Spa",
-                            "Ouverture Compte Bancaire",
-                            "Check-up Santé Annuel"
+                            t('elite_page.high_value.card_item1') || "Service Limousine",
+                            t('elite_page.high_value.card_item2') || "Privilèges Golf & Spa",
+                            t('elite_page.high_value.card_item3') || "Ouverture Compte Bancaire",
+                            t('elite_page.high_value.card_item4') || "Check-up Santé Annuel"
                         ]}
                     />
 

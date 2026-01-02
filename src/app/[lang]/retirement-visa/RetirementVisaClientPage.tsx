@@ -5,12 +5,14 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
 import { URLS, IMAGES } from '@/constants';
 import { HeroSection, PageContainer, Card, CTAButton, HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
+import { ExpertAppointmentForm } from '@/components/ExpertAppointmentForm';
 import { RelatedPages } from '@/components/RelatedPages';
-import { Briefcase, Plane, HelpCircle, Check, AlertTriangle, Heart, Shield, Stethoscope, Wallet, Infinity } from 'lucide-react';
+import { Briefcase, Plane, HelpCircle, Check, AlertTriangle, Heart, Shield, Stethoscope, Wallet, Infinity, MessageSquare, Phone, Mail, Video, Clock, Calendar } from 'lucide-react';
 
 const RetirementVisaClientPage: React.FC = () => {
     const { t } = useLanguage();
     const langPath = useLangPath();
+    const SCORING_ENGINE_URL = 'https://desk.siamvisapro.com';
 
     return (
         <div className="bg-slate-50 min-h-screen">
@@ -76,20 +78,20 @@ const RetirementVisaClientPage: React.FC = () => {
 
                 {/* High Value Feature Block */}
                 <HighValueBlock
-                    title="Douceur de Vivre"
-                    highlight="& Sécurité"
-                    description="Profitez d'une retraite dorée au pays du sourire avec un coût de la vie avantageux et des infrastructures médicales de classe mondiale. Une retraite paisible sans compromis."
+                    title={t('retirement_visa_page.high_value.title') || "Douceur de Vivre"}
+                    highlight={t('retirement_visa_page.high_value.highlight') || "& Sécurité"}
+                    description={t('retirement_visa_page.high_value.description') || "Profitez d'une retraite dorée au pays du sourire avec un coût de la vie avantageux et des infrastructures médicales de classe mondiale. Une retraite paisible sans compromis."}
                     listItems={[
-                        { icon: Wallet, text: "Coût de la vie avantageux" },
-                        { icon: Infinity, text: "Renouvelable à l'infini" },
-                        { icon: Stethoscope, text: "Médecine de Classe Mondiale" }
+                        { icon: Wallet, text: t('retirement_visa_page.high_value.item1') || "Coût de la vie avantageux" },
+                        { icon: Infinity, text: t('retirement_visa_page.high_value.item2') || "Renouvelable à l'infini" },
+                        { icon: Stethoscope, text: t('retirement_visa_page.high_value.item3') || "Médecine de Classe Mondiale" }
                     ]}
-                    cardTitle="Tranquillité d'Esprit"
+                    cardTitle={t('retirement_visa_page.high_value.card_title') || "Tranquillité d'Esprit"}
                     cardItems={[
-                        "Ouverture Compte Bancaire",
-                        "Assurance Santé (Facilitée)",
-                        "Assistance TM30/90 Jours",
-                        "Importation Effets Personnels"
+                        t('retirement_visa_page.high_value.card_item1') || "Ouverture Compte Bancaire",
+                        t('retirement_visa_page.high_value.card_item2') || "Assurance Santé (Facilitée)",
+                        t('retirement_visa_page.high_value.card_item3') || "Assistance TM30/90 Jours",
+                        t('retirement_visa_page.high_value.card_item4') || "Importation Effets Personnels"
                     ]}
                 />
 
@@ -155,17 +157,46 @@ const RetirementVisaClientPage: React.FC = () => {
                 />
 
                 {/* CTA Section */}
-                <Card variant="dark" className="text-center">
+                <Card variant="dark" className="text-center mb-12">
                     <h3 className="text-2xl font-bold text-amber-400 mb-4">
                         {t('retirement_visa_page.cta_title')}
                     </h3>
                     <p className="text-slate-300 mb-8 max-w-2xl mx-auto">
                         {t('retirement_visa_page.cta_desc')}
                     </p>
-                    <CTAButton href={URLS.SCORING_ENGINE} variant="primary">
+                    <CTAButton href={SCORING_ENGINE_URL} variant="primary">
                         {t('retirement_visa_page.cta_btn')}
                     </CTAButton>
                 </Card>
+
+                {/* Appointment Section */}
+                <section id="appointment-section" className="py-24 bg-slate-50 border-t rounded-[3rem] overflow-hidden mb-12">
+                    <div className="max-w-5xl mx-auto px-4">
+                        <div className="bg-white rounded-[2rem] shadow-2xl overflow-hidden lg:grid lg:grid-cols-2">
+                            <div className="p-10 lg:p-16 bg-slate-900 text-white flex flex-col justify-center">
+                                <h2 className="text-3xl font-black mb-6 leading-tight">Expertise <span className="text-amber-500">Retraite</span></h2>
+                                <p className="text-slate-400 mb-8">La retraite en Thaïlande demande une préparation minutieuse des preuves bancaires et de l'assurance santé. Évitez les refus avec notre audit gratuit.</p>
+                                <ul className="space-y-4 bg-white/5 p-6 rounded-2xl border border-white/10">
+                                    <li className="flex items-center space-x-3 text-sm font-bold">
+                                        <Check className="text-amber-500 w-5 h-5 flex-shrink-0" />
+                                        <span>Audit financier (800k THB)</span>
+                                    </li>
+                                    <li className="flex items-center space-x-3 text-sm font-bold">
+                                        <Check className="text-amber-500 w-5 h-5 flex-shrink-0" />
+                                        <span>Vérification Assurance Santé</span>
+                                    </li>
+                                    <li className="flex items-center space-x-3 text-sm font-bold">
+                                        <Check className="text-amber-500 w-5 h-5 flex-shrink-0" />
+                                        <span>Liaison Ambassade E-Visa</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="p-10 lg:p-16">
+                                <ExpertAppointmentForm />
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </PageContainer>
         </div>
     );

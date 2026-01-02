@@ -52,18 +52,20 @@ export const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!isAuthReady) {
-      setErrorMessage("Session non initialisée, veuillez réessayer");
-      return;
-    }
-
     setIsSubmitting(true);
     setSubmitStatus('idle');
     setErrorMessage("");
 
+    if (!isAuthReady) {
+      setErrorMessage("Session non initialisée, veuillez réessayer");
+      setSubmitStatus('error');
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       // Save to Firestore (avec session auth active)
-      await addDoc(collection(db, "appointments"), {
+      const docRef = await addDoc(collection(db, "appointments"), {
         date,
         slot1,
         slot2,
@@ -73,15 +75,18 @@ export const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
         status: "pending",
         createdAt: serverTimestamp(),
         source: "website",
-        userId: auth.currentUser?.uid
+        userId: auth.currentUser?.uid || 'anonymous'
       });
 
+      console.log("Appointment saved with ID: ", docRef.id);
       setSubmitStatus('success');
-      if (onSuccess) setTimeout(onSuccess, 3000);
+      if (onSuccess) {
+        setTimeout(onSuccess, 3000);
+      }
     } catch (error: any) {
       console.error("Error saving appointment:", error);
       setSubmitStatus('error');
-      setErrorMessage(error.message || "Une erreur est survenue");
+      setErrorMessage(error.message || "Une erreur est survenue lors de l'envoi. Veuillez réessayer.");
     } finally {
       setIsSubmitting(false);
     }
@@ -89,19 +94,25 @@ export const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
 
   if (submitStatus === 'success') {
     return (
-      <div className="flex flex-col items-center justify-center p-8 text-center animate-fade-in">
+      <div className="flex flex-col items-center justify-center p-8 text-center animate-fade-in min-h-[400px]">
         <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mb-6 border border-green-100">
           <CheckCircle className="w-10 h-10 text-green-500" />
         </div>
         <h3 className="text-2xl font-bold text-slate-900 mb-2">{t('appointment.success_title')}</h3>
         <p className="text-slate-500 mb-8 max-w-xs">{t('appointment.success_desc')}</p>
-        <button onClick={onSuccess} className="bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:bg-slate-800 transition shadow-lg">Continuer</button>
+        <button
+          type="button"
+          onClick={() => onSuccess ? onSuccess() : window.location.reload()}
+          className="bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:bg-slate-800 transition shadow-lg"
+        >
+          {onSuccess ? 'Continuer' : 'Fermer'}
+        </button>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full space-y-6">
+    <form onSubmit={handleSubmit} className={`w-full space-y-6 transition-opacity duration-300 ${isSubmitting ? 'opacity-50 pointer-events-none' : 'opacity-100'}`}>
       <div className="text-center mb-8">
         <h2 className="text-2xl font-black text-slate-900">{t('appointment.title')}</h2>
         <p className="text-slate-500 text-sm mt-1">{t('appointment.subtitle')}</p>
@@ -159,7 +170,7 @@ export const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
         />
       </div>
 
-      {submitStatus === 'error' && errorMessage && (
+      {errorMessage && (
         <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-red-700 text-sm">
           <strong>Erreur :</strong> {errorMessage}
         </div>

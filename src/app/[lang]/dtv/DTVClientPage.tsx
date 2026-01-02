@@ -150,20 +150,20 @@ const DTVClientPage: React.FC = () => {
 
                 {/* High Value Feature Block */}
                 <HighValueBlock
-                    title="Liberté Numérique"
-                    highlight="& Workcation"
-                    description="Travaillez depuis la Thaïlande sans tracas visa ni impôts sur vos revenus étrangers (si <180j/an). Le DTV est la clé pour 5 ans de sérénité."
+                    title={t('dtv_page.high_value.title') || "Liberté Numérique"}
+                    highlight={t('dtv_page.high_value.highlight') || "& Workcation"}
+                    description={t('dtv_page.high_value.description') || "Travaillez depuis la Thaïlande sans tracas visa ni impôts sur vos revenus étrangers (si <180j/an). Le DTV est la clé pour 5 ans de sérénité."}
                     listItems={[
-                        { icon: Laptop, text: "Work From Anywhere" },
-                        { icon: Calendar, text: "5 Ans de Validité (180j/entrée)" },
-                        { icon: DollarSign, text: "Fiscalité Avantageuse" }
+                        { icon: Laptop, text: t('dtv_page.high_value.item1') || "Work From Anywhere" },
+                        { icon: Calendar, text: t('dtv_page.high_value.item2') || "5 Ans de Validité (180j/entrée)" },
+                        { icon: DollarSign, text: t('dtv_page.high_value.item3') || "Fiscalité Avantageuse" }
                     ]}
-                    cardTitle="Profils Idéaux"
+                    cardTitle={t('dtv_page.high_value.card_title') || "Profils Idéaux"}
                     cardItems={[
-                        "Remote Workers / Employés",
-                        "Digital Nomads & Freelances",
-                        "Créateurs de Contenu / Soft Power",
-                        "Participants Muay Thai / Cuisine"
+                        t('dtv_page.high_value.card_item1') || "Remote Workers / Employés",
+                        t('dtv_page.high_value.card_item2') || "Digital Nomads & Freelances",
+                        t('dtv_page.high_value.card_item3') || "Créateurs de Contenu / Soft Power",
+                        t('dtv_page.high_value.card_item4') || "Participants Muay Thai / Cuisine"
                     ]}
                 />
 

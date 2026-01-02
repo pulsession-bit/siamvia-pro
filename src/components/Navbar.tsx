@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Plane, Menu, X, ChevronDown, Globe } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -26,6 +26,7 @@ const Navbar: React.FC = () => {
   const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showMobileLangs, setShowMobileLangs] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
   const currentLang = useCurrentLang();
@@ -33,6 +34,15 @@ const Navbar: React.FC = () => {
   const SCORING_ENGINE_URL = 'https://desk.siamvisapro.com';
 
   const langPath = useLangPath();
+
+  useEffect(() => {
+    if (showMobileLangs) {
+      const timer = setTimeout(() => {
+        setShowMobileLangs(false);
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [showMobileLangs]);
 
   // Helper to switch language while staying on same page
   const switchLanguage = (newLang: string) => {
@@ -209,13 +219,36 @@ const Navbar: React.FC = () => {
             <a href={SCORING_ENGINE_URL} className="block w-full text-center bg-amber-500 text-slate-900 py-4 rounded-xl font-bold text-lg shadow-lg mb-6">
               {t('nav.eligibility')}
             </a>
-            <div className="grid grid-cols-3 gap-2">
-              {languages.map((lang) => (
-                <button key={lang.code} onClick={() => { switchLanguage(lang.code); setIsOpen(false); }} className={`flex flex-col items-center justify-center p-2 rounded-lg border transition ${currentLang === lang.code ? 'bg-white border-amber-400 shadow-sm' : 'bg-transparent border-slate-200'}`}>
-                  <span className="text-2xl mb-1">{lang.flag}</span>
-                  <span className="text-xs font-bold text-slate-700">{lang.label}</span>
-                </button>
-              ))}
+
+            {/* Mobile Language Selector with Auto-hide */}
+            <div className="relative">
+              <button
+                onClick={() => {
+                  setShowMobileLangs(!showMobileLangs);
+                }}
+                className="w-full flex items-center justify-center space-x-2 p-3 rounded-lg border border-slate-200 bg-white text-slate-700 font-bold mb-4 active:bg-slate-50 transition-colors"
+              >
+                <Globe className="h-5 w-5 text-amber-500" />
+                <span>{t('nav.languages')}</span>
+                <ChevronDown className={`h-4 w-4 transition-transform ${showMobileLangs ? 'rotate-180' : ''}`} />
+              </button>
+
+              <div className={`grid grid-cols-3 gap-2 transition-all duration-300 overflow-hidden ${showMobileLangs ? 'max-h-[500px] opacity-100 mb-4' : 'max-h-0 opacity-0'}`}>
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => {
+                      switchLanguage(lang.code);
+                      setIsOpen(false);
+                      setShowMobileLangs(false);
+                    }}
+                    className={`flex flex-col items-center justify-center p-2 rounded-lg border transition ${currentLang === lang.code ? 'bg-white border-amber-400 shadow-sm' : 'bg-white border-slate-200'}`}
+                  >
+                    <span className="text-2xl mb-1">{lang.flag}</span>
+                    <span className="text-[10px] font-bold text-slate-700">{lang.label}</span>
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </div>

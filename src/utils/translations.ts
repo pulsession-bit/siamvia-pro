@@ -16,7 +16,8 @@ export const translations = {
       other_visas: "Autres Visas",
       eligibility: "Vérifier mon éligibilité",
       see_services: "Voir nos services",
-      ltr: "Visa LTR"
+      ltr: "Visa LTR",
+      languages: "Langues"
     },
     ltr_page: {
       meta: {
@@ -66,7 +67,20 @@ export const translations = {
         { q: "Puis-je travailler avec un visa LTR ?", a: "Oui, c'est l'un des rares visas incluant un permis de travail numérique (Digital Work Permit) sans quota d'employés thaïs." },
         { q: "Revenus minimums requis ?", a: "80,000 USD/an (2 ans) ou mix investissement. Retraités éligibles à 40,000 USD sous conditions d'investissement." },
         { q: "Délais d'obtention ?", a: "1 à 3 mois pour l'approbation BOI, puis quelques semaines pour l'émission." }
-      ]
+      ],
+      high_value: {
+        title: "Optimisation Fiscale",
+        highlight: "& Liberté",
+        description: "Le LTR n'est pas qu'un visa, c'est un statut de résident privilégié qui vous permet de travailler légalement et d'optimiser votre fiscalité avec un taux forfaitaire de 17% pour les professionnels qualifiés.",
+        item1: "17% Flat Tax (Professionnels)",
+        item2: "Permis de Travail Inclus",
+        item3: "Exonération Revenus Étrangers",
+        card_title: "Avantages Exclusifs",
+        card_item1: "Fast Track Aéroport VIP",
+        card_item2: "Pas de Rapport 90 Jours",
+        card_item3: "4 Dépendants Inclus",
+        card_item4: "Résidence Fiscale Privilégiée"
+      }
     },
     search_page: {
       meta: {
@@ -176,6 +190,68 @@ export const translations = {
         { q: "Mes proches peuvent-ils m'accompagner ?", a: "Oui, votre conjoint et vos enfants de moins de 20 ans peuvent obtenir un visa DTV \"Dependant\" lié au vôtre, avec les mêmes avantages de durée." },
         { q: "Quelle est la valeur ajoutée de Siam Visa Pro par rapport à une demande en solo ?", a: "Faire sa demande seul comporte des risques de refus liés à un dossier imprécis. Siam Visa Pro combine l'expertise humaine et la puissance de l'IA : nos outils d'intelligence artificielle analysent votre éligibilité en temps réel pour détecter les points faibles de votre dossier, tandis que nos experts optimisent votre portfolio et vos documents. Vous bénéficiez d'une double vérification — technologique et humaine — pour garantir le taux d'approbation le plus élevé possible." }
       ],
+      high_value: {
+        title: "Liberté Numérique",
+        highlight: "& Workcation",
+        description: "Travaillez depuis la Thaïlande sans tracas visa ni impôts sur vos revenus étrangers (si <180j/an). Le DTV est la clé pour 5 ans de sérénité.",
+        item1: "Work From Anywhere",
+        item2: "5 Ans de Validité (180j/entrée)",
+        item3: "Fiscalité Avantageuse",
+        card_title: "Profils Idéaux",
+        card_item1: "Remote Workers / Employés",
+        card_item2: "Digital Nomads & Freelances",
+        card_item3: "Créateurs de Contenu / Soft Power",
+        card_item4: "Participants Muay Thai / Cuisine"
+      },
+      meta: {
+        title: "Visa DTV Thaïlande (Destination Thailand Visa) | Siam Visa Pro",
+        description: "Obtenez le Visa DTV 5 ans pour la Thaïlande. Télétravail légal, entrées multiples et validité longue durée. Expertise Siam Visa Pro."
+      }
+    },
+    elite_page: {
+      badge: "Thailand Privilege",
+      hero_title: "Visa Elite Thaïlande (Luxe & VIP)",
+      hero_subtitle: "Visa de 5 à 20 ans. Conciergerie VIP. Coupe-file aéroport.",
+      hero_tagline: "L'expérience ultime pour vivre en Thaïlande.",
+      why_title: "Pourquoi choisir le Visa Elite ?",
+      duration_title: "5 à 20 Ans de Sérénité",
+      duration_desc: "Choisissez la durée qui vous convient (5, 10, 15 ou 20 ans) et oubliez les tracas des extensions de visa.",
+      work_title: "Service Conciergerie",
+      work_desc: "De votre arrivée à l'aéroport avec assistant personnel jusqu'à l'ouverture de votre compte bancaire, tout est facilité pour vous.",
+      finance_title: "Investissement Unique",
+      finance_desc: "Aucune preuve de fonds / revenus mensuels requis. C'est frais d'adhésion unique payé directement au gouvernement.",
+      who_title: "Pour qui est-ce fait ?",
+      who_wealthy: "Investisseurs & Retraités",
+      who_wealthy_desc: "Ceux qui veulent éviter la paperasse annuelle des visas retraite.",
+      who_business: "Chefs d'Entreprise",
+      who_business_desc: "Entrepreneurs souhaitant une base stable en Asie.",
+      who_family: "Familles",
+      who_family_desc: "Options flexibles pour inclure conjoint et enfants.",
+      benefits_title: "Privilèges Exclusifs",
+      benefits_desc: "En plus du visa, accédez à des services haut de gamme : Limousine Aéroport, Golf, Spa, Check-up santé annuel...",
+      benefits_btn: "Voir les Packages",
+      cta_button: "Devenir Membre",
+      highs_title: "Points Forts",
+      highs: [
+        "Validité ultra-longue (jusqu'à 20 ans)",
+        "Service VIP Fast-Track Aéroport (Arrivée/Départ)",
+        "Aucune condition d'âge ou de revenus mensuels",
+        "Assistance 24/7 pour la vie quotidienne"
+      ],
+      lows_title: "Points d'Attention",
+      lows: [
+        "Coût initial élevé (dès ~900 000 THB)",
+        "Permis de travail non inclus d'office",
+        "Délai de traitement de 1 à 3 mois",
+        "Paiement au gouvernement requis avant émission"
+      ],
+      faq_title: "Visa Elite - FAQ",
+      faqs: [
+        { q: "Puis-je entrer et sortir plusieurs fois avec mon visa Elite ?", a: "Oui, c'est un visa à entrées multiples (Multiple-Entry) illimitées pendant toute la durée de votre adhésion (5 à 20 ans)." },
+        { q: "Dois-je payer des impôts en Thaïlande avec ce visa ?", a: "Le Visa Elite ne vous rend pas automatiquement résident fiscal. Vous ne payez d'impôts que si vous séjournez plus de 180 jours par an ET rapatriez des revenus étrangers en Thaïlande la même année." },
+        { q: "Ma famille peut-elle m'accompagner ?", a: "Oui, il existe des formules 'Famille' permettant d'inclure les membres directs à tarif réduit." },
+        { q: "Puis-je travailler avec un Visa Elite ?", a: "Techniquement non, c'est un visa touriste. Cependant, vous pouvez être actionnaire d'une société, ou travailler légalement si vous obtenez un permis de travail (possible avec le Visa Elite combiné à une offre d'emploi)." }
+      ],
       prestige_title: "Service <span className=\"text-amber-500\">Prestige</span>",
       prestige_desc: "SiamVisa Pro est votre agent privilégié pour l'adhésion au programme Thailand Privilege (Elite).",
       prestige_list: [
@@ -184,7 +260,6 @@ export const translations = {
         "Gestion des formalités aéroport",
         "Support conciergerie"
       ],
-      cta_button: "Devenir Membre Privilege",
       quick_view: {
         btn: "⚡️ En Bref",
         title: "Visa Elite : L'essentiel",
@@ -199,6 +274,19 @@ export const translations = {
         entries: "Entrées",
         entries_val: "Illimitées (VIP)",
         verdict: "VERDICT : Le confort absolu. Vous achetez votre tranquillité administrative pour des années."
+      },
+      high_value: {
+        title: "Prestige & Sérénité",
+        highlight: "Absolue",
+        description: "Pas de files d'attente, pas de rapports de 90 jours compliqués, pas de tracas. Juste le plaisir de vivre en Thaïlande avec un statut VIP garanti par l'État.",
+        item1: "Fast Track Aéroport VIP",
+        item2: "Adhésion 5 à 20 Ans",
+        item3: "Conciergerie 24/7",
+        card_title: "Services Inclus",
+        card_item1: "Service Limousine",
+        card_item2: "Privilèges Golf & Spa",
+        card_item3: "Ouverture Compte Bancaire",
+        card_item4: "Check-up Santé Annuel"
       },
       meta: {
         title: "Visa Elite Thaïlande (Thailand Privilege) | Packages & Tarifs Officiels",
@@ -447,7 +535,20 @@ export const translations = {
         { q: "Puis-je travailler avec un visa retraite ?", a: "Non, toute forme de travail (rémunéré ou bénévole) est strictement interdite. Si vous souhaitez travailler en ligne, le visa DTV est plus adapté." },
         { q: "Dois-je sortir du pays pour renouveler mon visa ?", a: "Non, l'extension de votre visa retraite se fait chaque année directement auprès du bureau de l'Immigration en Thaïlande, sans obligation de sortie." },
         { q: "Quelle est la valeur ajoutée de Siam Visa Pro par rapport à une demande en solo ?", a: "Faire sa demande seul comporte des risques de refus liés à un dossier imprécis. Siam Visa Pro combine l'expertise humaine et la puissance de l'IA : nos outils d'intelligence artificielle analysent votre éligibilité en temps réel pour détecter les points faibles de votre dossier, tandis que nos experts optimisent votre portfolio et vos documents. Vous bénéficiez d'une double vérification — technologique et humaine — pour garantir le taux d'approbation le plus élevé possible." }
-      ]
+      ],
+      high_value: {
+        title: "Douceur de Vivre",
+        highlight: "& Sécurité",
+        description: "Profitez d'une retraite dorée au pays du sourire avec un coût de la vie avantageux et des infrastructures médicales de classe mondiale. Une retraite paisible sans compromis.",
+        item1: "Coût de la vie avantageux",
+        item2: "Renouvelable à l'infini",
+        item3: "Médecine de Classe Mondiale",
+        card_title: "Tranquillité d'Esprit",
+        card_item1: "Ouverture Compte Bancaire",
+        card_item2: "Assurance Santé (Facilitée)",
+        card_item3: "Assistance TM30/90 Jours",
+        card_item4: "Importation Effets Personnels"
+      }
     },
     faq_page: {
       title: "Questions Fréquentes",
@@ -556,7 +657,8 @@ export const translations = {
       contact: "Contact",
       member: "Client Area",
       eligibility: "Eligibility",
-      ltr: "Visa LTR"
+      ltr: "Visa LTR",
+      languages: "Languages"
     },
     ltr_page: {
       meta: {
@@ -606,7 +708,20 @@ export const translations = {
         { q: "Can I work with an LTR visa?", a: "Yes, it's one of the few visas including a digital work permit without Thai employee quota." },
         { q: "Minimum income required?", a: "$80,000 USD/year (2 years) or investment mix. Retirees eligible at $40,000 under investment conditions." },
         { q: "Processing time?", a: "1 to 3 months for BOI approval, then a few weeks for issuance." }
-      ]
+      ],
+      high_value: {
+        title: "Tax Optimization",
+        highlight: "& Freedom",
+        description: "The LTR is not just a visa, it's a privileged resident status that allows you to work legally and optimize your taxation with a flat rate of 17% for skilled professionals.",
+        item1: "17% Flat Tax (Professionals)",
+        item2: "Work Permit Included",
+        item3: "Foreign Income Exemption",
+        card_title: "Exclusive Benefits",
+        card_item1: "VIP Airport Fast Track",
+        card_item2: "No 90-Day Reporting",
+        card_item3: "4 Dependents Included",
+        card_item4: "Privileged Tax Residency"
+      }
     },
     meta: {
       title: "Siam Visa Pro | Thailand Visa Expert - DTV, Tourist & Retirement",
@@ -724,6 +839,19 @@ export const translations = {
         { q: "Can my family accompany me?", a: "Yes, your spouse and children under 20 can obtain a 'Dependant' DTV visa linked to yours, with the same duration advantages." },
         { q: "What is the added value of Siam Visa Pro compared to a solo application?", a: "Applying alone carries risks of refusal due to an imprecise file. Siam Visa Pro combines human expertise and the power of AI: our artificial intelligence tools analyze your eligibility in real-time to detect the weak points of your file, while our experts optimize your portfolio and your documents. You benefit from a double verification — technological and human — to guarantee the highest possible approval rate." }
       ],
+      high_value: {
+        title: "Digital Freedom",
+        highlight: "& Workcation",
+        description: "Work from Thailand without visa hassles or taxes on your foreign income (if <180 days/year). The DTV is the key to 5 years of peace of mind.",
+        item1: "Work From Anywhere",
+        item2: "5 Years Validity (180 days/entry)",
+        item3: "Advantageous Taxation",
+        card_title: "Ideal Profiles",
+        card_item1: "Remote Workers / Employees",
+        card_item2: "Digital Nomads & Freelancers",
+        card_item3: "Content Creators / Soft Power",
+        card_item4: "Muay Thai / Cooking Participants"
+      },
       meta: {
         title: "Thailand DTV Visa (Destination Thailand Visa) | Siam Visa Pro Expertise",
         description: "Live and work in Thailand for 5 years with the DTV visa. We optimize your Portfolio and ensure your eligibility."
@@ -795,6 +923,19 @@ export const translations = {
         entries: "Entries",
         entries_val: "Unlimited (VIP)",
         verdict: "VERDICT: Absolute comfort. You are buying total peace of mind for years."
+      },
+      high_value: {
+        title: "Prestige & Serenity",
+        highlight: "Absolute",
+        description: "No queues, no complicated 90-day reports, no hassle. Just the pleasure of living in Thailand with a VIP status guaranteed by the State.",
+        item1: "VIP Airport Fast Track",
+        item2: "5 to 20 Year Membership",
+        item3: "24/7 Concierge",
+        card_title: "Services Included",
+        card_item1: "Limousine Service",
+        card_item2: "Golf & Spa Privileges",
+        card_item3: "Bank Account Opening",
+        card_item4: "Annual Health Check-up"
       },
       meta: {
         title: "Thailand Elite Visa (Thailand Privilege) | Official Packages & Rates",
@@ -1017,7 +1158,20 @@ export const translations = {
         { q: "Can I work with a retirement visa?", a: "No, any form of work (paid or volunteer) is strictly forbidden. If you want to work online, the DTV visa is more suitable." },
         { q: "Do I need to leave the country to renew my visa?", a: "No, your retirement visa extension is done every year directly at the Immigration office in Thailand, without a mandatory exit." },
         { q: "What is the added value of Siam Visa Pro compared to a solo application?", a: "Applying on your own carries risks of refusal due to an imprecise file. Siam Visa Pro combines human expertise and the power of AI: our artificial intelligence tools analyze your eligibility in real-time to detect your file's weak points, while our experts optimize your portfolio and your documents. You benefit from a double check — technological and human — to guarantee the highest possible approval rate." }
-      ]
+      ],
+      high_value: {
+        title: "Sweet Lifestyle",
+        highlight: "& Security",
+        description: "Enjoy a golden retirement in the land of smiles with an advantageous cost of living and world-class medical infrastructure. A peaceful retirement without compromise.",
+        item1: "Low Cost of Living",
+        item2: "Infinitely Renewable",
+        item3: "World-Class Healthcare",
+        card_title: "Peace of Mind",
+        card_item1: "Bank Account Opening",
+        card_item2: "Health Insurance (Assisted)",
+        card_item3: "TM30/90 Day Assistance",
+        card_item4: "Personal Items Importation"
+      }
     },
     faq_page: {
       title: "Frequently Asked Questions",
