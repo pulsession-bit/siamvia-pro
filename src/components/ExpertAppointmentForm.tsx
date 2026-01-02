@@ -56,14 +56,19 @@ export const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
     setSubmitStatus('idle');
     setErrorMessage("");
 
-    if (!isAuthReady) {
-      setErrorMessage("Session non initialisée, veuillez réessayer");
-      setSubmitStatus('error');
-      setIsSubmitting(false);
-      return;
-    }
-
     try {
+      // Tentative d'auth si pas encore prêt
+      let currentUser = auth.currentUser;
+      if (!currentUser) {
+        try {
+          const result = await signInAnonymously(auth);
+          currentUser = result.user;
+        } catch (authError: any) {
+          console.error("Auth submission error:", authError);
+          throw new Error("Impossible d'initialiser une session sécurisée. Vérifiez votre connexion.");
+        }
+      }
+
       // Save to Firestore (avec session auth active)
       const docRef = await addDoc(collection(db, "appointments"), {
         date,
@@ -75,7 +80,7 @@ export const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
         status: "pending",
         createdAt: serverTimestamp(),
         source: "website",
-        userId: auth.currentUser?.uid || 'anonymous'
+        userId: currentUser?.uid || 'anonymous'
       });
 
       console.log("Appointment saved with ID: ", docRef.id);
