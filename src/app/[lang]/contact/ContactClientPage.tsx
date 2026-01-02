@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Loader2, CheckCircle } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { URLS, CONTACT, IMAGES } from '@/constants';
+import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -239,6 +240,10 @@ const ContactClientPage: React.FC = () => {
                         )}
                     </div>
                 </div>
+            </div>
+            {/* Appointment Form Section */}
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 relative z-20">
+                <ExpertAppointmentForm />
             </div>
         </div>
     );

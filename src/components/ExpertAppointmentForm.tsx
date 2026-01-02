@@ -65,6 +65,9 @@ export const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
           currentUser = result.user;
         } catch (authError: any) {
           console.error("Auth submission error:", authError);
+          if (authError.message && authError.message.includes('requests-from-referer')) {
+            throw new Error("Domaine non autorisé dans Firebase Console (Authentication > Settings > Authorized Domains).");
+          }
           throw new Error("Impossible d'initialiser une session sécurisée. Vérifiez votre connexion.");
         }
       }

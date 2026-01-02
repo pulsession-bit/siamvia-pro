@@ -15,9 +15,11 @@ import {
     X,
     Phone,
     Mail,
-    MapPin
+    MapPin,
+    Sparkles,
+    Loader2
 } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext'; // To verify if we sync language or keep internal
+import { useLanguage } from '@/contexts/LanguageContext';
 
 // --- I KEEP YOUR INTERNAL TRANSLATIONS & DATA AS IS FOR NOW ---
 // We can sync them with the global context later if requested.
@@ -28,8 +30,10 @@ const I18N: Record<string, any> = {
     fr: {
         title: "Expertise Visa Thaïlande",
         subtitle: "Solutions simplifiées pour votre séjour au Pays du Sourire",
-        searchPlaceholder: "Rechercher un visa (ex: Retraite, DTV, LTR...)",
+        searchPlaceholder: "Posez votre question à notre IA (ou cherchez un visa...)",
         allVisas: "Tous les Visas",
+        aiHelper: "Demander à l'IA",
+        aiTitle: "Avis de l'Expert IA",
         categories: {
             work: "Travail & Business",
             tourism: "Tourisme",
@@ -43,13 +47,16 @@ const I18N: Record<string, any> = {
         duration: "Durée",
         requirements: "Documents requis",
         contactUs: "Nous contacter",
+        contactUsBtn: "Prendre RDV",
         footerText: "SiamVisaPro - Votre partenaire de confiance pour l'expatriation en Thaïlande."
     },
     en: {
         title: "Thai Visa Expertise",
         subtitle: "Simplified solutions for your stay in the Land of Smiles",
-        searchPlaceholder: "Search for a visa (e.g., Retirement, DTV, LTR...)",
+        searchPlaceholder: "Ask our AI a question (or search for a visa...)",
         allVisas: "All Visas",
+        aiHelper: "Ask AI",
+        aiTitle: "AI Expert Advice",
         categories: {
             work: "Work & Business",
             tourism: "Tourism",
@@ -63,13 +70,17 @@ const I18N: Record<string, any> = {
         duration: "Duration",
         requirements: "Requirements",
         contactUs: "Contact Us",
+        contactUsBtn: "Book Appointment",
         footerText: "SiamVisaPro - Your trusted partner for Thailand expatriation."
     },
+    // ... other languages mapped similarly if needed, falling back to English for new keys if not added manually
     de: {
         title: "Thailand Visum Expertise",
         subtitle: "Vereinfachte Lösungen für Ihren Aufenthalt im Land des Lächelns",
-        searchPlaceholder: "Visum suchen (z.B. Ruhestand, DTV, LTR...)",
+        searchPlaceholder: "Fragen Sie unsere KI (oder suchen Sie ein Visum...)",
         allVisas: "Alle Visa",
+        aiHelper: "KI fragen",
+        aiTitle: "KI-Expertenrat",
         categories: {
             work: "Arbeit & Geschäft",
             tourism: "Tourismus",
@@ -83,13 +94,16 @@ const I18N: Record<string, any> = {
         duration: "Dauer",
         requirements: "Anforderungen",
         contactUs: "Kontaktieren Sie uns",
+        contactUsBtn: "Termin buchen",
         footerText: "SiamVisaPro - Ihr vertrauenswürdiger Partner für die Auswanderung nach Thailand."
     },
     es: {
         title: "Expertos en Visados para Tailandia",
         subtitle: "Soluciones simplificadas para su estancia en el País de las Sonrisas",
-        searchPlaceholder: "Buscar un visado (ej: Jubilación, DTV, LTR...)",
+        searchPlaceholder: "Pregunte a nuestra IA (o busque un visado...)",
         allVisas: "Todos los Visados",
+        aiHelper: "Preguntar a la IA",
+        aiTitle: "Consejo del Experto IA",
         categories: {
             work: "Trabajo y Negocios",
             tourism: "Turismo",
@@ -103,13 +117,17 @@ const I18N: Record<string, any> = {
         duration: "Duración",
         requirements: "Requisitos",
         contactUs: "Contáctenos",
+        contactUsBtn: "Reservar Cita",
         footerText: "SiamVisaPro - Su socio de confianza para la expatriación a Tailandia."
     },
+    // Adding fallbacks for other languages to avoid errors, reusing simple ones or just existing
     it: {
         title: "Esperti in Visti per la Thailandia",
         subtitle: "Soluzioni semplificate per il tuo soggiorno nel Paese del Sorriso",
-        searchPlaceholder: "Cerca un visto (es: Pensionati, DTV, LTR...)",
+        searchPlaceholder: "Chiedi alla nostra IA (o cerca un visto...)",
         allVisas: "Tutti i Visti",
+        aiHelper: "Chiedi all'IA",
+        aiTitle: "Parere dell'Esperto IA",
         categories: {
             work: "Lavoro & Affari",
             tourism: "Turismo",
@@ -123,13 +141,16 @@ const I18N: Record<string, any> = {
         duration: "Durata",
         requirements: "Requisiti",
         contactUs: "Contattaci",
+        contactUsBtn: "Prenota Appuntamento",
         footerText: "SiamVisaPro - Il tuo partner di fiducia per l'espatrio in Thailandia."
     },
     th: {
         title: "ผู้เชี่ยวชาญด้านวีซ่าไทย",
         subtitle: "โซลูชันที่ง่ายขึ้นสำหรับการพำนักของคุณในดินแดนแห่งรอยยิ้ม",
-        searchPlaceholder: "ค้นหาวีซ่า (เช่น เกษียณอายุ, DTV, LTR...)",
+        searchPlaceholder: "ถาม AI ของเรา (หรือค้นหาวีซ่า...)",
         allVisas: "วีซ่าทั้งหมด",
+        aiHelper: "ถาม AI",
+        aiTitle: "คำแนะนำจากผู้เชี่ยวชาญ AI",
         categories: {
             work: "ทำงานและธุรกิจ",
             tourism: "การท่องเที่ยว",
@@ -143,13 +164,16 @@ const I18N: Record<string, any> = {
         duration: "ระยะเวลา",
         requirements: "เอกสารที่ต้องใช้",
         contactUs: "ติดต่อเรา",
+        contactUsBtn: "จองนัดหมาย",
         footerText: "SiamVisaPro - พันธมิตรที่คุณไว้วางใจในการย้ายถิ่นฐานสู่ประเทศไทย"
     },
     zh: {
         title: "泰国签证专家",
         subtitle: "为您在微笑之国的居留提供简化方案",
-        searchPlaceholder: "搜索签证（如：退休、DTV、LTR...）",
+        searchPlaceholder: "询问我们的 AI（或搜索签证...）",
         allVisas: "所有签证",
+        aiHelper: "询问 AI",
+        aiTitle: "AI 专家建议",
         categories: {
             work: "工作与商务",
             tourism: "旅游",
@@ -163,13 +187,16 @@ const I18N: Record<string, any> = {
         duration: "有效期",
         requirements: "所需材料",
         contactUs: "联系我们",
+        contactUsBtn: "预约咨询",
         footerText: "SiamVisaPro - 您在泰国定居的得力伙伴。"
     },
     ja: {
         title: "タイビザ専門サービス",
         subtitle: "「微笑みの国」での滞在をサポートする最適なソリューション",
-        searchPlaceholder: "ビザを検索 (例: リタイアメント, DTV, LTR...)",
+        searchPlaceholder: "AIに質問する（またはビザを検索...）",
         allVisas: "すべてのビザ",
+        aiHelper: "AIに聞く",
+        aiTitle: "AI専門家のアドバイス",
         categories: {
             work: "就労・ビジネス",
             tourism: "観光",
@@ -183,13 +210,16 @@ const I18N: Record<string, any> = {
         duration: "期間",
         requirements: "必要書類",
         contactUs: "お問い合わせ",
+        contactUsBtn: "予約する",
         footerText: "SiamVisaPro - タイ移住の信頼できるパートナー。"
     },
     ru: {
         title: "Экспертиза по визам в Таиланд",
         subtitle: "Упрощенные решения для вашего пребывания в Стране Улыбок",
-        searchPlaceholder: "Поиск визы (например: Пенсионная, DTV, LTR...)",
+        searchPlaceholder: "Спросите наш ИИ (или ищите визу...)",
         allVisas: "Все визы",
+        aiHelper: "Спросить ИИ",
+        aiTitle: "Совет эксперта ИИ",
         categories: {
             work: "Работа и Бизнес",
             tourism: "Туризм",
@@ -203,13 +233,16 @@ const I18N: Record<string, any> = {
         duration: "Срок действия",
         requirements: "Требования",
         contactUs: "Связаться с нами",
+        contactUsBtn: "Записаться",
         footerText: "SiamVisaPro - Ваш надежный партнер для переезда в Таиланд."
     },
     ko: {
         title: "태국 비자 전문가",
         subtitle: "미소의 나라에서의 체류를 위한 간편한 솔루션",
-        searchPlaceholder: "비자 검색 (예: 은퇴, DTV, LTR...)",
+        searchPlaceholder: "AI에게 물어보세요 (또는 비자 검색...)",
         allVisas: "모든 비자",
+        aiHelper: "AI에게 질문",
+        aiTitle: "AI 전문가 조언",
         categories: {
             work: "취업 및 비즈니스",
             tourism: "관광",
@@ -223,13 +256,16 @@ const I18N: Record<string, any> = {
         duration: "체류 기간",
         requirements: "필요 서류",
         contactUs: "문의하기",
+        contactUsBtn: "예약하기",
         footerText: "SiamVisaPro - 태국 이주를 위한 신뢰할 수 있는 파트너."
     },
     ar: {
         title: "خبرة تأشيرة تايلاند",
         subtitle: "حلول مبسطة لإقامتك في بلد الابتسامات",
-        searchPlaceholder: "ابحث عن تأشيرة (مثال: التقاعد، DTV، LTR...)",
+        searchPlaceholder: "اسأل الذكاء الاصطناعي (أو ابحث عن تأشيرة...)",
         allVisas: "جميع التأشيرات",
+        aiHelper: "اسأل الذكاء الاصطناعي",
+        aiTitle: "نصيحة خبير الذكاء الاصطناعي",
         categories: {
             work: "العمل والأعمال",
             tourism: "السياحة",
@@ -243,6 +279,7 @@ const I18N: Record<string, any> = {
         duration: "المدة",
         requirements: "المتطلبات",
         contactUs: "اتصل بنا",
+        contactUsBtn: "حجز موعد",
         footerText: "SiamVisaPro - شريكك الموثوق للإقامة في تايلاند."
     }
 };
@@ -316,7 +353,11 @@ const SearchClientPage: React.FC = () => {
     const [activeCategory, setActiveCategory] = useState<string | null>(null);
     const [selectedVisa, setSelectedVisa] = useState<any | null>(null);
 
-    const t = I18N[lang];
+    // AI State
+    const [aiResponse, setAiResponse] = useState<string | null>(null);
+    const [isAiLoading, setIsAiLoading] = useState(false);
+
+    const t = I18N[lang] || I18N['en'];
 
     const filteredVisas = useMemo(() => {
         return VISAS_DATA.filter(visa => {
@@ -325,6 +366,42 @@ const SearchClientPage: React.FC = () => {
             return matchesSearch && matchesCategory;
         });
     }, [lang, search, activeCategory]);
+
+    const handleAiSearch = async () => {
+        if (!search.trim()) return;
+
+        setIsAiLoading(true);
+        setAiResponse(null);
+
+        try {
+            const res = await fetch('/api/search-ai', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ query: search, lang })
+            });
+            const data = await res.json();
+
+            if (data.explanation) {
+                setAiResponse(data.explanation);
+
+                // If a specific visa is recommended, open it automatically
+                if (data.recommendationId) {
+                    const recommendedVisa = VISAS_DATA.find(v => v.id === data.recommendationId);
+                    if (recommendedVisa) {
+                        setActiveCategory(recommendedVisa.category);
+                        setTimeout(() => setSelectedVisa(recommendedVisa), 500); // Small delay for effect
+                    }
+                }
+            } else {
+                setAiResponse("Sorry, I couldn't process your request. Please try again.");
+            }
+        } catch (error) {
+            console.error(error);
+            setAiResponse("An error occurred. Please try again later.");
+        } finally {
+            setIsAiLoading(false);
+        }
+    };
 
     return (
         <div className="min-h-screen flex flex-col bg-slate-50">
@@ -338,15 +415,47 @@ const SearchClientPage: React.FC = () => {
                     <h2 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">{t.title}</h2>
                     <p className="text-xl opacity-90 mb-10 font-light max-w-2xl mx-auto">{t.subtitle}</p>
 
-                    <div className="relative max-w-2xl mx-auto">
-                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
-                        <input
-                            type="text"
-                            placeholder={t.searchPlaceholder}
-                            className="w-full pl-12 pr-4 py-4 rounded-2xl bg-white text-gray-900 shadow-2xl focus:ring-4 focus:ring-amber-500/20 focus:outline-none text-lg"
-                            value={search}
-                            onChange={(e) => setSearch(e.target.value)}
-                        />
+                    <div className="relative max-w-2xl mx-auto space-y-6">
+                        <div className="relative">
+                            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
+                            <input
+                                type="text"
+                                placeholder={t.searchPlaceholder}
+                                className="w-full pl-12 pr-32 py-4 rounded-2xl bg-white text-gray-900 shadow-2xl focus:ring-4 focus:ring-amber-500/20 focus:outline-none text-lg"
+                                value={search}
+                                onChange={(e) => setSearch(e.target.value)}
+                                onKeyDown={(e) => e.key === 'Enter' && handleAiSearch()}
+                            />
+                            <div className="absolute right-2 top-2 bottom-2">
+                                <button
+                                    onClick={handleAiSearch}
+                                    disabled={isAiLoading || !search.trim()}
+                                    className="h-full px-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-bold rounded-xl transition-all flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
+                                >
+                                    {isAiLoading ? (
+                                        <Loader2 className="animate-spin h-5 w-5" />
+                                    ) : (
+                                        <>
+                                            <Sparkles className="h-5 w-5" />
+                                            <span className="hidden sm:inline">{t.aiHelper}</span>
+                                        </>
+                                    )}
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* AI Response Area */}
+                        {aiResponse && (
+                            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-left shadow-2xl animate-in fade-in slide-in-from-top-4">
+                                <div className="flex items-center gap-3 mb-3 text-amber-400 font-bold border-b border-white/10 pb-2">
+                                    <Sparkles className="h-5 w-5" />
+                                    {t.aiTitle}
+                                </div>
+                                <div className="text-slate-100 leading-relaxed whitespace-pre-wrap">
+                                    {aiResponse}
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </section>

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Plane, Menu, X, ChevronDown, Globe } from 'lucide-react';
+import { Plane, Menu, X, ChevronDown, Globe, Search } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -144,6 +144,13 @@ const Navbar: React.FC = () => {
               {t('nav.faq')}
             </Link>
             <Link
+              href={langPath('search')}
+              className={`text-sm font-medium transition-colors flex items-center space-x-1 ${pathname?.includes('/search') ? 'text-white font-semibold' : 'text-slate-200 hover:text-white'}`}
+            >
+              <Search className="w-4 h-4" />
+              <span>{t('nav.search')}</span>
+            </Link>
+            <Link
               href={langPath('contact')}
               className={`text-sm font-medium transition-colors ${pathname?.includes('/contact') ? 'text-white font-semibold' : 'text-slate-200 hover:text-white'}`}
             >
@@ -213,6 +220,10 @@ const Navbar: React.FC = () => {
             </div>
             <Link href={langPath('services')} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition">{t('nav.services')}</Link>
             <Link href={langPath('faq')} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition">{t('nav.faq')}</Link>
+            <Link href={langPath('search')} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition flex items-center space-x-2">
+              <Search className="w-5 h-5" />
+              <span>{t('nav.search')}</span>
+            </Link>
             <Link href={langPath('contact')} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition">{t('nav.contact')}</Link>
           </div>
           <div className="p-6 border-t border-slate-100 bg-slate-50">
