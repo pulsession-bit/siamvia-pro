@@ -18,7 +18,8 @@ const nextConfig: NextConfig = {
         services: 'services-et-tarifs',
         contact: 'nous-contacter',
         faq: 'questions-frequentes',
-        terms: 'conditions-generales'
+        terms: 'conditions-generales',
+        sitemap: 'plan-du-site'
       },
       en: {
         dtv: 'thailand-dtv-visa',
@@ -27,7 +28,8 @@ const nextConfig: NextConfig = {
         services: 'services-and-rates',
         contact: 'contact-us',
         faq: 'frequently-asked-questions',
-        terms: 'terms-and-conditions'
+        terms: 'terms-and-conditions',
+        sitemap: 'sitemap'
       },
       de: {
         dtv: 'thailand-dtv-visum',
@@ -36,7 +38,8 @@ const nextConfig: NextConfig = {
         services: 'leistungen-und-preise',
         contact: 'kontakt',
         faq: 'haeufig-gestellte-fragen',
-        terms: 'allgemeine-geschaeftsbedingungen'
+        terms: 'allgemeine-geschaeftsbedingungen',
+        sitemap: 'seitenuebersicht'
       },
       es: {
         dtv: 'visa-dtv-tailandia',
@@ -45,7 +48,8 @@ const nextConfig: NextConfig = {
         services: 'servicios-y-tarifas',
         contact: 'contacto',
         faq: 'preguntas-frecuentes',
-        terms: 'terminos-y-condiciones'
+        terms: 'terminos-y-condiciones',
+        sitemap: 'mapa-del-sitio'
       },
       it: {
         dtv: 'visto-dtv-thailandia',
@@ -54,61 +58,68 @@ const nextConfig: NextConfig = {
         services: 'servizi-e-tariffe',
         contact: 'contatti',
         faq: 'domande-frequenti',
-        terms: 'termini-e-condizioni'
+        terms: 'termini-e-condizioni',
+        sitemap: 'mappa-del-sito'
       },
       th: {
-        dtv: 'visa-dtv-thailand',
-        'tourist-visa': 'วีซ่าท่องเที่ยว',
-        'retirement-visa': 'วีซ่าเกษียณอายุ',
-        services: 'บริการและราคา',
-        contact: 'ติดต่อเรา',
-        faq: 'คำถามที่พบบ่อย',
-        terms: 'ข้อกำหนดและเงื่อนไข'
+        dtv: 'dtv-visa',
+        'tourist-visa': 'tourist-visa',
+        'retirement-visa': 'retirement-visa',
+        services: 'services',
+        contact: 'contact',
+        faq: 'faq',
+        terms: 'terms',
+        sitemap: 'sitemap'
       },
       ru: {
-        dtv: 'виза-dtv-таиланд',
-        'tourist-visa': 'туристическая-виза',
-        'retirement-visa': 'пенсионная-виза',
-        services: 'услуги-и-цены',
-        contact: 'контакты',
-        faq: 'вопросы-и-ответы',
-        terms: 'правила-и-условия'
+        dtv: 'dtv-visa',
+        'tourist-visa': 'tourist-visa',
+        'retirement-visa': 'retirement-visa',
+        services: 'services',
+        contact: 'contact',
+        faq: 'faq',
+        terms: 'terms',
+        sitemap: 'sitemap'
       },
       zh: {
-        dtv: 'dtv-签证',
-        'tourist-visa': '旅游签证',
-        'retirement-visa': '退休签证',
-        services: '服务与价格',
-        contact: '联系我们',
-        faq: '常见问题',
-        terms: '条款与条件'
+        dtv: 'dtv-visa',
+        'tourist-visa': 'tourist-visa',
+        'retirement-visa': 'retirement-visa',
+        services: 'services',
+        contact: 'contact',
+        faq: 'faq',
+        terms: 'terms',
+        sitemap: 'sitemap'
       },
       ja: {
-        dtv: 'dtvビザ',
-        'tourist-visa': '観光ビザ',
-        'retirement-visa': '退職者ビザ',
-        services: 'サービスと料金',
-        contact: 'お問い合わせ',
-        faq: 'よくある質問',
-        terms: '利用規約'
+        dtv: 'dtv-visa',
+        'tourist-visa': 'tourist-visa',
+        'retirement-visa': 'retirement-visa',
+        services: 'services',
+        contact: 'contact',
+        faq: 'faq',
+        terms: 'terms',
+        sitemap: 'sitemap'
       },
       ko: {
-        dtv: 'dtv-비자',
-        'tourist-visa': '관광-비자',
-        'retirement-visa': '은퇴-비자',
-        services: '서비스-및-요금',
-        contact: '문의하기',
-        faq: '자주-묻는-질문',
-        terms: '이용-약관'
+        dtv: 'dtv-visa',
+        'tourist-visa': 'tourist-visa',
+        'retirement-visa': 'retirement-visa',
+        services: 'services',
+        contact: 'contact',
+        faq: 'faq',
+        terms: 'terms',
+        sitemap: 'sitemap'
       },
       ar: {
-        dtv: 'تأشيرة-dtv',
-        'tourist-visa': 'تأشيرة-سياحية',
-        'retirement-visa': 'تأشيرة-تقاعد',
-        services: 'الخدمات-والأسعار',
-        contact: 'اتصل-بنا',
-        faq: 'الأسئلة-الشائعة',
-        terms: 'الشروط-والأحكام'
+        dtv: 'dtv-visa',
+        'tourist-visa': 'tourist-visa',
+        'retirement-visa': 'retirement-visa',
+        services: 'services',
+        contact: 'contact',
+        faq: 'faq',
+        terms: 'terms',
+        sitemap: 'sitemap'
       }
     };
 

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
     CheckCircle,
     FileText,
@@ -27,10 +28,13 @@ const HomeClientPage: React.FC = () => {
             {/* Hero Section */}
             <div className="relative bg-slate-900 overflow-hidden">
                 <div className="absolute inset-0 opacity-70">
-                    <img
+                    <Image
                         src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1920&q=80"
                         alt="Thailand Background - Phi Phi Islands"
-                        className="w-full h-full object-cover"
+                        fill
+                        priority
+                        className="object-cover"
+                        sizes="100vw"
                     />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-slate-900/30"></div>
@@ -186,16 +190,24 @@ const HomeClientPage: React.FC = () => {
                         </div>
                         <div className="relative order-1 lg:order-2 h-[500px] lg:h-[800px] mb-12 lg:mb-0 hidden md:block">
                             <div className="relative w-full h-full">
-                                <img
-                                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
-                                    alt="Coworking"
-                                    className="absolute top-10 left-0 w-3/4 h-3/5 object-cover rounded-2xl shadow-2xl z-10 border-4 border-white transform -rotate-2"
-                                />
-                                <img
-                                    src="https://images.unsplash.com/photo-1559628233-100c798642d4?auto=format&fit=crop&w=800&q=80"
-                                    alt="Bangkok"
-                                    className="absolute bottom-10 right-0 w-3/4 h-3/5 object-cover rounded-2xl shadow-2xl z-20 border-4 border-white transform rotate-3"
-                                />
+                                <div className="absolute top-10 left-0 w-3/4 h-3/5 rounded-2xl shadow-2xl z-10 border-4 border-white transform -rotate-2 overflow-hidden">
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                                        alt="Coworking"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                    />
+                                </div>
+                                <div className="absolute bottom-10 right-0 w-3/4 h-3/5 rounded-2xl shadow-2xl z-20 border-4 border-white transform rotate-3 overflow-hidden">
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1559628233-100c798642d4?auto=format&fit=crop&w=800&q=80"
+                                        alt="Bangkok"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                    />
+                                </div>
                                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-amber-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
                             </div>
                         </div>
@@ -205,10 +217,12 @@ const HomeClientPage: React.FC = () => {
 
             <section className="py-20 relative overflow-hidden bg-slate-900">
                 <div className="absolute inset-0">
-                    <img
+                    <Image
                         src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1920&q=80"
                         alt="Beach"
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
+                        sizes="100vw"
                     />
                     <div className="absolute inset-0 bg-slate-900/80 backdrop-blur-[2px]"></div>
                 </div>
@@ -223,10 +237,12 @@ const HomeClientPage: React.FC = () => {
                                 {t('visas.popular')}
                             </div>
                             <div className="h-48 overflow-hidden relative">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
                                     alt="DTV Chiang Mai"
-                                    className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                                    fill
+                                    className="object-cover group-hover:scale-110 transition duration-500"
+                                    sizes="(max-width: 768px) 100vw, 33vw"
                                 />
                                 <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition"></div>
                             </div>
@@ -257,10 +273,12 @@ const HomeClientPage: React.FC = () => {
                         </div>
                         <div className="group bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:-translate-y-2 transition duration-300">
                             <div className="h-48 overflow-hidden relative">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=800&q=80"
                                     alt="Tourist"
-                                    className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                                    fill
+                                    className="object-cover group-hover:scale-110 transition duration-500"
+                                    sizes="(max-width: 768px) 100vw, 33vw"
                                 />
                                 <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition"></div>
                             </div>
@@ -288,10 +306,12 @@ const HomeClientPage: React.FC = () => {
                         </div>
                         <div className="group bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:-translate-y-2 transition duration-300">
                             <div className="h-48 overflow-hidden relative">
-                                <img
+                                <Image
                                     src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=800&q=80"
                                     alt="LTR"
-                                    className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                                    fill
+                                    className="object-cover group-hover:scale-110 transition duration-500"
+                                    sizes="(max-width: 768px) 100vw, 33vw"
                                 />
                                 <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition"></div>
                             </div>

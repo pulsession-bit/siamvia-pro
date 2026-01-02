@@ -1,0 +1,16 @@
+Build Error
+
+
+Module not found: Can't resolve '@vercel_speed-insights/next'
+./src/app/[lang]/layout.tsx (11:1)
+
+Module not found: Can't resolve '@vercel_speed-insights/next'
+   9 | import { Inter } from 'next/font/google';
+  10 | import '../globals.css';
+> 11 | import { SpeedInsights } from '@vercel_speed-insights/next';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |
+  13 | const inter = Inter({ subsets: ['latin'] });
+  14 |
+
+https://nextjs.org/docs/messages/module-not-found
