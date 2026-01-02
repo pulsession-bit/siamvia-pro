@@ -1,9 +1,5 @@
 import type { NextConfig } from "next";
 
-// Define the slug mapping inside next.config.ts or import if possible
-// However, next.config.ts has limited support for imports outside its scope in some versions.
-// We'll define a simpler version or try to import it.
-
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -14,7 +10,6 @@ const nextConfig: NextConfig = {
     ],
   },
   async rewrites() {
-    const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'];
     const slugMap: Record<string, Record<string, string>> = {
       fr: {
         dtv: 'visa-dtv-thailande',
@@ -55,21 +50,71 @@ const nextConfig: NextConfig = {
         contact: 'contatti',
         faq: 'domande-frequenti',
         terms: 'termini-e-condizioni'
+      },
+      th: {
+        'tourist-visa': 'วีซ่าท่องเที่ยว',
+        'retirement-visa': 'วีซ่าเกษียณอายุ',
+        services: 'บริการและราคา',
+        contact: 'ติดต่อเรา',
+        faq: 'คำถามที่พบบ่อย',
+        terms: 'ข้อกำหนดและเงื่อนไข'
+      },
+      ru: {
+        dtv: 'виза-dtv-таиланд',
+        'tourist-visa': 'туристическая-виза',
+        'retirement-visa': 'пенсионная-виза',
+        services: 'услуги-и-цены',
+        contact: 'контакты',
+        faq: 'вопросы-и-ответы',
+        terms: 'правила-и-условия'
+      },
+      zh: {
+        dtv: 'dtv-签证',
+        'tourist-visa': '旅游签证',
+        'retirement-visa': '退休签证',
+        services: '服务与价格',
+        contact: '联系我们',
+        faq: '常见问题',
+        terms: '条款与条件'
+      },
+      ja: {
+        dtv: 'dtvビザ',
+        'tourist-visa': '観光ビザ',
+        'retirement-visa': '退職者ビザ',
+        services: 'サービスと料金',
+        contact: 'お問い合わせ',
+        faq: 'よくある質問',
+        terms: '利用規約'
+      },
+      ko: {
+        dtv: 'dtv-비자',
+        'tourist-visa': '관광-비자',
+        'retirement-visa': '은퇴-비자',
+        services: '서비스-및-요금',
+        contact: '문의하기',
+        faq: '자주-묻는-질문',
+        terms: '이용-약관'
+      },
+      ar: {
+        dtv: 'تأشيرة-dtv',
+        'tourist-visa': 'تأشيرة-سياحية',
+        'retirement-visa': 'تأشيرة-تقاعد',
+        services: 'الخدمات-والأسعار',
+        contact: 'اتصل-بنا',
+        faq: 'الأسئلة-الشائعة',
+        terms: 'الشروط-والأحكام'
       }
     };
 
     const rewrites: any[] = [];
 
-    languages.forEach(lang => {
-      const slugs = slugMap[lang];
-      if (slugs) {
-        Object.entries(slugs).forEach(([internal, translated]) => {
-          rewrites.push({
-            source: `/${lang}/${translated}`,
-            destination: `/${lang}/${internal}`,
-          });
+    Object.entries(slugMap).forEach(([lang, slugs]) => {
+      Object.entries(slugs).forEach(([internal, translated]) => {
+        rewrites.push({
+          source: `/${lang}/${translated}`,
+          destination: `/${lang}/${internal}`,
         });
-      }
+      });
     });
 
     return rewrites;
