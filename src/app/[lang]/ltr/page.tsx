@@ -9,11 +9,16 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { lang } = await params;
-    const t = translations[lang as keyof typeof translations]?.ltr_page?.meta || translations.fr.ltr_page.meta;
+    const langTranslations = translations[lang as keyof typeof translations];
+    const ltrPage = (langTranslations && 'ltr_page' in langTranslations)
+        ? (langTranslations as any).ltr_page
+        : translations.fr.ltr_page;
+
+    const meta = ltrPage?.meta || translations.fr.ltr_page.meta;
 
     return {
-        title: t.title,
-        description: t.description,
+        title: meta.title,
+        description: meta.description,
     };
 }
 

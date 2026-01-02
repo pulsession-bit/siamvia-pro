@@ -37,7 +37,7 @@ const LTRClientPage: React.FC = () => {
         ],
         pros_title: t('ltr_page.pros_title') || "Points Forts",
         cons_title: t('ltr_page.cons_title') || "Points Faibles",
-        pros: (t('ltr_page.pros') as unknown as string[]) || [
+        pros: Array.isArray(t('ltr_page.pros')) ? (t('ltr_page.pros') as unknown as string[]) : [
             "Validité 10 ans (5+5) renouvelable",
             "Permis de travail numérique inclus",
             "Fast Track Aéroport International",
@@ -45,7 +45,7 @@ const LTRClientPage: React.FC = () => {
             "Taux 17% pour les professionnels",
             "4 Dépendants inclus (Conjoint/Enfants)"
         ],
-        cons: (t('ltr_page.cons') as unknown as string[]) || [
+        cons: Array.isArray(t('ltr_page.cons')) ? (t('ltr_page.cons') as unknown as string[]) : [
             "Critères financiers très stricts (>80k$ richesse)",
             "Processus de validation long (BOI)",
             "Paperasse administrative lourde au début",
@@ -53,7 +53,7 @@ const LTRClientPage: React.FC = () => {
             "Investissement requis pour certaines catégories"
         ],
         faq_title: t('ltr_page.faq_title') || "Questions Fréquentes (FAQ)",
-        faq: (t('ltr_page.faq') as unknown as { q: string, a: string }[]) || [
+        faq: Array.isArray(t('ltr_page.faq')) ? (t('ltr_page.faq') as unknown as { q: string, a: string }[]) : [
             { q: "Quelle est la différence avec le Visa Elite ?", a: "Le Visa Elite est payant (coûteux) et ne permet pas de travailler. Le LTR est 'gratuit' (frais de dossier faibles) si vous êtes éligible, et inlut un permis de travail." },
             { q: "Puis-je travailler avec un visa LTR ?", a: "Oui, c'est l'un des rares visas long terme qui inclut un permis de travail numérique (Digital Work Permit) sans avoir besoin d'employer 4 Thaïlandais par étranger." },
             { q: "Quels sont les revenus minimums ?", a: "Généralement 80,000 USD par an sur les 2 dernières années, ou un mix d'investissements et de revenus. Les retraités peuvent être éligibles avec moins s'ils investissent." },
@@ -168,7 +168,7 @@ const LTRClientPage: React.FC = () => {
             {/* FAQ Section */}
             <FAQAccordion
                 title={content.faq_title}
-                faqs={(content.faq as any[]).map(f => ({ q: f.q, a: f.a }))}
+                faqs={Array.isArray(content.faq) ? content.faq.map(f => ({ q: f.q, a: f.a })) : []}
             />
 
             {/* Appointment */}
