@@ -5,7 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
 import { URLS, IMAGES } from '@/constants';
 import { HeroSection, PageContainer, Card, CTAButton, HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
-import { ExpertAppointmentForm } from '@/components/ExpertAppointmentForm';
+import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 import { RelatedPages } from '@/components/RelatedPages';
 import { Briefcase, Plane, HelpCircle, Check, AlertTriangle, Heart, Shield, Stethoscope, Wallet, Infinity, MessageSquare, Phone, Mail, Video, Clock, Calendar } from 'lucide-react';
 

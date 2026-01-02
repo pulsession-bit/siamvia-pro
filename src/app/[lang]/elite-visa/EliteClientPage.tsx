@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Check, Crown, Shield, Star } from 'lucide-react';
-import { ExpertAppointmentForm } from '@/components/ExpertAppointmentForm';
+import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 import { HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
 import { QuickSummaryModal } from '@/components/ui/QuickSummaryModal';
 import { useLanguage } from '@/contexts/LanguageContext';

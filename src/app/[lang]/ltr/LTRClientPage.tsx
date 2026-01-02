@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Check, Shield, TrendingUp, Award, DollarSign, Briefcase, Users, Globe } from 'lucide-react';
-import { ExpertAppointmentForm } from '@/components/ExpertAppointmentForm';
+import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
 

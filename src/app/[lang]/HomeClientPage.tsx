@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
-import { ExpertAppointmentForm } from '@/components/ExpertAppointmentForm';
+import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 
 const HomeClientPage: React.FC = () => {
     const { t } = useLanguage();
