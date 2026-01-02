@@ -14,7 +14,7 @@ interface ExpertAppointmentFormProps {
   onCancel?: () => void;
 }
 
-export const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
+const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
   onSuccess,
   onCancel
 }) => {
@@ -200,3 +200,5 @@ export const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
     </form>
   );
 };
+
+export default ExpertAppointmentForm;

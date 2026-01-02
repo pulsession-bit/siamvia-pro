@@ -51,3 +51,14 @@ TON
 - Concis
 - Orienté décision
 - Aucun marketing
+
+
+
+Export default doesn't exist in target module
+   5 | import { useLanguage } from '@/contexts/LanguageContext';
+   6 | import { URLS, CONTACT, IMAGES } from '@/constants';
+>  7 | import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | const WhatsAppIcon = ({ className }: { className?: string }) => (
+  10 |     <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
