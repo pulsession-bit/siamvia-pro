@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CartDrawer from '@/components/CartDrawer';
 
-const languages = ['fr', 'en'] as const;
+const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
 
 // This is a Server Component - generateStaticParams works here
 export function generateStaticParams() {
@@ -22,12 +22,12 @@ export default async function LangLayout({ children, params }: Props) {
     const { lang } = await params;
 
     // Validate language
-    if (lang !== 'fr' && lang !== 'en') {
+    if (!languages.includes(lang as any)) {
         notFound();
     }
 
     return (
-        <LanguageProvider initialLang={lang as 'fr' | 'en'}>
+        <LanguageProvider initialLang={lang as any}>
             <CartProvider>
                 <Navbar />
                 <CartDrawer />
