@@ -38,38 +38,38 @@ const nextConfig: NextConfig = {
         ltr: 'long-term-resident-visa'
       },
       de: {
-        dtv: 'thailand-dtv-visum',
+        dtv: 'destination-thailand-visum',
         'elite-visa': 'thailand-elite-visum',
-        'tourist-visa': 'thailand-touristenvisum',
-        'retirement-visa': 'thailand-ruhestandsvisum',
-        services: 'leistungen-und-preise',
+        'tourist-visa': 'touristenvisum',
+        'retirement-visa': 'ruhestandsvisum',
+        services: 'leistungen',
         contact: 'kontakt',
-        faq: 'haeufig-gestellte-fragen',
-        terms: 'allgemeine-geschaeftsbedingungen',
-        sitemap: 'seitenuebersicht',
+        faq: 'haufig-gestellte-fragen',
+        terms: 'allgemeine-geschaftsbedingungen',
+        sitemap: 'seitenverzeichnis',
         search: 'suche',
         ltr: 'long-term-resident-visa'
       },
       es: {
-        dtv: 'visa-dtv-tailandia',
-        'elite-visa': 'visa-elite-tailandia',
-        'tourist-visa': 'visa-turista-tailandia',
-        'retirement-visa': 'visa-jubilacion-tailandia',
-        services: 'servicios-y-tarifas',
+        dtv: 'visado-destino-tailandia',
+        'elite-visa': 'visado-elite-tailandia',
+        'tourist-visa': 'visado-turista',
+        'retirement-visa': 'visado-jubilacion',
+        services: 'servicios',
         contact: 'contacto',
         faq: 'preguntas-frecuentes',
         terms: 'terminos-y-condiciones',
-        sitemap: 'mapa-del-sitio',
+        sitemap: 'mapa-del-sito',
         search: 'buscar',
         ltr: 'visado-residencia-larga-duracion'
       },
       it: {
-        dtv: 'visto-dtv-thailandia',
+        dtv: 'visto-destinazione-thailandia',
         'elite-visa': 'visto-elite-thailandia',
-        'tourist-visa': 'visto-turistico-thailandia',
-        'retirement-visa': 'visto-pensionati-thailandia',
-        services: 'servizi-e-tariffe',
-        contact: 'contatti',
+        'tourist-visa': 'visto-turistico',
+        'retirement-visa': 'visto-pensionati',
+        services: 'servizi',
+        contact: 'contatto',
         faq: 'domande-frequenti',
         terms: 'termini-e-condizioni',
         sitemap: 'mappa-del-sito',
@@ -77,7 +77,8 @@ const nextConfig: NextConfig = {
         ltr: 'visto-residenza-lungo-termine'
       },
       th: {
-        dtv: 'dtv-visa',
+        dtv: 'destination-thailand-visa',
+        'elite-visa': 'thailand-resident-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -89,7 +90,8 @@ const nextConfig: NextConfig = {
         ltr: 'long-term-resident-visa'
       },
       ru: {
-        dtv: 'dtv-visa',
+        dtv: 'destination-thailand-visa',
+        'elite-visa': 'thailand-resident-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -101,7 +103,8 @@ const nextConfig: NextConfig = {
         ltr: 'long-term-resident-visa'
       },
       zh: {
-        dtv: 'dtv-visa',
+        dtv: 'destination-thailand-visa',
+        'elite-visa': 'thailand-resident-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -113,7 +116,8 @@ const nextConfig: NextConfig = {
         ltr: 'global-wealthy-citizen-visa'
       },
       ja: {
-        dtv: 'dtv-visa',
+        dtv: 'destination-thailand-visa',
+        'elite-visa': 'thailand-resident-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -125,7 +129,8 @@ const nextConfig: NextConfig = {
         ltr: 'long-term-resident-visa'
       },
       ko: {
-        dtv: 'dtv-visa',
+        dtv: 'destination-thailand-visa',
+        'elite-visa': 'thailand-resident-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -137,7 +142,8 @@ const nextConfig: NextConfig = {
         ltr: 'long-term-resident-visa'
       },
       ar: {
-        dtv: 'dtv-visa',
+        dtv: 'destination-thailand-visa',
+        'elite-visa': 'thailand-resident-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',

@@ -14,6 +14,8 @@ export default function SitemapPage() {
     const links: { title: string; href: string; icon: React.ReactNode; desc: string }[] = [
         { title: t('nav.home'), href: langPath(''), icon: <ShieldCheck className="w-5 h-5" />, desc: t('meta.description') },
         { title: t('nav.dtv'), href: langPath('dtv'), icon: <Globe className="w-5 h-5" />, desc: t('dtv_page.hero_subtitle') },
+        { title: t('visas.elite_title'), href: langPath('elite-visa'), icon: <ShieldCheck className="w-5 h-5" />, desc: t('elite_page.hero_subtitle') },
+        { title: t('nav.ltr'), href: langPath('ltr'), icon: <ShieldCheck className="w-5 h-5" />, desc: t('ltr_page.subtitle') },
         { title: t('nav.tourist'), href: langPath('tourist-visa'), icon: <Calendar className="w-5 h-5" />, desc: t('tourist_visa_page.hero_subtitle') },
         { title: t('nav.retirement'), href: langPath('retirement-visa'), icon: <FileText className="w-5 h-5" />, desc: t('retirement_visa_page.hero_subtitle') },
         { title: t('nav.services'), href: langPath('services'), icon: <Globe className="w-5 h-5" />, desc: t('services_page.hero_subtitle') },
