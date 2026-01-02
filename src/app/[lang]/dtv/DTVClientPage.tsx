@@ -1,12 +1,14 @@
 'use client';
 
 import React from 'react';
-import { Check, AlertTriangle, Briefcase, Calendar } from 'lucide-react';
+import {
+    Check, AlertTriangle, Briefcase, Calendar,
+    Plane, Heart, HelpCircle, Globe, DollarSign, Laptop
+} from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
-import { HighsLows, FAQAccordion } from '@/components/ui/PageComponents';
+import { HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
 import { RelatedPages } from '@/components/RelatedPages';
-import { Plane, Heart, HelpCircle } from 'lucide-react';
 
 const DTVClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -40,7 +42,7 @@ const DTVClientPage: React.FC = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
-                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-slate-100">
+                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-slate-100 mb-16">
                     <div className="grid md:grid-cols-2 gap-12">
                         <div>
                             <h2 className="text-2xl font-bold text-slate-900 mb-6">{t('dtv_page.why_title')}</h2>
@@ -146,6 +148,25 @@ const DTVClientPage: React.FC = () => {
                     </div>
                 </div>
 
+                {/* High Value Feature Block */}
+                <HighValueBlock
+                    title="Liberté Numérique"
+                    highlight="& Workcation"
+                    description="Travaillez depuis la Thaïlande sans tracas visa ni impôts sur vos revenus étrangers (si <180j/an). Le DTV est la clé pour 5 ans de sérénité."
+                    listItems={[
+                        { icon: Laptop, text: "Work From Anywhere" },
+                        { icon: Calendar, text: "5 Ans de Validité (180j/entrée)" },
+                        { icon: DollarSign, text: "Fiscalité Avantageuse" }
+                    ]}
+                    cardTitle="Profils Idéaux"
+                    cardItems={[
+                        "Remote Workers / Employés",
+                        "Digital Nomads & Freelances",
+                        "Créateurs de Contenu / Soft Power",
+                        "Participants Muay Thai / Cuisine"
+                    ]}
+                />
+
                 <HighsLows
                     highsTitle={t('dtv_page.highs_title')}
                     highs={[
@@ -185,7 +206,7 @@ const DTVClientPage: React.FC = () => {
                         {
                             title: t('visas.ltr_title'),
                             description: t('visas.ltr_desc'),
-                            href: langPath('retirement-visa'),
+                            href: langPath('ltr'), // Updated to point to LTR page
                             icon: Heart
                         },
                         {

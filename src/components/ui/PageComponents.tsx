@@ -229,7 +229,7 @@ interface HighsLowsProps {
     lows: string[];
 }
 
-import { CheckCircle2, AlertCircle } from 'lucide-react';
+import { Check, AlertTriangle } from 'lucide-react';
 
 export const HighsLows: React.FC<HighsLowsProps> = ({
     highsTitle,
@@ -238,36 +238,38 @@ export const HighsLows: React.FC<HighsLowsProps> = ({
     lows
 }) => {
     return (
-        <div className="grid md:grid-cols-2 gap-8 my-16">
-            <div className="bg-green-50 rounded-2xl p-8 border border-green-100 shadow-sm transition hover:shadow-md">
-                <div className="flex items-center gap-3 mb-6">
-                    <div className="bg-green-100 p-2 rounded-lg">
-                        <CheckCircle2 className="h-6 w-6 text-green-600" />
+        <div className="grid md:grid-cols-2 gap-8 my-16 max-w-6xl mx-auto">
+            {/* Highs / Pros */}
+            <div className="bg-white p-8 rounded-3xl shadow-lg border-t-4 border-green-500 transition hover:shadow-xl">
+                <h3 className="text-2xl font-bold mb-6 flex items-center text-slate-900">
+                    <div className="bg-green-100 p-2 rounded-full mr-3">
+                        <Check className="text-green-600 h-6 w-6" />
                     </div>
-                    <h3 className="text-xl font-bold text-green-900">{highsTitle}</h3>
-                </div>
+                    {highsTitle}
+                </h3>
                 <ul className="space-y-4">
                     {highs.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                            <div className="h-1.5 w-1.5 rounded-full bg-green-500 mt-2.5 flex-shrink-0" />
-                            <span className="text-green-800 font-medium leading-relaxed">{item}</span>
+                        <li key={idx} className="flex items-start text-slate-600">
+                            <Check className="text-green-500 mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                            <span className="leading-relaxed">{item}</span>
                         </li>
                     ))}
                 </ul>
             </div>
 
-            <div className="bg-red-50 rounded-2xl p-8 border border-red-100 shadow-sm transition hover:shadow-md">
-                <div className="flex items-center gap-3 mb-6">
-                    <div className="bg-red-100 p-2 rounded-lg">
-                        <AlertCircle className="h-6 w-6 text-red-600" />
+            {/* Lows / Cons */}
+            <div className="bg-white p-8 rounded-3xl shadow-lg border-t-4 border-red-400 transition hover:shadow-xl">
+                <h3 className="text-2xl font-bold mb-6 flex items-center text-slate-900">
+                    <div className="bg-red-100 p-2 rounded-full mr-3">
+                        <span className="text-red-500 font-bold text-xl px-2">!</span>
                     </div>
-                    <h3 className="text-xl font-bold text-red-900">{lowsTitle}</h3>
-                </div>
+                    {lowsTitle}
+                </h3>
                 <ul className="space-y-4">
                     {lows.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                            <div className="h-1.5 w-1.5 rounded-full bg-red-500 mt-2.5 flex-shrink-0" />
-                            <span className="text-red-800 font-medium leading-relaxed">{item}</span>
+                        <li key={idx} className="flex items-start text-slate-600">
+                            <span className="text-red-400 mr-2 mt-1 flex-shrink-0 font-bold">-</span>
+                            <span className="leading-relaxed">{item}</span>
                         </li>
                     ))}
                 </ul>
@@ -320,5 +322,73 @@ export const FAQAccordion: React.FC<FAQAccordionProps> = ({ title, faqs }) => {
                 ))}
             </div>
         </div>
+    );
+};
+
+/**
+ * High Value Feature Block
+ * 
+ * Premium dark section with blur effects highlighting key value proposition
+ */
+interface HighValueBlockProps {
+    title: string;
+    highlight: string;
+    description: string;
+    listItems: { icon: React.ElementType; text: string }[];
+    cardTitle: string;
+    cardItems: string[];
+}
+
+export const HighValueBlock: React.FC<HighValueBlockProps> = ({
+    title,
+    highlight,
+    description,
+    listItems,
+    cardTitle,
+    cardItems
+}) => {
+    return (
+        <section className="py-20 bg-slate-900 text-white relative overflow-hidden my-16 rounded-3xl mx-4 lg:mx-0 shadow-2xl">
+            {/* Background Effects */}
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] -mr-32 -mt-32"></div>
+            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-[100px] -ml-32 -mb-32"></div>
+
+            <div className="max-w-7xl mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-16 items-center">
+                {/* Left Content */}
+                <div>
+                    <h3 className="text-3xl md:text-5xl font-black mb-6 leading-tight">
+                        {title} <span className="text-amber-500">{highlight}</span>
+                    </h3>
+                    <p className="text-slate-300 text-lg leading-relaxed mb-8">
+                        {description}
+                    </p>
+                    <ul className="space-y-4">
+                        {listItems.map((item, i) => (
+                            <li key={i} className="flex items-center gap-4">
+                                <div className="bg-amber-500/20 p-2 rounded-lg text-amber-500">
+                                    <item.icon size={20} />
+                                </div>
+                                <span className="font-bold">{item.text}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                {/* Right Card */}
+                <div className="bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-3xl shadow-2xl">
+                    <h4 className="text-xl font-bold mb-6 text-center border-b border-white/10 pb-4">
+                        {cardTitle}
+                    </h4>
+                    <div className="grid gap-4">
+                        {cardItems.map((item, i) => (
+                            <div key={i} className="bg-white/10 p-4 rounded-xl flex items-center justify-between hover:bg-amber-500/20 transition cursor-default group">
+                                <span className="font-medium group-hover:text-amber-400 transition">{item}</span>
+                                <Check className="text-amber-500 w-5 h-5" />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 };

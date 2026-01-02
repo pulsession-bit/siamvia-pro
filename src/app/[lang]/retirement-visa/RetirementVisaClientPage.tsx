@@ -4,9 +4,9 @@ import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
 import { URLS, IMAGES } from '@/constants';
-import { HeroSection, PageContainer, Card, CTAButton, HighsLows, FAQAccordion } from '@/components/ui/PageComponents';
+import { HeroSection, PageContainer, Card, CTAButton, HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
 import { RelatedPages } from '@/components/RelatedPages';
-import { Briefcase, Plane, HelpCircle, Check, AlertTriangle, Heart, Shield } from 'lucide-react';
+import { Briefcase, Plane, HelpCircle, Check, AlertTriangle, Heart, Shield, Stethoscope, Wallet, Infinity } from 'lucide-react';
 
 const RetirementVisaClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -73,6 +73,25 @@ const RetirementVisaClientPage: React.FC = () => {
                         </div>
                     </div>
                 </Card>
+
+                {/* High Value Feature Block */}
+                <HighValueBlock
+                    title="Douceur de Vivre"
+                    highlight="& Sécurité"
+                    description="Profitez d'une retraite dorée au pays du sourire avec un coût de la vie avantageux et des infrastructures médicales de classe mondiale. Une retraite paisible sans compromis."
+                    listItems={[
+                        { icon: Wallet, text: "Coût de la vie avantageux" },
+                        { icon: Infinity, text: "Renouvelable à l'infini" },
+                        { icon: Stethoscope, text: "Médecine de Classe Mondiale" }
+                    ]}
+                    cardTitle="Tranquillité d'Esprit"
+                    cardItems={[
+                        "Ouverture Compte Bancaire",
+                        "Assurance Santé (Facilitée)",
+                        "Assistance TM30/90 Jours",
+                        "Importation Effets Personnels"
+                    ]}
+                />
 
                 <HighsLows
                     highsTitle={t('retirement_visa_page.highs_title')}

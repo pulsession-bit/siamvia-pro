@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
+import { ExpertAppointmentForm } from '@/components/ExpertAppointmentForm';
 
 const HomeClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -53,6 +54,36 @@ const HomeClientPage: React.FC = () => {
                         {t('hero.subtitle')} <br className="hidden md:block" />
                         <span className="text-white font-medium">{t('hero.subtitle_suffix')}</span>
                     </p>
+                    <div className="w-full max-w-2xl mx-auto mb-10 relative z-20">
+                        <form
+                            onSubmit={(e) => {
+                                e.preventDefault();
+                                const form = e.target as HTMLFormElement;
+                                const input = form.elements.namedItem('q') as HTMLInputElement;
+                                if (input.value.trim()) {
+                                    window.location.href = `${langPath('search')}?q=${encodeURIComponent(input.value)}`;
+                                }
+                            }}
+                            className="relative flex items-center"
+                        >
+                            <div className="absolute left-4 text-slate-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
+                            </div>
+                            <input
+                                type="text"
+                                name="q"
+                                placeholder={t('nav.search') || "Rechercher un visa (ex: Retraite, DTV...)"}
+                                className="w-full py-4 pl-12 pr-4 rounded-xl text-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-4 focus:ring-amber-500/30 shadow-2xl bg-white/95 backdrop-blur-sm border border-slate-200/50"
+                            />
+                            <button
+                                type="submit"
+                                className="absolute right-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold py-2 px-6 rounded-lg transition-all"
+                            >
+                                GO
+                            </button>
+                        </form>
+                    </div>
+
                     <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 w-full justify-center">
                         <a
                             href={SCORING_ENGINE_URL}
@@ -337,6 +368,19 @@ const HomeClientPage: React.FC = () => {
                                 </Link>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Appointment Section */}
+            <section className="py-24 bg-slate-50 border-t border-slate-200">
+                <div className="max-w-4xl mx-auto px-4">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Parlons de votre projet</h2>
+                        <p className="text-slate-600 text-lg">Réservez un appel gratuit avec un expert visa Thaïlande.</p>
+                    </div>
+                    <div className="bg-white rounded-2xl shadow-xl overflow-hidden p-8 md:p-12 border border-slate-100">
+                        <ExpertAppointmentForm />
                     </div>
                 </div>
             </section>

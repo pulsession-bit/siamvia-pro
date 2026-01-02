@@ -1,0 +1,32 @@
+/**
+ * RÈGLES DE SÉCURITÉ FIRESTORE
+ * 
+ * À copier dans Firebase Console > Firestore Database > Règles
+ * https://console.firebase.google.com/project/call-center-lead-dc450/firestore/rules
+ */
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Collection appointments - Écriture avec auth anonyme
+    match /appointments/{appointmentId} {
+      // Permet la création si l'utilisateur est authentifié (même anonyme)
+      allow create: if request.auth != null;
+      
+      // Lecture/modification/suppression réservée aux admins
+      allow read, update, delete: if false;
+    }
+    
+    // Autres collections (à adapter selon vos besoins)
+    match /leads/{leadId} {
+      allow create: if request.auth != null;
+      allow read, update, delete: if false;
+    }
+    
+    // Par défaut, tout est bloqué
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

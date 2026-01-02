@@ -96,10 +96,22 @@ const Navbar: React.FC = () => {
                 className={`absolute left-0 top-full mt-2 w-56 bg-white rounded-xl shadow-2xl py-2 border border-slate-100 transition-all duration-200 transform origin-top-left ${showDropdown ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'}`}
               >
                 <Link
+                  href={langPath('ltr')}
+                  className="block px-4 py-3 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 font-medium"
+                >
+                  {t('nav.ltr')}
+                </Link>
+                <Link
                   href={langPath('tourist-visa')}
                   className="block px-4 py-3 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 font-medium"
                 >
                   {t('nav.tourist')}
+                </Link>
+                <Link
+                  href={langPath('elite-visa')}
+                  className="block px-4 py-3 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-700 font-medium"
+                >
+                  {t('nav.elite')}
                 </Link>
                 <Link
                   href={langPath('retirement-visa')}
@@ -184,7 +196,9 @@ const Navbar: React.FC = () => {
             <Link href={langPath('dtv')} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition">{t('nav.dtv')}</Link>
             <div className="bg-slate-50 py-2 my-2">
               <span className="block px-6 py-2 text-xs font-bold text-slate-400 uppercase tracking-wider">{t('nav.other_visas')}</span>
+              <Link href={langPath('ltr')} onClick={() => setIsOpen(false)} className="block px-6 py-3 text-slate-600 hover:text-amber-600 pl-10 font-medium">{t('nav.ltr')}</Link>
               <Link href={langPath('tourist-visa')} onClick={() => setIsOpen(false)} className="block px-6 py-3 text-slate-600 hover:text-amber-600 pl-10 font-medium">{t('nav.tourist')}</Link>
+              <Link href={langPath('elite-visa')} onClick={() => setIsOpen(false)} className="block px-6 py-3 text-slate-600 hover:text-amber-600 pl-10 font-medium">{t('nav.elite')}</Link>
               <Link href={langPath('retirement-visa')} onClick={() => setIsOpen(false)} className="block px-6 py-3 text-slate-600 hover:text-amber-600 pl-10 font-medium">{t('nav.retirement')}</Link>
             </div>
             <Link href={langPath('services')} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition">{t('nav.services')}</Link>

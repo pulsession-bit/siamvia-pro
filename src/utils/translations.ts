@@ -1,16 +1,80 @@
-
 export const translations = {
   fr: {
     nav: {
       home: "Accueil",
-      dtv: "Le Visa DTV",
-      other_visas: "Autres Visas",
-      tourist: "Visa Touristique (TR)",
-      retirement: "Visa Retraite (Non-O)",
-      services: "Services & Tarifs",
-      see_services: "Voir tous les services",
-      faq: "FAQ",
+      visa_options: "Options de Visa",
+      all_visas: "Tous les Visas",
+      eligibility_check: "Test d'Éligibilité",
       contact: "Contact",
+      dtv: "Visa DTV (Nomade)",
+      tourist: "Visa Touriste",
+      elite: "Visa Elite",
+      retirement: "Visa Retraite",
+      services: "Services",
+      faq: "FAQ",
+      search: "Recherche",
+      other_visas: "Autres Visas",
+      eligibility: "Vérifier mon éligibilité",
+      see_services: "Voir nos services",
+      ltr: "Visa LTR"
+    },
+    ltr_page: {
+      meta: {
+        title: "Visa LTR Thaïlande (Long Term Resident) - 10 Ans | SiamVisaPro",
+        description: "Obtenez le Visa LTR 10 ans pour la Thaïlande. Résidence fiscale privilégiée (17%), permis de travail et avantages VIP. Audit d'éligibilité gratuit."
+      },
+      badge: "Résidence 10 Ans",
+      hero_title: "Le VISA LTR Thaïlande",
+      title: "Visa LTR: La Résidence Longue Durée",
+      subtitle: "Le statut fiscal et résidentiel le plus avantageux pour les citoyens fortunés.",
+      cta: "Vérifier mon éligibilité LTR",
+      why_title: "Pourquoi choisir le LTR ?",
+      benefit1_title: "10 Ans de Visa",
+      benefit1_desc: "Renouvelable, avec permis de travail numérique inclus.",
+      benefit2_title: "17% d'Impôt",
+      benefit2_desc: "Taux forfaitaire sur les revenus locaux pour les professionnels.",
+      benefit3_title: "Service VIP",
+      benefit3_desc: "Accès prioritaire aéroport et rapports de 90 jours supprimés.",
+      cat1: "Citoyens Fortunés",
+      cat2: "Retraités Fortunés",
+      cat3: "Travail à Distance",
+      cat4: "Experts Qualifiés",
+      audit1: "Audit Revenus > 80k USD",
+      audit2: "Analyse Investissement",
+      audit3: "Liaison Board of Investment",
+      audit4: "Inclusion Famille (4 pers.)",
+      pros_title: "Points Forts",
+      cons_title: "Points Faibles",
+      pros: [
+        "Validité 10 ans (5+5) renouvelable",
+        "Permis de travail numérique inclus",
+        "Fast Track Aéroport International",
+        "Exonération fiscale sur revenus étrangers",
+        "Taux 17% pour les professionnels",
+        "4 Dépendants inclus (Conjoint/Enfants)"
+      ],
+      cons: [
+        "Critères financiers très stricts (>80k$ richesse)",
+        "Processus de validation long (BOI)",
+        "Paperasse administrative lourde au début",
+        "Assurance maladie obligatoire (>50k$)",
+        "Investissement requis pour certaines catégories"
+      ],
+      faq_title: "Questions Fréquentes (FAQ)",
+      faq: [
+        { q: "Quelle différence avec le Visa Elite ?", a: "Le Visa Elite est payant et ne permet pas de travailler. Le LTR est 'gratuit' (frais réduits) si éligible et inclut le permis de travail." },
+        { q: "Puis-je travailler avec un visa LTR ?", a: "Oui, c'est l'un des rares visas incluant un permis de travail numérique (Digital Work Permit) sans quota d'employés thaïs." },
+        { q: "Revenus minimums requis ?", a: "80,000 USD/an (2 ans) ou mix investissement. Retraités éligibles à 40,000 USD sous conditions d'investissement." },
+        { q: "Délais d'obtention ?", a: "1 à 3 mois pour l'approbation BOI, puis quelques semaines pour l'émission." }
+      ]
+    },
+    search_page: {
+      meta: {
+        title: "Recherche de Visa Thaïlande | Comparateur Intelligent",
+        description: "Trouvez le visa idéal pour votre séjour en Thaïlande. Comparez les visas Retraite, DTV, Elite et Tourisme en un clic."
+      }
+    },
+    home_page: {
       member: "Espace Membre",
       eligibility: "Éligibilité"
     },
@@ -112,9 +176,33 @@ export const translations = {
         { q: "Mes proches peuvent-ils m'accompagner ?", a: "Oui, votre conjoint et vos enfants de moins de 20 ans peuvent obtenir un visa DTV \"Dependant\" lié au vôtre, avec les mêmes avantages de durée." },
         { q: "Quelle est la valeur ajoutée de Siam Visa Pro par rapport à une demande en solo ?", a: "Faire sa demande seul comporte des risques de refus liés à un dossier imprécis. Siam Visa Pro combine l'expertise humaine et la puissance de l'IA : nos outils d'intelligence artificielle analysent votre éligibilité en temps réel pour détecter les points faibles de votre dossier, tandis que nos experts optimisent votre portfolio et vos documents. Vous bénéficiez d'une double vérification — technologique et humaine — pour garantir le taux d'approbation le plus élevé possible." }
       ],
+      prestige_title: "Service <span className=\"text-amber-500\">Prestige</span>",
+      prestige_desc: "SiamVisa Pro est votre agent privilégié pour l'adhésion au programme Thailand Privilege (Elite).",
+      prestige_list: [
+        "Choix du programme (5/10/20 ans)",
+        "Liaison avec le secrétariat Elite",
+        "Gestion des formalités aéroport",
+        "Support conciergerie"
+      ],
+      cta_button: "Devenir Membre Privilege",
+      quick_view: {
+        btn: "⚡️ En Bref",
+        title: "Visa Elite : L'essentiel",
+        duration: "Validité",
+        duration_val: "5 à 20 Ans",
+        cost: "Coût Total",
+        cost_val: "900k (5 ans) à 5M THB (20 ans)",
+        per_year: "Coût Lissé / An",
+        per_year_val: "Dès 125k THB (~3.3k€) / an",
+        runs: "Visa Runs",
+        runs_val: "0 / An (Zéro)",
+        entries: "Entrées",
+        entries_val: "Illimitées (VIP)",
+        verdict: "VERDICT : Le confort absolu. Vous achetez votre tranquillité administrative pour des années."
+      },
       meta: {
-        title: "Visa DTV Thaïlande (Destination Thailand Visa) | Expertise Siam Visa Pro",
-        description: "Vivez et travaillez en Thaïlande pendant 5 ans avec le visa DTV. Nous optimisons votre Portfolio et garantissons votre éligibilité."
+        title: "Visa Elite Thaïlande (Thailand Privilege) | Packages & Tarifs Officiels",
+        description: "Obtenez le Visa Elite Thaïlande pour 5, 10 ou 20 ans. Service VIP, Coupe-File Aéroport et Conciergerie. Découvrez les tarifs officiels."
       }
     },
     services_page: {
@@ -467,7 +555,8 @@ export const translations = {
       faq: "FAQ",
       contact: "Contact",
       member: "Client Area",
-      eligibility: "Eligibility"
+      eligibility: "Eligibility",
+      ltr: "Visa LTR"
     },
     meta: {
       title: "Siam Visa Pro | Thailand Visa Expert - DTV, Tourist & Retirement",
@@ -588,6 +677,78 @@ export const translations = {
       meta: {
         title: "Thailand DTV Visa (Destination Thailand Visa) | Siam Visa Pro Expertise",
         description: "Live and work in Thailand for 5 years with the DTV visa. We optimize your Portfolio and ensure your eligibility."
+      }
+    },
+    elite_page: {
+      badge: "Thailand Privilege",
+      hero_title: "Thailand Elite Visa (Luxury & VIP)",
+      hero_subtitle: "5 to 20 years visa. VIP Concierge. Airport Fast-Track.",
+      hero_tagline: "The ultimate experience for living in Thailand.",
+      why_title: "Why choose the Elite Visa?",
+      duration_title: "5 to 20 Years of Serenity",
+      duration_desc: "Choose the duration that suits you (5, 10, 15, or 20 years) and forget the hassle of visa extensions.",
+      work_title: "Concierge Service",
+      work_desc: "From your arrival at the airport with a personal assistant to opening your bank account, everything is facilitated for you.",
+      finance_title: "One-time Investment",
+      finance_desc: "No proof of funds / monthly income required. It is a one-time membership fee paid directly to the government.",
+      who_title: "Who is it for?",
+      who_wealthy: "Investors & Retirees",
+      who_wealthy_desc: "Those who want to avoid the annual paperwork of retirement visas.",
+      who_business: "Business Owners",
+      who_business_desc: "Entrepreneurs wanting a stable base in Asia.",
+      who_family: "Families",
+      who_family_desc: "Flexible options to include spouse and children.",
+      benefits_title: "Exclusive Privileges",
+      benefits_desc: "In addition to the visa, access high-end services: Airport Limousine, Golf, Spa, Annual Health Check-up...",
+      benefits_btn: "View Packages",
+      cta_button: "Become a Member",
+      highs_title: "Highlights",
+      highs: [
+        "Ultra-long validity (up to 20 years)",
+        "VIP Airport Fast-Track Service (Arrival/Departure)",
+        "No age or monthly income requirements",
+        "24/7 Assistance for daily life"
+      ],
+      lows_title: "Points of Attention",
+      lows: [
+        "High initial cost (starting ~900,000 THB)",
+        "Work permit not automatically included",
+        "Processing time 1 to 3 months",
+        "Payment to government required before issuance"
+      ],
+      faq_title: "Elite Visa - FAQ",
+      faqs: [
+        { q: "Can I enter and leave Thailand multiple times with my Elite visa?", a: "Yes, it is a Multiple-Entry visa with unlimited entries for the duration of your membership (5 to 20 years)." },
+        { q: "Do I have to pay taxes in Thailand with this visa?", a: "The Elite Visa does not automatically make you a tax resident. You only pay tax if you stay more than 180 days in a calendar year AND bring foreign income into Thailand in the same year." },
+        { q: "Can my family accompany me?", a: "Yes, there are 'Family' packages that allow you to include immediate family members at a reduced rate." },
+        { q: "Can I work with an Elite Visa?", a: "Technically no, it is a tourist visa. However, you can be a shareholder of a company, or work legally if you obtain a Work Permit (which is possible with the Elite Visa combined with a job offer)." }
+      ],
+      prestige_title: "Prestige <span className=\"text-amber-500\">Service</span>",
+      prestige_desc: "SiamVisa Pro is your privileged agent for Thailand Privilege (Elite) membership.",
+      prestige_list: [
+        "Program Choice (5/10/20 years)",
+        "Liaison with Elite Secretariat",
+        "Airport Formalities Management",
+        "Concierge Support"
+      ],
+      quick_view: {
+        btn: "⚡️ Quick View",
+        title: "Elite Visa: Essentials",
+        duration: "Validity",
+        duration_val: "5 to 20 Years",
+        cost: "Total Cost",
+        cost_val: "900k (5y) to 5M THB (20y)",
+        per_year: "Smoothed Cost / Year",
+        per_year_val: "From 125k THB (~$3.6k) / year",
+        runs: "Visa Runs",
+        runs_val: "0 / Year (Zero)",
+        entries: "Entries",
+        entries_val: "Unlimited (VIP)",
+        verdict: "VERDICT: Absolute comfort. You are buying total peace of mind for years."
+      },
+      meta: {
+        title: "Thailand Elite Visa (Thailand Privilege) | Official Packages & Rates",
+        description: "Get the Thailand Elite Visa for 5, 10 or 20 years. VIP Service, Airport Fast-Track and Concierge. Discover official rates."
       }
     },
     services_page: {

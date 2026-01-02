@@ -1,127 +1,171 @@
-
-export type PageKey = 'home' | 'dtv' | 'tourist-visa' | 'retirement-visa' | 'services' | 'contact' | 'faq' | 'terms' | 'sitemap';
+export type PageKey =
+    | 'home'
+    | 'dtv'
+    | 'elite-visa'
+    | 'tourist-visa'
+    | 'retirement-visa'
+    | 'services'
+    | 'contact'
+    | 'faq'
+    | 'terms'
+    | 'sitemap'
+    | 'search'
+    | 'ltr'; // Added LTR
 
 export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     fr: {
         home: '',
         dtv: 'visa-dtv-thailande',
+        'elite-visa': 'visa-elite-thailande',
         'tourist-visa': 'visa-touristique-thailande',
         'retirement-visa': 'visa-retraite-thailande',
         services: 'services-et-tarifs',
         contact: 'nous-contacter',
         faq: 'questions-frequentes',
         terms: 'conditions-generales',
-        sitemap: 'plan-du-site'
+        sitemap: 'plan-du-site',
+        search: 'recherche',
+        ltr: 'visa-ltr-thailande'
     },
     en: {
         home: '',
         dtv: 'thailand-dtv-visa',
+        'elite-visa': 'thailand-elite-visa',
         'tourist-visa': 'thailand-tourist-visa',
         'retirement-visa': 'thailand-retirement-visa',
         services: 'services-and-rates',
         contact: 'contact-us',
         faq: 'frequently-asked-questions',
         terms: 'terms-and-conditions',
-        sitemap: 'sitemap'
+        sitemap: 'sitemap',
+        search: 'search',
+        ltr: 'long-term-resident-visa'
     },
     de: {
         home: '',
-        dtv: 'thailand-dtv-visum',
-        'tourist-visa': 'thailand-touristenvisum',
-        'retirement-visa': 'thailand-ruhestandsvisum',
-        services: 'leistungen-und-preise',
+        dtv: 'destination-thailand-visum',
+        'elite-visa': 'thailand-elite-visum',
+        'tourist-visa': 'touristenvisum',
+        'retirement-visa': 'ruhestandsvisum',
+        services: 'leistungen',
         contact: 'kontakt',
-        faq: 'haeufig-gestellte-fragen',
-        terms: 'allgemeine-geschaeftsbedingungen',
-        sitemap: 'seitenuebersicht'
+        faq: 'haufig-gestellte-fragen',
+        terms: 'allgemeine-geschaftsbedingungen',
+        sitemap: 'seitenverzeichnis',
+        search: 'suche',
+        ltr: 'long-term-resident-visa'
     },
     es: {
         home: '',
-        dtv: 'visa-dtv-tailandia',
-        'tourist-visa': 'visa-turista-tailandia',
-        'retirement-visa': 'visa-jubilacion-tailandia',
-        services: 'servicios-y-tarifas',
+        dtv: 'visado-destino-tailandia',
+        'elite-visa': 'visado-elite-tailandia',
+        'tourist-visa': 'visado-turista',
+        'retirement-visa': 'visado-jubilacion',
+        services: 'servicios',
         contact: 'contacto',
         faq: 'preguntas-frecuentes',
         terms: 'terminos-y-condiciones',
-        sitemap: 'mapa-del-sitio'
+        sitemap: 'mapa-del-sito',
+        search: 'buscar',
+        ltr: 'visado-residencia-larga-duracion'
     },
     it: {
         home: '',
-        dtv: 'visto-dtv-thailandia',
-        'tourist-visa': 'visto-turistico-thailandia',
-        'retirement-visa': 'visto-pensionati-thailandia',
-        services: 'servizi-e-tariffe',
-        contact: 'contatti',
+        dtv: 'visto-destinazione-thailandia',
+        'elite-visa': 'visto-elite-thailandia',
+        'tourist-visa': 'visto-turistico',
+        'retirement-visa': 'visto-pensionati',
+        services: 'servizi',
+        contact: 'contatto',
         faq: 'domande-frequenti',
         terms: 'termini-e-condizioni',
-        sitemap: 'mappa-del-sito'
+        sitemap: 'mappa-del-sito',
+        search: 'cerca',
+        ltr: 'visto-residenza-lungo-termine'
     },
     th: {
         home: '',
-        dtv: 'dtv-visa',
+        dtv: 'destination-thailand-visa',
+        'elite-visa': 'thailand-resident-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
         contact: 'contact',
         faq: 'faq',
         terms: 'terms',
-        sitemap: 'sitemap'
+        sitemap: 'sitemap',
+        search: 'search',
+        ltr: 'long-term-resident-visa'
     },
     ru: {
         home: '',
-        dtv: 'dtv-visa',
+        dtv: 'destination-thailand-visa',
+        'elite-visa': 'thailand-resident-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
         contact: 'contact',
         faq: 'faq',
         terms: 'terms',
-        sitemap: 'sitemap'
+        sitemap: 'sitemap',
+        search: 'search',
+        ltr: 'long-term-resident-visa'
     },
     zh: {
         home: '',
-        dtv: 'dtv-visa',
+        dtv: 'destination-thailand-visa',
+        'elite-visa': 'thailand-resident-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
         contact: 'contact',
         faq: 'faq',
         terms: 'terms',
-        sitemap: 'sitemap'
+        sitemap: 'sitemap',
+        search: 'search',
+        ltr: 'global-wealthy-citizen-visa'
     },
     ja: {
         home: '',
-        dtv: 'dtv-visa',
+        dtv: 'destination-thailand-visa',
+        'elite-visa': 'thailand-resident-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
         contact: 'contact',
         faq: 'faq',
         terms: 'terms',
-        sitemap: 'sitemap'
+        sitemap: 'sitemap',
+        search: 'search',
+        ltr: 'long-term-resident-visa'
     },
     ko: {
         home: '',
-        dtv: 'dtv-visa',
+        dtv: 'destination-thailand-visa',
+        'elite-visa': 'thailand-resident-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
         contact: 'contact',
         faq: 'faq',
         terms: 'terms',
-        sitemap: 'sitemap'
+        sitemap: 'sitemap',
+        search: 'search',
+        ltr: 'long-term-resident-visa'
     },
     ar: {
         home: '',
-        dtv: 'dtv-visa',
+        dtv: 'destination-thailand-visa',
+        'elite-visa': 'thailand-resident-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
         contact: 'contact',
         faq: 'faq',
         terms: 'terms',
-        sitemap: 'sitemap'
+        sitemap: 'sitemap',
+        search: 'search',
+        ltr: 'long-term-resident-visa'
     }
 };
 
