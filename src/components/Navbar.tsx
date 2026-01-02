@@ -10,6 +10,15 @@ import { useCurrentLang } from '../hooks/useLang';
 const languages = [
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
   { code: 'en', label: 'English', flag: '🇬🇧' },
+  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+  { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'it', label: 'Italiano', flag: '🇮🇹' },
+  { code: 'th', label: 'ไทย', flag: '🇹🇭' },
+  { code: 'ru', label: 'Русский', flag: '🇷🇺' },
+  { code: 'zh', label: '中文', flag: '🇨🇳' },
+  { code: 'ja', label: '日本語', flag: '🇯🇵' },
+  { code: 'ko', label: '한국어', flag: '🇰🇷' },
+  { code: 'ar', label: 'العربية', flag: '🇸🇦' },
 ];
 
 const Navbar: React.FC = () => {
@@ -29,9 +38,9 @@ const Navbar: React.FC = () => {
   };
 
   // Helper to switch language while staying on same page
-  const switchLanguage = (newLang: 'fr' | 'en') => {
+  const switchLanguage = (newLang: string) => {
     // Get current path without language prefix
-    const pathWithoutLang = pathname?.replace(/^\/(fr|en)/, '') || '';
+    const pathWithoutLang = pathname?.replace(/^\/(fr|en|de|es|it|th|ru|zh|ja|ko|ar)/, '') || '';
     // Navigate to same page in new language
     router.push(`/${newLang}${pathWithoutLang}`);
   };
@@ -124,7 +133,7 @@ const Navbar: React.FC = () => {
                   {languages.map(lang => (
                     <button
                       key={lang.code}
-                      onClick={() => switchLanguage(lang.code as 'fr' | 'en')}
+                      onClick={() => switchLanguage(lang.code)}
                       className={`flex w-full items-center px-4 py-2 text-sm text-left hover:bg-amber-50 hover:text-amber-600 transition ${currentLang === lang.code ? 'bg-amber-50 text-amber-600 font-bold' : 'text-slate-700'}`}
                     >
                       <span className="mr-3 text-lg">{lang.flag}</span>
@@ -177,11 +186,11 @@ const Navbar: React.FC = () => {
             <a href={SCORING_ENGINE_URL} className="block w-full text-center bg-amber-500 text-slate-900 py-4 rounded-xl font-bold text-lg shadow-lg mb-6">
               {t('nav.eligibility')}
             </a>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-3 gap-2">
               {languages.map((lang) => (
-                <button key={lang.code} onClick={() => { switchLanguage(lang.code as 'fr' | 'en'); setIsOpen(false); }} className={`flex items-center justify-center p-3 rounded-lg border transition ${currentLang === lang.code ? 'bg-white border-amber-400 shadow-sm' : 'bg-transparent border-slate-200'}`}>
-                  <span className="text-2xl mr-2">{lang.flag}</span>
-                  <span className="text-sm font-bold text-slate-700">{lang.label}</span>
+                <button key={lang.code} onClick={() => { switchLanguage(lang.code); setIsOpen(false); }} className={`flex flex-col items-center justify-center p-2 rounded-lg border transition ${currentLang === lang.code ? 'bg-white border-amber-400 shadow-sm' : 'bg-transparent border-slate-200'}`}>
+                  <span className="text-2xl mb-1">{lang.flag}</span>
+                  <span className="text-xs font-bold text-slate-700">{lang.label}</span>
                 </button>
               ))}
             </div>
