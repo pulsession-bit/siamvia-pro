@@ -1,9 +1,4 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'SiamVisa Pro | Expert Visa Thaïlande - DTV, Touriste, Retraite',
@@ -50,12 +45,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-        {children}
-        <SpeedInsights />
-      </body>
-    </html>
-  );
+  // We move html and body to [lang]/layout.tsx to support dynamic lang attribute
+  // Next.js will wrap this in a default html/body for the root redirect page, 
+  // which is acceptable as it's just a redirect.
+  return children;
 }

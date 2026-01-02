@@ -6,6 +6,11 @@ import Footer from '@/components/Footer';
 import CartDrawer from '@/components/CartDrawer';
 import { translations } from '@/utils/translations';
 import { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import '../globals.css';
+import { SpeedInsights } from '@vercel_speed-insights/next';
+
+const inter = Inter({ subsets: ['latin'] });
 
 const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
 
@@ -49,13 +54,18 @@ export default async function LangLayout({ children, params }: Props) {
     }
 
     return (
-        <LanguageProvider initialLang={lang as any}>
-            <CartProvider>
-                <Navbar />
-                <CartDrawer />
-                <main className="min-h-screen pt-20">{children}</main>
-                <Footer />
-            </CartProvider>
-        </LanguageProvider>
+        <html lang={lang}>
+            <body className={inter.className}>
+                <LanguageProvider initialLang={lang as any}>
+                    <CartProvider>
+                        <Navbar />
+                        <CartDrawer />
+                        <main className="min-h-screen pt-20">{children}</main>
+                        <Footer />
+                    </CartProvider>
+                </LanguageProvider>
+                <SpeedInsights />
+            </body>
+        </html>
     );
 }
