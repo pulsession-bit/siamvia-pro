@@ -558,6 +558,56 @@ export const translations = {
       eligibility: "Eligibility",
       ltr: "Visa LTR"
     },
+    ltr_page: {
+      meta: {
+        title: "LTR Visa Thailand (Long Term Resident) - 10 Years | SiamVisaPro",
+        description: "Get the 10-year LTR Visa for Thailand. Privileged tax residency (17%), work permit and VIP benefits. Free eligibility audit."
+      },
+      badge: "10-Year Residence",
+      hero_title: "Thailand LTR VISA",
+      title: "LTR Visa: Long-Term Residence",
+      subtitle: "The most advantageous tax and residency status for wealthy citizens.",
+      cta: "Check my LTR eligibility",
+      why_title: "Why choose the LTR?",
+      benefit1_title: "10-Year Visa",
+      benefit1_desc: "Renewable, with digital work permit included.",
+      benefit2_title: "17% Tax",
+      benefit2_desc: "Flat rate on local income for professionals.",
+      benefit3_title: "VIP Service",
+      benefit3_desc: "Priority airport access and 90-day reports waived.",
+      cat1: "Wealthy Global Citizens",
+      cat2: "Wealthy Pensioners",
+      cat3: "Work-from-Thailand Professionals",
+      cat4: "Highly-Skilled Experts",
+      audit1: "Income Audit > $80k USD",
+      audit2: "Investment Analysis",
+      audit3: "Board of Investment Liaison",
+      audit4: "Family Inclusion (4 persons)",
+      pros_title: "Strengths",
+      cons_title: "Weaknesses",
+      pros: [
+        "10-year validity (5+5) renewable",
+        "Digital work permit included",
+        "International Airport Fast Track",
+        "Tax exemption on foreign income",
+        "17% rate for professionals",
+        "4 Dependents included (Spouse/Children)"
+      ],
+      cons: [
+        "Very strict financial criteria (>$80k wealth)",
+        "Long validation process (BOI)",
+        "Heavy administrative paperwork initially",
+        "Mandatory health insurance (>$50k)",
+        "Investment required for certain categories"
+      ],
+      faq_title: "Frequently Asked Questions (FAQ)",
+      faq: [
+        { q: "What's the difference with Elite Visa?", a: "Elite Visa is paid and doesn't allow work. LTR is 'free' (reduced fees) if eligible and includes work permit." },
+        { q: "Can I work with an LTR visa?", a: "Yes, it's one of the few visas including a digital work permit without Thai employee quota." },
+        { q: "Minimum income required?", a: "$80,000 USD/year (2 years) or investment mix. Retirees eligible at $40,000 under investment conditions." },
+        { q: "Processing time?", a: "1 to 3 months for BOI approval, then a few weeks for issuance." }
+      ]
+    },
     meta: {
       title: "Siam Visa Pro | Thailand Visa Expert - DTV, Tourist & Retirement",
       description: "Get your Thai visa stress-free. Experts in DTV, Tourist and Retirement visas. Global support and optimized Portfolio."
