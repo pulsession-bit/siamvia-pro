@@ -1,0 +1,12 @@
+# User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://siamvisapro.com/sitemap.xml
+
+# Disallow admin and API routes
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /legacy_vite/
