@@ -2,12 +2,22 @@
 
 import { usePathname } from 'next/navigation';
 
-export function useCurrentLang(): 'fr' | 'en' {
+export type SupportedLang = 'fr' | 'en' | 'de' | 'es' | 'it' | 'th' | 'ru' | 'zh' | 'ja' | 'ko' | 'ar';
+
+export function useCurrentLang(): SupportedLang {
     const pathname = usePathname();
 
     // Extract language from pathname (e.g., /fr/contact -> fr)
-    const match = pathname?.match(/^\/(fr|en)/);
-    return (match?.[1] as 'fr' | 'en') || 'fr';
+    const match = pathname?.match(/^\/([a-z]{2})/);
+    const lang = match?.[1] as SupportedLang;
+
+    const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'];
+
+    if (lang && languages.includes(lang)) {
+        return lang;
+    }
+
+    return 'fr';
 }
 
 export function useLangPath(path: string): string {

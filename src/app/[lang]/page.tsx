@@ -15,10 +15,17 @@ import {
   XCircle,
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useCurrentLang } from '@/hooks/useLang';
 
 const HomePage: React.FC = () => {
   const { t } = useLanguage();
+  const currentLang = useCurrentLang();
   const SCORING_ENGINE_URL = 'https://desk.siamvisapro.com';
+
+  const langPath = (path: string) => {
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    return `/${currentLang}/${cleanPath}`;
+  };
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
@@ -55,7 +62,7 @@ const HomePage: React.FC = () => {
               {t('hero.cta_eligibility')}
             </a>
             <Link
-              href="/services"
+              href={langPath('services')}
               className="bg-transparent border-2 border-slate-400 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition flex items-center justify-center backdrop-blur-sm"
             >
               {t('hero.cta_services')}
@@ -246,7 +253,7 @@ const HomePage: React.FC = () => {
                   </li>
                 </ul>
                 <Link
-                  href="/dtv"
+                  href={langPath('dtv')}
                   className="block w-full text-center bg-slate-900 text-white py-3 rounded-lg hover:bg-slate-800 transition font-medium"
                 >
                   {t('visas.btn_more')}
@@ -277,7 +284,7 @@ const HomePage: React.FC = () => {
                   </li>
                 </ul>
                 <Link
-                  href="/services"
+                  href={langPath('services')}
                   className="block w-full text-center bg-white border border-slate-200 text-slate-700 py-3 rounded-lg hover:bg-slate-50 transition font-medium"
                 >
                   {t('visas.btn_rates')}
@@ -308,7 +315,7 @@ const HomePage: React.FC = () => {
                   </li>
                 </ul>
                 <Link
-                  href="/services"
+                  href={langPath('services')}
                   className="block w-full text-center bg-white border border-slate-200 text-slate-700 py-3 rounded-lg hover:bg-slate-50 transition font-medium"
                 >
                   {t('visas.btn_rates')}

@@ -16,14 +16,19 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 const Footer: React.FC = () => {
   const { t } = useLanguage();
   const lang = useCurrentLang();
-  const langPath = (path: string) => `/${lang}/${path}`;
+
+  // Helper to create language-aware path
+  const langPath = (path: string) => {
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    return `/${lang}/${cleanPath}`;
+  };
 
   return (
     <footer className="bg-slate-900 text-white pt-16 pb-8 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
-            <Link href={`/${lang}`} className="text-2xl font-bold mb-6 flex items-center space-x-2">
+            <Link href={langPath('')} className="text-2xl font-bold mb-6 flex items-center space-x-2">
               <ShieldCheck className="text-amber-500 h-8 w-8" />
               <span>SiamVisa<span className="text-amber-500">Pro</span></span>
             </Link>
@@ -46,10 +51,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-amber-50 border-b border-slate-800 pb-2 inline-block">{t('footer.col_visas')}</h4>
             <ul className="space-y-3 text-slate-400 text-sm">
-              <li><Link href={langPath('dtv')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('visas.dtv_title')}</Link></li>
-              <li><Link href={langPath('tourist-visa')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('visas.tr_title')}</Link></li>
-              <li><Link href={langPath('retirement-visa')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('visas.ltr_title')}</Link></li>
-              <li><Link href={langPath('services')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('footer.all_services')}</Link></li>
+              <li><Link href={langPath('dtv')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.dtv')}</Link></li>
+              <li><Link href={langPath('tourist-visa')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.tourist')}</Link></li>
+              <li><Link href={langPath('retirement-visa')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.retirement')}</Link></li>
+              <li><Link href={langPath('services')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.services')}</Link></li>
             </ul>
           </div>
 
