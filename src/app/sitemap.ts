@@ -1,6 +1,5 @@
 import { MetadataRoute } from 'next';
 import { SLUG_MAP, getTranslatedPath, PageKey } from '@/utils/slugs';
-import { headers } from 'next/headers';
 
 export const dynamic = 'force-static';
 
@@ -11,10 +10,18 @@ export async function generateSitemaps() {
     return languages.map(lang => ({ id: lang }));
 }
 
-export default async function sitemap({ id }: { id: string }): Promise<MetadataRoute.Sitemap> {
+export default async function sitemap(props: any): Promise<MetadataRoute.Sitemap> {
+    // Handling Next.js 15 async params correctly
+    const resolvedProps = await props;
+    const id = await resolvedProps.id;
+
+    // Safety check
+    if (typeof id !== 'string') {
+        console.error('Sitemap ID is not a string:', id);
+    }
+
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://siamvisapro.com';
     const currentDate = new Date();
-    const headersList = await headers(); // Next.js API requirement? No, just good practice if needed, but normally not needed here.
 
     // 'id' corresponds to the language code returned by generateSitemaps
     const lang = id;
