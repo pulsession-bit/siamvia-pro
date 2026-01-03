@@ -10,7 +10,8 @@ export type PageKey =
     | 'terms'
     | 'sitemap'
     | 'search'
-    | 'ltr'; // Added LTR
+    | 'ltr'
+    | 'visa-run';
 
 export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     fr: {
@@ -25,7 +26,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         terms: 'conditions-generales',
         sitemap: 'plan-du-site',
         search: 'comparateur-visa-thailande-2026',
-        ltr: 'visa-ltr-thailande'
+        ltr: 'visa-ltr-thailande',
+        'visa-run': 'risques-visa-run-thailande'
     },
     en: {
         home: '',
@@ -39,7 +41,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         terms: 'terms-and-conditions',
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
-        ltr: 'long-term-resident-visa'
+        ltr: 'long-term-resident-visa',
+        'visa-run': 'thailand-visa-run-risks'
     },
     de: {
         home: '',
@@ -53,7 +56,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         terms: 'allgemeine-geschaftsbedingungen',
         sitemap: 'seitenverzeichnis',
         search: 'thailand-visum-vergleich-2026',
-        ltr: 'long-term-resident-visa'
+        ltr: 'long-term-resident-visa',
+        'visa-run': 'thailand-visa-run-risiken'
     },
     es: {
         home: '',
@@ -67,7 +71,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         terms: 'terminos-y-condiciones',
         sitemap: 'mapa-del-sito',
         search: 'comparador-visas-tailandia-2026',
-        ltr: 'visado-residencia-larga-duracion'
+        ltr: 'visado-residencia-larga-duracion',
+        'visa-run': 'riesgos-visa-run-tailandia'
     },
     it: {
         home: '',
@@ -81,7 +86,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         terms: 'termini-e-condizioni',
         sitemap: 'mappa-del-sito',
         search: 'comparatore-visti-thailandia-2026',
-        ltr: 'visto-residenza-lungo-termine'
+        ltr: 'visto-residenza-lungo-termine',
+        'visa-run': 'rischi-visa-run-thailandia'
     },
     th: {
         home: '',
@@ -95,7 +101,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         terms: 'terms',
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
-        ltr: 'long-term-resident-visa'
+        ltr: 'long-term-resident-visa',
+        'visa-run': 'thailand-visa-run-risks'
     },
     ru: {
         home: '',
@@ -109,7 +116,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         terms: 'terms',
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
-        ltr: 'long-term-resident-visa'
+        ltr: 'long-term-resident-visa',
+        'visa-run': 'thailand-visa-run-risks'
     },
     zh: {
         home: '',
@@ -123,7 +131,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         terms: 'terms',
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
-        ltr: 'global-wealthy-citizen-visa'
+        ltr: 'global-wealthy-citizen-visa',
+        'visa-run': 'thailand-visa-run-risks'
     },
     ja: {
         home: '',
@@ -137,7 +146,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         terms: 'terms',
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
-        ltr: 'long-term-resident-visa'
+        ltr: 'long-term-resident-visa',
+        'visa-run': 'thailand-visa-run-risks'
     },
     ko: {
         home: '',
@@ -151,7 +161,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         terms: 'terms',
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
-        ltr: 'long-term-resident-visa'
+        ltr: 'long-term-resident-visa',
+        'visa-run': 'thailand-visa-run-risks'
     },
     ar: {
         home: '',
@@ -165,7 +176,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         terms: 'terms',
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
-        ltr: 'long-term-resident-visa'
+        ltr: 'long-term-resident-visa',
+        'visa-run': 'thailand-visa-run-risks'
     }
 };
 

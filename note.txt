@@ -1,14 +1,21 @@
-Failed to compile.
-./src/app/[lang]/home/components/HomeSpotlight.tsx:32:136
-Type error: No overload matches this call.
-  The last overload gave the following error.
-    Object literal may only specify known properties, and 'className' does not exist in type 'Partial<unknown> & Attributes'.
-  30 |                                         <div className="flex-shrink-0 mt-1">
-  31 |                                             <div className="flex items-center justify-center h-12 w-12 rounded-full bg-amber-50 text-amber-600 border border-amber-100">
-> 32 |                                                 {React.isValidElement(icons[i]) ? React.cloneElement(icons[i] as React.ReactElement, { className: "h-6 w-6" }) : null}
-     |                                                                                                                                        ^
-  33 |                                             </div>
-  34 |                                         </div>
-  35 |                                         <div className="ml-4">
-Next.js build worker exited with code: 1 and signal: null
+Error occurred prerendering page "/fr/contact". Read more: https://nextjs.org/docs/messages/prerender-error
+Error [FirebaseError]: Firebase: Error (auth/invalid-api-key).
+    at ln (.next/server/chunks/ssr/[root-of-the-server]__7e515db9._.js:12:44626)
+    at lo (.next/server/chunks/ssr/[root-of-the-server]__7e515db9._.js:12:44675)
+    at ah.instanceFactory (.next/server/chunks/ssr/[root-of-the-server]__7e515db9._.js:12:94300)
+    at aj.getOrInitializeService (.next/server/chunks/ssr/[root-of-the-server]__7e515db9._.js:3:307208)
+    at aj.initialize (.next/server/chunks/ssr/[root-of-the-server]__7e515db9._.js:3:306616)
+    at mx (.next/server/chunks/ssr/[root-of-the-server]__7e515db9._.js:12:82185)
+    at na (.next/server/chunks/ssr/[root-of-the-server]__7e515db9._.js:12:94938)
+    at module evaluation (.next/server/chunks/ssr/[root-of-the-server]__7e515db9._.js:12:114938)
+    at instantiateModule (.next/server/chunks/ssr/[turbopack]_runtime.js:740:9)
+    at getOrInstantiateModuleFromParent (.next/server/chunks/ssr/[turbopack]_runtime.js:763:12) {
+  code: 'auth/invalid-api-key',
+  customData: [Object],
+  digest: '3351945901'
+}
+Export encountered an error on /[lang]/contact/page: /fr/contact, exiting the build.
+⨯ Next.js build worker exited with code: 1 and signal: null
 Error: Command "npm run build" exited with 1
+
+vopila les erreure que me donnes vecel
