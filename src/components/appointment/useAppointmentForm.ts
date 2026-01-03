@@ -20,6 +20,11 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
 
     // Anonymous Auth setup
     useEffect(() => {
+        if (!auth) {
+            setIsAuthReady(false);
+            return;
+        }
+
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setIsAuthReady(true);
@@ -32,7 +37,7 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
                     });
             }
         });
-        return () => unsubscribe();
+        return () => unsubscribe && unsubscribe();
     }, []);
 
     const resetForm = () => {
@@ -42,6 +47,11 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
 
     const submitForm = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (!db || !auth) {
+            setErrorMessage("Le service de réservation est temporairement indisponible.");
+            return;
+        }
+
         setIsSubmitting(true);
         setSubmitStatus('idle');
         setErrorMessage("");
