@@ -2,16 +2,28 @@
 
 import React from 'react';
 import { Search, X } from 'lucide-react';
+import dynamic from 'next/dynamic';
 import { useLanguage } from '@/contexts/LanguageContext';
-import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
-import { I18N } from './data/visas';
 import { useVisaSearch } from './hooks/useVisaSearch';
 import { SearchHero } from './components/SearchHero';
 import { CategoryFilters } from './components/CategoryFilters';
 import { VisaCard } from './components/VisaCard';
-import { VisaDetailModal } from './components/VisaDetailModal';
 
-const SearchClientPage: React.FC = () => {
+// Chargement dynamique des composants lourds
+const ExpertAppointmentForm = dynamic(() => import('@/components/ExpertAppointmentForm'), {
+    ssr: false,
+    loading: () => <div className="h-64 flex items-center justify-center">Chargement du formulaire...</div>
+});
+
+const VisaDetailModal = dynamic(() => import('./components/VisaDetailModal').then(mod => mod.VisaDetailModal), {
+    ssr: false
+});
+
+interface SearchClientPageProps {
+    localI18n: any;
+}
+
+const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
     const { t: globalT, language: globalLang } = useLanguage();
 
     // Custom logic hook
@@ -33,8 +45,8 @@ const SearchClientPage: React.FC = () => {
         filteredVisas
     } = useVisaSearch(globalLang);
 
-    // Get trans-layer
-    const localT = I18N[lang] || I18N['en'];
+    // Use injected i18n
+    const localT = localI18n;
 
     return (
         <div className="min-h-screen flex flex-col bg-slate-50">

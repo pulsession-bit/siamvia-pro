@@ -53,10 +53,18 @@ export default async function LangLayout({ children, params }: Props) {
         notFound();
     }
 
+    // Load dictionaries on server
+    const dictionary = translations[lang as keyof typeof translations] || translations.en;
+    const englishFallback = translations.en;
+
     return (
         <html lang={lang}>
             <body className={inter.className}>
-                <LanguageProvider initialLang={lang as any}>
+                <LanguageProvider
+                    initialLang={lang as any}
+                    dictionary={dictionary}
+                    fallbackDictionary={lang !== 'en' ? englishFallback : undefined}
+                >
                     <CartProvider>
                         <Navbar />
                         <CartDrawer />
@@ -64,7 +72,7 @@ export default async function LangLayout({ children, params }: Props) {
                         <Footer />
                     </CartProvider>
                 </LanguageProvider>
-                <SpeedInsights />
+                {/* <SpeedInsights /> */}
             </body>
         </html>
     );

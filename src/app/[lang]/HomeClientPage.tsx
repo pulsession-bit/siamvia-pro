@@ -1,13 +1,18 @@
 'use client';
 
 import React from 'react';
+import dynamic from 'next/dynamic';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
-import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 import { HomeHero } from './home/components/HomeHero';
 import { HomeSpotlight } from './home/components/HomeSpotlight';
 import { HomeVisas } from './home/components/HomeVisas';
 import { HomeCTA } from './home/components/HomeCTA';
+
+const ExpertAppointmentForm = dynamic(() => import('@/components/ExpertAppointmentForm'), {
+    ssr: false,
+    loading: () => <div className="h-64 flex items-center justify-center bg-slate-50 rounded-2xl">Chargement...</div>
+});
 
 const HomeClientPage: React.FC = () => {
     const { t } = useLanguage();
