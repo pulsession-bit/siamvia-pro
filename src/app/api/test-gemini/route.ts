@@ -59,10 +59,10 @@ export async function GET() {
             test_response: data
         });
 
-    } catch (error) {
+    } catch (error: any) {
         return NextResponse.json({
             status: "CRITICAL_ERROR",
-            error: error.message
+            error: error.message || String(error)
         }, { status: 500 });
     }
 }
