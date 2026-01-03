@@ -1,10 +1,7 @@
-import { GoogleGenerativeAI } from '@google/generative-ai';
 import { NextResponse } from 'next/server';
 
-// Initialize Gemini
 // Note: In production, use process.env.GEMINI_API_KEY
 const API_KEY = process.env.GEMINI_API_KEY;
-const genAI = new GoogleGenerativeAI(API_KEY || '');
 
 export async function POST(req: Request) {
     try {
@@ -13,9 +10,6 @@ export async function POST(req: Request) {
         if (!query) {
             return NextResponse.json({ error: 'Query is required' }, { status: 400 });
         }
-
-        console.log('Using API Key starts with:', API_KEY?.substring(0, 7));
-        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
         const prompt = `
         ROLE:
@@ -60,9 +54,32 @@ export async function POST(req: Request) {
         }
         `;
 
-        const result = await model.generateContent(prompt);
-        const response = await result.response;
-        const rawText = response.text();
+        // Direct fetch to emulate browser request with Referer
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+
+        const apiRes = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                // Important: Mimic the allowed domain
+                'Referer': 'https://siamvisapro.com',
+                'Origin': 'https://siamvisapro.com'
+            },
+            body: JSON.stringify({
+                contents: [{
+                    parts: [{ text: prompt }]
+                }]
+            })
+        });
+
+        if (!apiRes.ok) {
+            const errorText = await apiRes.text();
+            console.error('Gemini API Error (Raw):', errorText);
+            throw new Error(`Gemini API returned ${apiRes.status}: ${errorText}`);
+        }
+
+        const data = await apiRes.json();
+        const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
 
         // Robust JSON extraction
         let jsonText = rawText;
