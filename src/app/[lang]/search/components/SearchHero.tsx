@@ -100,7 +100,7 @@ export const SearchHero: React.FC<SearchHeroProps> = ({
                                     </div>
                                     <div>
                                         <h4 className="text-white font-bold text-sm">Consultation Express (15 min)</h4>
-                                        <p className="text-amber-200/70 text-[10px] uppercase font-black tracking-wider">Réponse immédiate • 29,00 €</p>
+                                        <p className="text-amber-200/70 text-[10px] uppercase font-black tracking-wider">Réponse immédiate</p>
                                     </div>
                                 </div>
                                 <button
