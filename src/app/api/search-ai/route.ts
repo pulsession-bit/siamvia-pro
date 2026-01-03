@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 
-// Note: In production, use process.env.GEMINI_API_KEY
-const API_KEY = process.env.GEMINI_API_KEY;
+// Note: In production, use process.env.GEMINI_SECRET_KEY
+const API_KEY = process.env.GEMINI_SECRET_KEY;
+console.log("DEBUG: Active Gemini Key Prefix:", API_KEY ? API_KEY.substring(0, 10) : "UNDEFINED");
 
 export async function POST(req: Request) {
     try {
@@ -61,7 +62,7 @@ export async function POST(req: Request) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                // Important: Mimic the allowed domain
+                // Important: Mimic the allowed domain for API Key restriction
                 'Referer': 'https://siamvisapro.com',
                 'Origin': 'https://siamvisapro.com'
             },
