@@ -21,7 +21,7 @@ const nextConfig: NextConfig = {
         faq: 'questions-frequentes',
         terms: 'conditions-generales',
         sitemap: 'plan-du-site',
-        search: 'recherche',
+        search: 'comparateur-visa-thailande-2026',
         ltr: 'visa-ltr-thailande'
       },
       en: {
@@ -34,7 +34,7 @@ const nextConfig: NextConfig = {
         faq: 'frequently-asked-questions',
         terms: 'terms-and-conditions',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa'
       },
       de: {
@@ -47,7 +47,7 @@ const nextConfig: NextConfig = {
         faq: 'haufig-gestellte-fragen',
         terms: 'allgemeine-geschaftsbedingungen',
         sitemap: 'seitenverzeichnis',
-        search: 'suche',
+        search: 'thailand-visum-vergleich-2026',
         ltr: 'long-term-resident-visa'
       },
       es: {
@@ -60,7 +60,7 @@ const nextConfig: NextConfig = {
         faq: 'preguntas-frecuentes',
         terms: 'terminos-y-condiciones',
         sitemap: 'mapa-del-sito',
-        search: 'buscar',
+        search: 'comparador-visas-tailandia-2026',
         ltr: 'visado-residencia-larga-duracion'
       },
       it: {
@@ -73,7 +73,7 @@ const nextConfig: NextConfig = {
         faq: 'domande-frequenti',
         terms: 'termini-e-condizioni',
         sitemap: 'mappa-del-sito',
-        search: 'cerca',
+        search: 'comparatore-visti-thailandia-2026',
         ltr: 'visto-residenza-lungo-termine'
       },
       th: {
@@ -86,7 +86,7 @@ const nextConfig: NextConfig = {
         faq: 'faq',
         terms: 'terms',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa'
       },
       ru: {
@@ -99,7 +99,7 @@ const nextConfig: NextConfig = {
         faq: 'faq',
         terms: 'terms',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa'
       },
       zh: {
@@ -112,7 +112,7 @@ const nextConfig: NextConfig = {
         faq: 'faq',
         terms: 'terms',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'global-wealthy-citizen-visa'
       },
       ja: {
@@ -125,7 +125,7 @@ const nextConfig: NextConfig = {
         faq: 'faq',
         terms: 'terms',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa'
       },
       ko: {
@@ -138,7 +138,7 @@ const nextConfig: NextConfig = {
         faq: 'faq',
         terms: 'terms',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa'
       },
       ar: {
@@ -151,7 +151,7 @@ const nextConfig: NextConfig = {
         faq: 'faq',
         terms: 'terms',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa'
       }
     };

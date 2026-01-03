@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
     Search,
     Globe,
@@ -17,9 +17,15 @@ import {
     Mail,
     MapPin,
     Sparkles,
-    Loader2
+    Loader2,
+    Clock,
+    MessageCircle
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useLangPath } from '@/hooks/useLang';
+import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
+import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 
 // --- I KEEP YOUR INTERNAL TRANSLATIONS & DATA AS IS FOR NOW ---
 // We can sync them with the global context later if requested.
@@ -48,7 +54,14 @@ const I18N: Record<string, any> = {
         requirements: "Documents requis",
         contactUs: "Nous contacter",
         contactUsBtn: "Prendre RDV",
-        footerText: "SiamVisaPro - Votre partenaire de confiance pour l'expatriation en Thaïlande."
+        footerText: "SiamVisaPro - Votre partenaire de confiance pour l'expatriation en Thaïlande.",
+        suggestions: [
+            "Je veux télétravailler en Thaïlande",
+            "Comment éviter les visa runs ?",
+            "J'ai 55 ans et je veux prendre ma retraite",
+            "Je cherche un visa de 5 ans sans sortir du pays",
+            "Visa pour apprendre le Muay Thai"
+        ]
     },
     en: {
         title: "Thai Visa Expertise",
@@ -71,7 +84,14 @@ const I18N: Record<string, any> = {
         requirements: "Requirements",
         contactUs: "Contact Us",
         contactUsBtn: "Book Appointment",
-        footerText: "SiamVisaPro - Your trusted partner for Thailand expatriation."
+        footerText: "SiamVisaPro - Your trusted partner for Thailand expatriation.",
+        suggestions: [
+            "I want to work remotely from Thailand",
+            "How to stop doing visa runs?",
+            "I'm 55 and want to retire in Phuket",
+            "Looking for a 5-year visa without exit",
+            "Visa for learning Muay Thai"
+        ]
     },
     // ... other languages mapped similarly if needed, falling back to English for new keys if not added manually
     de: {
@@ -95,7 +115,14 @@ const I18N: Record<string, any> = {
         requirements: "Anforderungen",
         contactUs: "Kontaktieren Sie uns",
         contactUsBtn: "Termin buchen",
-        footerText: "SiamVisaPro - Ihr vertrauenswürdiger Partner für die Auswanderung nach Thailand."
+        footerText: "SiamVisaPro - Ihr vertrauenswürdiger Partner für die Auswanderung nach Thailand.",
+        suggestions: [
+            "Ich möchte remote von Thailand aus arbeiten",
+            "Wie beende ich Visa-Runs?",
+            "Ich bin 55 und möchte in Phuket in Rente gehen",
+            "Suche ein 5-Jahres-Visum ohne Ausreise",
+            "Visum zum Muay Thai lernen"
+        ]
     },
     es: {
         title: "Expertos en Visados para Tailandia",
@@ -118,7 +145,14 @@ const I18N: Record<string, any> = {
         requirements: "Requisitos",
         contactUs: "Contáctenos",
         contactUsBtn: "Reservar Cita",
-        footerText: "SiamVisaPro - Su socio de confianza para la expatriación a Tailandia."
+        footerText: "SiamVisaPro - Su socio de confianza para la expatriación a Tailandia.",
+        suggestions: [
+            "Quiero trabajar en remoto desde Tailandia",
+            "¿Cómo dejar de hacer visa runs?",
+            "Tengo 55 años y quiero jubilarme en Phuket",
+            "Busco un visado de 5 años sin salida",
+            "Visado para aprender Muay Thai"
+        ]
     },
     // Adding fallbacks for other languages to avoid errors, reusing simple ones or just existing
     it: {
@@ -142,7 +176,14 @@ const I18N: Record<string, any> = {
         requirements: "Requisiti",
         contactUs: "Contattaci",
         contactUsBtn: "Prenota Appuntamento",
-        footerText: "SiamVisaPro - Il tuo partner di fiducia per l'espatrio in Thailandia."
+        footerText: "SiamVisaPro - Il tuo partner di fiducia per l'espatrio in Thailandia.",
+        suggestions: [
+            "Voglio lavorare da remoto dalla Thailandia",
+            "Come smettere di fare visa runs?",
+            "Ho 55 anni e voglio andare in pensione a Phuket",
+            "Cerco un visto di 5 anni senza uscita",
+            "Visto per imparare la Muay Thai"
+        ]
     },
     th: {
         title: "ผู้เชี่ยวชาญด้านวีซ่าไทย",
@@ -165,7 +206,14 @@ const I18N: Record<string, any> = {
         requirements: "เอกสารที่ต้องใช้",
         contactUs: "ติดต่อเรา",
         contactUsBtn: "จองนัดหมาย",
-        footerText: "SiamVisaPro - พันธมิตรที่คุณไว้วางใจในการย้ายถิ่นฐานสู่ประเทศไทย"
+        footerText: "SiamVisaPro - พันธมิตรที่คุณไว้วางใจในการย้ายถิ่นฐานสู่ประเทศไทย",
+        suggestions: [
+            "ฉันต้องการทำงานระยะไกลจากประเทศไทย",
+            "วิธีหยุดทำ Visa Run?",
+            "ฉันอายุ 55 ปีและต้องการเกษียณที่ภูเก็ต",
+            "มองหาวีซ่า 5 ปีที่ไม่ต้องเดินทางออกนอกประเทศ",
+            "วีซ่าสำหรับเรียนมวยไทย"
+        ]
     },
     zh: {
         title: "泰国签证专家",
@@ -188,7 +236,14 @@ const I18N: Record<string, any> = {
         requirements: "所需材料",
         contactUs: "联系我们",
         contactUsBtn: "预约咨询",
-        footerText: "SiamVisaPro - 您在泰国定居的得力伙伴。"
+        footerText: "SiamVisaPro - 您在泰国定居的得力伙伴。",
+        suggestions: [
+            "我想在泰国远程工作",
+            "如何停止签证跑 (Visa Run)？",
+            "我55岁，想在普吉岛退休",
+            "寻找5年不用出境的签证",
+            "学习泰拳的签证"
+        ]
     },
     ja: {
         title: "タイビザ専門サービス",
@@ -211,7 +266,14 @@ const I18N: Record<string, any> = {
         requirements: "必要書類",
         contactUs: "お問い合わせ",
         contactUsBtn: "予約する",
-        footerText: "SiamVisaPro - タイ移住の信頼できるパートナー。"
+        footerText: "SiamVisaPro - タイ移住の信頼できるパートナー。",
+        suggestions: [
+            "タイからリモートワークしたい",
+            "ビザランをやめるには？",
+            "55歳でプーケットに移住したい",
+            "出国不要の5年ビザを探している",
+            "ムエタイを学ぶためのビザ"
+        ]
     },
     ru: {
         title: "Экспертиза по визам в Таиланд",
@@ -234,7 +296,14 @@ const I18N: Record<string, any> = {
         requirements: "Требования",
         contactUs: "Связаться с нами",
         contactUsBtn: "Записаться",
-        footerText: "SiamVisaPro - Ваш надежный партнер для переезда в Таиланд."
+        footerText: "SiamVisaPro - Ваш надежный партнер для переезда в Таиланд.",
+        suggestions: [
+            "Я хочу работать удаленно из Таиланда",
+            "Как перестать делать бордер-раны?",
+            "Мне 55, хочу на пенсию на Пхукет",
+            "Ищу визу на 5 лет без выезда",
+            "Виза для изучения Муай Тай"
+        ]
     },
     ko: {
         title: "태국 비자 전문가",
@@ -257,7 +326,14 @@ const I18N: Record<string, any> = {
         requirements: "필요 서류",
         contactUs: "문의하기",
         contactUsBtn: "예약하기",
-        footerText: "SiamVisaPro - 태국 이주를 위한 신뢰할 수 있는 파트너."
+        footerText: "SiamVisaPro - 태국 이주를 위한 신뢰할 수 있는 파트너.",
+        suggestions: [
+            "태국에서 원격 근무하고 싶습니다",
+            "비자 런을 그만두는 방법은?",
+            "55세이며 푸켓에서 은퇴하고 싶습니다",
+            "출국 없는 5년 비자를 찾고 있습니다",
+            "무에타이 배우기 위한 비자"
+        ]
     },
     ar: {
         title: "خبرة تأشيرة تايلاند",
@@ -280,7 +356,14 @@ const I18N: Record<string, any> = {
         requirements: "المتطلبات",
         contactUs: "اتصل بنا",
         contactUsBtn: "حجز موعد",
-        footerText: "SiamVisaPro - شريكك الموثوق للإقامة في تايلاند."
+        footerText: "SiamVisaPro - شريكك الموثوق للإقامة في تايلاند.",
+        suggestions: [
+            "أريد العمل عن بعد من تايلاند",
+            "كيف أتوقف عن جولات التأشيرة (Visa Runs)؟",
+            "عمري 55 عاماً وأريد التقاعد في بوكيت",
+            "أبحث عن تأشيرة لمدة 5 سنوات بدون خروج",
+            "تأشيرة لتعلم الملاكمة التايلاندية (Muay Thai)"
+        ]
     }
 };
 
@@ -344,31 +427,67 @@ const VISAS_DATA: any[] = [
 
 const SearchClientPage: React.FC = () => {
     // We try to sync with global lang, but fallback to FR if not supported by this widget
-    const { language: globalLang } = useLanguage();
+    const { t: globalT, language: globalLang } = useLanguage();
+    const langPath = useLangPath();
     const [lang, setLang] = useState<Language>(
         ['fr', 'en', 'th', 'zh', 'ja', 'de', 'es', 'it', 'ru', 'ko', 'ar'].includes(globalLang) ? (globalLang as Language) : 'fr'
     );
+
+    // Sync local widget lang with global context
+    useEffect(() => {
+        if (['fr', 'en', 'th', 'zh', 'ja', 'de', 'es', 'it', 'ru', 'ko', 'ar'].includes(globalLang)) {
+            setLang(globalLang as Language);
+        }
+    }, [globalLang]);
 
     const [search, setSearch] = useState('');
     const [activeCategory, setActiveCategory] = useState<string | null>(null);
     const [selectedVisa, setSelectedVisa] = useState<any | null>(null);
 
-    // AI State
     const [aiResponse, setAiResponse] = useState<string | null>(null);
     const [isAiLoading, setIsAiLoading] = useState(false);
+    const [recommendedVisaId, setRecommendedVisaId] = useState<string | null>(null);
+    const [alternativeVisaIds, setAlternativeVisaIds] = useState<string[]>([]);
+    const [showAppointment, setShowAppointment] = useState(false);
 
-    const t = I18N[lang] || I18N['en'];
+    const searchParams = useSearchParams();
+    const urlQuery = searchParams.get('q');
+
+    const localT = I18N[lang] || I18N['en'];
+
+    // Effect for handling initial search from URL
+    useEffect(() => {
+        if (urlQuery && !aiResponse && !isAiLoading) {
+            setSearch(urlQuery);
+            handleAiSearch(urlQuery);
+        }
+    }, [urlQuery, lang]); // Re-run if query or lang changes
 
     const filteredVisas = useMemo(() => {
-        return VISAS_DATA.filter(visa => {
+        let list = VISAS_DATA.filter(visa => {
             const matchesSearch = visa.name[lang].toLowerCase().includes(search.toLowerCase());
             const matchesCategory = activeCategory ? visa.category === activeCategory : true;
+
+            // Toujours inclure le visa recommandé et les alternatives
+            if (recommendedVisaId === visa.id) return true;
+            if (alternativeVisaIds.includes(visa.id)) return true;
+
             return matchesSearch && matchesCategory;
         });
-    }, [lang, search, activeCategory]);
 
-    const handleAiSearch = async () => {
-        if (!search.trim()) return;
+        // Trier : Recommandé en premier, puis Alternatives, puis les autres
+        return [...list].sort((a, b) => {
+            if (a.id === recommendedVisaId) return -1;
+            if (b.id === recommendedVisaId) return 1;
+            if (alternativeVisaIds.includes(a.id) && !alternativeVisaIds.includes(b.id)) return -1;
+            if (!alternativeVisaIds.includes(a.id) && alternativeVisaIds.includes(b.id)) return 1;
+            return 0;
+        });
+    }, [lang, search, activeCategory, recommendedVisaId, alternativeVisaIds]);
+
+    const handleAiSearch = async (overrideQuery?: string) => {
+        const queryToUse = overrideQuery || search;
+        if (!queryToUse.trim()) return;
 
         setIsAiLoading(true);
         setAiResponse(null);
@@ -377,20 +496,21 @@ const SearchClientPage: React.FC = () => {
             const res = await fetch('/api/search-ai', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ query: search, lang })
+                body: JSON.stringify({ query: queryToUse, lang })
             });
             const data = await res.json();
 
             if (data.explanation) {
                 setAiResponse(data.explanation);
+                setRecommendedVisaId(data.recommendationId);
+                setAlternativeVisaIds(data.alternativeIds || []);
 
-                // If a specific visa is recommended, open it automatically
                 if (data.recommendationId) {
-                    const recommendedVisa = VISAS_DATA.find(v => v.id === data.recommendationId);
-                    if (recommendedVisa) {
-                        setActiveCategory(recommendedVisa.category);
-                        setTimeout(() => setSelectedVisa(recommendedVisa), 500); // Small delay for effect
-                    }
+                    // On ne change plus la catégorie et on n'ouvre plus la modale automatiquement
+                    // pour s'assurer que les blocs de la liste restent bien visibles comme demandé.
+                    setTimeout(() => {
+                        document.getElementById('visa-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 800);
                 }
             } else {
                 setAiResponse("Sorry, I couldn't process your request. Please try again.");
@@ -412,15 +532,15 @@ const SearchClientPage: React.FC = () => {
             <section className="bg-gradient-to-r from-blue-900 to-red-900 text-white py-20 px-4 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500 opacity-10 rounded-full blur-3xl -mr-48 -mt-48"></div>
                 <div className="max-w-4xl mx-auto text-center relative z-10">
-                    <h2 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">{t.title}</h2>
-                    <p className="text-xl opacity-90 mb-10 font-light max-w-2xl mx-auto">{t.subtitle}</p>
+                    <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">{globalT('search_page.meta.title')}</h1>
+                    <p className="text-xl opacity-90 mb-10 font-light max-w-2xl mx-auto">{localT.subtitle}</p>
 
                     <div className="relative max-w-2xl mx-auto space-y-6">
                         <div className="relative">
                             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
                             <input
                                 type="text"
-                                placeholder={t.searchPlaceholder}
+                                placeholder={localT.searchPlaceholder}
                                 className="w-full pl-12 pr-32 py-4 rounded-2xl bg-white text-gray-900 shadow-2xl focus:ring-4 focus:ring-amber-500/20 focus:outline-none text-lg"
                                 value={search}
                                 onChange={(e) => setSearch(e.target.value)}
@@ -428,7 +548,7 @@ const SearchClientPage: React.FC = () => {
                             />
                             <div className="absolute right-2 top-2 bottom-2">
                                 <button
-                                    onClick={handleAiSearch}
+                                    onClick={() => handleAiSearch()}
                                     disabled={isAiLoading || !search.trim()}
                                     className="h-full px-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-bold rounded-xl transition-all flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
                                 >
@@ -437,22 +557,62 @@ const SearchClientPage: React.FC = () => {
                                     ) : (
                                         <>
                                             <Sparkles className="h-5 w-5" />
-                                            <span className="hidden sm:inline">{t.aiHelper}</span>
+                                            <span className="hidden sm:inline">{localT.aiHelper}</span>
                                         </>
                                     )}
                                 </button>
                             </div>
                         </div>
 
+                        {/* Suggestions Tags */}
+                        {localT.suggestions && (
+                            <div className="flex flex-wrap gap-2 justify-center mt-4">
+                                {localT.suggestions.map((s: string, i: number) => (
+                                    <button
+                                        key={i}
+                                        onClick={() => {
+                                            setSearch(s);
+                                            handleAiSearch(s);
+                                        }}
+                                        className="text-[11px] bg-white/10 hover:bg-amber-500 hover:text-slate-900 border border-white/20 text-white px-3 py-1.5 rounded-full transition-all backdrop-blur-sm"
+                                    >
+                                        {s}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
+
                         {/* AI Response Area */}
                         {aiResponse && (
                             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-left shadow-2xl animate-in fade-in slide-in-from-top-4">
                                 <div className="flex items-center gap-3 mb-3 text-amber-400 font-bold border-b border-white/10 pb-2">
                                     <Sparkles className="h-5 w-5" />
-                                    {t.aiTitle}
+                                    {localT.aiTitle}
                                 </div>
                                 <div className="text-slate-100 leading-relaxed whitespace-pre-wrap">
                                     {aiResponse}
+                                </div>
+
+                                {/* Tripwire Offer (Social Proof + Low Price) */}
+                                <div className="mt-6 p-4 bg-amber-500/10 border border-amber-500/30 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+                                    <div className="flex items-center gap-3">
+                                        <div className="bg-amber-500 p-2 rounded-xl">
+                                            <Clock className="w-5 h-5 text-slate-900" />
+                                        </div>
+                                        <div>
+                                            <h4 className="text-white font-bold text-sm">Consultation Express (15 min)</h4>
+                                            <p className="text-amber-200/70 text-[10px] uppercase font-black tracking-wider">Réponse immédiate • 29,00 €</p>
+                                        </div>
+                                    </div>
+                                    <button
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            setShowAppointment(true);
+                                        }}
+                                        className="w-full sm:w-auto bg-amber-500 hover:bg-white text-slate-900 px-6 py-2.5 rounded-xl text-xs font-black transition-all hover:scale-105 active:scale-95 shadow-lg shadow-amber-500/20"
+                                    >
+                                        DÉMARRER LE CHAT
+                                    </button>
                                 </div>
                             </div>
                         )}
@@ -467,9 +627,9 @@ const SearchClientPage: React.FC = () => {
                         onClick={() => setActiveCategory(null)}
                         className={`px-6 py-2 rounded-full text-sm font-bold transition-all ${activeCategory === null ? 'bg-amber-500 text-white shadow-md' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
                     >
-                        {t.allVisas}
+                        {localT.allVisas}
                     </button>
-                    {Object.entries(t.categories).map(([key, label]) => {
+                    {Object.entries(localT.categories).map(([key, label]) => {
                         const Icon = CATEGORY_ICONS[key];
                         return (
                             <button
@@ -486,7 +646,7 @@ const SearchClientPage: React.FC = () => {
             </section>
 
             {/* Visa Grid */}
-            <main className="flex-1 max-w-7xl mx-auto px-4 py-16 w-full">
+            <main id="visa-grid" className="flex-1 max-w-7xl mx-auto px-4 py-16 w-full">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     {filteredVisas.map((visa) => {
                         const Icon = CATEGORY_ICONS[visa.category];
@@ -494,8 +654,20 @@ const SearchClientPage: React.FC = () => {
                             <div
                                 key={visa.id}
                                 onClick={() => setSelectedVisa(visa)}
-                                className="visa-card bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all cursor-pointer group flex flex-col justify-between"
+                                className={`visa-card relative bg-white p-6 rounded-3xl border transition-all cursor-pointer group flex flex-col justify-between ${recommendedVisaId === visa.id ? 'border-amber-500 ring-2 ring-amber-500/10 shadow-xl' : 'border-gray-100 shadow-sm hover:shadow-xl'}`}
                             >
+                                {recommendedVisaId === visa.id && (
+                                    <div className="absolute -top-3 left-6 z-10 bg-amber-500 text-slate-900 text-[10px] font-black px-3 py-1 rounded-full shadow-lg flex items-center gap-1 animate-bounce">
+                                        <Sparkles className="w-3 h-3" />
+                                        <span>CONSEIL EXPERT</span>
+                                    </div>
+                                )}
+                                {alternativeVisaIds.includes(visa.id) && recommendedVisaId !== visa.id && (
+                                    <div className="absolute -top-3 left-6 z-10 bg-slate-800 text-white text-[10px] font-black px-3 py-1 rounded-full shadow-lg flex items-center gap-1">
+                                        <Info className="w-3 h-3 text-amber-500" />
+                                        <span>ALTERNATIF</span>
+                                    </div>
+                                )}
                                 <div>
                                     <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-4 ${activeCategory === visa.category ? 'bg-amber-500 text-white' : 'bg-blue-50 text-blue-900 group-hover:bg-amber-500 group-hover:text-white transition-colors'}`}>
                                         {Icon ? <Icon size={24} /> : <Info size={24} />}
@@ -507,7 +679,7 @@ const SearchClientPage: React.FC = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-between mt-4">
-                                    <span className="text-blue-900 font-bold text-sm">{t.details}</span>
+                                    <span className="text-blue-900 font-bold text-sm">{localT.details}</span>
                                     <ChevronRight size={18} className="text-gray-300 group-hover:text-amber-600 group-hover:translate-x-1 transition-all" />
                                 </div>
                             </div>
@@ -549,7 +721,7 @@ const SearchClientPage: React.FC = () => {
                         <div className="p-8 space-y-6 max-h-[70vh] overflow-y-auto">
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="bg-gray-50 p-4 rounded-2xl border border-gray-100">
-                                    <p className="text-xs font-bold text-gray-400 uppercase mb-1">{t.duration}</p>
+                                    <p className="text-xs font-bold text-gray-400 uppercase mb-1">{localT.duration}</p>
                                     <p className="text-lg font-bold text-blue-900">{selectedVisa.duration}</p>
                                 </div>
                                 <div className="bg-gray-50 p-4 rounded-2xl border border-gray-100">
@@ -561,7 +733,7 @@ const SearchClientPage: React.FC = () => {
                             <div>
                                 <h4 className="flex items-center gap-2 font-bold text-gray-900 mb-3">
                                     <UserCheck size={18} className="text-amber-500" />
-                                    {t.eligibility}
+                                    {localT.eligibility}
                                 </h4>
                                 <ul className="text-gray-600 text-sm space-y-2 list-disc list-inside ml-2">
                                     <li>Valid passport (min. 6 months remaining)</li>
@@ -574,7 +746,7 @@ const SearchClientPage: React.FC = () => {
                             <div>
                                 <h4 className="flex items-center gap-2 font-bold text-gray-900 mb-3">
                                     <Briefcase size={18} className="text-amber-500" />
-                                    {t.requirements}
+                                    {localT.requirements}
                                 </h4>
                                 <p className="text-gray-600 text-sm leading-relaxed">
                                     Application process typically takes 5-15 business days depending on the embassy or immigration office.
@@ -583,8 +755,11 @@ const SearchClientPage: React.FC = () => {
                             </div>
 
                             <div className="pt-4">
-                                <button className="w-full bg-amber-500 text-slate-900 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-amber-500/20 hover:scale-[1.02] active:scale-95 transition-all">
-                                    {t.contactUs}
+                                <button
+                                    onClick={() => setShowAppointment(true)}
+                                    className="block w-full text-center bg-amber-500 text-slate-900 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-amber-500/20 hover:scale-[1.02] active:scale-95 transition-all"
+                                >
+                                    {localT.contactUs}
                                 </button>
                             </div>
                         </div>
@@ -593,6 +768,50 @@ const SearchClientPage: React.FC = () => {
             )}
 
             {/* NO FOOTER - Handled by Landing Layout */}
+            {/* Appointment Modal Overlay */}
+            {showAppointment && (
+                <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+                    <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-md" onClick={() => setShowAppointment(false)}></div>
+                    <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 w-full max-w-xl relative animate-in zoom-in-95 fade-in duration-200">
+                        <button
+                            onClick={() => setShowAppointment(false)}
+                            className="absolute top-6 right-6 p-2 text-slate-400 hover:text-slate-900 transition-colors z-[110]"
+                        >
+                            <X size={20} />
+                        </button>
+                        <div className="max-h-[85vh] overflow-y-auto pr-2 custom-scrollbar">
+                            <ExpertAppointmentForm
+                                visaContext={selectedVisa?.id}
+                                onSuccess={() => {
+                                    setTimeout(() => setShowAppointment(false), 3000);
+                                }}
+                                onCancel={() => setShowAppointment(false)}
+                            />
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Mobile Sticky CTA */}
+            <div className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-3rem)] max-w-sm">
+                <button
+                    onClick={() => setShowAppointment(true)}
+                    className="w-full bg-slate-900 text-white p-4 rounded-2xl font-bold shadow-2xl flex items-center justify-between border border-white/10 backdrop-blur-md bg-slate-900/90 animate-in slide-in-from-bottom-8 duration-500"
+                >
+                    <div className="flex items-center gap-3">
+                        <div className="bg-amber-500 p-2 rounded-xl">
+                            <MessageCircle className="w-5 h-5 text-slate-900" />
+                        </div>
+                        <div className="text-left">
+                            <p className="text-xs opacity-70">Expert en ligne</p>
+                            <p className="text-sm font-black">Besoin d'aide ?</p>
+                        </div>
+                    </div>
+                    <div className="bg-amber-500 text-slate-900 px-4 py-2 rounded-xl text-xs font-black">
+                        PARLER
+                    </div>
+                </button>
+            </div>
         </div>
     );
 };

@@ -12,16 +12,17 @@ type ContactMethod = "phone" | "whatsapp" | "email" | "video";
 interface ExpertAppointmentFormProps {
   onSuccess?: () => void;
   onCancel?: () => void;
+  visaContext?: string;
 }
 
 const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
   onSuccess,
-  onCancel
+  onCancel,
+  visaContext
 }) => {
   const { t, language } = useLanguage();
   const [date, setDate] = useState("");
-  const [slot1, setSlot1] = useState("");
-  const [slot2, setSlot2] = useState("");
+  const [slot, setSlot] = useState("");
   const [contactMethod, setContactMethod] = useState<ContactMethod>("whatsapp");
   const [contactValue, setContactValue] = useState("");
 
@@ -36,7 +37,6 @@ const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
       if (user) {
         setIsAuthReady(true);
       } else {
-        // Si pas d'utilisateur, créer une session anonyme
         signInAnonymously(auth)
           .then(() => setIsAuthReady(true))
           .catch((error) => {
@@ -57,36 +57,26 @@ const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
     setErrorMessage("");
 
     try {
-      // Tentative d'auth si pas encore prêt
       let currentUser = auth.currentUser;
       if (!currentUser) {
-        try {
-          const result = await signInAnonymously(auth);
-          currentUser = result.user;
-        } catch (authError: any) {
-          console.error("Auth submission error:", authError);
-          if (authError.message && authError.message.includes('requests-from-referer')) {
-            throw new Error("Domaine non autorisé dans Firebase Console (Authentication > Settings > Authorized Domains).");
-          }
-          throw new Error("Impossible d'initialiser une session sécurisée. Vérifiez votre connexion.");
-        }
+        const result = await signInAnonymously(auth);
+        currentUser = result.user;
       }
 
-      // Save to Firestore (avec session auth active)
+      // Save to Firestore
       const docRef = await addDoc(collection(db, "appointments"), {
         date,
-        slot1,
-        slot2,
+        slot,
         contactMethod,
         contactValue,
         language,
         status: "pending",
         createdAt: serverTimestamp(),
-        source: "website",
+        source: "website_search",
+        visaContext: visaContext || 'general',
         userId: currentUser?.uid || 'anonymous'
       });
 
-      console.log("Appointment saved with ID: ", docRef.id);
       setSubmitStatus('success');
       if (onSuccess) {
         setTimeout(onSuccess, 3000);
@@ -94,7 +84,7 @@ const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
     } catch (error: any) {
       console.error("Error saving appointment:", error);
       setSubmitStatus('error');
-      setErrorMessage(error.message || "Une erreur est survenue lors de l'envoi. Veuillez réessayer.");
+      setErrorMessage(error.message || "Une erreur est survenue.");
     } finally {
       setIsSubmitting(false);
     }
@@ -127,74 +117,75 @@ const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="md:col-span-2">
+        <div>
           <label className="flex items-center text-xs font-bold text-slate-500 uppercase mb-2">
-            <Calendar className="w-3 h-3 mr-1" /> {t('appointment.date_label')}
+            <Calendar className="w-3 h-3 mr-1" /> DATE
           </label>
           <input type="date" className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 focus:bg-white focus:ring-2 focus:ring-amber-500 outline-none transition" value={date} onChange={(e) => setDate(e.target.value)} required />
         </div>
 
         <div>
           <label className="flex items-center text-xs font-bold text-slate-500 uppercase mb-2">
-            <Clock className="w-3 h-3 mr-1" /> {t('appointment.slot1_label')}
+            <Clock className="w-3 h-3 mr-1" /> HEURE
           </label>
-          <input type="time" className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 focus:bg-white focus:ring-2 focus:ring-amber-500 outline-none transition" value={slot1} onChange={(e) => setSlot1(e.target.value)} required />
-        </div>
-        <div>
-          <label className="flex items-center text-xs font-bold text-slate-500 uppercase mb-2">
-            <Clock className="w-3 h-3 mr-1" /> {t('appointment.slot2_label')}
-          </label>
-          <input type="time" className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 focus:bg-white focus:ring-2 focus:ring-amber-500 outline-none transition" value={slot2} onChange={(e) => setSlot2(e.target.value)} required />
+          <input type="time" className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 focus:bg-white focus:ring-2 focus:ring-amber-500 outline-none transition" value={slot} onChange={(e) => setSlot(e.target.value)} required />
         </div>
       </div>
 
       <div className="space-y-3">
-        <label className="block text-xs font-bold text-slate-500 uppercase">{t('appointment.method_label')}</label>
+        <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest">Canal de contact préféré</label>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
           {[
-            { id: 'whatsapp', icon: MessageSquare, label: 'WhatsApp' },
-            { id: 'phone', icon: Phone, label: 'Tél' },
-            { id: 'email', icon: Mail, label: 'Email' },
-            { id: 'video', icon: Video, label: 'Zoom' }
+            { id: 'whatsapp', icon: MessageSquare, label: 'WhatsApp', sub: 'Rapide' },
+            { id: 'phone', icon: Phone, label: 'Téléphone', sub: 'Standard' },
+            { id: 'email', icon: Mail, label: 'Email', sub: 'Écrit' },
+            { id: 'video', icon: Video, label: 'Zoom', sub: 'Face-à-face' }
           ].map((m) => (
             <button
               key={m.id}
               type="button"
               onClick={() => setContactMethod(m.id as any)}
-              className={`flex flex-col items-center justify-center p-3 rounded-xl border-2 transition ${contactMethod === m.id ? 'border-amber-500 bg-amber-50 text-amber-700' : 'border-slate-100 text-slate-500 hover:border-slate-200 hover:bg-slate-50'}`}
+              className={`flex flex-col items-center justify-center p-4 rounded-2xl border-2 transition-all relative overflow-hidden ${contactMethod === m.id ? 'border-amber-500 bg-amber-50 text-amber-700 ring-4 ring-amber-500/10' : 'border-slate-100 text-slate-400 hover:border-slate-200 hover:bg-slate-50'}`}
             >
-              <m.icon className="w-5 h-5 mb-1" />
-              <span className="text-[10px] font-bold">{m.label}</span>
+              {m.id === 'whatsapp' && <span className="absolute top-0 right-0 bg-green-500 text-white text-[8px] px-1.5 py-0.5 rounded-bl-lg font-bold">TOP</span>}
+              <m.icon className={`w-6 h-6 mb-2 ${contactMethod === m.id ? 'text-amber-500' : 'text-slate-300'}`} />
+              <span className="text-[10px] font-black uppercase tracking-tight">{m.label}</span>
             </button>
           ))}
         </div>
-        <input
-          type="text"
-          className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 focus:bg-white focus:ring-2 focus:ring-amber-500 outline-none transition mt-2"
-          value={contactValue}
-          onChange={(e) => setContactValue(e.target.value)}
-          placeholder={contactMethod === 'email' ? 'email@example.com' : '+33 6...'}
-          required
-        />
+
+        <div className="relative mt-4">
+          <input
+            type="text"
+            className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 pl-12 focus:bg-white focus:ring-2 focus:ring-amber-500 outline-none transition"
+            value={contactValue}
+            onChange={(e) => setContactValue(e.target.value)}
+            placeholder={contactMethod === 'email' ? 'votre@email.com' : 'N° avec indicatif (ex: +33...)'}
+            required
+          />
+          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+            {contactMethod === 'email' ? <Mail size={18} /> : <Phone size={18} />}
+          </div>
+        </div>
       </div>
 
       {errorMessage && (
-        <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-red-700 text-sm">
-          <strong>Erreur :</strong> {errorMessage}
+        <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-red-700 text-sm animate-shake">
+          {errorMessage}
         </div>
       )}
 
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-slate-900 text-white py-4 rounded-xl font-bold shadow-xl hover:bg-slate-800 transition flex items-center justify-center disabled:opacity-50"
+        className="w-full bg-slate-900 text-white py-5 rounded-2xl font-black text-lg shadow-xl shadow-slate-900/20 hover:bg-slate-800 transition-all flex items-center justify-center disabled:opacity-50 active:scale-95"
       >
-        {isSubmitting ? <Loader2 className="w-6 h-6 animate-spin" /> : t('appointment.submit')}
+        {isSubmitting ? <Loader2 className="w-6 h-6 animate-spin" /> : 'CONFIRMER MON RENDEZ-VOUS'}
       </button>
 
       {onCancel && (
-        <button type="button" onClick={onCancel} className="w-full text-slate-400 text-xs font-bold hover:text-slate-600 transition">
-          {t('eligibility.btn_back')}
+        <button type="button" onClick={onCancel} className="w-full text-slate-400 text-xs font-bold hover:text-slate-600 transition tracking-widest uppercase">
+          Annuler
         </button>
       )}
     </form>

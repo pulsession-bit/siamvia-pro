@@ -32,7 +32,8 @@ const DTVClientPage: React.FC = () => {
                     <span className="text-amber-400 font-bold tracking-wide uppercase text-sm border border-amber-400/50 px-3 py-1 rounded-full bg-slate-900/50 backdrop-blur-sm">
                         {t('dtv_page.badge')}
                     </span>
-                    <h1 className="text-4xl md:text-5xl font-bold mt-6 mb-6">{t('dtv_page.hero_title')}</h1>
+                    <h1 className="text-5xl md:text-6xl font-extrabold mt-6 mb-2 text-white">{t('dtv_page.hero_h1')}</h1>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-200">{t('dtv_page.hero_title')}</h2>
                     <p className="text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed">
                         {t('dtv_page.hero_subtitle')}
                         <br />

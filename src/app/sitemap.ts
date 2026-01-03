@@ -4,7 +4,7 @@ import { SLUG_MAP, getTranslatedPath, PageKey } from '@/utils/slugs';
 export const dynamic = 'force-static';
 
 const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'];
-const pages: PageKey[] = ['home', 'dtv', 'services', 'tourist-visa', 'elite-visa', 'retirement-visa', 'faq', 'contact', 'terms', 'sitemap'];
+const pages: PageKey[] = ['home', 'dtv', 'services', 'tourist-visa', 'elite-visa', 'retirement-visa', 'ltr', 'search', 'faq', 'contact', 'terms', 'sitemap'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://siamvisapro.com';

@@ -145,7 +145,7 @@ const Navbar: React.FC = () => {
             </Link>
             <Link
               href={langPath('search')}
-              className={`text-sm font-medium transition-colors flex items-center space-x-1 ${pathname?.includes('/search') ? 'text-white font-semibold' : 'text-slate-200 hover:text-white'}`}
+              className={`text-sm font-medium transition-colors flex items-center space-x-1 ${['comparator', 'comparateur', 'vergleich', 'comparador', 'comparatore'].some(term => pathname?.includes(term)) ? 'text-white font-semibold' : 'text-slate-200 hover:text-white'}`}
             >
               <Search className="w-4 h-4" />
               <span>{t('nav.search')}</span>

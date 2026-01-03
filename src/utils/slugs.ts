@@ -24,7 +24,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         faq: 'questions-frequentes',
         terms: 'conditions-generales',
         sitemap: 'plan-du-site',
-        search: 'recherche',
+        search: 'comparateur-visa-thailande-2026',
         ltr: 'visa-ltr-thailande'
     },
     en: {
@@ -38,7 +38,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         faq: 'frequently-asked-questions',
         terms: 'terms-and-conditions',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa'
     },
     de: {
@@ -52,7 +52,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         faq: 'haufig-gestellte-fragen',
         terms: 'allgemeine-geschaftsbedingungen',
         sitemap: 'seitenverzeichnis',
-        search: 'suche',
+        search: 'thailand-visum-vergleich-2026',
         ltr: 'long-term-resident-visa'
     },
     es: {
@@ -66,7 +66,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         faq: 'preguntas-frecuentes',
         terms: 'terminos-y-condiciones',
         sitemap: 'mapa-del-sito',
-        search: 'buscar',
+        search: 'comparador-visas-tailandia-2026',
         ltr: 'visado-residencia-larga-duracion'
     },
     it: {
@@ -80,7 +80,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         faq: 'domande-frequenti',
         terms: 'termini-e-condizioni',
         sitemap: 'mappa-del-sito',
-        search: 'cerca',
+        search: 'comparatore-visti-thailandia-2026',
         ltr: 'visto-residenza-lungo-termine'
     },
     th: {
@@ -94,7 +94,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         faq: 'faq',
         terms: 'terms',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa'
     },
     ru: {
@@ -108,7 +108,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         faq: 'faq',
         terms: 'terms',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa'
     },
     zh: {
@@ -122,7 +122,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         faq: 'faq',
         terms: 'terms',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'global-wealthy-citizen-visa'
     },
     ja: {
@@ -136,7 +136,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         faq: 'faq',
         terms: 'terms',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa'
     },
     ko: {
@@ -150,7 +150,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         faq: 'faq',
         terms: 'terms',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa'
     },
     ar: {
@@ -164,7 +164,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         faq: 'faq',
         terms: 'terms',
         sitemap: 'sitemap',
-        search: 'search',
+        search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa'
     }
 };

@@ -14,52 +14,94 @@ export async function POST(req: Request) {
             return NextResponse.json({ error: 'Query is required' }, { status: 400 });
         }
 
-        const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+        console.log('Using API Key starts with:', API_KEY?.substring(0, 7));
+        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
         const prompt = `
-        You are an intelligent Visa Analyst for 'SiamVisaPro'.
-        
-        Available Visa IDs:
-        - 'dtv': Digital Nomad, Remote Worker, Freelancer, Soft Power (Muay Thai, Cooking). 5 Years validity.
-        - 'setv': Tourist, short stay (60 days). No work allowed.
-        - 'voa': Short tourist stay (15-30 days) for eligible countries.
-        - 'metv': Multiple Entry Tourist (6 months total validity).
-        - 'non-o-ret': Retirement (Age 50+), need 800k THB bank.
-        - 'non-oa-ret': Long Stay Retirement, requires insurance.
-        - 'ltr-wgc': LTR Wealthy Global Citizen ($1M+ assets).
-        - 'ltr-wp': LTR Wealthy Pensioner (Age 50+).
-        - 'ltr-wft': LTR Work From Thailand (Remote employee for big corp).
-        - 'ltr-hsp': LTR Highly Skilled Professional.
-        - 'elite-gold': Elite Visa 5 Years (Paid membership).
-        - 'elite-plat': Elite Visa 10-20 Years (Paid membership).
-        - 'non-b': Working for a THAI company (local employment).
-        - 'non-ed-uni': Studying at University.
-        - 'non-ed-muay': Learning Muay Thai or Language (often used for stay).
-        - 'smart-t', 'smart-i': Startup / Tech Talent / Investor.
+        ROLE:
+        Tu es un agent d’aide à la décision spécialisé en visas pour la Thaïlande.
+        Ta mission est de recommander le visa le plus adapté à chaque client, de façon factuelle, neutre et conforme.
 
-        User Query: "${query}"
-        User Language: "${lang || 'en'}"
+        PROCESSUS DE DÉCISION:
+        1. Filtrer les visas incompatibles (activité non autorisée, durée insuffisante).
+        2. Scorer les visas restants selon : adéquation durée, adéquation activité, budget, complexité, points de vigilance.
+        3. Trier par score décroissant.
+        4. Générer une recommandation claire.
 
-        Task:
-        1. Analyze the user's profile and intent.
-        2. Select the ONE BEST matching Visa ID from the list above.
-        3. Provide a brief, professional explanation in the user's language (${lang || 'en'}).
-        4. Return ONLY a valid JSON object. Do not include markdown formatting like \`\`\`json.
-        
-        Format:
+        SOURCES DE DONNÉES (Visas disponibles et IDs) :
+        - 'dtv': Digital Nomad, Remote Worker, Freelancer, Soft Power (Muay Thai, Cooking). 5 ans.
+        - 'setv': Touriste, séjour court (60 jours). Travail interdit.
+        - 'voa': Exemption / Visa on Arrival (15-60 jours selon pays).
+        - 'metv': Touristique entrées multiples (6 mois).
+        - 'non-o-ret': Retraite (50 ans +), besoin de 800k THB en banque ou pension.
+        - 'elite-gold': Elite Visa 5 ans (Adhésion payante ~900k THB).
+        - 'elite-plat': Elite Visa 10-20 ans.
+        - 'non-b': Travailleur salarié dans une entreprise THAÏLANDAISE.
+        - 'ltr-wft': LTR Work From Thailand (Salarié de grande entreprise étrangère).
+        - 'ltr-wp': LTR Wealthy Pensioner (50 ans +, gros revenus).
+
+        CONTRAINTES:
+        - Pas d'avis juridique définitif.
+        - Expliquer POURQUOI.
+        - Exclure explicitement les visas incompatibles.
+        - Ne pas utiliser le mot "Risque", utiliser "Point de vigilance", "Point faible" ou "Contrainte".
+        - Langue : "${lang || 'en'}".
+
+        QUERY UTILISATEUR: "${query}"
+
+        FORMAT DE SORTIE (JSON STRICT) :
         {
-            "recommendationId": "dtv" | "setv" | "non-o-ret" | ... | null,
-            "explanation": "Your explanation here..."
+          "recommended_visa_id": "L'ID Technique (ex: dtv)",
+          "confidence_level": "high | medium | low",
+          "justification": ["raison 1", "raison 2"],
+          "points_de_vigilance": ["contrainte ou point d'attention 1"],
+          "alternatives": [{"id": "id_visa", "reason_not_optimal": "raison"}],
+          "disclaimer": "Recommandation informative. Validation finale requise."
         }
-        
-        If the query is too vague to decide (e.g. "visa"), set recommendationId to null and ask clarifying questions in the explanation.
         `;
 
         const result = await model.generateContent(prompt);
         const response = await result.response;
-        const text = response.text().replace(/```json|```/g, '').trim(); // Clean up potential markdown
+        const rawText = response.text();
 
-        return NextResponse.json(JSON.parse(text));
+        // Robust JSON extraction
+        let jsonText = rawText;
+        const jsonMatch = rawText.match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+            jsonText = jsonMatch[0];
+        } else {
+            // Clean up basic markdown if no regex match
+            jsonText = rawText.replace(/```json|```/g, '').trim();
+        }
+
+        try {
+            const aiData = JSON.parse(jsonText);
+
+            // Map NEW format to OLD frontend expectation for compatibility
+            // but enrich the explanation with the new structured data
+            const explanation = `
+${aiData.justification && aiData.justification.length > 0 ? aiData.justification.map((j: string) => `• ${j}`).join('\n') : ''}
+
+${(aiData.points_de_vigilance || aiData.risks) && (aiData.points_de_vigilance || aiData.risks).length > 0 ? `🔍 POINTS DE VIGILANCE :\n${(aiData.points_de_vigilance || aiData.risks).map((r: string) => `• ${r}`).join('\n')}` : ''}
+
+${aiData.alternatives && aiData.alternatives.length > 0 ? `🔄 ALTERNATIVES :\n${aiData.alternatives.map((a: any) => `• ${a.id || a.visa} : ${a.reason_not_optimal}`).join('\n')}` : ''}
+
+${aiData.disclaimer || "Recommandation informative. Validation finale requise."}
+            `.trim();
+
+            return NextResponse.json({
+                recommendationId: aiData.recommended_visa_id,
+                alternativeIds: aiData.alternatives ? aiData.alternatives.map((a: any) => a.id) : [],
+                explanation: explanation
+            });
+        } catch (parseError) {
+            console.error('JSON Parse Error. Raw text:', rawText);
+            // Fallback response for vague or broken AI output
+            return NextResponse.json({
+                recommendationId: null,
+                explanation: "Je n'ai pas pu analyser votre demande précisément. Pourriez-vous donner plus de détails sur votre situation (ex: travail à distance, retraite, tourisme) ?"
+            });
+        }
     } catch (error) {
         console.error('Gemini API Error:', error);
         return NextResponse.json(

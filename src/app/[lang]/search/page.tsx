@@ -22,13 +22,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description: t.description,
         alternates: {
             languages: {
-                'en': `https://siamvisapro.com/en/search`,
-                'fr': `https://siamvisapro.com/fr/recherche`,
-                'de': `https://siamvisapro.com/de/suche`,
-                'es': `https://siamvisapro.com/es/buscar`,
-                'it': `https://siamvisapro.com/it/cerca`,
-                'th': `https://siamvisapro.com/th/search`,
-                // Add others as needed
+                'en': `https://siamvisapro.com/en/thailand-visa-comparator-2026`,
+                'fr': `https://siamvisapro.com/fr/comparateur-visa-thailande-2026`,
+                'de': `https://siamvisapro.com/de/thailand-visum-vergleich-2026`,
+                'es': `https://siamvisapro.com/es/comparador-visas-tailandia-2026`,
+                'it': `https://siamvisapro.com/it/comparatore-visti-thailandia-2026`,
+                'th': `https://siamvisapro.com/th/thailand-visa-comparator-2026`,
+                'ru': `https://siamvisapro.com/ru/thailand-visa-comparator-2026`,
+                'zh': `https://siamvisapro.com/zh/thailand-visa-comparator-2026`,
+                'ja': `https://siamvisapro.com/ja/thailand-visa-comparator-2026`,
+                'ko': `https://siamvisapro.com/ko/thailand-visa-comparator-2026`,
+                'ar': `https://siamvisapro.com/ar/thailand-visa-comparator-2026`,
             },
         },
     };
@@ -36,5 +40,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function SearchPage({ params }: Props) {
     const { lang } = await params;
-    return <SearchClientPage />;
+    return (
+        <React.Suspense fallback={<div className="min-h-screen bg-slate-50 flex items-center justify-center">Loading search engine...</div>}>
+            <SearchClientPage />
+        </React.Suspense>
+    );
 }
