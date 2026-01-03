@@ -1,10 +1,11 @@
 'use client';
 
 import React from 'react';
-import { Check, Star, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { URLS, IMAGES } from '@/constants';
-import { HeroSection, PageContainer, Card } from '@/components/ui/PageComponents';
+import { PageContainer, Card } from '@/components/ui/PageComponents';
+import { VisaHero } from '@/components/visa/VisaHero';
+import { ServiceCard } from '@/components/services/ServiceCard';
 
 const ServicesClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -52,98 +53,65 @@ const ServicesClientPage: React.FC = () => {
     ];
 
     return (
-        <div className="bg-slate-50 min-h-screen">
-            {/* Hero Section */}
-            <HeroSection
-                backgroundImage={IMAGES.OFFICE}
-                imageAlt="Office"
+        <div className="bg-slate-50 min-h-screen pb-20">
+            {/* 1. Hero Section - Unified with Visa pages */}
+            <VisaHero
+                badge="● NOS SOLUTIONS"
                 title={t('services_page.hero_title')}
-                subtitle={
-                    <>
-                        {t('services_page.hero_subtitle')} <br />
-                        {t('services_page.hero_tagline')}
-                    </>
-                }
+                subtitle={t('services_page.hero_subtitle')}
+                description={t('services_page.hero_tagline')}
+                tagline="Une expertise complète pour votre sérénité en Thaïlande."
+                backgroundImage={IMAGES.OFFICE}
             />
 
-            {/* Services Grid */}
+            {/* 2. Services Grid */}
             <PageContainer negativeMargin>
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-3 gap-8 mb-16">
                     {tiers.map(tier => (
-                        <ServiceCard key={tier.id} tier={tier} />
+                        <ServiceCard
+                            key={tier.id}
+                            tier={tier}
+                            recommendedLabel={t('services_page.recommended')}
+                            ctaLabel={t('services_page.btn_start')}
+                            ctaHref={URLS.SCORING_ENGINE}
+                        />
                     ))}
                 </div>
 
-                {/* Insurance Section */}
-                <Card variant="white" className="mt-16 text-center border-slate-200">
-                    <h3 className="text-lg font-bold text-slate-900 mb-2">
-                        {t('services_page.insurance_title')}
-                    </h3>
-                    <p className="text-slate-600 mb-6">{t('services_page.insurance_desc')}</p>
-                    <a
-                        href="#"
-                        className="text-amber-600 font-semibold hover:text-amber-700 hover:underline"
-                    >
-                        {t('services_page.insurance_link')} &rarr;
-                    </a>
-                </Card>
+                {/* 3. Insurance & Extra Info Section */}
+                <div className="grid md:grid-cols-2 gap-8">
+                    <Card variant="white" className="p-10 border-slate-100 shadow-xl rounded-[2rem]">
+                        <h3 className="text-xl font-black text-slate-900 mb-4">
+                            {t('services_page.insurance_title')}
+                        </h3>
+                        <p className="text-slate-600 mb-8 leading-relaxed text-sm">
+                            {t('services_page.insurance_desc')}
+                        </p>
+                        <a
+                            href="#"
+                            className="inline-flex items-center text-amber-600 font-black hover:text-amber-700 transition"
+                        >
+                            <span className="uppercase tracking-widest text-xs mr-2">{t('services_page.insurance_link')}</span>
+                            <span className="text-lg">→</span>
+                        </a>
+                    </Card>
+
+                    <Card variant="dark" className="p-10 shadow-xl rounded-[2rem] bg-slate-900 border-none">
+                        <h3 className="text-xl font-black text-white mb-4">
+                            Besoin d'un accompagnement sur mesure ?
+                        </h3>
+                        <p className="text-slate-400 mb-8 leading-relaxed text-sm">
+                            Nos experts sont disponibles pour analyser votre dossier spécifique et vous proposer la meilleure stratégie d'expatriation.
+                        </p>
+                        <button
+                            onClick={() => window.location.href = '#'}
+                            className="bg-amber-500 text-slate-900 px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[10px]"
+                        >
+                            Parler à un expert
+                        </button>
+                    </Card>
+                </div>
             </PageContainer>
-        </div>
-    );
-};
-
-const ServiceCard: React.FC<{ tier: any }> = ({ tier }) => {
-    const { t } = useLanguage();
-
-    return (
-        <div
-            className={`
-        relative bg-white rounded-2xl shadow-xl flex flex-col
-        ${tier.recommended ? 'border-2 border-amber-500 transform md:-translate-y-4 z-10' : 'border border-slate-100'}
-      `}
-        >
-            {/* Badge Recommandé */}
-            {tier.recommended && (
-                <div className="absolute top-0 inset-x-0 transform -translate-y-1/2 flex justify-center">
-                    <span className="bg-amber-500 text-slate-900 px-4 py-1 rounded-full text-sm font-bold shadow-sm flex items-center uppercase tracking-wide">
-                        <Star className="w-4 h-4 mr-1 fill-current" />
-                        {t('services_page.recommended')}
-                    </span>
-                </div>
-            )}
-
-            {/* Contenu */}
-            <div className="p-8 flex-1">
-                <h3 className="text-2xl font-bold text-slate-900">{tier.name}</h3>
-                <p className="mt-4 text-slate-500 text-sm">{tier.description}</p>
-
-                {/* Features List */}
-                <ul className="space-y-4 mb-8 mt-8">
-                    {tier.features.map((feature: string, idx: number) => (
-                        <li key={idx} className="flex items-start">
-                            <Check className="h-5 w-5 text-amber-500 flex-shrink-0 mr-3" />
-                            <span className="text-slate-600 text-sm">{feature}</span>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-
-            {/* CTA Button */}
-            <div className="p-8 pt-0 mt-auto">
-                <a
-                    href={URLS.SCORING_ENGINE}
-                    className={`
-            w-full py-4 px-6 rounded-xl font-bold transition flex items-center justify-center
-            ${tier.recommended
-                            ? 'bg-amber-500 text-slate-900 hover:bg-amber-400 shadow-lg shadow-amber-500/20'
-                            : 'bg-slate-100 text-slate-900 hover:bg-slate-200'
-                        }
-          `}
-                >
-                    {t('services_page.btn_start')}
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-            </div>
         </div>
     );
 };

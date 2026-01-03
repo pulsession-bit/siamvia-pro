@@ -1,22 +1,20 @@
 'use client';
 
-import React from 'react';
-import Image from 'next/image';
-import { Check, Crown, Shield, Star } from 'lucide-react';
+import React, { useState } from 'react';
+import { Crown, Shield, Star, Zap, Plane, Check, Phone } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 import { HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
 import { QuickSummaryModal } from '@/components/ui/QuickSummaryModal';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { Zap, Plane, CheckCircle2, Phone } from 'lucide-react';
+import { VisaHero } from '@/components/visa/VisaHero';
 
 const EliteClientPage: React.FC = () => {
     const { t } = useLanguage();
-    // Helper to safely access nested elite keys
     const eliteT = (key: string) => t(`elite_page.${key}` as any);
-    const [isQuickViewOpen, setIsQuickViewOpen] = React.useState(false);
+    const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
 
     return (
-        <div className="bg-white">
+        <div className="bg-white min-h-screen">
             <QuickSummaryModal
                 isOpen={isQuickViewOpen}
                 onClose={() => setIsQuickViewOpen(false)}
@@ -26,23 +24,23 @@ const EliteClientPage: React.FC = () => {
                     durationValue: eliteT('quick_view.duration_val'),
                     costLabel: eliteT('quick_view.cost'),
                     costValue: eliteT('quick_view.cost_val'),
-                    perYearLabel: eliteT('quick_view.per_year'),
-                    perYearValue: eliteT('quick_view.per_year_val'),
-                    runsLabel: eliteT('quick_view.runs'),
-                    runsValue: eliteT('quick_view.runs_val'),
-                    entriesLabel: eliteT('quick_view.entries'),
-                    entriesValue: eliteT('quick_view.entries_val'),
+                    get perYearLabel() { return eliteT('quick_view.per_year'); },
+                    get perYearValue() { return eliteT('quick_view.per_year_val'); },
+                    get runsLabel() { return eliteT('quick_view.runs'); },
+                    get runsValue() { return eliteT('quick_view.runs_val'); },
+                    get entriesLabel() { return eliteT('quick_view.entries'); },
+                    get entriesValue() { return eliteT('quick_view.entries_val'); },
                 }}
                 verdict={eliteT('quick_view.verdict')}
             />
-            <section className="relative h-screen flex items-center justify-center overflow-hidden bg-slate-900">
+
+            {/* 1. Hero Section */}
+            <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                 <div className="absolute inset-0 opacity-40">
-                    <Image
+                    <img
                         src="https://images.unsplash.com/photo-1549416878-b9ca95e26903?auto=format&fit=crop&w=1920&q=80"
                         alt="Luxury Thailand"
-                        fill
-                        className="object-cover"
-                        priority
+                        className="w-full h-full object-cover"
                     />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
@@ -75,28 +73,30 @@ const EliteClientPage: React.FC = () => {
                 </div>
             </section>
 
-            <section className="py-12 bg-white">
+            {/* 2. Top Features */}
+            <section className="py-24 bg-white border-b border-slate-100">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid md:grid-cols-3 gap-12">
+                    <div className="grid md:grid-cols-3 gap-12 mb-16">
                         {[
                             { icon: Crown, title: eliteT('duration_title'), desc: eliteT('duration_desc') },
                             { icon: Star, title: eliteT('benefits_title'), desc: eliteT('benefits_desc') },
                             { icon: Shield, title: eliteT('finance_title'), desc: eliteT('finance_desc') }
                         ].map((f, i) => (
-                            <div key={i} className="text-center group">
-                                <div className="w-16 h-16 bg-slate-50 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:bg-amber-100 transition duration-300">
-                                    <f.icon className="w-8 h-8 text-slate-900" />
+                            <div key={i} className="text-center group p-8 rounded-[2rem] hover:bg-slate-50 transition duration-300">
+                                <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-amber-500 transition duration-300">
+                                    <f.icon className="w-8 h-8 text-amber-500 group-hover:text-white" />
                                 </div>
                                 <h3 className="text-xl font-black text-slate-900 mb-3">{f.title}</h3>
-                                <p className="text-slate-500 leading-relaxed">{f.desc}</p>
+                                <p className="text-slate-500 leading-relaxed text-sm">{f.desc}</p>
                             </div>
                         ))}
                     </div>
 
+                    {/* 3. High Value Feature Block */}
                     <HighValueBlock
                         title={t('elite_page.high_value.title') || "Prestige & Sérénité"}
                         highlight={t('elite_page.high_value.highlight') || "Absolue"}
-                        description={t('elite_page.high_value.description') || "Pas de files d'attente, pas de rapports de 90 jours compliqués, pas de tracas. Juste le plaisir de vivre en Thaïlande avec un statut VIP garanti par l'État."}
+                        description={t('elite_page.high_value.description') || "Pas de files d'attente, pas de rapports de 90 jours compliqués."}
                         listItems={[
                             { icon: Plane, text: t('elite_page.high_value.item1') || "Fast Track Aéroport VIP" },
                             { icon: Crown, text: t('elite_page.high_value.item2') || "Adhésion 5 à 20 Ans" },
@@ -111,23 +111,19 @@ const EliteClientPage: React.FC = () => {
                         ]}
                     />
 
+                    {/* 4. Highs & Lows */}
                     <HighsLows
                         highsTitle={eliteT('highs_title')}
                         highs={[
-                            eliteT('highs.0'),
-                            eliteT('highs.1'),
-                            eliteT('highs.2'),
-                            eliteT('highs.3'),
+                            eliteT('highs.0'), eliteT('highs.1'), eliteT('highs.2'), eliteT('highs.3'),
                         ]}
                         lowsTitle={eliteT('lows_title')}
                         lows={[
-                            eliteT('lows.0'),
-                            eliteT('lows.1'),
-                            eliteT('lows.2'),
-                            eliteT('lows.3'),
+                            eliteT('lows.0'), eliteT('lows.1'), eliteT('lows.2'), eliteT('lows.3'),
                         ]}
                     />
 
+                    {/* 5. FAQ */}
                     <FAQAccordion
                         title={eliteT('faq_title')}
                         faqs={[
@@ -140,16 +136,20 @@ const EliteClientPage: React.FC = () => {
                 </div>
             </section>
 
-            <section id="appointment-section" className="py-24 bg-slate-50 border-t">
-                <div className="max-w-7xl mx-auto px-4">
+            {/* 6. Appointment Section */}
+            <section id="appointment-section" className="py-24 bg-slate-900 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+                <div className="max-w-7xl mx-auto px-4 relative z-10">
                     <div className="bg-white rounded-[3rem] shadow-2xl overflow-hidden lg:grid lg:grid-cols-2">
-                        <div className="p-12 lg:p-20 bg-slate-900 text-white flex flex-col justify-center">
+                        <div className="p-12 lg:p-20 bg-slate-900 text-white flex flex-col justify-center border-r border-white/5">
                             <h2 className="text-4xl font-black mb-6 leading-tight" dangerouslySetInnerHTML={{ __html: eliteT('prestige_title') }}></h2>
-                            <p className="text-slate-400 mb-8">{eliteT('prestige_desc')}</p>
+                            <p className="text-slate-400 mb-8 leading-relaxed">{eliteT('prestige_desc')}</p>
                             <ul className="space-y-4">
-                                {(eliteT('prestige_list') as unknown as string[])?.map((item: string, idx: number) => (
+                                {(eliteT('prestige_list') as any)?.map((item: string, idx: number) => (
                                     <li key={idx} className="flex items-center space-x-3 text-sm font-bold">
-                                        <Check className="text-amber-500 w-5 h-5" />
+                                        <div className="bg-amber-500/10 p-1 rounded-full">
+                                            <Check className="text-amber-500 w-5 h-5" />
+                                        </div>
                                         <span>{item}</span>
                                     </li>
                                 ))}

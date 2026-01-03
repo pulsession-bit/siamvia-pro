@@ -3,11 +3,17 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
-import { URLS, IMAGES } from '@/constants';
-import { HeroSection, PageContainer, Card, CTAButton, HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
+import { IMAGES } from '@/constants';
+import { PageContainer, HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
 import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 import { RelatedPages } from '@/components/RelatedPages';
-import { Briefcase, Plane, HelpCircle, Check, AlertTriangle, Heart, Shield, Stethoscope, Wallet, Infinity, MessageSquare, Phone, Mail, Video, Clock, Calendar } from 'lucide-react';
+import { VisaHero } from '@/components/visa/VisaHero';
+import { VisaFeatureSummary } from '@/components/visa/VisaFeatureSummary';
+import { VisaPitfalls } from '@/components/visa/VisaPitfalls';
+import {
+    Briefcase, Plane, HelpCircle, Check,
+    Heart, Stethoscope, Wallet, Infinity
+} from 'lucide-react';
 
 const RetirementVisaClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -16,71 +22,50 @@ const RetirementVisaClientPage: React.FC = () => {
 
     return (
         <div className="bg-slate-50 min-h-screen">
-            {/* Hero Section */}
-            <HeroSection
-                backgroundImage={IMAGES.LTR}
-                imageAlt="Retirement in Thailand"
+            {/* 1. Hero Section */}
+            <VisaHero
+                badge="● VISA RETRAITE"
                 title={t('retirement_visa_page.hero_title')}
                 subtitle={t('retirement_visa_page.hero_subtitle')}
-                badge="● VISA RETRAITE"
+                description="Le visa de long séjour pour les retraités de 50 ans et plus."
+                tagline="Renouvelable chaque année sans quitter le pays."
+                backgroundImage={IMAGES.LTR}
             />
 
-            {/* Main Content */}
             <PageContainer maxWidth="max-w-5xl" negativeMargin>
-                {/* Eligibility Section */}
-                <Card variant="white" className="mb-12">
-                    <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                        <Heart className="h-6 w-6 text-amber-500 mr-3" />
-                        {t('retirement_visa_page.eligibility_title')}
-                    </h2>
-                    <ul className="space-y-4">
-                        <EligibilityItem text={t('retirement_visa_page.criteria1')} />
-                        <EligibilityItem text={t('retirement_visa_page.criteria2')} />
-                        <EligibilityItem text={t('retirement_visa_page.criteria3')} />
-                        <EligibilityItem text={t('retirement_visa_page.criteria4')} />
-                    </ul>
-                </Card>
+                {/* 2. Eligibility Section using FeatureSummary logic */}
+                <VisaFeatureSummary
+                    whyTitle={t('retirement_visa_page.eligibility_title')}
+                    features={[
+                        { icon: Check, title: t('retirement_visa_page.criteria1'), description: "" },
+                        { icon: Check, title: t('retirement_visa_page.criteria2'), description: "" },
+                        { icon: Check, title: t('retirement_visa_page.criteria3'), description: "" },
+                        { icon: Check, title: t('retirement_visa_page.criteria4'), description: "" }
+                    ]}
+                    whoTitle="Profil Retraité Idéal"
+                    whoItems={[
+                        { icon: Heart, title: "Sérénité Médicale", description: "Accès à des hôpitaux de rang mondial" },
+                        { icon: Wallet, title: "Budget Optimisé", description: "Coût de vie 50% moins cher qu'en Europe" }
+                    ]}
+                />
 
-                {/* Common Pitfalls Section */}
-                <Card variant="white" className="mb-12">
-                    <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                        <Shield className="h-6 w-6 text-red-500 mr-3" />
-                        {t('retirement_visa_page.pitfalls_title')}
-                    </h2>
-                    <div className="space-y-6">
-                        <PitfallItem
-                            title={t('retirement_visa_page.pitfall1_title')}
-                            description={t('retirement_visa_page.pitfall1_desc')}
-                        />
-                        <PitfallItem
-                            title={t('retirement_visa_page.pitfall2_title')}
-                            description={t('retirement_visa_page.pitfall2_desc')}
-                        />
-                        <PitfallItem
-                            title={t('retirement_visa_page.pitfall3_title')}
-                            description={t('retirement_visa_page.pitfall3_desc')}
-                        />
-                    </div>
-                </Card>
+                {/* 3. Pitfalls & Warnings */}
+                <VisaPitfalls
+                    title={t('retirement_visa_page.pitfalls_title')}
+                    items={[
+                        { title: t('retirement_visa_page.pitfall1_title'), description: t('retirement_visa_page.pitfall1_desc') },
+                        { title: t('retirement_visa_page.pitfall2_title'), description: t('retirement_visa_page.pitfall2_desc') },
+                        { title: t('retirement_visa_page.pitfall3_title'), description: t('retirement_visa_page.pitfall3_desc') }
+                    ]}
+                    warningTitle={t('retirement_visa_page.warning_title')}
+                    warningDesc={t('retirement_visa_page.warning_desc')}
+                />
 
-                {/* Warning Section */}
-                <Card variant="amber" className="mb-12">
-                    <div className="flex items-start">
-                        <AlertTriangle className="h-6 w-6 text-amber-600 mr-4 flex-shrink-0 mt-1" />
-                        <div>
-                            <h3 className="font-bold text-amber-900 mb-2">
-                                {t('retirement_visa_page.warning_title')}
-                            </h3>
-                            <p className="text-amber-800 text-sm">{t('retirement_visa_page.warning_desc')}</p>
-                        </div>
-                    </div>
-                </Card>
-
-                {/* High Value Feature Block */}
+                {/* 4. High Value Block */}
                 <HighValueBlock
                     title={t('retirement_visa_page.high_value.title') || "Douceur de Vivre"}
                     highlight={t('retirement_visa_page.high_value.highlight') || "& Sécurité"}
-                    description={t('retirement_visa_page.high_value.description') || "Profitez d'une retraite dorée au pays du sourire avec un coût de la vie avantageux et des infrastructures médicales de classe mondiale. Une retraite paisible sans compromis."}
+                    description={t('retirement_visa_page.high_value.description') || "Profitez d'une retraite dorée au pays du sourire avec un coût de la vie avantageux."}
                     listItems={[
                         { icon: Wallet, text: t('retirement_visa_page.high_value.item1') || "Coût de la vie avantageux" },
                         { icon: Infinity, text: t('retirement_visa_page.high_value.item2') || "Renouvelable à l'infini" },
@@ -95,6 +80,7 @@ const RetirementVisaClientPage: React.FC = () => {
                     ]}
                 />
 
+                {/* 5. Highs & Lows */}
                 <HighsLows
                     highsTitle={t('retirement_visa_page.highs_title')}
                     highs={[
@@ -112,6 +98,7 @@ const RetirementVisaClientPage: React.FC = () => {
                     ]}
                 />
 
+                {/* 6. FAQ */}
                 <FAQAccordion
                     title={t('retirement_visa_page.faq_title')}
                     faqs={[
@@ -132,6 +119,28 @@ const RetirementVisaClientPage: React.FC = () => {
                     ]}
                 />
 
+                {/* 7. Appointment Integrated Form */}
+                <section id="appointment-section" className="py-24 bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden mb-12">
+                    <div className="max-w-5xl mx-auto px-4 lg:grid lg:grid-cols-2">
+                        <div className="p-10 bg-slate-900 text-white rounded-[2rem] lg:rounded-r-none">
+                            <h2 className="text-3xl font-black mb-6 leading-tight">Expertise <span className="text-amber-500">Retraite</span></h2>
+                            <p className="text-slate-400 mb-8">La retraite en Thaïlande demande une préparation minutieuse. Évitez les refus avec notre audit gratuit.</p>
+                            <ul className="space-y-4">
+                                {["Audit financier (800k THB)", "Vérification Assurance Santé", "Liaison Ambassade E-Visa"].map((item, i) => (
+                                    <li key={i} className="flex items-center space-x-3 text-sm font-bold">
+                                        <Check className="text-amber-500 w-5 h-5 flex-shrink-0" />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="p-10">
+                            <ExpertAppointmentForm />
+                        </div>
+                    </div>
+                </section>
+
+                {/* 8. Related Pages */}
                 <RelatedPages
                     title={t('footer.col_visas')}
                     pages={[
@@ -155,68 +164,9 @@ const RetirementVisaClientPage: React.FC = () => {
                         }
                     ]}
                 />
-
-                {/* CTA Section */}
-                <Card variant="dark" className="text-center mb-12">
-                    <h3 className="text-2xl font-bold text-amber-400 mb-4">
-                        {t('retirement_visa_page.cta_title')}
-                    </h3>
-                    <p className="text-slate-300 mb-8 max-w-2xl mx-auto">
-                        {t('retirement_visa_page.cta_desc')}
-                    </p>
-                    <CTAButton href={SCORING_ENGINE_URL} variant="primary">
-                        {t('retirement_visa_page.cta_btn')}
-                    </CTAButton>
-                </Card>
-
-                {/* Appointment Section */}
-                <section id="appointment-section" className="py-24 bg-slate-50 border-t rounded-[3rem] overflow-hidden mb-12">
-                    <div className="max-w-5xl mx-auto px-4">
-                        <div className="bg-white rounded-[2rem] shadow-2xl overflow-hidden lg:grid lg:grid-cols-2">
-                            <div className="p-10 lg:p-16 bg-slate-900 text-white flex flex-col justify-center">
-                                <h2 className="text-3xl font-black mb-6 leading-tight">Expertise <span className="text-amber-500">Retraite</span></h2>
-                                <p className="text-slate-400 mb-8">La retraite en Thaïlande demande une préparation minutieuse des preuves bancaires et de l'assurance santé. Évitez les refus avec notre audit gratuit.</p>
-                                <ul className="space-y-4 bg-white/5 p-6 rounded-2xl border border-white/10">
-                                    <li className="flex items-center space-x-3 text-sm font-bold">
-                                        <Check className="text-amber-500 w-5 h-5 flex-shrink-0" />
-                                        <span>Audit financier (800k THB)</span>
-                                    </li>
-                                    <li className="flex items-center space-x-3 text-sm font-bold">
-                                        <Check className="text-amber-500 w-5 h-5 flex-shrink-0" />
-                                        <span>Vérification Assurance Santé</span>
-                                    </li>
-                                    <li className="flex items-center space-x-3 text-sm font-bold">
-                                        <Check className="text-amber-500 w-5 h-5 flex-shrink-0" />
-                                        <span>Liaison Ambassade E-Visa</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="p-10 lg:p-16">
-                                <ExpertAppointmentForm />
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </PageContainer>
         </div>
     );
 };
-
-const EligibilityItem: React.FC<{ text: string }> = ({ text }) => (
-    <li className="flex items-start">
-        <Check className="h-5 w-5 text-green-500 flex-shrink-0 mr-3 mt-0.5" />
-        <span className="text-slate-700">{text}</span>
-    </li>
-);
-
-const PitfallItem: React.FC<{
-    title: string;
-    description: string;
-}> = ({ title, description }) => (
-    <div className="p-4 bg-red-50 border-l-4 border-red-500 rounded-r-lg">
-        <h3 className="font-bold text-red-900 mb-2">{title}</h3>
-        <p className="text-red-800 text-sm">{description}</p>
-    </div>
-);
 
 export default RetirementVisaClientPage;
