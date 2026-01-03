@@ -1,1 +1,9 @@
-Application error: a client-side exception has occurred while loading www.siamvisapro.com (see the browser console for more information).
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPPNR4KM76"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPPNR4KM76');
+</script>
