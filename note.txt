@@ -1,0 +1,14 @@
+Failed to compile.
+./src/app/[lang]/home/components/HomeSpotlight.tsx:32:136
+Type error: No overload matches this call.
+  The last overload gave the following error.
+    Object literal may only specify known properties, and 'className' does not exist in type 'Partial<unknown> & Attributes'.
+  30 |                                         <div className="flex-shrink-0 mt-1">
+  31 |                                             <div className="flex items-center justify-center h-12 w-12 rounded-full bg-amber-50 text-amber-600 border border-amber-100">
+> 32 |                                                 {React.isValidElement(icons[i]) ? React.cloneElement(icons[i] as React.ReactElement, { className: "h-6 w-6" }) : null}
+     |                                                                                                                                        ^
+  33 |                                             </div>
+  34 |                                         </div>
+  35 |                                         <div className="ml-4">
+Next.js build worker exited with code: 1 and signal: null
+Error: Command "npm run build" exited with 1

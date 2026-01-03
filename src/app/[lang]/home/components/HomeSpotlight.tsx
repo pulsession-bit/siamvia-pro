@@ -24,12 +24,13 @@ export const HomeSpotlight: React.FC<HomeSpotlightProps> = ({ t, SCORING_ENGINE_
                         </p>
                         <div className="space-y-8 mb-8">
                             {[1, 2, 3].map((i) => {
-                                const icons = [null, <Globe />, <Briefcase />, <Zap />];
+                                const Icons = [null, Globe, Briefcase, Zap];
+                                const Icon = Icons[i];
                                 return (
                                     <div key={i} className="flex">
                                         <div className="flex-shrink-0 mt-1">
                                             <div className="flex items-center justify-center h-12 w-12 rounded-full bg-amber-50 text-amber-600 border border-amber-100">
-                                                {React.isValidElement(icons[i]) ? React.cloneElement(icons[i] as React.ReactElement, { className: "h-6 w-6" }) : null}
+                                                {Icon && <Icon className="h-6 w-6" />}
                                             </div>
                                         </div>
                                         <div className="ml-4">
