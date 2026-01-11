@@ -50,20 +50,10 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
 
     return (
         <div className="min-h-screen flex flex-col bg-slate-50">
-            {/* 1. Hero & AI Area */}
+            {/* 1. Hero Area */}
             <SearchHero
                 title={globalT('search_page.meta.title')}
                 subtitle={localT.subtitle}
-                searchPlaceholder={localT.searchPlaceholder}
-                aiHelper={localT.aiHelper}
-                aiTitle={localT.aiTitle}
-                suggestions={localT.suggestions}
-                search={search}
-                setSearch={setSearch}
-                isAiLoading={isAiLoading}
-                aiResponse={aiResponse}
-                handleAiSearch={handleAiSearch}
-                setShowAppointment={setShowAppointment}
             />
 
             {/* 2. Category Filters */}
