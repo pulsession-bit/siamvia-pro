@@ -15,8 +15,8 @@ export const CategoryFilters: React.FC<CategoryFiltersProps> = ({
     setActiveCategory
 }) => {
     return (
-        <section className="bg-white border-b overflow-x-auto whitespace-nowrap scrollbar-hide">
-            <div className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-start md:justify-center gap-4">
+        <section className="bg-white border-b">
+            <div className="max-w-7xl mx-auto px-4 py-6 flex flex-wrap items-center justify-center gap-3">
                 <button
                     onClick={() => setActiveCategory(null)}
                     className={`px-6 py-2 rounded-full text-sm font-bold transition-all ${activeCategory === null ? 'bg-amber-500 text-white shadow-md' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}

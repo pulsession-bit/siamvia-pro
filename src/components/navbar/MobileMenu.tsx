@@ -37,7 +37,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
         <div className={`md:hidden fixed inset-y-0 right-0 w-full bg-white z-[60] transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
             <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between p-5 border-b border-slate-100">
-                    <span className="text-xl font-bold text-slate-900">SiamVisa<span className="text-amber-500">Pro</span></span>
+                    <span className="text-xl font-bold text-slate-900">Siam Visa <span className="text-amber-500">Pro</span></span>
                     <button onClick={() => setIsOpen(false)} className="p-2 text-slate-500 hover:bg-slate-100 rounded-full">
                         <X className="h-6 w-6" />
                     </button>

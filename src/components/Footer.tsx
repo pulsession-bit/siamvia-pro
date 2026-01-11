@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <Link href={langPath('')} className="text-2xl font-bold mb-6 flex items-center space-x-2">
               <ShieldCheck className="text-amber-500 h-8 w-8" />
-              <span>SiamVisa<span className="text-amber-500">Pro</span></span>
+              <span>Siam Visa <span className="text-amber-500">Pro</span></span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               {t('footer.desc')}
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-slate-800 pt-8 text-center text-slate-500 text-xs flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} SiamVisa Pro. {t('footer.copyright')}</p>
+          <p>&copy; {new Date().getFullYear()} Siam Visa Pro. {t('footer.copyright')}</p>
           <div className="flex items-center space-x-4 mt-2 md:mt-0">
             <p>{t('footer.disclaimer')}</p>
           </div>

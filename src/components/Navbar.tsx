@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
                 <Plane className="h-6 w-6 text-slate-900 transform -rotate-45" />
               </div>
               <span className="text-xl font-bold tracking-tight text-white transition-colors">
-                SiamVisa<span className="text-amber-500">Pro</span>
+                Siam Visa <span className="text-amber-500">Pro</span>
               </span>
             </Link>
           </div>
