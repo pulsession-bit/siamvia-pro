@@ -1373,12 +1373,7 @@ export const translations = {
       title: "Siam Visa Pro | Thailand Visum Experte - DTV, Tourismus & Ruhestand",
       description: "Holen Sie sich Ihr Thailand-Visum stressfrei. Experten für DTV-, Touristen- und Ruhestandsvisa. Volle Unterstützung und optimiertes Portfolio."
     },
-    search_page: {
-      meta: {
-        title: "Welches Thailand Visum Wählen? Vollständiger Vergleich 2026",
-        description: "Finden Sie das ideale Visum für Ihren Aufenthalt in Thailand. Vergleichen Sie Ruhestands-, DTV-, Elite- und Touristenvisa mit einem Klick."
-      }
-    },
+
     hero: {
       new_badge: "NEU: DTV VISUM VERFÜGBAR",
       title_line1: "Ihr Visum für Thailand,",
@@ -1700,6 +1695,21 @@ export const translations = {
       no_account: "Kein Konto?",
       start_request: "Antrag starten"
     },
+    search_page: {
+      meta: {
+        title: "Thailand Visum Vergleich 2026 | Siam Visa Pro",
+        description: "Finden Sie das ideale Visum für Ihren Thailand-Aufenthalt. Vergleichen Sie Ruhestand, DTV, Elite und Touristenvisa mit einem Klick."
+      },
+      title: "Welches Thailand Visum wählen? Voller Vergleich 2026",
+      description: "Finden Sie das ideale Visum für Ihren Thailand-Aufenthalt. Vergleichen Sie Ruhestand, DTV, Elite und Touristenvisa mit einem Klick.",
+      suggestions: [
+        "Ich möchte remote in Thailand arbeiten",
+        "Wie vermeide ich Visa Runs?",
+        "Ich bin 55 und möchte in den Ruhestand",
+        "Suche ein 5-Jahres-Visum ohne Ausreise",
+        "Visum zum Muay Thai lernen"
+      ]
+    },
     contact_page: {
       title: "Kontakt",
       subtitle: "Fragen zu Ihrem Visum oder unseren Dienstleistungen?",
@@ -1986,12 +1996,7 @@ export const translations = {
       title: "Siam Visa Pro | Experto en Visas Tailandia - DTV, Turismo y Jubilación",
       description: "Obtenga su visa para Tailandia sin estrés. Expertos en visas DTV, de Turista y de Jubilación. Soporte completo y Portfolio optimizado."
     },
-    search_page: {
-      meta: {
-        title: "¿Qué Visa de Tailandia Elegir? Comparativa Completa 2026",
-        description: "Encuentre la visa ideal para su estancia en Tailandia. Compare visas de Jubilación, DTV, Elite y Turismo en un clic."
-      }
-    },
+
     hero: {
       new_badge: "NUEVO: VISA DTV DISPONIBLE",
       title_line1: "Su Visa para Tailandia,",
@@ -2308,6 +2313,21 @@ export const translations = {
       submit: "Entrar",
       no_account: "¿Sin cuenta?",
       start_request: "Iniciar solicitud"
+    },
+    search_page: {
+      meta: {
+        title: "Comparador de Visas Tailandia 2026 | Siam Visa Pro",
+        description: "Encuentre la visa ideal para su estancia en Tailandia. Compare visas de Jubilación, DTV, Elite y Turista en un clic."
+      },
+      title: "¿Qué Visa Tailandia Elegir? Comparativa Completa 2026",
+      description: "Encuentre la visa ideal para su estancia en Tailandia. Compare las visas de Jubilación, DTV, Elite y Turismo en un clic.",
+      suggestions: [
+        "Quiero teletrabajar en Tailandia",
+        "¿Cómo evitar los visa runs?",
+        "Tengo 55 años y quiero jubilarme",
+        "Busco una visa de 5 años sin salir del país",
+        "Visa para aprender Muay Thai"
+      ]
     },
     contact_page: {
       title: "Contáctenos",
@@ -2770,6 +2790,21 @@ export const translations = {
       no_account: "Nessun account?",
       start_request: "Inizia richiesta"
     },
+    search_page: {
+      meta: {
+        title: "Comparatore Visti Thailandia 2026 | Siam Visa Pro",
+        description: "Trova il visto ideale per il tuo soggiorno in Tailandia. Confronta visti Pensionati, DTV, Elite e Turistico in un clic."
+      },
+      title: "Quale Visto Thailandia Scegliere? Confronto Completo 2026",
+      description: "Trova il visto ideale per il tuo soggiorno in Tailandia. Confronta visti Pensionati, DTV, Elite e Turistico in un clic.",
+      suggestions: [
+        "Voglio lavorare da remoto in Thailandia",
+        "Come evitare i visa run?",
+        "Ho 55 anni e voglio andare in pensione",
+        "Cerco un visto di 5 anni senza uscita",
+        "Visto per imparare la Muay Thai"
+      ]
+    },
     contact_page: {
       title: "Contattaci",
       subtitle: "Domande?",
@@ -3204,6 +3239,21 @@ export const translations = {
       submit: "เข้าสู่ระบบ",
       no_account: "ยังไม่มีบัญชี?",
       start_request: "เริ่มคำขอ"
+    },
+    search_page: {
+      meta: {
+        title: "Thailand Visa Comparator 2026 | Siam Visa Pro",
+        description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click."
+      },
+      title: "Which Thailand Visa to Choose? Complete Comparison 2026",
+      description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click.",
+      suggestions: [
+        "I want to work remotely from Thailand",
+        "How to stop doing visa runs?",
+        "I'm 55 and want to retire in Phuket",
+        "Looking for a 5-year visa without exit",
+        "Visa for learning Muay Thai"
+      ]
     },
     contact_page: {
       title: "ติดต่อเรา",
@@ -3640,6 +3690,21 @@ export const translations = {
       no_account: "Нет аккаунта?",
       start_request: "Начать заявку"
     },
+    search_page: {
+      meta: {
+        title: "Thailand Visa Comparator 2026 | Siam Visa Pro",
+        description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click."
+      },
+      title: "Which Thailand Visa to Choose? Complete Comparison 2026",
+      description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click.",
+      suggestions: [
+        "I want to work remotely from Thailand",
+        "How to stop doing visa runs?",
+        "I'm 55 and want to retire in Phuket",
+        "Looking for a 5-year visa without exit",
+        "Visa for learning Muay Thai"
+      ]
+    },
     contact_page: {
       title: "Контакты",
       subtitle: "Вопросы по визе?",
@@ -4074,6 +4139,21 @@ export const translations = {
       submit: "登录",
       no_account: "没有账号？",
       start_request: "开始申请"
+    },
+    search_page: {
+      meta: {
+        title: "Thailand Visa Comparator 2026 | Siam Visa Pro",
+        description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click."
+      },
+      title: "Which Thailand Visa to Choose? Complete Comparison 2026",
+      description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click.",
+      suggestions: [
+        "I want to work remotely from Thailand",
+        "How to stop doing visa runs?",
+        "I'm 55 and want to retire in Phuket",
+        "Looking for a 5-year visa without exit",
+        "Visa for learning Muay Thai"
+      ]
     },
     contact_page: {
       title: "联系我们",
@@ -4510,6 +4590,21 @@ export const translations = {
       no_account: "アカウントをお持ちでないですか？",
       start_request: "申請を開始"
     },
+    search_page: {
+      meta: {
+        title: "Thailand Visa Comparator 2026 | Siam Visa Pro",
+        description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click."
+      },
+      title: "Which Thailand Visa to Choose? Complete Comparison 2026",
+      description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click.",
+      suggestions: [
+        "I want to work remotely from Thailand",
+        "How to stop doing visa runs?",
+        "I'm 55 and want to retire in Phuket",
+        "Looking for a 5-year visa without exit",
+        "Visa for learning Muay Thai"
+      ]
+    },
     contact_page: {
       title: "お問い合わせ",
       subtitle: "ご質問ですか？",
@@ -4945,6 +5040,21 @@ export const translations = {
       no_account: "계정이 없으신가요?",
       start_request: "신청 시작"
     },
+    search_page: {
+      meta: {
+        title: "Thailand Visa Comparator 2026 | Siam Visa Pro",
+        description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click."
+      },
+      title: "Which Thailand Visa to Choose? Complete Comparison 2026",
+      description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click.",
+      suggestions: [
+        "I want to work remotely from Thailand",
+        "How to stop doing visa runs?",
+        "I'm 55 and want to retire in Phuket",
+        "Looking for a 5-year visa without exit",
+        "Visa for learning Muay Thai"
+      ]
+    },
     contact_page: {
       title: "문의하기",
       subtitle: "질문 있으신가요?",
@@ -5379,6 +5489,21 @@ export const translations = {
       submit: "دخول",
       no_account: "لا حساب؟",
       start_request: "بدء طلب"
+    },
+    search_page: {
+      meta: {
+        title: "Thailand Visa Comparator 2026 | Siam Visa Pro",
+        description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click."
+      },
+      title: "Which Thailand Visa to Choose? Complete Comparison 2026",
+      description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click.",
+      suggestions: [
+        "I want to work remotely from Thailand",
+        "How to stop doing visa runs?",
+        "I'm 55 and want to retire in Phuket",
+        "Looking for a 5-year visa without exit",
+        "Visa for learning Muay Thai"
+      ]
     },
     contact_page: {
       title: "اتصل بنا",
