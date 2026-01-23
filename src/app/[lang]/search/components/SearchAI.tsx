@@ -34,7 +34,7 @@ export const SearchAI: React.FC<SearchAIProps> = ({
     };
 
     return (
-        <div className="w-full max-w-4xl mx-auto -mt-10 relative z-20 px-4">
+        <div className="w-full max-w-4xl mx-auto -mt-72 relative z-20 px-4">
             <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-slate-100">
                 <form onSubmit={handleSubmit} className="relative flex items-center mb-6">
                     <div className="absolute left-4 text-slate-400">

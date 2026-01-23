@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 // Note: In production, use process.env.GEMINI_SECRET_KEY
 // Fallback hardcoded key to bypass Vercel env var propagation issues
-const API_KEY = process.env.GEMINI_SECRET_KEY || "AIzaSyAVy5WsHz02nZulJOjSPvyFk0hXKwW_4Mg";
+const API_KEY = process.env.GEMINI_SECRET_KEY;
 console.log("DEBUG: Active Gemini Key Prefix:", API_KEY ? API_KEY.substring(0, 10) : "UNDEFINED");
 
 export async function POST(req: Request) {
@@ -14,46 +14,57 @@ export async function POST(req: Request) {
         }
 
         const prompt = `
-        ROLE:
-        Tu es un agent d’aide à la décision spécialisé en visas pour la Thaïlande.
-        Ta mission est de recommander le visa le plus adapté à chaque client, de façon factuelle, neutre et conforme.
+        RÔLE
+        Tu es “SiamVisaPro – Hero Answer Writer”. Tu écris une réponse qui sera affichée DANS le header/hero (fond radial gradient).
+        Objectif: impact immédiat + lisibilité. Le hero a une hauteur variable: ta réponse doit rester compacte.
 
-        PROCESSUS DE DÉCISION:
-        1. Filtrer les visas incompatibles (activité non autorisée, durée insuffisante).
-        2. Scorer les visas restants selon : adéquation durée, adéquation activité, budget, complexité, points de vigilance.
-        3. Trier par score décroissant.
-        4. Générer une recommandation claire.
+        CONTRAINTES UI (STRICT)
+        - Langue: "${lang || 'fr'}" (Force la réponse dans cette langue).
+        - Sortie: JSON STRICT (aucun texte hors JSON).
+        - Longueur totale visée: 450–900 caractères (max 1 200).
+        - Pas de paragraphes longs. Préfère phrases courtes.
+        - Pas de jargon légal. Pas de promesses. Toujours inclure une ligne “Validation finale requise”.
+        - Évite les listes > 4 items.
+        - Si tu manques d’infos: pose au maximum 2 questions courtes dans “questions”.
 
-        SOURCES DE DONNÉES (Visas disponibles et IDs) :
-        - 'dtv': Digital Nomad, Remote Worker, Freelancer, Soft Power (Muay Thai, Cooking). 5 ans.
-        - 'setv': Touriste, séjour court (60 jours). Travail interdit.
-        - 'voa': Exemption / Visa on Arrival (15-60 jours selon pays).
-        - 'metv': Touristique entrées multiples (6 mois).
-        - 'non-o-ret': Retraite (50 ans +), besoin de 800k THB en banque ou pension.
-        - 'elite-gold': Elite Visa 5 ans (Adhésion payante ~900k THB).
-        - 'elite-plat': Elite Visa 10-20 ans.
-        - 'non-b': Travailleur salarié dans une entreprise THAÏLANDAISE.
-        - 'ltr-wft': LTR Work From Thailand (Salarié de grande entreprise étrangère).
-        - 'ltr-wp': LTR Wealthy Pensioner (50 ans +, gros revenus).
-
-        CONTRAINTES:
-        - Pas d'avis juridique définitif.
-        - Expliquer POURQUOI.
-        - Exclure explicitement les visas incompatibles.
-        - Ne pas utiliser le mot "Risque", utiliser "Point de vigilance", "Point faible" ou "Contrainte".
-        - Langue : "${lang || 'en'}".
-
-        QUERY UTILISATEUR: "${query}"
-
-        FORMAT DE SORTIE (JSON STRICT) :
+        STRUCTURE HERO
+        Tu dois produire ces champs (tous obligatoires, même vides):
         {
-          "recommended_visa_id": "L'ID Technique (ex: dtv)",
-          "confidence_level": "high | medium | low",
-          "justification": ["raison 1", "raison 2"],
-          "points_de_vigilance": ["contrainte ou point d'attention 1"],
-          "alternatives": [{"id": "id_visa", "reason_not_optimal": "raison"}],
-          "disclaimer": "Recommandation informative. Validation finale requise."
+          "hero": {
+            "kicker": "string (2–5 mots)",
+            "title": "string (6–11 mots)",
+            "subtitle": "string (1 phrase, <= 120 caractères)",
+            "recommendation": {
+              "visa": "string (ex: Non-B, DTV, LTR, Touriste, Elite, etc.)",
+              "confidence": "low|medium|high",
+              "why": ["string", "string", "string"]  // 2 à 3 raisons maximum
+            },
+            "watchouts": ["string", "string"],        // 1 à 2 points de vigilance max
+            "alternatives": [
+              { "visa": "string", "when": "string (<= 70 caractères)" }
+            ],                                        // 0 à 2 alternatives max
+            "cta": {
+              "label": "string (<= 22 caractères)",
+              "action": "openEligibility|openCompare|openChat"
+            },
+            "disclaimer": "string (doit contenir: 'Validation finale requise.')",
+            "questions": ["string", "string"]         // 0 à 2 questions max si besoin
+          }
         }
+
+        STYLE (HERO)
+        - Ton: expert, neutre, direct.
+        - “title” doit être actionnable (“Le visa le plus probable: …”).
+        - “subtitle” doit résumer l’idée en 1 phrase simple.
+        - “why” = bénéfices concrets (droit au séjour / droit au travail / durée / simplicité).
+        - “watchouts” = contraintes (employeur, revenus, documents, délais).
+        - “alternatives” seulement si pertinentes.
+        - “cta.label” doit pousser l’étape suivante (ex: “Vérifier éligibilité”).
+
+        ENTRÉES
+        - Question utilisateur: <<USER_QUERY>> ${query} <<USER_QUERY>>
+
+        PRODUIS UNIQUEMENT LE JSON.
         `;
 
         // Direct fetch to emulate browser request with Referer
@@ -95,23 +106,33 @@ export async function POST(req: Request) {
 
         try {
             const aiData = JSON.parse(jsonText);
+            const hero = aiData.hero || aiData; // Fallback if AI omits root wrapper
 
-            // Map NEW format to OLD frontend expectation for compatibility
-            // but enrich the explanation with the new structured data
+            // Map NEW Hero format to a text block for current Frontend compatibility
             const explanation = `
-${aiData.justification && aiData.justification.length > 0 ? aiData.justification.map((j: string) => `• ${j}`).join('\n') : ''}
+**${hero.kicker || 'Conseil'} : ${hero.title}**
 
-${(aiData.points_de_vigilance || aiData.risks) && (aiData.points_de_vigilance || aiData.risks).length > 0 ? `🔍 POINTS DE VIGILANCE :\n${(aiData.points_de_vigilance || aiData.risks).map((r: string) => `• ${r}`).join('\n')}` : ''}
+${hero.subtitle}
 
-${aiData.alternatives && aiData.alternatives.length > 0 ? `🔄 ALTERNATIVES :\n${aiData.alternatives.map((a: any) => `• ${a.id || a.visa} : ${a.reason_not_optimal}`).join('\n')}` : ''}
+✅ **Pourquoi ce visa ?**
+${hero.recommendation?.why?.map((w: string) => `• ${w}`).join('\n') || ''}
 
-${aiData.disclaimer || "Recommandation informative. Validation finale requise."}
+⚠️ **Points de vigilance**
+${hero.watchouts?.map((w: string) => `• ${w}`).join('\n') || ''}
+
+${hero.alternatives?.length > 0 ? `🔄 **Alternatives**\n` + hero.alternatives.map((a: any) => `• ${a.visa} : ${a.when}`).join('\n') : ''}
+
+_${hero.disclaimer}_
             `.trim();
 
+            const recId = hero.recommendation?.visa?.toLowerCase().replace(/\s/g, '-') || null;
+
             return NextResponse.json({
-                recommendationId: aiData.recommended_visa_id,
-                alternativeIds: aiData.alternatives ? aiData.alternatives.map((a: any) => a.id) : [],
-                explanation: explanation
+                recommendationId: recId,
+                alternativeIds: [], // Not strictly used by new logic but kept for interface
+                explanation: explanation,
+                // Pass raw hero data for future UI update
+                heroData: hero
             });
         } catch (parseError) {
             console.error('JSON Parse Error. Raw text:', rawText);
@@ -121,10 +142,14 @@ ${aiData.disclaimer || "Recommandation informative. Validation finale requise."}
                 explanation: "Je n'ai pas pu analyser votre demande précisément. Pourriez-vous donner plus de détails sur votre situation (ex: travail à distance, retraite, tourisme) ?"
             });
         }
-    } catch (error) {
+    } catch (error: any) {
         console.error('Gemini API Error:', error);
         return NextResponse.json(
-            { error: 'Failed to process with AI', details: error instanceof Error ? error.message : String(error) },
+            {
+                error: 'Failed to process with AI',
+                details: error.message || String(error),
+                suggestion: "Check API Key restrictions in Google Cloud Console. Ensure 'siamvisapro.com' matches Referer or add 'localhost' for dev."
+            },
             { status: 500 }
         );
     }

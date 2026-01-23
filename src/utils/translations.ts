@@ -83,6 +83,10 @@ export const translations = {
       }
     },
     search_page: {
+      meta: {
+        title: "Comparateur Visa Thaïlande 2026 | Siam Visa Pro",
+        description: "Trouvez le visa idéal pour votre séjour en Thaïlande. Comparez les visas Retraite, DTV, Elite et Tourisme en un clic."
+      },
       title: "Quel Visa Thaïlande Choisir ? Comparatif Complet 2026",
       description: "Trouvez le visa idéal pour votre séjour en Thaïlande. Comparez les visas Retraite, DTV, Elite et Tourisme en un clic.",
       suggestions: [
@@ -766,6 +770,10 @@ export const translations = {
       description: "Get your Thai visa stress-free. Experts in DTV, Tourist and Retirement visas. Global support and optimized Portfolio."
     },
     search_page: {
+      meta: {
+        title: "Thailand Visa Comparator 2026 | Siam Visa Pro",
+        description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click."
+      },
       title: "Which Thailand Visa to Choose? Complete Comparison 2026",
       description: "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click.",
       suggestions: [

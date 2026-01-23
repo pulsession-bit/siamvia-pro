@@ -53,7 +53,7 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
         <div className="min-h-screen flex flex-col bg-slate-50">
             {/* 1. Hero Area */}
             <SearchHero
-                title={globalT('search_page.meta.title')}
+                title={globalT('search_page.title')}
                 subtitle={localT.subtitle}
             />
 
@@ -69,12 +69,14 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
             />
 
             {/* 2. Category Filters */}
-            <CategoryFilters
-                allVisasLabel={localT.allVisas}
-                categories={localT.categories}
-                activeCategory={activeCategory}
-                setActiveCategory={setActiveCategory}
-            />
+            <div className="pt-24 bg-slate-50">
+                <CategoryFilters
+                    allVisasLabel={localT.allVisas}
+                    categories={localT.categories}
+                    activeCategory={activeCategory}
+                    setActiveCategory={setActiveCategory}
+                />
+            </div>
 
             {/* 3. Visa Grid */}
             <main id="visa-grid" className="flex-1 max-w-7xl mx-auto px-4 py-16 w-full">
