@@ -3,71 +3,70 @@
 const fs = require('fs');
 const path = require('path');
 
-// Lire le fichier de traductions actuel
-const translationsPath = path.join(__dirname, '../src/utils/translations.ts');
-const content = fs.readFileSync(translationsPath, 'utf8');
+// Chemins
+const sourcePath = path.join(__dirname, '../src/utils/translations.ts');
+const localesDir = path.join(__dirname, '../src/locales');
 
-// Extraire l'objet translations
-const match = content.match(/export const translations = ({[\s\S]*});/);
-if (!match) {
-    console.error('❌ Impossible de trouver l\'objet translations');
+// Créer le dossier locales
+if (!fs.existsSync(localesDir)) {
+    fs.mkdirSync(localesDir, { recursive: true });
+}
+
+// Lire le fichier source
+let content = fs.readFileSync(sourcePath, 'utf8');
+
+// Nettoyage pour eval() : supprimer les types TS si présents et l'export
+// On ne garde que l'objet JS pur
+content = content.replace(/export const translations\s*(:\s*[\w<>\[\]]+)?\s*=\s*/, 'var translations = ');
+content = content.replace(/as const;?/, ''); // Supprimer 'as const' si présent
+// Supprimer les imports au début
+content = content.replace(/import .*?;\n/g, '');
+
+try {
+    // Exécuter le code pour avoir l'objet en mémoire
+    // C'est "dangereux" en prod, mais ici c'est un script de dev contrôlé
+    eval(content);
+} catch (e) {
+    console.error("❌ Erreur lors du parsing du fichier translations.ts");
+    console.error(e);
     process.exit(1);
 }
 
-// Évaluer l'objet (dangereux mais OK pour un script one-time)
-const translationsCode = match[1];
+// @ts-ignore (var translations is defined in eval)
+const data = translations;
+const languages = Object.keys(data);
 
-// Langues à extraire
-const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'];
+console.log(`🔍 Langues trouvées : ${languages.join(', ')}\n`);
 
-console.log('🔄 Extraction des langues...\n');
-
-// Pour chaque langue, extraire sa section
 languages.forEach(lang => {
-    // Trouver le début et la fin de la section de langue
-    const langRegex = new RegExp(`${lang}:\\s*{([\\s\\S]*?)(?=\\n\\s*},\\s*(?:${languages.join('|')}):)|${lang}:\\s*{([\\s\\S]*?)(?=\\n\\s*}\\s*};)`, 'm');
-    const langMatch = content.match(langRegex);
+    const langFilePath = path.join(localesDir, `${lang}.ts`);
+    const langContent = `export const ${lang} = ${JSON.stringify(data[lang], null, 2)};`;
 
-    if (!langMatch) {
-        console.error(`❌ Impossible de trouver la langue: ${lang}`);
-        return;
-    }
-
-    const langContent = langMatch[1] || langMatch[2];
-
-    // Créer le fichier pour cette langue
-    const fileContent = `export const ${lang} = {\n${langContent}\n};\n`;
-
-    const outputPath = path.join(__dirname, `../src/utils/translations/${lang}.ts`);
-    fs.writeFileSync(outputPath, fileContent, 'utf8');
-
-    const size = (fs.statSync(outputPath).size / 1024).toFixed(1);
-    console.log(`✅ ${lang}.ts créé (${size} KB)`);
+    // Ajouter 'export const'
+    fs.writeFileSync(langFilePath, langContent, 'utf8');
+    console.log(`✅ ${lang}.ts généré`);
 });
 
-// Créer le fichier index.ts
-const indexContent = `// Auto-generated index file for translations
-${languages.map(lang => `import { ${lang} } from './${lang}';`).join('\n')}
+// Créer le nouveau fichier src/utils/translations.ts qui importe tout
+const newTranslationsContent = `import { ${languages.join(', ')} } from '@/locales';
 
 export const translations = {
   ${languages.join(',\n  ')}
 };
 
 export type Language = keyof typeof translations;
+// Type derived from French as source of truth
 export type Translation = typeof translations.fr;
 `;
 
-const indexPath = path.join(__dirname, '../src/utils/translations/index.ts');
-fs.writeFileSync(indexPath, indexContent, 'utf8');
-console.log('\n✅ index.ts créé');
+// On ne l'écrase pas tout de suite, on le met à côté pour vérification
+const newPath = path.join(__dirname, '../src/utils/translations.new.ts');
+fs.writeFileSync(newPath, newTranslationsContent, 'utf8');
 
-// Sauvegarder l'ancien fichier
-const backupPath = path.join(__dirname, '../src/utils/translations.ts.backup');
-fs.copyFileSync(translationsPath, backupPath);
-console.log('✅ Backup créé: translations.ts.backup');
+// Créer un index.ts dans src/locales pour faciliter l'import
+const indexLocalesContent = `${languages.map(lang => `export * from './${lang}';`).join('\n')}`;
+fs.writeFileSync(path.join(localesDir, 'index.ts'), indexLocalesContent, 'utf8');
 
-console.log('\n🎉 Séparation terminée avec succès !');
-console.log('\n📝 Prochaines étapes:');
-console.log('1. Vérifier que tout fonctionne');
-console.log('2. Supprimer src/utils/translations.ts (ancien fichier)');
-console.log('3. Mettre à jour les imports si nécessaire');
+console.log('\n🎉 Fichiers générés dans src/locales/');
+console.log('👉 Un fichier src/utils/translations.new.ts a été créé.');
+console.log('👉 Renommez-le en translations.ts après vérification.');

@@ -1,0 +1,504 @@
+export const it = {
+  "nav": {
+    "home": "Home",
+    "dtv": "Visto DTV",
+    "other_visas": "Altri Visti",
+    "tourist": "Visto Turistico (TR)",
+    "elite": "Visto Elite",
+    "retirement": "Visto Pensionati (Non-O)",
+    "services": "Servizi e Prezzi",
+    "see_services": "Vedi servizi",
+    "faq": "FAQ",
+    "contact": "Contatti",
+    "member": "Area Clienti",
+    "eligibility": "Idoneità",
+    "ltr": "Visto LTR",
+    "languages": "Lingue",
+    "search": "Ricerca"
+  },
+  "meta": {
+    "title": "Siam Visa Pro | Esperto Visti Thailandia - DTV, Turismo e Pensionamento",
+    "description": "Ottieni il tuo visto per la Thailandia senza stress. Esperti in visti DTV, Turistico e Pensionamento. Supporto completo e Portfolio ottimizzato."
+  },
+  "search_page": {
+    "meta": {
+      "title": "Comparatore Visti Thailandia 2026 | Siam Visa Pro",
+      "description": "Trova il visto ideale per il tuo soggiorno in Tailandia. Confronta visti Pensionati, DTV, Elite e Turistico in un clic."
+    },
+    "title": "Quale Visto Thailandia Scegliere? Confronto Completo 2026",
+    "description": "Trova il visto ideale per il tuo soggiorno in Tailandia. Confronta visti Pensionati, DTV, Elite e Turistico in un clic.",
+    "suggestions": [
+      "Voglio lavorare da remoto in Thailandia",
+      "Come evitare i visa run?",
+      "Ho 55 anni e voglio andare in pensione",
+      "Cerco un visto di 5 anni senza uscita",
+      "Visto per imparare la Muay Thai"
+    ]
+  },
+  "hero": {
+    "new_badge": "NUOVO: VISTO DTV DISPONIBILE",
+    "title_line1": "Il tuo Visto per la Thailandia,",
+    "title_line2": "approvato.",
+    "title_line2_suffix": "Senza stress.",
+    "subtitle": "Specialisti in immigrazione thailandese e nel nuovo Visto DTV. Gestiamo le procedure consolari e l'E-Visa.",
+    "subtitle_suffix": "Tu? Prepara le valigie.",
+    "cta_eligibility": "Inizia richiesta",
+    "cta_services": "Vedi servizi",
+    "badge_evisa": "Esperti E-Visa",
+    "badge_dtv": "File DTV Ottimizzati",
+    "badge_time": "Risparmio di tempo"
+  },
+  "spotlight": {
+    "badge": "Prodotto di Punta",
+    "title": "Visto DTV: Lavora dalla Thailandia per 5 anni",
+    "desc": "Il Destination Thailand Visa (DTV) è la rivoluzione per i Nomadi Digitali.",
+    "feat1_title": "Libertà Totale (5 Anni)",
+    "feat1_desc": "Visto valido 5 anni con ingressi illimitati.",
+    "feat2_title": "100% Legale per Lavorare",
+    "feat2_desc": "Progettato specificamente per Nomadi Digitali.",
+    "feat3_title": "Soggiorni di 180 Giorni",
+    "feat3_desc": "6 mesi consecutivi per ingresso, estendibile.",
+    "warning_title": "Attenzione ai Rifiuti",
+    "warning_intro": "L'ambasciata richiede:",
+    "warning_point1_label": "Prova Finanziaria:",
+    "warning_point1_text": "500.000 THB sul conto bancario.",
+    "warning_point2_label": "Portfolio Professionale:",
+    "warning_point2_text": "Causa n.1 di rifiuto.",
+    "solution": "Soluzione: Creiamo il tuo portfolio.",
+    "cta": "Voglio il mio Visto DTV"
+  },
+  "visas": {
+    "title": "Quale Visto fa per te?",
+    "subtitle": "Soluzioni per nomadi, turisti e pensionati.",
+    "popular": "POPOLARE",
+    "dtv_title": "Visto DTV (Nomade)",
+    "dtv_desc": "Per lavoratori remoti e freelance.",
+    "tr_title": "Visto Turistico (TR)",
+    "tr_desc": "Ideale per vacanze lunghe.",
+    "tr_feat1": "60 Giorni",
+    "tr_feat2": "+30 Giorni",
+    "tr_feat3": "Ingresso Singolo",
+    "ltr_title": "Visto LTR / Pensionati",
+    "ltr_desc": "Per residenti a lungo termine.",
+    "ltr_feat1": "Lungo termine (1-10 anni)",
+    "ltr_feat2": "Benefici fiscali (LTR)",
+    "ltr_feat3": "Supporto VIP",
+    "btn_more": "Scopri di più",
+    "btn_rates": "Vedi prezzi"
+  },
+  "services_page": {
+    "hero_title": "Servizi e Prezzi",
+    "hero_subtitle": "Scegli il tuo livello di supporto.",
+    "hero_tagline": "Siamo i tuoi alleati.",
+    "tier_audit": "Pacchetto Audit",
+    "tier_audit_desc": "Controllo completo dei documenti.",
+    "tier_serenity": "Pacchetto Serenity",
+    "tier_serenity_desc": "Gestiamo l'E-Visa per te.",
+    "tier_vip": "Pacchetto VIP / DTV",
+    "tier_vip_desc": "Gestione completa per DTV.",
+    "btn_choose": "Aggiungi al carrello",
+    "btn_start": "Inizia richiesta",
+    "recommended": "Raccomandato",
+    "insurance_title": "Serve assicurazione?",
+    "insurance_desc": "Assicurazione sanitaria spesso richiesta.",
+    "insurance_link": "Vedi partner",
+    "audit_feat1": "Revisione estratti conto",
+    "audit_feat2": "Verifica foto",
+    "audit_feat3": "Audit contratto di lavoro",
+    "audit_feat4": "Rapporto correzione PDF",
+    "audit_feat5": "Supporto via email",
+    "serenity_feat1": "Tutto incluso nel pacchetto Audit",
+    "serenity_feat2": "Compilazione modulo E-Visa",
+    "serenity_feat3": "Ridimensionamento file",
+    "serenity_feat4": "Lettera di presentazione base",
+    "serenity_feat5": "Tracciamento stato giornaliero",
+    "serenity_feat6": "Garanzia 'File Conforme'",
+    "vip_feat1": "Tutto incluso nel pacchetto Serenity",
+    "vip_feat2": "Creazione Portfolio Professionale",
+    "vip_feat3": "Scrittura lettera motivazionale HR",
+    "vip_feat4": "Assistenza prioritaria WhatsApp",
+    "vip_feat5": "Consulenza strategica (30 min)",
+    "vip_feat6": "Gestione richieste aggiuntive"
+  },
+  "eligibility": {
+    "steps": [
+      "Profilo",
+      "Finanze",
+      "Analisi"
+    ],
+    "step1_title": "Su di te",
+    "name_label": "Nome completo",
+    "age_label": "Età",
+    "nat_label": "Nazionalità",
+    "job_label": "Lavoro",
+    "source_label": "Fonte di reddito",
+    "btn_next": "Avanti",
+    "step2_title": "Finanze e Progetto",
+    "savings_label": "Risparmi disponibili",
+    "savings_hint": "DTV richiede ~500.000 THB.",
+    "purpose_label": "Il tuo progetto in Thailandia?",
+    "btn_back": "Indietro",
+    "btn_analyze": "Analizza pratica",
+    "loading_title": "IA analizza il profilo...",
+    "loading_desc": "Confronto con criteri immigrazione.",
+    "result_title": "Risultato",
+    "probability": "Probabilità",
+    "strengths": "Punti di forza",
+    "weaknesses": "Punti deboli",
+    "no_weaknesses": "Nessun problema rilevato.",
+    "docs_title": "Documentos consigliati:",
+    "help_text": "Serve aiuto?",
+    "help_btn": "Consulta esperto",
+    "restart": "Ricomincia",
+    "error": "Errore durante l'analisi.",
+    "options": {
+      "freelance": "Freelance",
+      "remote": "Dipendente Remoto",
+      "business": "Imprenditore",
+      "soft_power": "Apprendimento (Muay Thai...)",
+      "other": "Altro"
+    }
+  },
+  "appointment": {
+    "title": "Prenota Consulenza",
+    "subtitle": "Scegli data e ora.",
+    "date_label": "Data",
+    "slot1_label": "Opzione 1",
+    "slot1_hint": "Es: 09:30",
+    "slot2_label": "Opzione 2",
+    "slot2_hint": "Es: 15:00",
+    "method_label": "Metodo di contatto",
+    "methods": {
+      "phone": "Telefono",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "video": "Video"
+    },
+    "contact_value_label": "Contatto",
+    "notes_label": "Note",
+    "notes_placeholder": "Fuso orario...",
+    "submit": "Invia richiesta",
+    "success_title": "Inviato!",
+    "success_desc": "Un esperto ti contatterà presto."
+  },
+  "cart": {
+    "title": "Il tuo Carrello",
+    "empty": "Il carrello è vuoto.",
+    "total": "Totale",
+    "checkout": "Paga con Stripe",
+    "processing": "Elaborazione...",
+    "success_title": "Pagamento Riuscito!",
+    "success_desc": "Grazie. Un esperto ti contatterà.",
+    "continue": "Indietro",
+    "secure": "Pagamento Sicuro",
+    "payment_method": "Metodo di Pagamento",
+    "pay_card": "Carta",
+    "pay_transfer": "Bonifico",
+    "bank_details_intro": "Si prega di bonificare a:",
+    "account_holder": "Beneficiario:",
+    "btn_confirm_transfer": "Bonifico effettuato",
+    "transfer_note": "Includi il tuo NOME nella causale."
+  },
+  "login": {
+    "title": "Area Clienti",
+    "subtitle": "Traccia la tua richiesta",
+    "google": "Continua con Google",
+    "facebook": "Continua con Facebook",
+    "or_email": "O con Email",
+    "email_label": "Email",
+    "password_label": "Password",
+    "remember": "Ricordami",
+    "forgot": "Password dimenticata?",
+    "submit": "Accedi",
+    "no_account": "Nessun account?",
+    "start_request": "Inizia richiesta"
+  },
+  "contact_page": {
+    "title": "Contattaci",
+    "subtitle": "Domande?",
+    "form_title": "Inviaci un messaggio",
+    "name_label": "Nome completo",
+    "email_label": "Email",
+    "subject_label": "Oggetto",
+    "message_label": "Messaggio",
+    "btn_send": "Invia messaggio",
+    "btn_sending": "Invio...",
+    "success_title": "Messaggio inviato!",
+    "success_desc": "Risponderemo entro 24 ore.",
+    "info_title": "Contatti",
+    "address_title": "Uffici",
+    "phone_title": "Telefono",
+    "email_title": "Email",
+    "whatsapp_title": "WhatsApp"
+  },
+  "dtv_page": {
+    "badge": "Destination Thailand Visa",
+    "hero_h1": "Visto DTV",
+    "hero_title": "Il Santo Graal per Nomadi Digitali",
+    "hero_subtitle": "Valido 5 anni. 180 giorni per ingresso. Lavoro autorizzato.",
+    "hero_tagline": "Vivi e lavora dal paese del sorriso.",
+    "why_title": "Perché è rivoluzionario?",
+    "duration_title": "Durata 5 Anni",
+    "duration_desc": "Ingressi illimitati.",
+    "work_title": "Lavoro Legale",
+    "work_desc": "Autorizza il lavoro remoto.",
+    "finance_title": "Punto critico: 500.000 THB",
+    "finance_desc": "Prova fondi necessaria.",
+    "who_title": "Per chi?",
+    "who_remote": "Lavoratori Remoti",
+    "who_remote_desc": "Aziende estere.",
+    "who_freelance": "Freelance",
+    "who_freelance_desc": "Clienti propri.",
+    "who_softpower": "Soft Power",
+    "who_softpower_desc": "Corsi (Muay Thai, Cucina).",
+    "portfolio_title": "Serve il Portfolio?",
+    "portfolio_desc": "L'ambasciata richiede un 'Portfolio Professionale'. Lo creiamo noi per te.",
+    "portfolio_btn": "Vedi i pacchetti",
+    "highs_title": "Punti di Forza",
+    "highs": [
+      "Validità eccezionale di 5 anni",
+      "180 giorni per ingresso (+180 gg di estensione)",
+      "Diritto di lavorare legalmente da remoto",
+      "Copre anche coniuge e figli"
+    ],
+    "lows_title": "Punti di Attenzione",
+    "lows": [
+      "Prova finanziaria di 500.000 THB obbligatoria",
+      "Requisito di un portfolio professionale solido",
+      "Tempi di elaborazione più lunghi (5-15 giorni)",
+      "Tasse consolari più elevate (~350€)"
+    ],
+    "faq_title": "Domande Frequenti - Visto DTV",
+    "faqs": [
+      {
+        "q": "Posso uscire e rientrare in Thailandia con il mio visto DTV?",
+        "a": "Sì, è un visto a ingressi multipli (Multi-Entries). Puoi viaggiare tutte le volte che vuoi durante i 5 anni di validità senza che il visto venga annullato."
+      },
+      {
+        "q": "Devo pagare le tasse in Thailandia con questo visto?",
+        "a": "In generale, se lavori per un'azienda straniera e il tuo reddito non viene versato su un conto tailandese, non sei residente fiscale ai fini del DTV (da confermare in base alla tua situazione specifica)."
+      },
+      {
+        "q": "I miei familiari possono accompagnarmi?",
+        "a": "Sì, il coniuge e i figli sotto i 20 anni possono ottenere un visto DTV 'Dependant' collegato al tuo, con gli stessi vantaggi di durata."
+      },
+      {
+        "q": "Qual è il valore aggiunto di Siam Visa Pro rispetto a una richiesta individuale?",
+        "a": "Presentare la domanda da soli comporta rischi di rifiuto a causa di documenti imprecisi. Siam Visa Pro combina l'esperienza umana con la potenza dell'IA: i nostri strumenti di intelligenza artificiale analizzano la tua idoneità in tempo reale per rilevare i punti deboli, mentre i nostri esperti ottimizzano il tuo portfolio. Benefici di un doppio controllo —tecnologico e umano— per garantire il massimo tasso di approvazione."
+      }
+    ]
+  },
+  "tourist_page": {
+    "badge": "Turismo e Svago",
+    "title": "Visto Turistico (TR)",
+    "subtitle": "Classico, fino a 90 giorni.",
+    "rules_title": "Le Regole",
+    "duration": "Durata:",
+    "duration_val": "60 giorni.",
+    "extension": "Estensione:",
+    "extension_val": "+30 giorni.",
+    "entries": "Ingressi:",
+    "entries_val": "Singolo.",
+    "docs_title": "Documenti",
+    "doc_passport": "Passaporto (6 mesi)",
+    "doc_photo": "Fototessera",
+    "doc_ticket": "Volo uscita",
+    "doc_hotel": "Hotel",
+    "doc_bank": "Estratto conto",
+    "price_label": "Tariffa SiamVisaPro:",
+    "price_sub": "Escl. tasse consolari",
+    "btn_order": "Ordina visto",
+    "upsell_title": "Vuoi restare di più?",
+    "upsell_desc": "Il DTV è meglio se lavori.",
+    "upsell_link": "Scopri DTV"
+  },
+  "retirement_page": {
+    "badge": "Lungo Termine",
+    "title": "Visto Pensionati (Non-O / O-A)",
+    "subtitle": "Goditi la pensione al sole.",
+    "criteria_title": "Criteri Rigidi",
+    "age_val": "50+ anni",
+    "age_desc": "Età minima.",
+    "money_val": "800k THB",
+    "money_desc": "Banca o pensione.",
+    "insurance_val": "Assicurazione",
+    "insurance_desc": "Obbligatoria per O-A.",
+    "traps_title": "Trappole",
+    "trap_insurance_title": "Assicurazione:",
+    "trap_insurance_desc": "Copertura specifica Thailandia.",
+    "trap_bank_title": "Banca:",
+    "trap_bank_desc": "Fondi presenti da 3 mesi.",
+    "price_label": "Pack Serenity Pensionati:",
+    "price_desc": "Analisi + Gestione",
+    "btn_support": "Assistenza"
+  },
+  "tourist_visa_page": {
+    "hero_title": "Visto Turistico (TR)",
+    "hero_subtitle": "L'opzione classica per esplorare la Thailandia fino a 90 giorni.",
+    "rules_title": "Le regole del gioco",
+    "duration_title": "Durata del soggiorno",
+    "duration_desc": "60 giorni all'arrivo, estendibili di altri 30 giorni sul posto.",
+    "validity_title": "Validità del visto",
+    "validity_desc": "Il visto è valido per 3 mesi dalla data di emissione per un singolo ingresso.",
+    "docs_title": "Documenti richiesti",
+    "doc1": "Passaporto valido per almeno 6 mesi",
+    "doc2": "Fototessera conforme agli standard",
+    "doc3": "Biglietto aereo di andata e ritorno (uscita < 90 giorni)",
+    "doc4": "Prenotazione alberghiera per i primi giorni",
+    "doc5": "Estratto conto bancario (saldo > 20.000 THB)",
+    "warning_title": "Attenzione",
+    "warning_desc": "Il visto turistico NON ti autorizza a lavorare in Thailandia, nemmeno da remoto. Per il telelavoro, scegli il visto DTV.",
+    "cta_title": "Serve aiuto per il tuo visto turistico?",
+    "cta_desc": "Controlliamo i tuoi documenti e gestiamo la tua richiesta di E-Visa per massimizzare le tue possibilità di approvazione.",
+    "cta_btn": "Ordina questo visto",
+    "highs_title": "Punti di Forza",
+    "highs": [
+      "Processo semplice e veloce",
+      "Tasse consolari economiche",
+      "Nessun risparmio elevato richiesto",
+      "Ideale per esplorare il paese"
+    ],
+    "lows_title": "Limitazioni",
+    "lows": [
+      "Breve durata (max 90 giorni)",
+      "Ingresso singolo (Single Entry)",
+      "Lavoro (anche remoto) severamente vietato",
+      "Richiede biglietto di uscita confermato"
+    ],
+    "faq_title": "Domande Frequenti - Visto Turistico",
+    "faqs": [
+      {
+        "q": "Posso convertire il mio visto turistico in un altro visto sul posto?",
+        "a": "È possibile in alcuni casi (es: verso un visto per Matrimonio o Pensionati), ma dipende dall'immigrazione locale. Spesso è più semplice e veloce fare una nuova richiesta fuori dal paese."
+      },
+      {
+        "q": "Posso prolungare il mio visto di 30 giorni più volte?",
+        "a": "No, l'estensione di 30 giorni del visto turistico TR può essere effettuata solo una volta per ingresso presso un ufficio dell'Immigrazione."
+      },
+      {
+        "q": "Cosa succede se rimango oltre la data di fine del mio visto?",
+        "a": "Sarai in 'Overstay'. La multa è di 500 THB per ogni giorno di ritardo, da pagare in aeroporto. Un ritardo significativo può comportare il divieto di ingresso nel paese."
+      },
+      {
+        "q": "Qual è il valore aggiunto di Siam Visa Pro rispetto a una richiesta individuale?",
+        "a": "Presentare la domanda da soli comporta rischi di rifiuto a causa di documenti imprecisi. Siam Visa Pro combina l'esperienza umana con la potenza dell'IA: i nostri strumenti di intelligenza artificiale analizzano la tua idoneità in tempo reale per rilevare i punti deboli, mentre i nostri esperti ottimizzano il tuo portfolio. Benefici di un doppio controllo —tecnologico e umano— per garantire il massimo tasso di approvazione."
+      }
+    ]
+  },
+  "retirement_visa_page": {
+    "hero_title": "Visto Pensionati (Non-O / O-A)",
+    "hero_subtitle": "Goditi la tua pensione sotto il sole della Thailandia in totale serenità.",
+    "eligibility_title": "Criteri di idoneità",
+    "criteria1": "Avere almeno 50 anni al giorno della richiesta",
+    "criteria2": "Disporre di 800.000 THB su un conto bancario OPPURE un reddito mensile di 65.000 THB",
+    "criteria3": "Assicurazione sanitaria con una copertura di 100.000 USD (per visto O-A)",
+    "criteria4": "Casellario giudiziale pulito e passaporto valido 18 mesi",
+    "pitfalls_title": "Trappole da evitare",
+    "pitfall1_title": "Assicurazione inadatta",
+    "pitfall1_desc": "Molte pratiche vengono rifiutate perché l'assicurazione non copre specificamente la Thailandia o non rispetta gli importi richiesti.",
+    "pitfall2_title": "Storia bancaria insufficiente",
+    "pitfall2_desc": "I fondi devono generalmente essere presenti sul conto da almeno 3 mesi prima della richiesta (a seconda dell'ambasciata).",
+    "pitfall3_title": "Documenti incompleti",
+    "pitfall3_desc": "Ogni ambasciata ha i propri requisiti. Un documento mancante = rifiuto automatico.",
+    "warning_title": "Importante da sapere",
+    "warning_desc": "Il visto per pensionati deve essere rinnovato ogni anno in Thailandia. I fondi devono rimanere sul conto per tutta la durata del visto.",
+    "cta_title": "Serve assistenza per il tuo visto per pensionati?",
+    "cta_desc": "Il nostro Pacchetto Serenity Pensionati include l'analisi della tua assicurazione, la verifica di tutti i tuoi documenti e la gestione completa della tua richiesta E-Visa.",
+    "cta_btn": "Ottieni assistenza",
+    "highs_title": "Punti di Forza",
+    "highs": [
+      "Stabilità a lungo termine",
+      "Nessun limite di età superiore",
+      "Rinnovo semplice sul posto",
+      "Accesso a benefici per pensionati"
+    ],
+    "lows_title": "Limitazioni",
+    "lows": [
+      "Età minima 50 anni",
+      "Gli 800.000 THB devono rimanere sul conto",
+      "Assicurazione obbligatoria costosa",
+      "Nessun permesso di lavoro"
+    ],
+    "faq_title": "Domande Frequenti - Visto Pensionati",
+    "faqs": [
+      {
+        "q": "Il denaro (800.000 THB) deve rimanere bloccato tutto l'anno?",
+        "a": "I fondi devono essere presenti 2 mesi prima della richiesta e 3 mesi dopo l'approvazione. Per il resto dell'anno, il saldo non deve mai scendere sotto i 400.000 THB."
+      },
+      {
+        "q": "Posso lavorare con un visto per pensionati?",
+        "a": "No, qualsiasi forma di lavoro (retribuito o volontario) è severamente vietata. Se desideri lavorare online, il visto DTV è più adatto."
+      },
+      {
+        "q": "Devo lasciare il paese per rinnovare il mio visto?",
+        "a": "No, l'estensione del tuo visto per pensionati viene effettuata ogni anno direttamente presso l'ufficio Immigrazione in Thailandia, senza obbligo di uscita."
+      },
+      {
+        "q": "Qual è il valore aggiunto di Siam Visa Pro rispetto a una richiesta individuale?",
+        "a": "Presentare la domanda da soli comporta rischi di rifiuto a causa di documenti imprecisi. Siam Visa Pro combina l'esperienza umana con la potenza dell'IA: i nostri strumenti di intelligenza artificiale analizzano la tua idoneità in tempo reale per rilevare i punti deboli, mentre i nostri esperti ottimizzano il tuo portfolio. Benefici di un doppio controllo —tecnologico e umano— per garantire il massimo tasso di approvazione."
+      }
+    ]
+  },
+  "faq_page": {
+    "title": "Domande Frequenti",
+    "subtitle": "Tutto ciò che devi sapere.",
+    "questions": [
+      {
+        "q": "Differenza DTV vs Turistico?",
+        "a": "TR 60gg. DTV 5 anni con lavoro."
+      },
+      {
+        "q": "Posso lavorare col Turistico?",
+        "a": "No. Illegale."
+      },
+      {
+        "q": "Tempi?",
+        "a": "3-10gg Turistico, 5-15gg DTV."
+      },
+      {
+        "q": "Soldi bloccati?",
+        "a": "No, ma visibili."
+      },
+      {
+        "q": "Se rifiutato?",
+        "a": "Nessun rimborso consolare."
+      }
+    ],
+    "not_found_title": "Non trovi risposta?",
+    "not_found_desc": "I nostri esperti ti aiutano.",
+    "not_found_btn": "Verifica idoneità"
+  },
+  "terms_page": {
+    "title": "Termini e Condizioni",
+    "subtitle": "Privacy e Legale",
+    "legal_title": "Note Legali",
+    "legal_text": "Agenzia privata.",
+    "responsibility_title": "Responsabilità",
+    "responsibility_text": "Garantiamo mezzi, non risultato.",
+    "privacy_title": "Privacy",
+    "privacy_intro": "Sicurezza dati.",
+    "privacy_list1": "Server criptati.",
+    "privacy_list2": "Cancellazione 30gg.",
+    "privacy_list3": "No vendita dati.",
+    "contact_title": "Contatti",
+    "contact_text": "legal@siamvisapro.com"
+  },
+  "cta_footer": {
+    "title": "Non lasciare che un rifiuto rovini i piani",
+    "text": "Le regole cambiano. La nostra IA ti aiuta.",
+    "btn": "Analisi Gratuita"
+  },
+  "footer": {
+    "desc": "Partner di fiducia per visti Thai.",
+    "col_visas": "Visti",
+    "col_support": "Supporto",
+    "col_contact": "Contatti",
+    "all_services": "Tutti i servizi",
+    "legal": "Termini",
+    "privacy": "Privacy",
+    "sitemap": "Mappa del sito",
+    "copyright": "Diritti riservati.",
+    "disclaimer": "Agenzia privata.",
+    "secure_payment": "Pagamento Sicuro: Mercury & Wise"
+  }
+};
