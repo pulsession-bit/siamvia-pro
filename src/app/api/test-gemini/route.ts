@@ -31,8 +31,8 @@ export async function GET() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Referer': 'https://siamvisapro.com', // Mimic Prod
-                'Origin': 'https://siamvisapro.com'
+                'Referer': 'https://www.siamvisapro.com', // Mimic Prod
+                'Origin': 'https://www.siamvisapro.com'
             },
             body: JSON.stringify({
                 contents: [{ parts: [{ text: "Hello" }] }]

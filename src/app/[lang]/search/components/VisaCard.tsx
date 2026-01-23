@@ -7,6 +7,11 @@ interface VisaCardProps {
     visa: Visa;
     lang: Language;
     detailsLabel: string;
+    expertPickLabel: string;
+    alternativeLabel: string;
+    costLabel: string;
+    durations: Record<string, string>;
+    prices: Record<string, string>;
     isRecommended: boolean;
     isAlternative: boolean;
     onClick: () => void;
@@ -16,6 +21,11 @@ export const VisaCard: React.FC<VisaCardProps> = ({
     visa,
     lang,
     detailsLabel,
+    expertPickLabel,
+    alternativeLabel,
+    costLabel,
+    durations,
+    prices,
     isRecommended,
     isAlternative,
     onClick
@@ -30,13 +40,13 @@ export const VisaCard: React.FC<VisaCardProps> = ({
             {isRecommended && (
                 <div className="absolute -top-3 left-6 z-10 bg-amber-500 text-slate-900 text-[10px] font-black px-3 py-1 rounded-full shadow-lg flex items-center gap-1 animate-bounce">
                     <Sparkles className="w-3 h-3" />
-                    <span>CONSEIL EXPERT</span>
+                    <span>{expertPickLabel}</span>
                 </div>
             )}
             {isAlternative && !isRecommended && (
                 <div className="absolute -top-3 left-6 z-10 bg-slate-800 text-white text-[10px] font-black px-3 py-1 rounded-full shadow-lg flex items-center gap-1">
                     <Info className="w-3 h-3 text-amber-500" />
-                    <span>ALTERNATIF</span>
+                    <span>{alternativeLabel}</span>
                 </div>
             )}
             <div>
@@ -47,8 +57,8 @@ export const VisaCard: React.FC<VisaCardProps> = ({
                     {visa.name[lang]}
                 </h3>
                 <div className="flex gap-2 items-center text-xs font-semibold text-gray-400 mb-4">
-                    <span className="px-2 py-0.5 bg-gray-100 rounded">{visa.duration}</span>
-                    <span className="px-2 py-0.5 bg-gray-100 rounded uppercase">{visa.price} Cost</span>
+                    <span className="px-2 py-0.5 bg-gray-100 rounded">{durations[visa.duration] || visa.duration}</span>
+                    <span className="px-2 py-0.5 bg-gray-100 rounded uppercase">{prices[visa.price] || visa.price} {costLabel}</span>
                 </div>
             </div>
             <div className="flex items-center justify-between mt-4">

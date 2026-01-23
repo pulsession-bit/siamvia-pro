@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useVisaSearch } from './hooks/useVisaSearch';
 import { SearchHero } from './components/SearchHero';
+import { SearchAI } from './components/SearchAI';
 import { CategoryFilters } from './components/CategoryFilters';
 import { VisaCard } from './components/VisaCard';
 
@@ -56,6 +57,17 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
                 subtitle={localT.subtitle}
             />
 
+            {/* 1.5 AI Search Bar */}
+            <SearchAI
+                onSearch={handleAiSearch}
+                placeholder={localT.searchPlaceholder}
+                buttonLabel={localT.aiHelper}
+                aiResponse={aiResponse}
+                isAiLoading={isAiLoading}
+                suggestions={localT.suggestions}
+                title={localT.aiTitle}
+            />
+
             {/* 2. Category Filters */}
             <CategoryFilters
                 allVisasLabel={localT.allVisas}
@@ -73,6 +85,11 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
                             visa={visa}
                             lang={lang}
                             detailsLabel={localT.details}
+                            expertPickLabel={localT.expertPick}
+                            alternativeLabel={localT.alternative}
+                            costLabel={localT.cost}
+                            durations={localT.durations}
+                            prices={localT.prices}
                             isRecommended={recommendedVisaId === visa.id}
                             isAlternative={alternativeVisaIds.includes(visa.id)}
                             onClick={() => setSelectedVisa(visa)}
@@ -99,7 +116,14 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
                         duration: localT.duration,
                         eligibility: localT.eligibility,
                         requirements: localT.requirements,
-                        contactUs: localT.contactUs
+                        contactUs: localT.contactUs,
+                        visaCategory: localT.visaCategory,
+                        estimatedCost: localT.estimatedCost,
+                        commonRequirements: localT.commonRequirements,
+                        processDescription: localT.processDescription,
+                        categories: localT.categories,
+                        durations: localT.durations,
+                        prices: localT.prices
                     }}
                 />
             )}

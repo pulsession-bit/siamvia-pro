@@ -18,15 +18,19 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     title: meta.title,
     description: meta.description,
     alternates: {
-      canonical: `https://siamvisapro.com${getTranslatedPath('faq', lang)}`,
+      canonical: `https://www.siamvisapro.com${getTranslatedPath('faq', lang)}`,
       languages: languages.reduce((acc, l) => {
-        acc[l] = `https://siamvisapro.com${getTranslatedPath('faq', l)}`;
+        acc[l] = `https://www.siamvisapro.com${getTranslatedPath('faq', l)}`;
         return acc;
       }, {} as Record<string, string>),
     },
   };
 }
 
-export default function Page() {
-  return <FAQClientPage />;
+export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  const t = translations[lang as keyof typeof translations] || translations.en;
+  const faqs = (t.faq_page as any)?.questions || [];
+
+  return <FAQClientPage faqs={faqs} />;
 }

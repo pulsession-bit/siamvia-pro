@@ -3,15 +3,16 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, HelpCircle } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { translations } from '@/utils/translations';
 import { URLS, IMAGES } from '@/constants';
 import { HeroSection, PageContainer, Card, CTAButton } from '@/components/ui/PageComponents';
 
-const FAQClientPage: React.FC = () => {
-    const { t, language } = useLanguage();
-    const [openIndex, setOpenIndex] = useState<number | null>(0);
+interface FAQClientPageProps {
+    faqs: any[];
+}
 
-    const faqs = (translations[language] as any)?.faq_page?.questions || [];
+const FAQClientPage: React.FC<FAQClientPageProps> = ({ faqs }) => {
+    const { t } = useLanguage();
+    const [openIndex, setOpenIndex] = useState<number | null>(0);
 
     const toggleAccordion = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);

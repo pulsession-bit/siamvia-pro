@@ -9,14 +9,14 @@ export const metadata: Metadata = {
   authors: [{ name: 'SiamVisa Pro' }],
   creator: 'SiamVisa Pro',
   publisher: 'SiamVisa Pro',
-  metadataBase: new URL('https://siamvisapro.com'),
+  metadataBase: new URL('https://www.siamvisapro.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://siamvisapro.com',
+    url: 'https://www.siamvisapro.com',
     title: 'SiamVisa Pro | Expert Visa Thaïlande',
     description:
       'Expert en visas pour la Thaïlande. DTV, visa touristique, visa retraite. Accompagnement personnalisé.',

@@ -18,9 +18,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     title: meta.title,
     description: meta.description,
     alternates: {
-      canonical: `https://siamvisapro.com${getTranslatedPath('dtv', lang)}`,
+      canonical: `https://www.siamvisapro.com${getTranslatedPath('dtv', lang)}`,
       languages: languages.reduce((acc, l) => {
-        acc[l] = `https://siamvisapro.com${getTranslatedPath('dtv', l)}`;
+        acc[l] = `https://www.siamvisapro.com${getTranslatedPath('dtv', l)}`;
         return acc;
       }, {} as Record<string, string>),
     },

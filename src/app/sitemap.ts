@@ -20,7 +20,7 @@ export default async function sitemap(props: any): Promise<MetadataRoute.Sitemap
         console.error('Sitemap ID is not a string:', id);
     }
 
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://siamvisapro.com';
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.siamvisapro.com';
     const currentDate = new Date();
 
     // 'id' corresponds to the language code returned by generateSitemaps

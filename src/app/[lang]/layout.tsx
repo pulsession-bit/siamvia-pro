@@ -26,9 +26,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         title: meta.title,
         description: meta.description,
         alternates: {
-            canonical: `https://siamvisapro.com/${lang}`,
+            canonical: `https://www.siamvisapro.com/${lang}`,
             languages: languages.reduce((acc, l) => {
-                acc[l] = `https://siamvisapro.com/${l}`;
+                acc[l] = `https://www.siamvisapro.com/${l}`;
                 return acc;
             }, {} as Record<string, string>),
         },

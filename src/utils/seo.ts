@@ -43,7 +43,7 @@ export const LANGUAGE_CONFIG = [
  * @param baseUrl - Base URL of the site (e.g., 'https://siamvisapro.com')
  * @returns Array of alternate language links
  */
-export function generateHreflangLinks(pathname: string, baseUrl: string = 'https://siamvisapro.com') {
+export function generateHreflangLinks(pathname: string, baseUrl: string = 'https://www.siamvisapro.com') {
     return SUPPORTED_LANGUAGES.map(lang => ({
         rel: 'alternate',
         hreflang: lang,
@@ -72,7 +72,7 @@ export function generateMetadataWithHreflang(options: {
     pathname: string;
     baseUrl?: string;
 }): Metadata {
-    const { title, description, pathname, baseUrl = 'https://siamvisapro.com' } = options;
+    const { title, description, pathname, baseUrl = 'https://www.siamvisapro.com' } = options;
 
     return {
         title,

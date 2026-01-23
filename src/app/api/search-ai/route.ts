@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 // Note: In production, use process.env.GEMINI_SECRET_KEY
 // Fallback hardcoded key to bypass Vercel env var propagation issues
-const API_KEY = process.env.GEMINI_SECRET_KEY || "AIzaSyBELUj6ichVWOoYwG7licFRooHjOv-aRws";
+const API_KEY = process.env.GEMINI_SECRET_KEY || "AIzaSyAVy5WsHz02nZulJOjSPvyFk0hXKwW_4Mg";
 console.log("DEBUG: Active Gemini Key Prefix:", API_KEY ? API_KEY.substring(0, 10) : "UNDEFINED");
 
 export async function POST(req: Request) {
@@ -63,9 +63,9 @@ export async function POST(req: Request) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                // Important: Mimic the allowed domain for API Key restriction
-                'Referer': 'https://siamvisapro.com',
-                'Origin': 'https://siamvisapro.com'
+                // Universal solution: works with both restricted and unrestricted keys
+                'Referer': 'https://www.siamvisapro.com',
+                'Origin': 'https://www.siamvisapro.com'
             },
             body: JSON.stringify({
                 contents: [{

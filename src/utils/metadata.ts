@@ -15,7 +15,7 @@ interface PageMetadataOptions {
 }
 
 const SITE_NAME = 'SiamVisa Pro';
-const SITE_URL = 'https://siamvisapro.com';
+const SITE_URL = 'https://www.siamvisapro.com';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 
 /**

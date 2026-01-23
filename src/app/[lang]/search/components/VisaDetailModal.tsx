@@ -13,6 +13,13 @@ interface VisaDetailModalProps {
         eligibility: string;
         requirements: string;
         contactUs: string;
+        visaCategory: string;
+        estimatedCost: string;
+        commonRequirements: string[];
+        processDescription: string;
+        categories: Record<string, string>;
+        durations: Record<string, string>;
+        prices: Record<string, string>;
     };
 }
 
@@ -41,7 +48,7 @@ export const VisaDetailModal: React.FC<VisaDetailModalProps> = ({
                             <Icon size={32} />
                         </div>
                         <div>
-                            <p className="text-xs font-bold uppercase tracking-widest opacity-70">Visa Category: {visa.category}</p>
+                            <p className="text-xs font-bold uppercase tracking-widest opacity-70">{i18n.visaCategory}: {i18n.categories[visa.category] || visa.category}</p>
                             <h3 className="text-2xl font-bold">{visa.name[lang]}</h3>
                         </div>
                     </div>
@@ -51,11 +58,11 @@ export const VisaDetailModal: React.FC<VisaDetailModalProps> = ({
                     <div className="grid grid-cols-2 gap-4">
                         <div className="bg-gray-50 p-4 rounded-2xl border border-gray-100">
                             <p className="text-xs font-bold text-gray-400 uppercase mb-1">{i18n.duration}</p>
-                            <p className="text-lg font-bold text-blue-900">{visa.duration}</p>
+                            <p className="text-lg font-bold text-blue-900">{i18n.durations[visa.duration] || visa.duration}</p>
                         </div>
                         <div className="bg-gray-50 p-4 rounded-2xl border border-gray-100">
-                            <p className="text-xs font-bold text-gray-400 uppercase mb-1">Estimated Cost</p>
-                            <p className="text-lg font-bold text-blue-900">{visa.price}</p>
+                            <p className="text-xs font-bold text-gray-400 uppercase mb-1">{i18n.estimatedCost}</p>
+                            <p className="text-lg font-bold text-blue-900">{i18n.prices[visa.price] || visa.price}</p>
                         </div>
                     </div>
 
@@ -65,10 +72,9 @@ export const VisaDetailModal: React.FC<VisaDetailModalProps> = ({
                             {i18n.eligibility}
                         </h4>
                         <ul className="text-gray-600 text-sm space-y-2 list-disc list-inside ml-2">
-                            <li>Valid passport (min. 6 months remaining)</li>
-                            <li>Clean criminal record certificate</li>
-                            <li>Proof of sufficient funds (depends on sub-type)</li>
-                            <li>Proof of local address / booking</li>
+                            {i18n.commonRequirements && i18n.commonRequirements.map((req, idx) => (
+                                <li key={idx}>{req}</li>
+                            ))}
                         </ul>
                     </div>
 
@@ -78,8 +84,7 @@ export const VisaDetailModal: React.FC<VisaDetailModalProps> = ({
                             {i18n.requirements}
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                            Application process typically takes 5-15 business days depending on the embassy or immigration office.
-                            SiamVisaPro provides full support for document preparation, translation, and notarization.
+                            {i18n.processDescription}
                         </p>
                     </div>
 

@@ -3,6 +3,8 @@ import { Metadata } from 'next';
 import LTRClientPage from './LTRClientPage';
 import { translations } from '@/utils/translations';
 
+const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
+
 type Props = {
     params: Promise<{ lang: string }>;
 };
