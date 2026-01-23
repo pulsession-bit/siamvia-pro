@@ -22,17 +22,17 @@ export const ko = {
   },
   "search_page": {
     "meta": {
-      "title": "Thailand Visa Comparator 2026 | Siam Visa Pro",
-      "description": "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click."
+      "title": "태국 비자 비교 2026 | Siam Visa Pro",
+      "description": "태국 체류에 이상적인 비자를 찾아보세요. 은퇴, DTV, 엘리트 및 관광 비자를 한 번의 클릭으로 비교하세요."
     },
-    "title": "Which Thailand Visa to Choose? Complete Comparison 2026",
-    "description": "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click.",
+    "title": "어떤 태국 비자를 선택해야 할까요? 2026년 완벽 비교",
+    "description": "태국 체류에 이상적인 비자를 찾아보세요. 은퇴, DTV, 엘리트 및 관광 비자를 한 번의 클릭으로 비교하세요.",
     "suggestions": [
-      "I want to work remotely from Thailand",
-      "How to stop doing visa runs?",
-      "I'm 55 and want to retire in Phuket",
-      "Looking for a 5-year visa without exit",
-      "Visa for learning Muay Thai"
+      "태국에서 원격 근무를 하고 싶어요",
+      "비자 런을 그만두려면?",
+      "55세이고 푸켓에서 은퇴하고 싶습니다",
+      "출국 없는 5년 비자를 찾고 있습니다",
+      "무에타이 배우기 비자"
     ]
   },
   "hero": {

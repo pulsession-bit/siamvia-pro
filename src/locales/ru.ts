@@ -22,17 +22,17 @@ export const ru = {
   },
   "search_page": {
     "meta": {
-      "title": "Thailand Visa Comparator 2026 | Siam Visa Pro",
-      "description": "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click."
+      "title": "Сравнение виз в Таиланд 2026 | Siam Visa Pro",
+      "description": "Найдите идеальную визу для вашего пребывания в Таиланде. Сравните Пенсионную, DTV, Elite и Туристическую визы в один клик."
     },
-    "title": "Which Thailand Visa to Choose? Complete Comparison 2026",
-    "description": "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click.",
+    "title": "Какую визу в Таиланд выбрать? Полное сравнение 2026",
+    "description": "Найдите идеальную визу для вашего пребывания в Таиланде. Сравните Пенсионную, DTV, Elite и Туристическую визы в один клик.",
     "suggestions": [
-      "I want to work remotely from Thailand",
-      "How to stop doing visa runs?",
-      "I'm 55 and want to retire in Phuket",
-      "Looking for a 5-year visa without exit",
-      "Visa for learning Muay Thai"
+      "Я хочу работать удаленно из Таиланда",
+      "Как перестать делать виза-раны?",
+      "Мне 55 лет, хочу на пенсию на Пхукет",
+      "Ищу визу на 5 лет без выезда",
+      "Виза для изучения Муай Тай"
     ]
   },
   "hero": {
