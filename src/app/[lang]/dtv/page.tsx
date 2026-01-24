@@ -27,3 +27,5 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 export default function Page() {
   return <DTVClientPage />;
 }
+
+

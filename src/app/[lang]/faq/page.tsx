@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { translations } from '@/utils/translations';
 import FAQClientPage from './FAQClientPage';
 import { generateMetadataWithHreflang } from '@/utils/seo';
+import { FAQSchema } from '@/components/FAQSchema';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
@@ -36,34 +37,17 @@ export default async function FAQPage({ params }: { params: Promise<{ lang: stri
     console.error(`[FAQPage DEBUG] NO SECTIONS FOUND for ${lang}! Data:`, Object.keys(faqPage));
   }
 
-  // Create JSON-LD for the FAQPage
-  // We need to flatten the sections to get all questions for the schema
   const allQuestions = faqPage.sections
     ? faqPage.sections.flatMap((section: any) => section.questions)
     : (faqPage.questions || []);
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    'mainEntity': allQuestions.map((item: any) => ({
-      '@type': 'Question',
-      'name': item.q,
-      'acceptedAnswer': {
-        '@type': 'Answer',
-        'text': item.a || "Answer coming soon"
-      }
-    }))
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <FAQSchema faqs={allQuestions} />
       <FAQClientPage
         data={faqPage}
       />
     </>
   );
+
 }

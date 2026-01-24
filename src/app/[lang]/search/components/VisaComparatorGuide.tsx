@@ -3,6 +3,7 @@
 
 import React from 'react';
 import { HelpCircle, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { FAQSchema } from '@/components/FAQSchema';
 
 interface VisaComparatorGuideProps {
     i18n: any;
@@ -11,9 +12,18 @@ interface VisaComparatorGuideProps {
 export const VisaComparatorGuide: React.FC<VisaComparatorGuideProps> = ({ i18n }) => {
     if (!i18n) return null;
 
+    // Prepare schema if there are questions
+    const schemaFaqs = i18n.how_to_choose?.questions?.map((q: string) => ({
+        q,
+        a: i18n.how_to_choose.upsell || "Consultez notre comparateur pour trouver la réponse adaptée à votre profil."
+    })) || [];
+
     return (
         <section id="visa-guide" className="bg-white py-24 border-t border-slate-100 mt-20">
+            <FAQSchema faqs={schemaFaqs} />
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
+                {/* ... rest of the component */}
+
 
                 <div className="text-center mb-20">
                     <h2 className="text-4xl font-black text-slate-900 mb-6 uppercase tracking-tight">Plus de Détails & Conseils</h2>

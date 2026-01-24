@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { FAQSchema } from '@/components/FAQSchema';
 
 interface FAQAccordionProps {
     title: string;
@@ -9,8 +10,15 @@ interface FAQAccordionProps {
 export const FAQAccordion: React.FC<FAQAccordionProps> = ({ title, faqs }) => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
+    // Prepare FAQ schema data by ensuring answers are strings
+    const schemaFaqs = faqs.map(faq => ({
+        q: faq.q,
+        a: typeof faq.a === 'string' ? faq.a : faq.q // Fallback to question or logic if node
+    })).filter(faq => typeof faq.a === 'string');
+
     return (
         <div className="my-16">
+            <FAQSchema faqs={schemaFaqs} />
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">{title}</h2>
             <div className="max-w-3xl mx-auto space-y-4">
                 {faqs.map((faq, index) => (
@@ -39,3 +47,4 @@ export const FAQAccordion: React.FC<FAQAccordionProps> = ({ title, faqs }) => {
         </div>
     );
 };
+
