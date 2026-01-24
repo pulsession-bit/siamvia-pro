@@ -34,7 +34,8 @@ const nextConfig: NextConfig = {
         'religious-visa': 'visa-religieux-thailande',
         'media-visa': 'visa-media-thailande',
         'official-visa': 'visa-officiel-thailande',
-        'scientific-visa': 'visa-scientifique-thailande'
+        'scientific-visa': 'visa-scientifique-thailande',
+        about: 'a-propos'
       },
       en: {
         dtv: 'thailand-dtv-visa',
@@ -59,7 +60,8 @@ const nextConfig: NextConfig = {
         'religious-visa': 'thailand-religious-visa',
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
-        'scientific-visa': 'thailand-scientific-visa'
+        'scientific-visa': 'thailand-scientific-visa',
+        about: 'about-us'
       },
       de: {
         dtv: 'destination-thailand-visum',
@@ -84,7 +86,8 @@ const nextConfig: NextConfig = {
         'religious-visa': 'thailand-religious-visa',
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
-        'scientific-visa': 'thailand-scientific-visa'
+        'scientific-visa': 'thailand-scientific-visa',
+        about: 'ueber-uns'
       },
       es: {
         dtv: 'visado-destino-tailandia',
@@ -109,7 +112,8 @@ const nextConfig: NextConfig = {
         'religious-visa': 'thailand-religious-visa',
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
-        'scientific-visa': 'thailand-scientific-visa'
+        'scientific-visa': 'thailand-scientific-visa',
+        about: 'sobre-nosotros'
       },
       it: {
         dtv: 'visto-destinazione-thailandia',
@@ -134,7 +138,8 @@ const nextConfig: NextConfig = {
         'religious-visa': 'thailand-religious-visa',
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
-        'scientific-visa': 'thailand-scientific-visa'
+        'scientific-visa': 'thailand-scientific-visa',
+        about: 'chi-siamo'
       },
       th: {
         dtv: 'destination-thailand-visa',
@@ -159,7 +164,8 @@ const nextConfig: NextConfig = {
         'religious-visa': 'thailand-religious-visa',
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
-        'scientific-visa': 'thailand-scientific-visa'
+        'scientific-visa': 'thailand-scientific-visa',
+        about: 'about'
       },
       ru: {
         dtv: 'destination-thailand-visa',
@@ -184,7 +190,8 @@ const nextConfig: NextConfig = {
         'religious-visa': 'thailand-religious-visa',
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
-        'scientific-visa': 'thailand-scientific-visa'
+        'scientific-visa': 'thailand-scientific-visa',
+        about: 'about'
       },
       zh: {
         dtv: 'destination-thailand-visa',
@@ -209,7 +216,8 @@ const nextConfig: NextConfig = {
         'religious-visa': 'thailand-religious-visa',
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
-        'scientific-visa': 'thailand-scientific-visa'
+        'scientific-visa': 'thailand-scientific-visa',
+        about: 'about'
       },
       ja: {
         dtv: 'destination-thailand-visa',
@@ -234,7 +242,8 @@ const nextConfig: NextConfig = {
         'religious-visa': 'thailand-religious-visa',
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
-        'scientific-visa': 'thailand-scientific-visa'
+        'scientific-visa': 'thailand-scientific-visa',
+        about: 'about'
       },
       ko: {
         dtv: 'destination-thailand-visa',
@@ -259,7 +268,8 @@ const nextConfig: NextConfig = {
         'religious-visa': 'thailand-religious-visa',
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
-        'scientific-visa': 'thailand-scientific-visa'
+        'scientific-visa': 'thailand-scientific-visa',
+        about: 'about'
       },
       ar: {
         dtv: 'destination-thailand-visa',
@@ -284,8 +294,10 @@ const nextConfig: NextConfig = {
         'religious-visa': 'thailand-religious-visa',
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
-        'scientific-visa': 'thailand-scientific-visa'
+        'scientific-visa': 'thailand-scientific-visa',
+        about: 'about'
       }
+
     };
 
     const rewrites: any[] = [];
