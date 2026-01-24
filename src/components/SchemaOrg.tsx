@@ -24,14 +24,46 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang, pageKey, title, show
         'description': 'Experts en visas pour la Thaïlande (DTV, Elite, LTR, Retraite). Assistance administrative et audit d\'éligibilité.',
         'address': {
             '@type': 'PostalAddress',
-            'addressCountry': 'TH'
+            'streetAddress': '128 Rue de la Boétie',
+            'addressLocality': 'Paris',
+            'postalCode': '75008',
+            'addressCountry': 'FR'
         },
+        'location': [
+            {
+                '@type': 'Place',
+                'name': 'Paris Office',
+                'address': {
+                    '@type': 'PostalAddress',
+                    'streetAddress': '128 Rue de la Boétie',
+                    'addressLocality': 'Paris',
+                    'postalCode': '75008',
+                    'addressCountry': 'FR'
+                }
+            },
+            {
+                '@type': 'Place',
+                'name': 'Bangkok Office',
+                'address': {
+                    '@type': 'PostalAddress',
+                    'streetAddress': 'Sukhumvit Rd, Khlong Toei',
+                    'addressLocality': 'Bangkok',
+                    'postalCode': '10110',
+                    'addressCountry': 'TH'
+                }
+            }
+        ],
         'contactPoint': {
             '@type': 'ContactPoint',
             'contactType': 'customer service',
             'email': 'support@siamvisapro.com',
             'availableLanguage': ['French', 'English', 'Thai']
         },
+        'sameAs': [
+            'https://www.linkedin.com/in/raphael-buresi-4a9562a/',
+            'https://digitgpt.cloud'
+        ],
+
         'founder': {
             '@type': 'Person',
             'name': 'Raphaël Buresi',

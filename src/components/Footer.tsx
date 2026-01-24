@@ -57,9 +57,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-amber-50 border-b border-slate-800 pb-2 inline-block">{t('footer.col_support')}</h4>
             <ul className="space-y-3 text-slate-400 text-sm">
+              <li><Link href={langPath('about')} className="hover:text-amber-400 transition-colors font-bold text-amber-500/80 tracking-wide uppercase text-xs">★ {t('about_page.hero_title')}</Link></li>
               <li><Link href={langPath('faq')} className="hover:text-amber-400 transition-colors">{t('nav.faq')}</Link></li>
               <li><Link href={langPath('terms')} className="hover:text-amber-400 transition-colors">{t('footer.legal')}</Link></li>
-              <li><Link href={langPath('terms')} className="hover:text-amber-400 transition-colors">{t('footer.privacy')}</Link></li>
               <li><Link href={langPath('sitemap')} className="hover:text-amber-400 transition-colors">{t('footer.sitemap')}</Link></li>
             </ul>
           </div>
@@ -68,30 +68,20 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-6 text-amber-50 border-b border-slate-800 pb-2 inline-block">{t('footer.col_contact')}</h4>
             <ul className="space-y-4 text-slate-400 text-sm">
               <li className="flex items-start space-x-3">
-                <a
-                  href="https://wa.me/33773726887"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-start space-x-3 group"
-                >
-                  <WhatsAppIcon className="h-5 w-5 text-[#25D366] mt-0.5 group-hover:scale-110 transition-transform" />
-                  <span className="group-hover:text-white transition-colors">WhatsApp Chat<br /><span className="text-xs text-slate-500">Fast Response</span></span>
-                </a>
-              </li>
-              <li className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-amber-500 mt-0.5" />
                 <span>contact@siamvisapro.com<br /><span className="text-xs text-slate-500">24h response</span></span>
               </li>
-              <li className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-amber-500 mt-0.5" />
-                <span>+33 7 73 72 68 87<br /><span className="text-xs text-slate-500">Mon-Fri, 9am-6pm</span></span>
-              </li>
-              <li className="flex items-start space-x-3">
+              <li className="flex items-start space-x-3 group">
                 <MapPin className="h-5 w-5 text-amber-500 mt-0.5" />
-                <span>Paris, France &<br />Bangkok, Thailand</span>
+                <div className="flex flex-col space-y-2">
+                  <span className="group-hover:text-slate-200 transition-colors">{t('footer.office_paris')}</span>
+                  <span className="group-hover:text-slate-200 transition-colors">{t('footer.office_bkk')}</span>
+                  <span className="text-[10px] text-slate-600 font-mono tracking-tighter uppercase">{t('footer.tax_id')}</span>
+                </div>
               </li>
             </ul>
           </div>
+
         </div>
 
         <div className="border-t border-slate-800 pt-8 text-center text-slate-500 text-xs flex flex-col md:flex-row justify-between items-center gap-4">

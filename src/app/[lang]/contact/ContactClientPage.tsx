@@ -120,11 +120,34 @@ const ContactClientPage: React.FC = () => {
                 </div>
             </div>
 
-            {/* 3. Expert Appointment Component */}
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 relative z-20">
-                <div className="bg-slate-900 rounded-[2.5rem] p-1 shadow-2xl overflow-hidden">
-                    <div className="bg-white rounded-[2.4rem] p-8 md:p-12">
-                        <ExpertAppointmentForm />
+            {/* 4. Trust & Legal Section */}
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+                <div className="bg-white rounded-3xl p-8 md:p-12 border border-slate-200">
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+                        <div className="flex-1 space-y-4 text-center md:text-left">
+                            <h3 className="text-xl font-bold text-slate-900 flex items-center justify-center md:justify-start gap-2">
+                                <ShieldCheck className="w-6 h-6 text-amber-500" />
+                                {t('about_page.partnership_title')}
+                            </h3>
+                            <p className="text-slate-600 leading-relaxed uppercase tracking-widest text-[10px] font-black">
+                                Professional Immigration Consultancy
+                            </p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                                <div className="space-y-1">
+                                    <p className="text-xs font-bold text-slate-400 uppercase tracking-tighter">Paris HQ</p>
+                                    <p className="text-sm font-medium text-slate-800">128 Rue de la Boétie, 75008 Paris, France</p>
+                                </div>
+                                <div className="space-y-1 border-l border-slate-100 pl-6 hidden sm:block">
+                                    <p className="text-xs font-bold text-slate-400 uppercase tracking-tighter">Bangkok Office</p>
+                                    <p className="text-sm font-medium text-slate-800">Sukhumvit Rd, Khlong Toei, Bangkok 10110</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-full md:w-auto p-8 bg-slate-50 rounded-2xl text-center border border-dashed border-slate-200">
+                            <p className="text-[10px] font-black uppercase text-slate-400 mb-1">Company Status</p>
+                            <p className="text-xl font-black text-slate-900">DigitGpt LLC</p>
+                            <p className="text-xs text-slate-500 font-mono mt-2">{t('footer.tax_id')}</p>
+                        </div>
                     </div>
                 </div>
             </div>

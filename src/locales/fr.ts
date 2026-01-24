@@ -633,6 +633,24 @@ export const fr = {
     "email_title": "Email",
     "whatsapp_title": "WhatsApp"
   },
+  "about_page": {
+    "meta": {
+      "title": "À Propos de Siam Visa Pro | Experts Visa Thaïlande",
+      "description": "Découvrez l'histoire de Siam Visa Pro, notre équipe d'experts à Paris et Bangkok, et notre mission pour simplifier votre expatriation en Thaïlande."
+    },
+    "hero_title": "Qui Sommes-Nous ?",
+    "hero_subtitle": "Votre passerelle vers une vie sereine en Thaïlande.",
+    "mission_title": "Notre Mission",
+    "mission_text1": "Fondée par des expatriés pour des expatriés, Siam Visa Pro est née d'un constat simple : le processus de visa pour la Thaïlande est souvent confus, changeant et stressant.",
+    "mission_text2": "Notre objectif est de digitaliser et simplifier ce processus tout en conservant un haut niveau d'expertise humaine. Nous combinons l'analyse de dossiers par IA avec une supervision manuelle pour garantir les meilleurs taux de succès.",
+    "team_title": "L'Équipe",
+    "team_description": "Nos experts sont basés à Paris et Bangkok, ce qui nous donne une perspective unique sur les exigences consulaires et les réalités de l'immigration locale.",
+    "founder_name": "Raphaël Buresi",
+    "founder_role": "Fondateur & Stratège Visa",
+    "founder_bio": "Avec des années d'expérience dans l'écosystème tech et administratif thaïlandais, Raphaël a créé Siam Visa Pro pour aider la communauté nomade à s'épanouir en Thaïlande.",
+    "partnership_title": "Une Entreprise DigitGpt LLC",
+    "partnership_text": "Siam Visa Pro est propulsée par DigitGpt LLC, une société technologique spécialisée dans l'automatisation administrative par IA. Ce partenariat nous permet d'offrir des outils de pointe comme notre IA d'éligibilité visa."
+  },
   "tourist_page": {
     "badge": "Tourisme & Loisirs",
     "title": "Visa Touristique (TR)",
@@ -995,7 +1013,10 @@ export const fr = {
     "author": "Raphaël Buresi",
     "author_role": "Expert Visa Thaïlande",
     "written_by": "Rédigé par",
-    "last_updated": "Mis à jour le"
+    "last_updated": "Mis à jour le",
+    "office_paris": "Paris : 128 Rue de la Boétie, 75008 Paris, France",
+    "office_bkk": "Bangkok : Sukhumvit Rd, Khlong Toei, Bangkok 10110, Thaïlande",
+    "tax_id": "SIRET/ID : [En cours de vérification]"
   },
   "login": {
     "title": "Espace Client",
