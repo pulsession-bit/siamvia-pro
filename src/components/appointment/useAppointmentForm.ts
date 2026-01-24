@@ -7,7 +7,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 export type ContactMethod = "phone" | "whatsapp" | "email" | "video";
 
 export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void) => {
-    const { language } = useLanguage();
+    const { language, t } = useLanguage();
     const [date, setDate] = useState("");
     const [slot, setSlot] = useState("");
     const [contactMethod, setContactMethod] = useState<ContactMethod>("whatsapp");
@@ -33,12 +33,12 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
                     .then(() => setIsAuthReady(true))
                     .catch((error) => {
                         console.error("Auth error:", error);
-                        setErrorMessage("Erreur d'initialisation");
+                        setErrorMessage(t('appointment.error_init') || "Erreur d'initialisation");
                     });
             }
         });
         return () => unsubscribe && unsubscribe();
-    }, []);
+    }, [t]);
 
     const resetForm = () => {
         setSubmitStatus('idle');
@@ -48,7 +48,7 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
     const submitForm = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!db || !auth) {
-            setErrorMessage("Le service de réservation est temporairement indisponible.");
+            setErrorMessage(t('appointment.error_service') || "Le service de réservation est temporairement indisponible.");
             return;
         }
 
@@ -83,7 +83,8 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
         } catch (error: any) {
             console.error("Error saving appointment:", error);
             setSubmitStatus('error');
-            setErrorMessage(error.message || "Une erreur est survenue.");
+            setErrorMessage(error.message || t('appointment.error_generic') || "Une erreur est survenue.");
+
         } finally {
             setIsSubmitting(false);
         }
