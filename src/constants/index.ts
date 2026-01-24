@@ -23,7 +23,7 @@ export const CONTACT = {
  * Unsplash Image URLs for hero sections
  */
 export const IMAGES = {
-    HERO_THAILAND: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1920&q=80',
+    HERO_THAILAND: 'https://img.antiquiscore.com/expertises/siam/te%CC%81le%CC%81chargement.webp',
     BANGKOK_SKYLINE: 'https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&w=1920&q=80',
     COWORKING: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80',
     BANGKOK_CITY: 'https://images.unsplash.com/photo-1559628233-100c798642d4?auto=format&fit=crop&w=800&q=80',

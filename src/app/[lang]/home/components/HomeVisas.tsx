@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { IMAGES } from '@/constants';
 import { CheckCircle } from 'lucide-react';
 
 interface HomeVisasProps {
@@ -13,7 +14,7 @@ export const HomeVisas: React.FC<HomeVisasProps> = ({ t, langPath }) => {
         <section className="py-20 relative overflow-hidden bg-slate-900">
             <div className="absolute inset-0">
                 <Image
-                    src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1920&q=80"
+                    src={IMAGES.BEACH}
                     alt="Beach"
                     fill
                     className="object-cover"
@@ -34,7 +35,7 @@ export const HomeVisas: React.FC<HomeVisasProps> = ({ t, langPath }) => {
                         </div>
                         <div className="h-48 overflow-hidden relative">
                             <Image
-                                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                                src={IMAGES.COWORKING}
                                 alt="DTV Chiang Mai"
                                 fill
                                 className="object-cover group-hover:scale-110 transition duration-500"
@@ -62,7 +63,7 @@ export const HomeVisas: React.FC<HomeVisasProps> = ({ t, langPath }) => {
                     <div className="group bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:-translate-y-2 transition duration-300">
                         <div className="h-48 overflow-hidden relative">
                             <Image
-                                src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=800&q=80"
+                                src={IMAGES.TOURIST}
                                 alt="Tourist"
                                 fill
                                 className="object-cover group-hover:scale-110 transition duration-500"
@@ -90,7 +91,7 @@ export const HomeVisas: React.FC<HomeVisasProps> = ({ t, langPath }) => {
                     <div className="group bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:-translate-y-2 transition duration-300">
                         <div className="h-48 overflow-hidden relative">
                             <Image
-                                src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=800&q=80"
+                                src={IMAGES.LTR}
                                 alt="LTR"
                                 fill
                                 className="object-cover group-hover:scale-110 transition duration-500"

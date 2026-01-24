@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { IMAGES } from '@/constants';
 import { Shield, FileText, Clock } from 'lucide-react';
 
 interface HomeHeroProps {
@@ -12,9 +13,9 @@ interface HomeHeroProps {
 export const HomeHero: React.FC<HomeHeroProps> = ({ t, langPath, SCORING_ENGINE_URL }) => {
     return (
         <div className="relative bg-slate-900 overflow-hidden">
-            <div className="absolute inset-0 opacity-70">
+            <div className="absolute inset-0">
                 <Image
-                    src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1920&q=80"
+                    src={IMAGES.HERO_THAILAND}
                     alt="Thailand Background - Phi Phi Islands"
                     fill
                     priority
