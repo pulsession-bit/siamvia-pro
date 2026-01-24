@@ -29,6 +29,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     });
 }
 
+import { SchemaOrg } from '@/components/SchemaOrg';
+
 export default async function LTRPage({ params }: Props) {
-    return <LTRClientPage />;
+    const { lang } = await params;
+    const t = translations[lang as keyof typeof translations] || translations.en;
+
+    return (
+        <>
+            <SchemaOrg lang={lang} pageKey="ltr" title={t.nav.ltr} showGlobal={false} />
+            <LTRClientPage />
+        </>
+    );
 }
+

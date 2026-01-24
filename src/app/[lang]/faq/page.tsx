@@ -4,6 +4,7 @@ import { translations } from '@/utils/translations';
 import FAQClientPage from './FAQClientPage';
 import { generateMetadataWithHreflang } from '@/utils/seo';
 import { FAQSchema } from '@/components/FAQSchema';
+import { SchemaOrg } from '@/components/SchemaOrg';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
@@ -43,11 +44,13 @@ export default async function FAQPage({ params }: { params: Promise<{ lang: stri
 
   return (
     <>
+      <SchemaOrg lang={lang} pageKey="faq" title={tr.nav.faq} showGlobal={false} />
       <FAQSchema faqs={allQuestions} />
       <FAQClientPage
         data={faqPage}
       />
     </>
   );
+
 
 }
