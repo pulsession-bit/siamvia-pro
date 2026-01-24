@@ -5,6 +5,8 @@ import ServicesClientPage from './ServicesClientPage';
 
 const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
 
+import { generateMetadataWithHreflang } from '@/utils/seo';
+
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
     const t = translations[lang as keyof typeof translations] || translations.en;
@@ -14,17 +16,11 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         description: t.services_page.hero_subtitle
     };
 
-    return {
+    return generateMetadataWithHreflang({
         title: meta.title,
         description: meta.description,
-        alternates: {
-            canonical: `https://www.siamvisapro.com${getTranslatedPath('services', lang)}`,
-            languages: languages.reduce((acc, l) => {
-                acc[l] = `https://www.siamvisapro.com${getTranslatedPath('services', l)}`;
-                return acc;
-            }, {} as Record<string, string>),
-        },
-    };
+        pathname: getTranslatedPath('services', lang),
+    });
 }
 
 export default function Page() {

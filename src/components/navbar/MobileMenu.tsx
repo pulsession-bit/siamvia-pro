@@ -9,7 +9,7 @@ interface MobileMenuProps {
     langPath: (path: string) => string;
     t: (key: string) => string;
     currentLang: string;
-    switchLanguage: (lang: string) => void;
+    switchLanguage: (lang: string) => Promise<void> | void;
     SCORING_ENGINE_URL: string;
 }
 

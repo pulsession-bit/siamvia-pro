@@ -7,5 +7,5 @@ import { redirect } from 'next/navigation';
  * It serves as a server-side fallback redirect to the default language.
  */
 export default function RootPage() {
-    redirect('/fr');
+    redirect('/en');
 }

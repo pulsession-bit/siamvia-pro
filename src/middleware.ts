@@ -1,47 +1,61 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { NextRequest, NextResponse } from "next/server";
 
-const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'];
-const defaultLanguage = 'fr';
+const LOCALES = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
+const DEFAULT_LOCALE = "en";
+const LOCALE_COOKIE = "NEXT_LOCALE";
 
-export function middleware(request: NextRequest) {
-    const { pathname } = request.nextUrl;
+function detectFromAcceptLanguage(header: string | null): string | null {
+    if (!header) return null;
+    const parts = header.split(",").map(s => s.trim());
+    for (const p of parts) {
+        const lang = p.split(";")[0]?.toLowerCase();
+        if (!lang) continue;
+        const base = lang.split("-")[0];
+        if (LOCALES.includes(base as any)) return base;
+    }
+    return null;
+}
 
-    // Check if the pathname is missing a locale
-    const pathnameIsMissingLocale = languages.every(
-        (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-    );
+function isBot(ua: string | null) {
+    if (!ua) return false;
+    return /(googlebot|bingbot|duckduckbot|yandex|baiduspider|slurp|semrush|ahrefs|mj12bot)/i.test(ua);
+}
 
-    // Redirect if there is no locale
-    if (pathnameIsMissingLocale) {
-        // Simple language detection from headers
-        const acceptLanguage = request.headers.get('accept-language');
-        let detectedLang = defaultLanguage;
+export function middleware(req: NextRequest) {
+    const { pathname } = req.nextUrl;
 
-        if (acceptLanguage) {
-            // Check if any of our supported languages are in the accept-language header
-            const preferredLang = acceptLanguage
-                .split(',')
-                .map(lang => lang.split(';')[0].split('-')[0].toLowerCase())
-                .find(lang => languages.includes(lang));
-
-            if (preferredLang) {
-                detectedLang = preferredLang;
-            }
-        }
-
-        // Redirect to the detected language (or default)
-        return NextResponse.redirect(
-            new URL(`/${detectedLang}${pathname === '/' ? '' : pathname}`, request.url)
-        );
+    // 0) Exclusions
+    if (
+        pathname.startsWith("/_next") ||
+        pathname.startsWith("/api") ||
+        pathname.startsWith("/robots.txt") ||
+        pathname.startsWith("/sitemap.xml") ||
+        pathname.startsWith("/favicon.ico") ||
+        pathname.match(/\.(?:png|jpg|jpeg|gif|webp|svg|ico|css|js|map|txt|xml|woff2?)$/)
+    ) {
+        return NextResponse.next();
     }
 
-    return NextResponse.next();
+    // 1) Check if already has locale prefix
+    const first = pathname.split("/")[1];
+    if (LOCALES.includes(first as any)) return NextResponse.next();
+
+    // 2) Detect locale: cookie > accept-language > default
+    const cookieLocale = req.cookies.get(LOCALE_COOKIE)?.value;
+    const detected =
+        (cookieLocale && LOCALES.includes(cookieLocale as any) ? cookieLocale : null) ||
+        detectFromAcceptLanguage(req.headers.get("accept-language")) ||
+        DEFAULT_LOCALE;
+
+    // 3) SEO for bots
+    const targetLocale = isBot(req.headers.get("user-agent")) ? DEFAULT_LOCALE : detected;
+
+    const url = req.nextUrl.clone();
+    url.pathname = `/${targetLocale}${pathname === '/' ? '' : pathname}`;
+
+    return NextResponse.redirect(url, 307);
 }
 
 export const config = {
-    // Matcher ignoring _next, api, and static files
-    matcher: [
-        '/((?!api|_next/static|_next/image|favicon.ico|sitemap.*|robots.txt|.*\\.svg|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.webp).*)',
-    ],
+    matcher: ["/((?!api|_next/static|_next/image|favicon.ico|sitemap.*|robots.txt|.*\\.svg|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.webp).*)"],
 };

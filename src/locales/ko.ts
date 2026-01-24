@@ -39,12 +39,12 @@ export const ko = {
     "aiHelper": "AI",
     "aiTitle": "조언",
     "categories": {
-        "work": "취업",
-        "tourism": "관광",
-        "longterm": "장기",
-        "family": "가족",
-        "education": "교육",
-        "privilege": "엘리트"
+      "work": "취업",
+      "tourism": "관광",
+      "longterm": "장기",
+      "family": "가족",
+      "education": "교육",
+      "privilege": "엘리트"
     },
     "details": "상세",
     "eligibility": "요건",
@@ -59,25 +59,25 @@ export const ko = {
     "expertPick": "추천",
     "alternative": "대안",
     "commonRequirements": [
-        "여권"
+      "여권"
     ],
     "processDescription": "5-15일.",
     "durations": {
-        "10 Years": "10년",
-        "5 Years": "5년",
-        "1 Year": "1년",
-        "60 Days": "60일",
-        "6 Months": "6개월",
-        "15 Days": "15일",
-        "4 Years": "4년",
-        "Variable": "다양",
-        "90 Days": "90일"
+      "10 Years": "10년",
+      "5 Years": "5년",
+      "1 Year": "1년",
+      "60 Days": "60일",
+      "6 Months": "6개월",
+      "15 Days": "15일",
+      "4 Years": "4년",
+      "Variable": "다양",
+      "90 Days": "90일"
     },
     "prices": {
-        "High": "높음",
-        "Medium": "중간",
-        "Low": "낮음",
-        "Premium": "프รี미엄"
+      "High": "높음",
+      "Medium": "중간",
+      "Low": "낮음",
+      "Premium": "프รี미엄"
     }
   },
   "hero": {
@@ -339,7 +339,20 @@ export const ko = {
         "q": "직접 신청하는 것보다 Siam Visa Pro를 이용하면 어떤 점이 좋나요?",
         "a": "혼자 신청할 경우 서류 미비로 인해 거절될 위험이 큽니다. Siam Visa Pro는 인간의 전문성과 AI의 기술을 결합합니다. AI 도구가 실시간으로 승인 가능성을 분석해 약점을 찾아내고, 전문가가 포트폴리오를 최적화합니다. 기술과 전문가의 이중 점검으로 최고의 승인율을 보장합니다."
       }
-    ]
+    ],
+    "high_value": {
+      "title": "디지털 자유",
+      "highlight": "& 워케이션",
+      "description": "비자 문제나 해외 소득세 걱정 없이 태국에서 일하세요 (연간 180일 미만 체류 시). DTV는 5년간의 평화를 위한 열쇠입니다.",
+      "item1": "어디서나 업무 가능",
+      "item2": "5년 유효 (입국 당 180일)",
+      "item3": "유리한 세금 혜택",
+      "card_title": "이상적인 프로필",
+      "card_item1": "원격 근무자 / 직장인",
+      "card_item2": "디지털 노마드 & 프리랜서",
+      "card_item3": "콘텐츠 크리에이터 / 소프트 파워",
+      "card_item4": "무에타이 / 요리 수강생"
+    }
   },
   "tourist_page": {
     "badge": "관광 & 레저",
@@ -490,7 +503,20 @@ export const ko = {
         "q": "직접 신청하는 것보다 Siam Visa Pro를 이용하면 어떤 점이 좋나요?",
         "a": "혼자 신청할 경우 서류 미비로 인해 거절될 위험이 큽니다. Siam Visa Pro는 인간의 전문성과 AI의 기술을 결합합니다. AI 도구가 실시간으로 승인 가능성을 분석해 약점을 찾아내고, 전문가가 포트폴리오를 최적화합니다. 기술과 전문가의 이중 점검으로 최고의 승인율을 보장합니다."
       }
-    ]
+    ],
+    "high_value": {
+      "title": "달콤한 라이프스타일",
+      "highlight": "& 보안",
+      "description": "유리한 생활비와 세계적 수준의 의료 인프라를 갖춘 미소의 나라에서 황금 같은 은퇴 생활을 즐기세요.",
+      "item1": "저렴한 생활비",
+      "item2": "무제한 갱신 가능",
+      "item3": "세계적 수준의 의료",
+      "card_title": "평화로운 마음",
+      "card_item1": "은행 계좌 개설",
+      "card_item2": "건강 보험 (지원)",
+      "card_item3": "TM30/90일 신고 지원",
+      "card_item4": "개인 물품 수입"
+    }
   },
   "faq_page": {
     "title": "자주 묻는 질문",

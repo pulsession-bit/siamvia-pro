@@ -39,12 +39,12 @@ export const it = {
     "aiHelper": "IA",
     "aiTitle": "Parere IA",
     "categories": {
-        "work": "Lavoro",
-        "tourism": "Turismo",
-        "longterm": "Lungo Termine",
-        "family": "Famiglia",
-        "education": "Istruzione",
-        "privilege": "Elite"
+      "work": "Lavoro",
+      "tourism": "Turismo",
+      "longterm": "Lungo Termine",
+      "family": "Famiglia",
+      "education": "Istruzione",
+      "privilege": "Elite"
     },
     "details": "Dettagli",
     "eligibility": "Idoneità",
@@ -59,26 +59,26 @@ export const it = {
     "expertPick": "EXPERT PICK",
     "alternative": "ALTERNATIVA",
     "commonRequirements": [
-        "Passaporto",
-        "Fondi"
+      "Passaporto",
+      "Fondi"
     ],
     "processDescription": "5-15 giorni.",
     "durations": {
-        "10 Years": "10 anni",
-        "5 Years": "5 anni",
-        "1 Year": "1 anno",
-        "60 Days": "60 giorni",
-        "6 Months": "6 mesi",
-        "15 Days": "15 giorni",
-        "4 Years": "4 anni",
-        "Variable": "Variabile",
-        "90 Days": "90 giorni"
+      "10 Years": "10 anni",
+      "5 Years": "5 anni",
+      "1 Year": "1 anno",
+      "60 Days": "60 giorni",
+      "6 Months": "6 mesi",
+      "15 Days": "15 giorni",
+      "4 Years": "4 anni",
+      "Variable": "Variabile",
+      "90 Days": "90 giorni"
     },
     "prices": {
-        "High": "Alto",
-        "Medium": "Medio",
-        "Low": "Basso",
-        "Premium": "Premium"
+      "High": "Alto",
+      "Medium": "Medio",
+      "Low": "Basso",
+      "Premium": "Premium"
     }
   },
   "hero": {
@@ -340,7 +340,20 @@ export const it = {
         "q": "Qual è il valore aggiunto di Siam Visa Pro rispetto a una richiesta individuale?",
         "a": "Presentare la domanda da soli comporta rischi di rifiuto a causa di documenti imprecisi. Siam Visa Pro combina l'esperienza umana con la potenza dell'IA: i nostri strumenti di intelligenza artificiale analizzano la tua idoneità in tempo reale per rilevare i punti deboli, mentre i nostri esperti ottimizzano il tuo portfolio. Benefici di un doppio controllo —tecnologico e umano— per garantire il massimo tasso di approvazione."
       }
-    ]
+    ],
+    "high_value": {
+      "title": "Libertà Digitale",
+      "highlight": "& Workcation",
+      "description": "Lavora dalla Thailandia senza problemi di visto né tasse sui redditi esteri (se <180gg/anno). Il DTV è la chiave per 5 anni di serenità.",
+      "item1": "Lavora da ovunque",
+      "item2": "Validità 5 anni (180gg/ingresso)",
+      "item3": "Tassazione vantaggiosa",
+      "card_title": "Profili Ideali",
+      "card_item1": "Lavoratori Remoti / Dipendenti",
+      "card_item2": "Nomadi Digitali & Freelance",
+      "card_item3": "Content Creators / Soft Power",
+      "card_item4": "Partecipanti Muay Thai / Cucina"
+    }
   },
   "tourist_page": {
     "badge": "Turismo e Svago",
@@ -491,7 +504,20 @@ export const it = {
         "q": "Qual è il valore aggiunto di Siam Visa Pro rispetto a una richiesta individuale?",
         "a": "Presentare la domanda da soli comporta rischi di rifiuto a causa di documenti imprecisi. Siam Visa Pro combina l'esperienza umana con la potenza dell'IA: i nostri strumenti di intelligenza artificiale analizzano la tua idoneità in tempo reale per rilevare i punti deboli, mentre i nostri esperti ottimizzano il tuo portfolio. Benefici di un doppio controllo —tecnologico e umano— per garantire il massimo tasso di approvazione."
       }
-    ]
+    ],
+    "high_value": {
+      "title": "Dolce Vita",
+      "highlight": "& Sicurezza",
+      "description": "Goditi una pensione d'oro nel paese del sorriso con un costo della vita vantaggioso e infrastrutture mediche di classe mondiale.",
+      "item1": "Basso Costo della Vita",
+      "item2": "Rinnovabile all'Infinito",
+      "item3": "Sanità di Classe Mondiale",
+      "card_title": "Tranquillità",
+      "card_item1": "Apertura Conto Bancario",
+      "card_item2": "Assicurazione Sanitaria (Assistita)",
+      "card_item3": "Assistenza TM30/90 Giorni",
+      "card_item4": "Importazione Effetti Personali"
+    }
   },
   "faq_page": {
     "title": "Domande Frequenti",

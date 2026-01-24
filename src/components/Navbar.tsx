@@ -20,7 +20,19 @@ const Navbar: React.FC = () => {
   const langPath = useLangPath();
   const SCORING_ENGINE_URL = 'https://desk.siamvisapro.com';
 
-  const switchLanguage = (newLang: string) => {
+  const switchLanguage = async (newLang: string) => {
+    // 1. Persist choice in cookie via API
+    try {
+      await fetch('/api/locale', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ locale: newLang }),
+      });
+    } catch (error) {
+      console.error('Failed to set locale cookie:', error);
+    }
+
+    // 2. Redirect to translated path
     const pathWithoutLang = pathname?.replace(/^\/([a-z]{2})/, '') || '';
     const cleanPath = pathWithoutLang.startsWith('/') ? pathWithoutLang.slice(1) : pathWithoutLang;
     const currentLangSlugs = REVERSE_MAP[currentLang] || {};

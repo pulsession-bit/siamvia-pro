@@ -5,6 +5,8 @@ import EliteClientPage from './EliteClientPage';
 
 const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
 
+import { generateMetadataWithHreflang } from '@/utils/seo';
+
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
     const t = translations[lang as keyof typeof translations] || translations.en;
@@ -15,17 +17,12 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         description: "Visa 5 à 20 ans pour la Thaïlande. Service VIP et Conciergerie."
     };
 
-    return {
+    return generateMetadataWithHreflang({
         title: meta.title,
         description: meta.description,
-        alternates: {
-            canonical: `https://www.siamvisapro.com${getTranslatedPath('elite-visa', lang)}`,
-            languages: languages.reduce((acc, l) => {
-                acc[l] = `https://www.siamvisapro.com${getTranslatedPath('elite-visa', l)}`;
-                return acc;
-            }, {} as Record<string, string>),
-        },
-    };
+        pageKey: 'elite-visa',
+        lang,
+    });
 }
 
 export default function Page() {

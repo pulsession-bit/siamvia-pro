@@ -39,12 +39,12 @@ export const zh = {
     "aiHelper": "AI",
     "aiTitle": "建议",
     "categories": {
-        "work": "工作",
-        "tourism": "旅游",
-        "longterm": "长期",
-        "family": "家庭",
-        "education": "教育",
-        "privilege": "精英"
+      "work": "工作",
+      "tourism": "旅游",
+      "longterm": "长期",
+      "family": "家庭",
+      "education": "教育",
+      "privilege": "精英"
     },
     "details": "详情",
     "eligibility": "条件",
@@ -59,25 +59,25 @@ export const zh = {
     "expertPick": "推荐",
     "alternative": "替代",
     "commonRequirements": [
-        "护照"
+      "护照"
     ],
     "processDescription": "5-15天。",
     "durations": {
-        "10 Years": "10年",
-        "5 Years": "5年",
-        "1 Year": "1年",
-        "60 Days": "60天",
-        "6 Months": "6个月",
-        "15 Days": "15天",
-        "4 Years": "4年",
-        "Variable": "视情况",
-        "90 Days": "90天"
+      "10 Years": "10年",
+      "5 Years": "5年",
+      "1 Year": "1年",
+      "60 Days": "60天",
+      "6 Months": "6个月",
+      "15 Days": "15天",
+      "4 Years": "4年",
+      "Variable": "视情况",
+      "90 Days": "90天"
     },
     "prices": {
-        "High": "高",
-        "Medium": "中",
-        "Low": "低",
-        "Premium": "尊享"
+      "High": "高",
+      "Medium": "中",
+      "Low": "低",
+      "Premium": "尊享"
     }
   },
   "hero": {
@@ -339,7 +339,20 @@ export const zh = {
         "q": "与自行申请相比，Siam Visa Pro 的价值体现在哪里？",
         "a": "自行申请常因材料不准确而面临拒签风险。Siam Visa Pro 将人类专家的经验与 AI 的力量相结合：我们的 AI 工具实时分析您的资格，识别申请中的弱点，而我们的专家则优化您的作品集。您将受益于技术与人工的双重检查，确保获得最高的获签率。"
       }
-    ]
+    ],
+    "high_value": {
+      "title": "数字自由",
+      "highlight": "& 工作度假",
+      "description": "在泰国工作，无需担心签证烦恼或海外收入税（如果每年少于180天）。DTV是您5年安心生活的关键。",
+      "item1": "随处工作",
+      "item2": "5年有效期（每次入境180天）",
+      "item3": "税收优惠",
+      "card_title": "理想人群",
+      "card_item1": "远程办公人员 / 雇员",
+      "card_item2": "数字游民 & 自由职业者",
+      "card_item3": "内容创作者 / 软实力",
+      "card_item4": "泰拳 / 烹饪学员"
+    }
   },
   "tourist_page": {
     "badge": "旅游休闲",
@@ -490,7 +503,20 @@ export const zh = {
         "q": "与自行申请相比，Siam Visa Pro 的价值体现在哪里？",
         "a": "自行申请常因材料不准确而面临拒签风险。Siam Visa Pro 将人类专家的经验与 AI 的力量相结合：我们的 AI 工具实时分析您的资格，识别申请中的弱点，而我们的专家则优化您的作品集。您将受益于技术与人工的双重检查，确保获得最高的获签率。"
       }
-    ]
+    ],
+    "high_value": {
+      "title": "甜蜜生活",
+      "highlight": "& 安全保障",
+      "description": "在微笑之国享受黄金退休时光，拥有优越的生活成本和世界顶级的医疗设施。无忧无虑的宁静退休生活。",
+      "item1": "低生活成本",
+      "item2": "无限续签",
+      "item3": "世界级医疗保健",
+      "card_title": "安心无忧",
+      "card_item1": "银行开户",
+      "card_item2": "健康保险（协助）",
+      "card_item3": "TM30/90天报到协助",
+      "card_item4": "个人物品进口"
+    }
   },
   "faq_page": {
     "title": "常见问题",

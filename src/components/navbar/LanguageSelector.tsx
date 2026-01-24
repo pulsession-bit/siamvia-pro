@@ -17,7 +17,7 @@ export const languages = [
 
 interface LanguageSelectorProps {
     currentLang: string;
-    onSwitch: (newLang: string) => void;
+    onSwitch: (newLang: string) => Promise<void> | void;
 }
 
 export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ currentLang, onSwitch }) => {

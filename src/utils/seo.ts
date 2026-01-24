@@ -66,29 +66,39 @@ export function generateHreflangLinks(pathname: string, baseUrl: string = 'https
  * });
  * ```
  */
+import { getTranslatedPath, PageKey } from './slugs';
+
 export function generateMetadataWithHreflang(options: {
     title: string;
     description: string;
-    pathname: string;
+    pageKey: PageKey;
+    lang: string;
     baseUrl?: string;
 }): Metadata {
-    const { title, description, pathname, baseUrl = 'https://www.siamvisapro.com' } = options;
+    const { title, description, pageKey, lang, baseUrl = 'https://www.siamvisapro.com' } = options;
+
+    const languages: Record<string, string> = {};
+
+    SUPPORTED_LANGUAGES.forEach(l => {
+        languages[l] = `${baseUrl}${getTranslatedPath(pageKey, l)}`;
+    });
+
+    // Add x-default pointing to English version
+    languages['x-default'] = `${baseUrl}${getTranslatedPath(pageKey, 'en')}`;
 
     return {
         title,
         description,
         alternates: {
-            canonical: `${baseUrl}${pathname}`,
-            languages: Object.fromEntries(
-                SUPPORTED_LANGUAGES.map(lang => [lang, `${baseUrl}/${lang}${pathname}`])
-            ),
+            canonical: `${baseUrl}${getTranslatedPath(pageKey, lang)}`,
+            languages,
         },
         openGraph: {
             title,
             description,
-            url: `${baseUrl}${pathname}`,
+            url: `${baseUrl}${getTranslatedPath(pageKey, lang)}`,
             siteName: 'SiamVisa Pro',
-            locale: 'en_US',
+            locale: lang === 'fr' ? 'fr_FR' : 'en_US',
             type: 'website',
         },
     };

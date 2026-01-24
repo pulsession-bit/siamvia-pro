@@ -15,6 +15,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
 
+import { generateMetadataWithHreflang } from '@/utils/seo';
+
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
     const t = translations[lang as keyof typeof translations] || translations.en;
@@ -22,17 +24,12 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     // Fallback to home metadata if available
     const meta = (t as any).meta || { title: "Siam Visa Pro", description: "Thailand Visa Expert" };
 
-    return {
+    return generateMetadataWithHreflang({
         title: meta.title,
         description: meta.description,
-        alternates: {
-            canonical: `https://www.siamvisapro.com/${lang}`,
-            languages: languages.reduce((acc, l) => {
-                acc[l] = `https://www.siamvisapro.com/${l}`;
-                return acc;
-            }, {} as Record<string, string>),
-        },
-    };
+        pageKey: 'home',
+        lang,
+    });
 }
 
 // This is a Server Component - generateStaticParams works here

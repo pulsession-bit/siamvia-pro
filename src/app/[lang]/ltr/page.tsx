@@ -9,6 +9,9 @@ type Props = {
     params: Promise<{ lang: string }>;
 };
 
+import { generateMetadataWithHreflang } from '@/utils/seo';
+import { getTranslatedPath } from '@/utils/slugs';
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { lang } = await params;
     const langTranslations = translations[lang as keyof typeof translations];
@@ -18,10 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     const meta = ltrPage?.meta || translations.fr.ltr_page.meta;
 
-    return {
+    return generateMetadataWithHreflang({
         title: meta.title,
         description: meta.description,
-    };
+        pathname: getTranslatedPath('ltr', lang),
+    });
 }
 
 export default async function LTRPage({ params }: Props) {
