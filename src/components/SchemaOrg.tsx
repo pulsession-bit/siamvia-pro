@@ -31,8 +31,19 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang, pageKey, title, show
             'contactType': 'customer service',
             'email': 'support@siamvisapro.com',
             'availableLanguage': ['French', 'English', 'Thai']
+        },
+        'founder': {
+            '@type': 'Person',
+            'name': 'Raphaël Buresi',
+            'url': 'https://www.linkedin.com/in/raphael-buresi-4a9562a/'
+        },
+        'parentOrganization': {
+            '@type': 'Organization',
+            'name': 'DigitGpt LLC',
+            'url': 'https://digitgpt.cloud'
         }
     };
+
 
     // 2. WebSite Schema (Search Box)
     const websiteSchema = {

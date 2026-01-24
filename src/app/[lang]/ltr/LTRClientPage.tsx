@@ -7,6 +7,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
 import { VisaHero } from '@/components/visa/VisaHero';
 import { VisaFeatureSummary } from '@/components/visa/VisaFeatureSummary';
+import { AuthorEEAT } from '@/components/AuthorEEAT';
 
 const LTRClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -72,7 +73,11 @@ const LTRClientPage: React.FC = () => {
                     title={t('ltr_page.faq_title') || "Questions Fréquentes (FAQ)"}
                     faqs={Array.isArray(t('ltr_page.faq')) ? (t('ltr_page.faq') as any) : []}
                 />
+
+                {/* EEAT Signals */}
+                <AuthorEEAT date="2026-01-24" />
             </div>
+
 
             {/* 6. Appointment Section */}
             <section id="appointment-section" className="py-24 bg-slate-50 border-t">

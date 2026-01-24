@@ -4,8 +4,10 @@
 import React from 'react';
 import { HelpCircle, AlertCircle, CheckCircle2 } from 'lucide-react';
 import { FAQSchema } from '@/components/FAQSchema';
+import { AuthorEEAT } from '@/components/AuthorEEAT';
 
 interface VisaComparatorGuideProps {
+
     i18n: any;
 }
 
@@ -100,7 +102,7 @@ export const VisaComparatorGuide: React.FC<VisaComparatorGuideProps> = ({ i18n }
                         </div>
                     </div>
                 </div>
-
+                <AuthorEEAT date="2026-01-24" />
             </div>
         </section>
     );

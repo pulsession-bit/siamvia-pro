@@ -94,12 +94,37 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 pt-8 text-center text-slate-500 text-xs flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-slate-800 pt-8 text-center text-slate-500 text-xs flex flex-col md:flex-row justify-between items-center gap-4">
           <p>&copy; {new Date().getFullYear()} Siam Visa Pro. {t('footer.copyright')}</p>
-          <div className="flex items-center space-x-4 mt-2 md:mt-0">
-            <p>{t('footer.disclaimer')}</p>
+          <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-2">
+              <span className="text-slate-600">{t('footer.written_by')}</span>
+              <a
+                href="https://www.linkedin.com/in/raphael-buresi-4a9562a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-300 font-bold hover:text-amber-400 transition-colors cursor-pointer border-b border-slate-700 border-dotted"
+                title={t('footer.author_role')}
+              >
+                {t('footer.author')}
+              </a>
+            </div>
+            <div className="flex items-center space-x-2 border-l border-slate-800 pl-6">
+              <span className="text-slate-600">Owner:</span>
+              <a
+                href="https://digitgpt.cloud"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white transition-colors font-medium"
+              >
+                DigitGpt LLC
+              </a>
+            </div>
           </div>
+          <p className="hidden lg:block text-[10px] text-slate-600">{t('footer.disclaimer')}</p>
         </div>
+
+
       </div>
     </footer>
   );

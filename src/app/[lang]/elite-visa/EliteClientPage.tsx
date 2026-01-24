@@ -7,6 +7,7 @@ import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 import { HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
 import { QuickSummaryModal } from '@/components/ui/QuickSummaryModal';
 import { VisaHero } from '@/components/visa/VisaHero';
+import { AuthorEEAT } from '@/components/AuthorEEAT';
 
 const EliteClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -133,8 +134,12 @@ const EliteClientPage: React.FC = () => {
                             { q: eliteT('faqs.3.q'), a: eliteT('faqs.3.a') },
                         ]}
                     />
+
+                    {/* EEAT Signals */}
+                    <AuthorEEAT date="2026-01-24" />
                 </div>
             </section>
+
 
             {/* 6. Appointment Section */}
             <section id="appointment-section" className="py-24 bg-slate-900 relative overflow-hidden">

@@ -974,7 +974,11 @@ export const en = {
     "sitemap": "Sitemap",
     "copyright": "All rights reserved.",
     "disclaimer": "SiamVisa Pro is a private facilitation agency, not affiliated with the Thai government.",
-    "secure_payment": "100% Secure Payment: Mercury & Wise"
+    "secure_payment": "100% Secure Payment: Mercury & Wise",
+    "author": "Raphaël Buresi",
+    "author_role": "Thailand Visa Expert",
+    "written_by": "Written by",
+    "last_updated": "Last updated"
   },
   "login": {
     "title": "Client Area",

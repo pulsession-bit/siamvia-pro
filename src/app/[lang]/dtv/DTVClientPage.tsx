@@ -11,6 +11,7 @@ import { HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageCom
 import { RelatedPages } from '@/components/RelatedPages';
 import { VisaHero } from '@/components/visa/VisaHero';
 import { VisaFeatureSummary } from '@/components/visa/VisaFeatureSummary';
+import { AuthorEEAT } from '@/components/AuthorEEAT';
 
 const DTVClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -100,7 +101,11 @@ const DTVClientPage: React.FC = () => {
                     ]}
                 />
 
+                {/* EEAT Signals */}
+                <AuthorEEAT date="2026-01-24" />
+
                 {/* 6. Related Pages */}
+
                 <RelatedPages
                     title={t('footer.col_visas')}
                     pages={[
