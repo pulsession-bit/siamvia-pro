@@ -14,11 +14,13 @@ import {
 } from '@/components/ui/PageComponents';
 
 const VolunteerClientPage: React.FC = () => {
+    const { t } = useLanguage();
+
     const VISA_CONFIG = {
-        name: "Visa Volontaire (Non-O Volunteer)",
-        type: "Bénévolat & Humanitaire",
-        audience: "Bénévoles en ONG, Fondations, Associations caritatives",
-        duration: "90 jours (renouvelable jusqu'à 1 an)",
+        name: t('volunteer_visa_page.hero_title').split(' – ')[0],
+        type: t('volunteer_visa_page.hero_badge'),
+        audience: (t('volunteer_visa_page.audience_compatible_list') as unknown as string[]).join(', '),
+        duration: t('volunteer_visa_page.duration_initial_value'),
         work_allowed: false,
         risk_level: "high"
     };
@@ -28,75 +30,70 @@ const VolunteerClientPage: React.FC = () => {
             <HeroSection
                 backgroundImage={"https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1920&q=80"}
                 imageAlt="Bénévolat Thaïlande"
-                title={`${VISA_CONFIG.name} – Thaïlande`}
-                subtitle={`S'engager pour une cause humanitaire en Thaïlande (${new Date().getFullYear()})`}
+                title={t('volunteer_visa_page.hero_title')}
+                subtitle={`${t('volunteer_visa_page.hero_subtitle')} (${new Date().getFullYear()})`}
                 icon={<Heart className="h-6 w-6" />}
-                badge={VISA_CONFIG.type}
+                badge={t('volunteer_visa_page.hero_badge')}
             />
 
             <PageContainer maxWidth="max-w-4xl" negativeMargin>
                 <div className="grid grid-cols-1 gap-10">
 
                     <section id="definition">
-                        <SectionTitle>{`Qu’est-ce que le ${VISA_CONFIG.name} ?`}</SectionTitle>
+                        <SectionTitle>{t('volunteer_visa_page.definition_title')}</SectionTitle>
                         <Card variant="white" className="p-6 text-slate-700 leading-relaxed text-lg">
                             <p>
-                                Le Visa Non-Immigrant O (Volunteer) est destiné aux étrangers souhaitant effectuer un travail bénévole non rémunéré au sein d'une organisation caritative, d'une fondation publique ou d'une ONG reconnue en Thaïlande. C'est un visa très encadré pour éviter les abus liés au travail déguisé.
+                                {t('volunteer_visa_page.definition_content')}
                             </p>
                         </Card>
                     </section>
 
                     <section id="audience">
-                        <SectionTitle>À qui s’adresse ce visa ?</SectionTitle>
+                        <SectionTitle>{t('volunteer_visa_page.audience_title')}</SectionTitle>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <Card variant="white" className="p-6 border-l-4 border-green-500">
                                 <h3 className="font-bold text-slate-900 mb-3 flex items-center">
                                     <CheckCircle2 className="h-5 w-5 text-green-500 mr-2" />
-                                    Profils Compatibles
+                                    {t('volunteer_visa_page.audience_compatible')}
                                 </h3>
                                 <ul className="space-y-2 text-slate-600">
-                                    <li>• Bénévoles dans des fondations enregistrées.</li>
-                                    <li>• Travailleurs humanitaires en mission.</li>
-                                    <li>• Aide aux éléphants / protection animale.</li>
+                                    {(t('volunteer_visa_page.audience_compatible_list') as unknown as string[]).map((item, i) => (
+                                        <li key={i}>• {item}</li>
+                                    ))}
                                 </ul>
                             </Card>
                             <Card variant="white" className="p-6 border-l-4 border-red-300 bg-slate-50/50 opacity-75">
-                                <h3 className="font-bold text-slate-700 mb-3">Profils Non Compatibles</h3>
+                                <h3 className="font-bold text-slate-700 mb-3">{t('volunteer_visa_page.audience_not_compatible')}</h3>
                                 <ul className="space-y-2 text-slate-500">
-                                    <li>• Volontourisme de courte durée (- de 30j).</li>
-                                    <li>• Personnes sans invitation officielle.</li>
-                                    <li>• Travailleurs cherchant à éviter le visa Business.</li>
+                                    {(t('volunteer_visa_page.audience_not_compatible_list') as unknown as string[]).map((item, i) => (
+                                        <li key={i}>• {item}</li>
+                                    ))}
                                 </ul>
                             </Card>
                         </div>
                     </section>
 
                     <section id="duration">
-                        <SectionTitle>Durée de séjour et validité</SectionTitle>
+                        <SectionTitle>{t('volunteer_visa_page.duration_title')}</SectionTitle>
                         <div className="grid grid-cols-2 gap-4">
                             <Card variant="white" className="p-5 text-center">
                                 <Clock className="h-8 w-8 text-amber-500 mx-auto mb-2" />
-                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">Durée Initiale</div>
-                                <div className="text-xl font-bold text-slate-900">90 jours</div>
+                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">{t('volunteer_visa_page.duration_initial_label')}</div>
+                                <div className="text-xl font-bold text-slate-900">{t('volunteer_visa_page.duration_initial_value')}</div>
                             </Card>
                             <Card variant="white" className="p-5 text-center">
                                 <Globe className="h-8 w-8 text-blue-500 mx-auto mb-2" />
-                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">Max Total</div>
-                                <div className="text-xl font-bold text-slate-900">1 An (Extensions)</div>
+                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">{t('volunteer_visa_page.duration_max_label')}</div>
+                                <div className="text-xl font-bold text-slate-900">{t('volunteer_visa_page.duration_max_value')}</div>
                             </Card>
                         </div>
                     </section>
 
                     <section id="conditions">
-                        <SectionTitle>Conditions et critères indispensables</SectionTitle>
+                        <SectionTitle>{t('volunteer_visa_page.conditions_title')}</SectionTitle>
                         <Card variant="white" className="p-6">
                             <ul className="space-y-3">
-                                {[
-                                    "Lettre officielle de l'organisation enregistrée en Thaïlande.",
-                                    "Copie de la licence de la fondation / ONG.",
-                                    "Work Permit obligatoire (même pour du bénévolat).",
-                                    "Casier judiciaire souvent requis pour l'enseignement.",
-                                ].map((item, i) => (
+                                {(t('volunteer_visa_page.conditions_list') as unknown as string[]).map((item, i) => (
                                     <li key={i} className="flex items-start text-slate-700">
                                         <div className="h-1.5 w-1.5 rounded-full bg-amber-500 mr-3 mt-2 flex-shrink-0"></div>
                                         {item}
@@ -107,14 +104,14 @@ const VolunteerClientPage: React.FC = () => {
                     </section>
 
                     <section id="warning">
-                        <SectionTitle>Vigilance : Le "Grey Area"</SectionTitle>
+                        <SectionTitle>{t('volunteer_visa_page.warning_title')}</SectionTitle>
                         <Card variant="white" className="p-6 border-l-4 border-amber-500 bg-amber-50/10">
                             <div className="flex items-start">
                                 <ShieldAlert className="h-6 w-6 text-amber-600 mr-3 mt-1 flex-shrink-0" />
                                 <div>
-                                    <h3 className="text-lg font-bold text-amber-800 mb-1">Réglementation stricte</h3>
+                                    <h3 className="text-lg font-bold text-amber-800 mb-1">{t('volunteer_visa_page.warning_regulation_title')}</h3>
                                     <p className="text-slate-700">
-                                        Beaucoup d'agences vendent des "Visas Volontaires" sans réel engagement humanitaire. L'immigration thaïlandaise surveille de très près ces visas. En cas de contrôle, si vous n'êtes pas capable de prouver votre activité réelle au sein de l'ONG, le visa sera annulé.
+                                        {t('volunteer_visa_page.warning_regulation_text')}
                                     </p>
                                 </div>
                             </div>
@@ -125,10 +122,10 @@ const VolunteerClientPage: React.FC = () => {
                 <div className="mt-16">
                     <Card variant="dark" className="p-8 text-center flex flex-col justify-center items-center">
                         <HelpingHand className="h-12 w-12 text-amber-500 mb-4" />
-                        <h3 className="text-2xl font-bold text-white mb-2">Besoin d'aide pour votre dossier ?</h3>
-                        <p className="text-slate-400 mb-8 max-w-lg">Le visa volontaire demande une documentation complexe de la part de l'association. Nous vous aidons à vérifier la conformité.</p>
+                        <h3 className="text-2xl font-bold text-white mb-2">{t('volunteer_visa_page.cta_help_title')}</h3>
+                        <p className="text-slate-400 mb-8 max-w-lg">{t('volunteer_visa_page.cta_help_subtitle')}</p>
                         <CTAButton href="https://desk.siamvisapro.com" variant="primary">
-                            Consulter un expert
+                            {t('volunteer_visa_page.cta_help_btn')}
                         </CTAButton>
                     </Card>
                 </div>

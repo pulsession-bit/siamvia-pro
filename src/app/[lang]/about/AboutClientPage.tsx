@@ -3,6 +3,7 @@
 
 import React from 'react';
 import { ShieldCheck, Target, Users, Landmark, Linkedin, ExternalLink } from 'lucide-react';
+import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const AboutClientPage: React.FC = () => {
@@ -15,10 +16,12 @@ const AboutClientPage: React.FC = () => {
             <div className="relative bg-slate-900 pt-32 pb-48 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 to-slate-900 z-10" />
-                    <img
+                    <Image
                         src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=80"
                         alt="Bangkok Sky"
-                        className="w-full h-full object-cover opacity-40"
+                        fill
+                        className="object-cover opacity-40"
+                        priority
                     />
                 </div>
 
@@ -54,9 +57,11 @@ const AboutClientPage: React.FC = () => {
                         </div>
                         <div className="relative">
                             <div className="absolute inset-0 bg-amber-500 rounded-3xl rotate-3 opacity-10" />
-                            <img
+                            <Image
                                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
                                 alt="Team Working"
+                                width={800}
+                                height={540}
                                 className="relative z-10 rounded-3xl shadow-2xl"
                             />
                         </div>

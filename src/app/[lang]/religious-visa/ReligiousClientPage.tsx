@@ -14,11 +14,13 @@ import {
 } from '@/components/ui/PageComponents';
 
 const ReligiousClientPage: React.FC = () => {
+    const { t } = useLanguage();
+
     const VISA_CONFIG = {
-        name: "Visa Religieux (Non-R)",
-        type: "Mission & Culte",
-        audience: "Moines, Missionnaires, Travailleurs religieux",
-        duration: "90 jours (renouvelable jusqu'à 1 an)",
+        name: t('religious_visa_page.hero_title').split(' – ')[0],
+        type: t('religious_visa_page.hero_badge'),
+        audience: (t('religious_visa_page.conditions_list') as unknown as string[]).join(', '),
+        duration: t('religious_visa_page.duration_initial_value'),
         work_allowed: false,
         risk_level: "low"
     };
@@ -28,34 +30,29 @@ const ReligiousClientPage: React.FC = () => {
             <HeroSection
                 backgroundImage={"https://images.unsplash.com/photo-1528154291023-a6525fabe5b4?auto=format&fit=crop&w=1920&q=80"}
                 imageAlt="Temple Thaïlande"
-                title={`${VISA_CONFIG.name} – Thaïlande`}
-                subtitle={`Mission religieuse ou étude du bouddhisme (${new Date().getFullYear()})`}
+                title={t('religious_visa_page.hero_title')}
+                subtitle={`${t('religious_visa_page.hero_subtitle')} (${new Date().getFullYear()})`}
                 icon={<Sun className="h-6 w-6" />}
-                badge={VISA_CONFIG.type}
+                badge={t('religious_visa_page.hero_badge')}
             />
 
             <PageContainer maxWidth="max-w-4xl" negativeMargin>
                 <div className="grid grid-cols-1 gap-10">
 
                     <section id="definition">
-                        <SectionTitle>{`Qu’est-ce que le ${VISA_CONFIG.name} ?`}</SectionTitle>
+                        <SectionTitle>{t('religious_visa_page.definition_title')}</SectionTitle>
                         <Card variant="white" className="p-6 text-slate-700 leading-relaxed text-lg">
                             <p>
-                                Le Visa Non-Immigrant R (Religious) est réservé aux étrangers souhaitant s'engager dans des activités religieuses officielles en Thaïlande. Cela concerne les ministres du culte, les moines, ainsi que les missionnaires parrainés par une organisation religieuse reconnue par le Département des Affaires Religieuses (DRA).
+                                {t('religious_visa_page.definition_content')}
                             </p>
                         </Card>
                     </section>
 
                     <section id="conditions">
-                        <SectionTitle>Profils et Conditions</SectionTitle>
+                        <SectionTitle>{t('religious_visa_page.conditions_title')}</SectionTitle>
                         <Card variant="white" className="p-6">
                             <ul className="space-y-3">
-                                {[
-                                    "Être parrainé par une organisation religieuse enregistrée en Thaïlande.",
-                                    "Approbation du Département des Affaires Religieuses ou du Bureau National du Bouddhisme.",
-                                    "Engagement formel à ne pas percevoir de salaire (hors indemnités de subsistance).",
-                                    "Preuve de résidence au sein de l'institution religieuse.",
-                                ].map((item, i) => (
+                                {(t('religious_visa_page.conditions_list') as unknown as string[]).map((item, i) => (
                                     <li key={i} className="flex items-start text-slate-700">
                                         <div className="h-1.5 w-1.5 rounded-full bg-amber-500 mr-3 mt-2 flex-shrink-0"></div>
                                         {item}
@@ -66,26 +63,26 @@ const ReligiousClientPage: React.FC = () => {
                     </section>
 
                     <section id="duration">
-                        <SectionTitle>Validité et Extensions</SectionTitle>
+                        <SectionTitle>{t('religious_visa_page.duration_title')}</SectionTitle>
                         <div className="grid grid-cols-2 gap-4">
                             <Card variant="white" className="p-5 text-center">
                                 <Clock className="h-8 w-8 text-amber-500 mx-auto mb-2" />
-                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">Validité Initiale</div>
-                                <div className="text-xl font-bold text-slate-900">90 jours</div>
+                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">{t('religious_visa_page.duration_initial_label')}</div>
+                                <div className="text-xl font-bold text-slate-900">{t('religious_visa_page.duration_initial_value')}</div>
                             </Card>
                             <Card variant="white" className="p-5 text-center">
                                 <Globe className="h-8 w-8 text-blue-500 mx-auto mb-2" />
-                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">Extension Max</div>
-                                <div className="text-xl font-bold text-slate-900">1 An (Renouvelable)</div>
+                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">{t('religious_visa_page.duration_max_label')}</div>
+                                <div className="text-xl font-bold text-slate-900">{t('religious_visa_page.duration_max_value')}</div>
                             </Card>
                         </div>
                     </section>
                 </div>
 
                 <div className="mt-16 text-center">
-                    <p className="text-slate-500 text-sm mb-6 italic">Ce visa demande une coordination étroite avec les autorités religieuses nationales.</p>
+                    <p className="text-slate-500 text-sm mb-6 italic">{t('religious_visa_page.footer_note')}</p>
                     <CTAButton href="https://desk.siamvisapro.com" variant="secondary" className="px-10">
-                        Demander un conseil spécifique
+                        {t('religious_visa_page.cta_btn')}
                     </CTAButton>
                 </div>
             </PageContainer>

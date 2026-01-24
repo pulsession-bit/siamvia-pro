@@ -14,11 +14,13 @@ import {
 } from '@/components/ui/PageComponents';
 
 const MedicalClientPage: React.FC = () => {
+    const { t } = useLanguage();
+
     const VISA_CONFIG = {
-        name: "Visa Médical (Non-MT / Non-O)",
-        type: "Soins & Santé",
-        audience: "Patients étrangers et leurs accompagnateurs",
-        duration: "60-90 jours (renouvelable)",
+        name: t('medical_visa_page.hero_title').split(' – ')[0],
+        type: t('medical_visa_page.hero_badge'),
+        audience: (t('medical_visa_page.audience_types_list') as unknown as string[]).join(', '),
+        duration: t('medical_visa_page.duration_validity_value'),
         work_allowed: false,
         risk_level: "low"
     };
@@ -28,77 +30,71 @@ const MedicalClientPage: React.FC = () => {
             <HeroSection
                 backgroundImage={"https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1920&q=80"}
                 imageAlt="Hôpital de luxe Thaïlande"
-                title={`${VISA_CONFIG.name} – Thaïlande`}
-                subtitle={`Bénéficiez de soins de classe mondiale en Thaïlande (${new Date().getFullYear()})`}
+                title={t('medical_visa_page.hero_title')}
+                subtitle={`${t('medical_visa_page.hero_subtitle')} (${new Date().getFullYear()})`}
                 icon={<Stethoscope className="h-6 w-6" />}
-                badge={VISA_CONFIG.type}
+                badge={t('medical_visa_page.hero_badge')}
             />
 
             <PageContainer maxWidth="max-w-4xl" negativeMargin>
                 <div className="grid grid-cols-1 gap-10">
 
                     <section id="definition">
-                        <SectionTitle>{`Qu’est-ce que le ${VISA_CONFIG.name} ?`}</SectionTitle>
+                        <SectionTitle>{t('medical_visa_page.definition_title')}</SectionTitle>
                         <Card variant="white" className="p-6 text-slate-700 leading-relaxed text-lg">
                             <p>
-                                La Thaïlande est une destination majeure du tourisme médical. Le Visa Médical (souvent sous la forme d'un Non-Immigrant O ou du nouveau Non-MT) permet aux patients étrangers de séjourner dans le royaume pour des traitements chirurgicaux, des soins de longue durée ou des cures de réhabilitation.
+                                {t('medical_visa_page.definition_content')}
                             </p>
                         </Card>
                     </section>
 
                     <section id="audience">
-                        <SectionTitle>Services et Profils concernés</SectionTitle>
+                        <SectionTitle>{t('medical_visa_page.audience_title')}</SectionTitle>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <Card variant="white" className="p-6 border-l-4 border-blue-500">
                                 <h3 className="font-bold text-slate-900 mb-3 flex items-center">
                                     <Activity className="h-5 w-5 text-blue-500 mr-2" />
-                                    Types de Soins
+                                    {t('medical_visa_page.audience_types_title')}
                                 </h3>
                                 <ul className="space-y-2 text-slate-600">
-                                    <li>• Chirurgie esthétique et réparatrice.</li>
-                                    <li>• Soins dentaires complexes.</li>
-                                    <li>• Bilans de santé complets (Check-up).</li>
-                                    <li>• Traitements chroniques (Dialyse, etc.).</li>
+                                    {(t('medical_visa_page.audience_types_list') as unknown as string[]).map((item, i) => (
+                                        <li key={i}>• {item}</li>
+                                    ))}
                                 </ul>
                             </Card>
                             <Card variant="white" className="p-6 border-l-4 border-green-500">
                                 <h3 className="font-bold text-slate-900 mb-3 flex items-center">
                                     <House className="h-5 w-5 text-green-500 mr-2" />
-                                    Accompagnateurs
+                                    {t('medical_visa_page.audience_companion_title')}
                                 </h3>
                                 <p className="text-sm text-slate-600">
-                                    Jusqu'à 3 membres de la famille ou aidants peuvent généralement obtenir un visa de dépendant pour accompagner le patient durant son traitement.
+                                    {t('medical_visa_page.audience_companion_text')}
                                 </p>
                             </Card>
                         </div>
                     </section>
 
                     <section id="duration">
-                        <SectionTitle>Durée et Prolongations</SectionTitle>
+                        <SectionTitle>{t('medical_visa_page.duration_title')}</SectionTitle>
                         <div className="grid grid-cols-2 gap-4">
                             <Card variant="white" className="p-5 text-center">
                                 <Clock className="h-8 w-8 text-amber-500 mx-auto mb-2" />
-                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">Validité Type</div>
-                                <div className="text-xl font-bold text-slate-900">90 jours</div>
+                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">{t('medical_visa_page.duration_validity_label')}</div>
+                                <div className="text-xl font-bold text-slate-900">{t('medical_visa_page.duration_validity_value')}</div>
                             </Card>
                             <Card variant="white" className="p-5 text-center">
                                 <Globe className="h-8 w-8 text-blue-500 mx-auto mb-2" />
-                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">Extension</div>
-                                <div className="text-xl font-bold text-slate-900">Selon certificat médical</div>
+                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">{t('medical_visa_page.duration_extension_label')}</div>
+                                <div className="text-xl font-bold text-slate-900">{t('medical_visa_page.duration_extension_value')}</div>
                             </Card>
                         </div>
                     </section>
 
                     <section id="conditions">
-                        <SectionTitle>Documents Requis</SectionTitle>
+                        <SectionTitle>{t('medical_visa_page.conditions_title')}</SectionTitle>
                         <Card variant="white" className="p-6">
                             <ul className="space-y-3">
-                                {[
-                                    "Certificat médical délivré par un hôpital thaïlandais certifié.",
-                                    "Lettre d'invitation de l'établissement de santé.",
-                                    "Preuve de fonds suffisants pour couvrir les soins et le séjour.",
-                                    "Assurance santé couvrant spécifiquement le traitement si requis.",
-                                ].map((item, i) => (
+                                {(t('medical_visa_page.conditions_list') as unknown as string[]).map((item, i) => (
                                     <li key={i} className="flex items-start text-slate-700">
                                         <div className="h-1.5 w-1.5 rounded-full bg-amber-500 mr-3 mt-2 flex-shrink-0"></div>
                                         {item}
@@ -109,10 +105,10 @@ const MedicalClientPage: React.FC = () => {
                     </section>
 
                     <section id="assistance">
-                        <SectionTitle>L'avantage des hôpitaux privés</SectionTitle>
+                        <SectionTitle>{t('medical_visa_page.advantage_title')}</SectionTitle>
                         <Card variant="white" className="p-6 bg-slate-50 border-slate-200 italic">
                             <p className="text-slate-600">
-                                "La plupart des grands hôpitaux internationaux (Bumrungrad, Bangkok Hospital, Samitivej) disposent de centres de visas internes pour aider les patients avec leurs extensions sans avoir à se déplacer à l'Immigration centrale."
+                                {t('medical_visa_page.advantage_text')}
                             </p>
                         </Card>
                     </section>
@@ -120,10 +116,10 @@ const MedicalClientPage: React.FC = () => {
 
                 <div className="mt-16">
                     <Card variant="dark" className="p-8 text-center flex flex-col justify-center items-center">
-                        <h3 className="text-2xl font-bold text-white mb-2">Besoin d'une liaison médicale ?</h3>
-                        <p className="text-slate-400 mb-8 max-w-lg">Nous collaborons avec les meilleurs établissements pour faciliter votre admission et votre visa.</p>
+                        <h3 className="text-2xl font-bold text-white mb-2">{t('medical_visa_page.cta_help_title')}</h3>
+                        <p className="text-slate-400 mb-8 max-w-lg">{t('medical_visa_page.cta_help_subtitle')}</p>
                         <CTAButton href="https://desk.siamvisapro.com" variant="primary">
-                            Contacter notre service conciergerie
+                            {t('medical_visa_page.cta_help_btn')}
                         </CTAButton>
                     </Card>
                 </div>

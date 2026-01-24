@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { IMAGES } from '@/constants';
 
 interface ContactHeroProps {
@@ -10,10 +11,12 @@ export const ContactHero: React.FC<ContactHeroProps> = ({ title, subtitle }) => 
     return (
         <div className="bg-slate-900 text-white py-24 relative overflow-hidden">
             <div className="absolute inset-0 opacity-50">
-                <img
+                <Image
                     src={IMAGES.COMMUNICATION}
                     alt="Communication"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    priority
                 />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 to-slate-900/50"></div>

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { Crown, Shield, Star, Zap, Plane, Check, Phone } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
@@ -38,10 +39,12 @@ const EliteClientPage: React.FC = () => {
             {/* 1. Hero Section */}
             <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                 <div className="absolute inset-0 opacity-40">
-                    <img
+                    <Image
                         src="https://images.unsplash.com/photo-1549416878-b9ca95e26903?auto=format&fit=crop&w=1920&q=80"
                         alt="Luxury Thailand"
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
+                        priority
                     />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>

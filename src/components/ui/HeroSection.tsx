@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from 'next/image';
 
 interface HeroSectionProps {
     backgroundImage: string;
@@ -22,7 +22,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     return (
         <div className="bg-slate-900 text-white py-24 relative overflow-hidden">
             <div className={`absolute inset-0 opacity-${Math.round(overlayOpacity * 100)}`}>
-                <img src={backgroundImage} alt={imageAlt} className="w-full h-full object-cover" />
+                <Image
+                    src={backgroundImage}
+                    alt={imageAlt}
+                    fill
+                    className="object-cover"
+                    priority
+                />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 to-slate-900/50"></div>
             <div className="max-w-4xl mx-auto px-4 text-center relative z-10">

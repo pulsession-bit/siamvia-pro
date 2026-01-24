@@ -98,8 +98,25 @@ export function generateMetadataWithHreflang(options: {
             description,
             url: `${baseUrl}${getTranslatedPath(pageKey, lang)}`,
             siteName: 'SiamVisa Pro',
-            locale: lang === 'fr' ? 'fr_FR' : 'en_US',
+            locale: getOGLocale(lang),
             type: 'website',
         },
     };
+}
+
+function getOGLocale(lang: string): string {
+    const mapping: Record<string, string> = {
+        fr: 'fr_FR',
+        en: 'en_US',
+        de: 'de_DE',
+        it: 'it_IT',
+        es: 'es_ES',
+        ru: 'ru_RU',
+        zh: 'zh_CN',
+        ja: 'ja_JP',
+        ko: 'ko_KR',
+        ar: 'ar_SA',
+        th: 'th_TH',
+    };
+    return mapping[lang] || 'en_US';
 }

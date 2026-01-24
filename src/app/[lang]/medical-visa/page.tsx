@@ -9,9 +9,11 @@ import { generateMetadataWithHreflang } from '@/utils/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    const meta = {
-        title: `Visa Médical Thaïlande (Non-MT / Non-O) | Guide ${new Date().getFullYear()}`,
-        description: "Se soigner en Thaïlande. Tout savoir sur le visa médical, les extensions pour soins prolongés et les accompagnateurs."
+    const t = translations[lang as keyof typeof translations] || translations.en;
+
+    const meta = (t.medical_visa_page as any).meta || {
+        title: t.medical_visa_page.hero_title,
+        description: t.medical_visa_page.hero_subtitle
     };
 
     return generateMetadataWithHreflang({

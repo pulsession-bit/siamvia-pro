@@ -14,11 +14,37 @@ export const ja = {
     "eligibility": "専門家に相談する",
     "ltr": "LTRビザ",
     "languages": "言語",
-    "search": "検索", "comparator": "2026年 ビザ比較"
+    "search": "検索", "comparator": "2026年 ビザ比較",
+    "all_visas": "すべてのビザ",
+    "business": "ビジネスビザ",
+    "smart": "スマートビザ",
+    "exemption": "ビザ免除",
+    "family": "家族ビザ",
+    "student": "学生ビザ",
+    "volunteer": "ボランティアビザ",
+    "medical": "医療ビザ",
+    "religious": "宗教ビザ",
+    "media": "メディアビザ",
+    "official": "公用ビザ",
+    "scientific": "科学研究ビザ",
+    "visa_run": "ビザランのリスク (Visa Run)",
+    "categories": {
+      "work": "仕事・ビジネス",
+      "tourism": "観光",
+      "long_term": "長期滞在 (LTR)",
+      "family": "家族・結婚",
+      "education": "教育",
+      "elite": "エリート特典",
+      "others": "その他のビザ"
+    }
   },
   "meta": {
     "title": "Siam Visa Pro | タイビザ専門家 - DTV, 観光 & 退職",
     "description": "ストレスなくタイビザを取得。DTV、観光、退職者ビザの専門家。フルサポートと最適化されたポートフォリオを提供します。"
+  },
+  "home_page": {
+    "appointment_title": "あなたの計画についてお聞かせください",
+    "appointment_subtitle": "タイビザの専門家との無料相談を予約しましょう。"
   },
   "search_page": {
     "meta": {
@@ -50,8 +76,10 @@ export const ja = {
       "privilege": "エリート"
     },
     "details": "詳細",
+    "exploration_title": "カテゴリ別探索",
     "comparator_guide": {
       "title": "タイビザ比較ガイド – 2026",
+      "details_tips_title": "詳細とアドバイス",
       "intro": "タイの適切なビザの選択は、主に滞在期間、予定されている活動、および申請者のプロフィールによって決まります。この比較では、2026年に利用可能な主なビザとその用途および制限について説明します。",
       "table": {
         "headers": ["ビザ", "滞在期間", "就労の可否", "入国回数", "主な対象者"],
@@ -201,9 +229,17 @@ export const ja = {
     "btn_rates": "料金を見る"
   },
   "services_page": {
+    "meta": {
+      "title": "タイビザ申請代行サービスと料金 | Siam Visa Pro",
+      "description": "あなたに合ったサポートレベルをお選びください。書類チェックからDTV、エリート、長期滞在ビザの完全なE-Visa管理まで。"
+    },
     "hero_title": "サービスと料金",
     "hero_subtitle": "サポートレベルを選択してください。",
     "hero_tagline": "私たちはあなたの味方です。",
+    "hero_tagline_secondary": "タイでの安心のための完全な専門知識。",
+    "custom_support_title": "オーダーメイドのサポートが必要ですか？",
+    "custom_support_desc": "当社の専門家がお客様の特定のファイルを分析し、最適な海外移住戦略を提案します。",
+    "custom_support_btn": "専門家に相談する",
     "tier_audit": "監査パック",
     "tier_audit_desc": "書類の完全チェック。",
     "tier_serenity": "セレニティパック",
@@ -336,6 +372,10 @@ export const ja = {
     "start_request": "申請を開始"
   },
   "contact_page": {
+    "meta": {
+      "title": "Siam Visa Pro お問い合わせ | タイビザ専門家",
+      "description": "タイビザや当社のサービスについてご質問がありますか？私たちがサポートします。メール、電話、またはWhatsAppでお問い合わせください。"
+    },
     "title": "お問い合わせ",
     "subtitle": "ご質問ですか？",
     "form_title": "メッセージを送信",
@@ -448,6 +488,10 @@ export const ja = {
     "upsell_link": "DTVを見る"
   },
   "retirement_page": {
+    "meta": {
+      "title": "タイ退職者ビザ (Non-O / O-A) | 専門家ガイド 2026",
+      "description": "タイでのリタイア生活を楽しみましょう。80万バーツの銀行預金要件、50歳以上、医療保険。完全な行政サポート。"
+    },
     "badge": "長期滞在",
     "title": "退職者ビザ (Non-O / O-A)",
     "subtitle": "タイでリタイア生活を楽しみましょう。",
@@ -467,7 +511,416 @@ export const ja = {
     "price_desc": "保険分析 ＋ 書類作成 ＋ E-Visa申請",
     "btn_support": "相談する"
   },
+  "business_visa_page": {
+    "meta": {
+      "title": "タイビジネスビザ (Non-B) | ガイドと要件 2026",
+      "description": "タイで合法的に働くためのNon-Immigrant Bビザについてすべて。労働許可証、書類、手続き。"
+    },
+    "hero_badge": "就労・ビジネス",
+    "hero_title": "ビジネスビザ (Non-B) – タイ",
+    "hero_subtitle": "タイで合法的に働く、または起業する",
+    "definition_title": "Non-Bビザとは？",
+    "definition_content": "Non-Immigrant B (Business) ビザは、タイの企業で従業員として働きたい、または王国で自身のビジネスを立ち上げたい外国人のための標準的なビザです。労働許可証 (Work Permit) を取得するために必須の前提条件です。",
+    "audience_title": "対象者は？",
+    "audience_employees_title": "従業員",
+    "audience_employees_text": "現地企業に採用された方。",
+    "audience_entrepreneurs_title": "起業家",
+    "audience_entrepreneurs_text": "自身の法人 (Company Limited) を設立する方。",
+    "duration_title": "有効期間と滞在期間",
+    "duration_initial_label": "初回有効期間",
+    "duration_initial_value": "90日間",
+    "duration_extension_label": "延長",
+    "duration_extension_value": "1年間 (更新可能)",
+    "conditions_title": "主な条件",
+    "conditions_list": [
+      "招聘状または雇用契約書。",
+      "会社の法的書類 (WP3, Por Por 20など)。",
+      "外国人1名に対しタイ人従業員4名の比率。",
+      "労働許可証1件につき最低200万バーツの登録資本金。"
+    ],
+    "caution_title": "注意：フリーランス",
+    "caution_text": "タイ国外のクライアントと仕事をするフリーランスの場合、通常はNon-BビザよりもDTVビザの方がはるかに簡単で低コストです。",
+    "cta_btn": "ビジネスエキスパートに相談する"
+  },
+  "exemption_visa_page": {
+    "meta": {
+      "title": "タイビザ免除 (60日間) | ガイドとルール 2026",
+      "description": "タイへのビザなし入国についてすべて：60日間の滞在期間、対象国（日本など）、延長、ルール。"
+    },
+    "hero_badge": "短期観光滞在",
+    "hero_title": "ビザ免除 (60日間) – タイ",
+    "hero_subtitle": "ビザなし入国の条件と滞在期間",
+    "definition_title": "ビザ免除 (60日間) とは？",
+    "definition_content": "ビザ免除制度により、日本を含む93か国の国民は事前のビザ申請なしでタイに入国できます。2か月以内の観光滞在に最もシンプルな解決策です。",
+    "audience_title": "対象者は？",
+    "audience_compatible": "適合するプロフィール",
+    "audience_compatible_list": [
+      "短期休暇の観光客 (最大2-3ヶ月)。",
+      "短期の家族訪問。",
+      "単発の通院・診察。"
+    ],
+    "audience_not_compatible": "不適合なプロフィール",
+    "audience_not_compatible_list": [
+      "長期リモートワーカー (入国拒否リスクあり)。",
+      "タイ移住を希望する方。",
+      "現地での就労 (厳禁)。"
+    ],
+    "duration_title": "滞在期間と有効性",
+    "duration_initial_label": "初期滞在期間",
+    "duration_initial_value": "60日間",
+    "duration_max_label": "現地での延長",
+    "duration_max_value": "+ 30日間",
+    "conditions_title": "主な条件と基準",
+    "conditions_list": [
+      "入国時に有効期間が6ヶ月以上あるパスポート。",
+      "60日以内の出国証明 (航空券)。",
+      "十分な滞在資金の証明 (1人1万バーツ)。",
+      "ブラックリストに載っていないこと。"
+    ],
+    "work_title": "就労と許可される活動",
+    "work_warning_title": "就労の禁止",
+    "work_warning_text": "ビザ免除は純粋な観光資格です。この資格でタイ国内で働くこと (ボランティアを含む) は固く禁じられています。",
+    "renewal_title": "更新と延長",
+    "renewal_text": "現地の入国管理局で一度だけ30日間の延長が可能です (費用: 1,900バーツ)。",
+    "limitations_title": "制限と注意点",
+    "limitations_risk_title": "搭乗拒否のリスク",
+    "limitations_risk_text": "60日以内の出国航空券がない場合、出発地の空港で航空会社から搭乗を拒否される可能性があります。",
+    "cta_help_title": "もっと長く滞在したいですか？",
+    "cta_help_subtitle": "DTVビザ (5年) または LTRビザ (10年) をご検討ください。",
+    "cta_help_btn": "DTVビザを見る",
+    "cta_compare_title": "オプションを比較",
+    "cta_compare_subtitle": "観光、免除、それともリタイアメント？",
+    "cta_compare_btn": "観光ビザ (TR) を見る"
+  },
+  "student_visa_page": {
+    "meta": {
+      "title": "タイ学生ビザ (Non-ED) | ガイドと要件 2026",
+      "description": "タイで勉強するためのビザ（大学、語学学校、ムエタイ）。条件、期間、入学、就労禁止について。"
+    },
+    "hero_badge": "教育・トレーニング",
+    "hero_title": "学生ビザ (Non-ED) – タイ",
+    "hero_subtitle": "大学留学またはタイ語学習",
+    "definition_title": "学生ビザ (Non-ED) とは？",
+    "definition_content": "Non-Immigrant ED (Education) ビザは、タイでフルタイムの教育を受けたい外国人のためのものです。大学のコース、必須インターンシップのほか、語学学校や文化学習 (ムエタイ、料理) も含まれます。",
+    "audience_title": "対象者は？",
+    "audience_compatible": "適合するプロフィール",
+    "audience_compatible_list": [
+      "大学の交換留学生。",
+      "タイ語学習者 (私立学校)。",
+      "ムエタイ生 (認定キャンプ)。"
+    ],
+    "audience_not_compatible": "不適合なプロフィール",
+    "audience_not_compatible_list": [
+      "授業に出席しない「偽装学生」。",
+      "不法就労目的の方。",
+      "安易な長期滞在目的の観光客。"
+    ],
+    "duration_title": "滞在期間と有効性",
+    "duration_initial_label": "初回滞在期間",
+    "duration_initial_value": "90日間",
+    "duration_max_label": "最大合計",
+    "duration_max_value": "1年間 (延長による)",
+    "conditions_title": "主な条件と基準",
+    "conditions_list": [
+      "文部省認可の学校または大学への入学。",
+      "学校発行の正式な入学許可証。",
+      "授業への出席 (頻繁なチェックあり)。",
+      "授業料の支払い証明。"
+    ],
+    "work_title": "就労と許可される活動",
+    "work_warning_title": "就労の禁止",
+    "work_warning_text": "学生ビザでの就労は全面的に禁止されています。これにはフリーランスや「デジタルノマド」活動も含まれます。",
+    "renewal_title": "更新と延長",
+    "renewal_text": "通常90日ごとに発行されます。学校の発行する出席証明書を添えて、90日ごとに入国管理局で延長手続きを行う必要があります。",
+    "limitations_title": "制限と注意点",
+    "limitations_control_title": "入国審査官のチェック",
+    "limitations_control_text": "延長時にランダムで語学テストが行われることがあります。タイ語学習ビザなのにタイ語が全く話せない場合、延長が拒否されることがあります。",
+    "cta_school_title": "学校をお探しですか？",
+    "cta_school_subtitle": "当社の教育パートナーがサポートいたします。",
+    "cta_school_btn": "学校を探す",
+    "cta_compare_title": "オプションを比較",
+    "cta_compare_subtitle": "学生 vs DTV (オンラインで働く場合)。",
+    "cta_compare_btn": "DTVビザを見る"
+  },
+  "smart_visa_page": {
+    "meta": {
+      "title": "タイSMARTビザ | タレント・投資家向け 2026",
+      "description": "タレント、投資家、経営者向けの特別な4年ビザ。労働許可証不要、家族帯同可。BOIの条件が適用されます。"
+    },
+    "hero_badge": "タレント＆イノベーション",
+    "hero_title": "SMARTビザ – タイ",
+    "hero_subtitle": "高度人材・投資家のための4年ビザ",
+    "definition_title": "SMARTビザとは？",
+    "definition_content": "SMARTビザは、テック、ヘルスケア、環境などの重点産業 (S-Curve Industries) において、高度なスキルを持つ人材、投資家、経営者、スタートアップを惹きつけるために設計された特別なビザです。",
+    "audience_title": "対象者は？",
+    "audience_compatible": "適合するプロフィール",
+    "audience_compatible_list": [
+      "SMART T (タレント): 月収10万バーツ以上の専門家。",
+      "SMART I (投資家): 2,000万バーツ以上の直接投資。",
+      "SMART S (スタートアップ): テック系創業家。",
+      "SMART E (エグゼクティブ): 上級管理職。"
+    ],
+    "audience_industries": "重点産業",
+    "audience_industries_list": [
+      "デジタル＆テック、オートメーション。",
+      "医療＆ウェルネス、バイオテック。",
+      "クリーンエネルギー、航空、農業。"
+    ],
+    "duration_title": "滞在期間と有効性",
+    "duration_standard_label": "標準期間",
+    "duration_standard_value": "4年間",
+    "duration_reporting_label": "報告義務",
+    "duration_reporting_value": "1年ごと (通常は90日)",
+    "conditions_title": "主な条件と基準",
+    "conditions_list": [
+      "BOI (タイ投資委員会) による承認が必須。",
+      "規定以上の給与または投資額。",
+      "重点産業に該当する認定企業での就労。"
+    ],
+    "work_title": "就労と許可される活動",
+    "work_no_permit_title": "労働許可証が不要",
+    "work_no_permit_text": "SMARTビザは労働許可証を兼ねているため、別途ワークパーミットを申請する必要はありません。",
+    "renewal_title": "更新と延長",
+    "renewal_text": "BOIの基準を満たし続ける限り、4年ごとに更新可能です。最大の利点は90日レポートが1年レポートになることです。",
+    "limitations_title": "制限と注意点",
+    "limitations_complex_title": "複雑な審査プロセス",
+    "limitations_complex_text": "ビザ申請の前にBOIによる技術的な審査が必要で、完了までに1〜2ヶ月かかる場合があります。",
+    "cta_eligible_title": "あなたの会社は対象ですか？",
+    "cta_eligible_subtitle": "SMARTビザが取得可能か確認しましょう。",
+    "cta_eligible_btn": "診断を受ける",
+    "cta_compare_title": "オプションを比較",
+    "cta_compare_subtitle": "SMARTビザ vs LTR (長期居住者)。",
+    "cta_compare_btn": "LTRビザを見る"
+  },
+  "family_visa_page": {
+    "meta": {
+      "title": "タイ家族ビザ (Non-O) | 結婚と扶養家族 2026",
+      "description": "タイでの家族再統合のためのビザ：タイ国籍者との結婚またはタイ国籍の子供の親。財務条件とプロセス。"
+    },
+    "hero_badge": "家族の呼び寄せ",
+    "hero_title": "家族ビザ (Non-O) – タイ",
+    "hero_subtitle": "配偶者や子供と一緒に暮らす",
+    "definition_title": "家族ビザ (Non-O) とは？",
+    "definition_content": "Non-Immigrant O (Thai Family) ビザは、タイ国民との直接的な家族関係に基づいてタイに居住するためのビザです。",
+    "audience_title": "対象者は？",
+    "audience_compatible": "適合するプロフィール",
+    "audience_compatible_list": [
+      "タイ人と法的婚姻関係にある方。",
+      "タイ人の子供の法的親である方。",
+      "就労・退職ビザ保持者の家族 (帯同)。"
+    ],
+    "audience_not_compatible": "不適合なプロフィール",
+    "audience_not_compatible_list": [
+      "事実婚 (認められません)。",
+      "婚姻届を出していないパートナー。",
+      "友人や遠い親戚。"
+    ],
+    "duration_title": "滞在期間と有効性",
+    "duration_initial_label": "初回滞在期間",
+    "duration_initial_value": "90日間",
+    "duration_max_label": "最大延長",
+    "duration_max_value": "1年間 (更新可能)",
+    "conditions_title": "主な条件と基準",
+    "conditions_list": [
+      "正式な婚姻証明書または子供の出生証明書。",
+      "資金証明: 銀行預金40万バーツまたは月収4万バーツ。",
+      "同居の証明 (写真、自宅の図面など)。",
+      "入国管理局員による自宅訪問の可能性あり。"
+    ],
+    "work_title": "就労と許可される活動",
+    "work_allowed_title": "就労可能 (条件あり)",
+    "work_allowed_text": "観光系ビザと異なり、Non-O家族ビザは別途ワークパーミットを取得することでタイ国内で就労可能です。",
+    "renewal_title": "更新と延長",
+    "renewal_text": "タイ国内の入国管理局で毎年更新手続きを行います。審査には約30日かかります。",
+    "limitations_title": "制限と注意点",
+    "limitations_divorce_title": "離婚 ＝ ビザ失効",
+    "limitations_divorce_text": "離婚した場合、ビザは直ちに失効します。通常、7日以内に出国する必要があります。",
+    "cta_help_title": "結婚ビザでお困りですか？",
+    "cta_help_subtitle": "更新手続きの煩雑な事務作業を代行します。",
+    "cta_help_btn": "専門家に相談",
+    "cta_compare_title": "まだ独身ですか？",
+    "cta_compare_subtitle": "個別の長期滞在ビザをご検討ください。",
+    "cta_compare_btn": "エリートビザを見る"
+  },
+  "volunteer_visa_page": {
+    "meta": {
+      "title": "タイボランティアビザ (Non-O Volunteer) | ガイド 2026",
+      "description": "タイのボランティアビザ取得方法。NGO、財団、慈善団体でのボランティア活動の要件。"
+    },
+    "hero_badge": "ボランティア・人道支援",
+    "hero_title": "ボランティアビザ (Non-O Volunteer) – タイ",
+    "hero_subtitle": "タイの人道支援活動に従事する",
+    "definition_title": "ボランティアビザとは？",
+    "definition_content": "Non-Immigrant O (Volunteer) ビザは、認定された慈善団体やNGOで無報酬の活動を希望する外国人のためのものです。",
+    "audience_title": "対象者は？",
+    "audience_compatible": "適合するプロフィール",
+    "audience_compatible_list": [
+      "登録財団でのボランティア員。",
+      "人道支援任務のスタッフ。",
+      "象の保護活動など動物保護。"
+    ],
+    "audience_not_compatible": "不適合なプロフィール",
+    "audience_not_compatible_list": [
+      "短期のボランティア観光 (30日未満)。",
+      "正式な招待状がない方。",
+      "就労ビザ取得を避けようとする労働者。"
+    ],
+    "duration_title": "滞在期間と有効性",
+    "duration_initial_label": "初回滞在期間",
+    "duration_initial_value": "90日間",
+    "duration_max_label": "最大合計",
+    "duration_max_value": "1年間 (延長による)",
+    "conditions_title": "主な条件と基準",
+    "conditions_list": [
+      "タイの登録団体からの正式な招待状。",
+      "団体の設立許可証コピー。",
+      "ワークパーミット必須 (ボランティアでも必要)。",
+      "無犯罪証明書 (教育関連の場合)。"
+    ],
+    "warning_title": "重要：グレーゾーンへの注意",
+    "warning_regulation_title": "厳格な規制",
+    "warning_regulation_text": "実態のないボランティアビザを販売する業者が存在しますが、入国管理局の監視が非常に厳しくなっています。",
+    "cta_help_title": "書類作成でお困りですか？",
+    "cta_help_subtitle": "ボランティアビザは提出書類が複雑です。適合性の確認をサポートします。",
+    "cta_help_btn": "専門家に相談"
+  },
+  "medical_visa_page": {
+    "meta": {
+      "title": "タイ医療ビザ (Non-MT / Non-O) | ガイド 2026",
+      "description": "タイでの医療ケア。医療ビザ、長期治療のための延長、付き添いビザについてすべて。"
+    },
+    "hero_badge": "医療・健康",
+    "hero_title": "医療ビザ (Non-MT / Non-O) – タイ",
+    "hero_subtitle": "タイで世界クラスの医療を受ける",
+    "definition_title": "医療ビザとは？",
+    "definition_content": "タイはメディカルツーリズムの主要目的地です。外科手術、長期治療、リハビリ目的の滞在を許可するビザです。",
+    "audience_title": "対象となる医療とプロフィール",
+    "audience_types_title": "治療の種類",
+    "audience_types_list": [
+      "美容・形成外科手術。",
+      "高度な歯科治療。",
+      "人間ドック (包括的なチェックアップ)。",
+      "慢性疾患治療 (人工透析など)。"
+    ],
+    "audience_companion_title": "付き添いの方",
+    "audience_companion_text": "最大3名までの家族や介護者が帯同ビザを取得可能です。",
+    "duration_title": "滞在期間と延長",
+    "duration_validity_label": "標準有効期間",
+    "duration_validity_value": "90日間",
+    "duration_extension_label": "延長",
+    "duration_extension_value": "医師の診断書に基づく",
+    "conditions_title": "必要書類",
+    "conditions_list": [
+      "認定されたタイの病院発行の診断書。",
+      "医療機関からの招待状。",
+      "治療費と滞在費をカバーする資金証明。",
+      "特定治療に対応した医療保険。"
+    ],
+    "advantage_title": "私立病院の利点",
+    "advantage_text": "主要な国際病院の多くは院内にビザセンターがあり、延長手続きを支援してくれます。",
+    "cta_help_title": "医療機関との連携が必要ですか？",
+    "cta_help_subtitle": "スムーズな受け入れとビザ取得をサポートします。",
+    "cta_help_btn": "コンシェルジュに相談"
+  },
+  "religious_visa_page": {
+    "meta": {
+      "title": "タイ宗教ビザ (Non-R) | ガイド 2026",
+      "description": "タイでの僧侶、宣教師、宗教活動のためのビザ。申請条件とスポンサーシップ要件。"
+    },
+    "hero_badge": "布教・宗教活動",
+    "hero_title": "宗教ビザ (Non-R) – タイ",
+    "hero_subtitle": "宗教任務または仏教の研究",
+    "definition_title": "宗教ビザとは？",
+    "definition_content": "Non-Immigrant R (Religious) ビザは、公認団体に後援された宗教活動に従事する外国人のためのものです。",
+    "conditions_title": "対象と条件",
+    "conditions_list": [
+      "登録宗教団体による後援。",
+      "宗教省または仏教事務局による承認。",
+      "給与を受け取らないとの誓約書。",
+      "宗教施設での居住証明。"
+    ],
+    "duration_title": "有効性、延長",
+    "duration_initial_label": "初回有効期間",
+    "duration_initial_value": "90日間",
+    "duration_max_label": "最大延長",
+    "duration_max_value": "1年間 (更新可能)",
+    "footer_note": "このビザは各宗教当局との密接な調整が必要です。",
+    "cta_btn": "専門的なアドバイスを求める"
+  },
+  "media_visa_page": {
+    "meta": {
+      "title": "タイメディア・ジャーナリストビザ (Non-M) | ガイド 2026",
+      "description": "タイのジャーナリスト、報道特派員、撮影クルーのためのビザ。認定と必要な条件。"
+    },
+    "hero_badge": "プレス・ジャーナリズム",
+    "hero_title": "メディアビザ (Non-M) – タイ",
+    "hero_subtitle": "タイでの報道やコンテンツ制作",
+    "definition_title": "メディアビザ (Non-M) とは？",
+    "definition_content": "Non-Immigrant M (Media) は、認定されたメディア専門家 (記者、特派員、撮影クルー) 向けのビザです。",
+    "accreditation_title": "重要ステップ：認定取得",
+    "accreditation_subtitle": "ビザ申請の前に、外務省 (MFA) からの認定を受ける必要があります。",
+    "accreditation_list": [
+      "外務省のポータルサイト (M-Press) での登録。",
+      "記者証と雇用主からのレター提出。",
+      "広報局による身辺調査。"
+    ],
+    "conditions_title": "条件と有効性",
+    "duration_label": "滞在期間",
+    "duration_value": "1年間 (更新可能)",
+    "activity_label": "活動内容",
+    "activity_value": "報道および制作活動",
+    "warning_title": "撮影に関する警告",
+    "warning_text": "観光ビザでの商業撮影は高額な罰金の対象です。タイ・フィルム・オフィスの許可も必須です。",
+    "cta_btn": "外務省認定の支援を受ける"
+  },
+  "official_visa_page": {
+    "meta": {
+      "title": "タイ公用ビザ (Non-F) | ガイド 2026",
+      "description": "タイで任務に就く公務員、外交官、国際機関職員のためのビザ。"
+    },
+    "hero_badge": "外交・公務",
+    "hero_title": "公務ビザ (Non-F) – タイ",
+    "hero_subtitle": "タイでの外交および公的任務",
+    "definition_title": "公務ビザとは？",
+    "definition_content": "Non-Immigrant F (Official) は、公的任務にある方 (外交官、国際機関職員) 向けのビザです。",
+    "audience_title": "受益者",
+    "audience_diplomatic_title": "外交団",
+    "audience_diplomatic_text": "大使館、領事館、武官。",
+    "audience_oi_title": "国際機関 / 国連",
+    "audience_oi_text": "バンコクを拠点とする国連職員、ユニセフ等。",
+    "conditions_title": "特有の要件",
+    "conditions_text": "本国政府または国際機関からの口上書 (Note Verbale) が必須です。",
+    "cta_btn": "支援を依頼する"
+  },
+  "scientific_visa_page": {
+    "meta": {
+      "title": "タイ科学研究ビザ (Non-RS) | ガイド 2026",
+      "description": "タイで研究活動を行う研究者、専門家、科学者のためのビザ。"
+    },
+    "hero_badge": "研究・イノベーション",
+    "hero_title": "科学研究ビザ (Non-RS) – タイ",
+    "hero_subtitle": "タイの科学技術の発展に寄与する",
+    "definition_title": "科学研究ビザとは？",
+    "definition_content": "Non-Immigrant RS (Research & Science) は、タイの研究機関と協力して学術・研究活動を行う専門家向けです。",
+    "audience_title": "対象プロフィール",
+    "audience_tech_title": "技術エキスパート",
+    "audience_tech_text": "技術移転を専門とするエンジニアやスペシャリスト。",
+    "audience_academic_title": "学術研究者",
+    "audience_academic_text": "大学や国立研究センターでの任務に従事する科学者。",
+    "conditions_title": "必要条件",
+    "conditions_list": [
+      "タイの研究機関からの招待状。",
+      "機関間の学術協力協定書。",
+      "学位記および詳細な履歴書。",
+      "研究資金の証明。"
+    ],
+    "cta_btn": "スポンサーシップを確認"
+  },
   "tourist_visa_page": {
+    "meta": {
+      "title": "タイ観光ビザ (TR) | 延長とガイド 2026",
+      "description": "ストレスなくタイを発見するためのクラシックなビザ。到着時に60日間、30日間の延長が可能。必要書類と費用。"
+    },
     "hero_title": "観光ビザ (TR)",
     "hero_subtitle": "タイを最大90日間探索するための定番オプション。",
     "rules_title": "基本ルール",
@@ -588,35 +1041,168 @@ export const ja = {
     }
   },
   "faq_page": {
-    "title": "よくある質問",
-    "subtitle": "知っておくべきこと。",
-    "questions": [
+    "title": "よくある質問 (FAQ)",
+    "subtitle": "出発前に知っておくべきすべてのこと。",
+    "sections": [
       {
-        "q": "DTVと観光ビザの違い？",
-        "a": "観光は60日。DTVは5年で就労可。"
+        "title": "タイのビザを理解する",
+        "questions": [
+          {
+            "q": "タイに行くのにビザは必要ですか？",
+            "a": "国籍や滞在期間によって異なります。多くの旅行者は、短期間の観光滞在であればビザ免除制度により、事前にビザを取得せずに入国できます。この期間を超える場合、または特定の目的（長期滞在、リモートワーク、退職生活）の場合は、ビザが必須となります。"
+          },
+          {
+            "q": "ビザ免除と観光ビザの違いは何ですか？",
+            "a": "免除は事前の申請なしで入国できますが、滞在期間が短く柔軟性に欠けます。観光ビザは出発前に申請が必要ですが、より長い滞在と現地での延長が可能です。どちらも就労は認められていません。"
+          },
+          {
+            "q": "タイに90日以上滞在するにはどのビザを選ぶべきですか？",
+            "a": "90日以上の滞在には、<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>（5年）、<a href='/ja/ltr' class='text-amber-600 font-medium hover:underline'>LTRビザ</a>（10年）、または<a href='/ja/retirement-visa' class='text-amber-600 font-medium hover:underline'>退職者ビザ</a>（Non-O）などの長期滞在ビザを選択する必要があります。<a href='/ja/tourist-visa' class='text-amber-600 font-medium hover:underline'>観光ビザ</a>は最大90日間（60+30）に制限されています。"
+          },
+          {
+            "q": "ビザなしで入国して現地で延長できますか？",
+            "a": "はい。多くの国で適用されているビザ免除（現在は通常60日間）は、現地の入国管理局で一度だけ30日間の延長が可能です。"
+          },
+          {
+            "q": "タイ入国後にビザの種類を変更できますか？",
+            "a": "一部のケース（例：観光から退職者へ）では可能ですが、自動的ではなく、保証もされていません。<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>への切り替えなどは、通常、国外から新しく申請する必要があります。"
+          },
+          {
+            "q": "タイでの合法的な最大滞在期間は？",
+            "a": "<a href='/ja/elite-visa' class='text-amber-600 font-medium hover:underline'>エリートビザ</a>やLTRであれば、最大20年まで可能です。DTVは1回の入国で180日間（延長可能）。観光ビザは最大90日間です。"
+          },
+          {
+            "q": "年に何回タイに入国できますか？",
+            "a": "厳格な明文規定はありませんが、入国管理局は繰り返しの入国（<a href='/ja/visa-run' class='text-amber-600 font-medium hover:underline'>ビザラン</a>）を監視しています。マルチプルビザ（<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>、エリート）であれば、入国回数に制限はありません。"
+          },
+          {
+            "q": "タイのビザルールは頻繁に変わりますか？",
+            "a": "はい、規制は進化します。公式なソースや最新の動向に詳しい専門家を参照することが重要です。当社のナレッジベースは2026年版に更新されています。"
+          }
+        ]
       },
       {
-        "q": "観光ビザで働ける？",
-        "a": "いいえ、違法です。"
+        "title": "就労、活動、リモートワーク",
+        "questions": [
+          {
+            "q": "観光ビザでタイで働けますか？",
+            "a": "いいえ。<a href='/ja/tourist-visa' class='text-amber-600 font-medium hover:underline'>観光ビザ</a>では、有報酬のリモートワークを含め、タイ国内での一切 of 職業活動は認められません。観光ビザでの就労は罰則（罰金、強制送還）の対象となります。"
+          },
+          {
+            "q": "タイでリモートワークは許可されていますか？",
+            "a": "はい。ただし、<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>やLTRなど、特定の適合するビザを保持している場合に限ります。リモートワークは、現地の活動と競合しない範囲で、外国の団体に対して行われる必要があります。"
+          },
+          {
+            "q": "現地就労とリモートワークの違いは何ですか？",
+            "a": "現地就労はタイの雇用主を伴い、労働許可証（Work Permit）が厳密に必要です。リモートワーク（外国のクライアント/雇主向け）は、<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>のもとで労働許可証なしで許容されます。"
+          },
+          {
+            "q": "タイから仕事をするのに労働許可証は必要ですか？",
+            "a": "<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>（リモートワーク用）であれば不要です。それ以外のビザ（Non-Bなど）では、労働許可証（Work Permit）が厳密に必須です。"
+          },
+          {
+            "q": "ビザを持ってタイで起業できますか？",
+            "a": "株主になることは可能ですが、実際に働いたりサイン権を持つ取締役になるには、<a href='/ja/business-visa' class='text-amber-600 font-medium hover:underline'>Non-Bビザ</a>と労働許可証が必要です。"
+          },
+          {
+            "q": "タイで合法的に働けるのはどのビザですか？",
+            "a": "<a href='/ja/business-visa' class='text-amber-600 font-medium hover:underline'>Non-Bビザ</a>（労働許可証付き）、<a href='/ja/ltr' class='text-amber-600 font-medium hover:underline'>LTRビザ</a>（デジタル労働許可証含む）、<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>（リモートワークのみ）、およびエリートビザ（稀な就労オプションを付加した場合のみ）。"
+          },
+          {
+            "q": "不適切なビザでの就労：リスクは何ですか？",
+            "a": "罰金、禁固刑、強制送還、および数年間にわたるタイ入国禁止リスト（ブラックリスト）への登録。"
+          }
+        ]
       },
       {
-        "q": "期間は？",
-        "a": "5〜15日。"
+        "title": "期間、延長、出国",
+        "questions": [
+          {
+            "q": "タイでビザの延長はできますか？",
+            "a": "はい、ビザの種類によります。観光ビザや免除入国は30日間の延長が可能です。DTVは180日間の延長が可能です（1回の入国につき1回）。"
+          },
+          {
+            "q": "何回ビザを延長できますか？",
+            "a": "通常、1回の入国につき1回のみです。より長く滞在するには、一度出国して再入国する（ビザが許す場合）か、ビザを変更する必要があります。"
+          },
+          {
+            "q": "ビザを更新するために出国する必要がありますか？",
+            "a": "マルチプルビザ（DTV、エリート）の場合、許可された滞在期間（例：180日）の終了時に、新しい滞在期間を「アクティベート」するために一度出国する必要があります。シングルビザの場合は、新しく申請し直す必要があります。"
+          },
+          {
+            "q": "リエントリーパーミット（再入国許可）とは何ですか？いつ必要ですか？",
+            "a": "現在のビザを失効させずに再入国するための許可です。シングルビザを保持していて、タイ滞在中に一時的に出国する必要がある場合に必須となります。"
+          },
+          {
+            "q": "タイに数年間合法的に滞在できますか？",
+            "a": "はい。ただし、特定の長期滞在ビザ（退職者、DTV、LTR、エリート）を保持している場合に限ります。観光ビザを連続して取得し続けることは、長期的には不可能な解決策です。"
+          },
+          {
+            "q": "シングルビザとマルチプルビザの違いは何ですか？",
+            "a": "シングル：一度出国するとビザは終了します。マルチプル：ビザの有効期間内であれば、何度でも自由に出入国が可能です。"
+          }
+        ]
       },
       {
-        "q": "資金は凍結される？",
-        "a": "いいえ、見せるだけです。"
+        "title": "よくある間違いとリスク",
+        "questions": [
+          {
+            "q": "タイでオーバーステイをするとどうなりますか？",
+            "a": "滞在期限を過ぎると、1日につき500バーツ（最大20,000バーツ）の罰金が課されます。長期間のオーバーステイ（90日以上）は、国外追放と入国禁止（ブラックリスト）の原因となります。"
+          },
+          {
+            "q": "間違ったビザで就労した場合のリスクは？",
+            "a": "入国管理法および労働法の違反となります。逮捕および強制送還のリスクがあります。"
+          },
+          {
+            "q": "ビザは理由なしで拒否されることがありますか？",
+            "a": "はい。領事当局は決定の理由を説明する義務を負いません。不備のある書類準備が最も多い却下理由です。"
+          },
+          {
+            "q": "タイビザが却下された場合はどうすればよいですか？",
+            "a": "原因（多くは資金面や書類不備）を分析し、修正した上で新しく申請する必要があります。申請費用は返金されません。"
+          },
+          {
+            "q": "タイから入国禁止を言い渡されることはありますか？",
+            "a": "はい。重大なオーバーステイや不法就労の場合に適用されます。"
+          },
+          {
+            "q": "ビザランはまだ認められていますか？",
+            "a": "もはや信頼できる解決策ではありません。適切なビザを持たずに陸路や空路で出入国を繰り返すプロフィールは、入国管理局によって厳しく監視されています。"
+          }
+        ]
       },
       {
-        "q": "拒否されたら？",
-        "a": "返金されません。"
+        "title": "特定のプロフィール",
+        "questions": [
+          {
+            "q": "50歳以降にタイで暮らすならどのビザ？",
+            "a": "働かないのであれば、<a href='/ja/retirement-visa' class='text-amber-600 font-medium hover:underline'>退職者ビザ</a>（Non-O または O-A）が最も適しています。LTR「Wealthy Pensioner」はVIP向けオプションです。"
+          },
+          {
+            "q": "働かずにタイに住むためのビザは？",
+            "a": "エリートビザ（有料、VIP）、<a href='/ja/retirement-visa' class='text-amber-600 font-medium hover:underline'>退職者ビザ</a>（50歳以上）、または<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>（不労所得やソフトパワー活動がある場合。要確認）。"
+          },
+          {
+            "q": "出国せずに長期間タイに滞在するためのビザは？",
+            "a": "<a href='/ja/elite-visa' class='text-amber-600 font-medium hover:underline'>エリートビザ</a>または<a href='/ja/retirement-visa' class='text-amber-600 font-medium hover:underline'>退職者ビザ</a>（現地での年次更新を伴うもの）が、強制的な出国を避けるために最適です。"
+          }
+        ]
       }
     ],
-    "not_found_title": "答えが見つからない？",
-    "not_found_desc": "専門家が答えます。",
-    "not_found_btn": "資格確認"
+    "not_found_title": "答えが見つかりませんか？",
+    "not_found_desc": "当社の専門家があなたの状況を個別に分析します。",
+    "not_found_btn": "無料で資格を確認する",
+    "meta": {
+      "title": "タイビザ FAQ | あなたの疑問に答えます - Siam Visa Pro",
+      "description": "タイビザ（DTV、TR、Non-O）に関するよくある質問。滞在準備のためのすべての回答がここに。"
+    }
   },
   "terms_page": {
+    "meta": {
+      "title": "利用規約 | Siam Visa Pro",
+      "description": "Siam Visa Pro行政書士支援サービスのプライバシーポリシー、法的通知、および利用規約。"
+    },
     "title": "利用規約",
     "subtitle": "プライバシーと法務",
     "legal_title": "法的通知",
@@ -638,21 +1224,21 @@ export const ja = {
   },
   "about_page": {
     "meta": {
-      "title": "About Siam Visa Pro | Expert Thailand Visa Assistance",
-      "description": "Learn about Siam Visa Pro's mission, our team of experts, and how we help digital nomads and retirees secure their future in Thailand."
+      "title": "Siam Visa Proについて | タイビザ申請の専門家によるサポート",
+      "description": "Siam Visa Proのミッション、専門家チーム、そしてデジタルノマドや退職者のタイでの未来をどのようにサポートしているかをご紹介します。"
     },
-    "hero_title": "Who We Are",
-    "hero_subtitle": "Your bridge to a seamless life in Thailand.",
-    "mission_title": "Our Mission",
-    "mission_text1": "Founded by expats for expats, Siam Visa Pro was born from a simple observation: the Thai visa process is often confusing, changing, and stressful.",
-    "mission_text2": "Our goal is to digitize and simplify this process while maintaining a high level of human expertise. We combine AI-driven file analysis with manual oversight to ensure the highest success rates.",
-    "team_title": "The Team",
-    "team_description": "Our experts are based in Bangkok, giving us a unique perspective on both consular requirements and local immigration realities.",
+    "hero_title": "私たちについて",
+    "hero_subtitle": "タイでのシームレスな生活への架け橋。",
+    "mission_title": "私たちのミッション",
+    "mission_text1": "元駐在員によって元駐在員のために設立されたSiam Visa Proは、タイのビザプロセスがしばしば混乱し、変化しやすく、ストレスフルであるという単純な観察から生まれました。",
+    "mission_text2": "私たちの目標は、高いレベルの人間的な専門知識を維持しながら、このプロセスをデジタル化し簡素化することです。AIによる書類分析と手動の監視を組み合わせ、最高の成功率を確保しています。",
+    "team_title": "チーム",
+    "team_description": "私たちの専門家はバンコクを拠点としており、領事館の要件と現地の入国管理の実情の両方について独自の視点を持っています。",
     "founder_name": "Raphaël Buresi",
-    "founder_role": "Founder & Visa Strategist",
-    "founder_bio": "With years of experience in the Thai tech and administrative ecosystem, Raphaël created Siam Visa Pro to help the nomadic community thrive in Thailand.",
-    "partnership_title": "A DigitGpt LLC Company",
-    "partnership_text": "Siam Visa Pro is powered by DigitGpt LLC, a technology firm specializing in AI-driven administrative automation. This partnership allows us to offer cutting-edge tools like our Visa Eligibility AI."
+    "founder_role": "創設者 兼 ビザ戦略家",
+    "founder_bio": "タイのテックおよび行政エコシステムにおける長年の経験を持つRaphaëlは、ノマドコミュニティがタイで繁栄できるようSiam Visa Proを創設しました。",
+    "partnership_title": "DigitGpt LLC グループ企業",
+    "partnership_text": "Siam Visa Proは、AI駆動の行政自動化を専門とするテクノロジー企業であるDigitGpt LLCによって運営されています。このパートナーシップにより、ビザ資格AIのような最先端のツールを提供することが可能になっています。"
   },
   "footer": {
     "desc": "タイビザの信頼できるパートナー。",

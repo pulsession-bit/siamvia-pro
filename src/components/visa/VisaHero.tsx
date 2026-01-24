@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface VisaHeroProps {
     badge: string;
@@ -20,10 +21,12 @@ export const VisaHero: React.FC<VisaHeroProps> = ({
     return (
         <div className="bg-slate-900 text-white py-20 relative overflow-hidden">
             <div className="absolute inset-0 opacity-40">
-                <img
+                <Image
                     src={backgroundImage}
                     alt="Hero Background"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    priority
                 />
             </div>
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-slate-900/90 to-slate-900/50"></div>

@@ -9,9 +9,14 @@ import { HomeSpotlight } from './home/components/HomeSpotlight';
 import { HomeVisas } from './home/components/HomeVisas';
 import { HomeCTA } from './home/components/HomeCTA';
 
+const LoadingState = () => {
+    const { t } = useLanguage();
+    return <div className="h-64 flex items-center justify-center bg-slate-50 rounded-2xl">{t('common.loading')}</div>;
+};
+
 const ExpertAppointmentForm = dynamic(() => import('@/components/ExpertAppointmentForm'), {
     ssr: false,
-    loading: () => <div className="h-64 flex items-center justify-center bg-slate-50 rounded-2xl">Chargement...</div>
+    loading: LoadingState
 });
 
 const HomeClientPage: React.FC = () => {
@@ -44,8 +49,8 @@ const HomeClientPage: React.FC = () => {
             <section className="py-24 bg-slate-50 border-t border-slate-200">
                 <div className="max-w-4xl mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Parlons de votre projet</h2>
-                        <p className="text-slate-600 text-lg">Réservez un appel gratuit avec un expert visa Thaïlande.</p>
+                        <h2 className="text-3xl font-bold text-slate-900 mb-4">{t('home_page.appointment_title')}</h2>
+                        <p className="text-slate-600 text-lg">{t('home_page.appointment_subtitle')}</p>
                     </div>
                     <div className="bg-white rounded-2xl shadow-xl overflow-hidden p-8 md:p-12 border border-slate-100">
                         <ExpertAppointmentForm />

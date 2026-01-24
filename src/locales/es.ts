@@ -14,11 +14,37 @@ export const es = {
     "eligibility": "Contactar a un experto",
     "ltr": "Visa LTR",
     "languages": "Idiomas",
-    "search": "Buscar", "comparator": "Comparador de Visas 2026"
+    "search": "Buscar", "comparator": "Comparador de Visas 2026",
+    "all_visas": "Todas las Visas",
+    "business": "Visa de Negocios",
+    "smart": "Visa SMART",
+    "exemption": "Exención de Visa",
+    "family": "Visa Familiar",
+    "student": "Visa de Estudiante",
+    "volunteer": "Visa de Voluntario",
+    "medical": "Visa Médica",
+    "religious": "Visa Religiosa",
+    "media": "Visa de Medios",
+    "official": "Visa Oficial",
+    "scientific": "Visa Científica",
+    "visa_run": "Riesgos del Visa Run",
+    "categories": {
+      "work": "Trabajo y Negocios",
+      "tourism": "Turismo",
+      "long_term": "Largo Plazo (LTR)",
+      "family": "Familia y Matrimonio",
+      "education": "Educación",
+      "elite": "Privilegio Elite",
+      "others": "Otras Visas"
+    }
   },
   "meta": {
     "title": "Siam Visa Pro | Experto en Visas Tailandia - DTV, Turismo y Jubilación",
     "description": "Obtenga su visa para Tailandia sin estrés. Expertos en visas DTV, de Turista y de Jubilación. Soporte completo y Portfolio optimizado."
+  },
+  "home_page": {
+    "appointment_title": "Hablemos de tu proyecto",
+    "appointment_subtitle": "Reserva una llamada gratuita con un experto en visas para Tailandia."
   },
   "hero": {
     "new_badge": "NUEVO: VISA DTV DISPONIBLE",
@@ -244,9 +270,17 @@ export const es = {
     }
   },
   "services_page": {
+    "meta": {
+      "title": "Servicios y Precios de Visas | Siam Visa Pro",
+      "description": "Elija el nivel de soporte que le convenga. Desde auditoría de expedientes hasta gestión completa de E-Visa para DTV, Elite y visas de larga duración."
+    },
     "hero_title": "Servicios y Precios",
     "hero_subtitle": "Elija su nivel de soporte.",
     "hero_tagline": "Somos sus aliados.",
+    "hero_tagline_secondary": "Experiencia completa para su tranquilidad en Tailandia.",
+    "custom_support_title": "¿Necesita apoyo a medida?",
+    "custom_support_desc": "Nuestros expertos están disponibles para analizar su caso específico y proponerle la mejor estrategia de expatriación.",
+    "custom_support_btn": "Hablar con un experto",
     "tier_audit": "Pack Auditoría",
     "tier_audit_desc": "Revisión completa de documentos.",
     "tier_serenity": "Pack Serenidad",
@@ -408,8 +442,10 @@ export const es = {
       "privilege": "Elite"
     },
     "details": "Detalles",
+    "exploration_title": "Exploración por categoría",
     "comparator_guide": {
       "title": "Comparador de Visas para Tailandia – 2026",
+      "details_tips_title": "Más Detalles y Consejos",
       "intro": "Elegir la visa adecuada para Tailandia depende principalmente de la duración de la estancia, la actividad prevista y el perfil del solicitante. Esta comparativa presenta las principales visas disponibles en 2026, con sus usos y limitaciones.",
       "table": {
         "headers": ["Visa", "Duración de estancia", "Trabajo autorizado", "Entradas", "Perfil principal"],
@@ -509,6 +545,10 @@ export const es = {
     }
   },
   "contact_page": {
+    "meta": {
+      "title": "Contacto Siam Visa Pro | Ayuda Experta Visa Tailandia",
+      "description": "¿Tiene preguntas sobre su visa para Tailandia o nuestros servicios? Nuestro equipo está aquí para ayudarle. Contáctenos por email, teléfono o WhatsApp."
+    },
     "title": "Contáctenos",
     "subtitle": "¿Preguntas sobre su visa?",
     "form_title": "Envíenos un mensaje",
@@ -597,6 +637,10 @@ export const es = {
     }
   },
   "tourist_page": {
+    "meta": {
+      "title": "Visa de Turista Tailandia (TR) | Extensiones y Guía 2026",
+      "description": "La visa clásica para descubrir Tailandia sin estrés. 60 días a la llegada, extensible por 30 días. Documentos y costos requeridos."
+    },
     "badge": "Turismo y Ocio",
     "title": "Visa Turista (TR)",
     "subtitle": "La opción clásica hasta 90 días.",
@@ -621,6 +665,10 @@ export const es = {
     "upsell_link": "Descubrir DTV"
   },
   "retirement_page": {
+    "meta": {
+      "title": "Visa de Jubilación Tailandia (Non-O / O-A) | Guía Experta 2026",
+      "description": "Disfrute su jubilación en Tailandia. Requisito bancario de 800k THB, +50 años y seguro médico. Soporte administrativo completo."
+    },
     "badge": "Larga Duración",
     "title": "Visa Retiro (Non-O / O-A)",
     "subtitle": "Disfrute su retiro bajo el sol.",
@@ -639,6 +687,412 @@ export const es = {
     "price_label": "Pack Serenidad Retiro:",
     "price_desc": "Análisis + Gestión",
     "btn_support": "Obtener ayuda"
+  },
+  "business_visa_page": {
+    "meta": {
+      "title": "Visa de Negocios Tailandia (Non-B) | Guía 2026",
+      "description": "Todo sobre la Visa Non-Immigrant B para trabajar legalmente en Tailandia. Permisos de trabajo, documentos y procedimientos."
+    },
+    "hero_badge": "Trabajo & Negocios",
+    "hero_title": "Visa de Negocios (Non-B) – Tailandia",
+    "hero_subtitle": "Trabajar legalmente o crear su empresa en Tailandia",
+    "definition_title": "¿Qué es la Visa Non-B?",
+    "definition_content": "La Visa Non-Immigrant B (Business) es la visa estándar para los extranjeros que desean trabajar como empleados en una empresa tailandesa o lanzar su propio negocio en el Reino. Es el requisito previo indispensable para obtener un Permiso de Trabajo (Work Permit).",
+    "audience_title": "¿A quién va dirigida?",
+    "audience_employees_title": "Empleados",
+    "audience_employees_text": "Para aquellos contratados por una empresa local.",
+    "audience_entrepreneurs_title": "Emprendedores",
+    "audience_entrepreneurs_text": "Para aquellos que crean su propia estructura (Company Limited).",
+    "duration_title": "Validez y Duración",
+    "duration_initial_label": "Validez Inicial",
+    "duration_initial_value": "90 días",
+    "duration_extension_label": "Extensión",
+    "duration_extension_value": "1 año (renovable)",
+    "conditions_title": "Condiciones principales",
+    "conditions_list": [
+      "Carta de invitación o contrato de trabajo.",
+      "Documentos legales de la empresa (WP3, Por Por 20).",
+      "Proporción de 4 empleados tailandeses por 1 extranjero.",
+      "Capital social mínimo de 2 millones de THB por permiso de trabajo."
+    ],
+    "caution_title": "Atención: Freelance",
+    "caution_text": "Si usted es freelance y trabaja para clientes fuera de Tailandia, la visa DTV suele ser mucho más sencilla y menos costosa que la visa Non-B.",
+    "cta_btn": "Consultar a un experto en negocios"
+  },
+  "exemption_visa_page": {
+    "meta": {
+      "title": "Exención de Visa Tailandia (60 Días) | Guía 2026",
+      "description": "Todo sobre la entrada sin visa a Tailandia: duración de 60 días, países elegibles (España, México...), extensión y reglas."
+    },
+    "hero_badge": "Turismo Estancia Corta",
+    "hero_title": "Exención de Visa (60 Días) – Tailandia",
+    "hero_subtitle": "Entrada sin visa, condiciones y duración de la estancia",
+    "definition_title": "¿Qué es la Exención de Visa (60 Días)?",
+    "definition_content": "La Exención de Visa permite a los ciudadanos de 93 países (incluyendo España, México, Chile) entrar en Tailandia sin tener que solicitar una visa previamente. Es la solución más sencilla para estancias turísticas de menos de 2 meses.",
+    "audience_title": "¿A quién va dirigida esta exención?",
+    "audience_compatible": "Perfiles Compatibles",
+    "audience_compatible_list": [
+      "Turistas en vacaciones (2-3 meses máx).",
+      "Visitas familiares cortas.",
+      "Citas médicas puntuales."
+    ],
+    "audience_not_compatible": "Perfiles No Compatibles",
+    "audience_not_compatible_list": [
+      "Teletrabajadores de larga duración (Riesgo de rechazo).",
+      "Personas que desean instalarse.",
+      "Trabajadores locales (Estrictamente prohibido)."
+    ],
+    "duration_title": "Duración de la estancia y validez",
+    "duration_initial_label": "Duración Inicial",
+    "duration_initial_value": "60 días",
+    "duration_max_label": "Extensión In Situ",
+    "duration_max_value": "+ 30 Días",
+    "conditions_title": "Condiciones y criterios principales",
+    "conditions_list": [
+      "Pasaporte válido al menos 6 meses al llegar.",
+      "Billete de salida confirmado en menos de 60 días.",
+      "Prueba de fondos suficientes (10.000 THB/persona).",
+      "No estar en la lista negra (Blacklist)."
+    ],
+    "work_title": "Trabajo y actividades autorizadas",
+    "work_warning_title": "Prohibición de Trabajo",
+    "work_warning_text": "La exención de visa es un estatus puramente turístico. Está estrictamente prohibido trabajar (incluso como voluntario) en Tailandia con este estatus.",
+    "renewal_title": "Renovación y extensiones",
+    "renewal_text": "Puede prolongar su estancia una sola vez por 30 días en la oficina de inmigración local (coste: 1.900 THB).",
+    "limitations_title": "Limitaciones y puntos de vigilancia",
+    "limitations_risk_title": "Denegación de embarque",
+    "limitations_risk_text": "Si no tiene billete de vuelta/salida en menos de 60 días, la aerolínea puede denegarle el embarque.",
+    "cta_help_title": "¿Quiere quedarse más tiempo?",
+    "cta_help_subtitle": "Descubra la Visa DTV (5 años) o LTR (10 años).",
+    "cta_help_btn": "Ver la Visa DTV",
+    "cta_compare_title": "Comparar opciones",
+    "cta_compare_subtitle": "Turista, Exención o Jubilación?",
+    "cta_compare_btn": "Ver la Visa Turista (TR)"
+  },
+  "student_visa_page": {
+    "meta": {
+      "title": "Visa de Estudiante Tailandia (Non-ED) | Guía 2026",
+      "description": "Visa para estudiar en Tailandia (Universidad, Escuela de Idiomas, Muay Thai). Condiciones, duración, inscripción y prohibición de trabajo."
+    },
+    "hero_badge": "Estudios & Formación",
+    "hero_title": "Visa de Estudiante (Non-ED) – Tailandia",
+    "hero_subtitle": "Estudiar en la universidad o aprender tailandés",
+    "definition_title": "¿Qué es la Visa de Estudiante (Non-ED)?",
+    "definition_content": "La Visa Non-Immigrant ED (Education) está destinada a extranjeros que desean cursar estudios a tiempo completo en Tailandia. Esto incluye cursos universitarios, prácticas obligatorias, pero también cursos de idiomas o formación cultural (Muay Thai, Cocina) en escuelas certificadas.",
+    "audience_title": "¿A quién va dirigida esta visa?",
+    "audience_compatible": "Perfiles Compatibles",
+    "audience_compatible_list": [
+      "Estudiantes de intercambio universitario.",
+      "Personas que aprenden tailandés (escuelas privadas).",
+      "Alumnos de Muay Thai (campamentos certificados)."
+    ],
+    "audience_not_compatible": "Perfiles No Compatibles",
+    "audience_not_compatible_list": [
+      "\"Falsos estudiantes\" que no asisten a clase.",
+      "Trabajadores camuflados (ilegal).",
+      "Turistas que buscan una estancia larga fácil."
+    ],
+    "duration_title": "Duración de la estancia y validez",
+    "duration_initial_label": "Duración Inicial",
+    "duration_initial_value": "90 días",
+    "duration_max_label": "Máximo Total",
+    "duration_max_value": "1 Año (Extensiones)",
+    "conditions_title": "Condiciones y criterios principales",
+    "conditions_list": [
+      "Estar matriculado en una escuela o universidad reconocida por el Ministerio de Educación.",
+      "Carta de aceptación oficial del establecimiento.",
+      "Asistencia a clase (controles frecuentes).",
+      "Prueba de pago de las tasas de matrícula."
+    ],
+    "work_title": "Trabajo y actividades autorizadas",
+    "work_warning_title": "Prohibición de Trabajo",
+    "work_warning_text": "La Visa de Estudiante prohíbe formalmente trabajar en Tailandia. Esto incluye el trabajo freelance o el \"Nómada Digital\" si es descubierto.",
+    "renewal_title": "Renovación y extensiones",
+    "renewal_text": "La visa se expide generalmente por 90 días. Debe extenderse cada 90 días en inmigración (1.900 THB) presentando una carta de la escuela que confirme su asistencia.",
+    "limitations_title": "Limitaciones y puntos de vigilancia",
+    "limitations_control_title": "Controles de inmigración",
+    "limitations_control_text": "Inmigración realiza pruebas de idioma aleatorias durante las extensiones. Si tiene una visa ED de 'Tailandés' pero no habla ni una palabra, su extensión será rechazada.",
+    "cta_school_title": "¿Busca una escuela?",
+    "cta_school_subtitle": "Nuestros socios educativos pueden ayudarle.",
+    "cta_school_btn": "Encontrar una escuela",
+    "cta_compare_title": "Comparar opciones",
+    "cta_compare_subtitle": "Estudiante vs DTV (si trabaja online).",
+    "cta_compare_btn": "Ver la Visa DTV"
+  },
+  "smart_visa_page": {
+    "meta": {
+      "title": "Visa SMART Tailandia | Talentos e Inversión 2026",
+      "description": "Visa especial de 4 años para talentos, inversores y ejecutivos. Sin permiso de trabajo requerido, familia incluida. Condiciones BOI."
+    },
+    "hero_badge": "Talento & Innovación",
+    "hero_title": "SMART Visa – Tailandia",
+    "hero_subtitle": "La visa de 4 años para talentos e inversores",
+    "definition_title": "¿Qué es la SMART Visa?",
+    "definition_content": "La SMART Visa es una visa especial diseñada para atraer talentos altamente cualificados, inversores, ejecutivos y startups en las industrias objetivo ('S-Curve Industries') como Tech, Salud o Medio Ambiente.",
+    "audience_title": "¿A quién va dirigida esta visa?",
+    "audience_compatible": "Perfiles Compatibles",
+    "audience_compatible_list": [
+      "SMART T (Talento): Expertos que ganan > 100k THB/mes.",
+      "SMART I (Inversor): Inversores directos (> 20M THB).",
+      "SMART S (Startup): Fundadores de startups tech.",
+      "SMART E (Ejecutivo): Altos directivos."
+    ],
+    "audience_industries": "Industrias Objetivo",
+    "audience_industries_list": [
+      "Digital & Tech, Automatización.",
+      "Salud & Bienestar, BioTech.",
+      "Energía verde, Aviación, Agricultura."
+    ],
+    "duration_title": "Duración de la estancia y validez",
+    "duration_standard_label": "Duración Estándar",
+    "duration_standard_value": "4 Años",
+    "duration_reporting_label": "Reporting",
+    "duration_reporting_value": "1 Año (vs 90 días)",
+    "conditions_title": "Condiciones y criterios principales",
+    "conditions_list": [
+      "Aprobación de la BOI (Board of Investment) obligatoria.",
+      "Salario mínimo de 100.000 THB (Talento) o 200.000 THB (Ejecutivo).",
+      "Inversión directa de 20 Millones de THB (Inversor).",
+      "Empresa certificada en las industrias objetivo."
+    ],
+    "work_title": "Trabajo y actividades autorizadas",
+    "work_no_permit_title": "Sin necesidad de Permiso de Trabajo",
+    "work_no_permit_text": "La SMART Visa sustituye al permiso de trabajo. No necesita solicitar el libro azul (Work Permit) por separado.",
+    "renewal_title": "Renovación y extensiones",
+    "renewal_text": "La visa es renovable cada 4 años. La ventaja principal es que el reporte a inmigración se realiza una vez al año.",
+    "limitations_title": "Limitaciones y puntos de vigilancia",
+    "limitations_complex_title": "Proceso complejo",
+    "limitations_complex_text": "La obtención requiere una validación técnica por parte de la BOI. El proceso completo puede tardar de 1 a 2 meses.",
+    "cta_eligible_title": "¿Es su empresa elegible?",
+    "cta_eligible_subtitle": "Verifique si puede obtener la SMART Visa.",
+    "cta_eligible_btn": "Hacer una simulación",
+    "cta_compare_title": "Comparar opciones",
+    "cta_compare_subtitle": "SMART Visa vs LTR (Long Term Resident).",
+    "cta_compare_btn": "Ver la Visa LTR"
+  },
+  "family_visa_page": {
+    "meta": {
+      "title": "Visa Familiar Tailandia (Non-O) | Matrimonio 2026",
+      "description": "Visa para reunificación familiar en Tailandia: Matrimonio con un tailandés o padre de niño tailandés. Condiciones financieras."
+    },
+    "hero_badge": "Reagrupación Familiar",
+    "hero_title": "Visa de Familia (Non-O) – Tailandia",
+    "hero_subtitle": "Reunirse con su cónyuge o sus hijos",
+    "definition_title": "¿Qué es la Visa de Familia (Non-O)?",
+    "definition_content": "La Visa Non-Immigrant O (Opción 'Thai Family') permite residir en Tailandia en base a vínculos familiares directos con un(a) ciudadano(a) tailandés(a).",
+    "audience_title": "¿A quién va dirigida esta visa?",
+    "audience_compatible": "Perfiles Compatibles",
+    "audience_compatible_list": [
+      "Casado(a) legalmente con un(a) tailandés(a).",
+      "Padre/madre legal de un hijo tailandés.",
+      "Dependiente de un titular de visa de trabajo/jubilación."
+    ],
+    "audience_not_compatible": "Perfiles No Compatibles",
+    "audience_not_compatible_list": [
+      "Parejas de hecho (no reconocido).",
+      "Novios sin certificado de matrimonio.",
+      "Amigos o primos lejanos."
+    ],
+    "duration_title": "Duración de la estancia y validez",
+    "duration_initial_label": "Duración Inicial",
+    "duration_initial_value": "90 días",
+    "duration_max_label": "Extensión Máxima",
+    "duration_max_value": "1 Año (Renovable)",
+    "conditions_title": "Condiciones y criterios principales",
+    "conditions_list": [
+      "Certificado de matrimonio oficial o Acta de nacimiento del hijo.",
+      "Prueba financiera: 400.000 THB en banco o 40.000 THB de ingresos mensuales.",
+      "Prueba de cohabitación (Fotos, plano de la casa).",
+      "Posible visita de inmigración al domicilio."
+    ],
+    "work_title": "Trabajo y actividades autorizadas",
+    "work_allowed_title": "Trabajo Autorizado (Bajo condiciones)",
+    "work_allowed_text": "A diferencia de las visas turísticas, la Visa Non-O Familia permite solicitar un permiso de trabajo (Work Permit).",
+    "renewal_title": "Renovación y extensiones",
+    "renewal_text": "La extensión anual se realiza en la oficina de inmigración. El proceso tarda unos 30 días.",
+    "limitations_title": "Limitaciones y puntos de vigilancia",
+    "limitations_divorce_title": "Divorcio = Cancelación",
+    "limitations_divorce_text": "En caso de divorcio, la visa se cancela inmediatamente (normalmente 7 días para abandonar el territorio).",
+    "cta_help_title": "¿Necesita asistencia con el matrimonio?",
+    "cta_help_subtitle": "Gestionamos el papeleo para la extensión por matrimonio.",
+    "cta_help_btn": "Contactar a un experto",
+    "cta_compare_title": "¿Aún no está casado?",
+    "cta_compare_subtitle": "Vea las visas de larga duración individuales.",
+    "cta_compare_btn": "Ver la Visa Elite (Independiente)"
+  },
+  "volunteer_visa_page": {
+    "meta": {
+      "title": "Visa de Voluntario Tailandia (Non-O) | Guía 2026",
+      "description": "Cómo obtener una visa de voluntario para Tailandia. Requisitos para voluntariado en ONGs, fundaciones y organizaciones benéficas."
+    },
+    "hero_badge": "Voluntariado & Humanitario",
+    "hero_title": "Visa de Voluntario (Non-O Volunteer) – Tailandia",
+    "hero_subtitle": "Comprometerse con una causa humanitaria en Tailandia",
+    "definition_title": "¿Qué es la Visa de Voluntario?",
+    "definition_content": "La Visa Non-Immigrant O (Volunteer) está destinada a extranjeros que deseen realizar un trabajo voluntario no remunerado en una organización caritativa o ONG reconocida.",
+    "audience_title": "¿A quién va dirigida esta visa?",
+    "audience_compatible": "Perfiles Compatibles",
+    "audience_compatible_list": [
+      "Voluntarios en fundaciones registradas.",
+      "Trabajadores humanitarios en misión.",
+      "Ayuda a elefantes / protección animal."
+    ],
+    "audience_not_compatible": "Perfiles No Compatibles",
+    "audience_not_compatible_list": [
+      "Volunturismo de corta duración (- de 30 días).",
+      "Personas sin invitación oficial.",
+      "Trabajadores que buscan evitar la visa Business."
+    ],
+    "duration_title": "Duración de la estancia y validez",
+    "duration_initial_label": "Duración Inicial",
+    "duration_initial_value": "90 días",
+    "duration_max_label": "Máximo Total",
+    "duration_max_value": "1 Año (Extensiones)",
+    "conditions_title": "Condiciones y criterios indispensables",
+    "conditions_list": [
+      "Carta oficial de la organización registrada en Tailandia.",
+      "Copia de la licencia de la fundación / ONG.",
+      "Permiso de Trabajo obligatorio (incluso para voluntariado).",
+      "Antecedentes penales a menudo requeridos."
+    ],
+    "warning_title": "Vigilancia: El 'Grey Area'",
+    "warning_regulation_title": "Reglamentación estricta",
+    "warning_regulation_text": "Muchas agencias venden 'Visas de Voluntario' sin compromiso humanitario real. Inmigración vigila de cerca estas visas.",
+    "cta_help_title": "¿Necesita ayuda con su expediente?",
+    "cta_help_subtitle": "La visa de voluntario requiere documentación compleja. Le ayudamos a verificar la conformidad.",
+    "cta_help_btn": "Consultar a un experto"
+  },
+  "medical_visa_page": {
+    "meta": {
+      "title": "Visa Médica Tailandia (Non-MT) | Guía 2026",
+      "description": "Atención médica en Tailandia. Todo sobre la visa médica, extensiones para cuidados prolongados y visas de acompañante."
+    },
+    "hero_badge": "Cuidado & Salud",
+    "hero_title": "Visa Médica (Non-MT / Non-O) – Tailandia",
+    "hero_subtitle": "Benefíciese de cuidados de clase mundial en Tailandia",
+    "definition_title": "¿Qué es la Visa Médica?",
+    "definition_content": "Tailandia es un destino principal de turismo médico. La Visa Médica permite a los pacientes extranjeros permanecer para tratamientos quirúrgicos o rehabilitación.",
+    "audience_title": "Servicios y Perfiles afectados",
+    "audience_types_title": "Tipos de Cuidados",
+    "audience_types_list": [
+      "Cirugía estética y reparadora.",
+      "Cuidados dentales complejos.",
+      "Chequeos médicos completos.",
+      "Tratamientos crónicos (Diálisis, etc.)."
+    ],
+    "audience_companion_title": "Acompañantes",
+    "audience_companion_text": "Hasta 3 familiares o cuidadores pueden obtener una visa de dependiente.",
+    "duration_title": "Duración y Prórrogas",
+    "duration_validity_label": "Validez Tipo",
+    "duration_validity_value": "90 días",
+    "duration_extension_label": "Extensión",
+    "duration_extension_value": "Según certificado médico",
+    "conditions_title": "Documentos Requeridos",
+    "conditions_list": [
+      "Certificado médico emitido por un hospital tailandés certificado.",
+      "Carta de invitación del centro de salud.",
+      "Prueba de fondos suficientes.",
+      "Seguro médico específico."
+    ],
+    "advantage_title": "La ventaja de los hospitales privados",
+    "advantage_text": "La mayoría de los grandes hospitales internacionales tienen centros de visas internos para las extensiones.",
+    "cta_help_title": "¿Necesita un enlace médico?",
+    "cta_help_subtitle": "Colaboramos con los mejores centros para facilitar su admisión y su visa.",
+    "cta_help_btn": "Contactar con nuestro servicio de conserjería"
+  },
+  "religious_visa_page": {
+    "meta": {
+      "title": "Visa Religiosa Tailandia (Non-R) | Guía 2026",
+      "description": "Visa para monjes, misioneros y actividades religiosas en Tailandia. Condiciones de solicitud y requisitos de patrocinio."
+    },
+    "hero_badge": "Misión & Culto",
+    "hero_title": "Visa Religiosa (Non-R) – Tailandia",
+    "hero_subtitle": "Misión religiosa o estudio del budismo",
+    "definition_title": "¿Qué es la Visa Religiosa?",
+    "definition_content": "La Visa Non-Immigrant R (Religious) está reservada a extranjeros patrocinados por una organización reconocida por el Estado.",
+    "conditions_title": "Perfiles y Condiciones",
+    "conditions_list": [
+      "Ser patrocinado por una organización religiosa registrada.",
+      "Aprobación del Departamento de Asuntos Religiosos.",
+      "Compromiso formal de no percibir salario.",
+      "Prueba de residencia en la institución."
+    ],
+    "duration_title": "Validez y Extensiones",
+    "duration_initial_label": "Validez Inicial",
+    "duration_initial_value": "90 días",
+    "duration_max_label": "Extensión Máxima",
+    "duration_max_value": "1 Año (Renovable)",
+    "footer_note": "Esta visa requiere una coordinación estrecha con las autoridades religiosas nacionales.",
+    "cta_btn": "Solicitar asesoramiento específico"
+  },
+  "media_visa_page": {
+    "meta": {
+      "title": "Visa de Medios / Periodista Tailandia (Non-M) | Guía 2026",
+      "description": "Visa para periodistas, corresponsales de prensa y equipos de filmación en Tailandia. Acreditación y condiciones requeridas."
+    },
+    "hero_badge": "Prensa & Periodismo",
+    "hero_title": "Visa de Medios (Non-M) – Tailandia",
+    "hero_subtitle": "Cubrir la actualidad o producir contenidos en Tailandia",
+    "definition_title": "¿Qué es la Visa de Medios (Non-M)?",
+    "definition_content": "La Visa Non-Immigrant M (Media) se dirige a profesionales certificados (periodistas, corresponsales, equipos de rodaje).",
+    "accreditation_title": "La Acreditación: Paso Clave",
+    "accreditation_subtitle": "Antes de solicitar la visa, debe obtener la acreditación del Ministerio de Asuntos Exteriores (MFA).",
+    "accreditation_list": [
+      "Registro en el portal online del MFA (M-Press).",
+      "Presentación del carnet de prensa y carta del empleador.",
+      "Verificación de antecedentes por Relaciones Públicas."
+    ],
+    "conditions_title": "Condiciones y Validez",
+    "duration_label": "Duración",
+    "duration_value": "1 año (renovable)",
+    "activity_label": "Actividad",
+    "activity_value": "Reportaje & Producción",
+    "warning_title": "Advertencia sobre rodajes",
+    "warning_text": "Filmar con visa de turista puede acarrear multas. El permiso de la 'Thailand Film Office' es obligatorio.",
+    "cta_btn": "Asistencia acreditación MFA"
+  },
+  "official_visa_page": {
+    "meta": {
+      "title": "Visa Oficial Tailandia (Non-F) | Guía 2026",
+      "description": "Visa para funcionarios, diplomáticos y empleados de organizaciones internacionales en misión en Tailandia."
+    },
+    "hero_badge": "Diplomacia & Estado",
+    "hero_title": "Visa Oficial (Non-F) – Tailandia",
+    "hero_subtitle": "Misiones diplomáticas y oficiales en Tailandia",
+    "definition_title": "¿Qué es la Visa Oficial?",
+    "definition_content": "La Visa Non-Immigrant F (Official) está reservada a personas en misión oficial (diplomáticos, funcionarios de OI).",
+    "audience_title": "Beneficiarios",
+    "audience_diplomatic_title": "Cuerpo Diplomático",
+    "audience_diplomatic_text": "Embajadas, Consulados, Agregados militares.",
+    "audience_oi_title": "OI / ONU",
+    "audience_oi_text": "Empleados de Naciones Unidas, UNICEF, etc., con base en Bangkok.",
+    "conditions_title": "Requisitos específicos",
+    "conditions_text": "Esta visa requiere imperativamente una nota verbal u orden de misión oficial.",
+    "cta_btn": "Solicitar asistencia"
+  },
+  "scientific_visa_page": {
+    "meta": {
+      "title": "Visa de Investigación Científica (Non-RS) | Guía 2026",
+      "description": "Visa para investigadores, expertos y científicos que realizan trabajos de investigación en Tailandia."
+    },
+    "hero_badge": "Investigación & Innovación",
+    "hero_title": "Visa de Investigación Científica (Non-RS) – Tailandia",
+    "hero_subtitle": "Contribuir al avance científico en Tailandia",
+    "definition_title": "¿Qué es la Visa de Investigación Científica?",
+    "definition_content": "La Visa Non-Immigrant RS (Research & Science) está diseñada para expertos que realizan trabajos científicos con un instituto tailandés.",
+    "audience_title": "Perfiles elegibles",
+    "audience_tech_title": "Expertos Técnicos",
+    "audience_tech_text": "Ingenieros y especialistas en transferencia de tecnología.",
+    "audience_academic_title": "Investigadores Académicos",
+    "audience_academic_text": "Científicos en misión en universidades o centros de investigación.",
+    "conditions_title": "Condiciones Requeridas",
+    "conditions_list": [
+      "Invitación de un organismo de investigación tailandés.",
+      "Acuerdo de cooperación científica.",
+      "Certificados de títulos y CV detallado.",
+      "Prueba de financiación de la investigación."
+    ],
+    "cta_btn": "Verificar patrocinio"
   },
   "tourist_visa_page": {
     "hero_title": "Visa de Turista (TR)",
@@ -762,34 +1216,167 @@ export const es = {
   },
   "faq_page": {
     "title": "Preguntas Frecuentes",
-    "subtitle": "Todo lo que necesita saber.",
-    "questions": [
+    "subtitle": "Todo lo que necesita saber antes de partir.",
+    "sections": [
       {
-        "q": "¿Diferencia DTV vs Turista?",
-        "a": "TR son 60 días. DTV son 5 años con trabajo permitido."
+        "title": "Entender las visas en Tailandia",
+        "questions": [
+          {
+            "q": "¿Se necesita una visa para ir a Tailandia?",
+            "a": "Depende de la nacionalidad y de la duración de la estancia. Muchos viajeros pueden entrar en Tailandia sin visa previa gracias a una exención, para una estancia turística limitada. Más allá de esta duración, o para ciertos usos (estancia larga, teletrabajo, jubilación), una visa es obligatoria."
+          },
+          {
+            "q": "¿Cuál es la diferencia entre exención de visa y visa turística?",
+            "a": "La exención permite una entrada sin solicitud previa, pero con una duración más corta y poca flexibilidad. La visa turística requiere una solicitud antes de la partida, pero autoriza una estancia más larga y una posible prórroga. Ninguna de las dos autoriza el trabajo."
+          },
+          {
+            "q": "¿Qué visa elegir para quedarse más de 90 días en Tailandia?",
+            "a": "Para más de 90 días, debe optar por una visa de larga estancia como la <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> (5 años), la <a href='/es/ltr' class='text-amber-600 font-medium hover:underline'>Visa LTR</a> (10 años) o la <a href='/es/retirement-visa' class='text-amber-600 font-medium hover:underline'>Visa de Jubilación</a> (Non-O). Las <a href='/es/tourist-visa' class='text-amber-600 font-medium hover:underline'>visas turísticas</a> están limitadas a un máximo de 90 días (60+30)."
+          },
+          {
+            "q": "¿Se puede entrar en Tailandia sin visa y prorrogar en el lugar?",
+            "a": "Sí, una exención de visa (generalmente 60 días ahora para muchos países) puede prorrogarse una vez por 30 días en la oficina de inmigración local."
+          },
+          {
+            "q": "¿Se puede cambiar de tipo de visa una vez en Tailandia?",
+            "a": "En algunos casos, sí (ej: Turística a Jubilación), pero no es automático ni está garantizado. Algunas conversiones como hacia una <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> a menudo requieren una nueva solicitud desde el exterior del país."
+          },
+          {
+            "q": "¿Cuál es la duración máxima de estancia legal en Tailandia?",
+            "a": "Con una <a href='/es/elite-visa' class='text-amber-600 font-medium hover:underline'>Visa Elite</a> o LTR, puede durar hasta 20 años. Con una DTV, son 180 días por entrada (prorrogable). Con una visa de turista, son 90 días máximo."
+          },
+          {
+            "q": "¿Cuántas veces se puede entrar en Tailandia al año?",
+            "a": "No hay un límite escrito estricto, pero inmigración vigila las entradas repetidas (<a href='/es/visa-run' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). Con una visa Multi-Entry (<a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite), las entradas son ilimitadas."
+          },
+          {
+            "q": "¿Cambian las reglas de visa a menudo en Tailandia?",
+            "a": "Sí, las regulaciones evolucionan. Es crucial referirse a fuentes oficiales o a expertos actualizados. Nuestra base de conocimientos está actualizada para 2026."
+          }
+        ]
       },
       {
-        "q": "¿Puedo trabajar con Visa Turista?",
-        "a": "No. Es ilegal."
+        "title": "Trabajo, actividad y teletrabajo",
+        "questions": [
+          {
+            "q": "¿Se puede trabajar en Tailandia con una visa turística?",
+            "a": "No. La <a href='/es/tourist-visa' class='text-amber-600 font-medium hover:underline'>visa turística</a> no autoriza ninguna actividad profesional en Tailandia, incluido el teletrabajo remunerado. Trabajar con una visa turística expone a sanciones (multa, expulsión)."
+          },
+          {
+            "q": "¿Está permitido el teletrabajo en Tailandia?",
+            "a": "Sí, únicamente con ciertas visas adaptadas, como la <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> o la LTR. El teletrabajo debe ejercerse para una entidad extranjera, sin actividad local competente."
+          },
+          {
+            "q": "¿Cuál es la diferencia entre trabajo local y trabajo a distancia?",
+            "a": "El trabajo local implica un empleador tailandés y requiere obligatoriamente un permiso de trabajo (Work Permit). El trabajo a distancia (para un cliente/empleador extranjero) se tolera bajo <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>visa DTV</a> sin permiso de trabajo."
+          },
+          {
+            "q": "¿Hace falta un permiso de trabajo para trabajar desde Tailandia?",
+            "a": "No con la <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>visa DTV</a> (para el trabajo a distancia). Para cualquier otra visa (Non-B), un permiso de trabajo (Work Permit) es estrictamente obligatorio."
+          },
+          {
+            "q": "¿Se puede crear una empresa en Tailandia con una visa?",
+            "a": "Puede ser accionista, pero para trabajar allí activamente o ser director firmante, necesita una <a href='/es/business-visa' class='text-amber-600 font-medium hover:underline'>visa Non-B</a> y un permiso de trabajo."
+          },
+          {
+            "q": "¿Qué visas permiten trabajar legalmente en Tailandia?",
+            "a": "La <a href='/es/business-visa' class='text-amber-600 font-medium hover:underline'>visa Non-B</a> (con Work Permit), la <a href='/es/ltr' class='text-amber-600 font-medium hover:underline'>visa LTR</a> (permiso de trabajo digital incluido), la <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>visa DTV</a> (solo teletrabajo) y la visa Elite (si se combina con una opción de trabajo rara, si no, no)."
+          },
+          {
+            "q": "Trabajar sin visa adaptada: ¿cuáles son los riesgos?",
+            "a": "Multas, encarcelamiento, expulsión e inscripción en la lista negra (Blacklist) prohibiendo el regreso a Tailandia por varios años."
+          }
+        ]
       },
       {
-        "q": "¿Tiempo de proceso?",
-        "a": "3-10 días Turista, 5-15 días DTV."
+        "title": "Duración, prórrogas y salidas",
+        "questions": [
+          {
+            "q": "¿Se puede prorrogar una visa en Tailandia?",
+            "a": "Sí, según el tipo de visa. La visa de turista y la exención se prorrogan por 30 días. La DTV se prorroga por 180 días (una vez por entrada)."
+          },
+          {
+            "q": "¿Cuántas veces se puede prorrogar una visa?",
+            "a": "Generalmente una sola vez por entrada. Para quedarse más tiempo, a menudo hay que salir del país y volver a entrar (si la visa lo permite) o cambiar de visa."
+          },
+          {
+            "q": "¿Hace falta salir del país para renovar una visa?",
+            "a": "Para las visas de entradas múltiples (DTV, Elite), debe salir al final de su período de estancia autorizado (ej: 180 días) para 'activar' una nueva entrada. Para las visas de entrada simple, hay que volver a solicitarla."
+          },
+          {
+            "q": "¿Qué es un re-entry permit y cuándo es necesario?",
+            "a": "Es un permiso para volver a entrar sin perder la visa en curso. Necesario si tiene una visa de entrada simple pero debe viajar fuera de Tailandia temporalmente."
+          },
+          {
+            "q": "¿Se puede permanecer en Tailandia varios años legalmente?",
+            "a": "Sí, pero únicamente con visas de larga duración específicas (Jubilación, DTV, LTR, Elite). Los encadenamientos de visas turísticas no son una solución viable a largo plazo."
+          },
+          {
+            "q": "¿Cuál es la diferencia entre visa de entrada simple y múltiple?",
+            "a": "Simple: una vez que sale del país, la visa se termina. Múltiple: puede entrar y salir tantas veces como quiera durante la validez de la visa."
+          }
+        ]
       },
       {
-        "q": "¿Dinero bloqueado?",
-        "a": "No, pero debe estar visible al aplicar."
+        "title": "Errores frecuentes y riesgos",
+        "questions": [
+          {
+            "q": "¿Qué pasa en caso de overstay en Tailandia?",
+            "a": "Un exceso de estancia conlleva una multa de 500 THB/día (máx. 20 000 THB). Un overstay largo (>90 días) conlleva una prohibición de territorio (Blacklist)."
+          },
+          {
+            "q": "¿Qué se arriesga al trabajar con una visa incorrecta?",
+            "a": "Es una violación de las leyes de inmigración y trabajo. Riesgo de arresto y expulsión."
+          },
+          {
+            "q": "¿Puede una visa ser rechazada sin explicación?",
+            "a": "Sí. Las autoridades consulares no están obligadas a justificar sus decisiones. Un expediente mal preparado es la causa más frecuente."
+          },
+          {
+            "q": "¿Qué hacer en caso de rechazo de visa tailandesa?",
+            "a": "Hay que analizar la causa (a menudo financiera o documental) y presentar una nueva solicitud corregida. Los gastos no se reembolsan."
+          },
+          {
+            "q": "¿Se puede ser prohibido del territorio en Tailandia?",
+            "a": "Sí, en caso de overstay importante o de trabajo ilegal."
+          },
+          {
+            "q": "¿Están permitidos todavía los visa runs?",
+            "a": "Ya no son una solución fiable. Inmigración vigila los perfiles que encadenan las entradas-salidas terrestres o aéreas sin visa apropiada."
+          }
+        ]
       },
       {
-        "q": "¿Si me rechazan?",
-        "a": "No hay reembolso consular."
+        "title": "Perfiles específicos",
+        "questions": [
+          {
+            "q": "¿Qué visa para vivir en Tailandia después de los 50 años?",
+            "a": "La <a href='/es/retirement-visa' class='text-amber-600 font-medium hover:underline'>visa de Jubilación</a> (Non-O o O-A) es la más adecuada si no trabaja. El LTR 'Wealthy Pensioner' es una opción VIP."
+          },
+          {
+            "q": "¿Qué visa para vivir en Tailandia sin trabajar?",
+            "a": "Visa Elite (de pago, VIP), <a href='/es/retirement-visa' class='text-amber-600 font-medium hover:underline'>Visa de Jubilación</a> (+50 años), o <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a> (si tiene ingresos pasivos o actividad soft power, a confirmar)."
+          },
+          {
+            "q": "¿Qué visa para quedarse mucho tiempo en Tailandia sin salir del país?",
+            "a": "La <a href='/es/elite-visa' class='text-amber-600 font-medium hover:underline'>visa Elite</a> o la <a href='/es/retirement-visa' class='text-amber-600 font-medium hover:underline'>visa de Jubilación</a> (con prórrogas anuales en el lugar) son las mejores para evitar salidas obligatorias."
+          }
+        ]
       }
     ],
-    "not_found_title": "¿No encuentra respuesta?",
-    "not_found_desc": "Nuestros expertos le ayudan.",
-    "not_found_btn": "Verificar elegibilidad"
+    "not_found_title": "¿No encuentra su respuesta?",
+    "not_found_desc": "Nuestros expertos están aquí para analizar su situación específica.",
+    "not_found_btn": "Verificar mi elegibilidad gratuitamente",
+    "meta": {
+      "title": "FAQ Visa Tailandia | Respuestas a sus preguntas - Siam Visa Pro",
+      "description": "Preguntas frecuentes sobre las visas tailandesas (DTV, TR, Non-O). Encuentre todas las respuestas para preparar su estancia."
+    }
   },
   "terms_page": {
+    "meta": {
+      "title": "Términos y Condiciones | Siam Visa Pro",
+      "description": "Política de privacidad, aviso legal y términos servicio de asistencia administrativa Siam Visa Pro."
+    },
     "title": "Términos y Condiciones",
     "subtitle": "Privacidad y Legal",
     "legal_title": "Aviso Legal",
@@ -811,21 +1398,21 @@ export const es = {
   },
   "about_page": {
     "meta": {
-      "title": "About Siam Visa Pro | Expert Thailand Visa Assistance",
-      "description": "Learn about Siam Visa Pro's mission, our team of experts, and how we help digital nomads and retirees secure their future in Thailand."
+      "title": "Sobre Siam Visa Pro | Asistencia Experta en Visas para Tailandia",
+      "description": "Conozca la misión de Siam Visa Pro, nuestro equipo de expertos y cómo ayudamos a nómadas digitales y jubilados a asegurar su futuro en Tailandia."
     },
-    "hero_title": "Who We Are",
-    "hero_subtitle": "Your bridge to a seamless life in Thailand.",
-    "mission_title": "Our Mission",
-    "mission_text1": "Founded by expats for expats, Siam Visa Pro was born from a simple observation: the Thai visa process is often confusing, changing, and stressful.",
-    "mission_text2": "Our goal is to digitize and simplify this process while maintaining a high level of human expertise. We combine AI-driven file analysis with manual oversight to ensure the highest success rates.",
-    "team_title": "The Team",
-    "team_description": "Our experts are based in Bangkok, giving us a unique perspective on both consular requirements and local immigration realities.",
+    "hero_title": "Quiénes Somos",
+    "hero_subtitle": "Su puente hacia una vida sin complicaciones en Tailandia.",
+    "mission_title": "Nuestra Misión",
+    "mission_text1": "Fundada por expatriados para expatriados, Siam Visa Pro nació de una observación simple: el proceso de visa tailandesa suele ser confuso, cambiante y estresante.",
+    "mission_text2": "Nuestro objetivo es digitalizar y simplificar este proceso manteniendo un alto nivel de experiencia humana. Combinamos el análisis de archivos impulsado por IA con la supervisión manual para garantizar las tasas de éxito más altas.",
+    "team_title": "El Equipo",
+    "team_description": "Nuestros expertos tienen su sede en Bangkok, lo que nos da una perspectiva única tanto sobre los requisitos consulares como sobre las realidades migratorias locales.",
     "founder_name": "Raphaël Buresi",
-    "founder_role": "Founder & Visa Strategist",
-    "founder_bio": "With years of experience in the Thai tech and administrative ecosystem, Raphaël created Siam Visa Pro to help the nomadic community thrive in Thailand.",
-    "partnership_title": "A DigitGpt LLC Company",
-    "partnership_text": "Siam Visa Pro is powered by DigitGpt LLC, a technology firm specializing in AI-driven administrative automation. This partnership allows us to offer cutting-edge tools like our Visa Eligibility AI."
+    "founder_role": "Fundador y Estratega de Visas",
+    "founder_bio": "Con años de experiencia en el ecosistema tecnológico y administrativo tailandés, Raphaël creó Siam Visa Pro para ayudar a la comunidad nómada a prosperar en Tailandia.",
+    "partnership_title": "Una empresa de DigitGpt LLC",
+    "partnership_text": "Siam Visa Pro cuenta con el respaldo de DigitGpt LLC, una empresa tecnológica especializada en la automatización administrativa impulsada por IA. Esta asociación nos permite ofrecer herramientas de vanguardia como nuestra IA de Elegibilidad de Visas."
   },
   "footer": {
     "desc": "Su socio de confianza para visas tailandesas.",

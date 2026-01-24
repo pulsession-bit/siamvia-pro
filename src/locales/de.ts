@@ -14,11 +14,37 @@ export const de = {
     "eligibility": "Experten kontaktieren",
     "ltr": "Visa LTR",
     "languages": "Sprachen",
-    "search": "Suche", "comparator": "Visa-Vergleich 2026"
+    "search": "Suche", "comparator": "Visa-Vergleich 2026",
+    "all_visas": "Alle Visa",
+    "business": "Business-Visum",
+    "smart": "SMART-Visum",
+    "exemption": "Visumbefreiung",
+    "family": "Familienvisum",
+    "student": "Studentenvisum",
+    "volunteer": "Freiwilligenvisum",
+    "medical": "Medizinisches Visum",
+    "religious": "Religiöses Visum",
+    "media": "Medienvisum",
+    "official": "Offizielles Visum",
+    "scientific": "Wissenschaftliches Visum",
+    "visa_run": "Visa-Run-Risiken",
+    "categories": {
+      "work": "Arbeit & Geschäft",
+      "tourism": "Tourismus",
+      "long_term": "Langzeitaufenthalt (LTR)",
+      "family": "Familie & Heirat",
+      "education": "Bildung",
+      "elite": "Elite Privileg",
+      "others": "Andere Visa"
+    }
   },
   "meta": {
     "title": "Siam Visa Pro | Thailand Visum Experte - DTV, Tourismus & Ruhestand",
     "description": "Holen Sie sich Ihr Thailand-Visum stressfrei. Experten für DTV-, Touristen- und Ruhestandsvisa. Volle Unterstützung und optimiertes Portfolio."
+  },
+  "home_page": {
+    "appointment_title": "Lassen Sie uns über Ihr Projekt sprechen",
+    "appointment_subtitle": "Buchen Sie ein kostenloses Gespräch mit einem Thailand-Visa-Experten."
   },
   "hero": {
     "new_badge": "NEU: DTV VISUM VERFÜGBAR",
@@ -244,9 +270,17 @@ export const de = {
     }
   },
   "services_page": {
+    "meta": {
+      "title": "Thailand Visum Dienstleistungen & Preise | Siam Visa Pro",
+      "description": "Wählen Sie das für Sie passende Unterstützungsniveau. Von der Dokumentenprüfung bis zur vollständigen E-Visum-Verwaltung für DTV, Elite und Langzeitvisa."
+    },
     "hero_title": "Dienstleistungen & Preise",
     "hero_subtitle": "Wählen Sie Ihr Unterstützungsniveau.",
     "hero_tagline": "Wir sind Ihre Verbündeten.",
+    "hero_tagline_secondary": "Umfassende Expertise für Ihre Sorgenfreiheit in Thailand.",
+    "custom_support_title": "Benötigen Sie maßgeschneiderte Unterstützung?",
+    "custom_support_desc": "Unsere Experten stehen zur Verfügung, um Ihre spezifische Akte zu analysieren und Ihnen die beste Expatriierungsstrategie vorzuschlagen.",
+    "custom_support_btn": "Mit einem Experten sprechen",
     "tier_audit": "Audit Paket",
     "tier_audit_desc": "Vollständige Prüfung Ihrer Dokumente.",
     "tier_serenity": "Sorglos Paket",
@@ -275,11 +309,438 @@ export const de = {
     "vip_feat3": "Verfassen des HR-Anschreibens",
     "vip_feat4": "Priorisierter WhatsApp-Support",
     "vip_feat5": "Strategische Beratung (30 Min.)",
-    "vip_feat6": "Verwaltung zusätzlicher Anfragen",
+    "vip_feat6": "Verwaltung zusätzlicher Anfragen"
+  },
+  "business_visa_page": {
     "meta": {
-      "title": "Unsere Services & Preise | Thailand Visum Unterstützung",
-      "description": "Entdecken Sie unsere Angebote: Audit, Sorglos oder VIP/DTV. Wählen Sie die richtige Unterstützung für Ihr Thailand-Visum."
-    }
+      "title": "Business Visum Thailand (Non-B) | Leitfaden & Anforderungen 2026",
+      "description": "Alles über das Non-Immigrant B Visum für legales Arbeiten in Thailand. Arbeitserlaubnis, Dokumente und Verfahren."
+    },
+    "hero_badge": "Arbeit & Business",
+    "hero_title": "Business Visum (Non-B) – Thailand",
+    "hero_subtitle": "Voraussetzungen, Arbeitserlaubnis und Aufenthaltsdauer",
+    "definition_title": "Was ist das Business Visum (Non-B)?",
+    "definition_content": "Das Non-Immigrant B (Business) Visum ist das obligatorische Visum für jeden Ausländer, der legal in Thailand für ein lokales Unternehmen arbeiten oder dort eine aktive Geschäftstätigkeit ausüben möchte. Im Gegensatz zu Touristenvisen ist es an einen bestimmten Arbeitgeber gebunden und stellt den unverzichtbaren ersten Schritt vor dem Erhalt der Arbeitserlaubnis (Work Permit) dar.",
+    "audience_title": "Für wen ist dieses Visum?",
+    "audience_compatible": "Kompatible Profile",
+    "audience_compatible_list": [
+      "Von einem thailändischen Unternehmen eingestellte Mitarbeiter.",
+      "Lehrer an thailändischen Schulen.",
+      "Investoren, die eine Managementfunktion ausüben."
+    ],
+    "audience_not_compatible": "Nicht kompatible Profile",
+    "audience_not_compatible_list": [
+      "Remote-Arbeiter (siehe DTV Visum).",
+      "Digitale Nomaden ohne lokalen Arbeitgeber.",
+      "Jobsuchende (Arbeiten ohne Visum verboten)."
+    ],
+    "duration_title": "Aufenthaltsdauer und Gültigkeit",
+    "duration_initial_label": "Ursprüngliche Dauer",
+    "duration_initial_value": "90 Tage",
+    "duration_max_label": "Max. Verlängerung",
+    "duration_max_value": "1 Jahr (Erneuerbar)",
+    "conditions_title": "Hauptbedingungen und Kriterien",
+    "conditions_list": [
+      "Reisepass mindestens 6 Monate gültig.",
+      "Einladungsschreiben oder Arbeitsvertrag eines thailändischen Unternehmens.",
+      "Unternehmensunterlagen (DBD, Aktionärsliste).",
+      "Thailändische Mitarbeiterquote durch das Unternehmen eingehalten (Verhältnis 4:1).",
+      "Mindestgehalt je nach Nationalität eingehalten."
+    ],
+    "work_title": "Arbeit und erlaubte Tätigkeiten",
+    "work_warning_title": "Wichtiger Warnhinweis",
+    "work_warning_text": "Dieses Visum allein berechtigt Sie NICHT zur Arbeit. Sie müssen Ihre Arbeitserlaubnis (Work Permit) unmittelbar nach Ihrer Ankunft beim Arbeitsministerium einholen. Arbeiten allein mit dem Visum ist illegal.",
+    "work_allowed_label": "✅ Erlaubt (mit Work Permit)",
+    "work_allowed_text": "Unselbstständige Arbeit für das Sponsor-Unternehmen, Management, offizielle Unterschriften.",
+    "work_forbidden_label": "❌ Verboten",
+    "work_forbidden_text": "Arbeit für ein anderes Unternehmen, manuelle Arbeit, die Thailändern vorbehalten ist.",
+    "renewal_title": "Erneuerung und Verlängerungen",
+    "renewal_text": "Das ursprüngliche 90-Tage-Visum kann bei der Einwanderungsbehörde in Thailand auf 1 Jahr verlängert werden. Diese Verlängerung ist jedes Jahr erneuerbar, solange Sie angestellt sind und das Unternehmen die steuerlichen und sozialen Kriterien einhält.",
+    "renewal_note": "Hinweis: Die Verlängerung erfordert oft den Nachweis von Steuer- und Sozialversicherungszahlungen.",
+    "limitations_title": "Einschränkungen und Wachsamkeitspunkte",
+    "limitations_risk_title": "Risiko des Visumsverlusts",
+    "limitations_risk_text": "Wenn Sie Ihren Arbeitsplatz verlassen oder entlassen werden, wird Ihr Visum sofort annulliert (manchmal noch am selben Tag). Sie müssen das Land verlassen oder innerhalb von 7 Tagen (je nach Fall) eine neue Stelle finden, die ein neues Visum sponsern kann.",
+    "cta_help_title": "Benötigen Sie Hilfe bei diesem Visum?",
+    "cta_help_subtitle": "Wir begleiten Unternehmen und Mitarbeiter bei dem Verfahren.",
+    "cta_help_btn": "Meine Berechtigung prüfen",
+    "cta_compare_title": "Optionen vergleichen",
+    "cta_compare_subtitle": "Non-B, LTR oder DTV? Finden Sie das beste Visum.",
+    "cta_compare_btn": "DTV Visum ansehen (Alternative)"
+  },
+  "exemption_visa_page": {
+    "meta": {
+      "title": "Thailand Visumbefreiung (60 Tage) | Leitfaden & Regeln 2026",
+      "description": "Alles über die visumfreie Einreise nach Thailand: 60 Tage Dauer, berechtigte Länder (DE, AT, CH...), Verlängerung und Regeln."
+    },
+    "hero_badge": "Kurzzeit-Tourismus",
+    "hero_title": "Visumbefreiung (60 Tage) – Thailand",
+    "hero_subtitle": "Visumfreie Einreise, Bedingungen und Aufenthaltsdauer",
+    "definition_title": "Was ist die Visumbefreiung (60 Tage)?",
+    "definition_content": "Die Visumbefreiung ermöglicht es Staatsangehörigen aus 93 Ländern (darunter Deutschland, Österreich, Schweiz), ohne vorheriges Visum nach Thailand einzureisen. Es ist die einfachste Lösung für touristische Aufenthalte von weniger als 2 Monaten.",
+    "audience_title": "Für wen ist diese Befreiung geeignet?",
+    "audience_compatible": "Geeignete Profile",
+    "audience_compatible_list": [
+      "Touristen im Urlaub (max. 2-3 Monate).",
+      "Kurze Familienbesuche.",
+      "Punktuelle medizinische Termine."
+    ],
+    "audience_not_compatible": "Nicht geeignete Profile",
+    "audience_not_compatible_list": [
+      "Langfristige Fernarbeiter (Ablehnungsrisiko).",
+      "Personen, die sich niederlassen möchten.",
+      "Lokale Arbeitnehmer (Streng verboten)."
+    ],
+    "duration_title": "Aufenthaltsdauer und Gültigkeit",
+    "duration_initial_label": "Ursprüngliche Dauer",
+    "duration_initial_value": "60 Tage",
+    "duration_max_label": "Verlängerung vor Ort",
+    "duration_max_value": "+ 30 Tage",
+    "conditions_title": "Wichtigste Bedingungen und Kriterien",
+    "conditions_list": [
+      "Reisepass bei Ankunft mindestens 6 Monate gültig.",
+      "Bestätigtes Ausreiseticket innerhalb von 60 Tagen.",
+      "Nachweis ausreichender Mittel (10.000 THB/Person).",
+      "Nicht auf der schwarzen Liste (Blacklist)."
+    ],
+    "work_title": "Arbeit und erlaubte Tätigkeiten",
+    "work_warning_title": "Arbeitsverbot",
+    "work_warning_text": "Die Visumbefreiung ist ein rein touristischer Status. Es ist streng verboten, in Thailand mit diesem Status zu arbeiten (auch ehrenamtlich).",
+    "renewal_title": "Erneuerung und Verlängerungen",
+    "renewal_text": "Sie können Ihren Aufenthalt einmalig um 30 Tage bei der örtlichen Einwanderungsbehörde verlängern (Kosten: 1.900 THB).",
+    "limitations_title": "Einschränkungen und Wachsamkeitspunkte",
+    "limitations_risk_title": "Nichtbeförderung durch Fluggesellschaft",
+    "limitations_risk_text": "Wenn Sie kein Rück- oder Ausreiseticket innerhalb von 60 Tagen haben, kann die Fluggesellschaft Ihnen das Boarding verweigern.",
+    "cta_help_title": "Möchten Sie länger bleiben?",
+    "cta_help_subtitle": "Entdecken Sie das DTV-Visum (5 Jahre) oder LTR (10 Jahre).",
+    "cta_help_btn": "DTV-Visum ansehen",
+    "cta_compare_title": "Optionen vergleichen",
+    "cta_compare_subtitle": "Tourist, Befreiung oder Ruhestand?",
+    "cta_compare_btn": "Touristenvisum (TR) ansehen"
+  },
+  "student_visa_page": {
+    "meta": {
+      "title": "Thailand Studentenvisum (Non-ED) | Leitfaden & Anforderungen 2026",
+      "description": "Visum für das Studium in Thailand (Universität, Sprachschule, Muay Thai). Bedingungen, Dauer, Einschreibung und Arbeitsverbot."
+    },
+    "hero_badge": "Bildung & Ausbildung",
+    "hero_title": "Studentenvisum (Non-ED) – Thailand",
+    "hero_subtitle": "An der Universität studieren oder Thai lernen",
+    "definition_title": "Was ist das Studentenvisum (Non-ED)?",
+    "definition_content": "Das Non-Immigrant ED (Education) Visum ist für Ausländer gedacht, die ein Vollzeitstudium in Thailand absolvieren möchten. Dies umfasst Universitätskurse, obligatorische Praktika, aber auch Sprachkurse (Thai, Englisch) oder kulturelle Ausbildungen (Muay Thai, Kochen) in zertifizierten Schulen.",
+    "audience_title": "Für wen ist dieses Visum?",
+    "audience_compatible": "Kompatible Profile",
+    "audience_compatible_list": [
+      "Universitätsaustauschschüler.",
+      "Personen, die Thai lernen (Privatschulen).",
+      "Muay-Thai-Schüler (zertifizierte Camps)."
+    ],
+    "audience_not_compatible": "Nicht kompatible Profile",
+    "audience_not_compatible_list": [
+      "\"Scheinstudenten\", die nicht am Unterricht teilnehmen.",
+      "Getarnte Arbeiter (illegal).",
+      "Touristen, die einen einfachen Langzeitaufenthalt suchen."
+    ],
+    "duration_title": "Aufenthaltsdauer und Gültigkeit",
+    "duration_initial_label": "Ursprüngliche Dauer",
+    "duration_initial_value": "90 Tage",
+    "duration_max_label": "Max. Gesamt",
+    "duration_max_value": "1 Jahr (Verlängerungen)",
+    "conditions_title": "Hauptbedingungen und Kriterien",
+    "conditions_list": [
+      "Einschreibung an einer vom Bildungsministerium anerkannten Schule oder Universität.",
+      "Offizielles Zulassungsschreiben der Einrichtung.",
+      "Teilnahme am Unterricht (häufige Kontrollen).",
+      "Nachweis der Zahlung der Studiengebühren."
+    ],
+    "work_title": "Arbeit und erlaubte Tätigkeiten",
+    "work_warning_title": "Arbeitsverbot",
+    "work_warning_text": "Das Studentenvisum verbietet ausdrücklich die Arbeit in Thailand. Dies schließt freiberufliche Tätigkeit oder \"Digitales Nomadentum\" ein, wenn es entdeckt wird. Ausnahme: Bestimmte offizielle Universitätspraktika oder Jobs auf dem Campus können unter strengen Bedingungen genehmigt werden.",
+    "renewal_title": "Erneuerung und Verlängerungen",
+    "renewal_text": "Das Visum wird in der Regel für 90 Tage ausgestellt. Es muss alle 90 Tage bei der Einwanderungsbehörde verlängert werden (1.900 THB), unter Vorlage eines Schreibens der Schule, das Ihre Anwesenheit bestätigt. Die maximale Gesamtdauer beträgt oft 1 Jahr für Sprachschulen.",
+    "limitations_title": "Einschränkungen und Wachsamkeitspunkte",
+    "limitations_control_title": "Einreisekontrollen",
+    "limitations_control_text": "Die Einwanderungsbehörde führt bei Verlängerungen stichprobenartige Sprachtests durch. Wenn Sie ein ED-Visum für \"Thailändische Sprache\" haben, aber kein Wort Thai sprechen, wird Ihre Verlängerung abgelehnt und Ihr Visum annulliert.",
+    "cta_school_title": "Suchen Sie eine Schule?",
+    "cta_school_subtitle": "Unsere Bildungspartner können Ihnen helfen.",
+    "cta_school_btn": "Schule finden",
+    "cta_compare_title": "Optionen vergleichen",
+    "cta_compare_subtitle": "Student vs. DTV (wenn Sie online arbeiten).",
+    "cta_compare_btn": "DTV-Visum ansehen"
+  },
+  "smart_visa_page": {
+    "meta": {
+      "title": "Thailand SMART Visum | Für Talente, Investoren & Tech 2026",
+      "description": "Spezielles 4-Jahres-Visum für Talente, Investoren und Führungskräfte. Keine Arbeitserlaubnis erforderlich, Familie inbegriffen. BOI-Bedingungen gelten."
+    },
+    "hero_badge": "Talente & Innovation",
+    "hero_title": "SMART Visum – Thailand",
+    "hero_subtitle": "Das 4-Jahres-Visum für Talente und Investoren",
+    "definition_title": "Was ist das SMART Visum?",
+    "definition_content": "Das SMART Visum ist ein spezielles Visum, das hochqualifizierte Talente, Investoren, Führungskräfte und Startups in Zielbranchen ('S-Curve Industries') wie Tech, Gesundheit oder Umwelt anziehen soll. Es bietet außergewöhnliche Vorteile wie die Befreiung von der klassischen Arbeitserlaubnis und eine Dauer von 4 Jahren.",
+    "audience_title": "Für wen ist dieses Visum?",
+    "audience_compatible": "Kompatible Profile",
+    "audience_compatible_list": [
+      "SMART T (Talent): Experten mit Verdienst > 100k THB/Monat.",
+      "SMART I (Investor): Direktinvestoren (> 20M THB).",
+      "SMART S (Startup): Gründer von Tech-Startups.",
+      "SMART E (Executive): Führungskräfte."
+    ],
+    "audience_industries": "Zielbranchen",
+    "audience_industries_list": [
+      "Digital & Tech, Automatisierung.",
+      "Gesundheit & Wellness, BioTech.",
+      "Grüne Energie, Luftfahrt, Landwirtschaft."
+    ],
+    "duration_title": "Aufenthaltsdauer und Gültigkeit",
+    "duration_standard_label": "Standarddauer",
+    "duration_standard_value": "4 Jahre",
+    "duration_reporting_label": "Berichterstattung",
+    "duration_reporting_value": "1 Jahr (statt 90 Tage)",
+    "conditions_title": "Hauptbedingungen und Kriterien",
+    "conditions_list": [
+      "Genehmigung durch den BOI (Board of Investment) obligatorisch.",
+      "Mindestgehalt von 100.000 THB (Talent) oder 200.000 THB (Executive).",
+      "Direktinvestition von 20 Millionen THB (Investor).",
+      "Zertifiziertes Unternehmen in den Zielbranchen."
+    ],
+    "work_title": "Arbeit und erlaubte Tätigkeiten",
+    "work_no_permit_title": "Keine Arbeitserlaubnis erforderlich",
+    "work_no_permit_text": "Das SMART Visum ersetzt die Arbeitserlaubnis. Sie müssen das blaue Buch (Work Permit) nicht separat beantragen. Zudem genießen Ihr Ehepartner und Ihre Kinder denselben Status.",
+    "renewal_title": "Erneuerung und Verlängerungen",
+    "renewal_text": "Das Visum ist alle 4 Jahre verlängerbar, solange Sie die BOI-Kriterien erfüllen. Der Hauptvorteil ist die Berichterstattung bei der Einwanderungsbehörde, die nur einmal im Jahr statt alle 90 Tage erfolgt.",
+    "limitations_title": "Einschränkungen und Wachsamkeitspunkte",
+    "limitations_complex_title": "Komplexer Prozess",
+    "limitations_complex_text": "Die Erlangung erfordert eine technische Validierung durch den BOI vor dem Visumantrag. Der gesamte Prozess kann 1 bis 2 Monate dauern. Es ist kein 'schnelles' Visum wie das DTV.",
+    "cta_eligible_title": "Ist Ihr Unternehmen berechtigt?",
+    "cta_eligible_subtitle": "Prüfen Sie, ob Sie das SMART Visum erhalten können.",
+    "cta_eligible_btn": "Simulation starten",
+    "cta_compare_title": "Optionen vergleichen",
+    "cta_compare_subtitle": "SMART Visum vs LTR (Long Term Resident).",
+    "cta_compare_btn": "LTR Visum ansehen"
+  },
+  "family_visa_page": {
+    "meta": {
+      "title": "Thailand Familienvisum (Non-O) | Ehe & Angehörige 2026",
+      "description": "Visum für Familienzusammenführung in Thailand: Heirat mit einem thailändischen Staatsbürger oder Elternteil eines thailändischen Kindes. Finanzielle Bedingungen und Verfahren."
+    },
+    "hero_badge": "Familienzusammenführung",
+    "hero_title": "Familienvisum (Non-O) – Thailand",
+    "hero_subtitle": "Zu Ihrem Ehepartner oder Ihren Kindern ziehen",
+    "definition_title": "Was ist das Familienvisum (Non-O)?",
+    "definition_content": "Das Non-Immigrant O Visum ('Thai Family' Option) ermöglicht den Aufenthalt in Thailand auf der Grundlage direkter familiärer Bindungen zu einem thailändischen Staatsangehörigen. Es ist das Standardvisum für Ehepartner von Thailändern und ausländische Eltern, deren Kind die thailändische Staatsangehörigkeit besitzt.",
+    "audience_title": "Für wen ist dieses Visum?",
+    "audience_compatible": "Kompatible Profile",
+    "audience_compatible_list": [
+      "Legal verheiratet mit einem Thailänder / einer Thailänderin.",
+      "Gesetzlicher Elternteil eines thailändischen Kindes.",
+      "Abhängiger (Kind/Ehepartner) eines Inhabers eines Arbeits- oder Ruhestandsvisums."
+    ],
+    "audience_not_compatible": "Nicht kompatible Profile",
+    "audience_not_compatible_list": [
+      "Konkubinat / Lebensgemeinschaft (nicht anerkannt).",
+      "Freundin ohne Heiratsurkunde.",
+      "Freunde oder entfernte Verwandte."
+    ],
+    "duration_title": "Aufenthaltsdauer und Gültigkeit",
+    "duration_initial_label": "Ursprüngliche Dauer",
+    "duration_initial_value": "90 Tage",
+    "duration_max_label": "Max. Verlängerung",
+    "duration_max_value": "1 Jahr (Erneuerbar)",
+    "conditions_title": "Hauptbedingungen und Kriterien",
+    "conditions_list": [
+      "Offizielle Heiratsurkunde (Kor Ror 2/3) ODER Geburtsurkunde des Kindes.",
+      "Finanzieller Nachweis: 400.000 THB auf der Bank oder 40.000 THB monatliches Einkommen.",
+      "Nachweis des Zusammenlebens (Fotos, Hausplan, Zeugenaussagen).",
+      "Hausbesuch durch die Einwanderungsbehörde möglich."
+    ],
+    "work_title": "Arbeit und erlaubte Tätigkeiten",
+    "work_allowed_title": "Arbeit erlaubt (unter Bedingungen)",
+    "work_allowed_text": "Im Gegensatz zu Touristenvisen erlaubt das Non-O Familienvisum die Beantragung einer Arbeitserlaubnis. Sobald diese vorliegt, können Sie legal für jedes thailändische Unternehmen arbeiten, ohne ein Business-Visum (Non-B) zu benötigen.",
+    "renewal_title": "Erneuerung und Verlängerungen",
+    "renewal_text": "Die jährliche Verlängerung erfolgt bei der Einwanderungsbehörde. Der Prozess dauert etwa 30 Tage. Sie müssen jedes Jahr nachweisen, dass die Mittel noch auf der Bank sind und die Ehe noch besteht.",
+    "limitations_title": "Einschränkungen und Wachsamkeitspunkte",
+    "limitations_divorce_title": "Scheidung = Annullierung",
+    "limitations_divorce_text": "Im Falle einer Scheidung wird das Visum sofort annulliert (oft verbleiben 7 Tage zum Verlassen des Landes). Dies ist eine prekäre Situation für jene, die vollständig von diesem Visum abhängen.",
+    "cta_help_title": "Unterstützung bei der Heirat benötigt?",
+    "cta_help_subtitle": "Wir verwalten den Papierkram für die Heiratsverlängerung.",
+    "cta_help_btn": "Einen Experten kontaktieren",
+    "cta_compare_title": "Noch nicht verheiratet?",
+    "cta_compare_subtitle": "Sehen Sie sich individuelle Langzeitvisa an.",
+    "cta_compare_btn": "Elite Visum ansehen (Unabhängig)"
+  },
+  "volunteer_visa_page": {
+    "meta": {
+      "title": "Thailand Freiwilligenvisum (Non-O Volunteer) | Leitfaden 2026",
+      "description": "So erhalten Sie ein Freiwilligenvisum für Thailand. Anforderungen für Freiwilligenarbeit in NGOs, Stiftungen und wohltätigen Organisationen."
+    },
+    "hero_badge": "Ehrenamt & Humanitär",
+    "hero_title": "Freiwilligenvisum (Non-O Volunteer) – Thailand",
+    "hero_subtitle": "Sich für eine humanitäre Sache in Thailand engagieren",
+    "definition_title": "Was ist das Freiwilligenvisum?",
+    "definition_content": "Das Non-Immigrant O (Volunteer) Visum ist für Ausländer gedacht, die unbezahlte Freiwilligenarbeit in einer Wohltätigkeitsorganisation, einer öffentlichen Stiftung oder einer anerkannten NGO in Thailand leisten möchten.",
+    "audience_title": "Für wen ist dieses Visum?",
+    "audience_compatible": "Kompatible Profile",
+    "audience_compatible_list": [
+      "Freiwillige in registrierten Stiftungen.",
+      "Humanitäre Helfer auf Mission.",
+      "Elefantenschutz / Tierschutz."
+    ],
+    "audience_not_compatible": "Nicht kompatible Profile",
+    "audience_not_compatible_list": [
+      "Kurzzeit-Voluntourismus (< 30 Tage).",
+      "Personen ohne offizielle Einladung.",
+      "Arbeitnehmer, die das Business-Visum umgehen wollen."
+    ],
+    "duration_title": "Aufenthaltsdauer und Gültigkeit",
+    "duration_initial_label": "Ursprüngliche Dauer",
+    "duration_initial_value": "90 Tage",
+    "duration_max_label": "Max. Gesamt",
+    "duration_max_value": "1 Jahr (Verlängerungen)",
+    "conditions_title": "Unverzichtbare Bedingungen und Kriterien",
+    "conditions_list": [
+      "Offizielles Schreiben der in Thailand registrierten Organisation.",
+      "Kopie der Lizenz der Stiftung / NGO.",
+      "Arbeitserlaubnis obligatorisch (auch für Ehrenamt).",
+      "Führungszeugnis oft für den Unterricht erforderlich."
+    ],
+    "warning_title": "Wachsamkeit: Der 'Grey Area'",
+    "warning_regulation_title": "Strenge Regulierung",
+    "warning_regulation_text": "Viele Agenturen verkaufen 'Freiwilligenvisa' ohne wirkliches humanitäres Engagement. Die thailändische Einwanderungsbehörde überwacht diese Visa sehr genau. Im Falle einer Kontrolle wird das Visum annulliert, wenn Sie Ihre tatsächliche Tätigkeit nicht nachweisen können.",
+    "cta_help_title": "Hilfe beim Dossier benötigt?",
+    "cta_help_subtitle": "Das Freiwilligenvisum erfordert eine komplexe Dokumentation. Wir helfen Ihnen, die Konformität sicherzustellen.",
+    "cta_help_btn": "Einen Experten konsultieren"
+  },
+  "medical_visa_page": {
+    "meta": {
+      "title": "Thailand Medizinisches Visum (Non-MT / Non-O) | Leitfaden 2026",
+      "description": "Medizinische Versorgung in Thailand. Alles über das medizinische Visum, Verlängerungen für Langzeitpflege und Begleitvisa."
+    },
+    "hero_badge": "Pflege & Gesundheit",
+    "hero_title": "Medizinisches Visum (Non-MT / Non-O) – Thailand",
+    "hero_subtitle": "Profitieren Sie von erstklassiger medizinischer Versorgung in Thailand",
+    "definition_title": "Was ist das medizinische Visum?",
+    "definition_content": "Thailand ist ein wichtiges Ziel für Medizintourismus. Das medizinische Visum ermöglicht es ausländischen Patienten, für chirurgische Behandlungen, Langzeitpflege oder Rehabilitationskuren im Königreich zu bleiben.",
+    "audience_title": "Betroffene Dienstleistungen und Profile",
+    "audience_types_title": "Arten der Versorgung",
+    "audience_types_list": [
+      "Ästhetische und rekonstruktive Chirurgie.",
+      "Komplexe Zahnbehandlungen.",
+      "Vollständige Check-ups.",
+      "Chronische Behandlungen (Dialyse etc.)."
+    ],
+    "audience_companion_title": "Begleitpersonen",
+    "audience_companion_text": "Bis zu 3 Familienmitglieder oder Betreuer können in der Regel ein Abhängigenvisum erhalten, um den Patienten zu begleiten.",
+    "duration_title": "Dauer und Verlängerungen",
+    "duration_validity_label": "Typische Gültigkeit",
+    "duration_validity_value": "90 Tage",
+    "duration_extension_label": "Verlängerung",
+    "duration_extension_value": "Gemäß ärztlichem Attest",
+    "conditions_title": "Erforderliche Dokumente",
+    "conditions_list": [
+      "Ärztliches Attest von einem zertifizierten thailändischen Krankenhaus.",
+      "Einladungsschreiben der Gesundheitseinrichtung.",
+      "Nachweis ausreichender Mittel zur Deckung der Kosten.",
+      "Krankenversicherung, die die Behandlung abdeckt."
+    ],
+    "advantage_title": "Der Vorteil privater Krankenhäuser",
+    "advantage_text": "Die meisten großen internationalen Krankenhäuser verfügen über interne Visazentren, um Patienten bei ihren Verlängerungen zu helfen.",
+    "cta_help_title": "Medizinische Verbindung benötigt?",
+    "cta_help_subtitle": "Wir arbeiten mit den besten Einrichtungen zusammen, um Ihre Aufnahme und Ihr Visum zu erleichtern.",
+    "cta_help_btn": "Unseren Concierge-Service kontaktieren"
+  },
+  "religious_visa_page": {
+    "meta": {
+      "title": "Thailand Religiöses Visum (Non-R) | Leitfaden 2026",
+      "description": "Visum für Mönche, Missionare und religiöse Aktivitäten in Thailand. Antragsbedingungen und Sponsoring-Anforderungen."
+    },
+    "hero_badge": "Mission & Kult",
+    "hero_title": "Religiöses Visum (Non-R) – Thailand",
+    "hero_subtitle": "Religiöse Mission oder Studium des Buddhismus",
+    "definition_title": "Was ist das religiöse Visum?",
+    "definition_content": "Das Non-Immigrant R (Religious) Visum ist Ausländern vorbehalten, die offizielle religiöse Aktivitäten in Thailand ausüben möchten, gesponsert von einer anerkannten Organisation.",
+    "conditions_title": "Profile und Bedingungen",
+    "conditions_list": [
+      "Sponsoring durch eine in Thailand registrierte religiöse Organisation.",
+      "Genehmigung durch das Department of Religious Affairs oder das National Bureau of Buddhism.",
+      "Förmliche Verpflichtung, kein Gehalt zu beziehen.",
+      "Nachweis des Wohnsitzes innerhalb der religiösen Institution."
+    ],
+    "duration_title": "Gültigkeit und Verlängerungen",
+    "duration_initial_label": "Ursprüngliche Gültigkeit",
+    "duration_initial_value": "90 Tage",
+    "duration_max_label": "Max. Verlängerung",
+    "duration_max_value": "1 Jahr (Erneuerbar)",
+    "footer_note": "Dieses Visum erfordert eine enge Abstimmung mit den nationalen Religionsbehörden.",
+    "cta_btn": "Spezifische Beratung anfordern"
+  },
+  "media_visa_page": {
+    "meta": {
+      "title": "Thailand Medien / Journalisten Visum (Non-M) | Leitfaden 2026",
+      "description": "Visum für Journalisten, Pressekorrespondenten und Filmcrews in Thailand. Akkreditierung und erforderliche Bedingungen."
+    },
+    "hero_badge": "Presse & Journalismus",
+    "hero_title": "Medienvisum (Non-M) – Thailand",
+    "hero_subtitle": "Berichterstattung oder Produktion von Inhalten in Thailand",
+    "definition_title": "Was ist das Medienvisum (Non-M)?",
+    "definition_content": "Das Non-Immigrant M (Media) Visum richtet sich an zertifizierte Medienvertreter (Journalisten, Korrespondenten, Filmteams).",
+    "accreditation_title": "Akkreditierung: Ein wichtiger Schritt",
+    "accreditation_subtitle": "Vor der Visumbeantragung müssen Sie die Akkreditierung durch das Außenministerium (MFA) einholen.",
+    "accreditation_list": [
+      "Registrierung auf dem Online-Portal des MFA (M-Press).",
+      "Vorlage des Presseausweises und eines Schreibens des Arbeitgebers.",
+      "Hintergrundüberprüfung durch das Public Relations Department."
+    ],
+    "conditions_title": "Bedingungen und Gültigkeit",
+    "duration_label": "Dauer",
+    "duration_value": "1 Jahr (erneuerbar)",
+    "activity_label": "Tätigkeit",
+    "activity_value": "Berichterstattung & Produktion",
+    "warning_title": "Warnung vor Dreharbeiten",
+    "warning_text": "Dreharbeiten für eine kommerzielle Produktion mit einem einfachen Touristenvisum werden mit hohen Geldstrafen geahndet. Eine Genehmigung des 'Thailand Film Office' ist ebenfalls erforderlich.",
+    "cta_btn": "Unterstützung bei der MFA-Akkreditierung"
+  },
+  "official_visa_page": {
+    "meta": {
+      "title": "Thailand Offizielles Visum (Non-F) | Leitfaden 2026",
+      "description": "Visum für Beamte, Diplomaten und Mitarbeiter internationaler Organisationen auf Mission in Thailand."
+    },
+    "hero_badge": "Diplomatie & Staat",
+    "hero_title": "Offizielles Visum (Non-F) – Thailand",
+    "hero_subtitle": "Diplomatische und offizielle Missionen in Thailand",
+    "definition_title": "Was ist das offizielle Visum?",
+    "definition_content": "Das Non-Immigrant F (Official) Visum ist Personen auf offizieller Mission vorbehalten (Diplomaten, Beamte internationaler Organisationen).",
+    "audience_title": "Begünstigte",
+    "audience_diplomatic_title": "Diplomatisches Korps",
+    "audience_diplomatic_text": "Botschaften, Konsulate, Militärattachés.",
+    "audience_oi_title": "IO / UN",
+    "audience_oi_text": "Mitarbeiter der Vereinten Nationen, UNICEF etc. mit Sitz in Bangkok.",
+    "conditions_title": "Besondere Anforderungen",
+    "conditions_text": "Dieses Visum erfordert zwingend eine Verbalnote oder einen offiziellen Marschbefehl.",
+    "cta_btn": "Unterstützung anfordern"
+  },
+  "scientific_visa_page": {
+    "meta": {
+      "title": "Thailand Wissenschaftliches Visum (Non-RS) | Leitfaden 2026",
+      "description": "Visum für Forscher, Experten und Wissenschaftler, die in Thailand Forschungsarbeiten durchführen."
+    },
+    "hero_badge": "Forschung & Innovation",
+    "hero_title": "Wissenschaftliches Forschungsvisum (Non-RS) – Thailand",
+    "hero_subtitle": "Zum wissenschaftlichen Fortschritt in Thailand beitragen",
+    "definition_title": "Was ist das wissenschaftliche Forschungsvisum?",
+    "definition_content": "Das Non-Immigrant RS (Research & Science) Visum ist für Experten und Forscher konzipiert, die wissenschaftliche Arbeiten mit einem thailändischen Institut durchführen.",
+    "audience_title": "Berechtigte Profile",
+    "audience_tech_title": "Technische Experten",
+    "audience_tech_text": "Ingenieure und Spezialisten für Technologietransfer.",
+    "audience_academic_title": "Akademische Forscher",
+    "audience_academic_text": "Wissenschaftler auf Mission in Universitäten oder nationalen Forschungszentren.",
+    "conditions_title": "Erforderliche Bedingungen",
+    "conditions_list": [
+      "Einladung einer thailändischen Forschungseinrichtung (z. B. NRCT).",
+      "Wissenschaftliches Kooperationsabkommen zwischen den Institutionen.",
+      "Abschlusszeugnisse und detaillierter Lebenslauf.",
+      "Nachweis der Forschungsfinanzierung."
+    ],
+    "cta_btn": "Sponsoring prüfen"
   },
   "eligibility": {
     "steps": [
@@ -363,15 +824,24 @@ export const de = {
     "payment_method": "Zahlungsmethode",
     "pay_card": "Karte",
     "pay_transfer": "Überweisung",
-    "bank_details_intro": "Bitte an folgendes Konto überweisen:",
     "account_holder": "Empfänger:",
-    "btn_confirm_transfer": "Überweisung getätigt",
-    "transfer_note": "Namen im Verwendungszweck angeben."
+    "bank_mercury_title": "USD / Internationale Überweisung (Mercury Bank)",
+    "bank_wise_title": "Europa / IBAN Überweisung (Wise)",
+    "bank_details_intro": "Bitte überweisen Sie den Betrag auf eines der folgenden Konten:",
+    "routing_number": "Routing Number (ACH):",
+    "account_number": "Kontonummer:",
+    "iban": "IBAN:",
+    "swift": "BIC/SWIFT:",
+    "btn_confirm_transfer": "Ich habe die Überweisung getätigt",
+    "transfer_note": "Namen im Verwendungszweck angeben.",
+    "transfer_success_desc": "Vielen Dank. Ihre Bestellung wartet auf den Zahlungseingang. Bitte senden Sie einen Zahlungsbeleg an contact@siamvisapro.com, um den Service zu aktivieren."
   },
   "login": {
     "title": "Kundenbereich",
     "subtitle": "Verfolgen Sie Ihren Antrag",
+    "google_loading": "Anmeldung...",
     "google": "Weiter mit Google",
+    "facebook_loading": "Anmeldung...",
     "facebook": "Weiter mit Facebook",
     "or_email": "Oder mit E-Mail",
     "email_label": "E-Mail",
@@ -412,8 +882,10 @@ export const de = {
       "privilege": "Elite"
     },
     "details": "Details",
+    "exploration_title": "Erkundung nach Kategorie",
     "comparator_guide": {
       "title": "Vergleich der Visa für Thailand – 2026",
+      "details_tips_title": "Mehr Details & Tipps",
       "intro": "Die Wahl des richtigen Visums für Thailand hängt hauptsächlich von der Aufenthaltsdauer, der geplanten Tätigkeit und dem Profil des Antragstellers ab. Dieser Vergleich stellt die wichtigsten im Jahr 2026 verfügbaren Visa mit ihren Verwendungszwecken und Einschränkungen vor.",
       "table": {
         "headers": ["Visum", "Aufenthaltsdauer", "Arbeit erlaubt", "Einreisen", "Hauptprofil"],
@@ -513,6 +985,10 @@ export const de = {
     }
   },
   "contact_page": {
+    "meta": {
+      "title": "Kontakt Siam Visa Pro | Expertenhilfe für Thailand-Visa",
+      "description": "Haben Sie eine Frage zu Ihrem Thailand-Visum oder unseren Dienstleistungen? Unser Team ist hier, um zu helfen. Kontaktieren Sie uns per E-Mail, Telefon oder WhatsApp."
+    },
     "title": "Kontakt",
     "subtitle": "Fragen zu Ihrem Visum oder unseren Dienstleistungen?",
     "form_title": "Senden Sie uns eine Nachricht",
@@ -600,6 +1076,36 @@ export const de = {
       "card_item4": "Muay Thai / Kochkurs-Teilnehmer"
     }
   },
+  "visa_run_page": {
+    "meta": {
+      "title": "Thailand Visa Run: Risiken, Kosten und Alternativen 2026",
+      "description": "Warum Visa Runs in Thailand im Jahr 2026 gefährlich sind. Entdecken Sie Ablehnungsrisiken, versteckte Kosten und legale Alternativen (DTV, Elite)."
+    },
+    "hero": {
+      "title": "Hören Sie auf mit",
+      "highlight": "Visa Runs.",
+      "subtitle": "Die thailändische Einwanderungsbehörde hat die Regeln verschärft. Das Aneinanderreihen von Visumbefreiungen und touristischen Einreisen ist mittlerweile eine riskante Strategie.",
+      "cta": "Legale Alternativen ansehen"
+    },
+    "dangers": {
+      "title": "Warum es vorbei ist?",
+      "risk1_title": "Verweigerung der Einreise",
+      "risk1_desc": "Einwanderungsbeamte haben das Ermessen, die Einreise zu verweigern – selbst mit gültigem Visum –, wenn sie illegale Arbeit vermuten.",
+      "risk2_title": "Verhör & Stress",
+      "risk2_desc": "In der 'Haltezelle' am Flughafen auf den nächsten Flug nach Hause zu warten, ist keine Art zu leben.",
+      "risk3_title": "Versteckte Kosten",
+      "risk3_desc": "Flüge, Last-Minute-Hotels, Taxis... Ein 'Visa Run' kostet etwa 10.000 THB pro Monat. Das sind 120.000 THB/Jahr."
+    },
+    "solutions": {
+      "title": "Echte Lösungen (2026)",
+      "dtv": "DTV Visum (5 Jahre)",
+      "dtv_desc": "Perfekt für digitale Nomaden. ~15.000 THB einmalig.",
+      "elite": "Elite Visum (5-20 Jahre)",
+      "elite_desc": "Absolute Sorgenfreiheit für diejenigen, die investieren können.",
+      "ltr": "LTR Visum (10 Jahre)",
+      "ltr_desc": "Für wohlhabende und talentierte Profile."
+    }
+  },
   "tourist_page": {
     "badge": "Tourismus & Freizeit",
     "title": "Touristenvisum (TR)",
@@ -625,6 +1131,10 @@ export const de = {
     "upsell_link": "DTV Visum entdecken"
   },
   "retirement_page": {
+    "meta": {
+      "title": "Thailand Ruhestandsvisum (Non-O / O-A) | Expertenleitfaden 2026",
+      "description": "Genießen Sie Ihren Ruhestand in Thailand. 800k THB Bankanforderung, 50+ Jahre und Krankenversicherung. Volle administrative Unterstützung."
+    },
     "badge": "Langzeit",
     "title": "Ruhestandsvisum (Non-O / O-A)",
     "subtitle": "Genießen Sie Ihren Ruhestand unter der thailändischen Sonne.",
@@ -645,8 +1155,15 @@ export const de = {
     "btn_support": "Unterstützung erhalten"
   },
   "tourist_visa_page": {
+    "meta": {
+      "title": "Thailand Touristenvisum (TR) | Verlängerungen & Leitfaden 2026",
+      "description": "Das klassische Visum, um Thailand stressfrei zu entdecken. 60 Tage bei Ankunft, verlängerbar um 30 Tage. Erforderliche Dokumente und Kosten."
+    },
     "hero_title": "Touristenvisum (TR)",
     "hero_subtitle": "Die klassische Option, um Thailand bis zu 90 Tage zu erkunden.",
+    "hero_description": "Das klassische Visum, um Thailand stressfrei zu entdecken.",
+    "hero_tagline": "Verlängerung vor Ort möglich, um Ihren Aufenthalt zu verlängern.",
+    "pitfalls_title": "Wichtige Vorsichtsmaßnahmen",
     "rules_title": "Die Regeln",
     "duration_title": "Dauer des Aufenthalts",
     "duration_desc": "60 Tage bei der Ankunft, vor Ort um weitere 30 Tage verlängerbar.",
@@ -767,46 +1284,179 @@ export const de = {
   "faq_page": {
     "title": "Häufig gestellte Fragen",
     "subtitle": "Alles, was Sie vor der Abreise wissen müssen.",
-    "questions": [
+    "sections": [
       {
-        "q": "Unterschied DTV vs Touristenvisum?",
-        "a": "TR ist 60 Tage gültig. DTV ist 5 Jahre gültig und erlaubt Fernarbeit."
+        "title": "Visa-Grundlagen in Thailand",
+        "questions": [
+          {
+            "q": "Brauche ich ein Visum, um nach Thailand zu reisen?",
+            "a": "Das hängt von Ihrer Nationalität und der Aufenthaltsdauer ab. Viele Reisende können im Rahmen einer Visumbefreiung ohne vorheriges Visum für einen begrenzten touristischen Aufenthalt einreisen. Für längere Aufenthalte oder bestimmte Zwecke (Homeoffice, Ruhestand) ist ein Visum obligatorisch."
+          },
+          {
+            "q": "Was ist der Unterschied zwischen Visumbefreiung und einem Touristenvisum?",
+            "a": "Die Befreiung ermöglicht die Einreise ohne vorherigen Antrag, bietet aber eine kürzere Dauer und weniger Flexibilität. Das Touristenvisum erfordert einen Antrag vor der Abreise, erlaubt aber einen längeren Aufenthalt und eine mögliche Verlängerung. Beides berechtigt nicht zur Arbeit."
+          },
+          {
+            "q": "Welches Visum soll ich wählen, um länger als 90 Tage in Thailand zu bleiben?",
+            "a": "Für mehr als 90 Tage sollten Sie sich für ein Langzeitvisum entscheiden, wie das <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> (5 Jahre), das <a href='/de/ltr' class='text-amber-600 font-medium hover:underline'>LTR Visum</a> (10 Jahre) oder das <a href='/de/retirement-visa' class='text-amber-600 font-medium hover:underline'>Ruhestandsvisum</a> (Non-O). <a href='/de/tourist-visa' class='text-amber-600 font-medium hover:underline'>Touristenvisa</a> sind auf maximal 90 Tage (60+30) begrenzt."
+          },
+          {
+            "q": "Kann man ohne Visum einreisen und vor Ort verlängern?",
+            "a": "Ja, eine Visumbefreiung (derzeit meist 60 Tage für viele Länder) kann einmalig um 30 Tage bei der örtlichen Einwanderungsbehörde verlängert werden."
+          },
+          {
+            "q": "Kann man den Visumtyp in Thailand ändern?",
+            "a": "In einigen Fällen ja (z. B. Tourist zu Ruhestand), aber das ist weder automatisch noch garantiert. Bestimmte Umwandlungen, wie zum <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV Visum</a>, erfordern oft einen Neuantrag im Ausland."
+          },
+          {
+            "q": "Was ist die maximale legale Aufenthaltsdauer in Thailand?",
+            "a": "Mit einem <a href='/de/elite-visa' class='text-amber-600 font-medium hover:underline'>Elite Visum</a> oder LTR können es bis zu 20 Jahre sein. Mit einem DTV sind es 180 Tage pro Einreise (verlängerbar). Mit einem Touristenvisum sind es maximal 90 Tage."
+          },
+          {
+            "q": "Wie oft kann man pro Jahr nach Thailand einreisen?",
+            "a": "Es gibt keine strikte schriftliche Grenze, aber die Einwanderungsbehörde überwacht wiederholte Einreisen (<a href='/de/visa-run' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). Mit einem Multi-Entry-Visum (<a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite) sind die Einreisen unbegrenzt."
+          },
+          {
+            "q": "Ändern sich die Visaregeln in Thailand oft?",
+            "a": "Ja, die Vorschriften entwickeln sich weiter. Es ist wichtig, sich auf offizielle Quellen oder aktuelle Experten zu beziehen. Unsere Wissensdatenbank ist für 2026 aktualisiert."
+          }
+        ]
       },
       {
-        "q": "Kann ich mit Touristenvisum arbeiten?",
-        "a": "Nein. Arbeit ist streng verboten. DTV legalisiert Ihren Status."
+        "title": "Arbeit, Tätigkeit und Homeoffice",
+        "questions": [
+          {
+            "q": "Kann man mit einem Touristenvisum in Thailand arbeiten?",
+            "a": "Nein. Das <a href='/de/tourist-visa' class='text-amber-600 font-medium hover:underline'>Touristenvisum</a> erlaubt keinerlei berufliche Tätigkeit in Thailand, auch keine bezahlte Fernarbeit. Arbeiten mit einem Touristenvisum kann zu Strafen (Geldstrafe, Abschiebung) führen."
+          },
+          {
+            "q": "Ist Fernarbeit (Homeoffice) in Thailand erlaubt?",
+            "a": "Ja, aber nur mit bestimmten Visa wie dem <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> oder LTR. Die Fernarbeit muss für ein ausländisches Unternehmen ausgeübt werden, ohne lokale thailändische Geschäftstätigkeit."
+          },
+          {
+            "q": "Was ist der Unterschied zwischen lokaler Arbeit und Fernarbeit?",
+            "a": "Lokale Arbeit beinhaltet einen thailändischen Arbeitgeber und erfordert zwingend eine Arbeitserlaubnis (Work Permit). Fernarbeit (für einen ausländischen Kunden/Arbeitgeber) wird unter dem <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> ohne Arbeitserlaubnis toleriert."
+          },
+          {
+            "q": "Brauche ich eine Arbeitserlaubnis, um von Thailand aus zu arbeiten?",
+            "a": "Nicht mit dem <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> (für Fernarbeit). Für jedes andere Visum (Non-B) ist eine Arbeitserlaubnis (Work Permit) strikt obligatorisch."
+          },
+          {
+            "q": "Kann man mit einem Visum in Thailand ein Unternehmen gründen?",
+            "a": "Sie können Gesellschafter sein, aber um dort aktiv zu arbeiten oder zeichnungsberechtigter Direktor zu sein, benötigen Sie ein <a href='/de/business-visa' class='text-amber-600 font-medium hover:underline'>Non-B Visum</a> und eine Arbeitserlaubnis."
+          },
+          {
+            "q": "Welche Visa ermöglichen es, legal in Thailand zu arbeiten?",
+            "a": "Das <a href='/de/business-visa' class='text-amber-600 font-medium hover:underline'>Non-B Visum</a> (mit Work Permit), das <a href='/de/ltr' class='text-amber-600 font-medium hover:underline'>LTR Visum</a> (digitale Arbeitserlaubnis enthalten), das <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> (nur Fernarbeit) und das Elite-Visum (falls mit einer seltenen Arbeitsoption gekoppelt, sonst nicht)."
+          },
+          {
+            "q": "Arbeiten ohne passendes Visum: Was sind die Risiken?",
+            "a": "Geldstrafen, Gefängnis, Abschiebung und Eintragung auf die schwarze Liste (Blacklist), die die Rückkehr nach Thailand für mehrere Jahre verbietet."
+          }
+        ]
       },
       {
-        "q": "Bearbeitungszeit?",
-        "a": "3-10 Tage für Touristenvisum, 5-15 Tage für DTV."
+        "title": "Dauer, Verlängerungen und Ausreisen",
+        "questions": [
+          {
+            "q": "Kann man ein Visum in Thailand verlängern?",
+            "a": "Ja, je nach Visumtyp. Das Touristenvisum und die Befreiung können um 30 Tage verlängert werden. Das DTV kann um 180 Tage verlängert werden (einmal pro Einreise)."
+          },
+          {
+            "q": "Wie oft kann man ein Visum verlängern?",
+            "a": "In der Regel nur einmal pro Einreise. Um länger zu bleiben, muss man oft das Land verlassen und neu einreisen (wenn das Visum dies zulässt) oder das Visum wechseln."
+          },
+          {
+            "q": "Muss man das Land verlassen, um ein Visum zu erneuern?",
+            "a": "Bei Visa mit mehrfacher Einreise (DTV, Elite) müssen Sie am Ende Ihrer erlaubten Aufenthaltsdauer (z. B. 180 Tage) ausreisen, um eine neue Einreise zu 'aktivieren'. Bei Visa mit einmaliger Einreise muss ein neuer Antrag gestellt werden."
+          },
+          {
+            "q": "Was ist ein Re-Entry Permit und wann ist es notwendig?",
+            "a": "Es ist die Erlaubnis zur Wiedereinreise, ohne das aktuelle Visum zu verlieren. Notwendig, wenn Sie ein Visum mit einmaliger Einreise haben, aber vorübergehend aus Thailand ausreisen müssen."
+          },
+          {
+            "q": "Kann man legal mehrere Jahre in Thailand bleiben?",
+            "a": "Ja, aber nur mit spezifischen Langzeitvisa (Ruhestand, DTV, LTR, Elite). Das Aneinanderreihen von Touristenvisa ist keine tragfähige langfristige Lösung."
+          },
+          {
+            "q": "Was ist der Unterschied zwischen Single-Entry und Multiple-Entry Visa?",
+            "a": "Single: Sobald Sie das Land verlassen, ist das Visum beendet. Multiple: Sie können während der Gültigkeit des Visums so oft ein- und ausreisen, wie Sie möchten."
+          }
+        ]
       },
       {
-        "q": "Muss Geld (500k THB) gesperrt sein?",
-        "a": "Nein, aber es muss zum Zeitpunkt des Antrags sichtbar sein."
+        "title": "Häufige Fehler und Risiken",
+        "questions": [
+          {
+            "q": "Was passiert bei einem Overstay in Thailand?",
+            "a": "Ein Überschreiten der Aufenthaltsdauer führt zu einer Geldstrafe von 500 THB/Tag (max. 20.000 THB). Ein langer Overstay (>90 Tage) führt zu einer Einreisesperre (Blacklist)."
+          },
+          {
+            "q": "Was riskiert man, wenn man mit dem falschen Visum arbeitet?",
+            "a": "Dies ist ein Verstoß gegen die Einwanderungs- und Arbeitsgesetze. Es besteht das Risiko von Verhaftung und Abschiebung."
+          },
+          {
+            "q": "Kann ein Visum ohne Erklärung abgelehnt werden?",
+            "a": "Ja. Die Konsularbehörden sind nicht verpflichtet, ihre Entscheidungen zu begründen. Ein schlecht vorbereitetes Dossier ist die häufigste Ursache."
+          },
+          {
+            "q": "Was tun bei einer Ablehnung des thailändischen Visums?",
+            "a": "Man muss die Ursache analysieren (oft finanziell oder dokumentarisch) und einen neuen, korrigierten Antrag stellen. Gebühren werden nicht erstattet."
+          },
+          {
+            "q": "Kann man in Thailand mit einer Einreisesperre belegt werden?",
+            "a": "Ja, bei erheblichem Overstay oder illegaler Arbeit."
+          },
+          {
+            "q": "Sind Visa Runs noch erlaubt?",
+            "a": "Sie sind keine zuverlässige Lösung mehr. Die Einwanderungsbehörde überwacht Profile, die Ein- und Ausreisen über Land oder Luft ohne angemessenes Visum aneinanderreihen."
+          }
+        ]
       },
       {
-        "q": "Was bei Ablehnung?",
-        "a": "Gebühren werden nicht erstattet. Nutzen Sie unser Audit-Paket zur Sicherheit."
+        "title": "Spezifische Profile",
+        "questions": [
+          {
+            "q": "Welches Visum für das Leben in Thailand ab 50?",
+            "a": "Das <a href='/de/retirement-visa' class='text-amber-600 font-medium hover:underline'>Ruhestandsvisum</a> (Non-O oder O-A) ist am besten geeignet, wenn Sie nicht arbeiten. Das LTR 'Wealthy Pensioner' ist eine VIP-Option."
+          },
+          {
+            "q": "Welches Visum für das Leben in Thailand ohne zu arbeiten?",
+            "a": "Elite Visum (kostenpflichtig, VIP), <a href='/de/retirement-visa' class='text-amber-600 font-medium hover:underline'>Ruhestandsvisum</a> (+50 Jahre) oder <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a> (falls Sie passives Einkommen oder Soft-Power-Aktivitäten haben, zu bestätigen)."
+          },
+          {
+            "q": "Welches Visum für einen langen Aufenthalt in Thailand ohne Ausreise?",
+            "a": "Das <a href='/de/elite-visa' class='text-amber-600 font-medium hover:underline'>Elite Visum</a> oder das <a href='/de/retirement-visa' class='text-amber-600 font-medium hover:underline'>Ruhestandsvisum</a> (mit jährlichen Verlängerungen vor Ort) sind am besten geeignet, um obligatorische Ausreisen zu vermeiden."
+          }
+        ]
       }
     ],
     "not_found_title": "Antwort nicht gefunden?",
-    "not_found_desc": "Unsere Experten analysieren Ihre Situation.",
-    "not_found_btn": "Berechtigung prüfen"
+    "not_found_desc": "Unsere Experten analysieren Ihre spezifische Situation.",
+    "not_found_btn": "Berechtigung kostenlos prüfen",
+    "meta": {
+      "title": "FAQ Thailand Visum | Antworten auf Ihre Fragen - Siam Visa Pro",
+      "description": "Häufig gestellte Fragen zu thailändischen Visa (DTV, TR, Non-O). Finden Sie alle Antworten zur Vorbereitung Ihres Aufenthalts."
+    }
   },
   "terms_page": {
+    "meta": {
+      "title": "Allgemeine Geschäftsbedingungen | Siam Visa Pro",
+      "description": "Datenschutzrichtlinie, rechtliche Hinweise und Nutzungsbedingungen für die administrative Unterstützung von Siam Visa Pro."
+    },
     "title": "Allgemeine Geschäftsbedingungen",
-    "subtitle": "Datenschutz und Rechtliches",
+    "subtitle": "Datenschutz und Rechtlicher Hinweis",
     "legal_title": "Rechtlicher Hinweis",
-    "legal_text": "SiamVisaPro ist ein privater Dienstleister, keine Regierungsbehörde.",
+    "legal_text": "SiamVisaPro ist ein privater Dienstleister für administrative Unterstützung. Wir sind nicht mit der thailändischen Regierung oder einer Botschaft verbunden. Der Preis unserer Dienstleistungen beinhaltet unsere Verwaltungs- und Expertengebühren zusätzlich zu den offiziellen Konsulatsgebühren.",
     "responsibility_title": "Haftung",
-    "responsibility_text": "Wir garantieren Sorgfalt, aber die Entscheidung liegt bei den Behörden.",
+    "responsibility_text": "SiamVisaPro verpflichtet sich zur Prüfung der Vollständigkeit der Unterlagen vor der Einreichung. Die Erteilung des Visums liegt jedoch im alleinigen Ermessen der thailändischen Behörden. Im Falle einer Ablehnung, die nicht auf einen Fehler unsererseits zurückzuführen ist (z. B. Vorstrafen, verheimlichte Migrationsgeschichte, willkürliche Entscheidung der Botschaft), erfolgt keine Rückerstattung.",
     "privacy_title": "Datenschutz",
-    "privacy_intro": "Wir nehmen Datensicherheit ernst.",
-    "privacy_list1": "Verschlüsselte Speicherung.",
-    "privacy_list2": "Löschung nach 30 Tagen.",
-    "privacy_list3": "Kein Verkauf an Dritte.",
+    "privacy_intro": "Wir nehmen die Sicherheit Ihrer Daten sehr ernst.",
+    "privacy_list1": "Ihre Dokumente (Reisepässe, Bankauszüge) werden auf verschlüsselten Servern gespeichert.",
+    "privacy_list2": "Sie werden 30 Tage nach Erhalt Ihres Visums aus unseren Datenbanken gelöscht.",
+    "privacy_list3": "Es werden keine Daten an Dritte verkauft.",
     "contact_title": "Kontakt",
-    "contact_text": "Bei Fragen: legal@siamvisapro.com."
+    "contact_text": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns unter legal@siamvisapro.com."
   },
   "cta_footer": {
     "title": "Lassen Sie sich nicht ablehnen",
@@ -815,21 +1465,21 @@ export const de = {
   },
   "about_page": {
     "meta": {
-      "title": "About Siam Visa Pro | Expert Thailand Visa Assistance",
-      "description": "Learn about Siam Visa Pro's mission, our team of experts, and how we help digital nomads and retirees secure their future in Thailand."
+      "title": "Über Siam Visa Pro | Experten-Unterstützung für Thailand-Visa",
+      "description": "Erfahren Sie mehr über die Mission von Siam Visa Pro, unser Expertenteam und wie wir digitalen Nomaden und Rentnern helfen, ihre Zukunft in Thailand zu sichern."
     },
-    "hero_title": "Who We Are",
-    "hero_subtitle": "Your bridge to a seamless life in Thailand.",
-    "mission_title": "Our Mission",
-    "mission_text1": "Founded by expats for expats, Siam Visa Pro was born from a simple observation: the Thai visa process is often confusing, changing, and stressful.",
-    "mission_text2": "Our goal is to digitize and simplify this process while maintaining a high level of human expertise. We combine AI-driven file analysis with manual oversight to ensure the highest success rates.",
-    "team_title": "The Team",
-    "team_description": "Our experts are based in Bangkok, giving us a unique perspective on both consular requirements and local immigration realities.",
+    "hero_title": "Wer wir sind",
+    "hero_subtitle": "Ihre Brücke zu einem reibungslosen Leben in Thailand.",
+    "mission_title": "Unsere Mission",
+    "mission_text1": "Von Expats für Expats gegründet, entstand Siam Visa Pro aus einer einfachen Beobachtung: Der thailändische Visumsprozess ist oft verwirrend, veränderlich und stressig.",
+    "mission_text2": "Unser Ziel ist es, diesen Prozess zu digitalisieren und zu vereinfachen, während wir gleichzeitig ein hohes Maß an menschlicher Expertise beibehalten. Wir kombinieren KI-gestützte Dateianalyse mit manueller Aufsicht, um die höchsten Erfolgsquoten zu gewährleisten.",
+    "team_title": "Das Team",
+    "team_description": "Unsere Experten haben ihren Sitz in Bangkok, was uns eine einzigartige Perspektive sowohl auf die konsularischen Anforderungen als auch auf die lokalen Einwanderungsrealitäten ermöglicht.",
     "founder_name": "Raphaël Buresi",
-    "founder_role": "Founder & Visa Strategist",
-    "founder_bio": "With years of experience in the Thai tech and administrative ecosystem, Raphaël created Siam Visa Pro to help the nomadic community thrive in Thailand.",
-    "partnership_title": "A DigitGpt LLC Company",
-    "partnership_text": "Siam Visa Pro is powered by DigitGpt LLC, a technology firm specializing in AI-driven administrative automation. This partnership allows us to offer cutting-edge tools like our Visa Eligibility AI."
+    "founder_role": "Gründer & Visum-Stratege",
+    "founder_bio": "Mit jahrelanger Erfahrung im thailändischen Tech- und Verwaltungs-Ökosystem gründete Raphaël Siam Visa Pro, um der Nomaden-Community zu helfen, in Thailand erfolgreich zu sein.",
+    "partnership_title": "Ein Unternehmen der DigitGpt LLC",
+    "partnership_text": "Siam Visa Pro wird von DigitGpt LLC unterstützt, einem Technologieunternehmen, das auf KI-gesteuerte administrative Automatisierung spezialisiert ist. Diese Partnerschaft ermöglicht es uns, innovative Tools wie unsere Visum-Berechtigungs-KI anzubieten."
   },
   "footer": {
     "desc": "Ihr vertrauenswürdigster Partner für Thai-Visa. Spezialisten für DTV und komplexe Verfahren.",
@@ -846,8 +1496,8 @@ export const de = {
     "secure_payment": "Sichere Zahlung: Mercury & Wise",
     "author": "Raphaël Buresi",
     "author_role": "Thailand Visa Expert",
-    "written_by": "Written by",
-    "last_updated": "Last updated",
+    "written_by": "Verfasst von",
+    "last_updated": "Zuletzt aktualisiert am",
     "office_bkk": "Bangkok: Sukhumvit Rd, Khlong Toei, Bangkok 10110, Thailand",
     "office_usa": "HQ: 16192 Coastal Highway, Lewes, Delaware 19958, USA",
     "tax_id": "RC: 2417125",

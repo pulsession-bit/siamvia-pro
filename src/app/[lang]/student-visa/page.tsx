@@ -9,10 +9,11 @@ import { generateMetadataWithHreflang } from '@/utils/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    // Hardcoded metadata for canonical page
-    const meta = {
-        title: `Visa Étudiant Thaïlande (Non-ED) | Guide ${new Date().getFullYear()}`,
-        description: "Visa pour étudier en Thaïlande (Université, École de langue, Muay Thai). Conditions, durée, inscription et interdiction de travail."
+    const t = translations[lang as keyof typeof translations] || translations.en;
+
+    const meta = (t.student_visa_page as any).meta || {
+        title: t.student_visa_page.hero_title,
+        description: t.student_visa_page.hero_subtitle
     };
 
     return generateMetadataWithHreflang({

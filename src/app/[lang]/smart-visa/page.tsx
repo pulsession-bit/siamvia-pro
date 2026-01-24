@@ -9,10 +9,11 @@ import { generateMetadataWithHreflang } from '@/utils/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    // Hardcoded metadata for canonical page
-    const meta = {
-        title: `SMART Visa Thaïlande (4 Ans) | Tech & Investisseurs ${new Date().getFullYear()}`,
-        description: "Visa spécial 4 ans pour talents, investisseurs et exécutifs. Pas de Work Permit requis, famille incluse. Conditions BOI."
+    const t = translations[lang as keyof typeof translations] || translations.en;
+
+    const meta = (t.smart_visa_page as any).meta || {
+        title: t.smart_visa_page.hero_title,
+        description: t.smart_visa_page.hero_subtitle
     };
 
     return generateMetadataWithHreflang({

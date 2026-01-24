@@ -14,11 +14,37 @@ export const zh = {
     "eligibility": "联系专家",
     "ltr": "LTR 签证",
     "languages": "语言",
-    "search": "搜索", "comparator": "2026 签证比较"
+    "search": "搜索", "comparator": "2026 签证比较",
+    "all_visas": "所有签证",
+    "business": "商务签证",
+    "smart": "智慧签证",
+    "exemption": "签证豁免",
+    "family": "家庭签证",
+    "student": "学生签证",
+    "volunteer": "志愿者签证",
+    "medical": "医疗签证",
+    "religious": "宗教签证",
+    "media": "媒体签证",
+    "official": "公务签证",
+    "scientific": "科研签证",
+    "visa_run": "签证延期风险 (Visa Run)",
+    "categories": {
+      "work": "工作与商务",
+      "tourism": "旅游",
+      "long_term": "长期居留 (LTR)",
+      "family": "家庭与婚姻",
+      "education": "教育",
+      "elite": "精英特权",
+      "others": "其他签证"
+    }
   },
   "meta": {
     "title": "Siam Visa Pro | 泰国签证专家 - DTV, 旅游与退休",
     "description": "轻松获得您的泰国签证。DTV、旅游和退休签证专家。提供全面支持和优化组合。"
+  },
+  "home_page": {
+    "appointment_title": "让我们聊聊您的计划",
+    "appointment_subtitle": "预约泰国签证专家的免费咨询。"
   },
   "search_page": {
     "meta": {
@@ -50,8 +76,10 @@ export const zh = {
       "privilege": "精英"
     },
     "details": "详情",
+    "exploration_title": "按类别浏览",
     "comparator_guide": {
       "title": "2026年泰国签证对比指南",
+      "details_tips_title": "更多详情与建议",
       "intro": "选择合适的泰国签证主要取决于停留时间、计划活动和申请人概况。本对比介绍了2026年可用的主要签证及其用途和限制。",
       "table": {
         "headers": ["签证", "停留期限", "允许工作", "入境次数", "主要人群"],
@@ -201,9 +229,17 @@ export const zh = {
     "btn_rates": "查看价格"
   },
   "services_page": {
+    "meta": {
+      "title": "泰国签证服务与价格 | Siam Visa Pro",
+      "description": "选择适合您的支持级别。从文件审计到DTV、精英和长期签证的全程电子签证管理。"
+    },
     "hero_title": "服务与价格",
     "hero_subtitle": "选择您的服务等级。",
     "hero_tagline": "我们是您的盟友。",
+    "hero_tagline_secondary": "为您在泰国的安心提供全方位的专业知识。",
+    "custom_support_title": "需要量身定制的支持吗？",
+    "custom_support_desc": "我们的专家可以分析您的具体案例，并为您提供最佳的出海策略。",
+    "custom_support_btn": "联系专家",
     "tier_audit": "审计套餐",
     "tier_audit_desc": "全面检查文件。",
     "tier_serenity": "无忧套餐",
@@ -336,6 +372,10 @@ export const zh = {
     "start_request": "开始申请"
   },
   "contact_page": {
+    "meta": {
+      "title": "联系 Siam Visa Pro | 泰国签证专家帮助",
+      "description": "有关于泰国签证或我们服务的问题？我们的团队在此为您提供帮助。通过邮件、电话或 WhatsApp 联系我们。"
+    },
     "title": "联系我们",
     "subtitle": "有问题？",
     "form_title": "发送消息",
@@ -447,7 +487,416 @@ export const zh = {
     "upsell_desc": "DTV 更适合工作。",
     "upsell_link": "了解 DTV"
   },
+  "business_visa_page": {
+    "meta": {
+      "title": "泰国商务签证 (Non-B) | 指南与要求 2026",
+      "description": "关于在泰国合法工作的Non-Immigrant B签证的一切。工作许可、文件和程序。"
+    },
+    "hero_badge": "工作与商务",
+    "hero_title": "商务签证 (Non-B) – 泰国",
+    "hero_subtitle": "在泰国合法工作或创业",
+    "definition_title": "什么是 Non-B 签证？",
+    "definition_content": "Non-Immigrant B (Business) 签证是针对希望在泰国公司工作或在泰国开展业务的外国人的标准签证。这是获得工作许可证 (Work Permit) 的必要前提。",
+    "audience_title": "适用对象是谁？",
+    "audience_employees_title": "员工",
+    "audience_employees_text": "被当地公司聘用的人员。",
+    "audience_entrepreneurs_title": "创业者",
+    "audience_entrepreneurs_text": "成立自己公司 (Company Limited) 的人员。",
+    "duration_title": "有效期与停留时间",
+    "duration_initial_label": "初始有效期",
+    "duration_initial_value": "90天",
+    "duration_extension_label": "续签",
+    "duration_extension_value": "1年 (可每年续签)",
+    "conditions_title": "主要条件",
+    "conditions_list": [
+      "邀请函或雇佣合同。",
+      "公司法律文件 (WP3, Por Por 20 等)。",
+      "4名泰籍员工对1名外籍员工的比例。",
+      "每个工作许可证至少200万泰铢的注册资本。"
+    ],
+    "caution_title": "注意：自由职业者",
+    "caution_text": "如果您是为泰国境外客户工作的自由职业者，通常 DTV 签证比 Non-B 签证更简单且成本更低。",
+    "cta_btn": "咨询商务专家"
+  },
+  "exemption_visa_page": {
+    "meta": {
+      "title": "泰国免签入境 (60天) | 指南与规则 2026",
+      "description": "关于泰国免签入境的一切：60天停留期、适用国家（中国等）、延期和规则。"
+    },
+    "hero_badge": "短期旅游",
+    "hero_title": "免签入境 (60天) – 泰国",
+    "hero_subtitle": "免签入关条件与停留时限",
+    "definition_title": "什么是免签入境 (60天)？",
+    "definition_content": "泰国免签政策允许包括中国在内的93个国家/地区的国民无需事先申请签证即可进入泰国。对于不超过2个月的短期旅游，这是最简单的方案。",
+    "audience_title": "免签适用于谁？",
+    "audience_compatible": "适合人群",
+    "audience_compatible_list": [
+      "短期度假游客 (最长2-3个月)。",
+      "短期探亲。",
+      "临时就医看诊。"
+    ],
+    "audience_not_compatible": "不适合人群",
+    "audience_not_compatible_list": [
+      "长期远程办公人员 (有拒绝入境风险)。",
+      "计划长期定居的人员。",
+      "本地工薪族 (严禁)。"
+    ],
+    "duration_title": "停留时间与有效期",
+    "duration_initial_label": "初始停留",
+    "duration_initial_value": "60天",
+    "duration_max_label": "境内续签",
+    "duration_max_value": "+ 30天",
+    "conditions_title": "主要条件与标准",
+    "conditions_list": [
+      "入境时有效期限至少6个月的护照。",
+      "60天内离境的确认机票。",
+      "足够的资金证明 (每人1万泰铢)。",
+      "不在限制入境名单中。"
+    ],
+    "work_title": "工作与许可活动",
+    "work_warning_title": "禁止工作",
+    "work_warning_text": "免签入境属于纯旅游身份。在此身份下，严禁在泰国从事任何形式的工作 (包括志愿者)。",
+    "renewal_title": "续签与延期",
+    "renewal_text": "您可以在当地移民局申请一次为期30天的延期 (费用：1,900泰铢)。",
+    "limitations_title": "限制与注意事项",
+    "limitations_risk_title": "拒绝登机风险",
+    "limitations_risk_text": "如果您没有60天内的离境机票，航空公司可能会在出发地拒绝您登机。",
+    "cta_help_title": "想待更久？",
+    "cta_help_subtitle": "了解 DTV 签证 (5年) 或 LTR 签证 (10年)。",
+    "cta_help_btn": "查看 DTV 签证",
+    "cta_compare_title": "比较选项",
+    "cta_compare_subtitle": "旅游、免签还是退休？",
+    "cta_compare_btn": "查看旅游签证 (TR)"
+  },
+  "student_visa_page": {
+    "meta": {
+      "title": "泰国学生签证 (Non-ED) | 指南与要求 2026",
+      "description": "在泰国学习的签证（大学、语言学校、泰拳）。条件、期限、注册及禁止工作。"
+    },
+    "hero_badge": "教育与培训",
+    "hero_title": "学生签证 (Non-ED) – 泰国",
+    "hero_subtitle": "大学留学或泰语学习",
+    "definition_title": "什么是学生签证 (Non-ED)？",
+    "definition_content": "Non-Immigrant ED (Education) 签证适用于希望在泰国接受全日制教育的外国人。这包括大学课程、强制性实习，也包括在认证学校学习语言 (泰语、英语) 或文化培训 (泰拳、烹饪)。",
+    "audience_title": "该签证适用于谁？",
+    "audience_compatible": "适合人群",
+    "audience_compatible_list": [
+      "大学交换生。",
+      "泰语学习者 (私立语言学校)。",
+      "泰拳学员 (认证训练营)。"
+    ],
+    "audience_not_compatible": "不适合人群",
+    "audience_not_compatible_list": [
+      "不参加课程的“挂名学生”。",
+      "非法务工人员。",
+      "追求便捷长居的普通游客。"
+    ],
+    "duration_title": "停留时间与有效期",
+    "duration_initial_label": "初始停留",
+    "duration_initial_value": "90天",
+    "duration_max_label": "最高总计",
+    "duration_max_value": "1年 (通过续签)",
+    "conditions_title": "主要条件与标准",
+    "conditions_list": [
+      "注册教育部认可的学校或大学。",
+      "学校出具的正式录取通知书。",
+      "课程出勤率 (移民局会不定期抽查)。",
+      "学费缴纳证明。"
+    ],
+    "work_title": "工作与许可活动",
+    "work_warning_title": "严禁工作",
+    "work_warning_text": "学生签证严禁在泰国工作。这包括自由职业或被发现的“数字游民”活动。",
+    "renewal_title": "续签与延期",
+    "renewal_text": "签证通常每90天签发一次。必须凭学校提供的出勤证明，每90天前往移民局办理延期。",
+    "limitations_title": "限制与注意事项",
+    "limitations_control_title": "移民局抽查",
+    "limitations_control_text": "移民局在办理延期时可能会进行随机语言测试。如果您持“泰语学习”签证却不会说泰语，延期可能被拒。",
+    "cta_school_title": "正在找学校？",
+    "cta_school_subtitle": "我们的教育合作伙伴可以为您提供帮助。",
+    "cta_school_btn": "寻找学校",
+    "cta_compare_title": "比较选项",
+    "cta_compare_subtitle": "学生签 vs DTV (如果您远程工作)。",
+    "cta_compare_btn": "查看 DTV 签证"
+  },
+  "smart_visa_page": {
+    "meta": {
+      "title": "泰国 SMART 签证 | 人才与投资者 2026",
+      "description": "面向人才、投资者和高管的特殊4年签证。无需工作许可，可带家属。BOI 条件适用。"
+    },
+    "hero_badge": "人才与创新",
+    "hero_title": "SMART 签证 – 泰国",
+    "hero_subtitle": "面向人才与投资者的4年期签证",
+    "definition_title": "什么是 SMART 签证？",
+    "definition_content": "SMART 签证是一种特殊签证，旨在吸引科技、医疗、环境等目标产业 (S-Curve Industries) 的高技能人才、投资者、高管和初创企业。",
+    "audience_title": "该签证适用于谁？",
+    "audience_compatible": "适合人群",
+    "audience_compatible_list": [
+      "SMART T (人才)：月薪 > 10万泰铢的专家。",
+      "SMART I (投资者)：> 2,000万泰铢的直接投资。",
+      "SMART S (初创)：科技初创企业创始人。",
+      "SMART E (高管)：高级管理人员。"
+    ],
+    "audience_industries": "目标产业",
+    "audience_industries_list": [
+      "数字与科技、自动化。",
+      "医疗与健康、生物技术。",
+      "绿色能源、航空、现代农业。"
+    ],
+    "duration_title": "停留时间与有效期",
+    "duration_standard_label": "标准时限",
+    "duration_standard_value": "4年",
+    "duration_reporting_label": "报到频率",
+    "duration_reporting_value": "1年一次 (普通为90天)",
+    "conditions_title": "主要条件",
+    "conditions_list": [
+      "必须获得 BOI (泰国投资委) 批准。",
+      "符合规定的最低薪资或投资额。",
+      "受雇于目标产业内的认证公司。"
+    ],
+    "work_title": "工作与许可活动",
+    "work_no_permit_title": "无需额外办理工作许可",
+    "work_no_permit_text": "SMART 签证本身即包含工作许可，您无需单独申请蓝本 (Work Permit)。此外，配偶及子女也可享受同等待遇。",
+    "renewal_title": "续签与延期",
+    "renewal_text": "只要符合 BOI 标准，签证可每4年续签一次。最大优势是将90日报到简化为年度报到。",
+    "limitations_title": "限制与注意事项",
+    "limitations_complex_title": "流程较为复杂",
+    "limitations_complex_text": "申请签证前需经过 BOI 的技术审核，整个过程可能需要1-2个月。这不是像 DTV 那样的“快速”签证。",
+    "cta_eligible_title": "您的公司符合条件吗？",
+    "cta_eligible_subtitle": "核实您是否可以获得 SMART 签证。",
+    "cta_eligible_btn": "进行测评",
+    "cta_compare_title": "比较选项",
+    "cta_compare_subtitle": "SMART 签证 vs LTR (长期居民)。",
+    "cta_compare_btn": "查看 LTR 签证"
+  },
+  "family_visa_page": {
+    "meta": {
+      "title": "泰国家庭签证 (Non-O) | 婚姻与家属 2026",
+      "description": "泰国家庭团聚签证：与泰国人结婚或泰国子女的父母。财务条件和流程。"
+    },
+    "hero_badge": "家庭团聚",
+    "hero_title": "家庭签证 (Non-O) – 泰国",
+    "hero_subtitle": "与配偶或子女在泰团聚",
+    "definition_title": "什么是家庭签证 (Non-O)？",
+    "definition_content": "Non-Immigrant O (Thai Family) 签证允许由于与泰国公民有直接亲属关系的人员在泰居住。",
+    "audience_title": "该签证适用于谁？",
+    "audience_compatible": "适合人群",
+    "audience_compatible_list": [
+      "与泰国公民有合法婚姻关系。",
+      "泰籍孩子的合法父母。",
+      "工作/退休签证持有者的随行家属。"
+    ],
+    "audience_not_compatible": "不适合人群",
+    "audience_not_compatible_list": [
+      "未领证的事实婚姻 (不予认可)。",
+      "无结婚证的女友/男友。",
+      "远亲或朋友。"
+    ],
+    "duration_title": "停留时间与有效期",
+    "duration_initial_label": "初始停留",
+    "duration_initial_value": "90天",
+    "duration_max_label": "最高续签",
+    "duration_max_value": "1年 (可每年续签)",
+    "conditions_title": "主要条件",
+    "conditions_list": [
+      "正式结婚证或孩子出生证明。",
+      "财务证明：40万泰铢存银行或4万泰铢月收入。",
+      "共同生活的证据 (照片、住址地图等)。",
+      "移民局可能会入户回访。"
+    ],
+    "work_title": "工作与许可活动",
+    "work_allowed_title": "允许工作 (需办理手续)",
+    "work_allowed_text": "与旅游签不同，家庭签证持有者可以申请工作许可 (Work Permit) 并在泰国合法工作。",
+    "renewal_title": "续签与延期",
+    "renewal_text": "年度延期在当地移民局办理。流程约需30天。每年需证明资金及关系依然持续。",
+    "limitations_title": "限制与注意事项",
+    "limitations_divorce_title": "离婚 = 签证撤销",
+    "limitations_divorce_text": "一旦离婚，签证将立即失效 (通常有7天离境宽限期)。",
+    "cta_help_title": "需要婚姻签辅助办理吗？",
+    "cta_help_subtitle": "我们为您处理繁琐的延期文件。",
+    "cta_help_btn": "联系专家",
+    "cta_compare_title": "尚未结婚？",
+    "cta_compare_subtitle": "查看个人长期停留签证。",
+    "cta_compare_btn": "查看精英签证 (独立身份)"
+  },
+  "volunteer_visa_page": {
+    "meta": {
+      "title": "泰国志愿者签证 (Non-O Volunteer) | 指南 2026",
+      "description": "如何获得泰国志愿者签证。在NGO、基金会和慈善机构进行志愿服务的要求。"
+    },
+    "hero_badge": "公益与人道主义",
+    "hero_title": "志愿者签证 (Non-O Volunteer) – 泰国",
+    "hero_subtitle": "在泰国投身公益事业",
+    "definition_title": "什么是志愿者签证？",
+    "definition_content": "Non-Immigrant O (Volunteer) 签证适用于希望在泰国认证慈善机构、公立基金会或 NGO 从事无报酬志愿工作的外国人。",
+    "audience_title": "该签证适用于谁？",
+    "audience_compatible": "适合人群",
+    "audience_compatible_list": [
+      "注册基金会的志愿者。",
+      "执行任务的人道主义工作人员。",
+      "大象保护/动物保护志愿者。"
+    ],
+    "audience_not_compatible": "不适合人群",
+    "audience_not_compatible_list": [
+      "短期的“公益旅游” (< 30天)。",
+      "无正式邀请函的人员。",
+      "试图逃避商务签证的打工者。"
+    ],
+    "duration_title": "停留时间与有效期",
+    "duration_initial_label": "初始停留",
+    "duration_initial_value": "90天",
+    "duration_max_label": "最高总计",
+    "duration_max_value": "1年 (通过续签)",
+    "conditions_title": "必备条件",
+    "conditions_list": [
+      "泰国注册机构的正式邀请函。",
+      "基金会 / NGO 的执照副本。",
+      "必须办理工作许可 (志愿者也需要)。",
+      "部分教学项目需要无犯罪记录证明。"
+    ],
+    "warning_title": "警示：灰色地带",
+    "warning_regulation_title": "监管严格",
+    "warning_regulation_text": "许多中介销售没有实报内容的“志愿者签”。泰国移民局正严查此类签证，若无法证明实际活动，签证将被撤销。",
+    "cta_help_title": "需要档案办理帮助吗？",
+    "cta_help_subtitle": "志愿者签材料复杂，我们帮您核查合规性。",
+    "cta_help_btn": "咨询专家"
+  },
+  "medical_visa_page": {
+    "meta": {
+      "title": "泰国医疗签证 (Non-MT / Non-O) | 指南 2026",
+      "description": "泰国的医疗护理。关于医疗签证、长期治疗延期及陪同签证的一切。"
+    },
+    "hero_badge": "康养与医疗",
+    "hero_title": "医疗签证 (Non-MT / Non-O) – 泰国",
+    "hero_subtitle": "在泰国享受世界级医疗服务",
+    "definition_title": "什么是医疗签证？",
+    "definition_content": "泰国是全球领先的医疗旅游目的地。医疗签证允许外国患者在泰进行手术治疗、长期护理或康复疗程。",
+    "audience_title": "涉及的服务与人群",
+    "audience_types_title": "治疗类型",
+    "audience_types_list": [
+      "美容整容手术。",
+      "复杂牙科手术。",
+      "全面健康体检。",
+      "慢性病治疗 (如透析)。"
+    ],
+    "audience_companion_title": "陪护人员",
+    "audience_companion_text": "通常最多允许3名家属或护理人员办理随行签证。",
+    "duration_title": "停留与延期",
+    "duration_validity_label": "通常效期",
+    "duration_validity_value": "90天",
+    "duration_extension_label": "延期",
+    "duration_extension_value": "依据医生证明",
+    "conditions_title": "所需材料",
+    "conditions_list": [
+      "泰国认证医院出具的医疗证明。",
+      "医疗机构的接收/邀请函。",
+      "足以支付治疗及生活的费用证明。",
+      "覆盖相关治疗的健康保险。"
+    ],
+    "advantage_title": "私立医院的优势",
+    "advantage_text": "大多数大型国际医院都设有内部签证中心，协助患者办理延期。",
+    "cta_help_title": "需要医疗对接吗？",
+    "cta_help_subtitle": "我们与顶级机构合作，简化您的入院和签证流程。",
+    "cta_help_btn": "联系礼宾服务"
+  },
+  "religious_visa_page": {
+    "meta": {
+      "title": "泰国宗教签证 (Non-R) | 指南 2026",
+      "description": "泰国的僧侣、传教士及宗教活动签证。申请条件和担保要求。"
+    },
+    "hero_badge": "使命与信仰",
+    "hero_title": "宗教签证 (Non-R) – 泰国",
+    "hero_subtitle": "宗教使命或进行佛学研究",
+    "definition_title": "什么是宗教签证？",
+    "definition_content": "Non-Immigrant R (Religious) 签证专为受认证组织派遣，在泰从事官方宗教活动的外国人而设。",
+    "conditions_title": "人群与条件",
+    "conditions_list": [
+      "受获准注册的宗教机构担保。",
+      "获得宗教事务部或国家佛教局核准。",
+      "书面保证不收取薪酬。",
+      "在宗教机构内的居住证明。"
+    ],
+    "duration_title": "有效期与延期",
+    "duration_initial_label": "初始效期",
+    "duration_initial_value": "90天",
+    "duration_max_label": "最高续签",
+    "duration_max_value": "1年 (可续签)",
+    "footer_note": "此签证需要与国家宗教管理部门密切协调。",
+    "cta_btn": "寻求具体建议"
+  },
+  "media_visa_page": {
+    "meta": {
+      "title": "泰国媒体/记者签证 (Non-M) | 指南 2026",
+      "description": "记者、新闻通讯员及摄制组的签证。认证及必要条件。"
+    },
+    "hero_badge": "媒体与新闻",
+    "hero_title": "媒体签证 (Non-M) – 泰国",
+    "hero_subtitle": "在泰国报道新闻或制作内容",
+    "definition_title": "什么是媒体签证 (Non-M)？",
+    "definition_content": "Non-Immigrant M (Media) 签证针对获认证的媒体专业人员 (记者、通讯员、摄影组)。",
+    "accreditation_title": "核心步骤：备案与认证",
+    "accreditation_subtitle": "在申请签证前，必须获得泰国外交部 (MFA) 的认证。",
+    "accreditation_list": [
+      "在外交部门户网站 (M-Press) 注册。",
+      "出示记者证及雇主推荐信。",
+      "由公共关系部进行背景审核。"
+    ],
+    "conditions_title": "条件与有效期",
+    "duration_label": "时长",
+    "duration_value": "1年 (可续签)",
+    "activity_label": "主要活动",
+    "activity_value": "采访报道与制作",
+    "warning_title": "拍摄警示",
+    "warning_text": "持旅游签进行商业拍摄可能面临高额罚款。还需获得泰国电影办公室的相关许可。",
+    "cta_btn": "外交部认证协助"
+  },
+  "official_visa_page": {
+    "meta": {
+      "title": "泰国公务签证 (Non-F) | 指南 2026",
+      "description": "在泰国执行任务的公务员、外交官及国际组织员工的签证。"
+    },
+    "hero_badge": "外交与政务",
+    "hero_title": "公务签证 (Non-F) – 泰国",
+    "hero_subtitle": "在泰执行外交或官方任务",
+    "definition_title": "什么是公务签证？",
+    "definition_content": "Non-Immigrant F (Official) 签证保留给执行官方任务的人员 (外交官、国际组织职员)。",
+    "audience_title": "主要人群",
+    "audience_diplomatic_title": "外交使团",
+    "audience_diplomatic_text": "大使馆、领事馆、武官处。",
+    "audience_oi_title": "国际组织 / 联合国",
+    "audience_oi_text": "驻扎于曼谷的联合国、国际儿童基金会等雇员。",
+    "conditions_title": "特殊要求",
+    "conditions_text": "此签证必须提供照会 (Note Verbale) 或官方任务派遣令。",
+    "cta_btn": "寻求办理协助"
+  },
+  "scientific_visa_page": {
+    "meta": {
+      "title": "泰国科研签证 (Non-RS) | 指南 2026",
+      "description": "在泰国进行研究活动的研究人员、专家及科学家的签证。"
+    },
+    "hero_badge": "研究与创新",
+    "hero_title": "科学研究签证 (Non-RS) – 泰国",
+    "hero_subtitle": "为泰国的科学进步做出贡献",
+    "definition_title": "什么是科学研究签证？",
+    "definition_content": "Non-Immigrant RS (Research & Science) 签证针对与泰国机构合作进行科学研究的专家和学者。",
+    "audience_title": "适用人群",
+    "audience_tech_title": "技术专家",
+    "audience_tech_text": "负责技术转让的工程师和专家。",
+    "audience_academic_title": "学术研究者",
+    "audience_academic_text": "在大学或科研中心执行任务的科学家。",
+    "conditions_title": "所需条件",
+    "conditions_list": [
+      "泰国科研机构的邀请 (如 NRCT)。",
+      "机构间的科学合作协议。",
+      "学位证书及详细简历。",
+      "研究项目经费证明。"
+    ],
+    "cta_btn": "核实担保资格"
+  },
   "retirement_page": {
+    "meta": {
+      "title": "泰国退休签证 (Non-O / O-A) | 专家指南 2026",
+      "description": "在泰国享受退休生活。80万泰铢银行存款要求，50岁以上及医疗保险。全程行政支持。"
+    },
     "badge": "长期",
     "title": "退休签证 (Non-O / O-A)",
     "subtitle": "享受退休生活。",
@@ -468,6 +917,10 @@ export const zh = {
     "btn_support": "获取帮助"
   },
   "tourist_visa_page": {
+    "meta": {
+      "title": "泰国旅游签证 (TR) | 延期与指南 2026",
+      "description": "探索泰国无压力的经典签证。抵达时60天，可延期30天。所需文件及费用。"
+    },
     "hero_title": "旅游签证 (TR)",
     "hero_subtitle": "探索泰国长达 90 天的经典选择。",
     "rules_title": "游戏规则",
@@ -588,35 +1041,168 @@ export const zh = {
     }
   },
   "faq_page": {
-    "title": "常见问题",
-    "subtitle": "您需要知道的一切。",
-    "questions": [
+    "title": "常见问题 (FAQ)",
+    "subtitle": "出发前您需要了解的一切。",
+    "sections": [
       {
-        "q": "DTV与旅游签区别？",
-        "a": "TR 60天。DTV 5年且可工作。"
+        "title": "了解泰国签证",
+        "questions": [
+          {
+            "q": "去泰国需要签证吗？",
+            "a": "这取决于您的国籍和停留时间。许多国家的旅客可以享受免签政策进入泰国进行短期旅游。超过免签时长，或出于其他目的（长期居留、远程办公、退休），则必须申请签证。"
+          },
+          {
+            "q": "签证豁免（免签）和旅游签证有什么区别？",
+            "a": "免签允许无需申请即可入境，但停留时间较短且灵活性较差。旅游签证需要在出发前申请，但允许更长的停留时间且可以申请延期。两者都不允许在当地工作。"
+          },
+          {
+            "q": "想在泰国停留超过90天应该选哪种签证？",
+            "a": "如果计划停留超过90天，您应该选择长期签证，如 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV 签证</a>（5年）、<a href='/zh/ltr' class='text-amber-600 font-medium hover:underline'>LTR 签证</a>（10年）或 <a href='/zh/retirement-visa' class='text-amber-600 font-medium hover:underline'>退休签证</a>（Non-O）。<a href='/zh/tourist-visa' class='text-amber-600 font-medium hover:underline'>旅游签证</a>最长限制为90天（60+30）。"
+          },
+          {
+            "q": "可以免签入境然后在当地延期吗？",
+            "a": "可以。对于许多国家的公民，免签入境（目前通常为60天）可以到当地移民局办理一次为期30天的延期。"
+          },
+          {
+            "q": "可以在泰国境内更换签证类型吗？",
+            "a": "在某些情况下是可以的（例如：旅游签转退休签），但这既不是自动的也无法百分之百保证。某些转换（如转为 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV 签证</a>）通常要求在境外重新申请。"
+          },
+          {
+            "q": "在泰国合法停留的最长期限是多少？",
+            "a": "持有 <a href='/zh/elite-visa' class='text-amber-600 font-medium hover:underline'>精英签证</a> 或 LTR 签证，最长可达20年。持有 DTV 签证，每次入境可停留180天（可延期）。持有旅游签证，最长为90天。"
+          },
+          {
+            "q": "每年可以入境泰国多少次？",
+            "a": "虽然没有明确的文字限制，但移民局会监控频繁出入境（<a href='/zh/visa-run' class='text-amber-600 font-medium hover:underline'>Visa Run</a>）的行为。持有多次往返签证（如 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>、精英签），入境次数是不限的。"
+          },
+          {
+            "q": "泰国的签证规则经常变化吗？",
+            "a": "是的，相关规定会不断演变。参考官方来源或咨询专业的专家至关重要。我们的知识库已针对2026年进行了更新。"
+          }
+        ]
       },
       {
-        "q": "旅游签能工作吗？",
-        "a": "不能，违法。"
+        "title": "工作、活动与远程办公",
+        "questions": [
+          {
+            "q": "持旅游签证可以在泰国工作吗？",
+            "a": "不可以。<a href='/zh/tourist-visa' class='text-amber-600 font-medium hover:underline'>旅游签证</a>不允许在泰国从事任何职业活动，包括有偿的远程办公。持旅游签工作将面临处罚（罚款、驱逐出境）。"
+          },
+          {
+            "q": "在泰国允许远程办公吗？",
+            "a": "允许，但仅限持特定的合适签证，如 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV 签证</a> 或 LTR 签证。远程办公必须是为海外实体服务，且不涉及当地竞争性活动。"
+          },
+          {
+            "q": "当地工作和远程办公有什么区别？",
+            "a": "当地工作涉及泰国雇主，且必须持有工作许可（Work Permit）。持 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV 签证</a> 开展远程办公（为境外客户/雇主服务）是被允许的，无需工作许可。"
+          },
+          {
+            "q": "在泰国远程办公需要工作许可吗？",
+            "a": "持 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV 签证</a>（针对远程办公）无需工作许可。对于其他任何签证（如 Non-B），工作许可（Work Permit）是强制要求的。"
+          },
+          {
+            "q": "可以持签证在泰国创办公司吗？",
+            "a": "您可以作为股东，但要积极参与经营或担任签字董事，您需要 <a href='/zh/business-visa' class='text-amber-600 font-medium hover:underline'>Non-B 签证</a> 及工作许可。"
+          },
+          {
+            "q": "哪些签证允许在泰国合法工作？",
+            "a": "<a href='/zh/business-visa' class='text-amber-600 font-medium hover:underline'>Non-B 签证</a>（配工作许可）、<a href='/zh/ltr' class='text-amber-600 font-medium hover:underline'>LTR 签证</a>（包含数字工作许可）、<a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV 签证</a>（仅限远程办公）以及精英签证（若配有极少数的工作选项，否则不包含）。"
+          },
+          {
+            "q": "持不当签证工作的风险有哪些？",
+            "a": "罚款、监禁、驱逐出境，并被列入黑名单（Blacklist），数年内禁止再次入境泰国。"
+          }
+        ]
       },
       {
-        "q": "办理时间？",
-        "a": "5-15天。"
+        "title": "停留时间、延期与出境",
+        "questions": [
+          {
+            "q": "签证可以在泰国延期吗？",
+            "a": "可以，视签证类型而定。旅游签证和免签入境可延期30天。DTV 可以延期180天（每次入境限一次）。"
+          },
+          {
+            "q": "签证可以延期多少次？",
+            "a": "通常每次入境仅限一次。想停留更久，通常需要出境并重新入境（如果签证允许）或更换签证。"
+          },
+          {
+            "q": "续签签证必须出境吗？",
+            "a": "对于多次往返签证（DTV、精英签），您必须在允许的停留期（如180天）结束时出境，以“激活”新的入境期。对于单次签证，则必须重新申请。"
+          },
+          {
+            "q": "什么是回头签（Re-entry permit），什么时候需要？",
+            "a": "这是一种在不出境即作废当前签证的情况下再次入境的许可。如果您持有单次入境签证但需要暂时离开泰国，则必须办理。"
+          },
+          {
+            "q": "可以合法在泰国居住多年吗？",
+            "a": "可以，但仅限持特定的长期签证（退休签、DTV、LTR、精英签）。单纯依靠连续申请旅游签并不是长久之计。"
+          },
+          {
+            "q": "单次入境签证和多次往返签证有什么区别？",
+            "a": "单次：一旦出境，签证即作废。多次：在签证有效期内，您可以不限次数出入泰国。"
+          }
+        ]
       },
       {
-        "q": "资金冻结？",
-        "a": "不用，只需展示。"
+        "title": "常见错误与风险",
+        "questions": [
+          {
+            "q": "在泰国逾期逗留（Overstay）会怎样？",
+            "a": "逾期逗留每天罚款 500 泰铢（最高 20,000 泰铢）。长期逾期（超过90天）将导致驱逐并列入黑名单（Blacklist）。"
+          },
+          {
+            "q": "持错误签证工作的风险？",
+            "a": "这违反了移民和劳动法，存在被捕和驱逐的风险。"
+          },
+          {
+            "q": "签证会被无理由拒签吗？",
+            "a": "是的。领事部门没有义务说明拒签理由。申请材料准备不当是最常见的原因。"
+          },
+          {
+            "q": "泰国签证被拒怎么办？",
+            "a": "需要分析原因（通常是财务或材料问题），然后递交修正后的新申请。费用不予退还。"
+          },
+          {
+            "q": "会被禁止进入泰国境内吗？",
+            "a": "会。在严重逾期逗留或非法务工的情况下会发生。"
+          },
+          {
+            "q": "Visa Run 依然被允许吗？",
+            "a": "它们已不再是可靠的方案。移民局正在严密监控那些在没有合适签证的情况下频繁通过陆路或航空出入境的人员。"
+          }
+        ]
       },
       {
-        "q": "如果拒签？",
-        "a": "费用不退。"
+        "title": "特定人群",
+        "questions": [
+          {
+            "q": "50岁以后在泰国生活的理想签证是哪种？",
+            "a": "如果您不工作，<a href='/zh/retirement-visa' class='text-amber-600 font-medium hover:underline'>退休签证</a>（Non-O 或 O-A）是最合适的。LTR “财富退休人员” 也是一种 VIP 选择。"
+          },
+          {
+            "q": "不工作在泰国生活的理想签证？",
+            "a": "精英签证（付费、VIP）、<a href='/zh/retirement-visa' class='text-amber-600 font-medium hover:underline'>退休签证</a>（50岁以上）或 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>（如果您有被动收入或从事软实力活动，需确认）。"
+          },
+          {
+            "q": "哪种签证可以长期在泰国停留而无需离境？",
+            "a": "<a href='/zh/elite-visa' class='text-amber-600 font-medium hover:underline'>精英签证</a> 或 <a href='/zh/retirement-visa' class='text-amber-600 font-medium hover:underline'>退休签证</a>（配以每年的境内延期）是避免强制离境的最佳选择。"
+          }
+        ]
       }
     ],
-    "not_found_title": "没找到答案？",
-    "not_found_desc": "专家为您解答。",
-    "not_found_btn": "资格自测"
+    "not_found_title": "没找到您的答案？",
+    "not_found_desc": "我们的专家可以根据您的具体情况进行分析。",
+    "not_found_btn": "免费评估我的资格",
+    "meta": {
+      "title": "泰国签证常见问题 | 您的问题解答 - Siam Visa Pro",
+      "description": "关于泰国签证（DTV、TR、Non-O）的常见问题。查找所有答案以便为您的停留做准备。"
+    }
   },
   "terms_page": {
+    "meta": {
+      "title": "条款与条件 | Siam Visa Pro",
+      "description": "Siam Visa Pro 行政协助服务的隐私政策、法律声明及服务条款。"
+    },
     "title": "条款与条件",
     "subtitle": "隐私与法律",
     "legal_title": "声明",
@@ -638,21 +1224,21 @@ export const zh = {
   },
   "about_page": {
     "meta": {
-      "title": "About Siam Visa Pro | Expert Thailand Visa Assistance",
-      "description": "Learn about Siam Visa Pro's mission, our team of experts, and how we help digital nomads and retirees secure their future in Thailand."
+      "title": "关于 Siam Visa Pro | 泰国签证专家协助",
+      "description": "了解 Siam Visa Pro 的使命、我们的专家团队，以及我们如何帮助数字游民和退休人员在泰国开启未来。"
     },
-    "hero_title": "Who We Are",
-    "hero_subtitle": "Your bridge to a seamless life in Thailand.",
-    "mission_title": "Our Mission",
-    "mission_text1": "Founded by expats for expats, Siam Visa Pro was born from a simple observation: the Thai visa process is often confusing, changing, and stressful.",
-    "mission_text2": "Our goal is to digitize and simplify this process while maintaining a high level of human expertise. We combine AI-driven file analysis with manual oversight to ensure the highest success rates.",
-    "team_title": "The Team",
-    "team_description": "Our experts are based in Bangkok, giving us a unique perspective on both consular requirements and local immigration realities.",
+    "hero_title": "关于我们",
+    "hero_subtitle": "您通往泰国无忧生活的桥梁。",
+    "mission_title": "我们的使命",
+    "mission_text1": "Siam Visa Pro 由外籍人士为外籍人士创立，源于一个简单的观察：泰国签证流程往往令人困惑、多变且充满压力。",
+    "mission_text2": "我们的目标是在保持高水平人工专业知识的同时，将这一流程数字化和简化。我们将人工智能驱动的文件分析与人工监督相结合，以确保最高的成功率。",
+    "team_title": "专家团队",
+    "team_description": "我们的专家总部位于曼谷，这使我们对领事要求和当地移民现实都有独特的见解。",
     "founder_name": "Raphaël Buresi",
-    "founder_role": "Founder & Visa Strategist",
-    "founder_bio": "With years of experience in the Thai tech and administrative ecosystem, Raphaël created Siam Visa Pro to help the nomadic community thrive in Thailand.",
-    "partnership_title": "A DigitGpt LLC Company",
-    "partnership_text": "Siam Visa Pro is powered by DigitGpt LLC, a technology firm specializing in AI-driven administrative automation. This partnership allows us to offer cutting-edge tools like our Visa Eligibility AI."
+    "founder_role": "创始人兼签证战略家",
+    "founder_bio": "凭借在泰国科技和行政生态系统多年的经验，Raphaël 创立了 Siam Visa Pro，旨在帮助游民群体在泰国蓬勃发展。",
+    "partnership_title": "DigitGpt LLC 旗下成员",
+    "partnership_text": "Siam Visa Pro 由 DigitGpt LLC 提供支持，这是一家专门从事人工智能驱动的行政自动化的科技公司。这种伙伴关系使我们能够提供尖端工具，如我们的签证资格 AI。"
   },
   "footer": {
     "desc": "值得信赖的签证伙伴。",

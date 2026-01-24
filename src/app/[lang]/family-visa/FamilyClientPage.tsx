@@ -2,7 +2,7 @@
 'use client';
 
 import React from 'react';
-import { Heart, CheckCircle2, AlertTriangle, Clock, Globe, ShieldAlert, ArrowRight, Baby } from 'lucide-react';
+import { Heart, CheckCircle2, Clock, Globe, ShieldAlert, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { IMAGES } from '@/constants';
 import {
@@ -14,11 +14,13 @@ import {
 } from '@/components/ui/PageComponents';
 
 const FamilyClientPage: React.FC = () => {
+    const { t } = useLanguage();
+
     const VISA_CONFIG = {
-        name: "Visa Famille (Non-O)",
-        type: "Regroupement Familial",
-        audience: "Conjoints de Thaïlandais, Parents d'enfants Thaï",
-        duration: "90 jours (renouvelable 1 an)",
+        name: t('family_visa_page.hero_title').split(' – ')[0],
+        type: t('family_visa_page.hero_badge'),
+        audience: (t('family_visa_page.audience_compatible_list') as unknown as string[]).join(', '),
+        duration: t('family_visa_page.duration_initial_value'),
         work_allowed: true, // Avec permis de travail
         risk_level: "low"
     };
@@ -28,75 +30,70 @@ const FamilyClientPage: React.FC = () => {
             <HeroSection
                 backgroundImage={IMAGES.BEACH || "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1920&q=80"}
                 imageAlt="Famille en Thaïlande"
-                title={`${VISA_CONFIG.name} – Thaïlande`}
-                subtitle={`Rejoindre son conjoint ou ses enfants (${new Date().getFullYear()})`}
+                title={t('family_visa_page.hero_title')}
+                subtitle={`${t('family_visa_page.hero_subtitle')} (${new Date().getFullYear()})`}
                 icon={<Heart className="h-6 w-6" />}
-                badge={VISA_CONFIG.type}
+                badge={t('family_visa_page.hero_badge')}
             />
 
             <PageContainer maxWidth="max-w-4xl" negativeMargin>
                 <div className="grid grid-cols-1 gap-10">
 
                     <section id="definition">
-                        <SectionTitle>{`Qu’est-ce que le ${VISA_CONFIG.name} ?`}</SectionTitle>
+                        <SectionTitle>{t('family_visa_page.definition_title')}</SectionTitle>
                         <Card variant="white" className="p-6 text-slate-700 leading-relaxed text-lg">
                             <p>
-                                Le Visa Non-Immigrant O (Option "Thai Family") permet de résider en Thaïlande sur la base de liens familiaux directs avec un(e) ressortissant(e) thaïlandais(e). C'est le visa de référence pour les époux/épouses de Thaïlandais et les parents étrangers dont l'enfant a la nationalité thaïlandaise.
+                                {t('family_visa_page.definition_content')}
                             </p>
                         </Card>
                     </section>
 
                     <section id="audience">
-                        <SectionTitle>À qui s’adresse ce visa ?</SectionTitle>
+                        <SectionTitle>{t('family_visa_page.audience_title')}</SectionTitle>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <Card variant="white" className="p-6 border-l-4 border-green-500">
                                 <h3 className="font-bold text-slate-900 mb-3 flex items-center">
                                     <CheckCircle2 className="h-5 w-5 text-green-500 mr-2" />
-                                    Profils Compatibles
+                                    {t('family_visa_page.audience_compatible')}
                                 </h3>
                                 <ul className="space-y-2 text-slate-600">
-                                    <li>• Marié(e) légalement à un(e) Thaï(e).</li>
-                                    <li>• Parent légal d'un enfant Thaï.</li>
-                                    <li>• Dépendant (enfant/époux) d'un titulaire de visa travail/retraite.</li>
+                                    {(t('family_visa_page.audience_compatible_list') as unknown as string[]).map((item, i) => (
+                                        <li key={i}>• {item}</li>
+                                    ))}
                                 </ul>
                             </Card>
                             <Card variant="white" className="p-6 border-l-4 border-slate-300 bg-slate-50/50 opacity-75">
-                                <h3 className="font-bold text-slate-700 mb-3">Profils Non Compatibles</h3>
+                                <h3 className="font-bold text-slate-700 mb-3">{t('family_visa_page.audience_not_compatible')}</h3>
                                 <ul className="space-y-2 text-slate-500">
-                                    <li>• Concubinage / Union libre (non reconnu).</li>
-                                    <li>• "Petite amie" sans certificat de mariage.</li>
-                                    <li>• Amis ou cousins éloignés.</li>
+                                    {(t('family_visa_page.audience_not_compatible_list') as unknown as string[]).map((item, i) => (
+                                        <li key={i}>• {item}</li>
+                                    ))}
                                 </ul>
                             </Card>
                         </div>
                     </section>
 
                     <section id="duration">
-                        <SectionTitle>Durée de séjour et validité</SectionTitle>
+                        <SectionTitle>{t('family_visa_page.duration_title')}</SectionTitle>
                         <div className="grid grid-cols-2 gap-4">
                             <Card variant="white" className="p-5 text-center">
                                 <Clock className="h-8 w-8 text-amber-500 mx-auto mb-2" />
-                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">Durée Initiale</div>
-                                <div className="text-xl font-bold text-slate-900">90 jours</div>
+                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">{t('family_visa_page.duration_initial_label')}</div>
+                                <div className="text-xl font-bold text-slate-900">{t('family_visa_page.duration_initial_value')}</div>
                             </Card>
                             <Card variant="white" className="p-5 text-center">
                                 <Globe className="h-8 w-8 text-blue-500 mx-auto mb-2" />
-                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">Extension Max</div>
-                                <div className="text-xl font-bold text-slate-900">1 An (Renouvelable)</div>
+                                <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">{t('family_visa_page.duration_max_label')}</div>
+                                <div className="text-xl font-bold text-slate-900">{t('family_visa_page.duration_max_value')}</div>
                             </Card>
                         </div>
                     </section>
 
                     <section id="conditions">
-                        <SectionTitle>Conditions et critères principaux</SectionTitle>
+                        <SectionTitle>{t('family_visa_page.conditions_title')}</SectionTitle>
                         <Card variant="white" className="p-6">
                             <ul className="space-y-3">
-                                {[
-                                    "Certificat de mariage officiel (Kor Ror 2/3) OU Acte de naissance de l'enfant.",
-                                    "Preuve financière (Mariage) : 400 000 THB bloqués en banque ou 40 000 THB revenu mensuel.",
-                                    "Preuve de cohabitation (Photos, plan maison, témoignages).",
-                                    "Visite possible de l'immigration au domicile."
-                                ].map((item, i) => (
+                                {(t('family_visa_page.conditions_list') as unknown as string[]).map((item, i) => (
                                     <li key={i} className="flex items-start text-slate-700">
                                         <div className="h-1.5 w-1.5 rounded-full bg-amber-500 mr-3 mt-2 flex-shrink-0"></div>
                                         {item}
@@ -107,14 +104,14 @@ const FamilyClientPage: React.FC = () => {
                     </section>
 
                     <section id="work">
-                        <SectionTitle>Travail et activités autorisées</SectionTitle>
+                        <SectionTitle>{t('family_visa_page.work_title')}</SectionTitle>
                         <Card variant="white" className="p-6 border-l-4 border-green-500 bg-green-50/10">
                             <div className="flex items-start mb-4">
                                 <CheckCircle2 className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
                                 <div>
-                                    <h3 className="text-lg font-bold text-green-800 mb-1">Travail Autorisé (Sous conditions)</h3>
+                                    <h3 className="text-lg font-bold text-green-800 mb-1">{t('family_visa_page.work_allowed_title')}</h3>
                                     <p className="text-slate-700">
-                                        Contrairement aux visas touristiques, le Visa Non-O Famille <strong>permet de demander un permis de travail</strong> (Work Permit). Une fois le permis obtenu, vous pouvez travailler légalement pour n'importe quelle entreprise thaïlandaise sans avoir besoin d'un Visa Business (Non-B), ce qui facilite grandement l'embauche.
+                                        {t('family_visa_page.work_allowed_text')}
                                     </p>
                                 </div>
                             </div>
@@ -122,23 +119,23 @@ const FamilyClientPage: React.FC = () => {
                     </section>
 
                     <section id="renewal">
-                        <SectionTitle>Renouvellement et extensions</SectionTitle>
+                        <SectionTitle>{t('family_visa_page.renewal_title')}</SectionTitle>
                         <Card variant="white" className="p-6">
                             <p className="text-slate-600 mb-4">
-                                L'extension annuelle se fait au bureau de l'immigration. Le processus prend environ 30 jours (une période "sous considération"). Vous devez prouver chaque année que les fonds sont toujours en banque et que la relation maritale est toujours active (photos récentes, entretien conjoint).
+                                {t('family_visa_page.renewal_text')}
                             </p>
                         </Card>
                     </section>
 
                     <section id="limitations">
-                        <SectionTitle>Limitations et points de vigilance</SectionTitle>
+                        <SectionTitle>{t('family_visa_page.limitations_title')}</SectionTitle>
                         <Card variant="white" className="p-6 bg-amber-50 border-amber-100">
                             <div className="flex items-start text-amber-800">
                                 <ShieldAlert className="h-6 w-6 mr-3 flex-shrink-0" />
                                 <div>
-                                    <h3 className="font-bold mb-2">Divorce = Annulation</h3>
+                                    <h3 className="font-bold mb-2">{t('family_visa_page.limitations_divorce_title')}</h3>
                                     <p className="text-sm leading-relaxed">
-                                        En cas de divorce, le visa est annulé immédiatement (souvent 7 jours pour quitter le territoire). C'est une situation précaire pour ceux qui dépendent entièrement de ce visa.
+                                        {t('family_visa_page.limitations_divorce_text')}
                                     </p>
                                 </div>
                             </div>
@@ -148,17 +145,17 @@ const FamilyClientPage: React.FC = () => {
 
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
                     <Card variant="dark" className="p-8 text-center flex flex-col justify-center items-center">
-                        <h3 className="text-xl font-bold text-white mb-2">Besoin d'assistance mariage ?</h3>
-                        <p className="text-slate-400 mb-6 text-sm">Nous gérons la paperasse pour l'extension mariage.</p>
+                        <h3 className="text-xl font-bold text-white mb-2">{t('family_visa_page.cta_help_title')}</h3>
+                        <p className="text-slate-400 mb-6 text-sm">{t('family_visa_page.cta_help_subtitle')}</p>
                         <CTAButton href="https://desk.siamvisapro.com" variant="primary" fullWidth>
-                            Contacter un expert
+                            {t('family_visa_page.cta_help_btn')}
                         </CTAButton>
                     </Card>
                     <Card variant="white" className="p-8 text-center flex flex-col justify-center items-center">
-                        <h3 className="text-xl font-bold text-slate-800 mb-2">Pas encore marié ?</h3>
-                        <p className="text-slate-500 mb-6 text-sm">Regardez les visas longue durée individuels.</p>
+                        <h3 className="text-xl font-bold text-slate-800 mb-2">{t('family_visa_page.cta_compare_title')}</h3>
+                        <p className="text-slate-500 mb-6 text-sm">{t('family_visa_page.cta_compare_subtitle')}</p>
                         <a href="/fr/elite-visa" className="text-amber-600 font-semibold hover:underline flex items-center">
-                            Voir le Visa Elite (Indépendant) <ArrowRight className="h-4 w-4 ml-2" />
+                            {t('family_visa_page.cta_compare_btn')} <ArrowRight className="h-4 w-4 ml-2" />
                         </a>
                     </Card>
                 </div>

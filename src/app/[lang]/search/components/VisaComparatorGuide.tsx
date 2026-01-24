@@ -28,7 +28,7 @@ export const VisaComparatorGuide: React.FC<VisaComparatorGuideProps> = ({ i18n }
 
 
                 <div className="text-center mb-20">
-                    <h2 className="text-4xl font-black text-slate-900 mb-6 uppercase tracking-tight">Plus de Détails & Conseils</h2>
+                    <h2 className="text-4xl font-black text-slate-900 mb-6 uppercase tracking-tight">{i18n.details_tips_title}</h2>
                     <div className="flex items-center justify-center gap-3">
                         <div className="w-12 h-1 bg-amber-500 rounded-full"></div>
                         <div className="w-3 h-3 bg-slate-900 rounded-full"></div>

@@ -60,7 +60,7 @@ const ServicesClientPage: React.FC = () => {
                 title={t('services_page.hero_title')}
                 subtitle={t('services_page.hero_subtitle')}
                 description={t('services_page.hero_tagline')}
-                tagline="Une expertise complète pour votre sérénité en Thaïlande."
+                tagline={t('services_page.hero_tagline_secondary')}
                 backgroundImage={IMAGES.OFFICE}
             />
 
@@ -98,16 +98,16 @@ const ServicesClientPage: React.FC = () => {
 
                     <Card variant="dark" className="p-10 shadow-xl rounded-[2rem] bg-slate-900 border-none">
                         <h3 className="text-xl font-black text-white mb-4">
-                            Besoin d'un accompagnement sur mesure ?
+                            {t('services_page.custom_support_title')}
                         </h3>
                         <p className="text-slate-400 mb-8 leading-relaxed text-sm">
-                            Nos experts sont disponibles pour analyser votre dossier spécifique et vous proposer la meilleure stratégie d'expatriation.
+                            {t('services_page.custom_support_desc')}
                         </p>
                         <button
                             onClick={() => window.location.href = '#'}
                             className="bg-amber-500 text-slate-900 px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[10px]"
                         >
-                            Parler à un expert
+                            {t('services_page.custom_support_btn')}
                         </button>
                     </Card>
                 </div>

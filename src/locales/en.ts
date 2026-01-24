@@ -27,6 +27,7 @@ export const en = {
     "media": "Media Visa",
     "official": "Official Visa",
     "scientific": "Scientific Visa",
+    "visa_run": "Visa Run Risks",
     "categories": {
       "work": "Work & Business",
       "tourism": "Tourism",
@@ -116,6 +117,10 @@ export const en = {
     "title": "Siam Visa Pro | Thailand Visa Expert - DTV, Tourist & Retirement",
     "description": "Get your Thai visa stress-free. Experts in DTV, Tourist and Retirement visas. Global support and optimized Portfolio."
   },
+  "home_page": {
+    "appointment_title": "Let's talk about your project",
+    "appointment_subtitle": "Book a free call with a Thailand visa expert."
+  },
   "search_page": {
     "meta": {
       "title": "Thailand Visa Comparator 2026 | Siam Visa Pro",
@@ -146,8 +151,10 @@ export const en = {
       "privilege": "Privilege Elite"
     },
     "details": "Visa Details",
+    "exploration_title": "Exploration by category",
     "comparator_guide": {
       "title": "Thailand Visa Comparison – 2026",
+      "details_tips_title": "More Details & Advice",
       "intro": "Choosing the right visa for Thailand mainly depends on the length of stay, intended activity, and applicant profile. This comparison presents the main visas available in 2026, their uses, and limitations.",
       "table": {
         "headers": ["Visa", "Length of Stay", "Work Allowed", "Entries", "Main Profile"],
@@ -253,6 +260,10 @@ export const en = {
     }
   },
   "contact_page": {
+    "meta": {
+      "title": "Contact Siam Visa Pro | Get Expert Thai Visa Help",
+      "description": "Have a question about your Thai visa or our services? Our team is here to help. Contact us via email, phone, or WhatsApp."
+    },
     "title": "Contact Us",
     "subtitle": "A question about your visa or our services? Our team is here to help.",
     "form_title": "Send us a message",
@@ -541,9 +552,17 @@ export const en = {
     }
   },
   "services_page": {
+    "meta": {
+      "title": "Thai Visa Services & Pricing | Siam Visa Pro",
+      "description": "Choose the level of support that suits you. From file audits to full E-Visa management for DTV, Elite, and Long-Term visas."
+    },
     "hero_title": "Services & Pricing",
     "hero_subtitle": "Choose the level of support that suits you.",
     "hero_tagline": "We are not the embassy, we are your allies.",
+    "hero_tagline_secondary": "Complete expertise for your peace of mind in Thailand.",
+    "custom_support_title": "Need tailor-made support?",
+    "custom_support_desc": "Our experts are available to analyze your specific file and propose the best expatriation strategy.",
+    "custom_support_btn": "Talk to an expert",
     "tier_audit": "Audit Pack",
     "tier_audit_desc": "Complete check of your documents before sending.",
     "tier_serenity": "Serenity Pack",
@@ -573,6 +592,437 @@ export const en = {
     "vip_feat4": "Priority WhatsApp Support",
     "vip_feat5": "Strategic consultation (30 min)",
     "vip_feat6": "Management of additional requests"
+  },
+  "business_visa_page": {
+    "meta": {
+      "title": "Thailand Business Visa (Non-B) | Guide & Requirements 2026",
+      "description": "Everything you need to know about the Non-Immigrant B Visa for working legally in Thailand. Work permits, documents, and procedures."
+    },
+    "hero_badge": "Work & Business",
+    "hero_title": "Business Visa (Non-B) – Thailand",
+    "hero_subtitle": "Requirements, work permit and length of stay",
+    "definition_title": "What is the Business Visa (Non-B)?",
+    "definition_content": "The Non-Immigrant B (Business) Visa is the mandatory visa for any foreigner wishing to work legally in Thailand for a local company or to carry out an active commercial activity there. Unlike tourist visas, it is linked to a specific employer and constitutes the essential first step before obtaining the Work Permit (Work Permit).",
+    "audience_title": "Who is this visa for?",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "Employees recruited by a Thai company.",
+      "Teachers in Thai schools.",
+      "Investors exercising a management function."
+    ],
+    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible_list": [
+      "Remote workers (see DTV Visa).",
+      "Digital nomads without a local employer.",
+      "Job seekers (forbidden to work without the visa)."
+    ],
+    "duration_title": "Length of stay and validity",
+    "duration_initial_label": "Initial Duration",
+    "duration_initial_value": "90 days",
+    "duration_max_label": "Max Extension",
+    "duration_max_value": "1 Year (Renewable)",
+    "conditions_title": "Main conditions and criteria",
+    "conditions_list": [
+      "Passport valid for at least 6 months.",
+      "Invitation letter or employment contract from a Thai company.",
+      "Company corporate documents (DBD, list of shareholders).",
+      "Thai employee quota respected by the company (4:1 Ratio).",
+      "Minimum salary respected according to nationality."
+    ],
+    "work_title": "Work and authorized activities",
+    "work_warning_title": "Important Warning",
+    "work_warning_text": "This visa alone does NOT authorize you to work. You must obtain your Work Permit from the Ministry of Labor immediately after your arrival. Working with the visa alone is illegal.",
+    "work_allowed_label": "✅ Authorized (with Work Permit)",
+    "work_allowed_text": "Salaried work for the sponsor company, management, official signatures.",
+    "work_forbidden_label": "❌ Forbidden",
+    "work_forbidden_text": "Work for another company, manual work reserved for Thais.",
+    "renewal_title": "Renewal and extensions",
+    "renewal_text": "The initial 90-day visa can be extended to 1 year at the immigration office in Thailand. This extension is renewable every year as long as you are employed and the company respects tax and social criteria.",
+    "renewal_note": "Note: The extension often requires clear evidence of tax and social security payments.",
+    "limitations_title": "Limitations and points of vigilance",
+    "limitations_risk_title": "Risk of visa loss",
+    "limitations_risk_text": "If you leave your job or are dismissed, your visa is cancelled immediately (sometimes on the same day). You must leave the country or find a new job capable of sponsoring a new visa within 7 days (depending on the case).",
+    "cta_help_title": "Need help with this visa?",
+    "cta_help_subtitle": "We support companies and employees in the procedure.",
+    "cta_help_btn": "Check my eligibility",
+    "cta_compare_title": "Compare options",
+    "cta_compare_subtitle": "Non-B, LTR or DTV? Find the best visa.",
+    "cta_compare_btn": "See DTV Visa (Alternative)"
+  },
+  "exemption_visa_page": {
+    "meta": {
+      "title": "Thailand Visa Exemption (60 Days) | Guide & Rules 2026",
+      "description": "Everything you need to know about visa-free entry to Thailand: 60-day duration, eligible countries (USA, UK, Canada...), extension and rules."
+    },
+    "hero_badge": "Short Stay Tourism",
+    "hero_title": "Visa Exemption (60 Days) – Thailand",
+    "hero_subtitle": "Visa-free entry, conditions and length of stay",
+    "definition_title": "What is the Visa Exemption (60 Days)?",
+    "definition_content": "The Visa Exemption allows nationals of 93 countries (including USA, UK, Canada, Australia) to enter Thailand without having to apply for a visa in advance. It is the simplest solution for tourist stays of less than 2 months (since the mid-2024 reform increasing it from 30 to 60 days).",
+    "audience_title": "Who is this exemption for?",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "Tourists on vacation (2-3 months max).",
+      "Short family visits.",
+      "Occasional medical appointments."
+    ],
+    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible_list": [
+      "Long-term remote workers (Refusal risk).",
+      "People wishing to settle down.",
+      "Local workers (Strictly forbidden)."
+    ],
+    "duration_title": "Length of stay and validity",
+    "duration_initial_label": "Initial Duration",
+    "duration_initial_value": "60 days",
+    "duration_max_label": "Extension On Site",
+    "duration_max_value": "+ 30 Days",
+    "conditions_title": "Main conditions and criteria",
+    "conditions_list": [
+      "Passport valid for at least 6 months upon arrival.",
+      "Confirmed onward/return ticket within 60 days (often required by airlines).",
+      "Proof of sufficient funds (10,000 THB/person, rarely checked but mandatory).",
+      "Not being on the Blacklist."
+    ],
+    "work_title": "Work and authorized activities",
+    "work_warning_title": "Prohibition of Work",
+    "work_warning_text": "Visa exemption is a strictly tourist status. It is strictly forbidden to work (even as a volunteer) in Thailand with this status. Discrete remote work is tolerated for very short periods, but risky over the long term.",
+    "renewal_title": "Renewal and extensions",
+    "renewal_text": "You can extend your stay once for 30 days at the local immigration office (cost: 1,900 THB). To stay longer, you will have to leave the country (Visa Run) and re-enter, but beware: immigration limits the number of land entries (2 per year) and monitors aerial abuse.",
+    "limitations_title": "Limitations and points of vigilance",
+    "limitations_risk_title": "Boarding refusal",
+    "limitations_risk_text": "If you do not have a return/onward ticket within 60 days, the airline may deny you boarding from your home country. Consider renting a ticket or buying a flexible one if your plan is unclear.",
+    "cta_help_title": "Want to stay longer?",
+    "cta_help_subtitle": "Discover the DTV Visa (5 years) or LTR (10 years).",
+    "cta_help_btn": "See DTV Visa",
+    "cta_compare_title": "Compare options",
+    "cta_compare_subtitle": "Tourist, Exemption or Retirement?",
+    "cta_compare_btn": "See Tourist Visa (TR)"
+  },
+  "student_visa_page": {
+    "meta": {
+      "title": "Thailand Student Visa (Non-ED) | Guide & Requirements 2026",
+      "description": "Visa for studying in Thailand (University, Language School, Muay Thai). Conditions, duration, enrollment, and work prohibition."
+    },
+    "hero_badge": "Education & Training",
+    "hero_title": "Student Visa (Non-ED) – Thailand",
+    "hero_subtitle": "Study at university or learn Thai",
+    "definition_title": "What is the Student Visa (Non-ED)?",
+    "definition_content": "The Non-Immigrant ED (Education) Visa is for foreigners wishing to pursue full-time studies in Thailand. This includes university courses, mandatory internships, but also language courses (Thai, English) or cultural training (Muay Thai, Cooking) in certified schools.",
+    "audience_title": "Who is this visa for?",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "University exchange students.",
+      "People learning Thai (private schools).",
+      "Muay Thai students (certified camps)."
+    ],
+    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible_list": [
+      "\"Fake students\" not attending classes.",
+      "Disguised workers (illegal).",
+      "Tourists looking for easy long stay."
+    ],
+    "duration_title": "Length of stay and validity",
+    "duration_initial_label": "Initial Duration",
+    "duration_initial_value": "90 days",
+    "duration_max_label": "Total Max",
+    "duration_max_value": "1 Year (Extensions)",
+    "conditions_title": "Main conditions and criteria",
+    "conditions_list": [
+      "Enrollment in a school or university recognized by the Ministry of Education.",
+      "Official acceptance letter from the institution.",
+      "Class attendance (frequent checks).",
+      "Proof of tuition fee payment."
+    ],
+    "work_title": "Work and authorized activities",
+    "work_warning_title": "Prohibition of Work",
+    "work_warning_text": "The Student Visa formally prohibits working in Thailand. This includes freelance work or \"Digital Nomadism\" if discovered. Exception: Some official university internships or on-campus jobs may be authorized under strict conditions.",
+    "renewal_title": "Renewal and extensions",
+    "renewal_text": "The visa is generally issued for 90 days. It must be extended every 90 days at immigration (1,900 THB) upon presentation of a letter from the school confirming your attendance. The total maximum duration is often 1 year for language schools.",
+    "limitations_title": "Limitations and points of vigilance",
+    "limitations_control_title": "Immigration checks",
+    "limitations_control_text": "Immigration performs random language tests during extensions. If you have an ED \"Thai Language\" visa but do not speak a word of Thai, your extension will be refused and your visa cancelled.",
+    "cta_school_title": "Looking for a school?",
+    "cta_school_subtitle": "Our educational partners can help you.",
+    "cta_school_btn": "Find a school",
+    "cta_compare_title": "Compare options",
+    "cta_compare_subtitle": "Student vs DTV (if you work online).",
+    "cta_compare_btn": "See DTV Visa"
+  },
+  "smart_visa_page": {
+    "meta": {
+      "title": "Thailand SMART Visa | For Talents, Investors & Tech 2026",
+      "description": "Special 4-year visa for talents, investors, and executives. No work permit required, family included. BOI conditions apply."
+    },
+    "hero_badge": "Talents & Innovation",
+    "hero_title": "SMART Visa – Thailand",
+    "hero_subtitle": "The 4-year visa for talents and investors",
+    "definition_title": "What is the SMART Visa?",
+    "definition_content": "The SMART Visa is a special visa designed to attract highly skilled talents, investors, executives and startups in target industries ('S-Curve Industries') like Tech, Health, or Environment. It offers exceptional benefits such as exemption from a classic work permit and a duration of 4 years.",
+    "audience_title": "Who is this visa for?",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "SMART T (Talent): Experts earning > 100k THB/month.",
+      "SMART I (Investor): Direct investors (> 20M THB).",
+      "SMART S (Startup): Tech startup founders.",
+      "SMART E (Executive): Senior executives."
+    ],
+    "audience_industries": "Target Industries",
+    "audience_industries_list": [
+      "Digital & Tech, Automation.",
+      "Health & Wellness, BioTech.",
+      "Green Energy, Aviation, Agriculture."
+    ],
+    "duration_title": "Length of stay and validity",
+    "duration_standard_label": "Standard Duration",
+    "duration_standard_value": "4 Years",
+    "duration_reporting_label": "Reporting",
+    "duration_reporting_value": "1 Year (vs 90 days)",
+    "conditions_title": "Main conditions and criteria",
+    "conditions_list": [
+      "Approval by the BOI (Board of Investment) is mandatory.",
+      "Minimum salary of 100,000 THB (Talent) or 200,000 THB (Executive).",
+      "Direct investment of 20 Million THB (Investor).",
+      "Certified company in target industries."
+    ],
+    "work_title": "Work and authorized activities",
+    "work_no_permit_title": "No Work Permit Required",
+    "work_no_permit_text": "The SMART Visa replaces the work permit. You do not need to apply for the blue book (Work Permit) separately. Additionally, your spouse and children enjoy the same status and can live (and work, under conditions) in Thailand.",
+    "renewal_title": "Renewal and extensions",
+    "renewal_text": "The visa is renewable every 4 years (or at the end of the contract) as long as you meet the BOI criteria. The major advantage is immigration reporting which is done once a year instead of every 90 days on other visas.",
+    "limitations_title": "Limitations and points of vigilance",
+    "limitations_complex_title": "Complex process",
+    "limitations_complex_text": "Obtaining it requires technical validation by the BOI before the visa application. The full process can take 1 to 2 months. This is not a 'fast' visa like the DTV.",
+    "cta_eligible_title": "Is your company eligible?",
+    "cta_eligible_subtitle": "Check if you can obtain the SMART Visa.",
+    "cta_eligible_btn": "Run a simulation",
+    "cta_compare_title": "Compare options",
+    "cta_compare_subtitle": "SMART Visa vs LTR (Long Term Resident).",
+    "cta_compare_btn": "See LTR Visa"
+  },
+  "family_visa_page": {
+    "meta": {
+      "title": "Thailand Family Visa (Non-O) | Marriage & Dependents 2026",
+      "description": "Visa for family reunification in Thailand: Marriage to a Thai national or parent of a Thai child. Financial conditions and process."
+    },
+    "hero_badge": "Family Replay",
+    "hero_title": "Family Visa (Non-O) – Thailand",
+    "hero_subtitle": "Join your spouse or children",
+    "definition_title": "What is the Family Visa (Non-O)?",
+    "definition_content": "The Non-Immigrant O Visa ('Thai Family' Option) allows residence in Thailand based on direct family ties with a Thai national. It is the reference visa for spouses of Thais and foreign parents whose child has Thai nationality.",
+    "audience_title": "Who is this visa for?",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "Legally married to a Thai.",
+      "Legal parent of a Thai child.",
+      "Dependent (child/spouse) of a work/retirement visa holder."
+    ],
+    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible_list": [
+      "Cohabitation / Common-law union (not recognized).",
+      "Girlfriend without a marriage certificate.",
+      "Friends or distant cousins."
+    ],
+    "duration_title": "Length of stay and validity",
+    "duration_initial_label": "Initial Duration",
+    "duration_initial_value": "90 days",
+    "duration_max_label": "Max Extension",
+    "duration_max_value": "1 Year (Renewable)",
+    "conditions_title": "Main conditions and criteria",
+    "conditions_list": [
+      "Official marriage certificate (Kor Ror 2/3) OR child's birth certificate.",
+      "Financial proof: 400,000 THB blocked in bank or 40,000 THB monthly income.",
+      "Proof of cohabitation (Photos, house plan, testimonies).",
+      "Possible immigration home visit."
+    ],
+    "work_title": "Work and authorized activities",
+    "work_allowed_title": "Work Authorized (Under conditions)",
+    "work_allowed_text": "Unlike tourist visas, the Family Non-O Visa allows application for a work permit (Work Permit). Once the permit is obtained, you can work legally for any Thai company without needing a Business Visa (Non-B).",
+    "renewal_title": "Renewal and extensions",
+    "renewal_text": "The annual extension is done at the immigration office. The process takes about 30 days. You must prove every year that the funds are still in the bank and that the marital relationship is still active.",
+    "limitations_title": "Limitations and points of vigilance",
+    "limitations_divorce_title": "Divorce = Cancellation",
+    "limitations_divorce_text": "In the event of divorce, the visa is cancelled immediately (often 7 days to leave the territory). This is a precarious situation for those who depend entirely on this visa.",
+    "cta_help_title": "Need marriage assistance?",
+    "cta_help_subtitle": "We manage the paperwork for the marriage extension.",
+    "cta_help_btn": "Contact an expert",
+    "cta_compare_title": "Not yet married?",
+    "cta_compare_subtitle": "Look at individual long-term visas.",
+    "cta_compare_btn": "See Elite Visa (Independent)"
+  },
+  "volunteer_visa_page": {
+    "meta": {
+      "title": "Thailand Volunteer Visa (Non-O Volunteer) | Guide 2026",
+      "description": "How to get a volunteer visa for Thailand. Requirements for volunteering in NGOs, foundations, and charitable organizations."
+    },
+    "hero_badge": "Volunteer & Humanitarian",
+    "hero_title": "Volunteer Visa (Non-O Volunteer) – Thailand",
+    "hero_subtitle": "Commit to a humanitarian cause in Thailand",
+    "definition_title": "What is the Volunteer Visa?",
+    "definition_content": "The Non-Immigrant O (Volunteer) Visa is for foreigners wishing to perform unpaid volunteer work within a charitable organization, a public foundation or a recognized NGO in Thailand.",
+    "audience_title": "Who is this visa for?",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "Volunteers in registered foundations.",
+      "Humanitarian workers on mission.",
+      "Elephant aid / animal protection."
+    ],
+    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible_list": [
+      "Short-term voluntourism (< 30d).",
+      "People without an official invitation.",
+      "Workers seeking to avoid the Business visa."
+    ],
+    "duration_title": "Length of stay and validity",
+    "duration_initial_label": "Initial Duration",
+    "duration_initial_value": "90 days",
+    "duration_max_label": "Total Max",
+    "duration_max_value": "1 Year (Extensions)",
+    "conditions_title": "Essential conditions and criteria",
+    "conditions_list": [
+      "Official letter from the organization registered in Thailand.",
+      "Copy of the foundation / NGO license.",
+      "Work Permit mandatory (even for volunteering).",
+      "Criminal record often required for teaching."
+    ],
+    "warning_title": "Vigilance: The 'Grey Area'",
+    "warning_regulation_title": "Strict regulation",
+    "warning_regulation_text": "Many agencies sell 'Volunteer Visas' without real humanitarian commitment. Thai immigration monitors these visas very closely. In case of control, if you are not able to prove your real activity, the visa will be cancelled.",
+    "cta_help_title": "Need help with your file?",
+    "cta_help_subtitle": "The volunteer visa requires complex documentation. We help you check compliance.",
+    "cta_help_btn": "Consult an expert"
+  },
+  "medical_visa_page": {
+    "meta": {
+      "title": "Thailand Medical Visa (Non-MT / Non-O) | Guide 2026",
+      "description": "Medical care in Thailand. Everything about the medical visa, extensions for prolonged care, and companion visas."
+    },
+    "hero_badge": "Care & Health",
+    "hero_title": "Medical Visa (Non-MT / Non-O) – Thailand",
+    "hero_subtitle": "Benefit from world-class care in Thailand",
+    "definition_title": "What is the Medical Visa?",
+    "definition_content": "Thailand is a major medical tourism destination. The Medical Visa allows foreign patients to stay in the kingdom for surgical treatments, long-term care or rehabilitation cures.",
+    "audience_title": "Services and Profiles concerned",
+    "audience_types_title": "Types of Care",
+    "audience_types_list": [
+      "Cosmetic and reconstructive surgery.",
+      "Complex dental care.",
+      "Full health check-ups.",
+      "Chronic treatments (Dialysis, etc.)."
+    ],
+    "audience_companion_title": "Companions",
+    "audience_companion_text": "Up to 3 family members or caregivers can generally obtain a dependent visa to accompany the patient.",
+    "duration_title": "Duration and Extensions",
+    "duration_validity_label": "Type Validity",
+    "duration_validity_value": "90 days",
+    "duration_extension_label": "Extension",
+    "duration_extension_value": "According to medical certificate",
+    "conditions_title": "Required Documents",
+    "conditions_list": [
+      "Medical certificate issued by a certified Thai hospital.",
+      "Invitation letter from the health facility.",
+      "Proof of mapping funds to cover care and stay.",
+      "Health insurance specifically covering the treatment if required."
+    ],
+    "advantage_title": "The advantage of private hospitals",
+    "advantage_text": "Most large international hospitals have internal visa centers to help patients with their extensions.",
+    "cta_help_title": "Need a medical liaison?",
+    "cta_help_subtitle": "We collaborate with the best facilities to facilitate your admission and visa.",
+    "cta_help_btn": "Contact our concierge service"
+  },
+  "religious_visa_page": {
+    "meta": {
+      "title": "Thailand Religious Visa (Non-R) | Guide 2026",
+      "description": "Visa for monks, missionaries, and religious activities in Thailand. Application conditions and sponsorship requirement."
+    },
+    "hero_badge": "Mission & Worship",
+    "hero_title": "Religious Visa (Non-R) – Thailand",
+    "hero_subtitle": "Religious mission or study of Buddhism",
+    "definition_title": "What is the Religious Visa?",
+    "definition_content": "The Non-Immigrant R (Religious) Visa is reserved for foreigners wishing to engage in official religious activities in Thailand, sponsored by a recognized organization.",
+    "conditions_title": "Profiles and Conditions",
+    "conditions_list": [
+      "Be sponsored by a religious organization registered in Thailand.",
+      "Approval from the Department of Religious Affairs or the National Bureau of Buddhism.",
+      "Formal commitment not to receive a salary.",
+      "Proof of residence within the religious institution."
+    ],
+    "duration_title": "Validity and Extensions",
+    "duration_initial_label": "Initial Validity",
+    "duration_initial_value": "90 days",
+    "duration_max_label": "Max Extension",
+    "duration_max_value": "1 Year (Renewable)",
+    "footer_note": "This visa requires close coordination with national religious authorities.",
+    "cta_btn": "Request specific advice"
+  },
+  "media_visa_page": {
+    "meta": {
+      "title": "Thailand Media / Journalist Visa (Non-M) | Guide 2026",
+      "description": "Visa for journalists, press correspondents, and film crews in Thailand. Accreditation and required conditions."
+    },
+    "hero_badge": "Press & Journalism",
+    "hero_title": "Media Visa (Non-M) – Thailand",
+    "hero_subtitle": "Cover the news or produce content in Thailand",
+    "definition_title": "What is the Media Visa (Non-M)?",
+    "definition_content": "The Non-Immigrant M (Media) Visa is for certified media professionals (journalists, correspondents, film crews).",
+    "accreditation_title": "Accreditation: A Major Step",
+    "accreditation_subtitle": "Before applying for the visa, you must obtain accreditation from the Ministry of Foreign Affairs (MFA).",
+    "accreditation_list": [
+      "Registration on the MFA online portal (M-Press).",
+      "Presentation of press card and a letter from the employer.",
+      "Background check by the Public Relations Department."
+    ],
+    "conditions_title": "Conditions and Validity",
+    "duration_label": "Duration",
+    "duration_value": "1 year (renewable)",
+    "activity_label": "Activity",
+    "activity_value": "Reporting & Production",
+    "warning_title": "Filming Warning",
+    "warning_text": "Filming for a commercial production with a simple tourist visa is punishable by heavy fines. A permit from the 'Thailand Film Office' is also required.",
+    "cta_btn": "MFA accreditation assistance"
+  },
+  "official_visa_page": {
+    "meta": {
+      "title": "Thailand Official Visa (Non-F) | Guide 2026",
+      "description": "Visa for officials, diplomats, and employees of international organizations on mission in Thailand."
+    },
+    "hero_badge": "Diplomacy & State",
+    "hero_title": "Official Visa (Non-F) – Thailand",
+    "hero_subtitle": "Diplomatic and official missions in Thailand",
+    "definition_title": "What is the Official Visa?",
+    "definition_content": "The Non-Immigrant F (Official) Visa is reserved for people on official mission (diplomats, IO officials).",
+    "audience_title": "Beneficiaries",
+    "audience_diplomatic_title": "Diplomatic Corps",
+    "audience_diplomatic_text": "Ambassies, Consulates, Military Attaches.",
+    "audience_oi_title": "IO / UN",
+    "audience_oi_text": "United Nations employees, UNICEF, etc., based in Bangkok.",
+    "conditions_title": "Specific requirements",
+    "conditions_text": "This visa imperatively requires a verbal note or an official mission order.",
+    "cta_btn": "Request assistance"
+  },
+  "scientific_visa_page": {
+    "meta": {
+      "title": "Thailand Scientific Research Visa (Non-RS) | Guide 2026",
+      "description": "Visa for researchers, experts, and scientists conducting research work in Thailand."
+    },
+    "hero_badge": "Research & Innovation",
+    "hero_title": "Scientific Research Visa (Non-RS) – Thailand",
+    "hero_subtitle": "Contribute to scientific advancement in Thailand",
+    "definition_title": "What is the Scientific Research Visa?",
+    "definition_content": "The Non-Immigrant RS (Research & Science) Visa is designed for experts and researchers conducting scientific work with a Thai institute.",
+    "audience_title": "Eligible Profiles",
+    "audience_tech_title": "Technical Experts",
+    "audience_tech_text": "Engineers and specialists in technology transfer.",
+    "audience_academic_title": "Academic Researchers",
+    "audience_academic_text": "Scientists on mission in universities or national research centers.",
+    "conditions_title": "Required Conditions",
+    "conditions_list": [
+      "Invitation from a Thai research organization (e.g., NRCT).",
+      "Scientific cooperation agreement between institutions.",
+      "Degree certificates and detailed CV.",
+      "Proof of research funding."
+    ],
+    "cta_btn": "Check sponsorship"
   },
   "eligibility": {
     "steps": [
@@ -668,8 +1118,15 @@ export const en = {
     "upsell_link": "Discover the DTV Visa"
   },
   "tourist_visa_page": {
+    "meta": {
+      "title": "Thailand Tourist Visa (TR) | Extensions & Guide 2026",
+      "description": "The classic visa to discover Thailand without hassle. 60 days on arrival, extendable by 30 days. Required documents and costs."
+    },
     "hero_title": "Tourist Visa (TR)",
     "hero_subtitle": "The classic option to explore Thailand for up to 90 days.",
+    "hero_description": "The classic visa to discover Thailand without hassle.",
+    "hero_tagline": "Extension possible on site to prolong your stay.",
+    "pitfalls_title": "Important Precautions",
     "rules_title": "The Rules",
     "duration_title": "Length of Stay",
     "duration_desc": "60 days on arrival, extendable by an additional 30 days locally.",
@@ -721,6 +1178,10 @@ export const en = {
     ]
   },
   "retirement_page": {
+    "meta": {
+      "title": "Thailand Retirement Visa (Non-O / O-A) | Expert Guide 2026",
+      "description": "Enjoy your retirement in Thailand. 800k THB bank requirement, 50+ age, and health insurance. Full administrative support."
+    },
     "badge": "Long Term",
     "title": "Retirement Visa (Non-O / O-A)",
     "subtitle": "Enjoy your retirement under the Thai sun.",
@@ -959,9 +1420,17 @@ export const en = {
     ],
     "not_found_title": "Can't find your answer?",
     "not_found_desc": "Our experts are here to analyze your specific situation.",
-    "not_found_btn": "Check my eligibility for free"
+    "not_found_btn": "Check my eligibility for free",
+    "meta": {
+      "title": "Thailand Visa FAQ | Answers to Your Questions - Siam Visa Pro",
+      "description": "Frequently asked questions about Thai visas (DTV, TR, Non-O). Find all the answers to prepare for your stay."
+    }
   },
   "terms_page": {
+    "meta": {
+      "title": "Terms & Conditions | Siam Visa Pro",
+      "description": "Privacy policy, legal notice, and terms of service for Siam Visa Pro administrative assistance."
+    },
     "title": "Terms & Conditions",
     "subtitle": "Privacy Policy and Legal Notice",
     "legal_title": "Legal Notice",

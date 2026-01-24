@@ -9,10 +9,11 @@ import { generateMetadataWithHreflang } from '@/utils/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    // Hardcoded metadata for canonical page
-    const meta = {
-        title: `Visa Famille Thaïlande (Non-O) | Mariage & Enfants ${new Date().getFullYear()}`,
-        description: "Visa pour regroupement familial en Thaïlande : Mariage avec un(e) Thaï(e) ou parent d'enfant thaïlandais. Conditions financières."
+    const t = translations[lang as keyof typeof translations] || translations.en;
+
+    const meta = (t.family_visa_page as any).meta || {
+        title: t.family_visa_page.hero_title,
+        description: t.family_visa_page.hero_subtitle
     };
 
     return generateMetadataWithHreflang({

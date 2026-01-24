@@ -34,18 +34,18 @@ const Footer: React.FC = () => {
 
             {/* Social Links */}
             <div className="flex space-x-4 mb-8">
-              <a 
-                href="https://www.facebook.com/share/15ZZLu4jrp7/" 
-                target="_blank" 
+              <a
+                href="https://www.facebook.com/share/15ZZLu4jrp7/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 p-2 rounded-lg text-slate-400 hover:text-blue-500 hover:bg-white/10 transition-all border border-white/5"
                 title="Facebook"
               >
                 <Facebook size={20} />
               </a>
-              <a 
-                href="https://wa.me/33773726887" 
-                target="_blank" 
+              <a
+                href="https://wa.me/33773726887"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 p-2 rounded-lg text-slate-400 hover:text-green-500 hover:bg-white/10 transition-all border border-white/5"
                 title="WhatsApp"
@@ -72,6 +72,7 @@ const Footer: React.FC = () => {
               <li><Link href={langPath('dtv')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.dtv')}</Link></li>
               <li><Link href={langPath('tourist-visa')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.tourist')}</Link></li>
               <li><Link href={langPath('retirement-visa')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.retirement')}</Link></li>
+              <li><Link href={langPath('visa-run')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.visa_run')}</Link></li>
               <li><Link href={langPath('services')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.services')}</Link></li>
             </ul>
           </div>

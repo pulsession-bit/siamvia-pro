@@ -22,8 +22,8 @@ const TouristVisaClientPage: React.FC = () => {
                 badge="● VISA TOURISTIQUE"
                 title={t('tourist_visa_page.hero_title')}
                 subtitle={t('tourist_visa_page.hero_subtitle')}
-                description="Le visa classique pour découvrir la Thaïlande sans tracas."
-                tagline="Extension possible sur place pour prolonger votre plaisir."
+                description={t('tourist_visa_page.hero_description')}
+                tagline={t('tourist_visa_page.hero_tagline')}
                 backgroundImage={IMAGES.THAILAND_BEACH}
             />
 
@@ -47,7 +47,7 @@ const TouristVisaClientPage: React.FC = () => {
 
                 {/* 3. Warnings */}
                 <VisaPitfalls
-                    title="Précautions Importantes"
+                    title={t('tourist_visa_page.pitfalls_title')}
                     items={[]}
                     warningTitle={t('tourist_visa_page.warning_title')}
                     warningDesc={t('tourist_visa_page.warning_desc')}

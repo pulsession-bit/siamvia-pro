@@ -83,7 +83,7 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
             <div className="bg-white py-20 border-y border-slate-100">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex items-center justify-between mb-12">
-                        <h2 className="text-2xl font-black text-slate-900 uppercase tracking-tight">Exploration par catégorie</h2>
+                        <h2 className="text-2xl font-black text-slate-900 uppercase tracking-tight">{localT.exploration_title}</h2>
                         <CategoryFilters
                             allVisasLabel={localT.allVisas}
                             categories={localT.categories}

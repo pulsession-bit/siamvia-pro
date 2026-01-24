@@ -9,10 +9,11 @@ import { generateMetadataWithHreflang } from '@/utils/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    // Hardcoded metadata for canonical page
-    const meta = {
-        title: `Visa Business Thaïlande (Non-B) | Guide & Conditions ${new Date().getFullYear()}`,
-        description: "Tout savoir sur le Visa Non-Immigrant B pour travailler légalement en Thaïlande. Permis de travail, documents et procédures."
+    const t = translations[lang as keyof typeof translations] || translations.en;
+
+    const meta = (t.business_visa_page as any).meta || {
+        title: t.business_visa_page.hero_title,
+        description: t.business_visa_page.hero_subtitle
     };
 
     return generateMetadataWithHreflang({

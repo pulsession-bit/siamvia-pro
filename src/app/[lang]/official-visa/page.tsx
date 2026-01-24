@@ -9,9 +9,11 @@ import { generateMetadataWithHreflang } from '@/utils/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    const meta = {
-        title: `Visa Officiel Thaïlande (Non-F) | Guide ${new Date().getFullYear()}`,
-        description: "Visa pour les officiels, diplomates et employés d'organisations internationales en mission en Thaïlande."
+    const t = translations[lang as keyof typeof translations] || translations.en;
+
+    const meta = (t.official_visa_page as any).meta || {
+        title: t.official_visa_page.hero_title,
+        description: t.official_visa_page.hero_subtitle
     };
 
     return generateMetadataWithHreflang({

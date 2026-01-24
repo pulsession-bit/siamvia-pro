@@ -9,10 +9,11 @@ import { generateMetadataWithHreflang } from '@/utils/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    // Hardcoded metadata for canonical page
-    const meta = {
-        title: `Exemption de Visa Thaïlande (60 jours) | Guide ${new Date().getFullYear()}`,
-        description: "Tout savoir sur l'entrée sans visa en Thaïlande : durée de 60 jours, pays éligibles (France, Belgique...), extension et règles."
+    const t = translations[lang as keyof typeof translations] || translations.en;
+
+    const meta = (t.exemption_visa_page as any).meta || {
+        title: t.exemption_visa_page.hero_title,
+        description: t.exemption_visa_page.hero_subtitle
     };
 
     return generateMetadataWithHreflang({

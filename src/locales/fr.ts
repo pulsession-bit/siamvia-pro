@@ -28,6 +28,7 @@ export const fr = {
     "media": "Visa Média",
     "official": "Visa Officiel",
     "scientific": "Visa Scientifique",
+    "visa_run": "Risques Visa Run",
     "categories": {
       "work": "Travail & Business",
       "tourism": "Tourisme",
@@ -143,8 +144,10 @@ export const fr = {
       "privilege": "Privilège Elite"
     },
     "details": "Voir les détails",
+    "exploration_title": "Exploration par catégorie",
     "comparator_guide": {
       "title": "Comparateur des visas pour la Thaïlande – 2026",
+      "details_tips_title": "Plus de Détails & Conseils",
       "intro": "Choisir le bon visa pour la Thaïlande dépend principalement de la durée du séjour, de l’activité prévue et du profil du demandeur. Ce comparatif présente les principaux visas disponibles en 2026, avec leurs usages et limites.",
       "table": {
         "headers": ["Visa", "Durée de séjour", "Travail autorisé", "Entrées", "Profil principal"],
@@ -250,7 +253,9 @@ export const fr = {
   },
   "home_page": {
     "member": "Espace Membre",
-    "eligibility": "Éligibilité"
+    "eligibility": "Éligibilité",
+    "appointment_title": "Parlons de votre projet",
+    "appointment_subtitle": "Réservez un appel gratuit avec un expert visa Thaïlande."
   },
   "visa_run_page": {
     "meta": {
@@ -509,9 +514,17 @@ export const fr = {
     }
   },
   "services_page": {
+    "meta": {
+      "title": "Services & Tarifs Visa Thaïlande | Siam Visa Pro",
+      "description": "Choisissez le niveau d'accompagnement qui vous convient. Audit de dossier, gestion E-Visa complète pour DTV, Elite et visas long séjour."
+    },
     "hero_title": "Nos Services & Tarifs",
     "hero_subtitle": "Choisissez le niveau d'accompagnement qui vous convient.",
     "hero_tagline": "Nous ne sommes pas l'ambassade, nous sommes vos alliés.",
+    "hero_tagline_secondary": "Une expertise complète pour votre sérénité en Thaïlande.",
+    "custom_support_title": "Besoin d'un accompagnement sur mesure ?",
+    "custom_support_desc": "Nos experts sont disponibles pour analyser votre dossier spécifique et vous proposer la meilleure stratégie d'expatriation.",
+    "custom_support_btn": "Parler à un expert",
     "tier_audit": "Pack Audit",
     "tier_audit_desc": "Vérification complète de vos documents avant envoi.",
     "tier_serenity": "Pack Sérénité",
@@ -540,11 +553,434 @@ export const fr = {
     "vip_feat3": "Rédaction lettre de motivation RH",
     "vip_feat4": "Assistance prioritaire WhatsApp",
     "vip_feat5": "Consultation stratégique (30 min)",
-    "vip_feat6": "Gestion des demandes additionnelles",
+    "vip_feat6": "Gestion des demandes additionnelles"
+  },
+  "business_visa_page": {
+    "hero_badge": "Travail & Affaires",
+    "hero_title": "Visa Business (Non-B) – Thaïlande",
+    "hero_subtitle": "Conditions, permis de travail et durée de séjour",
+    "definition_title": "Qu’est-ce que le Visa Business (Non-B) ?",
+    "definition_content": "Le Visa Non-Immigrant B (Business) est le visa obligatoire pour tout étranger souhaitant travailler légalement en Thaïlande pour une entreprise locale ou y exercer une activité commerciale active. Contrairement aux visas touristiques, il est lié à un employeur spécifique et constitue la première étape indispensable avant l'obtention du Permis de Travail (Work Permit).",
+    "audience_title": "À qui s’adresse ce visa ?",
+    "audience_compatible": "Profils Compatibles",
+    "audience_compatible_list": [
+      "Employés recrutés par une société thaïlandaise.",
+      "Enseignants dans des écoles thaïlandaises.",
+      "Investisseurs exerçant une fonction de direction."
+    ],
+    "audience_not_compatible": "Profils Non Compatibles",
+    "audience_not_compatible_list": [
+      "Télétravailleurs (voir Visa DTV).",
+      "Nomades digitaux sans employeur local.",
+      "Recherche d'emploi (interdit de travailler sans le visa)."
+    ],
+    "duration_title": "Durée de séjour et validité",
+    "duration_initial_label": "Durée Initiale",
+    "duration_initial_value": "90 jours",
+    "duration_max_label": "Extension Max",
+    "duration_max_value": "1 An (Renouvelable)",
+    "conditions_title": "Conditions et critères principaux",
+    "conditions_list": [
+      "Passeport valide au moins 6 mois.",
+      "Lettre d'invitation ou contrat de travail d'une entreprise thaïlandaise.",
+      "Documents corporatifs de l'entreprise (DBD, liste des actionnaires).",
+      "Quota d'employés thaïlandais respecté par l'entreprise (Ratio 4:1).",
+      "Salaire minimum respecté selon la nationalité."
+    ],
+    "work_title": "Travail et activités autorisées",
+    "work_warning_title": "Avertissement Important",
+    "work_warning_text": "Ce visa seul ne vous autorise PAS à travailler. Vous devez obtenir votre Work Permit (Permis de Travail) auprès du Ministère du Travail immédiatement après votre arrivée. Travailler avec le visa seul est illégal.",
+    "work_allowed_label": "✅ Autorisé (avec Work Permit)",
+    "work_allowed_text": "Travail salarié pour l'entreprise sponsor, gestion, signatures officielles.",
+    "work_forbidden_label": "❌ Interdit",
+    "work_forbidden_text": "Travail pour une autre entreprise, travail manuel réservé aux Thaïlandais.",
+    "renewal_title": "Renouvellement et extensions",
+    "renewal_text": "Le visa initial de 90 jours peut être étendu à 1 an auprès du bureau de l'immigration en Thaïlande. Cette extension est renouvelable chaque année tant que vous êtes employé et que l'entreprise respecte les critères fiscaux et sociaux.",
+    "renewal_note": "Note : L'extension nécessite souvent de présenter des preuves de paiement des impôts et de sécurité sociale.",
+    "limitations_title": "Limitations et points de vigilance",
+    "limitations_risk_title": "Risque de perte de visa",
+    "limitations_risk_text": "Si vous quittez votre emploi ou êtes licencié, votre visa est annulé immédiatement (parfois le jour même). Vous devez quitter le pays ou trouver un nouvel emploi capable de sponsoriser un nouveau visa sous 7 jours (selon les cas).",
+    "cta_help_title": "Besoin d'aide pour ce visa ?",
+    "cta_help_subtitle": "Nous accompagnons les entreprises et les employés dans la procédure.",
+    "cta_help_btn": "Vérifier mon éligibilité",
+    "cta_compare_title": "Comparer les options",
+    "cta_compare_subtitle": "Non-B, LTR ou DTV ? Trouvez le meilleur visa.",
+    "cta_compare_btn": "Voir le Visa DTV (Alternative)"
+  },
+  "exemption_visa_page": {
     "meta": {
-      "title": "Nos Services & Tarifs | Accompagnement Visa Thaïlande",
-      "description": "Découvrez nos offres : Audit, Sérénité ou VIP/DTV. Choisissez le niveau d'expertise dont vous avez besoin pour votre visa thaïlandais."
-    }
+      "title": "Exemption de Visa Thaïlande (60 jours) | Guide & Règles 2026",
+      "description": "Tout savoir sur l'entrée sans visa en Thaïlande : durée de 60 jours, pays éligibles (France, Belgique...), extension et règles."
+    },
+    "hero_badge": "Tourisme Court Séjour",
+    "hero_title": "Exemption de Visa (60 Jours) – Thaïlande",
+    "hero_subtitle": "Entrée sans visa, conditions et durée de séjour",
+    "definition_title": "Qu’est-ce que l'Exemption de Visa (60 Jours) ?",
+    "definition_content": "L'Exemption de Visa permet aux ressortissants de 93 pays (dont la France, la Belgique, le Canada) d'entrer en Thaïlande sans avoir à demander de visa au préalable. C'est la solution la plus simple pour les séjours touristiques de moins de 2 mois (depuis la réforme de mi-2024 passant de 30 à 60 jours).",
+    "audience_title": "À qui s’adresse cette exemption ?",
+    "audience_compatible": "Profils Compatibles",
+    "audience_compatible_list": [
+      "Touristes en vacances (2-3 mois max).",
+      "Visites familiales courtes.",
+      "Rendez-vous médicaux ponctuels."
+    ],
+    "audience_not_compatible": "Profils Non Compatibles",
+    "audience_not_compatible_list": [
+      "Télétravailleurs longue durée (Risque refus).",
+      "Personnes souhaitant s'installer.",
+      "Travailleurs locaux (Strictement interdit)."
+    ],
+    "duration_title": "Durée de séjour et validité",
+    "duration_initial_label": "Durée Initiale",
+    "duration_initial_value": "60 jours",
+    "duration_max_label": "Extension Sur Place",
+    "duration_max_value": "+ 30 Jours",
+    "conditions_title": "Conditions et critères principaux",
+    "conditions_list": [
+      "Passeport valide au moins 6 mois à l'arrivée.",
+      "Billet de sortie confirmé sous 60 jours (souvent demandé par les compagnies aériennes).",
+      "Preuve de fonds suffisants (10 000 THB/personne, rarement vérifié mais obligatoire).",
+      "Ne pas être sur liste noire (Blacklist)."
+    ],
+    "work_title": "Travail et activités autorisées",
+    "work_warning_title": "Interdiction de Travail",
+    "work_warning_text": "L'exemption de visa est un statut purement touristique. Il est strictement interdit de travailler (même bénévolement) en Thaïlande avec ce statut. Le télétravail discret est toléré pour de très courtes durées, mais risqué sur le long terme.",
+    "renewal_title": "Renouvellement et extensions",
+    "renewal_text": "Vous pouvez prolonger votre séjour une seule fois de 30 jours au bureau de l'immigration local (coût : 1 900 THB). Pour rester plus longtemps, vous devrez sortir du pays (Visa Run) et rentrer à nouveau, mais attention : l'immigration limite le nombre d'entrées terrestres (2 par an) et surveille les abus aériens.",
+    "limitations_title": "Limitations et points de vigilance",
+    "limitations_risk_title": "Refus d'embarquement",
+    "limitations_risk_text": "Si vous n'avez pas de billet de retour/sortie sous 60 jours, la compagnie aérienne peut vous refuser l'embarquement au départ de l'Europe. Pensez à louer un billet ou en acheter un modifiable si votre plan est flou.",
+    "cta_help_title": "Vous voulez rester plus longtemps ?",
+    "cta_help_subtitle": "Découvrez le Visa DTV (5 ans) ou LTR (10 ans).",
+    "cta_help_btn": "Voir le Visa DTV",
+    "cta_compare_title": "Comparer les options",
+    "cta_compare_subtitle": "Touriste, Exemption ou Retraite ?",
+    "cta_compare_btn": "Voir le Visa Touristique (TR)"
+  },
+  "student_visa_page": {
+    "meta": {
+      "title": "Visa Étudiant Thaïlande (Non-ED) | Guide & Conditions 2026",
+      "description": "Visa pour étudier en Thaïlande (Université, École de langue, Muay Thai). Conditions, durée, inscription et interdiction de travail."
+    },
+    "hero_badge": "Études & Formation",
+    "hero_title": "Visa Étudiant (Non-ED) – Thaïlande",
+    "hero_subtitle": "Étudier à l'université ou apprendre le Thaï",
+    "definition_title": "Qu’est-ce que le Visa Étudiant (Non-ED) ?",
+    "definition_content": "Le Visa Non-Immigrant ED (Education) est destiné aux étrangers souhaitant poursuivre des études à temps plein en Thaïlande. Cela inclut les cursus universitaires, les stages obligatoires, mais aussi les cours de langue (Thaï, Anglais) ou les formations culturelles (Muay Thai, Cuisine) dans des écoles certifiées.",
+    "audience_title": "À qui s’adresse ce visa ?",
+    "audience_compatible": "Profils Compatibles",
+    "audience_compatible_list": [
+      "Étudiants en échange universitaire.",
+      "Personnes apprenant le Thaï (écoles privées).",
+      "Élèves de Muay Thai (camps certifiés)."
+    ],
+    "audience_not_compatible": "Profils Non Compatibles",
+    "audience_not_compatible_list": [
+      "\"Faux étudiants\" ne fréquentant pas les cours.",
+      "Travailleurs déguisés (illégal).",
+      "Touristes cherchant long séjour facile."
+    ],
+    "duration_title": "Durée de séjour et validité",
+    "duration_initial_label": "Durée Initiale",
+    "duration_initial_value": "90 jours",
+    "duration_max_label": "Max Total",
+    "duration_max_value": "1 An (Extensions)",
+    "conditions_title": "Conditions et critères principaux",
+    "conditions_list": [
+      "Être inscrit dans une école ou université reconnue par le Ministère de l'Éducation.",
+      "Lettre d'acceptation officielle de l'établissement.",
+      "Assiduité aux cours (contrôles fréquents).",
+      "Preuve de paiement des frais de scolarité."
+    ],
+    "work_title": "Travail et activités autorisées",
+    "work_warning_title": "Interdiction de Travail",
+    "work_warning_text": "Le Visa Étudiant interdit formellement de travailler en Thaïlande. Cela inclut le travail en freelance ou le \"Digital Nomadisme\" s'il est découvert. Exception : Certains stages universitaires officiels ou emplois sur le campus peuvent être autorisés sous conditions strictes.",
+    "renewal_title": "Renouvellement et extensions",
+    "renewal_text": "Le visa est généralement délivré pour 90 jours. Il doit être étendu tous les 90 jours à l'immigration (1 900 THB) sur présentation d'une lettre de l'école confirmant votre assiduité. La durée maximale totale est souvent de 1 an pour les écoles de langue.",
+    "limitations_title": "Limitations et points de vigilance",
+    "limitations_control_title": "Contrôles de l'immigration",
+    "limitations_control_text": "L'immigration effectue des tests de langue aléatoires lors des extensions. Si vous possédez un visa ED \"Langue Thaï\" mais ne parlez pas un mot de Thaï, votre extension sera refusée et votre visa annulé.",
+    "cta_school_title": "Vous cherchez une école ?",
+    "cta_school_subtitle": "Nos partenaires éducatifs peuvent vous aider.",
+    "cta_school_btn": "Trouver une école",
+    "cta_compare_title": "Comparer les options",
+    "cta_compare_subtitle": "Étudiant vs DTV (si vous travaillez en ligne).",
+    "cta_compare_btn": "Voir le Visa DTV"
+  },
+  "smart_visa_page": {
+    "meta": {
+      "title": "SMART Visa Thaïlande | Talents & Innovation 2026",
+      "description": "Visa spécial 4 ans pour talents, investisseurs et exécutifs. Pas de permis de travail requis, famille incluse. Conditions BOI."
+    },
+    "hero_badge": "Talents & Innovation",
+    "hero_title": "SMART Visa – Thaïlande",
+    "hero_subtitle": "Le visa de 4 ans pour les talents et investisseurs",
+    "definition_title": "Qu’est-ce que le SMART Visa ?",
+    "definition_content": "Le SMART Visa est un visa spécial conçu pour attirer les talents hautement qualifiés, les investisseurs, les dirigeants et les startups dans les industries cibles ('S-Curve Industries') comme la Tech, la Santé, ou l'Environnement. Il offre des avantages exceptionnels comme l'exemption de permis de travail classique et une durée de 4 ans.",
+    "audience_title": "À qui s’adresse ce visa ?",
+    "audience_compatible": "Profils Compatibles",
+    "audience_compatible_list": [
+      "SMART T (Talent) : Experts gagnant > 100k THB/mois.",
+      "SMART I (Investor) : Investisseurs directs (> 20M THB).",
+      "SMART S (Startup) : Fondateurs de startups tech.",
+      "SMART E (Executive) : Cadres supérieurs."
+    ],
+    "audience_industries": "Industries Cibles",
+    "audience_industries_list": [
+      "Digital & Tech, Automatisation.",
+      "Santé & Bien-être, BioTech.",
+      "Énergie verte, Aviation, Agriculture."
+    ],
+    "duration_title": "Durée de séjour et validité",
+    "duration_standard_label": "Durée Standard",
+    "duration_standard_value": "4 Ans",
+    "duration_reporting_label": "Reporting",
+    "duration_reporting_value": "1 An (vs 90 jours)",
+    "conditions_title": "Conditions et critères principaux",
+    "conditions_list": [
+      "Approbation par le BOI (Board of Investment) obligatoire.",
+      "Salaire minimum de 100 000 THB (Talent) ou 200 000 THB (Executive).",
+      "Investissement direct de 20 Millions THB (Investor).",
+      "Entreprise certifiée dans les industries cibles."
+    ],
+    "work_title": "Travail et activités autorisées",
+    "work_no_permit_title": "Pas de Permis de Travail Requis",
+    "work_no_permit_text": "Le SMART Visa remplace le permis de travail. Vous n'avez pas besoin de demander le livret bleu (Work Permit) séparément. De plus, votre conjoint et vos enfants bénéficient du même statut et peuvent vivre (et travailler, sous conditions) en Thaïlande.",
+    "renewal_title": "Renouvellement et extensions",
+    "renewal_text": "Le visa est renouvelable tous les 4 ans (ou à la fin du contrat) tant que vous remplissez les critères du BOI. L'avantage majeur est le reporting à l'immigration qui se fait une fois par an au lieu de tous les 90 jours sur les autres visas.",
+    "limitations_title": "Limitations et points de vigilance",
+    "limitations_complex_title": "Processus complexe",
+    "limitations_complex_text": "L'obtention nécessite une validation technique par le BOI avant la demande de visa. Le processus complet peut prendre 1 à 2 mois. Ce n'est pas un visa 'rapide' comme le DTV.",
+    "cta_eligible_title": "Votre entreprise est éligible ?",
+    "cta_eligible_subtitle": "Vérifiez si vous pouvez obtenir le SMART Visa.",
+    "cta_eligible_btn": "Faire une simulation",
+    "cta_compare_title": "Comparer les options",
+    "cta_compare_subtitle": "SMART Visa vs LTR (Long Term Resident).",
+    "cta_compare_btn": "Voir le Visa LTR"
+  },
+  "family_visa_page": {
+    "meta": {
+      "title": "Visa Famille Thaïlande (Non-O) | Mariage & Enfants 2026",
+      "description": "Visa pour regroupement familial en Thaïlande : Mariage avec un(e) Thaï(e) ou parent d'enfant thaïlandais. Conditions financières."
+    },
+    "hero_badge": "Regroupement Familial",
+    "hero_title": "Visa Famille (Non-O) – Thaïlande",
+    "hero_subtitle": "Rejoindre son conjoint ou ses enfants",
+    "definition_title": "Qu’est-ce que le Visa Famille (Non-O) ?",
+    "definition_content": "Le Visa Non-Immigrant O (Option 'Thai Family') permet de résider en Thaïlande sur la base de liens familiaux directs avec un(e) ressortissant(e) thaïlandais(e). C'est le visa de référence pour les époux/épouses de Thaïlandais et les parents étrangers dont l'enfant a la nationalité thaïlandaise.",
+    "audience_title": "À qui s’adresse ce visa ?",
+    "audience_compatible": "Profils Compatibles",
+    "audience_compatible_list": [
+      "Marié(e) légalement à un(e) Thaï(e).",
+      "Parent légal d'un enfant Thaï.",
+      "Dépendant (enfant/époux) d'un titulaire de visa travail/retraite."
+    ],
+    "audience_not_compatible": "Profils Non Compatibles",
+    "audience_not_compatible_list": [
+      "Concubinage / Union libre (non reconnu).",
+      "Petite amie sans certificat de mariage.",
+      "Amis ou cousins éloignés."
+    ],
+    "duration_title": "Durée de séjour et validité",
+    "duration_initial_label": "Durée Initiale",
+    "duration_initial_value": "90 jours",
+    "duration_max_label": "Extension Max",
+    "duration_max_value": "1 An (Renouvelable)",
+    "conditions_title": "Conditions et critères principaux",
+    "conditions_list": [
+      "Certificat de mariage officiel (Kor Ror 2/3) OU Acte de naissance de l'enfant.",
+      "Preuve financière : 400 000 THB bloqués en banque ou 40 000 THB revenu mensuel.",
+      "Preuve de cohabitation (Photos, plan maison, témoignages).",
+      "Visite possible de l'immigration au domicile."
+    ],
+    "work_title": "Travail et activités autorisées",
+    "work_allowed_title": "Travail Autorisé (Sous conditions)",
+    "work_allowed_text": "Contrairement aux visas touristiques, le Visa Non-O Famille permet de demander un permis de travail (Work Permit). Une fois le permis obtenu, vous pouvez travailler légalement pour n'importe quelle entreprise thaïlandaise sans avoir besoin d'un Visa Business (Non-B).",
+    "renewal_title": "Renouvellement et extensions",
+    "renewal_text": "L'extension annuelle se fait au bureau de l'immigration. Le processus prend environ 30 jours. Vous devez prouver chaque année que les fonds sont toujours en banque et que la relation maritale est toujours active.",
+    "limitations_title": "Limitations et points de vigilance",
+    "limitations_divorce_title": "Divorce = Annulation",
+    "limitations_divorce_text": "En cas de divorce, le visa est annulé immédiatement (souvent 7 jours pour quitter le territoire). C'est une situation précaire pour ceux qui dépendent entièrement de ce visa.",
+    "cta_help_title": "Besoin d'assistance mariage ?",
+    "cta_help_subtitle": "Nous gérons la paperasse pour l'extension mariage.",
+    "cta_help_btn": "Contacter un expert",
+    "cta_compare_title": "Pas encore marié ?",
+    "cta_compare_subtitle": "Regardez les visas longue durée individuels.",
+    "cta_compare_btn": "Voir le Visa Elite (Indépendant)"
+  },
+  "volunteer_visa_page": {
+    "meta": {
+      "title": "Visa Volontaire Thaïlande (Non-O Volunteer) | Guide 2026",
+      "description": "Obtenez un visa de volontaire pour la Thaïlande. Conditions pour le bénévolat dans des ONG, fondations et organisations caritatives."
+    },
+    "hero_badge": "Bénévolat & Humanitaire",
+    "hero_title": "Visa Volontaire (Non-O Volunteer) – Thaïlande",
+    "hero_subtitle": "S'engager pour une cause humanitaire en Thaïlande",
+    "definition_title": "Qu’est-ce que le Visa Volontaire ?",
+    "definition_content": "Le Visa Non-Immigrant O (Volunteer) est destiné aux étrangers souhaitant effectuer un travail bénévole non rémunéré au sein d'une organisation caritative, d'une fondation publique ou d'une ONG reconnue en Thaïlande.",
+    "audience_title": "À qui s’adresse ce visa ?",
+    "audience_compatible": "Profils Compatibles",
+    "audience_compatible_list": [
+      "Bénévoles dans des fondations enregistrées.",
+      "Travailleurs humanitaires en mission.",
+      "Aide aux éléphants / protection animale."
+    ],
+    "audience_not_compatible": "Profils Non Compatibles",
+    "audience_not_compatible_list": [
+      "Volontourisme de courte durée (- de 30j).",
+      "Personnes sans invitation officielle.",
+      "Travailleurs cherchant à éviter le visa Business."
+    ],
+    "duration_title": "Durée de séjour et validité",
+    "duration_initial_label": "Durée Initiale",
+    "duration_initial_value": "90 jours",
+    "duration_max_label": "Max Total",
+    "duration_max_value": "1 An (Extensions)",
+    "conditions_title": "Conditions et critères indispensables",
+    "conditions_list": [
+      "Lettre officielle de l'organisation enregistrée en Thaïlande.",
+      "Copie de la licence de la fondation / ONG.",
+      "Work Permit obligatoire (même pour du bénévolat).",
+      "Casier judiciaire souvent requis pour l'enseignement."
+    ],
+    "warning_title": "Vigilance : Le 'Grey Area'",
+    "warning_regulation_title": "Réglementation stricte",
+    "warning_regulation_text": "Beaucoup d'agences vendent des 'Visas Volontaires' sans réel engagement humanitaire. L'immigration thaïlandaise surveille de très près ces visas. En cas de contrôle, si vous n'êtes pas capable de prouver votre activité réelle, le visa sera annulé.",
+    "cta_help_title": "Besoin d'aide pour votre dossier ?",
+    "cta_help_subtitle": "Le visa volontaire demande une documentation complexe. Nous vous aidons à vérifier la conformité.",
+    "cta_help_btn": "Consulter un expert"
+  },
+  "medical_visa_page": {
+    "meta": {
+      "title": "Visa Médical Thaïlande (Non-MT / Non-O) | Guide 2026",
+      "description": "Se soigner en Thaïlande. Tout savoir sur le visa médical, les extensions pour soins prolongés et les accompagnateurs."
+    },
+    "hero_badge": "Soins & Santé",
+    "hero_title": "Visa Médical (Non-MT / Non-O) – Thaïlande",
+    "hero_subtitle": "Bénéficiez de soins de classe mondiale en Thaïlande",
+    "definition_title": "Qu’est-ce que le Visa Médical ?",
+    "definition_content": "La Thaïlande est une destination majeure du tourisme médical. Le Visa Médical permet aux patients étrangers de séjourner dans le royaume pour des traitements chirurgicaux, des soins de longue durée ou des cures de réhabilitation.",
+    "audience_title": "Services et Profils concernés",
+    "audience_types_title": "Types de Soins",
+    "audience_types_list": [
+      "Chirurgie esthétique et réparatrice.",
+      "Soins dentaires complexes.",
+      "Bilans de santé complets (Check-up).",
+      "Traitements chroniques (Dialyse, etc.)."
+    ],
+    "audience_companion_title": "Accompagnateurs",
+    "audience_companion_text": "Jusqu'à 3 membres de la famille ou aidants peuvent généralement obtenir un visa de dépendant pour accompagner le patient.",
+    "duration_title": "Durée et Prolongations",
+    "duration_validity_label": "Validité Type",
+    "duration_validity_value": "90 jours",
+    "duration_extension_label": "Extension",
+    "duration_extension_value": "Selon certificat médical",
+    "conditions_title": "Documents Requis",
+    "conditions_list": [
+      "Certificat médical délivré par un hôpital thaïlandais certifié.",
+      "Lettre d'invitation de l'établissement de santé.",
+      "Preuve de fonds suffisants pour couvrir les soins et le séjour.",
+      "Assurance santé couvrant spécifiquement le traitement si requis."
+    ],
+    "advantage_title": "L'avantage des hôpitaux privés",
+    "advantage_text": "La plupart des grands hôpitaux internationaux disposent de centres de visas internes pour aider les patients avec leurs extensions.",
+    "cta_help_title": "Besoin d'une liaison médicale ?",
+    "cta_help_subtitle": "Nous collaborons avec les meilleurs établissements pour faciliter votre admission et votre visa.",
+    "cta_help_btn": "Contacter notre service conciergerie"
+  },
+  "religious_visa_page": {
+    "meta": {
+      "title": "Visa Religieux Thaïlande (Non-R) | Guide 2026",
+      "description": "Visa pour les moines, missionnaires et activités religieuses en Thaïlande. Conditions d'obtention et parrainage."
+    },
+    "hero_badge": "Mission & Culte",
+    "hero_title": "Visa Religieux (Non-R) – Thaïlande",
+    "hero_subtitle": "Mission religieuse ou étude du bouddhisme",
+    "definition_title": "Qu’est-ce que le Visa Religieux ?",
+    "definition_content": "Le Visa Non-Immigrant R (Religious) est réservé aux étrangers souhaitant s'engager dans des activités religieuses officielles en Thaïlande, parrainés par une organisation reconnue.",
+    "conditions_title": "Profils et Conditions",
+    "conditions_list": [
+      "Être parrainé par une organisation religieuse enregistrée en Thaïlande.",
+      "Approbation du Département des Affaires Religieuses ou du Bureau National du Bouddhisme.",
+      "Engagement formel à ne pas percevoir de salaire.",
+      "Preuve de résidence au sein de l'institution religieuse."
+    ],
+    "duration_title": "Validité et Extensions",
+    "duration_initial_label": "Validité Initiale",
+    "duration_initial_value": "90 jours",
+    "duration_max_label": "Extension Max",
+    "duration_max_value": "1 An (Renouvelable)",
+    "footer_note": "Ce visa demande une coordination étroite avec les autorités religieuses nationales.",
+    "cta_btn": "Demander un conseil spécifique"
+  },
+  "media_visa_page": {
+    "meta": {
+      "title": "Visa Média / Journaliste Thaïlande (Non-M) | Guide 2026",
+      "description": "Visa pour les journalistes, correspondants de presse et équipes de tournage en Thaïlande. Accréditation et conditions."
+    },
+    "hero_badge": "Presse & Journalisme",
+    "hero_title": "Visa Média (Non-M) – Thaïlande",
+    "hero_subtitle": "Couvrir l'actualité ou produire des contenus en Thaïlande",
+    "definition_title": "Qu’est-ce que le Visa Média (Non-M) ?",
+    "definition_content": "Le Visa Non-Immigrant M (Media) s'adresse aux professionnels des médias certifiés (journalistes, correspondants, équipes de tournage).",
+    "accreditation_title": "L'Accréditation : Étape Majeure",
+    "accreditation_subtitle": "Avant de demander le visa, vous devez obtenir l'accréditation du Ministère des Affaires Étrangères (MFA).",
+    "accreditation_list": [
+      "Enregistrement sur le portail en ligne du MFA (M-Press).",
+      "Présentation de la carte de presse et d'une lettre de l'employeur.",
+      "Vérification des antécédents par le Département des Relations Publiques."
+    ],
+    "conditions_title": "Conditions et Validité",
+    "duration_label": "Durée",
+    "duration_value": "1 an (renouvelable)",
+    "activity_label": "Activité",
+    "activity_value": "Reportage & Production",
+    "warning_title": "Mise en garde tournage",
+    "warning_text": "Filmer pour une production commerciale avec un simple visa touriste est passible de fortes amendes. Le permis du 'Thailand Film Office' est également requis.",
+    "cta_btn": "Assistance accréditation MFA"
+  },
+  "official_visa_page": {
+    "meta": {
+      "title": "Visa Officiel Thaïlande (Non-F) | Guide 2026",
+      "description": "Visa pour les officiels, diplomates et employés d'organisations internationales en mission en Thaïlande."
+    },
+    "hero_badge": "Diplomatie & État",
+    "hero_title": "Visa Officiel (Non-F) – Thaïlande",
+    "hero_subtitle": "Missions diplomatiques et officielles en Thaïlande",
+    "definition_title": "Qu’est-ce que le Visa Officiel ?",
+    "definition_content": "Le Visa Non-Immigrant F (Official) est réservé aux personnes en mission officielle (diplomates, fonctionnaires d'OI).",
+    "audience_title": "Bénéficiaires",
+    "audience_diplomatic_title": "Corps Diplomatique",
+    "audience_diplomatic_text": "Ambassades, Consulats, Attachés militaires.",
+    "audience_oi_title": "OI / ONU",
+    "audience_oi_text": "Employés des Nations Unies, UNICEF, etc., basés à Bangkok.",
+    "conditions_title": "Exigences spécifiques",
+    "conditions_text": "Ce visa demande impérativement une note verbale ou un ordre de mission officiel.",
+    "cta_btn": "Demander une assistance"
+  },
+  "scientific_visa_page": {
+    "meta": {
+      "title": "Visa Recherche Scientifique Thaïlande (Non-RS) | Guide 2026",
+      "description": "Visa pour les chercheurs, experts et scientifiques menant des travaux de recherche en Thaïlande."
+    },
+    "hero_badge": "Recherche & Innovation",
+    "hero_title": "Visa Recherche Scientifique (Non-RS) – Thaïlande",
+    "hero_subtitle": "Contribuer à l'avancement scientifique en Thaïlande",
+    "definition_title": "Qu’est-ce que le Visa Recherche Scientifique ?",
+    "definition_content": "Le Visa Non-Immigrant RS (Research & Science) est conçu pour les experts et chercheurs menant des travaux scientifiques avec un institut thaïlandais.",
+    "audience_title": "Profils éligibles",
+    "audience_tech_title": "Experts Techniques",
+    "audience_tech_text": "Ingénieurs et spécialistes en transfert de technologie.",
+    "audience_academic_title": "Chercheurs Académiques",
+    "audience_academic_text": "Scientifiques en mission dans des universités ou centres de recherche.",
+    "conditions_title": "Conditions Requises",
+    "conditions_list": [
+      "Invitation d'un organisme de recherche thaïlandais (ex: NRCT).",
+      "Accord de coopération scientifique entre les institutions.",
+      "Certificats de diplômes et CV détaillé.",
+      "Preuve de financement de la recherche."
+    ],
+    "cta_btn": "Vérifier le parrainage"
   },
   "eligibility": {
     "steps": [
@@ -616,6 +1052,10 @@ export const fr = {
     "success_desc": "Un expert va analyser vos créneaux et vous confirmera le rendez-vous très rapidement."
   },
   "contact_page": {
+    "meta": {
+      "title": "Contactez Siam Visa Pro | Expertise Visa Thaïlande",
+      "description": "Une question sur votre visa ou nos services ? Notre équipe est là pour vous aider. Contactez-nous par email, téléphone ou WhatsApp."
+    },
     "title": "Contactez-nous",
     "subtitle": "Une question sur votre visa ou nos services ? Notre équipe est là pour vous aider.",
     "form_title": "Envoyez-nous un message",
@@ -678,6 +1118,9 @@ export const fr = {
   "tourist_visa_page": {
     "hero_title": "Visa Touristique (TR)",
     "hero_subtitle": "L'option classique pour explorer la Thaïlande jusqu'à 90 jours.",
+    "hero_description": "Le visa classique pour découvrir la Thaïlande sans tracas.",
+    "hero_tagline": "Extension possible sur place pour prolonger votre plaisir.",
+    "pitfalls_title": "Précautions Importantes",
     "rules_title": "Les règles du jeu",
     "duration_title": "Durée de séjour",
     "duration_desc": "60 jours à l'arrivée, prolongeables de 30 jours supplémentaires sur place.",
@@ -978,6 +1421,10 @@ export const fr = {
     }
   },
   "terms_page": {
+    "meta": {
+      "title": "Conditions Générales | Siam Visa Pro",
+      "description": "Politique de confidentialité, mentions légales et conditions de service de l'assistance administrative Siam Visa Pro."
+    },
     "title": "Conditions Générales",
     "subtitle": "Politique de confidentialité et mentions légales",
     "legal_title": "Mentions Légales",
