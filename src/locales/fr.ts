@@ -102,7 +102,7 @@ export const fr = {
     "description": "Trouvez le visa idéal pour votre séjour en Thaïlande. Comparez les visas Retraite, DTV, Elite et Tourisme en un clic.",
     "suggestions": [
       "Je veux télétravailler en Thaïlande",
-      "Comment éviter les visa runs ?",
+      "Comment éviter les courses de visa ?",
       "J'ai 55 ans et je veux prendre ma retraite",
       "Je cherche un visa de 5 ans sans sortir du pays",
       "Visa pour apprendre le Muay Thai"

@@ -32,7 +32,7 @@ export const I18N: Record<string, any> = {
         footerText: "SiamVisaPro - Votre partenaire de confiance pour l'expatriation en Thaïlande.",
         suggestions: [
             "Je veux télétravailler en Thaïlande",
-            "Comment éviter les visa runs ?",
+            "Comment éviter les courses de visa ?",
             "J'ai 55 ans et je veux prendre ma retraite",
             "Je cherche un visa de 5 ans sans sortir du pays",
             "Visa pour apprendre le Muay Thai"
@@ -154,7 +154,13 @@ export const I18N: Record<string, any> = {
         contactUs: "Kontakt",
         contactUsBtn: "Buchen",
         footerText: "SiamVisaPro Partner.",
-        suggestions: ["Remote", "Visa-Run"],
+        suggestions: [
+            "Ich möchte remote in Thailand arbeiten",
+            "Wie vermeide ich Visa Runs?",
+            "Ich bin 55 und möchte in den Ruhestand",
+            "Suche ein 5-Jahres-Visum ohne Ausreise",
+            "Visum zum Muay Thai lernen"
+        ],
         visaCategory: "Visakategorie",
         estimatedCost: "Kosten",
         cost: "Preis",
@@ -183,7 +189,13 @@ export const I18N: Record<string, any> = {
         contactUs: "Contacto",
         contactUsBtn: "Cita",
         footerText: "SiamVisaPro.",
-        suggestions: ["Remoto"],
+        suggestions: [
+            "Quiero teletrabajar en Tailandia",
+            "¿Cómo evitar los visa runs?",
+            "Tengo 55 años y quiero jubilarme",
+            "Busco una visa de 5 años sin salir del país",
+            "Visa para aprender Muay Thai"
+        ],
         visaCategory: "Categoría",
         estimatedCost: "Coste",
         cost: "Coste",
@@ -212,7 +224,13 @@ export const I18N: Record<string, any> = {
         contactUs: "Contatto",
         contactUsBtn: "Prenota",
         footerText: "SiamVisaPro.",
-        suggestions: ["Remoto"],
+        suggestions: [
+            "Voglio lavorare da remoto in Thailandia",
+            "Come evitare i visa run?",
+            "Ho 55 anni e voglio andare in pensione",
+            "Cerco un visto di 5 anni senza uscita",
+            "Visto per imparare la Muay Thai"
+        ],
         visaCategory: "Categoria",
         estimatedCost: "Costo",
         cost: "Costo",
@@ -241,7 +259,13 @@ export const I18N: Record<string, any> = {
         contactUs: "ติดต่อ",
         contactUsBtn: "จอง",
         footerText: "SiamVisaPro.",
-        suggestions: ["ทำงาน"],
+        suggestions: [
+            "ฉันต้องการทำงานทางไกลจากประเทศไทย",
+            "ทำอย่างไรจึงจะไม่ต้องทำ Visa Run?",
+            "ฉันอายุ 55 ปีและต้องการเกษียณที่ภูเก็ต",
+            "มองหาวีซ่า 5 ปีแบบไม่ต้องออกนอกประเทศ",
+            "วีซ่าสำหรับเรียนมวยไทย"
+        ],
         visaCategory: "ประเภท",
         estimatedCost: "ค่าใช้จ่าย",
         cost: "ค่าใช้จ่าย",
@@ -270,7 +294,13 @@ export const I18N: Record<string, any> = {
         contactUs: "联系",
         contactUsBtn: "预约",
         footerText: "SiamVisaPro.",
-        suggestions: ["远程"],
+        suggestions: [
+            "我想在泰国远程工作",
+            "如何避免频繁出入境（Visa Run）？",
+            "我55岁了，想在普吉岛退休",
+            "寻找不需要出境的5年期签证",
+            "学习泰拳的签证"
+        ],
         visaCategory: "类别",
         estimatedCost: "费用",
         cost: "费用",
@@ -299,7 +329,13 @@ export const I18N: Record<string, any> = {
         contactUs: "連絡",
         contactUsBtn: "予約",
         footerText: "SiamVisaPro.",
-        suggestions: ["リモート"],
+        suggestions: [
+            "タイからリモートワークしたい",
+            "ビザランをやめるには？",
+            "55歳でプーケットにリタイアしたい",
+            "出国不要の5年ビザを探しています",
+            "ムエタイを学ぶためのビザ"
+        ],
         visaCategory: "カテゴリー",
         estimatedCost: "費用",
         cost: "費用",
@@ -328,7 +364,13 @@ export const I18N: Record<string, any> = {
         contactUs: "Контакт",
         contactUsBtn: "Запись",
         footerText: "SiamVisaPro.",
-        suggestions: ["Удаленно"],
+        suggestions: [
+            "Я хочу работать удаленно из Таиланда",
+            "Как перестать делать виза-раны?",
+            "Мне 55 лет, хочу на пенсию на Пхукет",
+            "Ищу визу на 5 лет без выезда",
+            "Виза для изучения Муай Тай"
+        ],
         visaCategory: "Категория",
         estimatedCost: "Стоимость",
         cost: "Стоимость",
@@ -357,7 +399,13 @@ export const I18N: Record<string, any> = {
         contactUs: "문의",
         contactUsBtn: "예약",
         footerText: "SiamVisaPro.",
-        suggestions: ["원격"],
+        suggestions: [
+            "태국에서 원격 근무를 하고 싶어요",
+            "비자 런을 그만두려면?",
+            "55세이고 푸켓에서 은퇴하고 싶습니다",
+            "출국 없는 5년 비자를 찾고 있습니다",
+            "무에타이 배우기 비자"
+        ],
         visaCategory: "카테고리",
         estimatedCost: "비용",
         cost: "비용",
@@ -386,7 +434,13 @@ export const I18N: Record<string, any> = {
         contactUs: "اتصل",
         contactUsBtn: "حجز",
         footerText: "SiamVisaPro.",
-        suggestions: ["عن بعد"],
+        suggestions: [
+            "أريد العمل عن بعد من تايلاند",
+            "كيف أتوقف عن رحلات تجديد الفيزا؟",
+            "عمري 55 عامًا وأريد التقاعد في بوكيت",
+            "أبحث عن تأشيرة لمدة 5 سنوات بدون مغادرة",
+            "تأشيرة لتعلم المواي تاي"
+        ],
         visaCategory: "فئة",
         estimatedCost: "تكلفة",
         cost: "تكلفة",
