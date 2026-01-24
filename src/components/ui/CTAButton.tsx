@@ -7,6 +7,7 @@ interface CTAButtonProps {
     icon?: React.ReactNode;
     iconPosition?: 'left' | 'right';
     fullWidth?: boolean;
+    className?: string;
 }
 
 export const CTAButton: React.FC<CTAButtonProps> = ({
@@ -16,6 +17,7 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
     icon,
     iconPosition = 'right',
     fullWidth = false,
+    className = '',
 }) => {
     const variants = {
         primary: 'bg-amber-500 text-slate-900 hover:bg-amber-400',
@@ -30,6 +32,7 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
             inline-flex items-center justify-center
             px-6 py-3 rounded-lg font-bold
             shadow-lg transition
+            ${className}
         `}>
             {icon && iconPosition === 'left' && <span className="mr-2">{icon}</span>}
             {children}

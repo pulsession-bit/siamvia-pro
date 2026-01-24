@@ -636,6 +636,24 @@ export const ar = {
     "text": "الذكاء الاصطناعي يحلل فرصك.",
     "btn": "تحليل مجاني"
   },
+  "about_page": {
+    "meta": {
+      "title": "About Siam Visa Pro | Expert Thailand Visa Assistance",
+      "description": "Learn about Siam Visa Pro's mission, our team of experts, and how we help digital nomads and retirees secure their future in Thailand."
+    },
+    "hero_title": "Who We Are",
+    "hero_subtitle": "Your bridge to a seamless life in Thailand.",
+    "mission_title": "Our Mission",
+    "mission_text1": "Founded by expats for expats, Siam Visa Pro was born from a simple observation: the Thai visa process is often confusing, changing, and stressful.",
+    "mission_text2": "Our goal is to digitize and simplify this process while maintaining a high level of human expertise. We combine AI-driven file analysis with manual oversight to ensure the highest success rates.",
+    "team_title": "The Team",
+    "team_description": "Our experts are based in Bangkok, giving us a unique perspective on both consular requirements and local immigration realities.",
+    "founder_name": "Raphaël Buresi",
+    "founder_role": "Founder & Visa Strategist",
+    "founder_bio": "With years of experience in the Thai tech and administrative ecosystem, Raphaël created Siam Visa Pro to help the nomadic community thrive in Thailand.",
+    "partnership_title": "A DigitGpt LLC Company",
+    "partnership_text": "Siam Visa Pro is powered by DigitGpt LLC, a technology firm specializing in AI-driven administrative automation. This partnership allows us to offer cutting-edge tools like our Visa Eligibility AI."
+  },
   "footer": {
     "desc": "شريك موثوق لتأشيرات تايلاند.",
     "col_visas": "تأشيرات",
@@ -644,9 +662,18 @@ export const ar = {
     "all_services": "كل الخدمات",
     "legal": "شروط",
     "privacy": "خصوصية",
+    "details": "Détails du visa",
     "sitemap": "خريطة الموقع",
     "copyright": "جميع الحقوق محفوظة.",
     "disclaimer": "وكالة خاصة.",
-    "secure_payment": "دفع آمن"
+    "secure_payment": "دفع آمن",
+    "author": "Raphaël Buresi",
+    "author_role": "Thailand Visa Expert",
+    "written_by": "Written by",
+    "last_updated": "Last updated",
+    "office_bkk": "Bangkok: Sukhumvit Rd, Khlong Toei, Bangkok 10110, Thailand",
+    "office_usa": "HQ: 16192 Coastal Highway, Lewes, Delaware 19958, USA",
+    "tax_id": "RC: 2417125",
+    "legal_entity": "DigitGpt LLC"
   }
 };

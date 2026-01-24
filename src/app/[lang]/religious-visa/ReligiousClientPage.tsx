@@ -2,7 +2,7 @@
 'use client';
 
 import React from 'react';
-import { CheckCircle2, AlertTriangle, Clock, Globe, ShieldAlert, ArrowRight, Sun, Hands } from 'lucide-react';
+import { CheckCircle2, AlertTriangle, Clock, Globe, ShieldAlert, ArrowRight, Sun } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { IMAGES } from '@/constants';
 import {

@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
 export default async function AboutPage({ params }: { params: Promise<{ lang: string }> }) {
     const { lang } = await params;
-    const t = translations[lang as keyof typeof translations] || translations.en;
+    const t = (translations[lang as keyof typeof translations] || translations.en) as any;
 
     return (
         <>
-            <SchemaOrg lang={lang} pageKey="about" title={t.hero_title} showGlobal={false} />
+            <SchemaOrg lang={lang} pageKey="about" title={t.about_page.hero_title} showGlobal={false} />
             <AboutClientPage />
         </>
     );
