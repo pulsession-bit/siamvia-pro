@@ -14,7 +14,7 @@ export const ja = {
     "eligibility": "専門家に相談する",
     "ltr": "LTRビザ",
     "languages": "言語",
-    "search": "検索"
+    "search": "検索", "comparator": "2026年 ビザ比較"
   },
   "meta": {
     "title": "Siam Visa Pro | タイビザ専門家 - DTV, 観光 & 退職",

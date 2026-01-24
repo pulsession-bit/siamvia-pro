@@ -2,7 +2,7 @@
 export const NAV_ITEMS = [
     {
         key: 'search',
-        labelKey: 'nav.search',
+        labelKey: 'nav.comparator',
         path: 'search',
         items: []
     },

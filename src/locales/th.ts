@@ -14,7 +14,7 @@ export const th = {
     "eligibility": "ติดต่อผู้เชี่ยวชาญ",
     "ltr": "วีซ่า LTR",
     "languages": "ภาษา",
-    "search": "ค้นหา"
+    "search": "ค้นหา", "comparator": "เปรียบเทียบวีซ่า 2026"
   },
   "meta": {
     "title": "Siam Visa Pro | ผู้เชี่ยวชาญด้านวีซ่าไทย - DTV, ท่องเที่ยว และเกษียณอายุ",

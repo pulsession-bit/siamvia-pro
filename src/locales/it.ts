@@ -14,7 +14,7 @@ export const it = {
     "eligibility": "Contatta un esperto",
     "ltr": "Visto LTR",
     "languages": "Lingue",
-    "search": "Ricerca"
+    "search": "Ricerca", "comparator": "Comparatore di Visti 2026"
   },
   "meta": {
     "title": "Siam Visa Pro | Esperto Visti Thailandia - DTV, Turismo e Pensionamento",

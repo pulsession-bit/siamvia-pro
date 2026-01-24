@@ -11,7 +11,7 @@ export const fr = {
     "retirement": "Visa Retraite",
     "services": "Services",
     "faq": "FAQ",
-    "search": "Recherche",
+    "search": "Recherche", "comparator": "Comparateur de Visas 2026",
     "other_visas": "Autres Visas",
     "eligibility": "Contacter un expert",
     "see_services": "Voir nos services",

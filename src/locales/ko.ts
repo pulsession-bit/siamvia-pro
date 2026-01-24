@@ -14,7 +14,7 @@ export const ko = {
     "eligibility": "전문가에게 문의",
     "ltr": "LTR 비자",
     "languages": "언어",
-    "search": "검색"
+    "search": "검색", "comparator": "2026년 비자 비교"
   },
   "meta": {
     "title": "Siam Visa Pro | 태국 비자 전문가 - DTV, 관광 및 은퇴",

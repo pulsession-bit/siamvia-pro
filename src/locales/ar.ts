@@ -14,7 +14,7 @@ export const ar = {
     "eligibility": "اتصل بخبير",
     "ltr": "تأشيرة LTR",
     "languages": "اللغات",
-    "search": "بحث"
+    "search": "بحث", "comparator": "مقارنة التأشيرات 2026"
   },
   "meta": {
     "title": "Siam Visa Pro | خبير تأشيرات تايلاند - DTV، السياحة والتقاعد",

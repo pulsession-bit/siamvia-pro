@@ -14,7 +14,7 @@ export const en = {
     "eligibility": "Contact an Expert",
     "ltr": "Visa LTR",
     "languages": "Languages",
-    "search": "Search",
+    "search": "Search", "comparator": "2026 Visa Comparator",
     "all_visas": "All Visas",
     "business": "Business Visa",
     "smart": "SMART Visa",

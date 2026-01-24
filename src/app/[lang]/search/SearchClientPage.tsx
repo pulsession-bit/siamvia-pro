@@ -60,7 +60,12 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
                 subtext={localT.hero_subtext}
                 ctaLabel={localT.ai_cta}
                 onCtaClick={() => document.getElementById('ai-section')?.scrollIntoView({ behavior: 'smooth' })}
-                extraMobileContent={
+            >
+                <VisaComparatorTable
+                    tableI18n={localT.comparator_guide.table}
+                    compact={true}
+                />
+                <div id="ai-section">
                     <SearchAI
                         onSearch={handleAiSearch}
                         placeholder={localT.searchPlaceholder}
@@ -71,12 +76,7 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
                         title={localT.aiTitle}
                         compact={true}
                     />
-                }
-            >
-                <VisaComparatorTable
-                    tableI18n={localT.comparator_guide.table}
-                    compact={true}
-                />
+                </div>
             </SearchHero>
 
             {/* 2. Exploration Visuelle (Grid) */}
@@ -122,22 +122,7 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
                 </div>
             </div>
 
-            {/* 3. Aide Contextuelle (IA) - Visible only on Desktop here, moved to Hero for Mobile */}
-            <section id="ai-section" className="py-24 bg-slate-50 hidden lg:block">
-                <div className="max-w-4xl mx-auto px-4 text-center mb-12">
-                    <h2 className="text-3xl font-black text-slate-900 mb-4 uppercase tracking-tight">Une question spécifique ?</h2>
-                    <p className="text-slate-500 font-medium">Notre intelligence artificielle vous aide à affiner votre choix en quelques secondes.</p>
-                </div>
-                <SearchAI
-                    onSearch={handleAiSearch}
-                    placeholder={localT.searchPlaceholder}
-                    buttonLabel={localT.aiHelper}
-                    aiResponse={aiResponse}
-                    isAiLoading={isAiLoading}
-                    suggestions={localT.suggestions}
-                    title={localT.aiTitle}
-                />
-            </section>
+
 
             {/* 4. FAQ & Conseils SEO */}
             <VisaComparatorGuide i18n={localT.comparator_guide} />

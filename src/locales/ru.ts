@@ -14,7 +14,7 @@ export const ru = {
     "eligibility": "Связаться с экспертом",
     "ltr": "Виза LTR",
     "languages": "Языки",
-    "search": "Поиск"
+    "search": "Поиск", "comparator": "Сравнение виз 2026"
   },
   "meta": {
     "title": "Siam Visa Pro | Эксперт по визам в Таиланд - DTV, Туризм и Пенсия",

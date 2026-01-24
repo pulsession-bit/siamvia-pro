@@ -14,7 +14,7 @@ export const es = {
     "eligibility": "Contactar a un experto",
     "ltr": "Visa LTR",
     "languages": "Idiomas",
-    "search": "Buscar"
+    "search": "Buscar", "comparator": "Comparador de Visas 2026"
   },
   "meta": {
     "title": "Siam Visa Pro | Experto en Visas Tailandia - DTV, Turismo y Jubilación",

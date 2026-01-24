@@ -14,7 +14,7 @@ export const zh = {
     "eligibility": "联系专家",
     "ltr": "LTR 签证",
     "languages": "语言",
-    "search": "搜索"
+    "search": "搜索", "comparator": "2026 签证比较"
   },
   "meta": {
     "title": "Siam Visa Pro | 泰国签证专家 - DTV, 旅游与退休",

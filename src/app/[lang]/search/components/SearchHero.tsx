@@ -18,33 +18,25 @@ export const SearchHero: React.FC<SearchHeroProps> = ({
     subtext,
     ctaLabel,
     onCtaClick,
-    extraMobileContent,
     children
 }) => {
     return (
-        <section className="bg-slate-50 pt-32 pb-20 px-4 relative overflow-hidden flex items-center min-h-[60vh] md:min-h-[65vh]">
+        <section className="bg-slate-50 pt-32 pb-20 px-4 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-indigo-50/50 to-transparent pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto w-full relative z-10">
                 <div className="flex flex-col items-center">
 
-                    {/* Top Section: Titles & AI Input */}
-                    <div className="w-full max-w-4xl space-y-8 text-center mb-16">
+                    {/* Top Section: Titles */}
+                    <div className="w-full max-w-4xl space-y-8 text-center mb-12">
                         <div className="space-y-4">
                             <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-slate-900 leading-[1.1] tracking-tight">
                                 {title}
                             </h1>
-                            <p className="text-xl md:text-2xl text-slate-600 font-medium max-w-2xl mx-auto">
+                            <p className="text-xl md:text-2xl text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">
                                 {subtitle}
                             </p>
                         </div>
-
-                        {/* AI Search (Mobile) */}
-                        {extraMobileContent && (
-                            <div className="lg:hidden w-full mt-8">
-                                {extraMobileContent}
-                            </div>
-                        )}
 
                         <div className="flex flex-col items-center gap-8">
                             {subtext && (
@@ -55,14 +47,14 @@ export const SearchHero: React.FC<SearchHeroProps> = ({
                         </div>
                     </div>
 
-                    {/* Middle Section: Comparison Table (New Position!) */}
-                    <div className="w-full overflow-hidden animate-in fade-in slide-in-from-bottom-8 duration-1000 mb-16 px-2 md:px-0">
+                    {/* Children Section (Table, IA Form, etc.) */}
+                    <div className="w-full space-y-12 animate-in fade-in slide-in-from-bottom-8 duration-1000">
                         {children}
                     </div>
 
                     {/* Bottom Section (Optional CTA) */}
                     {ctaLabel && (
-                        <div className="flex justify-center">
+                        <div className="flex justify-center mt-12">
                             <button
                                 onClick={onCtaClick}
                                 className="group flex items-center gap-4 text-sm font-black text-slate-900 hover:text-indigo-600 transition-all uppercase tracking-widest bg-white pr-6 pl-2 py-2 rounded-full shadow-lg hover:shadow-xl border border-slate-100"

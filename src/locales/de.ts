@@ -14,7 +14,7 @@ export const de = {
     "eligibility": "Experten kontaktieren",
     "ltr": "Visa LTR",
     "languages": "Sprachen",
-    "search": "Suche"
+    "search": "Suche", "comparator": "Visa-Vergleich 2026"
   },
   "meta": {
     "title": "Siam Visa Pro | Thailand Visum Experte - DTV, Tourismus & Ruhestand",
