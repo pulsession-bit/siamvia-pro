@@ -8,6 +8,7 @@ interface SearchHeroProps {
     subtext?: string;
     ctaLabel?: string;
     onCtaClick?: () => void;
+    extraMobileContent?: React.ReactNode;
     children?: React.ReactNode;
 }
 
@@ -17,6 +18,7 @@ export const SearchHero: React.FC<SearchHeroProps> = ({
     subtext,
     ctaLabel,
     onCtaClick,
+    extraMobileContent,
     children
 }) => {
     return (
@@ -36,6 +38,13 @@ export const SearchHero: React.FC<SearchHeroProps> = ({
                                 {subtitle}
                             </p>
                         </div>
+
+                        {/* Mobile Extra Content (e.g. AI Search) */}
+                        {extraMobileContent && (
+                            <div className="lg:hidden w-full mt-8">
+                                {extraMobileContent}
+                            </div>
+                        )}
 
                         <div className="flex flex-col items-center lg:items-start gap-8">
                             {subtext && (

@@ -1,5 +1,7 @@
-import React from 'react';
-import { Globe } from 'lucide-react';
+'use client';
+
+import React, { useState, useRef, useEffect } from 'react';
+import { Globe, ChevronDown } from 'lucide-react';
 
 export const languages = [
     { code: 'fr', label: 'Français', flag: '🇫🇷' },
@@ -13,35 +15,61 @@ export const languages = [
     { code: 'ja', label: '日本語', flag: '🇯🇵' },
     { code: 'ko', label: '한국어', flag: '🇰🇷' },
     { code: 'ar', label: 'العربية', flag: '🇸🇦' },
-];
+] as const;
 
 interface LanguageSelectorProps {
     currentLang: string;
-    onSwitch: (newLang: string) => Promise<void> | void;
+    onSwitch: (lang: string) => void;
 }
 
 export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ currentLang, onSwitch }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
+
+    const currentFlag = languages.find(l => l.code === currentLang)?.flag || '🇬🇧';
+
     return (
-        <div className="relative group">
-            <button className="flex items-center space-x-1 p-2 rounded-lg text-xs font-bold transition text-white/80 hover:bg-white/10">
-                <Globe className="h-4 w-4" />
-                <span>{currentLang.toUpperCase()}</span>
+        <div className="relative" ref={dropdownRef}>
+            <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="flex items-center space-x-2 bg-slate-800/80 hover:bg-slate-700 text-white px-3 py-2 rounded-lg transition-colors border border-slate-700/50 backdrop-blur-sm"
+            >
+                <span className="text-lg leading-none">{currentFlag}</span>
+                <span className="uppercase text-sm font-semibold">{currentLang}</span>
+                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
             </button>
 
-            <div className="absolute right-0 top-[calc(100%-5px)] pt-4 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right z-50">
-                <div className="bg-white rounded-xl shadow-xl py-2 border border-slate-100">
-                    {languages.map(lang => (
-                        <button
-                            key={lang.code}
-                            onClick={() => onSwitch(lang.code)}
-                            className={`flex w-full items-center px-4 py-2 text-sm text-left hover:bg-amber-50 hover:text-amber-600 transition ${currentLang === lang.code ? 'bg-amber-50 text-amber-600 font-bold' : 'text-slate-700'}`}
-                        >
-                            <span className="mr-3 text-lg">{lang.flag}</span>
-                            {lang.label}
-                        </button>
-                    ))}
+            {isOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-xl py-2 border border-slate-100 animate-in fade-in zoom-in-95 duration-100 z-50">
+                    <div className="max-h-64 overflow-y-auto custom-scrollbar">
+                        {languages.map((lang) => (
+                            <button
+                                key={lang.code}
+                                onClick={() => {
+                                    onSwitch(lang.code);
+                                    setIsOpen(false);
+                                }}
+                                className={`w-full flex items-center space-x-3 px-4 py-2.5 text-sm hover:bg-amber-50 transition-colors ${currentLang === lang.code ? 'bg-amber-50/50 text-amber-600 font-semibold' : 'text-slate-700'
+                                    }`}
+                            >
+                                <span className="text-xl leading-none">{lang.flag}</span>
+                                <span>{lang.label}</span>
+                            </button>
+                        ))}
+                    </div>
                 </div>
-            </div>
+            )}
         </div>
     );
 };

@@ -1,6 +1,8 @@
+'use client';
+
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { ChevronDown, Search } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { NAV_ITEMS } from '../../config/navigation';
 
 interface NavLinksProps {
@@ -28,7 +30,7 @@ export const NavLinks: React.FC<NavLinksProps> = ({ pathname, langPath, t }) => 
         <div className="hidden md:flex items-center space-x-6 h-full">
             <Link
                 href={langPath('')}
-                className={`text-sm font-medium transition-colors ${pathname === langPath('') ? 'text-white font-semibold' : 'text-slate-200 hover:text-white'}`}
+                className={`text-sm font-bold transition-all duration-200 ${pathname === langPath('') ? 'text-amber-400' : 'text-white hover:text-amber-400 drop-shadow-md'}`}
             >
                 {t('nav.home')}
             </Link>
@@ -39,7 +41,7 @@ export const NavLinks: React.FC<NavLinksProps> = ({ pathname, langPath, t }) => 
                         <Link
                             key={item.key}
                             href={langPath(item.path || '')}
-                            className={`text-sm font-medium transition-colors ${pathname?.includes('/' + item.path) ? 'text-white font-semibold' : 'text-slate-200 hover:text-white'}`}
+                            className={`text-sm font-bold transition-all duration-200 ${pathname?.includes('/' + item.path) ? 'text-amber-400' : 'text-white hover:text-amber-400 drop-shadow-md'}`}
                         >
                             {t(item.labelKey)}
                         </Link>
@@ -53,9 +55,9 @@ export const NavLinks: React.FC<NavLinksProps> = ({ pathname, langPath, t }) => 
                         onMouseEnter={() => handleMouseEnter(item.key)}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <button className={`flex items-center space-x-1 text-sm font-medium focus:outline-none ${activeDropdown === item.key ? 'text-white' : 'text-slate-200'} hover:text-white h-full px-1`}>
+                        <button className={`flex items-center space-x-1 text-sm font-bold focus:outline-none transition-colors duration-200 ${activeDropdown === item.key ? 'text-amber-400' : 'text-white hover:text-amber-400 drop-shadow-md'} h-full px-1`}>
                             <span>{t(item.labelKey)}</span>
-                            <ChevronDown className="h-4 w-4 opacity-70" />
+                            <ChevronDown className={`h-4 w-4 opacity-70 transition-transform ${activeDropdown === item.key ? 'rotate-180' : ''}`} />
                         </button>
 
                         {/* Invisible bridge to prevent closing when moving between button and dropdown */}

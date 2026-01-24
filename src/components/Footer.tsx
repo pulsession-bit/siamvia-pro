@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Mail, Phone, MapPin, ShieldCheck, Landmark } from 'lucide-react';
+import { Mail, Phone, MapPin, ShieldCheck, Landmark, Facebook } from 'lucide-react';
 import Link from 'next/link';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useCurrentLang, useLangPath } from '../hooks/useLang';
@@ -31,6 +31,28 @@ const Footer: React.FC = () => {
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               {t('footer.desc')}
             </p>
+
+            {/* Social Links */}
+            <div className="flex space-x-4 mb-8">
+              <a 
+                href="https://www.facebook.com/share/15ZZLu4jrp7/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/5 p-2 rounded-lg text-slate-400 hover:text-blue-500 hover:bg-white/10 transition-all border border-white/5"
+                title="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+              <a 
+                href="https://wa.me/33773726887" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/5 p-2 rounded-lg text-slate-400 hover:text-green-500 hover:bg-white/10 transition-all border border-white/5"
+                title="WhatsApp"
+              >
+                <WhatsAppIcon className="h-5 w-5" />
+              </a>
+            </div>
 
             {/* Payment Methods */}
             <div className="mt-8 pt-6 border-t border-slate-800">

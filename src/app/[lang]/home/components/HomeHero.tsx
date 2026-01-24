@@ -23,7 +23,7 @@ export const HomeHero: React.FC<HomeHeroProps> = ({ t, langPath, SCORING_ENGINE_
                     sizes="100vw"
                 />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-slate-900/30"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/10 to-transparent"></div>
 
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36 flex flex-col items-center text-center">
                 <span className="inline-block px-4 py-1.5 rounded-full bg-slate-800/80 border border-slate-600 text-amber-400 text-xs font-bold tracking-wider mb-8 shadow-lg backdrop-blur-sm">
@@ -84,15 +84,15 @@ export const HomeHero: React.FC<HomeHeroProps> = ({ t, langPath, SCORING_ENGINE_
                     </Link>
                 </div>
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
-                    <div className="flex items-center justify-center bg-slate-800/50 backdrop-blur-md border border-slate-700 rounded-full py-2 px-6">
+                    <div className="flex items-center justify-center bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-full py-2 px-6">
                         <Shield className="h-5 w-5 text-green-400 mr-2" />
                         <span className="text-slate-200 text-sm font-medium">{t('hero.badge_evisa')}</span>
                     </div>
-                    <div className="flex items-center justify-center bg-slate-800/50 backdrop-blur-md border border-slate-700 rounded-full py-2 px-6">
+                    <div className="flex items-center justify-center bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-full py-2 px-6">
                         <FileText className="h-5 w-5 text-amber-400 mr-2" />
                         <span className="text-slate-200 text-sm font-medium">{t('hero.badge_dtv')}</span>
                     </div>
-                    <div className="flex items-center justify-center bg-slate-800/50 backdrop-blur-md border border-slate-700 rounded-full py-2 px-6">
+                    <div className="flex items-center justify-center bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-full py-2 px-6">
                         <Clock className="h-5 w-5 text-blue-400 mr-2" />
                         <span className="text-slate-200 text-sm font-medium">{t('hero.badge_time')}</span>
                     </div>

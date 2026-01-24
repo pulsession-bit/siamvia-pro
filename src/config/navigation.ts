@@ -1,9 +1,21 @@
 
 export const NAV_ITEMS = [
     {
-        key: 'all_visas',
-        labelKey: 'nav.all_visas',
+        key: 'search',
+        labelKey: 'nav.search',
         path: 'search',
+        items: []
+    },
+    {
+        key: 'services',
+        labelKey: 'nav.services',
+        path: 'services',
+        items: []
+    },
+    {
+        key: 'faq',
+        labelKey: 'nav.faq',
+        path: 'faq',
         items: []
     },
     {
