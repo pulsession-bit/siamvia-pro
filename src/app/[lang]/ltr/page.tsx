@@ -24,7 +24,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return generateMetadataWithHreflang({
         title: meta.title,
         description: meta.description,
-        pathname: getTranslatedPath('ltr', lang),
+        pageKey: 'ltr',
+        lang,
     });
 }
 

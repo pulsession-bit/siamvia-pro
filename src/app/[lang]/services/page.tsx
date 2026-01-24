@@ -19,7 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     return generateMetadataWithHreflang({
         title: meta.title,
         description: meta.description,
-        pathname: getTranslatedPath('services', lang),
+        pageKey: 'services',
+        lang,
     });
 }
 
