@@ -999,7 +999,9 @@ export const en = {
     "last_updated": "Last updated",
     "office_paris": "Paris: 128 Rue de la Boétie, 75008 Paris, France",
     "office_bkk": "Bangkok: Sukhumvit Rd, Khlong Toei, Bangkok 10110, Thailand",
-    "tax_id": "Tax ID: [Pending Verification]"
+    "office_usa": "HQ: 16192 Coastal Highway, Lewes, Delaware 19958, USA",
+    "tax_id": "RC: 2417125",
+    "legal_entity": "DigitGpt LLC"
   },
   "login": {
     "title": "Client Area",

@@ -24,12 +24,26 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang, pageKey, title, show
         'description': 'Experts en visas pour la Thaïlande (DTV, Elite, LTR, Retraite). Assistance administrative et audit d\'éligibilité.',
         'address': {
             '@type': 'PostalAddress',
-            'streetAddress': '128 Rue de la Boétie',
-            'addressLocality': 'Paris',
-            'postalCode': '75008',
-            'addressCountry': 'FR'
+            'streetAddress': '16192 Coastal Highway',
+            'addressLocality': 'Lewes',
+            'addressRegion': 'Delaware',
+            'postalCode': '19958',
+            'addressCountry': 'US'
         },
+        'taxID': '2417125',
         'location': [
+            {
+                '@type': 'Place',
+                'name': 'USA Headquarters',
+                'address': {
+                    '@type': 'PostalAddress',
+                    'streetAddress': '16192 Coastal Highway',
+                    'addressLocality': 'Lewes',
+                    'addressRegion': 'Delaware',
+                    'postalCode': '19958',
+                    'addressCountry': 'US'
+                }
+            },
             {
                 '@type': 'Place',
                 'name': 'Paris Office',
@@ -53,6 +67,7 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang, pageKey, title, show
                 }
             }
         ],
+
         'contactPoint': {
             '@type': 'ContactPoint',
             'contactType': 'customer service',

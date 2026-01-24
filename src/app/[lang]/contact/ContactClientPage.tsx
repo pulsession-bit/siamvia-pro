@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Send, Loader2, CheckCircle } from 'lucide-react';
+import { Send, Loader2, CheckCircle, ShieldCheck, MapPin } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 import { ContactHero } from './components/ContactHero';
@@ -132,16 +132,21 @@ const ContactClientPage: React.FC = () => {
                             <p className="text-slate-600 leading-relaxed uppercase tracking-widest text-[10px] font-black">
                                 Professional Immigration Consultancy
                             </p>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
                                 <div className="space-y-1">
-                                    <p className="text-xs font-bold text-slate-400 uppercase tracking-tighter">Paris HQ</p>
-                                    <p className="text-sm font-medium text-slate-800">128 Rue de la Boétie, 75008 Paris, France</p>
+                                    <p className="text-xs font-bold text-amber-500 uppercase tracking-tighter">USA HQ</p>
+                                    <p className="text-sm font-medium text-slate-800">16192 Coastal Highway, Lewes, DE 19958</p>
                                 </div>
-                                <div className="space-y-1 border-l border-slate-100 pl-6 hidden sm:block">
+                                <div className="space-y-1 border-l border-slate-100 pl-6">
+                                    <p className="text-xs font-bold text-slate-400 uppercase tracking-tighter">Paris Office</p>
+                                    <p className="text-sm font-medium text-slate-800">128 Rue de la Boétie, 75008 Paris</p>
+                                </div>
+                                <div className="space-y-1 border-l border-slate-100 pl-6 hidden md:block">
                                     <p className="text-xs font-bold text-slate-400 uppercase tracking-tighter">Bangkok Office</p>
-                                    <p className="text-sm font-medium text-slate-800">Sukhumvit Rd, Khlong Toei, Bangkok 10110</p>
+                                    <p className="text-sm font-medium text-slate-800">Sukhumvit Rd, Khlong Toei, Bangkok</p>
                                 </div>
                             </div>
+
                         </div>
                         <div className="w-full md:w-auto p-8 bg-slate-50 rounded-2xl text-center border border-dashed border-slate-200">
                             <p className="text-[10px] font-black uppercase text-slate-400 mb-1">Company Status</p>
