@@ -11,7 +11,7 @@ export const th = {
     "faq": "คำถามที่พบบ่อย",
     "contact": "ติดต่อเรา",
     "member": "พื้นที่สมาชิก",
-    "eligibility": "ตรวจสอบสิทธิ์",
+    "eligibility": "ติดต่อผู้เชี่ยวชาญ",
     "ltr": "วีซ่า LTR",
     "languages": "ภาษา",
     "search": "ค้นหา"

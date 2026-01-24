@@ -11,7 +11,7 @@ export const de = {
     "faq": "FAQ",
     "contact": "Kontakt",
     "member": "Kundenbereich",
-    "eligibility": "Berechtigung",
+    "eligibility": "Experten kontaktieren",
     "ltr": "Visa LTR",
     "languages": "Sprachen",
     "search": "Suche"

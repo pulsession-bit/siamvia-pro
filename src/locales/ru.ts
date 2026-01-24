@@ -11,7 +11,7 @@ export const ru = {
     "faq": "FAQ",
     "contact": "Контакты",
     "member": "Кабинет",
-    "eligibility": "Проверка",
+    "eligibility": "Связаться с экспертом",
     "ltr": "Виза LTR",
     "languages": "Языки",
     "search": "Поиск"

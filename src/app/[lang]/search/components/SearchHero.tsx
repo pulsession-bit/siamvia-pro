@@ -26,55 +26,55 @@ export const SearchHero: React.FC<SearchHeroProps> = ({
             <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-indigo-50/50 to-transparent pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto w-full relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+                <div className="flex flex-col items-center">
 
-                    {/* Left Column: Content */}
-                    <div className="lg:col-span-5 space-y-8 text-center lg:text-left">
+                    {/* Top Section: Titles & AI Input */}
+                    <div className="w-full max-w-4xl space-y-8 text-center mb-16">
                         <div className="space-y-4">
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] tracking-tight">
+                            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-slate-900 leading-[1.1] tracking-tight">
                                 {title}
                             </h1>
-                            <p className="text-xl text-slate-600 font-medium max-w-xl mx-auto lg:mx-0">
+                            <p className="text-xl md:text-2xl text-slate-600 font-medium max-w-2xl mx-auto">
                                 {subtitle}
                             </p>
                         </div>
 
-                        {/* Mobile Extra Content (e.g. AI Search) */}
+                        {/* AI Search (Mobile) */}
                         {extraMobileContent && (
                             <div className="lg:hidden w-full mt-8">
                                 {extraMobileContent}
                             </div>
                         )}
 
-                        <div className="flex flex-col items-center lg:items-start gap-8">
+                        <div className="flex flex-col items-center gap-8">
                             {subtext && (
-                                <div className="flex items-center gap-2 text-slate-400 font-bold uppercase tracking-[0.2em] text-[10px] border-y border-slate-200 py-4 w-fit">
+                                <div className="flex items-center gap-2 text-slate-400 font-bold uppercase tracking-[0.2em] text-[10px] border-y border-slate-200 py-4 w-fit px-4">
                                     {subtext}
                                 </div>
                             )}
-
-                            {ctaLabel && (
-                                <button
-                                    onClick={onCtaClick}
-                                    className="group flex items-center gap-4 text-sm font-black text-slate-900 hover:text-indigo-600 transition-all uppercase tracking-widest bg-white pr-6 pl-2 py-2 rounded-full shadow-sm hover:shadow-md border border-slate-100"
-                                >
-                                    <span className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-50 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all">
-                                        <Sparkles size={16} className="text-amber-500 group-hover:text-white" />
-                                    </span>
-                                    {ctaLabel}
-                                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform ml-auto" />
-                                </button>
-                            )}
                         </div>
                     </div>
 
-                    {/* Right Column: Table / Tool */}
-                    <div className="lg:col-span-7 w-full overflow-hidden">
-                        <div className="animate-in fade-in slide-in-from-right-8 duration-1000">
-                            {children}
-                        </div>
+                    {/* Middle Section: Comparison Table (New Position!) */}
+                    <div className="w-full overflow-hidden animate-in fade-in slide-in-from-bottom-8 duration-1000 mb-16 px-2 md:px-0">
+                        {children}
                     </div>
 
+                    {/* Bottom Section (Optional CTA) */}
+                    {ctaLabel && (
+                        <div className="flex justify-center">
+                            <button
+                                onClick={onCtaClick}
+                                className="group flex items-center gap-4 text-sm font-black text-slate-900 hover:text-indigo-600 transition-all uppercase tracking-widest bg-white pr-6 pl-2 py-2 rounded-full shadow-lg hover:shadow-xl border border-slate-100"
+                            >
+                                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-50 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                                    <Sparkles size={16} className="text-amber-500 group-hover:text-white" />
+                                </span>
+                                {ctaLabel}
+                                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform ml-auto" />
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
 

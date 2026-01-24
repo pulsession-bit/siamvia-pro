@@ -11,7 +11,7 @@ export const ja = {
     "faq": "よくある質問",
     "contact": "お問い合わせ",
     "member": "会員エリア",
-    "eligibility": "資格確認",
+    "eligibility": "専門家に相談する",
     "ltr": "LTRビザ",
     "languages": "言語",
     "search": "検索"

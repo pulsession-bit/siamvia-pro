@@ -13,7 +13,7 @@ export const fr = {
     "faq": "FAQ",
     "search": "Recherche",
     "other_visas": "Autres Visas",
-    "eligibility": "Vérifier mon éligibilité",
+    "eligibility": "Contacter un expert",
     "see_services": "Voir nos services",
     "ltr": "Visa LTR",
     "languages": "Langues",

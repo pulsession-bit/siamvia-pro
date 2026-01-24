@@ -11,7 +11,7 @@ export const ar = {
     "faq": "أسئلة شائعة",
     "contact": "اتصل بنا",
     "member": "منطقة الأعضاء",
-    "eligibility": "الأهلية",
+    "eligibility": "اتصل بخبير",
     "ltr": "تأشيرة LTR",
     "languages": "اللغات",
     "search": "بحث"

@@ -11,7 +11,7 @@ export const zh = {
     "faq": "常见问题",
     "contact": "联系我们",
     "member": "会员中心",
-    "eligibility": "资格审查",
+    "eligibility": "联系专家",
     "ltr": "LTR 签证",
     "languages": "语言",
     "search": "搜索"

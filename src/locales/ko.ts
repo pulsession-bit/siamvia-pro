@@ -11,7 +11,7 @@ export const ko = {
     "faq": "자주 묻는 질문",
     "contact": "문의하기",
     "member": "회원 공간",
-    "eligibility": "자격 확인",
+    "eligibility": "전문가에게 문의",
     "ltr": "LTR 비자",
     "languages": "언어",
     "search": "검색"

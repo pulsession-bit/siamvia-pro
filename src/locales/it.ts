@@ -11,7 +11,7 @@ export const it = {
     "faq": "FAQ",
     "contact": "Contatti",
     "member": "Area Clienti",
-    "eligibility": "Idoneità",
+    "eligibility": "Contatta un esperto",
     "ltr": "Visto LTR",
     "languages": "Lingue",
     "search": "Ricerca"
