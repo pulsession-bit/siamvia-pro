@@ -37,7 +37,7 @@ export const ContactInfo: React.FC<ContactInfoProps> = ({
                     </div>
                     <div>
                         <h3 className="font-bold text-lg mb-1">{addressTitle}</h3>
-                        <p className="text-slate-300">Paris, France<br />Bangkok, Thailand</p>
+                        <p className="text-slate-300">Bangkok, Thailand</p>
                     </div>
                 </div>
 

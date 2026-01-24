@@ -158,7 +158,7 @@ export const PAGE_METADATA = {
     contact: {
         title: 'Contact - Expert Visa Thaïlande',
         description:
-            'Contactez nos experts en visas thaïlandais. Paris et Bangkok. Réponse sous 24h.',
+            'Contactez nos experts en visas thaïlandais. Basés à Bangkok. Réponse sous 24h.',
         keywords: ['contact visa thailande', 'expert visa', 'conseil visa'],
         path: '/contact',
     },

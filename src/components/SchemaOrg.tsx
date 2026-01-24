@@ -46,17 +46,6 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang, pageKey, title, show
             },
             {
                 '@type': 'Place',
-                'name': 'Paris Office',
-                'address': {
-                    '@type': 'PostalAddress',
-                    'streetAddress': '128 Rue de la Boétie',
-                    'addressLocality': 'Paris',
-                    'postalCode': '75008',
-                    'addressCountry': 'FR'
-                }
-            },
-            {
-                '@type': 'Place',
                 'name': 'Bangkok Office',
                 'address': {
                     '@type': 'PostalAddress',
@@ -67,6 +56,7 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang, pageKey, title, show
                 }
             }
         ],
+
 
         'contactPoint': {
             '@type': 'ContactPoint',
