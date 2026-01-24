@@ -9,6 +9,7 @@ interface SearchAIProps {
     isAiLoading: boolean;
     suggestions?: string[];
     title?: string;
+    compact?: boolean;
 }
 
 export const SearchAI: React.FC<SearchAIProps> = ({
@@ -18,7 +19,8 @@ export const SearchAI: React.FC<SearchAIProps> = ({
     aiResponse,
     isAiLoading,
     suggestions = [],
-    title = "Avis de l'Expert IA"
+    title = "Avis de l'Expert IA",
+    compact = false
 }) => {
     const [query, setQuery] = useState('');
 
@@ -34,11 +36,11 @@ export const SearchAI: React.FC<SearchAIProps> = ({
     };
 
     return (
-        <div className="w-full max-w-5xl mx-auto relative z-20 px-4">
-            <div className="bg-white rounded-[2rem] shadow-2xl shadow-slate-200/60 p-6 md:p-10 border border-slate-100">
-                <form onSubmit={handleSubmit} className="relative flex items-center mb-8">
+        <div className={`w-full ${compact ? 'max-w-4xl' : 'max-w-5xl'} mx-auto relative z-20 ${compact ? 'px-0' : 'px-4'}`}>
+            <div className={`bg-white ${compact ? 'rounded-2xl p-4 md:p-6' : 'rounded-[2rem] p-6 md:p-10'} shadow-2xl shadow-slate-200/60 border border-slate-100`}>
+                <form onSubmit={handleSubmit} className={`relative flex items-center ${compact ? 'mb-4' : 'mb-8'}`}>
                     <div className="absolute left-6 text-slate-400">
-                        <Search className="w-6 h-6" />
+                        <Search className={`${compact ? 'w-5 h-5' : 'w-6 h-6'}`} />
                     </div>
                     <input
                         type="text"
@@ -46,19 +48,19 @@ export const SearchAI: React.FC<SearchAIProps> = ({
                         onChange={(e) => setQuery(e.target.value)}
                         onKeyDown={handleKeyDown}
                         placeholder={placeholder}
-                        className="w-full py-6 pl-16 pr-40 rounded-2xl text-xl bg-slate-50 border border-slate-200 focus:bg-white focus:outline-none focus:ring-8 focus:ring-indigo-500/5 focus:border-indigo-500 transition-all font-semibold text-slate-800 placeholder:text-slate-400"
+                        className={`w-full ${compact ? 'py-4 pl-14 pr-32 text-lg font-medium' : 'py-6 pl-16 pr-40 rounded-2xl text-xl font-semibold'} rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:outline-none focus:ring-8 focus:ring-indigo-500/5 focus:border-indigo-500 transition-all text-slate-800 placeholder:text-slate-400`}
                     />
                     <button
                         type="submit"
                         disabled={isAiLoading || !query.trim()}
-                        className="absolute right-3 top-3 bottom-3 bg-slate-900 text-white px-8 rounded-xl font-black hover:bg-slate-800 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 shadow-lg shadow-slate-900/20 active:scale-95"
+                        className={`absolute right-2 top-2 bottom-2 bg-slate-900 text-white ${compact ? 'px-4 md:px-6' : 'px-8 rounded-xl'} rounded-lg font-black hover:bg-slate-800 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 shadow-lg shadow-slate-900/20 active:scale-95`}
                     >
                         {isAiLoading ? (
                             <Loader2 className="w-5 h-5 animate-spin" />
                         ) : (
                             <>
-                                <span className="hidden md:inline uppercase tracking-wider text-xs">{buttonLabel}</span>
-                                <Sparkles className="w-5 h-5 text-amber-400" />
+                                <span className={`${compact ? 'hidden sm:inline' : 'hidden md:inline'} uppercase tracking-wider text-[10px]`}>{buttonLabel}</span>
+                                <Sparkles className={`${compact ? 'w-4 h-4' : 'w-5 h-5'} text-amber-400`} />
                             </>
                         )}
                     </button>
