@@ -33,7 +33,52 @@ export const zh = {
       "我55岁了，想在普吉岛退休",
       "寻找不需要出境的5年期签证",
       "学习泰拳的签证"
-    ]
+    ],
+    "searchPlaceholder": "询问AI...",
+    "allVisas": "全部",
+    "aiHelper": "AI",
+    "aiTitle": "建议",
+    "categories": {
+        "work": "工作",
+        "tourism": "旅游",
+        "longterm": "长期",
+        "family": "家庭",
+        "education": "教育",
+        "privilege": "精英"
+    },
+    "details": "详情",
+    "eligibility": "条件",
+    "duration": "期限",
+    "requirements": "材料",
+    "contactUs": "联系",
+    "contactUsBtn": "预约",
+    "footerText": "SiamVisaPro.",
+    "visaCategory": "类别",
+    "estimatedCost": "费用",
+    "cost": "费用",
+    "expertPick": "推荐",
+    "alternative": "替代",
+    "commonRequirements": [
+        "护照"
+    ],
+    "processDescription": "5-15天。",
+    "durations": {
+        "10 Years": "10年",
+        "5 Years": "5年",
+        "1 Year": "1年",
+        "60 Days": "60天",
+        "6 Months": "6个月",
+        "15 Days": "15天",
+        "4 Years": "4年",
+        "Variable": "视情况",
+        "90 Days": "90天"
+    },
+    "prices": {
+        "High": "高",
+        "Medium": "中",
+        "Low": "低",
+        "Premium": "尊享"
+    }
   },
   "hero": {
     "new_badge": "新推出：DTV 签证现已可用",

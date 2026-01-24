@@ -391,7 +391,53 @@ export const es = {
       "Tengo 55 años y quiero jubilarme",
       "Busco una visa de 5 años sin salir del país",
       "Visa para aprender Muay Thai"
-    ]
+    ],
+    "searchPlaceholder": "IA...",
+    "allVisas": "Todos",
+    "aiHelper": "IA",
+    "aiTitle": "Consejo IA",
+    "categories": {
+        "work": "Trabajo",
+        "tourism": "Turismo",
+        "longterm": "Largo Plazo",
+        "family": "Familia",
+        "education": "Educación",
+        "privilege": "Elite"
+    },
+    "details": "Detalles",
+    "eligibility": "Elegibilidad",
+    "duration": "Duración",
+    "requirements": "Requisitos",
+    "contactUs": "Contacto",
+    "contactUsBtn": "Cita",
+    "footerText": "SiamVisaPro.",
+    "visaCategory": "Categoría",
+    "estimatedCost": "Coste",
+    "cost": "Coste",
+    "expertPick": "EXPERT PICK",
+    "alternative": "ALTERNATIVA",
+    "commonRequirements": [
+        "Pasaporte",
+        "Fondos"
+    ],
+    "processDescription": "5-15 días.",
+    "durations": {
+        "10 Years": "10 años",
+        "5 Years": "5 años",
+        "1 Year": "1 año",
+        "60 Days": "60 días",
+        "6 Months": "6 meses",
+        "15 Days": "15 días",
+        "4 Years": "4 años",
+        "Variable": "Variable",
+        "90 Days": "90 días"
+    },
+    "prices": {
+        "High": "Alto",
+        "Medium": "Medio",
+        "Low": "Bajo",
+        "Premium": "Premium"
+    }
   },
   "contact_page": {
     "title": "Contáctenos",

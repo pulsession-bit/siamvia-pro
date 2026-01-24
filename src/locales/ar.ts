@@ -33,7 +33,52 @@ export const ar = {
       "عمري 55 عامًا وأريد التقاعد في بوكيت",
       "أبحث عن تأشيرة لمدة 5 سنوات بدون مغادرة",
       "تأشيرة لتعلم المواي تاي"
-    ]
+    ],
+    "searchPlaceholder": "اسأل...",
+    "allVisas": "الكل",
+    "aiHelper": "ذكاء",
+    "aiTitle": "نصيحة",
+    "categories": {
+        "work": "عمل",
+        "tourism": "سياحة",
+        "longterm": "طويلة",
+        "family": "أسرة",
+        "education": "تعليم",
+        "privilege": "نخبة"
+    },
+    "details": "تفاصيل",
+    "eligibility": "أهلية",
+    "duration": "مدة",
+    "requirements": "متطلبات",
+    "contactUs": "اتصل",
+    "contactUsBtn": "حجز",
+    "footerText": "SiamVisaPro.",
+    "visaCategory": "فئة",
+    "estimatedCost": "تكلفة",
+    "cost": "تكلفة",
+    "expertPick": "خبير",
+    "alternative": "بديل",
+    "commonRequirements": [
+        "جواز"
+    ],
+    "processDescription": "5-15 يوم.",
+    "durations": {
+        "10 Years": "10 سنوات",
+        "5 Years": "5 سنوات",
+        "1 Year": "سنة",
+        "60 Days": "60 يوم",
+        "6 Months": "6 أشهر",
+        "15 Days": "15 يوم",
+        "4 Years": "4 سنوات",
+        "Variable": "متغير",
+        "90 Days": "90 يوم"
+    },
+    "prices": {
+        "High": "مرتفع",
+        "Medium": "متوسط",
+        "Low": "منخفض",
+        "Premium": "ممتاز"
+    }
   },
   "hero": {
     "new_badge": "جديد: تأشيرة DTV متاحة الآن",

@@ -40,11 +40,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-import { I18N } from './data/visas';
+
 
 export default async function SearchPage({ params }: Props) {
     const { lang } = await params;
-    const localI18n = I18N[lang] || I18N.en;
+    // @ts-ignore
+    const localI18n = translations[lang]?.search_page || translations.en.search_page;
 
     return (
         <React.Suspense fallback={<div className="min-h-screen bg-slate-50 flex items-center justify-center">Loading search engine...</div>}>

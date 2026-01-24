@@ -33,7 +33,52 @@ export const ko = {
       "55세이고 푸켓에서 은퇴하고 싶습니다",
       "출국 없는 5년 비자를 찾고 있습니다",
       "무에타이 배우기 비자"
-    ]
+    ],
+    "searchPlaceholder": "AI...",
+    "allVisas": "모두",
+    "aiHelper": "AI",
+    "aiTitle": "조언",
+    "categories": {
+        "work": "취업",
+        "tourism": "관광",
+        "longterm": "장기",
+        "family": "가족",
+        "education": "교육",
+        "privilege": "엘리트"
+    },
+    "details": "상세",
+    "eligibility": "요건",
+    "duration": "기간",
+    "requirements": "서류",
+    "contactUs": "문의",
+    "contactUsBtn": "예약",
+    "footerText": "SiamVisaPro.",
+    "visaCategory": "카테고리",
+    "estimatedCost": "비용",
+    "cost": "비용",
+    "expertPick": "추천",
+    "alternative": "대안",
+    "commonRequirements": [
+        "여권"
+    ],
+    "processDescription": "5-15일.",
+    "durations": {
+        "10 Years": "10년",
+        "5 Years": "5년",
+        "1 Year": "1년",
+        "60 Days": "60일",
+        "6 Months": "6개월",
+        "15 Days": "15일",
+        "4 Years": "4년",
+        "Variable": "다양",
+        "90 Days": "90일"
+    },
+    "prices": {
+        "High": "높음",
+        "Medium": "중간",
+        "Low": "낮음",
+        "Premium": "프รี미엄"
+    }
   },
   "hero": {
     "new_badge": "신규: DTV 비자 출시",

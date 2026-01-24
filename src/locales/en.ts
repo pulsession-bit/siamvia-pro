@@ -108,7 +108,58 @@ export const en = {
       "I'm 55 and want to retire in Phuket",
       "Looking for a 5-year visa without exit",
       "Visa for learning Muay Thai"
-    ]
+    ],
+    "searchPlaceholder": "Ask our AI a question (or search for a visa...)",
+    "allVisas": "All Visas",
+    "aiHelper": "Ask AI",
+    "aiTitle": "AI Expert Advice",
+    "categories": {
+        "work": "Work & Business",
+        "tourism": "Tourism",
+        "longterm": "Long Term (LTR)",
+        "family": "Family & Marriage",
+        "education": "Education",
+        "privilege": "Privilege Elite"
+    },
+    "details": "View Details",
+    "eligibility": "Eligibility",
+    "duration": "Duration",
+    "requirements": "Requirements",
+    "contactUs": "Contact Us",
+    "contactUsBtn": "Book Appointment",
+    "footerText": "SiamVisaPro - Your trusted partner for Thailand expatriation.",
+    "visaCategory": "Visa Category",
+    "estimatedCost": "Estimated Cost",
+    "cost": "Cost",
+    "expertPick": "EXPERT PICK",
+    "alternative": "ALTERNATIVE",
+    "commonRequirements": [
+        "Valid passport (min. 6 months remaining)",
+        "Clean criminal record certificate",
+        "Proof of sufficient funds",
+        "Proof of local address / booking"
+    ],
+    "processDescription": "Application process typically takes 5-15 business days. SiamVisaPro provides full support for document preparation.",
+    "durations": {
+        "10 Years": "10 Years",
+        "5 Years": "5 Years",
+        "1 Year": "1 Year",
+        "60 Days": "60 Days",
+        "6 Months": "6 Months",
+        "15 Days": "15 Days",
+        "4 Years": "4 Years",
+        "6-12 Months": "6-12 Months",
+        "15 Years": "15 Years",
+        "20+ Years": "20+ Years",
+        "Variable": "Variable",
+        "90 Days": "90 Days"
+    },
+    "prices": {
+        "High": "High",
+        "Medium": "Medium",
+        "Low": "Low",
+        "Premium": "Premium"
+    }
   },
   "contact_page": {
     "title": "Contact Us",

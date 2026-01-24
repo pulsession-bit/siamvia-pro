@@ -33,7 +33,52 @@ export const ru = {
       "Мне 55 лет, хочу на пенсию на Пхукет",
       "Ищу визу на 5 лет без выезда",
       "Виза для изучения Муай Тай"
-    ]
+    ],
+    "searchPlaceholder": "ИИ...",
+    "allVisas": "Все",
+    "aiHelper": "ИИ",
+    "aiTitle": "Совет",
+    "categories": {
+        "work": "Работа",
+        "tourism": "Туризм",
+        "longterm": "Долгосрочно",
+        "family": "Семья",
+        "education": "Учеба",
+        "privilege": "Элита"
+    },
+    "details": "Подробнее",
+    "eligibility": "Критерии",
+    "duration": "Срок",
+    "requirements": "Требования",
+    "contactUs": "Контакт",
+    "contactUsBtn": "Запись",
+    "footerText": "SiamVisaPro.",
+    "visaCategory": "Категория",
+    "estimatedCost": "Стоимость",
+    "cost": "Стоимость",
+    "expertPick": "ВЫБОР",
+    "alternative": "АЛЬТЕРНАТИВА",
+    "commonRequirements": [
+        "Паспорт"
+    ],
+    "processDescription": "5-15 дней.",
+    "durations": {
+        "10 Years": "10 лет",
+        "5 Years": "5 лет",
+        "1 Year": "1 год",
+        "60 Days": "60 дней",
+        "6 Months": "6 месяцев",
+        "15 Days": "15 дней",
+        "4 Years": "4 года",
+        "Variable": "Разно",
+        "90 Days": "90 дней"
+    },
+    "prices": {
+        "High": "Высокая",
+        "Medium": "Средняя",
+        "Low": "Низкая",
+        "Premium": "Премиум"
+    }
   },
   "hero": {
     "new_badge": "НОВИНКА: ДОСТУПНА ВИЗА DTV",

@@ -33,7 +33,52 @@ export const th = {
       "ฉันอายุ 55 ปีและต้องการเกษียณที่ภูเก็ต",
       "มองหาวีซ่า 5 ปีแบบไม่ต้องออกนอกประเทศ",
       "วีซ่าสำหรับเรียนมวยไทย"
-    ]
+    ],
+    "searchPlaceholder": "ถาม AI...",
+    "allVisas": "ทั้งหมด",
+    "aiHelper": "ถาม IA",
+    "aiTitle": "คำแนะนำ",
+    "categories": {
+        "work": "ทำงาน",
+        "tourism": "ท่องเที่ยว",
+        "longterm": "ระยะยาว",
+        "family": "ครอบครัว",
+        "education": "การศึกษา",
+        "privilege": "Elite"
+    },
+    "details": "รายละเอียด",
+    "eligibility": "คุณสมบัติ",
+    "duration": "ระยะเวลา",
+    "requirements": "เอกสาร",
+    "contactUs": "ติดต่อ",
+    "contactUsBtn": "จอง",
+    "footerText": "SiamVisaPro.",
+    "visaCategory": "ประเภท",
+    "estimatedCost": "ค่าใช้จ่าย",
+    "cost": "ค่าใช้จ่าย",
+    "expertPick": "แนะนำ",
+    "alternative": "ทางเลือก",
+    "commonRequirements": [
+        "พาสปอร์ต"
+    ],
+    "processDescription": "5-15 วัน.",
+    "durations": {
+        "10 Years": "10 ปี",
+        "5 Years": "5 ปี",
+        "1 Year": "1 ปี",
+        "60 Days": "60 วัน",
+        "6 Months": "6 เดือน",
+        "15 Days": "15 วัน",
+        "4 Years": "4 ปี",
+        "Variable": "แปรผัน",
+        "90 Days": "90 วัน"
+    },
+    "prices": {
+        "High": "สูง",
+        "Medium": "กลาง",
+        "Low": "ต่ำ",
+        "Premium": "พรีเมียม"
+    }
   },
   "hero": {
     "new_badge": "ใหม่: วีซ่า DTV พร้อมให้บริการ",

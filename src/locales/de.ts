@@ -395,7 +395,53 @@ export const de = {
       "Ich bin 55 und möchte in den Ruhestand",
       "Suche ein 5-Jahres-Visum ohne Ausreise",
       "Visum zum Muay Thai lernen"
-    ]
+    ],
+    "searchPlaceholder": "KI fragen...",
+    "allVisas": "Alle Visa",
+    "aiHelper": "KI fragen",
+    "aiTitle": "KI-Rat",
+    "categories": {
+        "work": "Arbeit",
+        "tourism": "Tourismus",
+        "longterm": "Langzeit",
+        "family": "Familie",
+        "education": "Bildung",
+        "privilege": "Elite"
+    },
+    "details": "Details",
+    "eligibility": "Berechtigung",
+    "duration": "Dauer",
+    "requirements": "Anforderungen",
+    "contactUs": "Kontakt",
+    "contactUsBtn": "Buchen",
+    "footerText": "SiamVisaPro Partner.",
+    "visaCategory": "Visakategorie",
+    "estimatedCost": "Kosten",
+    "cost": "Preis",
+    "expertPick": "EXPERTENWAHL",
+    "alternative": "ALTERNATIVE",
+    "commonRequirements": [
+        "Passport",
+        "Nachweise"
+    ],
+    "processDescription": "5-15 Tage Dauer.",
+    "durations": {
+        "10 Years": "10 Jahre",
+        "5 Years": "5 Jahre",
+        "1 Year": "1 Jahr",
+        "60 Days": "60 Tage",
+        "6 Months": "6 Monate",
+        "15 Days": "15 Tage",
+        "4 Years": "4 Jahre",
+        "Variable": "Variabel",
+        "90 Days": "90 Tage"
+    },
+    "prices": {
+        "High": "Hoch",
+        "Medium": "Mittel",
+        "Low": "Niedrig",
+        "Premium": "Premium"
+    }
   },
   "contact_page": {
     "title": "Kontakt",

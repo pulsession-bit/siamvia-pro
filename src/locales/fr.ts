@@ -106,7 +106,58 @@ export const fr = {
       "J'ai 55 ans et je veux prendre ma retraite",
       "Je cherche un visa de 5 ans sans sortir du pays",
       "Visa pour apprendre le Muay Thai"
-    ]
+    ],
+    "searchPlaceholder": "Posez votre question à notre IA (ou cherchez un visa...)",
+    "allVisas": "Tous les Visas",
+    "aiHelper": "Demander à l'IA",
+    "aiTitle": "Avis de l'Expert IA",
+    "categories": {
+        "work": "Travail & Business",
+        "tourism": "Tourisme",
+        "longterm": "Long Terme (LTR)",
+        "family": "Famille & Mariage",
+        "education": "Éducation",
+        "privilege": "Privilège Elite"
+    },
+    "details": "Voir les détails",
+    "eligibility": "Éligibilité",
+    "duration": "Durée",
+    "requirements": "Documents requis",
+    "contactUs": "Nous contacter",
+    "contactUsBtn": "Prendre RDV",
+    "footerText": "SiamVisaPro - Votre partenaire de confiance pour l'expatriation en Thaïlande.",
+    "visaCategory": "Catégorie de Visa",
+    "estimatedCost": "Coût Estimé",
+    "cost": "Coût",
+    "expertPick": "CONSEIL EXPERT",
+    "alternative": "ALTERNATIVE",
+    "commonRequirements": [
+        "Passeport valide (min. 6 mois restants)",
+        "Extrait de casier judiciaire vierge",
+        "Preuves de revenus ou de fonds suffisants",
+        "Justificatif de domicile en Thaïlande"
+    ],
+    "processDescription": "Le processus prend généralement 5 à 15 jours ouvrables. SiamVisa Pro vous accompagne pour la préparation, la traduction et la légalisation de vos documents.",
+    "durations": {
+        "10 Years": "10 ans",
+        "5 Years": "5 ans",
+        "1 Year": "1 an",
+        "60 Days": "60 jours",
+        "6 Months": "6 mois",
+        "15 Days": "15 jours",
+        "4 Years": "4 ans",
+        "6-12 Months": "6-12 mois",
+        "15 Years": "15 ans",
+        "20+ Years": "20 ans et +",
+        "Variable": "Variable",
+        "90 Days": "90 jours"
+    },
+    "prices": {
+        "High": "Élevé",
+        "Medium": "Moyen",
+        "Low": "Faible",
+        "Premium": "Premium"
+    }
   },
   "home_page": {
     "member": "Espace Membre",

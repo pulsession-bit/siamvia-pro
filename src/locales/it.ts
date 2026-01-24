@@ -33,7 +33,53 @@ export const it = {
       "Ho 55 anni e voglio andare in pensione",
       "Cerco un visto di 5 anni senza uscita",
       "Visto per imparare la Muay Thai"
-    ]
+    ],
+    "searchPlaceholder": "Chiedi...",
+    "allVisas": "Tutti",
+    "aiHelper": "IA",
+    "aiTitle": "Parere IA",
+    "categories": {
+        "work": "Lavoro",
+        "tourism": "Turismo",
+        "longterm": "Lungo Termine",
+        "family": "Famiglia",
+        "education": "Istruzione",
+        "privilege": "Elite"
+    },
+    "details": "Dettagli",
+    "eligibility": "Idoneità",
+    "duration": "Durata",
+    "requirements": "Requisiti",
+    "contactUs": "Contatto",
+    "contactUsBtn": "Prenota",
+    "footerText": "SiamVisaPro.",
+    "visaCategory": "Categoria",
+    "estimatedCost": "Costo",
+    "cost": "Costo",
+    "expertPick": "EXPERT PICK",
+    "alternative": "ALTERNATIVA",
+    "commonRequirements": [
+        "Passaporto",
+        "Fondi"
+    ],
+    "processDescription": "5-15 giorni.",
+    "durations": {
+        "10 Years": "10 anni",
+        "5 Years": "5 anni",
+        "1 Year": "1 anno",
+        "60 Days": "60 giorni",
+        "6 Months": "6 mesi",
+        "15 Days": "15 giorni",
+        "4 Years": "4 anni",
+        "Variable": "Variabile",
+        "90 Days": "90 giorni"
+    },
+    "prices": {
+        "High": "Alto",
+        "Medium": "Medio",
+        "Low": "Basso",
+        "Premium": "Premium"
+    }
   },
   "hero": {
     "new_badge": "NUOVO: VISTO DTV DISPONIBILE",

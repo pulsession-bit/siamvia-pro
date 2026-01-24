@@ -33,7 +33,52 @@ export const ja = {
       "55歳でプーケットにリタイアしたい",
       "出国不要の5年ビザを探しています",
       "ムエタイを学ぶためのビザ"
-    ]
+    ],
+    "searchPlaceholder": "相談...",
+    "allVisas": "すべて",
+    "aiHelper": "AI",
+    "aiTitle": "助言",
+    "categories": {
+        "work": "就労",
+        "tourism": "観光",
+        "longterm": "長期",
+        "family": "家族",
+        "education": "教育",
+        "privilege": "エリート"
+    },
+    "details": "詳細",
+    "eligibility": "対象",
+    "duration": "期間",
+    "requirements": "書類",
+    "contactUs": "連絡",
+    "contactUsBtn": "予約",
+    "footerText": "SiamVisaPro.",
+    "visaCategory": "カテゴリー",
+    "estimatedCost": "費用",
+    "cost": "費用",
+    "expertPick": "推奨",
+    "alternative": "代替",
+    "commonRequirements": [
+        "旅券"
+    ],
+    "processDescription": "5-15日。",
+    "durations": {
+        "10 Years": "10年",
+        "5 Years": "5年",
+        "1 Year": "1年",
+        "60 Days": "60日",
+        "6 Months": "6ヶ月",
+        "15 Days": "15日",
+        "4 Years": "4年",
+        "Variable": "変動",
+        "90 Days": "90日"
+    },
+    "prices": {
+        "High": "高い",
+        "Medium": "普通",
+        "Low": "低い",
+        "Premium": "プレミアム"
+    }
   },
   "hero": {
     "new_badge": "新着：DTVビザの取り扱い開始",
