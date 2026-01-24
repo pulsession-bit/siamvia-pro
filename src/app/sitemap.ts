@@ -13,11 +13,23 @@ const pages: PageKey[] = [
     'ltr',
     'visa-run',
     'search',
+    'business-visa',
+    'exemption-visa',
+    'student-visa',
+    'family-visa',
+    'smart-visa',
+    'volunteer-visa',
+    'medical-visa',
+    'religious-visa',
+    'media-visa',
+    'official-visa',
+    'scientific-visa',
     'faq',
     'contact',
     'terms',
     'sitemap'
 ];
+
 
 const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'];
 
