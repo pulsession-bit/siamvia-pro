@@ -16,7 +16,27 @@ export const fr = {
     "eligibility": "Vérifier mon éligibilité",
     "see_services": "Voir nos services",
     "ltr": "Visa LTR",
-    "languages": "Langues"
+    "languages": "Langues",
+    "business": "Visa Business",
+    "smart": "Visa SMART",
+    "exemption": "Exemption de Visa",
+    "family": "Visa Famille",
+    "student": "Visa Étudiant",
+    "volunteer": "Visa Volontaire",
+    "medical": "Visa Médical",
+    "religious": "Visa Religieux",
+    "media": "Visa Média",
+    "official": "Visa Officiel",
+    "scientific": "Visa Scientifique",
+    "categories": {
+      "work": "Travail & Business",
+      "tourism": "Tourisme",
+      "long_term": "Long Terme (LTR)",
+      "family": "Famille & Mariage",
+      "education": "Éducation",
+      "elite": "Privilège Elite",
+      "others": "Autres Visas"
+    }
   },
   "ltr_page": {
     "meta": {
@@ -98,7 +118,10 @@ export const fr = {
       "title": "Comparateur Visa Thaïlande 2026 | Siam Visa Pro",
       "description": "Trouvez le visa idéal pour votre séjour en Thaïlande. Comparez les visas Retraite, DTV, Elite et Tourisme en un clic."
     },
-    "title": "Quel Visa Thaïlande Choisir ? Comparatif Complet 2026",
+    "title": "Quel visa pour la Thaïlande en 2026 ?",
+    "hero_subtitle": "Comparez les options selon votre situation.",
+    "hero_subtext": "Durée · Travail · Budget · Profil",
+    "ai_cta": "Besoin d'aide ? Demander à l'IA",
     "description": "Trouvez le visa idéal pour votre séjour en Thaïlande. Comparez les visas Retraite, DTV, Elite et Tourisme en un clic.",
     "suggestions": [
       "Je veux télétravailler en Thaïlande",
@@ -112,14 +135,80 @@ export const fr = {
     "aiHelper": "Demander à l'IA",
     "aiTitle": "Avis de l'Expert IA",
     "categories": {
-        "work": "Travail & Business",
-        "tourism": "Tourisme",
-        "longterm": "Long Terme (LTR)",
-        "family": "Famille & Mariage",
-        "education": "Éducation",
-        "privilege": "Privilège Elite"
+      "work": "Travail & Business",
+      "tourism": "Tourisme",
+      "longterm": "Long Terme (LTR)",
+      "family": "Famille & Mariage",
+      "education": "Éducation",
+      "privilege": "Privilège Elite"
     },
     "details": "Voir les détails",
+    "comparator_guide": {
+      "title": "Comparateur des visas pour la Thaïlande – 2026",
+      "intro": "Choisir le bon visa pour la Thaïlande dépend principalement de la durée du séjour, de l’activité prévue et du profil du demandeur. Ce comparatif présente les principaux visas disponibles en 2026, avec leurs usages et limites.",
+      "table": {
+        "headers": ["Visa", "Durée de séjour", "Travail autorisé", "Entrées", "Profil principal"],
+        "rows": [
+          ["Exemption de visa", "Courte durée", "❌ Non", "Multiple (limité)", "Tourisme court"],
+          ["Visa touristique (TR)", "Moyen séjour", "❌ Non", "Simple", "Tourisme prolongé"],
+          ["Visa DTV", "Long séjour", "✅ Télétravail", "Multiple", "Digital nomad"],
+          ["Visa LTR / Retraite", "Long séjour", "❌ (sauf cas spécifiques)", "Multiple", "Retraité / résident"],
+          ["Visa Elite", "Très long séjour", "❌ Non", "Multiple", "Résident VIP"],
+          ["Visa Business (Non-B)", "Variable", "✅ Oui", "Variable", "Travail / société"],
+          ["Visa Étudiant (ED)", "Variable", "❌ Non", "Variable", "Études / formation"]
+        ]
+      },
+      "sections": [
+        {
+          "title": "Exemption de visa",
+          "content": "Permet d’entrer en Thaïlande sans visa préalable pour un séjour touristique court. Solution simple, mais peu flexible et strictement touristique."
+        },
+        {
+          "title": "Visa touristique (TR)",
+          "content": "Visa classique pour les séjours touristiques plus longs. Il permet une extension limitée, mais n’autorise aucun travail, y compris à distance."
+        },
+        {
+          "title": "Visa DTV – Destination Thailand Visa",
+          "content": "Visa longue durée destiné aux travailleurs à distance et freelances. Il autorise le télétravail pour une entité étrangère et offre une grande flexibilité de séjour. C’est aujourd’hui la solution la plus adaptée aux profils actifs non locaux."
+        },
+        {
+          "title": "Visa LTR / Retraite",
+          "content": "Visa long séjour pour retraités ou profils à haut revenu. Il permet de vivre durablement en Thaïlande sans exercer d’activité professionnelle locale."
+        },
+        {
+          "title": "Visa Elite / Thailand Privilege",
+          "content": "Visa premium basé sur une adhésion payante. Il offre un confort administratif et une durée très longue, mais ne permet pas de travailler."
+        },
+        {
+          "title": "Visa Business (Non-Immigrant B)",
+          "content": "Visa destiné aux personnes travaillant pour ou avec une entreprise thaïlandaise. Il est généralement associé à un permis de travail et à des obligations administratives plus lourdes."
+        },
+        {
+          "title": "Visa Étudiant (ED)",
+          "content": "Visa accordé pour des études ou formations reconnues. Il ne permet pas de travailler et fait l’objet de contrôles renforcés."
+        }
+      ],
+      "how_to_choose": {
+        "title": "Comment choisir le bon visa ?",
+        "questions_title": "Pose-toi ces questions :",
+        "questions": [
+          "Combien de temps souhaites-tu rester en Thaïlande ?",
+          "Comptes-tu travailler ou télétravailler ?",
+          "As-tu plus de 50 ans ?",
+          "Souhaites-tu une solution simple ou très long terme ?"
+        ],
+        "upsell": "👉 En cas de doute, un comparateur ou une analyse personnalisée est préférable à un enchaînement de visas courts."
+      },
+      "to_remember": {
+        "title": "À retenir",
+        "points": [
+          "Visa touristique ≠ travail",
+          "Télétravail = visa adapté obligatoire",
+          "Long séjour = visa spécifique",
+          "Les règles évoluent régulièrement et sont appliquées strictement"
+        ]
+      }
+    },
     "eligibility": "Éligibilité",
     "duration": "Durée",
     "requirements": "Documents requis",
@@ -132,31 +221,31 @@ export const fr = {
     "expertPick": "CONSEIL EXPERT",
     "alternative": "ALTERNATIVE",
     "commonRequirements": [
-        "Passeport valide (min. 6 mois restants)",
-        "Extrait de casier judiciaire vierge",
-        "Preuves de revenus ou de fonds suffisants",
-        "Justificatif de domicile en Thaïlande"
+      "Passeport valide (min. 6 mois restants)",
+      "Extrait de casier judiciaire vierge",
+      "Preuves de revenus ou de fonds suffisants",
+      "Justificatif de domicile en Thaïlande"
     ],
     "processDescription": "Le processus prend généralement 5 à 15 jours ouvrables. SiamVisa Pro vous accompagne pour la préparation, la traduction et la légalisation de vos documents.",
     "durations": {
-        "10 Years": "10 ans",
-        "5 Years": "5 ans",
-        "1 Year": "1 an",
-        "60 Days": "60 jours",
-        "6 Months": "6 mois",
-        "15 Days": "15 jours",
-        "4 Years": "4 ans",
-        "6-12 Months": "6-12 mois",
-        "15 Years": "15 ans",
-        "20+ Years": "20 ans et +",
-        "Variable": "Variable",
-        "90 Days": "90 jours"
+      "10 Years": "10 ans",
+      "5 Years": "5 ans",
+      "1 Year": "1 an",
+      "60 Days": "60 jours",
+      "6 Months": "6 mois",
+      "15 Days": "15 jours",
+      "4 Years": "4 ans",
+      "6-12 Months": "6-12 mois",
+      "15 Years": "15 ans",
+      "20+ Years": "20 ans et +",
+      "Variable": "Variable",
+      "90 Days": "90 jours"
     },
     "prices": {
-        "High": "Élevé",
-        "Medium": "Moyen",
-        "Low": "Faible",
-        "Premium": "Premium"
+      "High": "Élevé",
+      "Medium": "Moyen",
+      "Low": "Faible",
+      "Premium": "Premium"
     }
   },
   "home_page": {
@@ -250,76 +339,76 @@ export const fr = {
   },
   "dtv_page": {
     "badge": "Destination Thailand Visa",
-    "hero_h1": "Visa DTV",
-    "hero_title": "Le Graal des Digital Nomads",
+    "hero_h1": "Visa DTV Thaïlande",
+    "hero_title": "Le Visa Nomade Digital (5 Ans)",
     "hero_subtitle": "Valable 5 ans. 180 jours par entrée. Travail autorisé.",
-    "hero_tagline": "Vivez et travaillez depuis le pays du sourire.",
-    "why_title": "Pourquoi ce visa est révolutionnaire ?",
-    "duration_title": "Durée de 5 ans",
-    "duration_desc": "Contrairement aux visas touristiques, le DTV est valide 5 ans. Vous pouvez entrer et sortir autant de fois que vous voulez.",
-    "work_title": "Travail Légal",
-    "work_desc": "C'est le premier visa qui autorise explicitement le travail à distance pour une entreprise étrangère sans permis de travail thaï.",
-    "finance_title": "Le point critique : 500 000 THB",
-    "finance_desc": "Vous devez prouver que vous possédez au moins 500 000 THB (environ 13 500 €) sur un compte bancaire. Cet argent doit être disponible et visible sur vos relevés.",
-    "who_title": "Pour qui est-ce fait ?",
-    "who_remote": "Remote Workers",
-    "who_remote_desc": "Employés d'entreprises hors Thaïlande.",
+    "hero_tagline": "Vivez et travaillez légalement depuis le pays du sourire.",
+    "why_title": "Pourquoi le DTV est une révolution ?",
+    "duration_title": "Liberté de 5 ans",
+    "duration_desc": "Multiples entrées valides 5 ans. Restez jusqu'à 180 jours (+180 jours) par visite. Liberté totale de mouvement.",
+    "work_title": "100% Travail Légal",
+    "work_desc": "Le premier visa thaïlandais autorisant explicitement le télétravail pour des employeurs étrangers sans permis de travail local.",
+    "finance_title": "Critère Financier : 500 000 THB",
+    "finance_desc": "Solde bancaire de 500 000 THB (~13 500 €) visible au moment de la demande. Argent disponible, non bloqué.",
+    "who_title": "Profils Éligibles",
+    "who_remote": "Télétravailleurs",
+    "who_remote_desc": "Salariés d'entreprises hors Thaïlande.",
     "who_freelance": "Freelances",
-    "who_freelance_desc": "Indépendants avec un portfolio de clients.",
-    "who_softpower": "Soft Power",
-    "who_softpower_desc": "Apprentissage (Muay Thai, Cuisine, Soins médicaux).",
-    "portfolio_title": "Besoin d'aide pour le Portfolio ?",
-    "portfolio_desc": "L'ambassade demande un \"Portfolio Professionnel\" pour prouver votre statut. Nous le créons pour vous.",
-    "portfolio_btn": "Voir nos packs",
-    "highs_title": "Points Forts",
+    "who_freelance_desc": "Indépendants avec contrats clients.",
+    "who_softpower": "Culture & Sport",
+    "who_softpower_desc": "Muay Thai, Cuisine, Soins, Musique.",
+    "portfolio_title": "L'exigence du Portfolio",
+    "portfolio_desc": "La cause n°1 de refus est un dossier professionnel mal structuré. Nous transformons votre parcours en un dossier conforme aux attentes consulaires.",
+    "portfolio_btn": "Voir nos offres d'assistance",
+    "highs_title": "Avantages Clés",
     "highs": [
-      "Validité exceptionnelle de 5 ans",
-      "Séjours de 180 jours par entrée (+180 j. d'extension)",
-      "Droit de travailler légalement à distance",
-      "Couvre également le conjoint et les enfants"
+      "Validité 5 ans (Multi-Entrées)",
+      "Séjours de 180 jours (+180 jours ext.)",
+      "Travail à distance 100% légal",
+      "Sponsorisation époux et enfants (20 ans)"
     ],
     "lows_title": "Points de Vigilance",
     "lows": [
-      "Preuve financière de 500 000 THB obligatoire",
-      "Exigence d'un Portfolio Professionnel solide",
-      "Délais de traitement plus longs (5-15 jours)",
-      "Frais consulaires plus élevés (~350€)"
+      "Preuve de fonds (500k THB) indispensable",
+      "Portfolio Professionnel rigoureux requis",
+      "Délai d'obtention : 5 à 15 jours ouvrés",
+      "Frais officiels ambassade (~350€)"
     ],
-    "faq_title": "Questions Fréquentes - Visa DTV",
+    "faq_title": "FAQ - Visa DTV 2026",
     "faqs": [
       {
-        "q": "Puis-je sortir et rentrer en Thaïlande avec mon visa DTV ?",
-        "a": "Oui, c'est un visa à entrées multiples (Multi-Entries). Vous pouvez voyager autant de fois que vous le souhaitez pendant les 5 ans de validité sans que cela n'annule votre visa."
+        "q": "Puis-je entrer et sortir librement ?",
+        "a": "Oui. Le DTV est un visa Multi-Entrées. Vous pouvez voyager autant que vous voulez pendant 5 ans."
       },
       {
-        "q": "Dois-je payer des impôts en Thaïlande avec ce visa ?",
-        "a": "En règle générale, si vous travaillez pour une entreprise étrangère et que vos revenus ne sont pas versés sur un compte thaïlandais, vous n'êtes pas résident fiscal au titre du DTV (à confirmer selon votre situation spécifique)."
+        "q": "Suis-je résident fiscal thaïlandais ?",
+        "a": "Non, tant que vos revenus proviennent de l'étranger et ne sont pas rapatriés en Thaïlande la même année (règle des 180 jours). Consultez un fiscaliste pour votre cas précis."
       },
       {
-        "q": "Mes proches peuvent-ils m'accompagner ?",
-        "a": "Oui, votre conjoint et vos enfants de moins de 20 ans peuvent obtenir un visa DTV \"Dependant\" lié au vôtre, avec les mêmes avantages de durée."
+        "q": "Ma famille peut-elle me suivre ?",
+        "a": "Oui. Le conjoint légal et les enfants (-20 ans) obtiennent un DTV 'Dependant' lié au vôtre."
       },
       {
-        "q": "Quelle est la valeur ajoutée de Siam Visa Pro par rapport à une demande en solo ?",
-        "a": "Faire sa demande seul comporte des risques de refus liés à un dossier imprécis. Siam Visa Pro combine l'expertise humaine et la puissance de l'IA : nos outils d'intelligence artificielle analysent votre éligibilité en temps réel pour détecter les points faibles de votre dossier, tandis que nos experts optimisent votre portfolio et vos documents. Vous bénéficiez d'une double vérification — technologique et humaine — pour garantir le taux d'approbation le plus élevé possible."
+        "q": "Pourquoi passer par une agence ?",
+        "a": "Pour sécuriser votre investissement. Une erreur de dossier signifie le refus et la perte des frais (~350€). Nous garantissons la conformité de votre Portfolio."
       }
     ],
     "high_value": {
-      "title": "Liberté Numérique",
-      "highlight": "& Workcation",
-      "description": "Travaillez depuis la Thaïlande sans tracas visa ni impôts sur vos revenus étrangers (si <180j/an). Le DTV est la clé pour 5 ans de sérénité.",
-      "item1": "Work From Anywhere",
-      "item2": "5 Ans de Validité (180j/entrée)",
-      "item3": "Fiscalité Avantageuse",
-      "card_title": "Profils Idéaux",
-      "card_item1": "Remote Workers / Employés",
-      "card_item2": "Digital Nomads & Freelances",
-      "card_item3": "Créateurs de Contenu / Soft Power",
-      "card_item4": "Participants Muay Thai / Cuisine"
+      "title": "Workation",
+      "highlight": "& Liberté",
+      "description": "Le statut idéal pour les Digital Nomads. Une solution pérenne pour vivre en Thaïlande sans les contraintes des visas touristiques.",
+      "item1": "Télétravail Autorisé",
+      "item2": "Fiscalité Douce",
+      "item3": "Vie de Famille Possible",
+      "card_title": "Candidats Idéaux",
+      "card_item1": "Salariés Remote",
+      "card_item2": "Entrepreneurs Web",
+      "card_item3": "Retraités Actifs",
+      "card_item4": "Passionnés Muay Thai"
     },
     "meta": {
-      "title": "Visa DTV Thaïlande (Destination Thailand Visa) | Siam Visa Pro",
-      "description": "Obtenez le Visa DTV 5 ans pour la Thaïlande. Télétravail légal, entrées multiples et validité longue durée. Expertise Siam Visa Pro."
+      "title": "Visa DTV Thaïlande 2026 : Guide, Prix et Conditions | SiamVisaPro",
+      "description": "Guide complet du Visa DTV (Destination Thailand Visa). Valide 5 ans, travail autorisé. Conditions 2026, coût et assistance pour votre Portfolio."
     }
   },
   "elite_page": {
@@ -715,30 +804,151 @@ export const fr = {
   "faq_page": {
     "title": "Questions Fréquentes",
     "subtitle": "Tout ce que vous devez savoir avant de partir.",
-    "questions": [
+    "sections": [
       {
-        "q": "Quelle est la différence entre le DTV et le Visa Touristique ?",
-        "a": "Le Visa Touristique (TR) est valable 60 jours (+30 jours d'extension). Le Visa DTV est valable 5 ans, permet des séjours de 180 jours (+180 jours d'extension) et autorise légalement le télétravail."
+        "title": "Comprendre les visas en Thaïlande",
+        "questions": [
+          {
+            "q": "Faut-il un visa pour aller en Thaïlande ?",
+            "a": "Cela dépend de la nationalité et de la durée du séjour. De nombreux voyageurs peuvent entrer en Thaïlande sans visa préalable grâce à une exemption, pour un séjour touristique limité. Au-delà de cette durée, ou pour certains usages (séjour long, télétravail, retraite), un visa est obligatoire."
+          },
+          {
+            "q": "Quelle est la différence entre exemption de visa et visa touristique ?",
+            "a": "L’exemption permet une entrée sans demande préalable, mais avec une durée plus courte et peu de flexibilité. Le visa touristique nécessite une demande avant le départ, mais autorise un séjour plus long et une prolongation possible. Aucun des deux n’autorise le travail."
+          },
+          {
+            "q": "Quel visa choisir pour rester plus de 90 jours en Thaïlande ?",
+            "a": "Pour plus de 90 jours, vous devez opter pour un visa long séjour comme le <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> (5 ans), le <a href='/fr/ltr' class='text-amber-600 font-medium hover:underline'>Visa LTR</a> (10 ans) ou le <a href='/fr/retirement-visa' class='text-amber-600 font-medium hover:underline'>Visa Retraite</a> (Non-O). Les <a href='/fr/tourist-visa' class='text-amber-600 font-medium hover:underline'>visas touristiques</a> sont limités à 90 jours maximum (60+30)."
+          },
+          {
+            "q": "Peut-on entrer en Thaïlande sans visa et prolonger sur place ?",
+            "a": "Oui, une exemption de visa (généralement 60 jours maintenant pour de nombreux pays) peut être prolongée une fois de 30 jours au bureau de l'immigration locale."
+          },
+          {
+            "q": "Peut-on changer de type de visa une fois en Thaïlande ?",
+            "a": "Dans certains cas, oui (ex: Touristique vers Retraite), mais ce n’est ni automatique ni garanti. Certaines conversions comme vers un <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> exigent souvent une nouvelle demande depuis l'extérieur du pays."
+          },
+          {
+            "q": "Quelle est la durée maximale de séjour légal en Thaïlande ?",
+            "a": "Avec un <a href='/fr/elite-visa' class='text-amber-600 font-medium hover:underline'>Visa Elite</a> ou LTR, cela peut aller jusqu'à 20 ans. Avec un DTV, c'est 180 jours par entrée (extensible). Avec un visa touriste, c'est 90 jours maximum."
+          },
+          {
+            "q": "Combien de fois peut-on entrer en Thaïlande par an ?",
+            "a": "Il n'y a pas de limite écrite stricte, mais l'immigration surveille les entrées répétées (<a href='/fr/visa-run' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). Avec un visa Multi-Entry (<a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite), les entrées sont illimitées."
+          },
+          {
+            "q": "Les règles de visa changent-elles souvent en Thaïlande ?",
+            "a": "Oui, les régulations évoluent. Il est crucial de se référer aux sources officielles ou à des experts à jour. Notre base de connaissance est mise à jour pour 2026."
+          }
+        ]
       },
       {
-        "q": "Puis-je travailler avec un Visa Touristique ?",
-        "a": "Non. Le travail est strictement interdit avec un visa touristique. C'est l'avantage majeur du Visa DTV qui légalise votre situation de Digital Nomad."
+        "title": "Travail, activité et télétravail",
+        "questions": [
+          {
+            "q": "Peut-on travailler en Thaïlande avec un visa touristique ?",
+            "a": "Non. Le <a href='/fr/tourist-visa' class='text-amber-600 font-medium hover:underline'>visa touristique</a> n’autorise aucune activité professionnelle en Thaïlande, y compris le télétravail rémunéré. Travailler avec un visa touristique expose à des sanctions (amende, expulsion)."
+          },
+          {
+            "q": "Le télétravail est-il autorisé en Thaïlande ?",
+            "a": "Oui, uniquement avec certains visas adaptés, comme le <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> ou le LTR. Le télétravail doit être exercé pour une entité étrangère, sans activité locale concurrente."
+          },
+          {
+            "q": "Quelle est la différence entre travail local et travail à distance ?",
+            "a": "Le travail local implique un employeur thaïlandais et nécessite obligatoirement un Work Permit. Le travail à distance (pour un client/employeur étranger) est toléré sous <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>visa DTV</a> sans Work Permit."
+          },
+          {
+            "q": "Faut-il un permis de travail pour travailler depuis la Thaïlande ?",
+            "a": "Pas avec le <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>visa DTV</a> (pour le travail à distance). Pour tout autre visa (Non-B), un permis de travail (Work Permit) est strictement obligatoire."
+          },
+          {
+            "q": "Peut-on créer une entreprise en Thaïlande avec un visa ?",
+            "a": "Vous pouvez être actionnaire, mais pour y travailler activement ou être directeur signataire, il vous faut un <a href='/fr/business-visa' class='text-amber-600 font-medium hover:underline'>visa Non-B</a> et un permis de travail."
+          },
+          {
+            "q": "Quels visas permettent de travailler légalement en Thaïlande ?",
+            "a": "Le <a href='/fr/business-visa' class='text-amber-600 font-medium hover:underline'>visa Non-B</a> (avec Work Permit), le <a href='/fr/ltr' class='text-amber-600 font-medium hover:underline'>visa LTR</a> (Work Permit numérique inclus), le <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>visa DTV</a> (télétravail uniquement), et le visa Elite (si couplé à une option travail rare, sinon non)."
+          },
+          {
+            "q": "Travailler sans visa adapté : quels sont les risques ?",
+            "a": "Amendes, emprisonnement, expulsion et inscription sur liste noire (Blacklist) interdisant le retour en Thaïlande pour plusieurs années."
+          }
+        ]
       },
       {
-        "q": "Combien de temps faut-il pour obtenir le visa ?",
-        "a": "Les délais varient selon les ambassades. En général : 3 à 10 jours ouvrés pour un visa touristique, et 5 à 15 jours ouvrés pour un DTV (car le dossier est plus complexe à vérifier)."
+        "title": "Durée, extensions et sorties",
+        "questions": [
+          {
+            "q": "Peut-on prolonger un visa en Thaïlande ?",
+            "a": "Oui, selon le type de visa. Le visa touriste et l'exemption se prolongent de 30 jours. Le DTV se prolonge de 180 jours (une fois par entrée)."
+          },
+          {
+            "q": "Combien de fois peut-on prolonger un visa ?",
+            "a": "Généralement une seule fois par entrée. Pour rester plus longtemps, il faut souvent sortir du pays et rentrer à nouveau (si le visa le permet) ou changer de visa."
+          },
+          {
+            "q": "Faut-il sortir du pays pour renouveler un visa ?",
+            "a": "Pour les visas à entrées multiples (DTV, Elite), vous devez sortir à la fin de votre période de séjour autorisée (ex: 180 jours) pour 'activer' une nouvelle entrée. Pour les visas à entrée simple, il faut refaire une demande."
+          },
+          {
+            "q": "Qu’est-ce qu’un re-entry permit et quand est-il nécessaire ?",
+            "a": "C'est une permission de rentrer sans perdre son visa en cours. Nécessaire si vous avez un visa à entrée simple mais devez voyager hors de Thaïlande temporairement."
+          },
+          {
+            "q": "Peut-on rester en Thaïlande plusieurs années légalement ?",
+            "a": "Oui, mais uniquement avec des visas longue durée spécifiques (Retraite, DTV, LTR, Elite). Les enchaînements de visas touristiques ne sont pas une solution viable à long terme."
+          },
+          {
+            "q": "Quelle est la différence entre visa à entrée simple et multiple ?",
+            "a": "Simple : une fois sorti du pays, le visa est fini. Multiple : vous pouvez entrer et sortir autant de fois que vous voulez pendant la validité du visa."
+          }
+        ]
       },
       {
-        "q": "L'argent (500 000 THB) doit-il être bloqué ?",
-        "a": "Pour le DTV, l'argent ne doit pas être bloqué, mais il doit être visible sur votre relevé bancaire au moment de la demande. Vous devez montrer que vous avez les fonds."
+        "title": "Erreurs fréquentes et risques",
+        "questions": [
+          {
+            "q": "Que se passe-t-il en cas d’overstay en Thaïlande ?",
+            "a": "Un dépassement de séjour entraîne une amende de 500 THB/jour (max 20 000 THB). Un overstay long (>90 jours) entraîne une interdiction de territoire (Blacklist)."
+          },
+          {
+            "q": "Que risque-t-on en travaillant avec un mauvais visa ?",
+            "a": "C'est une violation des lois sur l'immigration et le travail. Risque d'arrestation et d'expulsion."
+          },
+          {
+            "q": "Un visa peut-il être refusé sans explication ?",
+            "a": "Oui. Les autorités consulaires ne sont pas tenues de justifier leurs décisions. Un dossier mal préparé est la cause la plus fréquente."
+          },
+          {
+            "q": "Que faire en cas de refus de visa thaïlandais ?",
+            "a": "Il faut analyser la cause (souvent financière ou documentaire) et déposer une nouvelle demande corrigée. Les frais ne sont pas remboursés."
+          },
+          {
+            "q": "Peut-on être interdit de territoire en Thaïlande ?",
+            "a": "Oui, en cas d'Overstay important ou de travail illégal."
+          },
+          {
+            "q": "Les visa runs sont-ils encore autorisés ?",
+            "a": "Ils ne sont plus une solution fiable. L'immigration surveille les profils qui enchaînent les entrées-sorties terrestres ou aériennes sans visa approprié."
+          }
+        ]
       },
       {
-        "q": "Que se passe-t-il si mon visa est refusé ?",
-        "a": "L'ambassade ne rembourse jamais les frais de visa. C'est pourquoi nous recommandons notre Pack Audit ou Sérénité pour vérifier votre dossier AVANT le paiement à l'ambassade."
-      },
-      {
-        "q": "Pouvez-vous garantir l'obtention du visa ?",
-        "a": "Aucune agence ne peut garantir à 100% la décision d'un officier consulaire (c'est illégal de le prétendre). Cependant, nous garantissons que votre dossier respecte scrupuleusement les critères, ce qui maximise vos chances (99% de réussite)."
+        "title": "Profils spécifiques",
+        "questions": [
+          {
+            "q": "Quel visa pour vivre en Thaïlande après 50 ans ?",
+            "a": "Le <a href='/fr/retirement-visa' class='text-amber-600 font-medium hover:underline'>visa Retraite</a> (Non-O ou O-A) est le plus adapté si vous ne travaillez pas. Le LTR 'Wealthy Pensioner' est une option VIP."
+          },
+          {
+            "q": "Quel visa pour vivre en Thaïlande sans travailler ?",
+            "a": "Visa Elite (payant, VIP), <a href='/fr/retirement-visa' class='text-amber-600 font-medium hover:underline'>Visa Retraite</a> (+50 ans), ou <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a> (si vous avez des revenus passifs ou activité soft power, à confirmer)."
+          },
+          {
+            "q": "Quel visa pour rester longtemps en Thaïlande sans sortir du pays ?",
+            "a": "Le <a href='/fr/elite-visa' class='text-amber-600 font-medium hover:underline'>visa Elite</a> ou le <a href='/fr/retirement-visa' class='text-amber-600 font-medium hover:underline'>visa Retraite</a> (avec extensions annuelles sur place) sont les meilleurs pour éviter les sorties obligatoires."
+          }
+        ]
       }
     ],
     "not_found_title": "Vous ne trouvez pas votre réponse ?",
@@ -777,6 +987,7 @@ export const fr = {
     "all_services": "Tous nos services",
     "legal": "Conditions Générales",
     "privacy": "Politique de confidentialité",
+    "details": "Détails du visa",
     "sitemap": "Plan du site",
     "copyright": "Tous droits réservés.",
     "disclaimer": "SiamVisa Pro est une agence de facilitation privée, non affiliée au gouvernement thaïlandais.",

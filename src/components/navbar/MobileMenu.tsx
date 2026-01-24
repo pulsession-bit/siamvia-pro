@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { X, Search, Globe, ChevronDown } from 'lucide-react';
 import { languages } from './LanguageSelector';
+import { NAV_ITEMS } from '../../config/navigation';
 
 interface MobileMenuProps {
     isOpen: boolean;
@@ -44,21 +45,34 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                 </div>
                 <div className="flex-1 overflow-y-auto py-4">
                     <Link href={langPath('')} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition">{t('nav.home')}</Link>
-                    <Link href={langPath('dtv')} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition">{t('nav.dtv')}</Link>
-                    <div className="bg-slate-50 py-2 my-2">
-                        <span className="block px-6 py-2 text-xs font-bold text-slate-400 uppercase tracking-wider">{t('nav.other_visas')}</span>
-                        <Link href={langPath('ltr')} onClick={() => setIsOpen(false)} className="block px-6 py-3 text-slate-600 hover:text-amber-600 pl-10 font-medium">{t('nav.ltr')}</Link>
-                        <Link href={langPath('tourist-visa')} onClick={() => setIsOpen(false)} className="block px-6 py-3 text-slate-600 hover:text-amber-600 pl-10 font-medium">{t('nav.tourist')}</Link>
-                        <Link href={langPath('elite-visa')} onClick={() => setIsOpen(false)} className="block px-6 py-3 text-slate-600 hover:text-amber-600 pl-10 font-medium">{t('nav.elite')}</Link>
-                        <Link href={langPath('retirement-visa')} onClick={() => setIsOpen(false)} className="block px-6 py-3 text-slate-600 hover:text-amber-600 pl-10 font-medium">{t('nav.retirement')}</Link>
-                    </div>
-                    <Link href={langPath('services')} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition">{t('nav.services')}</Link>
-                    <Link href={langPath('faq')} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition">{t('nav.faq')}</Link>
-                    <Link href={langPath('search')} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition flex items-center space-x-2">
-                        <Search className="w-5 h-5" />
-                        <span>{t('nav.search')}</span>
-                    </Link>
-                    <Link href={langPath('contact')} onClick={() => setIsOpen(false)} className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition">{t('nav.contact')}</Link>
+
+                    {NAV_ITEMS.map((item) => (
+                        <div key={item.key}>
+                            {item.items.length === 0 ? (
+                                <Link
+                                    href={langPath(item.path || '')}
+                                    onClick={() => setIsOpen(false)}
+                                    className="block px-6 py-4 text-lg font-medium text-slate-800 hover:bg-amber-50 border-l-4 border-transparent hover:border-amber-500 transition"
+                                >
+                                    {t(item.labelKey)}
+                                </Link>
+                            ) : (
+                                <div className="bg-slate-50 py-2 my-2">
+                                    <span className="block px-6 py-2 text-xs font-bold text-slate-400 uppercase tracking-wider">{t(item.labelKey)}</span>
+                                    {item.items.map((subItem) => (
+                                        <Link
+                                            key={subItem.key}
+                                            href={langPath(subItem.path)}
+                                            onClick={() => setIsOpen(false)}
+                                            className="block px-6 py-3 text-slate-600 hover:text-amber-600 pl-10 font-medium"
+                                        >
+                                            {t(subItem.labelKey)}
+                                        </Link>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    ))}
                 </div>
                 <div className="p-6 border-t border-slate-100 bg-slate-50">
                     <a href={SCORING_ENGINE_URL} className="block w-full text-center bg-amber-500 text-slate-900 py-4 rounded-xl font-bold text-lg shadow-lg mb-6">

@@ -383,7 +383,10 @@ export const es = {
       "title": "Comparador de Visas Tailandia 2026 | Siam Visa Pro",
       "description": "Encuentre la visa ideal para su estancia en Tailandia. Compare visas de Jubilación, DTV, Elite y Turista en un clic."
     },
-    "title": "¿Qué Visa Tailandia Elegir? Comparativa Completa 2026",
+    "title": "¿Qué visa para Tailandia en 2026?",
+    "hero_subtitle": "Compare las opciones según su situación.",
+    "hero_subtext": "Duración · Trabajo · Presupuesto · Perfil",
+    "ai_cta": "¿Necesita ayuda? Pregunte a la IA",
     "description": "Encuentre la visa ideal para su estancia en Tailandia. Compare las visas de Jubilación, DTV, Elite y Turismo en un clic.",
     "suggestions": [
       "Quiero teletrabajar en Tailandia",
@@ -397,14 +400,80 @@ export const es = {
     "aiHelper": "IA",
     "aiTitle": "Consejo IA",
     "categories": {
-        "work": "Trabajo",
-        "tourism": "Turismo",
-        "longterm": "Largo Plazo",
-        "family": "Familia",
-        "education": "Educación",
-        "privilege": "Elite"
+      "work": "Trabajo",
+      "tourism": "Turismo",
+      "longterm": "Largo Plazo",
+      "family": "Familia",
+      "education": "Educación",
+      "privilege": "Elite"
     },
     "details": "Detalles",
+    "comparator_guide": {
+      "title": "Comparador de Visas para Tailandia – 2026",
+      "intro": "Elegir la visa adecuada para Tailandia depende principalmente de la duración de la estancia, la actividad prevista y el perfil del solicitante. Esta comparativa presenta las principales visas disponibles en 2026, con sus usos y limitaciones.",
+      "table": {
+        "headers": ["Visa", "Duración de estancia", "Trabajo autorizado", "Entradas", "Perfil principal"],
+        "rows": [
+          ["Exención de visa", "Duración corta", "❌ No", "Múltiple (limitada)", "Turismo corto"],
+          ["Visa turística (TR)", "Estancia media", "❌ No", "Simple", "Turismo prolongé"],
+          ["Visa DTV", "Larga estancia", "✅ Teletrabajo", "Múltiple", "Nómada digital"],
+          ["Visa LTR / Jubilación", "Larga estancia", "❌ (salvo casos específicos)", "Múltiple", "Jubilado / residente"],
+          ["Visa Elite", "Estancia muy larga", "❌ No", "Múltiple", "Residente VIP"],
+          ["Visa Business (Non-B)", "Variable", "✅ Sí", "Variable", "Trabajo / empresa"],
+          ["Visa de Estudiante (ED)", "Variable", "❌ No", "Variable", "Estudios / formación"]
+        ]
+      },
+      "sections": [
+        {
+          "title": "Exención de visa",
+          "content": "Permitir entrar en Tailandia sin visa previa para una estancia turística corta. Solución sencilla, pero poco flexible y estrictamente turística."
+        },
+        {
+          "title": "Visa turística (TR)",
+          "content": "Visa clásica para estancias turísticas más largas. Permite una extensión limitada, pero no autoriza ningún trabajo, incluido el remoto."
+        },
+        {
+          "title": "Visa DTV – Destination Thailand Visa",
+          "content": "Visa de larga duración para trabajadores a distancia y autónomos. Autoriza el teletrabajo para una entidad extranjera y ofrece una gran flexibilidad de estancia. Es hoy la solución más adecuada para perfiles activos no locales."
+        },
+        {
+          "title": "Visa LTR / Jubilación",
+          "content": "Visa de larga estancia para jubilados o perfiles con ingresos altos. Permite vivir de forma duradera en Tailandia sin ejercer actividad profesional local."
+        },
+        {
+          "title": "Visa Elite / Thailand Privilege",
+          "content": "Visa premium basada en una membresía de pago. Ofrece comodidad administrativa y una duración muy larga, pero no permite trabajar."
+        },
+        {
+          "title": "Visa Business (Non-Immigrant B)",
+          "content": "Visa destinada a personas que trabajan para o con una empresa tailandesa. Suele estar asociada a un permiso de trabajo y obligaciones administrativas más pesadas."
+        },
+        {
+          "title": "Visa de Estudiante (ED)",
+          "content": "Visa concedida para estudios o formación reconocidos. No permite trabajar y está sujeta a controles reforzados."
+        }
+      ],
+      "how_to_choose": {
+        "title": "¿Cómo elegir la visa adecuada?",
+        "questions_title": "Hazte estas preguntas:",
+        "questions": [
+          "¿Cuánto tiempo quieres quedarte en Tailandia?",
+          "¿Tienes pensado trabajar o teletrabajar?",
+          "¿Tienes más de 50 años?",
+          "¿Quieres una solución sencilla o a muy largo plazo?"
+        ],
+        "upsell": "👉 En caso de duda, un comparador o un análisis personalizado es preferible a una sucesión de visas cortas."
+      },
+      "to_remember": {
+        "title": "Puntos clave a recordar",
+        "points": [
+          "Visa turística ≠ trabajo",
+          "Teletrabajo = visa adaptada obligatoria",
+          "Larga estancia = visa específica",
+          "Las reglas evolucionan regularmente y se aplican estrictamente"
+        ]
+      }
+    },
     "eligibility": "Elegibilidad",
     "duration": "Duración",
     "requirements": "Requisitos",
@@ -417,26 +486,26 @@ export const es = {
     "expertPick": "EXPERT PICK",
     "alternative": "ALTERNATIVA",
     "commonRequirements": [
-        "Pasaporte",
-        "Fondos"
+      "Pasaporte",
+      "Fondos"
     ],
     "processDescription": "5-15 días.",
     "durations": {
-        "10 Years": "10 años",
-        "5 Years": "5 años",
-        "1 Year": "1 año",
-        "60 Days": "60 días",
-        "6 Months": "6 meses",
-        "15 Days": "15 días",
-        "4 Years": "4 años",
-        "Variable": "Variable",
-        "90 Days": "90 días"
+      "10 Years": "10 años",
+      "5 Years": "5 años",
+      "1 Year": "1 año",
+      "60 Days": "60 días",
+      "6 Months": "6 meses",
+      "15 Days": "15 días",
+      "4 Years": "4 años",
+      "Variable": "Variable",
+      "90 Days": "90 días"
     },
     "prices": {
-        "High": "Alto",
-        "Medium": "Medio",
-        "Low": "Bajo",
-        "Premium": "Premium"
+      "High": "Alto",
+      "Medium": "Medio",
+      "Low": "Bajo",
+      "Premium": "Premium"
     }
   },
   "contact_page": {

@@ -23,7 +23,18 @@ const nextConfig: NextConfig = {
         sitemap: 'plan-du-site',
         search: 'comparateur-visa-thailande-2026',
         ltr: 'visa-ltr-thailande',
-        'visa-run': 'risques-visa-run-thailande'
+        'visa-run': 'risques-visa-run-thailande',
+        'business-visa': 'visa-business-thailande',
+        'exemption-visa': 'exemption-visa-thailande',
+        'student-visa': 'visa-etudiant-thailande',
+        'family-visa': 'visa-famille-thailande',
+        'smart-visa': 'smart-visa-thailande',
+        'volunteer-visa': 'visa-volontaire-thailande',
+        'medical-visa': 'visa-medical-thailande',
+        'religious-visa': 'visa-religieux-thailande',
+        'media-visa': 'visa-media-thailande',
+        'official-visa': 'visa-officiel-thailande',
+        'scientific-visa': 'visa-scientifique-thailande'
       },
       en: {
         dtv: 'thailand-dtv-visa',
@@ -37,7 +48,18 @@ const nextConfig: NextConfig = {
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa',
-        'visa-run': 'thailand-visa-run-risks'
+        'visa-run': 'thailand-visa-run-risks',
+        'business-visa': 'thailand-business-visa',
+        'exemption-visa': 'thailand-visa-exemption',
+        'student-visa': 'thailand-student-visa',
+        'family-visa': 'thailand-family-visa',
+        'smart-visa': 'thailand-smart-visa',
+        'volunteer-visa': 'thailand-volunteer-visa',
+        'medical-visa': 'thailand-medical-visa',
+        'religious-visa': 'thailand-religious-visa',
+        'media-visa': 'thailand-media-visa',
+        'official-visa': 'thailand-official-visa',
+        'scientific-visa': 'thailand-scientific-visa'
       },
       de: {
         dtv: 'destination-thailand-visum',
@@ -51,7 +73,18 @@ const nextConfig: NextConfig = {
         sitemap: 'seitenverzeichnis',
         search: 'thailand-visum-vergleich-2026',
         ltr: 'long-term-resident-visa',
-        'visa-run': 'thailand-visa-run-risiken'
+        'visa-run': 'thailand-visa-run-risiken',
+        'business-visa': 'thailand-business-visa',
+        'exemption-visa': 'thailand-visa-exemption',
+        'student-visa': 'thailand-student-visa',
+        'family-visa': 'thailand-family-visa',
+        'smart-visa': 'thailand-smart-visa',
+        'volunteer-visa': 'thailand-volunteer-visa',
+        'medical-visa': 'thailand-medical-visa',
+        'religious-visa': 'thailand-religious-visa',
+        'media-visa': 'thailand-media-visa',
+        'official-visa': 'thailand-official-visa',
+        'scientific-visa': 'thailand-scientific-visa'
       },
       es: {
         dtv: 'visado-destino-tailandia',
@@ -65,7 +98,18 @@ const nextConfig: NextConfig = {
         sitemap: 'mapa-del-sito',
         search: 'comparador-visas-tailandia-2026',
         ltr: 'visado-residencia-larga-duracion',
-        'visa-run': 'riesgos-visa-run-tailandia'
+        'visa-run': 'riesgos-visa-run-tailandia',
+        'business-visa': 'thailand-business-visa',
+        'exemption-visa': 'thailand-visa-exemption',
+        'student-visa': 'thailand-student-visa',
+        'family-visa': 'thailand-family-visa',
+        'smart-visa': 'thailand-smart-visa',
+        'volunteer-visa': 'thailand-volunteer-visa',
+        'medical-visa': 'thailand-medical-visa',
+        'religious-visa': 'thailand-religious-visa',
+        'media-visa': 'thailand-media-visa',
+        'official-visa': 'thailand-official-visa',
+        'scientific-visa': 'thailand-scientific-visa'
       },
       it: {
         dtv: 'visto-destinazione-thailandia',
@@ -79,7 +123,18 @@ const nextConfig: NextConfig = {
         sitemap: 'mappa-del-sito',
         search: 'comparatore-visti-thailandia-2026',
         ltr: 'visto-residenza-lungo-termine',
-        'visa-run': 'rischi-visa-run-thailandia'
+        'visa-run': 'rischi-visa-run-thailandia',
+        'business-visa': 'thailand-business-visa',
+        'exemption-visa': 'thailand-visa-exemption',
+        'student-visa': 'thailand-student-visa',
+        'family-visa': 'thailand-family-visa',
+        'smart-visa': 'thailand-smart-visa',
+        'volunteer-visa': 'thailand-volunteer-visa',
+        'medical-visa': 'thailand-medical-visa',
+        'religious-visa': 'thailand-religious-visa',
+        'media-visa': 'thailand-media-visa',
+        'official-visa': 'thailand-official-visa',
+        'scientific-visa': 'thailand-scientific-visa'
       },
       th: {
         dtv: 'destination-thailand-visa',
@@ -93,7 +148,18 @@ const nextConfig: NextConfig = {
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa',
-        'visa-run': 'thailand-visa-run-risks'
+        'visa-run': 'thailand-visa-run-risks',
+        'business-visa': 'thailand-business-visa',
+        'exemption-visa': 'thailand-visa-exemption',
+        'student-visa': 'thailand-student-visa',
+        'family-visa': 'thailand-family-visa',
+        'smart-visa': 'thailand-smart-visa',
+        'volunteer-visa': 'thailand-volunteer-visa',
+        'medical-visa': 'thailand-medical-visa',
+        'religious-visa': 'thailand-religious-visa',
+        'media-visa': 'thailand-media-visa',
+        'official-visa': 'thailand-official-visa',
+        'scientific-visa': 'thailand-scientific-visa'
       },
       ru: {
         dtv: 'destination-thailand-visa',
@@ -107,7 +173,18 @@ const nextConfig: NextConfig = {
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa',
-        'visa-run': 'thailand-visa-run-risks'
+        'visa-run': 'thailand-visa-run-risks',
+        'business-visa': 'thailand-business-visa',
+        'exemption-visa': 'thailand-visa-exemption',
+        'student-visa': 'thailand-student-visa',
+        'family-visa': 'thailand-family-visa',
+        'smart-visa': 'thailand-smart-visa',
+        'volunteer-visa': 'thailand-volunteer-visa',
+        'medical-visa': 'thailand-medical-visa',
+        'religious-visa': 'thailand-religious-visa',
+        'media-visa': 'thailand-media-visa',
+        'official-visa': 'thailand-official-visa',
+        'scientific-visa': 'thailand-scientific-visa'
       },
       zh: {
         dtv: 'destination-thailand-visa',
@@ -121,7 +198,18 @@ const nextConfig: NextConfig = {
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
         ltr: 'global-wealthy-citizen-visa',
-        'visa-run': 'thailand-visa-run-risks'
+        'visa-run': 'thailand-visa-run-risks',
+        'business-visa': 'thailand-business-visa',
+        'exemption-visa': 'thailand-visa-exemption',
+        'student-visa': 'thailand-student-visa',
+        'family-visa': 'thailand-family-visa',
+        'smart-visa': 'thailand-smart-visa',
+        'volunteer-visa': 'thailand-volunteer-visa',
+        'medical-visa': 'thailand-medical-visa',
+        'religious-visa': 'thailand-religious-visa',
+        'media-visa': 'thailand-media-visa',
+        'official-visa': 'thailand-official-visa',
+        'scientific-visa': 'thailand-scientific-visa'
       },
       ja: {
         dtv: 'destination-thailand-visa',
@@ -135,7 +223,18 @@ const nextConfig: NextConfig = {
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa',
-        'visa-run': 'thailand-visa-run-risks'
+        'visa-run': 'thailand-visa-run-risks',
+        'business-visa': 'thailand-business-visa',
+        'exemption-visa': 'thailand-visa-exemption',
+        'student-visa': 'thailand-student-visa',
+        'family-visa': 'thailand-family-visa',
+        'smart-visa': 'thailand-smart-visa',
+        'volunteer-visa': 'thailand-volunteer-visa',
+        'medical-visa': 'thailand-medical-visa',
+        'religious-visa': 'thailand-religious-visa',
+        'media-visa': 'thailand-media-visa',
+        'official-visa': 'thailand-official-visa',
+        'scientific-visa': 'thailand-scientific-visa'
       },
       ko: {
         dtv: 'destination-thailand-visa',
@@ -149,7 +248,18 @@ const nextConfig: NextConfig = {
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa',
-        'visa-run': 'thailand-visa-run-risks'
+        'visa-run': 'thailand-visa-run-risks',
+        'business-visa': 'thailand-business-visa',
+        'exemption-visa': 'thailand-visa-exemption',
+        'student-visa': 'thailand-student-visa',
+        'family-visa': 'thailand-family-visa',
+        'smart-visa': 'thailand-smart-visa',
+        'volunteer-visa': 'thailand-volunteer-visa',
+        'medical-visa': 'thailand-medical-visa',
+        'religious-visa': 'thailand-religious-visa',
+        'media-visa': 'thailand-media-visa',
+        'official-visa': 'thailand-official-visa',
+        'scientific-visa': 'thailand-scientific-visa'
       },
       ar: {
         dtv: 'destination-thailand-visa',
@@ -163,7 +273,18 @@ const nextConfig: NextConfig = {
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
         ltr: 'long-term-resident-visa',
-        'visa-run': 'thailand-visa-run-risks'
+        'visa-run': 'thailand-visa-run-risks',
+        'business-visa': 'thailand-business-visa',
+        'exemption-visa': 'thailand-visa-exemption',
+        'student-visa': 'thailand-student-visa',
+        'family-visa': 'thailand-family-visa',
+        'smart-visa': 'thailand-smart-visa',
+        'volunteer-visa': 'thailand-volunteer-visa',
+        'medical-visa': 'thailand-medical-visa',
+        'religious-visa': 'thailand-religious-visa',
+        'media-visa': 'thailand-media-visa',
+        'official-visa': 'thailand-official-visa',
+        'scientific-visa': 'thailand-scientific-visa'
       }
     };
 

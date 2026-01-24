@@ -387,7 +387,10 @@ export const de = {
       "title": "Thailand Visum Vergleich 2026 | Siam Visa Pro",
       "description": "Finden Sie das ideale Visum für Ihren Thailand-Aufenthalt. Vergleichen Sie Ruhestand, DTV, Elite und Touristenvisa mit einem Klick."
     },
-    "title": "Welches Thailand Visum wählen? Voller Vergleich 2026",
+    "title": "Welches Visum für Thailand im Jahr 2026?",
+    "hero_subtitle": "Vergleichen Sie die Optionen nach Ihrer Situation.",
+    "hero_subtext": "Dauer · Arbeit · Budget · Profil",
+    "ai_cta": "Haben Sie Fragen? KI fragen",
     "description": "Finden Sie das ideale Visum für Ihren Thailand-Aufenthalt. Vergleichen Sie Ruhestand, DTV, Elite und Touristenvisa mit einem Klick.",
     "suggestions": [
       "Ich möchte remote in Thailand arbeiten",
@@ -401,14 +404,80 @@ export const de = {
     "aiHelper": "KI fragen",
     "aiTitle": "KI-Rat",
     "categories": {
-        "work": "Arbeit",
-        "tourism": "Tourismus",
-        "longterm": "Langzeit",
-        "family": "Familie",
-        "education": "Bildung",
-        "privilege": "Elite"
+      "work": "Arbeit",
+      "tourism": "Tourismus",
+      "longterm": "Langzeit",
+      "family": "Familie",
+      "education": "Bildung",
+      "privilege": "Elite"
     },
     "details": "Details",
+    "comparator_guide": {
+      "title": "Vergleich der Visa für Thailand – 2026",
+      "intro": "Die Wahl des richtigen Visums für Thailand hängt hauptsächlich von der Aufenthaltsdauer, der geplanten Tätigkeit und dem Profil des Antragstellers ab. Dieser Vergleich stellt die wichtigsten im Jahr 2026 verfügbaren Visa mit ihren Verwendungszwecken und Einschränkungen vor.",
+      "table": {
+        "headers": ["Visum", "Aufenthaltsdauer", "Arbeit erlaubt", "Einreisen", "Hauptprofil"],
+        "rows": [
+          ["Visumbefreiung", "Kurzaufenthalt", "❌ Nein", "Mehrfach (begrenzt)", "Kurztourismus"],
+          ["Touristenvisum (TR)", "Mittlerer Aufenthalt", "❌ Nein", "Einfach", "Längerer Tourismus"],
+          ["DTV-Visum", "Langzeitaufenthalt", "✅ Homeoffice", "Mehrfach", "Digitaler Nomade"],
+          ["LTR / Ruhestand", "Langzeitaufenthalt", "❌ (außer Sonderfälle)", "Mehrfach", "Rentner / Resident"],
+          ["Elite-Visum", "Sehr langer Aufenthalt", "❌ Nein", "Mehrfach", "VIP-Resident"],
+          ["Business-Visum (Non-B)", "Variabel", "✅ Ja", "Variabel", "Arbeit / Unternehmen"],
+          ["Studentenvisum (ED)", "Variabel", "❌ Nein", "Variabel", "Studium / Ausbildung"]
+        ]
+      },
+      "sections": [
+        {
+          "title": "Visumbefreiung",
+          "content": "Ermöglicht die Einreise nach Thailand ohne vorheriges Visum für einen kurzen touristischen Aufenthalt. Einfache Lösung, aber wenig flexibel und rein touristisch."
+        },
+        {
+          "title": "Touristenvisum (TR)",
+          "content": "Klassisches Visum für längere touristische Aufenthalte. Es ermöglicht eine begrenzte Verlängerung, erlaubt aber keine Arbeit, auch nicht aus der Ferne."
+        },
+        {
+          "title": "DTV-Visum – Destination Thailand Visa",
+          "content": "Langzeitvisum für Fernarbeiter und Freelancer. Es erlaubt Homeoffice für ein ausländisches Unternehmen und bietet große Flexibilität beim Aufenthalt. Es ist heute die am besten geeignete Lösung für aktive, nicht lokale Profile."
+        },
+        {
+          "title": "LTR / Ruhestand",
+          "content": "Langzeitvisum für Rentner oder Profile mit hohem Einkommen. Es ermöglicht ein dauerhaftes Leben in Thailand ohne lokale Berufstätigkeit."
+        },
+        {
+          "title": "Elite-Visum / Thailand Privilege",
+          "content": "Premium-Visum auf Basis einer kostenpflichtigen Mitgliedschaft. Es bietet administrativen Komfort und eine sehr lange Dauer, erlaubt aber keine Arbeit."
+        },
+        {
+          "title": "Business-Visum (Non-Immigrant B)",
+          "content": "Visum für Personen, die für oder mit einem thailändischen Unternehmen arbeiten. Es ist in der Regel mit einer Arbeitserlaubnis und höheren administrativen Auflagen verbunden."
+        },
+        {
+          "title": "Studentenvisum (ED)",
+          "content": "Visum für anerkannte Studien oder Ausbildungen. Es erlaubt keine Arbeit und unterliegt verstärkten Kontrollen."
+        }
+      ],
+      "how_to_choose": {
+        "title": "Wie wählt man das richtige Visum?",
+        "questions_title": "Stellen Sie sich diese Fragen:",
+        "questions": [
+          "Wie lange möchten Sie in Thailand bleiben?",
+          "Planen Sie zu arbeiten oder Homeoffice zu machen?",
+          "Sind Sie über 50 Jahre alt?",
+          "Suchen Sie eine einfache oder eine sehr langfristige Lösung?"
+        ],
+        "upsell": "👉 Im Zweifelsfall ist ein Vergleich oder eine persönliche Analyse besser als eine Abfolge von Kurzzeitvisa."
+      },
+      "to_remember": {
+        "title": "Das sollten Sie sich merken",
+        "points": [
+          "Touristenvisum ≠ Arbeit",
+          "Homeoffice = passendes Visum obligatorisch",
+          "Langzeitaufenthalt = spezifisches Visum",
+          "Die Regeln ändern sich regelmäßig und werden strikt angewendet"
+        ]
+      }
+    },
     "eligibility": "Berechtigung",
     "duration": "Dauer",
     "requirements": "Anforderungen",
@@ -421,26 +490,26 @@ export const de = {
     "expertPick": "EXPERTENWAHL",
     "alternative": "ALTERNATIVE",
     "commonRequirements": [
-        "Passport",
-        "Nachweise"
+      "Passport",
+      "Nachweise"
     ],
     "processDescription": "5-15 Tage Dauer.",
     "durations": {
-        "10 Years": "10 Jahre",
-        "5 Years": "5 Jahre",
-        "1 Year": "1 Jahr",
-        "60 Days": "60 Tage",
-        "6 Months": "6 Monate",
-        "15 Days": "15 Tage",
-        "4 Years": "4 Jahre",
-        "Variable": "Variabel",
-        "90 Days": "90 Tage"
+      "10 Years": "10 Jahre",
+      "5 Years": "5 Jahre",
+      "1 Year": "1 Jahr",
+      "60 Days": "60 Tage",
+      "6 Months": "6 Monate",
+      "15 Days": "15 Tage",
+      "4 Years": "4 Jahre",
+      "Variable": "Variabel",
+      "90 Days": "90 Tage"
     },
     "prices": {
-        "High": "Hoch",
-        "Medium": "Mittel",
-        "Low": "Niedrig",
-        "Premium": "Premium"
+      "High": "Hoch",
+      "Medium": "Mittel",
+      "Low": "Niedrig",
+      "Premium": "Premium"
     }
   },
   "contact_page": {

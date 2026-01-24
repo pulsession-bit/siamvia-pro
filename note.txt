@@ -1,1 +1,1224 @@
+Analyse factuelle de la page existante
+👉 https://www.siamvisapro.com/fr/questions-frequentes
 
+dans la logique que tu as définie (page complémentaire, base de connaissance).
+
+1) Diagnostic clair
+Ce que la page fait bien
+
+URL propre, explicite
+
+Intention correcte (FAQ / information)
+
+Complémentaire des pages visa → bon réflexe
+
+Pas de sur-vente
+
+Ce qui bloque aujourd’hui
+
+👉 Ce n’est pas encore une base de connaissance, c’est une FAQ classique.
+
+Problèmes précis :
+
+Trop peu de questions (thin content SEO)
+
+Questions encore trop génériques
+
+Pas de structure par intention
+
+Pas de signal EEAT fort (mise à jour, périmètre, responsabilité)
+
+Valeur IA encore faible (pas “queryable” finement)
+
+2) Positionnement SEO actuel
+
+Aujourd’hui Google comprend :
+
+“Page FAQ du site”
+
+Il ne comprend pas encore :
+
+“Source d’autorité sur les règles de visa Thaïlande”
+
+👉 Il manque densité + structure, pas du marketing.
+
+3) Ce qu’il faut faire (sans tout casser)
+❌ À ne pas faire
+
+Ne pas supprimer la page
+
+Ne pas la surcharger
+
+Ne pas la transformer en page par visa
+
+Ne pas répondre 15 fois à la même chose
+
+✅ À faire
+
+Élever la page au rang de socle de connaissance.
+
+4) Structure cible recommandée (simple)
+H1 (ok)
+
+Questions fréquentes – Visa Thaïlande
+
+Ajouter immédiatement
+H2 – Comprendre les visas en Thaïlande
+
+(questions transverses, evergreen)
+
+Exemples :
+
+Puis-je travailler en Thaïlande avec un visa ?
+
+Quelle est la différence entre exemption et visa ?
+
+Peut-on rester plus de 90 jours ?
+
+Peut-on changer de visa sur place ?
+
+H2 – Erreurs et situations à risque
+
+(très fort SEO)
+
+Que risque-t-on en travaillant avec un visa touristique ?
+
+Overstay : que se passe-t-il ?
+
+Visa refusé : que faire ?
+
+H2 – Durée, extensions, sorties
+
+Combien de fois peut-on prolonger ?
+
+Faut-il sortir du pays ?
+
+Re-entry permit : quand est-ce obligatoire ?
+
+👉 Pas par visa, par logique utilisateur.
+
+5) Volume cible (réaliste)
+
+25–40 questions au total (pas plus au début)
+
+Réponses courtes, claires, non juridiques
+
+Mise à jour visible : “Dernière mise à jour : 2026”
+
+C’est largement suffisant pour :
+
+SEO
+
+IA
+
+Autorité
+
+6) Lien avec tes pages visa (important)
+
+Règle stricte :
+
+La FAQ explique
+
+Les pages visa appliquent
+
+Exemple :
+
+FAQ : “Puis-je travailler en Thaïlande ?”
+
+Page DTV : “Ce visa autorise le télétravail”
+
+👉 jamais l’inverse.
+
+7) Conclusion nette
+
+Ta page est bien placée
+
+Elle est sous-exploité, pas mauvaise
+
+Il ne faut pas la repenser, il faut la densifier intelligemment
+
+Elle deviendra ton socle EEAT + IA
+
+Si tu veux, prochaine action possible (au choix) :
+
+liste exacte de 30 questions prioritaires
+
+structure Firestore alignée avec cette page
+
+texte H2 + 5 questions prêtes à intégrer
+
+logique IA “question → FAQ → visa”
+
+Dis-moi le numéro.
+
+oui les 30 question 
+
+Voici 30 questions prioritaires, structurées pour faire de ta page
+/questions-frequentes une vraie base de connaissance SEO + IA.
+Aucune par visa. Uniquement par intention utilisateur.
+
+A. Comprendre les visas en Thaïlande (fondamentales)
+
+Faut-il un visa pour aller en Thaïlande ?
+
+Quelle est la différence entre exemption de visa et visa touristique ?
+
+Quel visa choisir pour rester plus de 90 jours en Thaïlande ?
+
+Peut-on entrer en Thaïlande sans visa et prolonger sur place ?
+
+Peut-on changer de type de visa une fois en Thaïlande ?
+
+Quelle est la durée maximale de séjour légal en Thaïlande ?
+
+Combien de fois peut-on entrer en Thaïlande par an ?
+
+Les règles de visa changent-elles souvent en Thaïlande ?
+
+B. Travail, activité, télétravail (très fort SEO)
+
+Peut-on travailler en Thaïlande avec un visa touristique ?
+
+Le télétravail est-il autorisé en Thaïlande ?
+
+Quelle est la différence entre travail local et travail à distance ?
+
+Faut-il un permis de travail pour travailler depuis la Thaïlande ?
+
+Peut-on créer une entreprise en Thaïlande avec un visa ?
+
+Quels visas permettent de travailler légalement en Thaïlande ?
+
+Travailler sans visa adapté : quels sont les risques ?
+
+C. Durée, extensions, sorties du territoire
+
+Peut-on prolonger un visa en Thaïlande ?
+
+Combien de fois peut-on prolonger un visa ?
+
+Faut-il sortir du pays pour renouveler un visa ?
+
+Qu’est-ce qu’un re-entry permit et quand est-il nécessaire ?
+
+Peut-on rester en Thaïlande plusieurs années légalement ?
+
+Quelle est la différence entre visa à entrée simple et multiple ?
+
+D. Erreurs fréquentes et situations à risque (autorité EEAT)
+
+Que se passe-t-il en cas d’overstay en Thaïlande ?
+
+Que risque-t-on en travaillant avec un mauvais visa ?
+
+Un visa peut-il être refusé sans explication ?
+
+Que faire en cas de refus de visa thaïlandais ?
+
+Peut-on être interdit de territoire en Thaïlande ?
+
+Les visa runs sont-ils encore autorisés ?
+
+E. Profils spécifiques (longue traîne)
+
+Quel visa pour vivre en Thaïlande après 50 ans ?
+
+Quel visa pour vivre en Thaïlande sans travailler ?
+
+Quel visa pour rester longtemps en Thaïlande sans sortir du pays ?
+
+Règles d’utilisation (important)
+
+Ces 30 questions = socle canonique
+
+Réponses courtes, factuelles, mises à jour
+
+Injectées dynamiquement dans les pages visa (8–10 max)
+
+JSON-LD FAQ uniquement sur /questions-frequentes
+
+Si tu veux, prochaine étape possible :
+
+réponses prêtes à publier (format Firestore)
+
+mapping exact question → pages visa
+
+scoring priorité SEO
+
+prompt IA pour créer les réponses sans dérive
+
+Dis-moi.
+
+2  
+
+Voici le mapping exact “question → pages visa”, conçu pour :
+
+éviter la duplication,
+
+renforcer l’autorité,
+
+guider Google et l’utilisateur.
+
+Principe (à ne pas casser)
+
+La FAQ répond
+
+Les pages visa appliquent
+
+Une question peut pointer vers plusieurs visas
+
+Une page visa ne possède jamais la réponse canonique
+
+Mapping des 30 questions
+A. Comprendre les visas (général)
+
+Faut-il un visa pour aller en Thaïlande ?
+→ TR, Exemption
+
+Différence exemption / visa touristique ?
+→ TR
+
+Visa pour rester plus de 90 jours ?
+→ TR, DTV, LTR, Retraite
+
+Entrer sans visa et prolonger ?
+→ TR
+
+Changer de visa sur place ?
+→ TR, DTV, LTR
+
+Durée maximale légale en Thaïlande ?
+→ TR, DTV, LTR, Retraite
+
+Nombre d’entrées par an ?
+→ TR, Exemption
+
+Les règles changent-elles souvent ?
+→ TR, DTV (page informationnelle)
+
+B. Travail & télétravail
+
+Travailler avec un visa touristique ?
+→ TR (interdiction)
+
+Télétravail autorisé en Thaïlande ?
+→ DTV, LTR
+
+Travail local vs distance ?
+→ DTV, LTR
+
+Permis de travail nécessaire ?
+→ DTV, LTR, Business
+
+Créer une entreprise en Thaïlande ?
+→ Business, LTR
+
+Visas autorisant le travail ?
+→ DTV, LTR, Business
+
+Risques travail sans visa adapté ?
+→ TR, DTV (comparatif)
+
+C. Durée, extensions, sorties
+
+Prolonger un visa ?
+→ TR, DTV
+
+Combien de prolongations ?
+→ TR, DTV
+
+Faut-il sortir du pays ?
+→ TR, DTV
+
+Re-entry permit : quand ?
+→ DTV, LTR, Retraite
+
+Rester plusieurs années légalement ?
+→ DTV, LTR, Retraite
+
+Entrée simple vs multiple ?
+→ TR, DTV
+
+D. Erreurs & risques
+
+Overstay : que se passe-t-il ?
+→ TR, Exemption (risque général)
+
+Travailler avec mauvais visa ?
+→ TR
+
+Visa refusé sans explication ?
+→ TR, DTV, LTR
+
+Que faire après un refus ?
+→ TR, DTV
+
+Interdiction de territoire possible ?
+→ TR, Exemption
+
+Visa runs encore autorisés ?
+→ TR
+
+E. Profils spécifiques
+
+Visa après 50 ans ?
+→ Retraite, LTR
+
+Vivre sans travailler ?
+→ Retraite, DTV
+
+Long séjour sans sortir ?
+→ LTR, Retraite
+
+Implémentation simple (clé)
+
+Dans chaque FAQ :
+
+"related_pages": [
+  "/fr/visa-dtv-thailande",
+  "/fr/visa-touristique-thailande"
+]
+
+
+Dans chaque page visa :
+
+requête FAQ par related_pages CONTAINS current_page
+
+tri par popularity_score
+
+limite 8–10
+
+Résultat
+
+Google comprend la hiérarchie
+
+Zéro cannibalisation
+
+IA fiable
+
+UX fluide
+
+Maintenance minimale
+
+Si tu veux, prochaine étape :
+
+réponses canoniques courtes (150–200 mots)
+
+scoring SEO pour prioriser la rédaction
+
+prompt IA de rédaction contrôlée
+
+Dis-moi.
+
+oui 1 3
+
+Voici (1) les réponses canoniques courtes ET (3) le scoring de priorité SEO, prêts à intégrer.
+Format base de connaissance. Pas marketing. Pas redondant.
+
+(1) Réponses canoniques – version courte (150–200 mots max)
+1. Faut-il un visa pour aller en Thaïlande ?
+
+Cela dépend de la nationalité et de la durée du séjour.
+De nombreux voyageurs peuvent entrer en Thaïlande sans visa préalable grâce à une exemption, pour un séjour touristique limité.
+Au-delà de cette durée, ou pour certains usages (séjour long, télétravail, retraite), un visa est obligatoire.
+Les règles varient selon l’année, le profil et l’objectif du séjour.
+
+2. Quelle est la différence entre exemption de visa et visa touristique ?
+
+L’exemption permet une entrée sans demande préalable, mais avec une durée plus courte et peu de flexibilité.
+Le visa touristique nécessite une demande avant le départ, mais autorise un séjour plus long et une prolongation possible.
+Aucun des deux n’autorise le travail.
+
+3. Peut-on travailler en Thaïlande avec un visa touristique ?
+
+Non.
+Le visa touristique n’autorise aucune activité professionnelle, y compris le télétravail rémunéré.
+Travailler avec un visa touristique expose à des sanctions (amende, expulsion, refus futur).
+
+4. Le télétravail est-il autorisé en Thaïlande ?
+
+Oui, uniquement avec certains visas adaptés, comme le DTV ou certains visas long séjour.
+Le télétravail doit être exercé pour une entité étrangère, sans activité locale.
+
+5. Peut-on prolonger un visa en Thaïlande ?
+
+Oui, selon le type de visa.
+Certaines extensions sont possibles auprès de l’immigration, mais elles ne sont jamais automatiques et dépendent du dossier et du visa détenu.
+
+6. Que se passe-t-il en cas d’overstay en Thaïlande ?
+
+Un dépassement de séjour entraîne des amendes journalières, et peut conduire à une interdiction temporaire ou durable de territoire selon la durée.
+Même un overstay court peut compliquer les demandes futures.
+
+7. Peut-on rester plusieurs années légalement en Thaïlande ?
+
+Oui, mais uniquement avec des visas longue durée spécifiques (retraite, DTV, LTR).
+Les enchaînements de visas touristiques ne sont pas une solution légale à long terme.
+
+8. Les visa runs sont-ils encore autorisés ?
+
+Ils ne sont plus une solution fiable.
+Les autorités thaïlandaises surveillent les entrées répétées et peuvent refuser l’accès même sans infraction formelle.
+
+9. Peut-on changer de type de visa sur place ?
+
+Dans certains cas, oui.
+Mais ce n’est ni automatique ni garanti, et certaines conversions exigent une sortie du territoire.
+
+10. Un visa peut-il être refusé sans explication ?
+
+Oui.
+Les autorités ne sont pas tenues de justifier un refus.
+Un refus n’implique pas nécessairement une interdiction, mais doit être analysé avant toute nouvelle demande.
+
+(3) Scoring de priorité SEO (pour ordonner la rédaction)
+
+Score sur 100 =
+Volume estimé + Intention + Risque + Conversion indirecte
+
+Question	Score	Priorité
+Peut-on travailler en Thaïlande ?	95	🔴 Critique
+Télétravail autorisé en Thaïlande ?	92	🔴 Critique
+Faut-il un visa pour aller en Thaïlande ?	90	🔴 Critique
+Différence exemption / visa touristique	88	🔴 Critique
+Overstay : que se passe-t-il ?	85	🟠 Haute
+Peut-on rester plusieurs années ?	83	🟠 Haute
+Visa runs autorisés ?	82	🟠 Haute
+Prolonger un visa	80	🟠 Haute
+Changer de visa sur place	76	🟡 Moyenne
+Visa refusé sans explication	74	🟡 Moyenne
+
+👉 Top 8 à publier immédiatement
+👉 Les autres en phase 2
+
+
+PROMPT — IA FAQ / BASE DE CONNAISSANCE (CONTRÔLÉ)
+RÔLE
+
+Tu es un rédacteur de base de connaissance réglementaire spécialisé dans les visas et l’immigration.
+Tu ne fais aucune supposition.
+Tu n’interprètes pas la loi.
+Tu expliques l’état des règles connues, avec prudence.
+
+OBJECTIF
+
+Rédiger une réponse canonique FAQ :
+
+claire
+
+courte
+
+factuelle
+
+stable dans le temps
+
+exploitable SEO
+
+réutilisable sur plusieurs pages
+
+INPUT (OBLIGATOIRE)
+{
+  "question": "",
+  "language": "fr",
+  "year_context": "2026",
+  "audience": "touriste | digital_nomad | expatrié | general",
+  "risk_level": "low | medium | high",
+  "related_visas": [],
+  "intent": "information",
+  "max_words": 180
+}
+
+RÈGLES STRICTES DE RÉDACTION
+Structure imposée
+
+Réponse directe dès la première phrase
+
+Explication factuelle (pas d’exemple personnel)
+
+Limites / conditions claires
+
+Avertissement neutre si risk_level ≠ low
+
+Style
+
+Ton neutre
+
+Pas de marketing
+
+Pas de “nous”
+
+Pas de promesse
+
+Pas de conseil juridique personnalisé
+
+Phrases courtes
+
+Vocabulaire simple
+
+Interdictions absolues
+
+❌ Pas de dates précises non vérifiées
+❌ Pas de chiffres exacts si variables
+❌ Pas de recommandations implicites
+❌ Pas de comparaison commerciale
+❌ Pas d’interprétation fiscale ou légale
+
+LOGIQUE DE CONTRÔLE (OBLIGATOIRE)
+
+Si une information est incertaine → le dire explicitement
+
+Si une règle dépend d’un visa → rester générique
+
+Si risk_level = high → ajouter un paragraphe “Attention”
+
+Ne jamais dire “autorisé” sans condition
+
+SORTIE ATTENDUE (FORMAT STRICT)
+{
+  "answer": "",
+  "risk_warning": "",
+  "confidence_level": "high | medium",
+  "suggested_tags": [],
+  "admin_note": ""
+}
+
+EXEMPLE D’UTILISATION
+
+INPUT
+
+{
+  "question": "Peut-on travailler en Thaïlande avec un visa touristique ?",
+  "language": "fr",
+  "year_context": "2026",
+  "audience": "general",
+  "risk_level": "high",
+  "related_visas": ["TR"],
+  "intent": "information",
+  "max_words": 160
+}
+
+
+OUTPUT
+
+{
+  "answer": "Non. Le visa touristique n’autorise aucune activité professionnelle en Thaïlande, y compris le télétravail rémunéré. Il est strictement réservé aux séjours à but touristique. Toute activité assimilée à un travail peut entraîner des sanctions administratives.",
+  "risk_warning": "Les règles peuvent être interprétées strictement par l’immigration. Une activité même occasionnelle peut être considérée comme un travail.",
+  "confidence_level": "high",
+  "suggested_tags": ["visa_touristique", "travail", "interdiction"],
+  "admin_note": "À lier aux pages DTV et LTR pour alternatives légales."
+}
+
+FINALITÉ
+
+Cette IA :
+
+ne débat pas
+
+ne conseille pas
+
+documente
+
+alimente une base de connaissance propre
+
+protège juridiquement le site
+
+renforce l’EEAT
+
+
+
+Voici une liste exhaustive et propre des visas thaïlandais à utiliser comme plan de pages dédiées.
+C’est une liste de travail, pas marketing.
+
+A. Visas courts séjours / tourisme
+
+Exemption de visa (Visa Exemption)
+
+Visa à l’arrivée (Visa on Arrival – VoA)
+
+Visa touristique (TR)
+
+Single Entry
+
+Multiple Entry (METV)
+
+B. Visas long séjour / résidence
+
+Destination Thailand Visa (DTV)
+
+Visa LTR – Long-Term Resident
+
+Wealthy Global Citizen
+
+Wealthy Pensioner
+
+Work-From-Thailand Professional
+
+Highly Skilled Professional
+
+Visa Retraite (Non-Immigrant O – Retired)
+
+Visa Retraite OA
+
+Visa Retraite OX
+
+C. Visas travail / business
+
+Visa Non-Immigrant B (Business / Work)
+
+Visa BOI (Board of Investment)
+
+SMART Visa
+
+Smart T
+
+Smart I
+
+Smart S
+
+Smart E
+
+D. Visas études / formation / culture
+
+Visa Étudiant (Non-Immigrant ED)
+
+Visa Formation / Stage
+
+Visa Moine / Religion (R)
+
+E. Visas famille / situation personnelle
+
+Visa Non-Immigrant O (Famille)
+
+Conjoint thaïlandais
+
+Parent d’enfant thaï
+
+Visa Dépendant (conjoint / enfants)
+
+F. Visas premium / spéciaux
+
+Visa Elite / Thailand Privilege
+
+Visa Diplomatique / Officiel (hors scope commercial)
+
+G. Visas techniques / administratifs
+
+Re-Entry Permit (simple / multiple)
+
+Extension de séjour (par type de visa)
+
+Changement de statut de visa
+
+Ce que je te recommande pour SiamVisaPro (priorisation)
+Pages à créer en priorité (SEO + business)
+
+Visa DTV
+
+Visa Touristique (TR)
+
+Visa LTR
+
+Visa Retraite
+
+Visa Elite
+
+Visa Business (Non-B)
+
+Pages secondaires (autorité / SEO longue traîne)
+
+Exemption de visa
+
+Visa Étudiant
+
+Visa Famille
+
+SMART Visa
+
+Règle importante pour la suite
+
+1 visa = 1 page canonique
+
+Pas de mélange
+
+FAQ injectée dynamiquement
+
+Comparateur = vue transversale
+
+Base de connaissance = réponses
+
+Si tu veux, prochaine étape logique :
+
+template unique de page visa (SEO + conversion)
+
+ordre de publication optimal
+
+mapping visa → FAQ → comparateur
+
+Dis-moi.
+
+1
+
+Voici le template unique de page VISA, prêt à dupliquer pour chaque visa dédié.
+Conçu pour : SEO, conversion, zéro duplication, injection FAQ.
+
+TEMPLATE — PAGE VISA (CANONIQUE)
+1) Variables admin (source unique)
+{
+  "visa_name": "",
+  "visa_slug": "",
+  "visa_type": "court | long | travail | premium",
+  "audience": "",
+  "work_allowed": "yes | no | remote_only",
+  "stay_duration": "",
+  "renewable": "yes | no | conditional",
+  "entry_type": "single | multiple",
+  "risk_level": "low | medium | high",
+  "year_context": "2026"
+}
+
+2) Meta SEO (généré, contrôlé)
+
+Title
+
+{{visa_name}} Thaïlande – Conditions, durée, travail | {{year_context}}
+
+
+Meta description
+
+{{visa_name}} Thaïlande : conditions officielles, durée de séjour, renouvellement et restrictions. Guide clair et à jour {{year_context}}.
+
+3) Structure Hn (obligatoire)
+H1
+{{visa_name}} – Thaïlande
+
+H2
+
+Qu’est-ce que le {{visa_name}} ?
+
+À qui s’adresse ce visa ?
+
+Durée de séjour et validité
+
+Conditions et critères principaux
+
+Travail et activités autorisées
+
+Renouvellement et extensions
+
+Limitations et points de vigilance
+
+Questions fréquentes
+
+4) Contenu standard (logique fixe)
+Qu’est-ce que le {{visa_name}} ?
+
+Définition factuelle, 3–4 phrases max.
+Pas d’exemples personnels. Pas de promesse.
+
+À qui s’adresse ce visa ?
+
+Liste de profils compatibles.
+Exclure explicitement les profils non compatibles (important SEO).
+
+Durée de séjour et validité
+
+Durée par entrée
+
+Validité globale
+
+Type d’entrée
+
+Conditions et critères principaux
+
+Liste simple, sans chiffres variables non vérifiés.
+
+Travail et activités autorisées
+
+Bloc critique :
+
+❌ Travail local : oui / non
+
+✅ Télétravail : oui / non / conditionnel
+
+Avertissement si risk_level ≠ low
+
+Renouvellement et extensions
+
+Ce qui est possible / non garanti / impossible.
+
+Limitations et points de vigilance
+
+Cas de refus
+
+Interprétation stricte possible
+
+Lien vers base de connaissance
+
+5) FAQ (injectée dynamiquement)
+
+❌ Pas écrite ici
+✅ Injectée depuis /questions-frequentes
+
+Règle
+
+8–10 questions max
+
+Filtrées par related_visas
+
+Pas de JSON-LD ici
+
+6) CTA (sobre)
+
+CTA principal
+
+Vérifier si ce visa est adapté à votre situation
+
+
+CTA secondaire
+
+Comparer avec les autres visas
+
+7) Garde-fous SEO (à respecter)
+
+1 seul H1
+
+1 URL = 1 visa
+
+Pas de FAQ dupliquée
+
+Pas de tableau comparatif ici
+
+Pas de chiffres non sourcés
+
+Mise à jour visible : Dernière mise à jour {{year_context}}
+
+8) Résultat attendu
+
+Pages visas homogènes
+
+Publication rapide
+
+Scalabilité
+
+IA compatible
+
+Aucun risque de cannibalisation
+
+TEMPLATE — PAGE VISA (CANONIQUE)
+1) Variables admin (source unique)
+{
+  "visa_name": "",
+  "visa_slug": "",
+  "visa_type": "court | long | travail | premium",
+  "audience": "",
+  "work_allowed": "yes | no | remote_only",
+  "stay_duration": "",
+  "renewable": "yes | no | conditional",
+  "entry_type": "single | multiple",
+  "risk_level": "low | medium | high",
+  "year_context": "2026"
+}
+
+2) Meta SEO (généré, contrôlé)
+
+Title
+
+{{visa_name}} Thaïlande – Conditions, durée, travail | {{year_context}}
+
+
+Meta description
+
+{{visa_name}} Thaïlande : conditions officielles, durée de séjour, renouvellement et restrictions. Guide clair et à jour {{year_context}}.
+
+3) Structure Hn (obligatoire)
+H1
+{{visa_name}} – Thaïlande
+
+H2
+
+Qu’est-ce que le {{visa_name}} ?
+
+À qui s’adresse ce visa ?
+
+Durée de séjour et validité
+
+Conditions et critères principaux
+
+Travail et activités autorisées
+
+Renouvellement et extensions
+
+Limitations et points de vigilance
+
+Questions fréquentes
+
+4) Contenu standard (logique fixe)
+Qu’est-ce que le {{visa_name}} ?
+
+Définition factuelle, 3–4 phrases max.
+Pas d’exemples personnels. Pas de promesse.
+
+À qui s’adresse ce visa ?
+
+Liste de profils compatibles.
+Exclure explicitement les profils non compatibles (important SEO).
+
+Durée de séjour et validité
+
+Durée par entrée
+
+Validité globale
+
+Type d’entrée
+
+Conditions et critères principaux
+
+Liste simple, sans chiffres variables non vérifiés.
+
+Travail et activités autorisées
+
+Bloc critique :
+
+❌ Travail local : oui / non
+
+✅ Télétravail : oui / non / conditionnel
+
+Avertissement si risk_level ≠ low
+
+Renouvellement et extensions
+
+Ce qui est possible / non garanti / impossible.
+
+Limitations et points de vigilance
+
+Cas de refus
+
+Interprétation stricte possible
+
+Lien vers base de connaissance
+
+5) FAQ (injectée dynamiquement)
+
+❌ Pas écrite ici
+✅ Injectée depuis /questions-frequentes
+
+Règle
+
+8–10 questions max
+
+Filtrées par related_visas
+
+Pas de JSON-LD ici
+
+6) CTA (sobre)
+
+CTA principal
+
+Vérifier si ce visa est adapté à votre situation
+
+
+CTA secondaire
+
+Comparer avec les autres visas
+
+7) Garde-fous SEO (à respecter)
+
+1 seul H1
+
+1 URL = 1 visa
+
+Pas de FAQ dupliquée
+
+Pas de tableau comparatif ici
+
+Pas de chiffres non sourcés
+
+Mise à jour visible : Dernière mise à jour {{year_context}}
+
+8) Résultat attendu
+
+Pages visas homogènes
+
+Publication rapide
+
+Scalabilité
+
+IA compatible
+
+Aucun risque de cannibalisation
+
+Si tu veux, prochaine étape logique :
+
+remplir ce template pour le DTV
+
+ordre exact de publication des pages
+
+version Firestore + types TS
+
+prompt IA auto-remplissage par visa
+
+Dis-moi.
+
+1 2 3 4 
+
+Parfait. Voici les 4 livrables, nets et directement exploitables.
+
+1️⃣ Page VISA remplie — Visa DTV (Destination Thailand Visa)
+Variables
+{
+  "visa_name": "Visa DTV (Destination Thailand Visa)",
+  "visa_slug": "visa-dtv-thailande",
+  "visa_type": "long",
+  "audience": "digital_nomad, freelance, remote_worker",
+  "work_allowed": "remote_only",
+  "stay_duration": "long séjour par entrées successives",
+  "renewable": "conditional",
+  "entry_type": "multiple",
+  "risk_level": "high",
+  "year_context": "2026"
+}
+
+Meta
+
+Title
+Visa DTV Thaïlande – Télétravail, durée, conditions | 2026
+
+Description
+Visa DTV Thaïlande : visa longue durée pour télétravail, conditions d’éligibilité, durée de séjour et restrictions. Guide clair et à jour 2026.
+
+H1
+
+Visa DTV – Destination Thailand Visa
+
+Sections (contenu synthétique)
+
+Qu’est-ce que le visa DTV ?
+Le Destination Thailand Visa (DTV) est un visa longue durée destiné aux personnes exerçant une activité à distance pour une entité étrangère. Il permet de résider en Thaïlande sans travailler pour une entreprise locale.
+
+À qui s’adresse ce visa ?
+Télétravailleurs, freelances, nomades numériques.
+Non adapté au travail local ou à l’emploi salarié thaïlandais.
+
+Durée de séjour et validité
+Visa à entrées multiples permettant des séjours prolongés par entrée, avec obligations de sortie selon les règles en vigueur.
+
+Conditions et critères principaux
+Passeport valide, justificatifs d’activité à distance, ressources financières suffisantes.
+
+Travail et activités autorisées
+✅ Télétravail pour l’étranger
+❌ Travail local, emploi thaïlandais
+
+Renouvellement et extensions
+Possibles selon les règles d’immigration. Jamais automatiques.
+
+Limitations et points de vigilance
+Interprétation stricte possible. Les règles peuvent évoluer.
+
+2️⃣ Ordre exact de publication (priorité SEO + business)
+
+Visa DTV
+
+Visa Touristique (TR)
+
+Visa LTR
+
+Visa Retraite
+
+Visa Elite
+
+Visa Business (Non-B)
+
+Exemption de visa
+
+Visa Étudiant
+
+Visa Famille
+
+SMART Visa
+
+👉 Les 6 premiers couvrent 90 % des intentions.
+
+3️⃣ Schéma Firestore + Types TS
+Firestore
+visas/{visaId}
+
+{
+  "name": "Visa DTV",
+  "slug": "visa-dtv-thailande",
+  "type": "long",
+  "audience": ["digital_nomad", "freelance"],
+  "work_allowed": "remote_only",
+  "entry_type": "multiple",
+  "risk_level": "high",
+  "year_context": "2026",
+  "content": {
+    "definition": "",
+    "eligibility": "",
+    "duration": "",
+    "work_rules": "",
+    "renewal": "",
+    "limitations": ""
+  },
+  "related_faq_tags": ["visa_dtv"],
+  "status": "published",
+  "updatedAt": "serverTimestamp"
+}
+
+TypeScript
+export interface VisaPage {
+  name: string;
+  slug: string;
+  type: "court" | "long" | "travail" | "premium";
+  audience: string[];
+  work_allowed: "yes" | "no" | "remote_only";
+  entry_type: "single" | "multiple";
+  risk_level: "low" | "medium" | "high";
+  year_context: string;
+  content: Record<string, string>;
+  related_faq_tags: string[];
+  status: "draft" | "published";
+}
+
+4️⃣ Prompt IA — auto-remplissage page visa (contrôlé)
+PROMPT SYSTEM
+Tu es un rédacteur réglementaire spécialisé visas.
+Tu remplis UNE page visa selon un template strict.
+Tu ne fais aucune supposition.
+
+INPUT:
+- visa_name
+- visa_type
+- audience
+- work_allowed
+- year_context
+- risk_level
+
+RÈGLES:
+- ton neutre
+- phrases courtes
+- pas de chiffres non vérifiés
+- pas de promesse
+- si risk_level = high → ajouter avertissement
+
+OUTPUT JSON:
+{
+  "definition": "",
+  "eligibility": "",
+  "duration": "",
+  "work_rules": "",
+  "renewal": "",
+  "limitations": ""
+}
+
+Résultat
+
+Architecture propre
+
+Pages visas industrialisables
+
+SEO stable
+
+IA maîtrisée
+
+Aucun risque de cannibalisation

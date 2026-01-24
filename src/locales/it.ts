@@ -25,7 +25,10 @@ export const it = {
       "title": "Comparatore Visti Thailandia 2026 | Siam Visa Pro",
       "description": "Trova il visto ideale per il tuo soggiorno in Tailandia. Confronta visti Pensionati, DTV, Elite e Turistico in un clic."
     },
-    "title": "Quale Visto Thailandia Scegliere? Confronto Completo 2026",
+    "title": "Quale visto per la Thailandia nel 2026?",
+    "hero_subtitle": "Confronta le opzioni in base alla tua situazione.",
+    "hero_subtext": "Durata · Lavoro · Budget · Profilo",
+    "ai_cta": "Serve aiuto? Chiedi all'IA",
     "description": "Trova il visto ideale per il tuo soggiorno in Tailandia. Confronta visti Pensionati, DTV, Elite e Turistico in un clic.",
     "suggestions": [
       "Voglio lavorare da remoto in Thailandia",
@@ -47,6 +50,72 @@ export const it = {
       "privilege": "Elite"
     },
     "details": "Dettagli",
+    "comparator_guide": {
+      "title": "Comparatore dei Visti per la Thailandia – 2026",
+      "intro": "Scegliere il visto giusto per la Thailandia dipende principalmente dalla durata del soggiorno, dall'attività prevista e dal profilo del richiedente. Questo confronto presenta i principali visti disponibili nel 2026, con i relativi utilizzi e limitazioni.",
+      "table": {
+        "headers": ["Visto", "Durata del soggiorno", "Lavoro autorizzato", "Ingressi", "Profilo principale"],
+        "rows": [
+          ["Esenzione dal visto", "Breve durata", "❌ No", "Multiplo (limitato)", "Turismo breve"],
+          ["Visto turistico (TR)", "Medio soggiorno", "❌ No", "Singolo", "Turismo prolungato"],
+          ["Visto DTV", "Lungo soggiorno", "✅ Telelavoro", "Multiplo", "Nomade digitale"],
+          ["Visto LTR / Pensione", "Lungo soggiorno", "❌ (salvo casi specifici)", "Multiplo", "Pensionato / residente"],
+          ["Visto Elite", "Soggiorno molto lungo", "❌ No", "Multiplo", "Residente VIP"],
+          ["Visto Business (Non-B)", "Variabile", "✅ Sì", "Variabile", "Lavoro / società"],
+          ["Visto per Studenti (ED)", "Variabile", "❌ No", "Variabile", "Studio / formazione"]
+        ]
+      },
+      "sections": [
+        {
+          "title": "Esenzione dal visto",
+          "content": "Permette di entrare in Thailandia senza visto preventivo per un breve soggiorno turistico. Soluzione semplice, ma poco flessibile e strettamente turistica."
+        },
+        {
+          "title": "Visto turistico (TR)",
+          "content": "Visto classico per soggiorni turisti più lunghi. Permette un'estensione limitata, ma non autorizza alcun lavoro, incluso quello da remoto."
+        },
+        {
+          "title": "Visto DTV – Destination Thailand Visa",
+          "content": "Visto a lungo termine destinato ai lavoratori da remoto e ai freelance. Autorizza il telelavoro per un'entità straniera e offre una grande flessibilità de soggiorno. È oggi la soluzione più adatta ai profili attivi non locali."
+        },
+        {
+          "title": "Visto LTR / Pensione",
+          "content": "Visto a lungo termine per pensionati o profili ad alto reddito. Permette di vivere stabilmente in Thailandia senza esercitare un'attività professionale locale."
+        },
+        {
+          "title": "Visto Elite / Thailand Privilege",
+          "content": "Visto premium basato su un'adesione a pagamento. Offre comfort amministrativo e una durata molto lunga, ma non permette di lavorare."
+        },
+        {
+          "title": "Visto Business (Non-Immigrant B)",
+          "content": "Visto destinato a persone che lavorano per o con un'azienda thailandese. È generalmente associato a un permesso di lavoro e a obblighi amministrativi più pesanti."
+        },
+        {
+          "title": "Visto per Studenti (ED)",
+          "content": "Visto concesso per studi o formazione riconosciuti. Non permette di lavorare ed è soggetto a controlli rafforzati."
+        }
+      ],
+      "how_to_choose": {
+        "title": "Come scegliere il visto giusto?",
+        "questions_title": "Poniti queste domande:",
+        "questions": [
+          "Quanto tempo desideri rimanere in Thailandia?",
+          "Hai intenzione di lavorare o telelavorare?",
+          "Hai più di 50 anni?",
+          "Desideri una soluzione semplice o a lunghissimo termine?"
+        ],
+        "upsell": "👉 In caso di dubbio, un comparatore o un'analisi personalizzata è preferibile a una serie di visti brevi."
+      },
+      "to_remember": {
+        "title": "Da ricordare",
+        "points": [
+          "Visto turistico ≠ lavoro",
+          "Telelavoro = visto specifico obbligatorio",
+          "Lungo soggiorno = visto specifico",
+          "Le regole cambiano regolarmente e vengono applicate rigorosamente"
+        ]
+      }
+    },
     "eligibility": "Idoneità",
     "duration": "Durata",
     "requirements": "Requisiti",

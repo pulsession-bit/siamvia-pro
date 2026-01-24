@@ -14,7 +14,28 @@ export const en = {
     "eligibility": "Eligibility",
     "ltr": "Visa LTR",
     "languages": "Languages",
-    "search": "Search"
+    "search": "Search",
+    "all_visas": "All Visas",
+    "business": "Business Visa",
+    "smart": "SMART Visa",
+    "exemption": "Visa Exemption",
+    "family": "Family Visa",
+    "student": "Student Visa",
+    "volunteer": "Volunteer Visa",
+    "medical": "Medical Visa",
+    "religious": "Religious Visa",
+    "media": "Media Visa",
+    "official": "Official Visa",
+    "scientific": "Scientific Visa",
+    "categories": {
+      "work": "Work & Business",
+      "tourism": "Tourism",
+      "long_term": "Long Term (LTR)",
+      "family": "Family & Marriage",
+      "education": "Education",
+      "elite": "Elite Privilege",
+      "others": "Other Visas"
+    }
   },
   "ltr_page": {
     "meta": {
@@ -100,7 +121,10 @@ export const en = {
       "title": "Thailand Visa Comparator 2026 | Siam Visa Pro",
       "description": "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click."
     },
-    "title": "Which Thailand Visa to Choose? Complete Comparison 2026",
+    "title": "Which Thailand Visa to Choose in 2026?",
+    "hero_subtitle": "Compare options based on your situation.",
+    "hero_subtext": "Duration · Work · Budget · Profile",
+    "ai_cta": "Need help? Ask the AI",
     "description": "Find the ideal visa for your stay in Thailand. Compare Retirement, DTV, Elite and Tourist visas in one click.",
     "suggestions": [
       "I want to work remotely from Thailand",
@@ -114,14 +138,81 @@ export const en = {
     "aiHelper": "Ask AI",
     "aiTitle": "AI Expert Advice",
     "categories": {
-        "work": "Work & Business",
-        "tourism": "Tourism",
-        "longterm": "Long Term (LTR)",
-        "family": "Family & Marriage",
-        "education": "Education",
-        "privilege": "Privilege Elite"
+      "work": "Work & Business",
+      "tourism": "Tourism",
+      "longterm": "Long Term (LTR)",
+      "family": "Family & Marriage",
+      "education": "Education",
+      "privilege": "Privilege Elite"
     },
-    "details": "View Details",
+    "details": "Visa Details",
+    "comparator_guide": {
+      "title": "Thailand Visa Comparison – 2026",
+      "intro": "Choosing the right visa for Thailand mainly depends on the length of stay, intended activity, and applicant profile. This comparison presents the main visas available in 2026, their uses, and limitations.",
+      "table": {
+        "headers": ["Visa", "Length of Stay", "Work Allowed", "Entries", "Main Profile"],
+        "rows": [
+          ["Visa Exemption", "Short term", "❌ No", "Multiple (limited)", "Short tourism"],
+          ["Tourist Visa (TR)", "Medium term", "❌ No", "Single", "Extended tourism"],
+          ["DTV Visa", "Long term", "✅ Remote work", "Multiple", "Digital nomad"],
+          ["LTR / Retirement Visa", "Long term", "❌ (except specific cases)", "Multiple", "Retired / resident"],
+          ["Elite Visa", "Very long term", "❌ No", "Multiple", "VIP Resident"],
+          ["Business Visa (Non-B)", "Variable", "✅ Yes", "Variable", "Work / business"],
+          ["Student Visa (ED)", "Variable", "❌ No", "Variable", "Study / training"]
+        ]
+      },
+      "sections": [
+        {
+          "title": "Visa Exemption",
+          "content": "Allows entry to Thailand without a prior visa for a short tourist stay. Simple but inflexible and strictly for tourism."
+        },
+        {
+          "title": "Tourist Visa (TR)",
+          "content": "Classic visa for longer tourist stays. It allows a limited extension but does not authorize any work, including remote work."
+        },
+        {
+          "title": "DTV Visa – Destination Thailand Visa",
+          "content": "Long-term visa for remote workers and freelancers. It allows remote work for a foreign entity and offers great flexibility of stay. It is currently the most suitable solution for active non-local profiles."
+        },
+        {
+          "title": "LTR / Retirement Visa",
+          "content": "Long-term visa for retirees or high-income profiles. It allows living long-term in Thailand without professional activity."
+        },
+        {
+          "title": "Elite Visa / Thailand Privilege",
+          "content": "Premium visa based on paid membership. It offers administrative comfort and very long duration but does not allow work."
+        },
+        {
+          "title": "Business Visa (Non-Immigrant B)",
+          "content": "Visa for people working for or with a Thai company. Usually associated with a work permit and heavier administrative requirements."
+        },
+        {
+          "title": "Student Visa (ED)",
+          "content": "Visa granted for recognized studies or training. It does not allow work and is subject to increased controls."
+        }
+      ],
+      "how_to_choose": {
+        "title": "How to choose the right visa?",
+        "questions_title": "Ask yourself these questions:",
+        "questions": [
+          "How long do you want to stay in Thailand?",
+          "Do you plan to work or work remotely?",
+          "Are you over 50 years old?",
+          "Do you want a simple or very long-term solution?"
+        ],
+        "upsell": "👉 When in doubt, a comparison or personalized analysis is preferable to a sequence of short visas."
+      },
+      "to_remember": {
+        "title": "To remember",
+        "points": [
+          "Tourist visa ≠ work",
+          "Remote work = appropriate visa required",
+          "Long stay = specific visa",
+          "Rules evolve regularly and are strictly applied"
+        ]
+      }
+    },
+    "visa_not_found": "No visas found for your criteria.",
     "eligibility": "Eligibility",
     "duration": "Duration",
     "requirements": "Requirements",
@@ -134,31 +225,31 @@ export const en = {
     "expertPick": "EXPERT PICK",
     "alternative": "ALTERNATIVE",
     "commonRequirements": [
-        "Valid passport (min. 6 months remaining)",
-        "Clean criminal record certificate",
-        "Proof of sufficient funds",
-        "Proof of local address / booking"
+      "Valid passport (min. 6 months remaining)",
+      "Clean criminal record certificate",
+      "Proof of sufficient funds",
+      "Proof of local address / booking"
     ],
     "processDescription": "Application process typically takes 5-15 business days. SiamVisaPro provides full support for document preparation.",
     "durations": {
-        "10 Years": "10 Years",
-        "5 Years": "5 Years",
-        "1 Year": "1 Year",
-        "60 Days": "60 Days",
-        "6 Months": "6 Months",
-        "15 Days": "15 Days",
-        "4 Years": "4 Years",
-        "6-12 Months": "6-12 Months",
-        "15 Years": "15 Years",
-        "20+ Years": "20+ Years",
-        "Variable": "Variable",
-        "90 Days": "90 Days"
+      "10 Years": "10 Years",
+      "5 Years": "5 Years",
+      "1 Year": "1 Year",
+      "60 Days": "60 Days",
+      "6 Months": "6 Months",
+      "15 Days": "15 Days",
+      "4 Years": "4 Years",
+      "6-12 Months": "6-12 Months",
+      "15 Years": "15 Years",
+      "20+ Years": "20+ Years",
+      "Variable": "Variable",
+      "90 Days": "90 Days"
     },
     "prices": {
-        "High": "High",
-        "Medium": "Medium",
-        "Low": "Low",
-        "Premium": "Premium"
+      "High": "High",
+      "Medium": "Medium",
+      "Low": "Low",
+      "Premium": "Premium"
     }
   },
   "contact_page": {
@@ -262,76 +353,76 @@ export const en = {
   },
   "dtv_page": {
     "badge": "Destination Thailand Visa",
-    "hero_h1": "DTV Visa",
-    "hero_title": "The Holy Grail for Digital Nomads",
-    "hero_subtitle": "Valid 5 years. 180 days per entry. Work authorized.",
-    "hero_tagline": "Live and work from the land of smiles.",
-    "why_title": "Why is this visa revolutionary?",
-    "duration_title": "5 Year Duration",
-    "duration_desc": "Unlike tourist visas, the DTV is valid for 5 years. You can enter and exit as many times as you want.",
-    "work_title": "Legal Work",
-    "work_desc": "It is the first visa that explicitly authorizes remote work for a foreign company without a Thai work permit.",
-    "finance_title": "The Critical Point: 500,000 THB",
-    "finance_desc": "You must prove you have at least 500,000 THB (approx $15,000 USD) in a bank account. This money must be available and visible on your statements.",
-    "who_title": "Who is it for?",
+    "hero_h1": "Thailand DTV Visa",
+    "hero_title": "The Digital Nomad Visa (5 Years)",
+    "hero_subtitle": "Valid for 5 years. 180 days per entry. Legal work authorized.",
+    "hero_tagline": "Live and work legally from the Land of Smiles.",
+    "why_title": "Why is the DTV a Revolution?",
+    "duration_title": "5-Year Freedom",
+    "duration_desc": "Multiple entries valid for 5 years. Stay up to 180 days (+180 days) per visit. Total freedom of movement.",
+    "work_title": "100% Legal Work",
+    "work_desc": "The first Thai visa explicitly authorizing remote work for foreign employers without a local Work Permit.",
+    "finance_title": "Financial Criteria: 500,000 THB",
+    "finance_desc": "Bank balance of 500,000 THB (~$15,000 USD) visible at the time of application. Funds must be available, not locked.",
+    "who_title": "Eligible Profiles",
     "who_remote": "Remote Workers",
     "who_remote_desc": "Employees of companies outside Thailand.",
     "who_freelance": "Freelancers",
-    "who_freelance_desc": "Independent contractors with a client portfolio.",
-    "who_softpower": "Soft Power",
-    "who_softpower_desc": "Learning (Muay Thai, Cooking, Medical treatment).",
-    "portfolio_title": "Need help with the Portfolio?",
-    "portfolio_desc": "The embassy requires a \"Professional Portfolio\" to prove your status. We create it for you.",
-    "portfolio_btn": "See our packs",
-    "highs_title": "Highlights",
+    "who_freelance_desc": "Independent contractors with client contracts.",
+    "who_softpower": "Culture & Sport",
+    "who_softpower_desc": "Muay Thai, Cooking, Medical, Music.",
+    "portfolio_title": "Portfolio Requirement",
+    "portfolio_desc": "The #1 cause of refusal is a poorly structured professional dossier. We transform your career history into a file that meets consular expectations.",
+    "portfolio_btn": "View Assistance Packages",
+    "highs_title": "Key Benefits",
     "highs": [
-      "Exceptional 5-year validity",
-      "180-day stays per entry (+180 day extension)",
-      "Legal right to work remotely",
-      "Covers spouse and children as well"
+      "5-Year Validity (Multi-Entry)",
+      "180-Day Stays (+180 days ext.)",
+      "100% Legal Remote Work",
+      "Sponsorship for Spouse & Children (20y)"
     ],
     "lows_title": "Points of Attention",
     "lows": [
-      "Mandatory 500,000 THB financial proof",
-      "Strong Professional Portfolio required",
-      "Longer processing times (5-15 days)",
-      "Higher consular fees (~$350)"
+      "Proof of funds (500k THB) mandatory",
+      "Rigorous Professional Portfolio required",
+      "Processing time: 5-15 business days",
+      "Official embassy fees (~$350)"
     ],
-    "faq_title": "DTV Visa - Frequently Asked Questions",
+    "faq_title": "FAQ - DTV Visa 2026",
     "faqs": [
       {
-        "q": "Can I enter and leave Thailand multiple times with my DTV visa?",
-        "a": "Yes, it is a Multiple-Entry visa. You can travel as many times as you want during the 5-year validity period without canceling your visa."
+        "q": "Can I enter and leave freely?",
+        "a": "Yes. The DTV is a Multi-Entry visa. You can travel as much as you want for 5 years."
       },
       {
-        "q": "Do I have to pay taxes in Thailand with this visa?",
-        "a": "Generally, if you work for a foreign company and your income is not paid into a Thai account, you are not a tax resident under the DTV (to be confirmed according to your specific situation)."
+        "q": "Am I a Thai tax resident?",
+        "a": "No, as long as your income comes from abroad and is not remitted to Thailand in the same year (180-day rule). Consult a tax advisor for your specific case."
       },
       {
-        "q": "Can my family accompany me?",
-        "a": "Yes, your spouse and children under 20 can obtain a 'Dependant' DTV visa linked to yours, with the same duration advantages."
+        "q": "Can my family join me?",
+        "a": "Yes. Legal spouse and children (under 20) get a 'Dependant' DTV linked to yours."
       },
       {
-        "q": "What is the added value of Siam Visa Pro compared to a solo application?",
-        "a": "Applying alone carries risks of refusal due to an imprecise file. Siam Visa Pro combines human expertise and the power of AI: our artificial intelligence tools analyze your eligibility in real-time to detect the weak points of your file, while our experts optimize your portfolio and your documents. You benefit from a double verification — technological and human — to guarantee the highest possible approval rate."
+        "q": "Why use an agency?",
+        "a": "To secure your investment. A file error means refusal and loss of fees (~$350). We guarantee the compliance of your Portfolio."
       }
     ],
     "high_value": {
-      "title": "Digital Freedom",
-      "highlight": "& Workcation",
-      "description": "Work from Thailand without visa hassles or taxes on your foreign income (if <180 days/year). The DTV is the key to 5 years of peace of mind.",
-      "item1": "Work From Anywhere",
-      "item2": "5 Years Validity (180 days/entry)",
-      "item3": "Advantageous Taxation",
-      "card_title": "Ideal Profiles",
-      "card_item1": "Remote Workers / Employees",
-      "card_item2": "Digital Nomads & Freelancers",
-      "card_item3": "Content Creators / Soft Power",
-      "card_item4": "Muay Thai / Cooking Participants"
+      "title": "Workation",
+      "highlight": "& Freedom",
+      "description": "The ideal status for Digital Nomads. A sustainable solution to live in Thailand without the constraints of tourist visas.",
+      "item1": "Remote Work Authorized",
+      "item2": "Tax Friendly",
+      "item3": "Family Life Possible",
+      "card_title": "Ideal Candidates",
+      "card_item1": "Remote Employees",
+      "card_item2": "Web Entrepreneurs",
+      "card_item3": "Active Retirees",
+      "card_item4": "Muay Thai Enthusiasts"
     },
     "meta": {
-      "title": "Thailand DTV Visa (Destination Thailand Visa) | Siam Visa Pro Expertise",
-      "description": "Live and work in Thailand for 5 years with the DTV visa. We optimize your Portfolio and ensure your eligibility."
+      "title": "Thailand DTV Visa 2026: Guide, Cost & Requirements | SiamVisaPro",
+      "description": "Complete guide to the Destination Thailand Visa (DTV). 5-year validity, legal work. 2026 conditions, cost, and expert portfolio assistance."
     }
   },
   "elite_page": {
@@ -701,30 +792,151 @@ export const en = {
   "faq_page": {
     "title": "Frequently Asked Questions",
     "subtitle": "Everything you need to know before you go.",
-    "questions": [
+    "sections": [
       {
-        "q": "What is the difference between DTV and Tourist Visa?",
-        "a": "The Tourist Visa (TR) is valid for 60 days (+30 days extension). The DTV Visa is valid for 5 years, allows 180-day stays (+180 days extension) and legally authorizes remote work."
+        "title": "Understanding Thai Visas",
+        "questions": [
+          {
+            "q": "Do I need a visa to go to Thailand?",
+            "a": "It depends on your nationality and the length of your stay. Many travelers can enter Thailand without a prior visa thanks to a visa exemption, for a limited tourist stay. Beyond this duration, or for certain purposes (long stay, remote work, retirement), a visa is mandatory."
+          },
+          {
+            "q": "What is the difference between visa exemption and tourist visa?",
+            "a": "Exemption allows entry without prior application, but with a shorter duration and less flexibility. The tourist visa requires an application before departure, but allows a longer stay and possible extension. Neither authorizes work."
+          },
+          {
+            "q": "Which visa to choose to stay more than 90 days in Thailand?",
+            "a": "For stays over 90 days, you should opt for a long-stay visa like the DTV (5 years), LTR (10 years), or Retirement visa (Non-O). Tourist visas are limited to a maximum of 90 days (60+30)."
+          },
+          {
+            "q": "Can I enter Thailand without a visa and extend on site?",
+            "a": "Yes, a visa exemption (usually 60 days now for many countries) can be extended once for 30 days at a local immigration office."
+          },
+          {
+            "q": "Can I change visa type once in Thailand?",
+            "a": "In some cases, yes (e.g., Tourist to Retirement), but it is neither automatic nor guaranteed. Some conversions like to a DTV visa often require a new application from outside the country."
+          },
+          {
+            "q": "What is the maximum legal stay duration in Thailand?",
+            "a": "With an Elite or LTR visa, up to 20 years. With a DTV, it's 180 days per entry (extendable). With a tourist visa, it's 90 days maximum."
+          },
+          {
+            "q": "How many times can I enter Thailand per year?",
+            "a": "There is no strict written limit, but immigration monitors repeated entries (Visa Runs). With a Multi-Entry visa (DTV, Elite), entries are unlimited."
+          },
+          {
+            "q": "Do visa rules change often in Thailand?",
+            "a": "Yes, regulations evolve. It is crucial to refer to official sources or updated experts. Our knowledge base is updated for 2026."
+          }
+        ]
       },
       {
-        "q": "Can I work on a Tourist Visa?",
-        "a": "No. Work is strictly forbidden on a tourist visa. This is the major advantage of the DTV Visa which legalizes your Digital Nomad status."
+        "title": "Work, Activity & Remote Work",
+        "questions": [
+          {
+            "q": "Can I work in Thailand with a tourist visa?",
+            "a": "No. The tourist visa does not authorize any professional activity in Thailand, including paid remote work. Working with a tourist visa exposes you to penalties (fines, deportation)."
+          },
+          {
+            "q": "Is remote work allowed in Thailand?",
+            "a": "Yes, only with certain adapted visas, like the DTV or LTR. Remote work must be performed for a foreign entity, without competing local activity."
+          },
+          {
+            "q": "What is the difference between local work and remote work?",
+            "a": "Local work involves a Thai employer and strictly requires a Work Permit. Remote work (for a foreign client/employer) is tolerated under the DTV visa without a Work Permit."
+          },
+          {
+            "q": "Do I need a work permit to work remotely from Thailand?",
+            "a": "Not with the DTV visa (for remote work). For any other visa (Non-B), a Work Permit is strictly mandatory."
+          },
+          {
+            "q": "Can I start a business in Thailand with a visa?",
+            "a": "You can be a shareholder, but to actively work there or be a signing director, you need a Non-B visa and a Work Permit."
+          },
+          {
+            "q": "Which visas allow working legally in Thailand?",
+            "a": "The Non-B visa (with Work Permit), LTR visa (Digital Work Permit included), DTV visa (remote work only), and Elite visa (if coupled with a rare work option, otherwise no)."
+          },
+          {
+            "q": "Working without a suitable visa: what are the risks?",
+            "a": "Fines, imprisonment, deportation, and blacklisting banning return to Thailand for several years."
+          }
+        ]
       },
       {
-        "q": "How long does it take to get the visa?",
-        "a": "Processing times vary by embassy. Generally: 3 to 10 business days for a tourist visa, and 5 to 15 business days for a DTV (as the file is more complex to verify)."
+        "title": "Duration, Extensions & Exits",
+        "questions": [
+          {
+            "q": "Can I extend a visa in Thailand?",
+            "a": "Yes, depending on the visa type. Tourist visa and exemption can be extended by 30 days. DTV can be extended by 180 days (once per entry)."
+          },
+          {
+            "q": "How many times can I extend a visa?",
+            "a": "Generally only once per entry. To stay longer, you often need to leave the country and re-enter (if the visa allows) or change visas."
+          },
+          {
+            "q": "Do I need to leave the country to renew a visa?",
+            "a": "For multi-entry visas (DTV, Elite), you must leave at the end of your authorized stay period (e.g., 180 days) to 'activate' a new entry. For single-entry visas, you must re-apply."
+          },
+          {
+            "q": "What is a re-entry permit and when is it necessary?",
+            "a": "It is permission to re-enter without losing your current visa. Necessary if you have a single-entry visa but need to travel outside Thailand temporarily."
+          },
+          {
+            "q": "Can I stay in Thailand for several years legally?",
+            "a": "Yes, but only with specific long-term visas (Retirement, DTV, LTR, Elite). Consecutive tourist visas are not a viable long-term solution."
+          },
+          {
+            "q": "What is the difference between single and multiple entry visas?",
+            "a": "Single: once you leave the country, the visa is finished. Multiple: you can enter and exit as many times as you want during the visa's validity."
+          }
+        ]
       },
       {
-        "q": "Does the money (500,000 THB) need to be blocked?",
-        "a": "For the DTV, money does not need to be blocked, but it must be visible on your bank statement at the time of application. You must show you have the funds."
+        "title": "Frequent Errors & Risks",
+        "questions": [
+          {
+            "q": "What happens in case of overstay in Thailand?",
+            "a": "Overstaying results in a fine of 500 THB/day (max 20,000 THB). Long overstay (>90 days) results in a ban from the territory (Blacklist)."
+          },
+          {
+            "q": "What are the risks of working with the wrong visa?",
+            "a": "It is a violation of immigration and labor laws. Risk of arrest and deportation."
+          },
+          {
+            "q": "Can a visa be refused without explanation?",
+            "a": "Yes. Consular authorities are not required to justify their decisions. A poorly prepared file is the most common cause."
+          },
+          {
+            "q": "What to do in case of Thai visa refusal?",
+            "a": "Analyze the cause (often financial or documentary) and submit a corrected new application. Fees are not refunded."
+          },
+          {
+            "q": "Can I be banned from Thailand?",
+            "a": "Yes, in case of significant Overstay or illegal work."
+          },
+          {
+            "q": "Are visa runs still allowed?",
+            "a": "They are no longer a reliable solution. Immigration monitors profiles that chain land or air entries/exits without an appropriate visa."
+          }
+        ]
       },
       {
-        "q": "What happens if my visa is refused?",
-        "a": "The embassy never refunds visa fees. That's why we recommend our Audit or Serenity Pack to check your file BEFORE payment to the embassy."
-      },
-      {
-        "q": "Can you guarantee visa approval?",
-        "a": "No agency can guarantee 100% the decision of a consular officer (it is illegal to claim so). However, we guarantee your file strictly respects the criteria, which maximizes your chances (99% success)."
+        "title": "Specific Profiles",
+        "questions": [
+          {
+            "q": "Which visa to live in Thailand after 50?",
+            "a": "The Retirement visa (Non-O or O-A) is most suitable if you do not work. The LTR 'Wealthy Pensioner' is a VIP option."
+          },
+          {
+            "q": "Which visa to live in Thailand without working?",
+            "a": "Elite Visa (paid, VIP), Retirement Visa (50+), or DTV (if you have passive income or soft power activity, to be confirmed)."
+          },
+          {
+            "q": "Which visa to stay long in Thailand without leaving the country?",
+            "a": "The Elite visa or Retirement visa (with annual extensions on site) are best to avoid mandatory exits."
+          }
+        ]
       }
     ],
     "not_found_title": "Can't find your answer?",

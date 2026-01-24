@@ -34,10 +34,10 @@ export const SearchAI: React.FC<SearchAIProps> = ({
     };
 
     return (
-        <div className="w-full max-w-4xl mx-auto -mt-72 relative z-20 px-4">
-            <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-slate-100">
-                <form onSubmit={handleSubmit} className="relative flex items-center mb-6">
-                    <div className="absolute left-4 text-slate-400">
+        <div className="w-full max-w-5xl mx-auto relative z-20 px-4">
+            <div className="bg-white rounded-[2rem] shadow-2xl shadow-slate-200/60 p-6 md:p-10 border border-slate-100">
+                <form onSubmit={handleSubmit} className="relative flex items-center mb-8">
+                    <div className="absolute left-6 text-slate-400">
                         <Search className="w-6 h-6" />
                     </div>
                     <input
@@ -46,18 +46,18 @@ export const SearchAI: React.FC<SearchAIProps> = ({
                         onChange={(e) => setQuery(e.target.value)}
                         onKeyDown={handleKeyDown}
                         placeholder={placeholder}
-                        className="w-full py-5 pl-14 pr-32 rounded-xl text-lg bg-slate-50 border border-slate-200 focus:bg-white focus:outline-none focus:ring-4 focus:ring-amber-500/20 focus:border-amber-500 transition-all font-medium text-slate-800 placeholder:text-slate-400"
+                        className="w-full py-6 pl-16 pr-40 rounded-2xl text-xl bg-slate-50 border border-slate-200 focus:bg-white focus:outline-none focus:ring-8 focus:ring-indigo-500/5 focus:border-indigo-500 transition-all font-semibold text-slate-800 placeholder:text-slate-400"
                     />
                     <button
                         type="submit"
                         disabled={isAiLoading || !query.trim()}
-                        className="absolute right-2 top-2 bottom-2 bg-slate-900 text-white px-6 rounded-lg font-bold hover:bg-slate-800 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
+                        className="absolute right-3 top-3 bottom-3 bg-slate-900 text-white px-8 rounded-xl font-black hover:bg-slate-800 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 shadow-lg shadow-slate-900/20 active:scale-95"
                     >
                         {isAiLoading ? (
                             <Loader2 className="w-5 h-5 animate-spin" />
                         ) : (
                             <>
-                                <span className="hidden md:inline mr-2">{buttonLabel}</span>
+                                <span className="hidden md:inline uppercase tracking-wider text-xs">{buttonLabel}</span>
                                 <Sparkles className="w-5 h-5 text-amber-400" />
                             </>
                         )}

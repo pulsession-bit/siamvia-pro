@@ -7,8 +7,10 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useVisaSearch } from './hooks/useVisaSearch';
 import { SearchHero } from './components/SearchHero';
 import { SearchAI } from './components/SearchAI';
+import { VisaComparatorTable } from './components/VisaComparatorTable';
 import { CategoryFilters } from './components/CategoryFilters';
 import { VisaCard } from './components/VisaCard';
+import { VisaComparatorGuide } from './components/VisaComparatorGuide';
 
 // Chargement dynamique des composants lourds
 const ExpertAppointmentForm = dynamic(() => import('@/components/ExpertAppointmentForm'), {
@@ -51,61 +53,82 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
 
     return (
         <div className="min-h-screen flex flex-col bg-slate-50">
-            {/* 1. Hero Area */}
+            {/* 1. Hero Area = Comparator */}
             <SearchHero
-                title={globalT('search_page.title')}
-                subtitle={localT.subtitle}
-            />
-
-            {/* 1.5 AI Search Bar */}
-            <SearchAI
-                onSearch={handleAiSearch}
-                placeholder={localT.searchPlaceholder}
-                buttonLabel={localT.aiHelper}
-                aiResponse={aiResponse}
-                isAiLoading={isAiLoading}
-                suggestions={localT.suggestions}
-                title={localT.aiTitle}
-            />
-
-            {/* 2. Category Filters */}
-            <div className="pt-24 bg-slate-50">
-                <CategoryFilters
-                    allVisasLabel={localT.allVisas}
-                    categories={localT.categories}
-                    activeCategory={activeCategory}
-                    setActiveCategory={setActiveCategory}
+                title={localT.title}
+                subtitle={localT.hero_subtitle}
+                subtext={localT.hero_subtext}
+                ctaLabel={localT.ai_cta}
+                onCtaClick={() => document.getElementById('ai-section')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+                <VisaComparatorTable
+                    tableI18n={localT.comparator_guide.table}
+                    compact={true}
                 />
+            </SearchHero>
+
+            {/* 2. Exploration Visuelle (Grid) */}
+            <div className="bg-white py-20 border-y border-slate-100">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="flex items-center justify-between mb-12">
+                        <h2 className="text-2xl font-black text-slate-900 uppercase tracking-tight">Exploration par catégorie</h2>
+                        <CategoryFilters
+                            allVisasLabel={localT.allVisas}
+                            categories={localT.categories}
+                            activeCategory={activeCategory}
+                            setActiveCategory={setActiveCategory}
+                        />
+                    </div>
+
+                    <main id="visa-grid" className="w-full">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                            {filteredVisas.map((visa) => (
+                                <VisaCard
+                                    key={visa.id}
+                                    visa={visa}
+                                    lang={lang}
+                                    detailsLabel={localT.details}
+                                    expertPickLabel={localT.expertPick}
+                                    alternativeLabel={localT.alternative}
+                                    costLabel={localT.cost}
+                                    durations={localT.durations}
+                                    prices={localT.prices}
+                                    isRecommended={recommendedVisaId === visa.id}
+                                    isAlternative={alternativeVisaIds.includes(visa.id)}
+                                    onClick={() => setSelectedVisa(visa)}
+                                />
+                            ))}
+                        </div>
+
+                        {filteredVisas.length === 0 && (
+                            <div className="text-center py-20">
+                                <Search size={48} className="mx-auto text-gray-200 mb-4" />
+                                <p className="text-gray-400 font-medium">No visas found for your criteria.</p>
+                            </div>
+                        )}
+                    </main>
+                </div>
             </div>
 
-            {/* 3. Visa Grid */}
-            <main id="visa-grid" className="flex-1 max-w-7xl mx-auto px-4 py-16 w-full">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                    {filteredVisas.map((visa) => (
-                        <VisaCard
-                            key={visa.id}
-                            visa={visa}
-                            lang={lang}
-                            detailsLabel={localT.details}
-                            expertPickLabel={localT.expertPick}
-                            alternativeLabel={localT.alternative}
-                            costLabel={localT.cost}
-                            durations={localT.durations}
-                            prices={localT.prices}
-                            isRecommended={recommendedVisaId === visa.id}
-                            isAlternative={alternativeVisaIds.includes(visa.id)}
-                            onClick={() => setSelectedVisa(visa)}
-                        />
-                    ))}
+            {/* 3. Aide Contextuelle (IA) */}
+            <section id="ai-section" className="py-24 bg-slate-50">
+                <div className="max-w-4xl mx-auto px-4 text-center mb-12">
+                    <h2 className="text-3xl font-black text-slate-900 mb-4 uppercase tracking-tight">Une question spécifique ?</h2>
+                    <p className="text-slate-500 font-medium">Notre intelligence artificielle vous aide à affiner votre choix en quelques secondes.</p>
                 </div>
+                <SearchAI
+                    onSearch={handleAiSearch}
+                    placeholder={localT.searchPlaceholder}
+                    buttonLabel={localT.aiHelper}
+                    aiResponse={aiResponse}
+                    isAiLoading={isAiLoading}
+                    suggestions={localT.suggestions}
+                    title={localT.aiTitle}
+                />
+            </section>
 
-                {filteredVisas.length === 0 && (
-                    <div className="text-center py-20">
-                        <Search size={48} className="mx-auto text-gray-200 mb-4" />
-                        <p className="text-gray-400 font-medium">No visas found for your criteria.</p>
-                    </div>
-                )}
-            </main>
+            {/* 4. FAQ & Conseils SEO */}
+            <VisaComparatorGuide i18n={localT.comparator_guide} />
 
             {/* 4. Detail Modal */}
             {selectedVisa && (

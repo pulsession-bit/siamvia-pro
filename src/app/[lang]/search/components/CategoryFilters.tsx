@@ -15,28 +15,33 @@ export const CategoryFilters: React.FC<CategoryFiltersProps> = ({
     setActiveCategory
 }) => {
     return (
-        <section className="bg-white border-b">
-            <div className="max-w-7xl mx-auto px-4 py-6 flex flex-wrap items-center justify-center gap-3">
-                <button
-                    onClick={() => setActiveCategory(null)}
-                    className={`px-6 py-2 rounded-full text-sm font-bold transition-all ${activeCategory === null ? 'bg-amber-500 text-white shadow-md' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
-                >
-                    {allVisasLabel}
-                </button>
-                {Object.entries(categories).map(([key, label]) => {
-                    const Icon = CATEGORY_ICONS[key];
-                    return (
-                        <button
-                            key={key}
-                            onClick={() => setActiveCategory(key)}
-                            className={`px-6 py-2 rounded-full text-sm font-bold flex items-center gap-2 transition-all ${activeCategory === key ? 'bg-amber-500 text-white shadow-md' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
-                        >
-                            {Icon && <Icon size={16} />}
-                            {label}
-                        </button>
-                    );
-                })}
-            </div>
-        </section>
+        <div className="flex flex-wrap items-center gap-3">
+            <button
+                onClick={() => setActiveCategory(null)}
+                className={`px-6 py-2.5 rounded-full text-[11px] font-black tracking-[0.15em] uppercase transition-all duration-300 border ${activeCategory === null
+                        ? 'bg-slate-900 border-slate-900 text-white shadow-xl shadow-slate-900/10 scale-105'
+                        : 'bg-white border-slate-200 text-slate-500 hover:border-slate-300 hover:text-slate-900'
+                    }`}
+            >
+                {allVisasLabel}
+            </button>
+            {Object.entries(categories).map(([key, label]) => {
+                const Icon = CATEGORY_ICONS[key];
+                return (
+                    <button
+                        key={key}
+                        onClick={() => setActiveCategory(key)}
+                        className={`px-6 py-2.5 rounded-full text-[11px] font-black tracking-[0.15em] uppercase flex items-center gap-2.5 transition-all duration-300 border ${activeCategory === key
+                                ? 'bg-slate-900 border-slate-900 text-white shadow-xl shadow-slate-900/10 scale-105'
+                                : 'bg-white border-slate-200 text-slate-500 hover:border-slate-300 hover:text-slate-900'
+                            }`}
+                    >
+                        {Icon && <Icon size={14} className={activeCategory === key ? 'text-white' : 'text-slate-400'} />}
+                        {label}
+                    </button>
+                );
+            })}
+        </div>
     );
+
 };

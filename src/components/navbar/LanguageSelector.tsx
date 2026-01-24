@@ -28,7 +28,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ currentLang,
                 <span>{currentLang.toUpperCase()}</span>
             </button>
 
-            <div className="absolute right-0 top-full pt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right z-50">
+            <div className="absolute right-0 top-[calc(100%-5px)] pt-4 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right z-50">
                 <div className="bg-white rounded-xl shadow-xl py-2 border border-slate-100">
                     {languages.map(lang => (
                         <button
