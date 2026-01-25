@@ -31,7 +31,8 @@ export function middleware(req: NextRequest) {
         pathname.startsWith("/robots.txt") ||
         pathname.startsWith("/sitemap.xml") ||
         pathname.startsWith("/favicon.ico") ||
-        pathname.match(/\.(?:png|jpg|jpeg|gif|webp|svg|ico|css|js|map|txt|xml|woff2?)$/)
+        pathname.includes("/@") || // Exclude Next.js/Vite dev assets
+        pathname.match(/\.(?:png|jpg|jpeg|gif|webp|svg|ico|css|js|map|txt|xml|woff2?|tsx|jsx|ts)$/)
     ) {
         return NextResponse.next();
     }

@@ -90,6 +90,7 @@ export default async function LangLayout({ children, params }: Props) {
                 </LanguageProvider>
                 <Analytics />
                 {/* <SpeedInsights /> */}
+                <Script src="//code.tidio.co/uqia2uffujyfrwmdhfzniodpqgvgy73b.js" strategy="lazyOnload" />
             </body>
         </html>
     );

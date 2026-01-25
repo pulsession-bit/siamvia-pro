@@ -120,7 +120,7 @@ const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
       <div className="pt-4">
         <button
           type="submit"
-          disabled={state.isSubmitting || !state.isAuthReady}
+          disabled={state.isSubmitting}
           className="w-full bg-slate-900 text-white py-6 rounded-3xl font-black text-xl shadow-2xl shadow-slate-900/30 hover:bg-slate-800 transition-all flex items-center justify-center disabled:opacity-50 active:scale-95 group"
         >
           {state.isSubmitting ? (
