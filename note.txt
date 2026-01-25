@@ -1,1224 +1,962 @@
-Analyse factuelle de la page existante
-👉 https://www.siamvisapro.com/fr/questions-frequentes
+Cahier des charges global — Moteur de blog SiamVisaPro (V1→V3)
+1) Objectif produit
 
-dans la logique que tu as définie (page complémentaire, base de connaissance).
+Publier des articles multilingues (FR/EN/TH), SEO-first, avec maillage interne automatique, et édition assistée IA (génération/structuration/traduction) sous contraintes.
 
-1) Diagnostic clair
-Ce que la page fait bien
+Garantir : vitesse, cohérence, auditabilité, absence de bruit.
 
-URL propre, explicite
+2) Périmètre V1
 
-Intention correcte (FAQ / information)
+Blog + catégories + tags + auteurs
 
-Complémentaire des pages visa → bon réflexe
+Articles en blocs (intro/sections/table/FAQ/CTA)
 
-Pas de sur-vente
+Multilangue natif (hreflang, canonical, fallback)
 
-Ce qui bloque aujourd’hui
+Maillage interne assisté (règles + scoring)
 
-👉 Ce n’est pas encore une base de connaissance, c’est une FAQ classique.
+Images SEO (WebP/AVIF, alt, filename, LCP)
 
-Problèmes précis :
+Publication (draft → review → publish) + preview
 
-Trop peu de questions (thin content SEO)
+Sitemap, robots, JSON-LD (Article/FAQ/Breadcrumb/Organization)
 
-Questions encore trop génériques
+Logs d’indexation + 404/410 + redirects
 
-Pas de structure par intention
+3) Non-objectifs V1
 
-Pas de signal EEAT fort (mise à jour, périmètre, responsabilité)
+Marketplace, commentaires, forum
 
-Valeur IA encore faible (pas “queryable” finement)
+Traduction “parfaite” automatique sans relecture
 
-2) Positionnement SEO actuel
+Génération de faits non sourcés
 
-Aujourd’hui Google comprend :
+4) Rôles & permissions
 
-“Page FAQ du site”
+Admin: configuration globale, taxonomies, règles SEO, règles maillage
 
-Il ne comprend pas encore :
+Editor: création/édition, validation, publication
 
-“Source d’autorité sur les règles de visa Thaïlande”
+Author: rédaction, soumission
 
-👉 Il manque densité + structure, pas du marketing.
+Viewer: lecture publique
 
-3) Ce qu’il faut faire (sans tout casser)
-❌ À ne pas faire
+RBAC + audit trail (qui a modifié quoi, quand)
 
-Ne pas supprimer la page
+5) Modèle de données canonique
 
-Ne pas la surcharger
+Article (langue-agnostique) : id, status, canonical_locale, clusters, entities, intent, stage, sources, timestamps
 
-Ne pas la transformer en page par visa
+ArticleLocale : locale, seo{title,desc,slug}, blocks[], internal_links_plan, og, schema overrides
 
-Ne pas répondre 15 fois à la même chose
+Media : variants, width/height, mime, hash, focal point, alt par locale
 
-✅ À faire
+Redirects : from → to, type (301/308), locale scope
 
-Élever la page au rang de socle de connaissance.
+Taxonomy : clusters (piliers), catégories, tags, glossaire
 
-4) Structure cible recommandée (simple)
-H1 (ok)
+6) Format “Blocks” (contrat)
 
-Questions fréquentes – Visa Thaïlande
+Types minimum :
 
-Ajouter immédiatement
-H2 – Comprendre les visas en Thaïlande
+intro, section(h2,h3,content), table(data), faq(items), cta, callout, toc, image(ref,caption)
+Règles :
 
-(questions transverses, evergreen)
+1 idée / bloc, paragraphs courts, headings stricts, pas de duplication.
 
-Exemples :
+7) Workflow éditorial
 
-Puis-je travailler en Thaïlande avec un visa ?
+Create Draft (Article + ArticleLocale canonical)
 
-Quelle est la différence entre exemption et visa ?
+IA optionnelle : outline → blocs → FAQ → table → titres SEO
 
-Peut-on rester plus de 90 jours ?
+Review (humain) + checklist automatique (structure/SEO/liens)
 
-Peut-on changer de visa sur place ?
+Localisation : génération ArticleLocale (EN/TH) “structure-preserving”
 
-H2 – Erreurs et situations à risque
+Preview (URLs stables)
 
-(très fort SEO)
+Publish (atomic) + invalidation cache + sitemap ping
 
-Que risque-t-on en travaillant avec un visa touristique ?
+Post-publish : monitoring indexation + corrections + versioning
 
-Overstay : que se passe-t-il ?
+8) IA : fonctions autorisées (contrôlées)
 
-Visa refusé : que faire ?
+Outline/structuration (à partir du sujet + sources)
 
-H2 – Durée, extensions, sorties
+Réécriture (clarification, compression, neutralité)
 
-Combien de fois peut-on prolonger ?
+Localisation (traduction + SEO title/desc adaptés)
 
-Faut-il sortir du pays ?
+InternalLinkPlan (propositions + raisons)
+Interdits :
 
-Re-entry permit : quand est-ce obligatoire ?
+inventer des règles/dates/prix ; si source absente → “inconnu” + TODO.
 
-👉 Pas par visa, par logique utilisateur.
+9) Maillage interne (dans le moteur)
 
-5) Volume cible (réaliste)
+Taxonomie canonique : cluster, stage (discover/compare/apply), intent
 
-25–40 questions au total (pas plus au début)
+Règles par article :
 
-Réponses courtes, claires, non juridiques
+2 liens cluster
 
-Mise à jour visible : “Dernière mise à jour : 2026”
+1 lien “next step”
 
-C’est largement suffisant pour :
+1 lien glossaire
 
-SEO
+quota max : 6 liens / 1000 mots
 
-IA
+ancres non répétées, diversité contextuelle
 
-Autorité
+Score candidat : 0.45 cluster + 0.35 stage_next + 0.15 popular + 0.05 freshness
 
-6) Lien avec tes pages visa (important)
+Résolution multilangue : lien par to_article_id, slug résolu dans la langue courante, fallback si manquant.
 
-Règle stricte :
+10) SEO technique (exigences)
 
-La FAQ explique
+SSR/SSG (HTML indexable), hydration minimale
 
-Les pages visa appliquent
+hreflang complet + x-default si stratégie choisie
 
-Exemple :
+canonical par langue, pas de chaînes de redirect
 
-FAQ : “Puis-je travailler en Thaïlande ?”
+sitemap.xml index + sitemaps par type/langue
 
-Page DTV : “Ce visa autorise le télétravail”
+JSON-LD : Article + FAQ + Breadcrumb + Organization
 
-👉 jamais l’inverse.
+OpenGraph/Twitter Cards
 
-7) Conclusion nette
+404 propres + 410 pour suppressions (option)
 
-Ta page est bien placée
+Pagination SEO (blog listing), canonical page 1, noindex si besoin
 
-Elle est sous-exploité, pas mauvaise
+11) Images & performance
 
-Il ne faut pas la repenser, il faut la densifier intelligemment
+Pipeline image : upload → variants (webp/avif) → cache CDN → headers immuables
 
-Elle deviendra ton socle EEAT + IA
+LCP : hero optimisé (preload, sizes, width/height)
 
-Si tu veux, prochaine action possible (au choix) :
+Cache-control : immutable pour assets, revalidate pour HTML
 
-liste exacte de 30 questions prioritaires
+Objectifs perf : CWV “green” (LCP/INP/CLS)
 
-structure Firestore alignée avec cette page
+12) Observabilité & analytics
 
-texte H2 + 5 questions prêtes à intégrer
+GA4 + events : view_article, click_internal_link, scroll_depth, faq_expand
 
-logique IA “question → FAQ → visa”
+Search Console : couverture, erreurs, perfs par locale
 
-Dis-moi le numéro.
+Logs applicatifs : publish, invalidate, image transform, errors
 
-oui les 30 question 
+Dashboard “content health” : indexation, 404, orphan pages, thin content
 
-Voici 30 questions prioritaires, structurées pour faire de ta page
-/questions-frequentes une vraie base de connaissance SEO + IA.
-Aucune par visa. Uniquement par intention utilisateur.
+13) Sécurité & conformité
 
-A. Comprendre les visas en Thaïlande (fondamentales)
+Admin routes protégées, CSRF, rate-limit
 
-Faut-il un visa pour aller en Thaïlande ?
+Validation stricte inputs (blocks JSON)
 
-Quelle est la différence entre exemption de visa et visa touristique ?
+Stockage médias sécurisé, signature URLs si privé
 
-Quel visa choisir pour rester plus de 90 jours en Thaïlande ?
+Audit trail immutable (minimum : qui/quand/quoi)
 
-Peut-on entrer en Thaïlande sans visa et prolonger sur place ?
+14) Backups & rollback
 
-Peut-on changer de type de visa une fois en Thaïlande ?
+Export quotidien (DB + config) + snapshots
 
-Quelle est la durée maximale de séjour légal en Thaïlande ?
+Versioning d’article : draft revisions + rollback publish
 
-Combien de fois peut-on entrer en Thaïlande par an ?
+Redirection manager pour changements de slug
 
-Les règles de visa changent-elles souvent en Thaïlande ?
+15) Livrables
 
-B. Travail, activité, télétravail (très fort SEO)
+SCHEMA.json (Article/ArticleLocale/Media/InternalLinkPlan)
 
-Peut-on travailler en Thaïlande avec un visa touristique ?
+Spéc API (CRUD + publish + preview + media)
 
-Le télétravail est-il autorisé en Thaïlande ?
+Règles SEO & maillage (config)
 
-Quelle est la différence entre travail local et travail à distance ?
+Checklist QA (pré-publish)
 
-Faut-il un permis de travail pour travailler depuis la Thaïlande ?
+Plan de tests (unit + e2e + SEO crawl)
 
-Peut-on créer une entreprise en Thaïlande avec un visa ?
+Si tu veux, je peux maintenant générer SCHEMA.json V1 complet + les endpoints (REST) en 1 seul bloc prêt à coder.
 
-Quels visas permettent de travailler légalement en Thaïlande ?
-
-Travailler sans visa adapté : quels sont les risques ?
-
-C. Durée, extensions, sorties du territoire
-
-Peut-on prolonger un visa en Thaïlande ?
-
-Combien de fois peut-on prolonger un visa ?
-
-Faut-il sortir du pays pour renouveler un visa ?
-
-Qu’est-ce qu’un re-entry permit et quand est-il nécessaire ?
-
-Peut-on rester en Thaïlande plusieurs années légalement ?
-
-Quelle est la différence entre visa à entrée simple et multiple ?
-
-D. Erreurs fréquentes et situations à risque (autorité EEAT)
-
-Que se passe-t-il en cas d’overstay en Thaïlande ?
-
-Que risque-t-on en travaillant avec un mauvais visa ?
-
-Un visa peut-il être refusé sans explication ?
-
-Que faire en cas de refus de visa thaïlandais ?
-
-Peut-on être interdit de territoire en Thaïlande ?
-
-Les visa runs sont-ils encore autorisés ?
-
-E. Profils spécifiques (longue traîne)
-
-Quel visa pour vivre en Thaïlande après 50 ans ?
-
-Quel visa pour vivre en Thaïlande sans travailler ?
-
-Quel visa pour rester longtemps en Thaïlande sans sortir du pays ?
-
-Règles d’utilisation (important)
-
-Ces 30 questions = socle canonique
-
-Réponses courtes, factuelles, mises à jour
-
-Injectées dynamiquement dans les pages visa (8–10 max)
-
-JSON-LD FAQ uniquement sur /questions-frequentes
-
-Si tu veux, prochaine étape possible :
-
-réponses prêtes à publier (format Firestore)
-
-mapping exact question → pages visa
-
-scoring priorité SEO
-
-prompt IA pour créer les réponses sans dérive
-
-Dis-moi.
-
-2  
-
-Voici le mapping exact “question → pages visa”, conçu pour :
-
-éviter la duplication,
-
-renforcer l’autorité,
-
-guider Google et l’utilisateur.
-
-Principe (à ne pas casser)
-
-La FAQ répond
-
-Les pages visa appliquent
-
-Une question peut pointer vers plusieurs visas
-
-Une page visa ne possède jamais la réponse canonique
-
-Mapping des 30 questions
-A. Comprendre les visas (général)
-
-Faut-il un visa pour aller en Thaïlande ?
-→ TR, Exemption
-
-Différence exemption / visa touristique ?
-→ TR
-
-Visa pour rester plus de 90 jours ?
-→ TR, DTV, LTR, Retraite
-
-Entrer sans visa et prolonger ?
-→ TR
-
-Changer de visa sur place ?
-→ TR, DTV, LTR
-
-Durée maximale légale en Thaïlande ?
-→ TR, DTV, LTR, Retraite
-
-Nombre d’entrées par an ?
-→ TR, Exemption
-
-Les règles changent-elles souvent ?
-→ TR, DTV (page informationnelle)
-
-B. Travail & télétravail
-
-Travailler avec un visa touristique ?
-→ TR (interdiction)
-
-Télétravail autorisé en Thaïlande ?
-→ DTV, LTR
-
-Travail local vs distance ?
-→ DTV, LTR
-
-Permis de travail nécessaire ?
-→ DTV, LTR, Business
-
-Créer une entreprise en Thaïlande ?
-→ Business, LTR
-
-Visas autorisant le travail ?
-→ DTV, LTR, Business
-
-Risques travail sans visa adapté ?
-→ TR, DTV (comparatif)
-
-C. Durée, extensions, sorties
-
-Prolonger un visa ?
-→ TR, DTV
-
-Combien de prolongations ?
-→ TR, DTV
-
-Faut-il sortir du pays ?
-→ TR, DTV
-
-Re-entry permit : quand ?
-→ DTV, LTR, Retraite
-
-Rester plusieurs années légalement ?
-→ DTV, LTR, Retraite
-
-Entrée simple vs multiple ?
-→ TR, DTV
-
-D. Erreurs & risques
-
-Overstay : que se passe-t-il ?
-→ TR, Exemption (risque général)
-
-Travailler avec mauvais visa ?
-→ TR
-
-Visa refusé sans explication ?
-→ TR, DTV, LTR
-
-Que faire après un refus ?
-→ TR, DTV
-
-Interdiction de territoire possible ?
-→ TR, Exemption
-
-Visa runs encore autorisés ?
-→ TR
-
-E. Profils spécifiques
-
-Visa après 50 ans ?
-→ Retraite, LTR
-
-Vivre sans travailler ?
-→ Retraite, DTV
-
-Long séjour sans sortir ?
-→ LTR, Retraite
-
-Implémentation simple (clé)
-
-Dans chaque FAQ :
-
-"related_pages": [
-  "/fr/visa-dtv-thailande",
-  "/fr/visa-touristique-thailande"
-]
-
-
-Dans chaque page visa :
-
-requête FAQ par related_pages CONTAINS current_page
-
-tri par popularity_score
-
-limite 8–10
-
-Résultat
-
-Google comprend la hiérarchie
-
-Zéro cannibalisation
-
-IA fiable
-
-UX fluide
-
-Maintenance minimale
-
-Si tu veux, prochaine étape :
-
-réponses canoniques courtes (150–200 mots)
-
-scoring SEO pour prioriser la rédaction
-
-prompt IA de rédaction contrôlée
-
-Dis-moi.
-
-oui 1 3
-
-Voici (1) les réponses canoniques courtes ET (3) le scoring de priorité SEO, prêts à intégrer.
-Format base de connaissance. Pas marketing. Pas redondant.
-
-(1) Réponses canoniques – version courte (150–200 mots max)
-1. Faut-il un visa pour aller en Thaïlande ?
-
-Cela dépend de la nationalité et de la durée du séjour.
-De nombreux voyageurs peuvent entrer en Thaïlande sans visa préalable grâce à une exemption, pour un séjour touristique limité.
-Au-delà de cette durée, ou pour certains usages (séjour long, télétravail, retraite), un visa est obligatoire.
-Les règles varient selon l’année, le profil et l’objectif du séjour.
-
-2. Quelle est la différence entre exemption de visa et visa touristique ?
-
-L’exemption permet une entrée sans demande préalable, mais avec une durée plus courte et peu de flexibilité.
-Le visa touristique nécessite une demande avant le départ, mais autorise un séjour plus long et une prolongation possible.
-Aucun des deux n’autorise le travail.
-
-3. Peut-on travailler en Thaïlande avec un visa touristique ?
-
-Non.
-Le visa touristique n’autorise aucune activité professionnelle, y compris le télétravail rémunéré.
-Travailler avec un visa touristique expose à des sanctions (amende, expulsion, refus futur).
-
-4. Le télétravail est-il autorisé en Thaïlande ?
-
-Oui, uniquement avec certains visas adaptés, comme le DTV ou certains visas long séjour.
-Le télétravail doit être exercé pour une entité étrangère, sans activité locale.
-
-5. Peut-on prolonger un visa en Thaïlande ?
-
-Oui, selon le type de visa.
-Certaines extensions sont possibles auprès de l’immigration, mais elles ne sont jamais automatiques et dépendent du dossier et du visa détenu.
-
-6. Que se passe-t-il en cas d’overstay en Thaïlande ?
-
-Un dépassement de séjour entraîne des amendes journalières, et peut conduire à une interdiction temporaire ou durable de territoire selon la durée.
-Même un overstay court peut compliquer les demandes futures.
-
-7. Peut-on rester plusieurs années légalement en Thaïlande ?
-
-Oui, mais uniquement avec des visas longue durée spécifiques (retraite, DTV, LTR).
-Les enchaînements de visas touristiques ne sont pas une solution légale à long terme.
-
-8. Les visa runs sont-ils encore autorisés ?
-
-Ils ne sont plus une solution fiable.
-Les autorités thaïlandaises surveillent les entrées répétées et peuvent refuser l’accès même sans infraction formelle.
-
-9. Peut-on changer de type de visa sur place ?
-
-Dans certains cas, oui.
-Mais ce n’est ni automatique ni garanti, et certaines conversions exigent une sortie du territoire.
-
-10. Un visa peut-il être refusé sans explication ?
-
-Oui.
-Les autorités ne sont pas tenues de justifier un refus.
-Un refus n’implique pas nécessairement une interdiction, mais doit être analysé avant toute nouvelle demande.
-
-(3) Scoring de priorité SEO (pour ordonner la rédaction)
-
-Score sur 100 =
-Volume estimé + Intention + Risque + Conversion indirecte
-
-Question	Score	Priorité
-Peut-on travailler en Thaïlande ?	95	🔴 Critique
-Télétravail autorisé en Thaïlande ?	92	🔴 Critique
-Faut-il un visa pour aller en Thaïlande ?	90	🔴 Critique
-Différence exemption / visa touristique	88	🔴 Critique
-Overstay : que se passe-t-il ?	85	🟠 Haute
-Peut-on rester plusieurs années ?	83	🟠 Haute
-Visa runs autorisés ?	82	🟠 Haute
-Prolonger un visa	80	🟠 Haute
-Changer de visa sur place	76	🟡 Moyenne
-Visa refusé sans explication	74	🟡 Moyenne
-
-👉 Top 8 à publier immédiatement
-👉 Les autres en phase 2
-
-
-PROMPT — IA FAQ / BASE DE CONNAISSANCE (CONTRÔLÉ)
-RÔLE
-
-Tu es un rédacteur de base de connaissance réglementaire spécialisé dans les visas et l’immigration.
-Tu ne fais aucune supposition.
-Tu n’interprètes pas la loi.
-Tu expliques l’état des règles connues, avec prudence.
-
-OBJECTIF
-
-Rédiger une réponse canonique FAQ :
-
-claire
-
-courte
-
-factuelle
-
-stable dans le temps
-
-exploitable SEO
-
-réutilisable sur plusieurs pages
-
-INPUT (OBLIGATOIRE)
+oui
 {
-  "question": "",
-  "language": "fr",
-  "year_context": "2026",
-  "audience": "touriste | digital_nomad | expatrié | general",
-  "risk_level": "low | medium | high",
-  "related_visas": [],
-  "intent": "information",
-  "max_words": 180
-}
-
-RÈGLES STRICTES DE RÉDACTION
-Structure imposée
-
-Réponse directe dès la première phrase
-
-Explication factuelle (pas d’exemple personnel)
-
-Limites / conditions claires
-
-Avertissement neutre si risk_level ≠ low
-
-Style
-
-Ton neutre
-
-Pas de marketing
-
-Pas de “nous”
-
-Pas de promesse
-
-Pas de conseil juridique personnalisé
-
-Phrases courtes
-
-Vocabulaire simple
-
-Interdictions absolues
-
-❌ Pas de dates précises non vérifiées
-❌ Pas de chiffres exacts si variables
-❌ Pas de recommandations implicites
-❌ Pas de comparaison commerciale
-❌ Pas d’interprétation fiscale ou légale
-
-LOGIQUE DE CONTRÔLE (OBLIGATOIRE)
-
-Si une information est incertaine → le dire explicitement
-
-Si une règle dépend d’un visa → rester générique
-
-Si risk_level = high → ajouter un paragraphe “Attention”
-
-Ne jamais dire “autorisé” sans condition
-
-SORTIE ATTENDUE (FORMAT STRICT)
-{
-  "answer": "",
-  "risk_warning": "",
-  "confidence_level": "high | medium",
-  "suggested_tags": [],
-  "admin_note": ""
-}
-
-EXEMPLE D’UTILISATION
-
-INPUT
-
-{
-  "question": "Peut-on travailler en Thaïlande avec un visa touristique ?",
-  "language": "fr",
-  "year_context": "2026",
-  "audience": "general",
-  "risk_level": "high",
-  "related_visas": ["TR"],
-  "intent": "information",
-  "max_words": 160
-}
-
-
-OUTPUT
-
-{
-  "answer": "Non. Le visa touristique n’autorise aucune activité professionnelle en Thaïlande, y compris le télétravail rémunéré. Il est strictement réservé aux séjours à but touristique. Toute activité assimilée à un travail peut entraîner des sanctions administratives.",
-  "risk_warning": "Les règles peuvent être interprétées strictement par l’immigration. Une activité même occasionnelle peut être considérée comme un travail.",
-  "confidence_level": "high",
-  "suggested_tags": ["visa_touristique", "travail", "interdiction"],
-  "admin_note": "À lier aux pages DTV et LTR pour alternatives légales."
-}
-
-FINALITÉ
-
-Cette IA :
-
-ne débat pas
-
-ne conseille pas
-
-documente
-
-alimente une base de connaissance propre
-
-protège juridiquement le site
-
-renforce l’EEAT
-
-
-
-Voici une liste exhaustive et propre des visas thaïlandais à utiliser comme plan de pages dédiées.
-C’est une liste de travail, pas marketing.
-
-A. Visas courts séjours / tourisme
-
-Exemption de visa (Visa Exemption)
-
-Visa à l’arrivée (Visa on Arrival – VoA)
-
-Visa touristique (TR)
-
-Single Entry
-
-Multiple Entry (METV)
-
-B. Visas long séjour / résidence
-
-Destination Thailand Visa (DTV)
-
-Visa LTR – Long-Term Resident
-
-Wealthy Global Citizen
-
-Wealthy Pensioner
-
-Work-From-Thailand Professional
-
-Highly Skilled Professional
-
-Visa Retraite (Non-Immigrant O – Retired)
-
-Visa Retraite OA
-
-Visa Retraite OX
-
-C. Visas travail / business
-
-Visa Non-Immigrant B (Business / Work)
-
-Visa BOI (Board of Investment)
-
-SMART Visa
-
-Smart T
-
-Smart I
-
-Smart S
-
-Smart E
-
-D. Visas études / formation / culture
-
-Visa Étudiant (Non-Immigrant ED)
-
-Visa Formation / Stage
-
-Visa Moine / Religion (R)
-
-E. Visas famille / situation personnelle
-
-Visa Non-Immigrant O (Famille)
-
-Conjoint thaïlandais
-
-Parent d’enfant thaï
-
-Visa Dépendant (conjoint / enfants)
-
-F. Visas premium / spéciaux
-
-Visa Elite / Thailand Privilege
-
-Visa Diplomatique / Officiel (hors scope commercial)
-
-G. Visas techniques / administratifs
-
-Re-Entry Permit (simple / multiple)
-
-Extension de séjour (par type de visa)
-
-Changement de statut de visa
-
-Ce que je te recommande pour SiamVisaPro (priorisation)
-Pages à créer en priorité (SEO + business)
-
-Visa DTV
-
-Visa Touristique (TR)
-
-Visa LTR
-
-Visa Retraite
-
-Visa Elite
-
-Visa Business (Non-B)
-
-Pages secondaires (autorité / SEO longue traîne)
-
-Exemption de visa
-
-Visa Étudiant
-
-Visa Famille
-
-SMART Visa
-
-Règle importante pour la suite
-
-1 visa = 1 page canonique
-
-Pas de mélange
-
-FAQ injectée dynamiquement
-
-Comparateur = vue transversale
-
-Base de connaissance = réponses
-
-Si tu veux, prochaine étape logique :
-
-template unique de page visa (SEO + conversion)
-
-ordre de publication optimal
-
-mapping visa → FAQ → comparateur
-
-Dis-moi.
-
-1
-
-Voici le template unique de page VISA, prêt à dupliquer pour chaque visa dédié.
-Conçu pour : SEO, conversion, zéro duplication, injection FAQ.
-
-TEMPLATE — PAGE VISA (CANONIQUE)
-1) Variables admin (source unique)
-{
-  "visa_name": "",
-  "visa_slug": "",
-  "visa_type": "court | long | travail | premium",
-  "audience": "",
-  "work_allowed": "yes | no | remote_only",
-  "stay_duration": "",
-  "renewable": "yes | no | conditional",
-  "entry_type": "single | multiple",
-  "risk_level": "low | medium | high",
-  "year_context": "2026"
-}
-
-2) Meta SEO (généré, contrôlé)
-
-Title
-
-{{visa_name}} Thaïlande – Conditions, durée, travail | {{year_context}}
-
-
-Meta description
-
-{{visa_name}} Thaïlande : conditions officielles, durée de séjour, renouvellement et restrictions. Guide clair et à jour {{year_context}}.
-
-3) Structure Hn (obligatoire)
-H1
-{{visa_name}} – Thaïlande
-
-H2
-
-Qu’est-ce que le {{visa_name}} ?
-
-À qui s’adresse ce visa ?
-
-Durée de séjour et validité
-
-Conditions et critères principaux
-
-Travail et activités autorisées
-
-Renouvellement et extensions
-
-Limitations et points de vigilance
-
-Questions fréquentes
-
-4) Contenu standard (logique fixe)
-Qu’est-ce que le {{visa_name}} ?
-
-Définition factuelle, 3–4 phrases max.
-Pas d’exemples personnels. Pas de promesse.
-
-À qui s’adresse ce visa ?
-
-Liste de profils compatibles.
-Exclure explicitement les profils non compatibles (important SEO).
-
-Durée de séjour et validité
-
-Durée par entrée
-
-Validité globale
-
-Type d’entrée
-
-Conditions et critères principaux
-
-Liste simple, sans chiffres variables non vérifiés.
-
-Travail et activités autorisées
-
-Bloc critique :
-
-❌ Travail local : oui / non
-
-✅ Télétravail : oui / non / conditionnel
-
-Avertissement si risk_level ≠ low
-
-Renouvellement et extensions
-
-Ce qui est possible / non garanti / impossible.
-
-Limitations et points de vigilance
-
-Cas de refus
-
-Interprétation stricte possible
-
-Lien vers base de connaissance
-
-5) FAQ (injectée dynamiquement)
-
-❌ Pas écrite ici
-✅ Injectée depuis /questions-frequentes
-
-Règle
-
-8–10 questions max
-
-Filtrées par related_visas
-
-Pas de JSON-LD ici
-
-6) CTA (sobre)
-
-CTA principal
-
-Vérifier si ce visa est adapté à votre situation
-
-
-CTA secondaire
-
-Comparer avec les autres visas
-
-7) Garde-fous SEO (à respecter)
-
-1 seul H1
-
-1 URL = 1 visa
-
-Pas de FAQ dupliquée
-
-Pas de tableau comparatif ici
-
-Pas de chiffres non sourcés
-
-Mise à jour visible : Dernière mise à jour {{year_context}}
-
-8) Résultat attendu
-
-Pages visas homogènes
-
-Publication rapide
-
-Scalabilité
-
-IA compatible
-
-Aucun risque de cannibalisation
-
-TEMPLATE — PAGE VISA (CANONIQUE)
-1) Variables admin (source unique)
-{
-  "visa_name": "",
-  "visa_slug": "",
-  "visa_type": "court | long | travail | premium",
-  "audience": "",
-  "work_allowed": "yes | no | remote_only",
-  "stay_duration": "",
-  "renewable": "yes | no | conditional",
-  "entry_type": "single | multiple",
-  "risk_level": "low | medium | high",
-  "year_context": "2026"
-}
-
-2) Meta SEO (généré, contrôlé)
-
-Title
-
-{{visa_name}} Thaïlande – Conditions, durée, travail | {{year_context}}
-
-
-Meta description
-
-{{visa_name}} Thaïlande : conditions officielles, durée de séjour, renouvellement et restrictions. Guide clair et à jour {{year_context}}.
-
-3) Structure Hn (obligatoire)
-H1
-{{visa_name}} – Thaïlande
-
-H2
-
-Qu’est-ce que le {{visa_name}} ?
-
-À qui s’adresse ce visa ?
-
-Durée de séjour et validité
-
-Conditions et critères principaux
-
-Travail et activités autorisées
-
-Renouvellement et extensions
-
-Limitations et points de vigilance
-
-Questions fréquentes
-
-4) Contenu standard (logique fixe)
-Qu’est-ce que le {{visa_name}} ?
-
-Définition factuelle, 3–4 phrases max.
-Pas d’exemples personnels. Pas de promesse.
-
-À qui s’adresse ce visa ?
-
-Liste de profils compatibles.
-Exclure explicitement les profils non compatibles (important SEO).
-
-Durée de séjour et validité
-
-Durée par entrée
-
-Validité globale
-
-Type d’entrée
-
-Conditions et critères principaux
-
-Liste simple, sans chiffres variables non vérifiés.
-
-Travail et activités autorisées
-
-Bloc critique :
-
-❌ Travail local : oui / non
-
-✅ Télétravail : oui / non / conditionnel
-
-Avertissement si risk_level ≠ low
-
-Renouvellement et extensions
-
-Ce qui est possible / non garanti / impossible.
-
-Limitations et points de vigilance
-
-Cas de refus
-
-Interprétation stricte possible
-
-Lien vers base de connaissance
-
-5) FAQ (injectée dynamiquement)
-
-❌ Pas écrite ici
-✅ Injectée depuis /questions-frequentes
-
-Règle
-
-8–10 questions max
-
-Filtrées par related_visas
-
-Pas de JSON-LD ici
-
-6) CTA (sobre)
-
-CTA principal
-
-Vérifier si ce visa est adapté à votre situation
-
-
-CTA secondaire
-
-Comparer avec les autres visas
-
-7) Garde-fous SEO (à respecter)
-
-1 seul H1
-
-1 URL = 1 visa
-
-Pas de FAQ dupliquée
-
-Pas de tableau comparatif ici
-
-Pas de chiffres non sourcés
-
-Mise à jour visible : Dernière mise à jour {{year_context}}
-
-8) Résultat attendu
-
-Pages visas homogènes
-
-Publication rapide
-
-Scalabilité
-
-IA compatible
-
-Aucun risque de cannibalisation
-
-Si tu veux, prochaine étape logique :
-
-remplir ce template pour le DTV
-
-ordre exact de publication des pages
-
-version Firestore + types TS
-
-prompt IA auto-remplissage par visa
-
-Dis-moi.
-
-1 2 3 4 
-
-Parfait. Voici les 4 livrables, nets et directement exploitables.
-
-1️⃣ Page VISA remplie — Visa DTV (Destination Thailand Visa)
-Variables
-{
-  "visa_name": "Visa DTV (Destination Thailand Visa)",
-  "visa_slug": "visa-dtv-thailande",
-  "visa_type": "long",
-  "audience": "digital_nomad, freelance, remote_worker",
-  "work_allowed": "remote_only",
-  "stay_duration": "long séjour par entrées successives",
-  "renewable": "conditional",
-  "entry_type": "multiple",
-  "risk_level": "high",
-  "year_context": "2026"
-}
-
-Meta
-
-Title
-Visa DTV Thaïlande – Télétravail, durée, conditions | 2026
-
-Description
-Visa DTV Thaïlande : visa longue durée pour télétravail, conditions d’éligibilité, durée de séjour et restrictions. Guide clair et à jour 2026.
-
-H1
-
-Visa DTV – Destination Thailand Visa
-
-Sections (contenu synthétique)
-
-Qu’est-ce que le visa DTV ?
-Le Destination Thailand Visa (DTV) est un visa longue durée destiné aux personnes exerçant une activité à distance pour une entité étrangère. Il permet de résider en Thaïlande sans travailler pour une entreprise locale.
-
-À qui s’adresse ce visa ?
-Télétravailleurs, freelances, nomades numériques.
-Non adapté au travail local ou à l’emploi salarié thaïlandais.
-
-Durée de séjour et validité
-Visa à entrées multiples permettant des séjours prolongés par entrée, avec obligations de sortie selon les règles en vigueur.
-
-Conditions et critères principaux
-Passeport valide, justificatifs d’activité à distance, ressources financières suffisantes.
-
-Travail et activités autorisées
-✅ Télétravail pour l’étranger
-❌ Travail local, emploi thaïlandais
-
-Renouvellement et extensions
-Possibles selon les règles d’immigration. Jamais automatiques.
-
-Limitations et points de vigilance
-Interprétation stricte possible. Les règles peuvent évoluer.
-
-2️⃣ Ordre exact de publication (priorité SEO + business)
-
-Visa DTV
-
-Visa Touristique (TR)
-
-Visa LTR
-
-Visa Retraite
-
-Visa Elite
-
-Visa Business (Non-B)
-
-Exemption de visa
-
-Visa Étudiant
-
-Visa Famille
-
-SMART Visa
-
-👉 Les 6 premiers couvrent 90 % des intentions.
-
-3️⃣ Schéma Firestore + Types TS
-Firestore
-visas/{visaId}
-
-{
-  "name": "Visa DTV",
-  "slug": "visa-dtv-thailande",
-  "type": "long",
-  "audience": ["digital_nomad", "freelance"],
-  "work_allowed": "remote_only",
-  "entry_type": "multiple",
-  "risk_level": "high",
-  "year_context": "2026",
-  "content": {
-    "definition": "",
-    "eligibility": "",
-    "duration": "",
-    "work_rules": "",
-    "renewal": "",
-    "limitations": ""
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.siamvisapro.com/blog/SCHEMA.v1.json",
+  "title": "SiamVisaPro Blog Engine Schema v1",
+  "type": "object",
+  "properties": {
+    "Article": { "$ref": "#/$defs/Article" },
+    "ArticleLocale": { "$ref": "#/$defs/ArticleLocale" },
+    "Media": { "$ref": "#/$defs/Media" },
+    "Redirect": { "$ref": "#/$defs/Redirect" },
+    "Taxonomy": { "$ref": "#/$defs/Taxonomy" },
+    "InternalLinkPlan": { "$ref": "#/$defs/InternalLinkPlan" },
+    "PublishResult": { "$ref": "#/$defs/PublishResult" }
   },
-  "related_faq_tags": ["visa_dtv"],
-  "status": "published",
-  "updatedAt": "serverTimestamp"
+  "required": ["Article", "ArticleLocale", "Media", "Redirect", "Taxonomy", "InternalLinkPlan", "PublishResult"],
+  "$defs": {
+    "ID": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 128,
+      "pattern": "^[a-zA-Z0-9._:-]+$"
+    },
+    "ISODateTime": { "type": "string", "format": "date-time" },
+    "Locale": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$" },
+    "Status": { "type": "string", "enum": ["draft", "in_review", "scheduled", "published", "archived"] },
+    "Stage": { "type": "string", "enum": ["discover", "compare", "apply"] },
+    "Intent": { "type": "string", "enum": ["informational", "comparative", "transactional"] },
+    "VisaScope": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["TR", "DTV", "LTR", "NON_B", "NON_O", "ELITE", "ED", "OTHER"] },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "Slug": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "URL": { "type": "string", "format": "uri" },
+
+    "Article": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/ID" },
+        "status": { "$ref": "#/$defs/Status" },
+        "canonical_locale": { "$ref": "#/$defs/Locale" },
+
+        "topic": { "type": "string", "minLength": 3, "maxLength": 200 },
+        "summary": { "type": "string", "maxLength": 500 },
+
+        "clusters": { "type": "array", "items": { "$ref": "#/$defs/ID" }, "uniqueItems": true },
+        "categories": { "type": "array", "items": { "$ref": "#/$defs/ID" }, "uniqueItems": true },
+        "tags": { "type": "array", "items": { "$ref": "#/$defs/ID" }, "uniqueItems": true },
+
+        "entities": { "type": "array", "items": { "type": "string", "maxLength": 80 }, "uniqueItems": true },
+        "visa_scope": { "$ref": "#/$defs/VisaScope" },
+
+        "intent": { "$ref": "#/$defs/Intent" },
+        "stage": { "$ref": "#/$defs/Stage" },
+
+        "author_id": { "$ref": "#/$defs/ID" },
+
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string", "minLength": 2, "maxLength": 80 },
+              "url": { "$ref": "#/$defs/URL" },
+              "type": { "type": "string", "enum": ["official", "internal", "news", "other"] },
+              "retrieved_at": { "$ref": "#/$defs/ISODateTime" }
+            },
+            "required": ["name", "type"]
+          }
+        },
+
+        "featured_media_id": { "$ref": "#/$defs/ID" },
+
+        "published_at": { "anyOf": [{ "$ref": "#/$defs/ISODateTime" }, { "type": "null" }] },
+        "created_at": { "$ref": "#/$defs/ISODateTime" },
+        "updated_at": { "$ref": "#/$defs/ISODateTime" },
+
+        "version": { "type": "integer", "minimum": 1 },
+        "revision_of": { "anyOf": [{ "$ref": "#/$defs/ID" }, { "type": "null" }] }
+      },
+      "required": ["id", "status", "canonical_locale", "topic", "intent", "stage", "author_id", "created_at", "updated_at", "version"]
+    },
+
+    "ArticleLocale": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "article_id": { "$ref": "#/$defs/ID" },
+        "locale": { "$ref": "#/$defs/Locale" },
+
+        "seo": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": { "type": "string", "minLength": 10, "maxLength": 70 },
+            "description": { "type": "string", "minLength": 50, "maxLength": 160 },
+            "slug": { "$ref": "#/$defs/Slug" },
+            "canonical_url": { "$ref": "#/$defs/URL" },
+            "hreflang": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": { "locale": { "$ref": "#/$defs/Locale" }, "url": { "$ref": "#/$defs/URL" } },
+                "required": ["locale", "url"]
+              }
+            },
+            "robots": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "index": { "type": "boolean", "default": true },
+                "follow": { "type": "boolean", "default": true }
+              },
+              "required": ["index", "follow"]
+            }
+          },
+          "required": ["title", "description", "slug"]
+        },
+
+        "og": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "og_title": { "type": "string", "maxLength": 90 },
+            "og_description": { "type": "string", "maxLength": 200 },
+            "og_image_media_id": { "$ref": "#/$defs/ID" }
+          }
+        },
+
+        "toc": { "type": "array", "items": { "$ref": "#/$defs/TOCItem" } },
+
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/Block" }
+        },
+
+        "internal_links_plan": { "$ref": "#/$defs/InternalLinkPlan" },
+
+        "schema_overrides": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "faq_enabled": { "type": "boolean", "default": true },
+            "breadcrumbs_enabled": { "type": "boolean", "default": true }
+          }
+        },
+
+        "quality": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "word_count": { "type": "integer", "minimum": 0 },
+            "reading_time_min": { "type": "integer", "minimum": 0 },
+            "thin_content_flag": { "type": "boolean" },
+            "fact_gaps": { "type": "array", "items": { "type": "string", "maxLength": 200 } }
+          },
+          "required": ["word_count", "reading_time_min", "thin_content_flag", "fact_gaps"]
+        },
+
+        "created_at": { "$ref": "#/$defs/ISODateTime" },
+        "updated_at": { "$ref": "#/$defs/ISODateTime" }
+      },
+      "required": ["article_id", "locale", "seo", "blocks", "quality", "created_at", "updated_at"]
+    },
+
+    "TOCItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "block_id": { "$ref": "#/$defs/ID" },
+        "level": { "type": "integer", "enum": [2, 3] },
+        "title": { "type": "string", "minLength": 2, "maxLength": 120 },
+        "anchor": { "$ref": "#/$defs/Slug" }
+      },
+      "required": ["block_id", "level", "title", "anchor"]
+    },
+
+    "Block": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/ID" },
+        "type": {
+          "type": "string",
+          "enum": ["toc", "intro", "section", "table", "faq", "cta", "callout", "image", "glossary_ref"]
+        },
+        "data": { "type": "object" }
+      },
+      "required": ["id", "type", "data"],
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "intro" } } },
+          "then": { "properties": { "data": { "$ref": "#/$defs/BlockIntro" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "section" } } },
+          "then": { "properties": { "data": { "$ref": "#/$defs/BlockSection" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "table" } } },
+          "then": { "properties": { "data": { "$ref": "#/$defs/BlockTable" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "faq" } } },
+          "then": { "properties": { "data": { "$ref": "#/$defs/BlockFAQ" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "cta" } } },
+          "then": { "properties": { "data": { "$ref": "#/$defs/BlockCTA" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "callout" } } },
+          "then": { "properties": { "data": { "$ref": "#/$defs/BlockCallout" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "image" } } },
+          "then": { "properties": { "data": { "$ref": "#/$defs/BlockImage" } } }
+        }
+      ]
+    },
+
+    "BlockIntro": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "content_md": { "type": "string", "minLength": 20, "maxLength": 1200 }
+      },
+      "required": ["content_md"]
+    },
+
+    "BlockSection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "h2": { "type": "string", "minLength": 2, "maxLength": 120 },
+        "h3": { "type": "string", "maxLength": 120 },
+        "content_md": { "type": "string", "minLength": 20, "maxLength": 20000 },
+        "anchor": { "$ref": "#/$defs/Slug" }
+      },
+      "required": ["h2", "content_md", "anchor"]
+    },
+
+    "BlockTable": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "caption": { "type": "string", "maxLength": 160 },
+        "columns": { "type": "array", "items": { "type": "string", "maxLength": 60 }, "minItems": 2 },
+        "rows": {
+          "type": "array",
+          "items": { "type": "array", "items": { "type": "string", "maxLength": 200 }, "minItems": 2 }
+        }
+      },
+      "required": ["columns", "rows"]
+    },
+
+    "BlockFAQ": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "q": { "type": "string", "minLength": 8, "maxLength": 140 },
+              "a_md": { "type": "string", "minLength": 20, "maxLength": 1200 }
+            },
+            "required": ["q", "a_md"]
+          }
+        }
+      },
+      "required": ["items"]
+    },
+
+    "BlockCTA": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string", "minLength": 2, "maxLength": 60 },
+        "href": { "$ref": "#/$defs/URL" },
+        "variant": { "type": "string", "enum": ["primary", "secondary", "link"], "default": "primary" }
+      },
+      "required": ["label", "href"]
+    },
+
+    "BlockCallout": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tone": { "type": "string", "enum": ["info", "warning", "note"] },
+        "title": { "type": "string", "maxLength": 80 },
+        "content_md": { "type": "string", "minLength": 10, "maxLength": 2000 }
+      },
+      "required": ["tone", "content_md"]
+    },
+
+    "BlockImage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "media_id": { "$ref": "#/$defs/ID" },
+        "alt": { "type": "string", "minLength": 5, "maxLength": 140 },
+        "caption": { "type": "string", "maxLength": 200 },
+        "placement": { "type": "string", "enum": ["inline", "hero"], "default": "inline" }
+      },
+      "required": ["media_id", "alt"]
+    },
+
+    "InternalLinkPlan": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "generated_at": { "$ref": "#/$defs/ISODateTime" },
+        "ruleset_version": { "type": "string", "minLength": 1, "maxLength": 20, "default": "v1" },
+        "out": {
+          "type": "array",
+          "maxItems": 16,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "to_article_id": { "$ref": "#/$defs/ID" },
+              "anchor": { "type": "string", "minLength": 3, "maxLength": 90 },
+              "context_block_id": { "$ref": "#/$defs/ID" },
+              "reason": { "type": "string", "enum": ["cluster", "next_step", "definition", "supporting", "related"] },
+              "score": { "type": "number", "minimum": 0, "maximum": 1 }
+            },
+            "required": ["to_article_id", "anchor", "reason", "score"]
+          }
+        },
+        "constraints": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "max_links_per_1000w": { "type": "integer", "minimum": 1, "maximum": 12, "default": 6 },
+            "require_next_step": { "type": "boolean", "default": true },
+            "require_glossary": { "type": "boolean", "default": true },
+            "avoid_duplicate_anchors": { "type": "boolean", "default": true }
+          },
+          "required": ["max_links_per_1000w", "require_next_step", "require_glossary", "avoid_duplicate_anchors"]
+        }
+      },
+      "required": ["generated_at", "ruleset_version", "out", "constraints"]
+    },
+
+    "Media": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/ID" },
+        "origin_url": { "$ref": "#/$defs/URL" },
+        "mime": { "type": "string", "enum": ["image/webp", "image/avif", "image/jpeg", "image/png"] },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 },
+        "hash": { "type": "string", "minLength": 16, "maxLength": 128 },
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "url": { "$ref": "#/$defs/URL" },
+              "mime": { "type": "string" },
+              "width": { "type": "integer" },
+              "height": { "type": "integer" }
+            },
+            "required": ["url", "mime", "width", "height"]
+          }
+        },
+        "alt_by_locale": {
+          "type": "object",
+          "additionalProperties": { "type": "string", "minLength": 5, "maxLength": 140 }
+        },
+        "created_at": { "$ref": "#/$defs/ISODateTime" }
+      },
+      "required": ["id", "origin_url", "mime", "width", "height", "hash", "variants", "created_at"]
+    },
+
+    "Redirect": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/ID" },
+        "from": { "type": "string", "minLength": 1, "maxLength": 300 },
+        "to": { "type": "string", "minLength": 1, "maxLength": 300 },
+        "code": { "type": "integer", "enum": [301, 308] },
+        "locale": { "anyOf": [{ "$ref": "#/$defs/Locale" }, { "type": "null" }] },
+        "created_at": { "$ref": "#/$defs/ISODateTime" }
+      },
+      "required": ["id", "from", "to", "code", "created_at"]
+    },
+
+    "Taxonomy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "clusters": { "type": "array", "items": { "$ref": "#/$defs/Taxon" } },
+        "categories": { "type": "array", "items": { "$ref": "#/$defs/Taxon" } },
+        "tags": { "type": "array", "items": { "$ref": "#/$defs/Taxon" } },
+        "glossary": { "type": "array", "items": { "$ref": "#/$defs/GlossaryTerm" } }
+      },
+      "required": ["clusters", "categories", "tags", "glossary"]
+    },
+
+    "Taxon": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/ID" },
+        "label_by_locale": { "type": "object", "additionalProperties": { "type": "string", "maxLength": 80 } },
+        "description_by_locale": { "type": "object", "additionalProperties": { "type": "string", "maxLength": 280 } }
+      },
+      "required": ["id", "label_by_locale"]
+    },
+
+    "GlossaryTerm": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/ID" },
+        "term_by_locale": { "type": "object", "additionalProperties": { "type": "string", "maxLength": 80 } },
+        "definition_by_locale": { "type": "object", "additionalProperties": { "type": "string", "maxLength": 600 } },
+        "see_also_article_ids": { "type": "array", "items": { "$ref": "#/$defs/ID" }, "uniqueItems": true }
+      },
+      "required": ["id", "term_by_locale", "definition_by_locale"]
+    },
+
+    "PublishResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "article_id": { "$ref": "#/$defs/ID" },
+        "published_locales": { "type": "array", "items": { "$ref": "#/$defs/Locale" }, "uniqueItems": true },
+        "invalidated_paths": { "type": "array", "items": { "type": "string" } },
+        "sitemaps_touched": { "type": "array", "items": { "type": "string" } },
+        "warnings": { "type": "array", "items": { "type": "string", "maxLength": 240 } },
+        "published_at": { "$ref": "#/$defs/ISODateTime" }
+      },
+      "required": ["article_id", "published_locales", "invalidated_paths", "sitemaps_touched", "warnings", "published_at"]
+    }
+  }
 }
 
-TypeScript
-export interface VisaPage {
-  name: string;
-  slug: string;
-  type: "court" | "long" | "travail" | "premium";
-  audience: string[];
-  work_allowed: "yes" | "no" | "remote_only";
-  entry_type: "single" | "multiple";
-  risk_level: "low" | "medium" | "high";
-  year_context: string;
-  content: Record<string, string>;
-  related_faq_tags: string[];
-  status: "draft" | "published";
-}
+openapi: 3.0.3
+info:
+  title: SiamVisaPro Blog Engine API
+  version: "v1"
+servers:
+  - url: https://api.siamvisapro.com
+paths:
+  /v1/articles:
+    get:
+      summary: List articles (filterable)
+      parameters:
+        - name: status
+          in: query
+          schema: { type: string, enum: [draft,in_review,scheduled,published,archived] }
+        - name: cluster
+          in: query
+          schema: { type: string }
+        - name: tag
+          in: query
+          schema: { type: string }
+        - name: q
+          in: query
+          schema: { type: string }
+        - name: limit
+          in: query
+          schema: { type: integer, minimum: 1, maximum: 100, default: 20 }
+        - name: cursor
+          in: query
+          schema: { type: string }
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create article (canonical shell)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "SCHEMA.v1.json#/$defs/Article" }
+      responses:
+        "201": { description: Created }
 
-4️⃣ Prompt IA — auto-remplissage page visa (contrôlé)
-PROMPT SYSTEM
-Tu es un rédacteur réglementaire spécialisé visas.
-Tu remplis UNE page visa selon un template strict.
-Tu ne fais aucune supposition.
+  /v1/articles/{articleId}:
+    get:
+      summary: Get article
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200": { description: OK }
+    patch:
+      summary: Update article fields (status, taxonomy, intent/stage, etc.)
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/merge-patch+json:
+            schema: { type: object }
+      responses:
+        "200": { description: OK }
+    delete:
+      summary: Archive (soft delete) or hard delete (admin)
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+        - name: mode
+          in: query
+          schema: { type: string, enum: [soft,hard], default: soft }
+      responses:
+        "204": { description: No Content }
 
-INPUT:
-- visa_name
-- visa_type
-- audience
-- work_allowed
-- year_context
-- risk_level
+  /v1/articles/{articleId}/locales:
+    get:
+      summary: List locales for an article
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create/initialize a locale (empty or cloned from canonical structure)
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                locale: { type: string }
+                mode: { type: string, enum: [empty,clone_structure], default: clone_structure }
+              required: [locale]
+      responses:
+        "201": { description: Created }
 
-RÈGLES:
-- ton neutre
-- phrases courtes
-- pas de chiffres non vérifiés
-- pas de promesse
-- si risk_level = high → ajouter avertissement
+  /v1/articles/{articleId}/locales/{locale}:
+    get:
+      summary: Get localized article content
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+        - name: locale
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200": { description: OK }
+    put:
+      summary: Replace localized content (blocks, seo, faq, etc.)
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+        - name: locale
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "SCHEMA.v1.json#/$defs/ArticleLocale" }
+      responses:
+        "200": { description: OK }
+    patch:
+      summary: Partial update localized content
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+        - name: locale
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/merge-patch+json:
+            schema: { type: object }
+      responses:
+        "200": { description: OK }
 
-OUTPUT JSON:
-{
-  "definition": "",
-  "eligibility": "",
-  "duration": "",
-  "work_rules": "",
-  "renewal": "",
-  "limitations": ""
-}
+  /v1/articles/{articleId}/generate:
+    post:
+      summary: IA - Generate outline/blocks/seo for a locale (constrained)
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                locale: { type: string }
+                tasks:
+                  type: array
+                  items:
+                    type: string
+                    enum: [outline,blocks,faq,table,seo]
+                sources: { type: array, items: { type: string } }
+                word_target: { type: integer, minimum: 200, maximum: 5000 }
+              required: [locale,tasks]
+      responses:
+        "200": { description: OK }
 
-Résultat
+  /v1/articles/{articleId}/localize:
+    post:
+      summary: IA - Create/refresh a target locale from canonical locale (structure-preserving)
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                from_locale: { type: string }
+                to_locale: { type: string }
+                tasks:
+                  type: array
+                  items: { type: string, enum: [translate_blocks,seo,faq,anchors] }
+              required: [from_locale,to_locale]
+      responses:
+        "200": { description: OK }
 
-Architecture propre
+  /v1/articles/{articleId}/linkplan:
+    post:
+      summary: Compute InternalLinkPlan for a locale (rules + scoring)
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                locale: { type: string }
+                ruleset_version: { type: string, default: v1 }
+              required: [locale]
+      responses:
+        "200": { description: OK }
 
-Pages visas industrialisables
+  /v1/articles/{articleId}/preview:
+    post:
+      summary: Build preview URLs (no publish)
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200": { description: OK }
 
-SEO stable
+  /v1/articles/{articleId}/publish:
+    post:
+      summary: Publish article (atomic) + cache invalidation + sitemap updates
+      parameters:
+        - name: articleId
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                locales: { type: array, items: { type: string } }
+                scheduled_at: { type: string, format: date-time }
+      responses:
+        "200": { description: OK }
 
-IA maîtrisée
+  /v1/media:
+    post:
+      summary: Upload/register media + variants
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "SCHEMA.v1.json#/$defs/Media" }
+      responses:
+        "201": { description: Created }
 
-Aucun risque de cannibalisation
+  /v1/redirects:
+    get:
+      summary: List redirects
+      responses:
+        "200": { description: OK }
+    post:
+      summary: Create redirect (slug changes)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "SCHEMA.v1.json#/$defs/Redirect" }
+      responses:
+        "201": { description: Created }
+
+  /v1/taxonomy:
+    get:
+      summary: Get taxonomy (clusters/categories/tags/glossary)
+      responses:
+        "200": { description: OK }
+    put:
+      summary: Replace taxonomy (admin)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "SCHEMA.v1.json#/$defs/Taxonomy" }
+      responses:
+        "200": { description: OK }
+
+  /v1/sitemaps/rebuild:
+    post:
+      summary: Rebuild sitemaps (admin/ops)
+      responses:
+        "200": { description: OK }
+
+
+Implémentation recommandée côté routing (minimal) :
+
+Public: /{locale}/blog/{slug} → resolve ArticleLocale by (locale, slug)
+
+Admin: /admin/blog (CRUD + preview + publish)
+
+Single source of truth: Article.id + ArticleLocale(article_id, locale)
+
+Liens internes: stockés par to_article_id, résolus en slug à l’affichage (multilangue natif).

@@ -4,7 +4,10 @@ import React from 'react';
 import { Mail, Phone, MapPin, ShieldCheck, Landmark, Facebook } from 'lucide-react';
 import Link from 'next/link';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useRouter, usePathname } from 'next/navigation';
 import { useCurrentLang, useLangPath } from '../hooks/useLang';
+import { languages } from './navbar/LanguageSelector';
+import { REVERSE_MAP, PageKey, getTranslatedPath } from '../utils/slugs';
 
 // WhatsApp Logo Component for Footer
 const WhatsAppIcon = ({ className }: { className?: string }) => (
@@ -16,8 +19,35 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 const Footer: React.FC = () => {
   const { t } = useLanguage();
   const lang = useCurrentLang();
-
+  const router = useRouter();
+  const pathname = usePathname();
   const langPath = useLangPath();
+
+  const switchLanguage = async (newLang: string) => {
+    // 1. Persist choice in cookie via API
+    try {
+      await fetch('/api/locale', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ locale: newLang }),
+      });
+    } catch (error) {
+      console.error('Failed to set locale cookie:', error);
+    }
+
+    // 2. Redirect to translated path
+    const pathWithoutLang = pathname?.replace(/^\/([a-z]{2})/, '') || '';
+    const cleanPath = pathWithoutLang.startsWith('/') ? pathWithoutLang.slice(1) : pathWithoutLang;
+    const currentLangSlugs = REVERSE_MAP[lang] || {};
+    const decodedPath = decodeURIComponent(cleanPath);
+    const pageKey = (decodedPath === '' ? 'home' : currentLangSlugs[decodedPath]) as PageKey;
+
+    if (pageKey) {
+      router.push(getTranslatedPath(pageKey, newLang));
+    } else {
+      router.push(`/${newLang}/${cleanPath}`);
+    }
+  };
 
   return (
     <footer className="bg-slate-900 text-white pt-16 pb-8 border-t border-slate-800">
@@ -35,7 +65,7 @@ const Footer: React.FC = () => {
             {/* Social Links */}
             <div className="flex space-x-4 mb-8">
               <a
-                href="https://www.facebook.com/share/15ZZLu4jrp7/"
+                href="https://www.facebook.com/profile.php?id=61586864890065"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 p-2 rounded-lg text-slate-400 hover:text-blue-500 hover:bg-white/10 transition-all border border-white/5"
@@ -85,6 +115,25 @@ const Footer: React.FC = () => {
               <li><Link href={langPath('terms')} className="hover:text-amber-400 transition-colors">{t('footer.legal')}</Link></li>
               <li><Link href={langPath('sitemap')} className="hover:text-amber-400 transition-colors">{t('footer.sitemap')}</Link></li>
             </ul>
+            {/* Mobile Language Grid (Visible only on mobile) */}
+            <div className="md:hidden mt-8 border-t border-slate-800 pt-8">
+              <h4 className="text-sm font-semibold mb-4 text-slate-400 uppercase tracking-wider">{t('nav.languages')}</h4>
+              <div className="grid grid-cols-4 gap-3">
+                {languages.map((l) => (
+                  <button
+                    key={l.code}
+                    onClick={() => switchLanguage(l.code)}
+                    className={`flex flex-col items-center p-2 rounded-lg border transition-all ${lang === l.code
+                      ? 'bg-amber-500/10 border-amber-500/50 text-amber-400'
+                      : 'bg-white/5 border-white/5 text-slate-400 hover:bg-white/10'
+                      }`}
+                  >
+                    <span className="text-2xl mb-1">{l.flag}</span>
+                    <span className="text-[10px] font-medium uppercase">{l.code}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div>
@@ -104,8 +153,6 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-
-
         </div>
 
         <div className="border-t border-slate-800 pt-8 text-center text-slate-500 text-xs flex flex-col md:flex-row justify-between items-center gap-4">
