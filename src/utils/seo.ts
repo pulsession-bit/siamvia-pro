@@ -77,6 +77,14 @@ export function generateMetadataWithHreflang(options: {
 }): Metadata {
     const { title, description, pageKey, lang, baseUrl = 'https://www.siamvisapro.com' } = options;
 
+    const currentYear = '2026';
+    let finalTitle = title;
+
+    // Auto-append year for SEO freshness if not present
+    if (!finalTitle.includes(currentYear)) {
+        finalTitle = `${finalTitle} ${currentYear}`;
+    }
+
     const languages: Record<string, string> = {};
 
     SUPPORTED_LANGUAGES.forEach(l => {
@@ -87,14 +95,14 @@ export function generateMetadataWithHreflang(options: {
     languages['x-default'] = `${baseUrl}${getTranslatedPath(pageKey, 'en')}`;
 
     return {
-        title,
+        title: finalTitle,
         description,
         alternates: {
             canonical: `${baseUrl}${getTranslatedPath(pageKey, lang)}`,
             languages,
         },
         openGraph: {
-            title,
+            title: finalTitle,
             description,
             url: `${baseUrl}${getTranslatedPath(pageKey, lang)}`,
             siteName: 'SiamVisa Pro',

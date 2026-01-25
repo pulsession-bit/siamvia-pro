@@ -35,6 +35,7 @@ Suite à votre demande d'audit global et d'optimisation du site **Siam Visa Pro*
 - **Meta Tags :** Vérification et ajout des blocs `meta` standardisés dans les fichiers de traduction (`locales/*.ts`) pour toutes les pages (y compris `th`, `ar`, `ja`, etc.).
 - **Sitemap & Robots :** Validation des fichiers `sitemap.ts` et `robots.ts`. Ils sont correctement configurés pour générer dynamiquement les URLs pour les 11 langues supportées avec les balises `hreflang` appropriées.
 - **Rewrites :** Confirmation que `next.config.ts` gère correctement les URLs localisées (ex: `/fr/visa-retraite-thailande`).
+- **Mise à jour 2026 :** Implémentation automatique de l'année "2026" dans les titres de toutes les pages (via `src/utils/seo.ts`) pour garantir la fraîcheur du contenu aux yeux de Google.
 **Statut :** 🟢 **EXCELLENT**
 
 ---
