@@ -1010,6 +1010,24 @@ export const es = {
     "hero_subtitle": "Misión religiosa o estudio del budismo",
     "definition_title": "¿Qué es la Visa Religiosa?",
     "definition_content": "La Visa Non-Immigrant R (Religious) está reservada a extranjeros patrocinados por una organización reconocida por el Estado.",
+    "audience_title": "¿A quién va dirigida?",
+    "audience_compatible": "Perfiles Compatibles",
+    "audience_compatible_list": [
+      "Misioneros patrocinados.",
+      "Estudiantes de budismo.",
+      "Monjes ordenados."
+    ],
+    "audience_not_compatible": "No Compatibles",
+    "audience_not_compatible_list": [
+      "Retiros espirituales turísticos (Visa Turista).",
+      "Profesores de religión no oficiales.",
+      "Voluntarios generales."
+    ],
+    "duration_title": "Validez y Extensiones",
+    "duration_initial_label": "Validez Inicial",
+    "duration_initial_value": "90 días",
+    "duration_max_label": "Extensión Máxima",
+    "duration_max_value": "1 Año (Renovable)",
     "conditions_title": "Perfiles y Condiciones",
     "conditions_list": [
       "Ser patrocinado por una organización religiosa registrada.",
@@ -1017,13 +1035,20 @@ export const es = {
       "Compromiso formal de no percibir salario.",
       "Prueba de residencia en la institución."
     ],
-    "duration_title": "Validez y Extensiones",
-    "duration_initial_label": "Validez Inicial",
-    "duration_initial_value": "90 días",
-    "duration_max_label": "Extensión Máxima",
-    "duration_max_value": "1 Año (Renovable)",
-    "footer_note": "Esta visa requiere una coordinación estrecha con las autoridades religiosas nacionales.",
-    "cta_btn": "Solicitar asesoramiento específico"
+    "work_title": "Regulaciones",
+    "work_warning_title": "Prohibición de Salario",
+    "work_warning_text": "Esta visa no permite recibir un salario secular. Cualquier ingreso debe estar justificado por la misión religiosa.",
+    "renewal_title": "Renovación",
+    "renewal_text": "Renovación anual sujeta a la aprobación continua del Departamento de Religión.",
+    "limitations_title": "Limitaciones",
+    "limitations_risk_title": "Validación Estatal",
+    "limitations_risk_text": "El proceso es lento y burocrático, requiriendo validación estatal previa.",
+    "cta_help_title": "¿Misión específica?",
+    "cta_help_subtitle": "Podemos ayudarle a coordinar con las instituciones.",
+    "cta_help_btn": "Verificar requisitos",
+    "cta_compare_title": "¿Solo retiro corto?",
+    "cta_compare_subtitle": "La visa de turista es suficiente para meditación < 90 días.",
+    "cta_compare_btn": "Ver Visa Turista"
   },
   "media_visa_page": {
     "meta": {
@@ -1034,22 +1059,46 @@ export const es = {
     "hero_title": "Visa de Medios (Non-M) – Tailandia",
     "hero_subtitle": "Cubrir la actualidad o producir contenidos en Tailandia",
     "definition_title": "¿Qué es la Visa de Medios (Non-M)?",
-    "definition_content": "La Visa Non-Immigrant M (Media) se dirige a profesionales certificados (periodistas, corresponsales, equipos de rodaje).",
-    "accreditation_title": "La Acreditación: Paso Clave",
-    "accreditation_subtitle": "Antes de solicitar la visa, debe obtener la acreditación del Ministerio de Asuntos Exteriores (MFA).",
-    "accreditation_list": [
+    "definition_content": "La Visa Non-Immigrant M (Media) se dirige a profesionales certificados (periodistas, corresponsales, equipos de rodaje) que desean trabajar en Tailandia.",
+    "audience_title": "¿A quién va dirigida?",
+    "audience_compatible": "Perfiles Compatibles",
+    "audience_compatible_list": [
+      "Periodistas Acreditados.",
+      "Corresponsales de Prensa Extranjera.",
+      "Equipos de Cine con permiso oficial."
+    ],
+    "audience_not_compatible": "No Compatibles",
+    "audience_not_compatible_list": [
+      "YouTubers independientes sin permiso.",
+      "Bloggers / Influencers (ver Visa DTV).",
+      "Producciones comerciales sin licencia."
+    ],
+    "duration_title": "Duración y Validez",
+    "duration_initial_label": "Validez",
+    "duration_initial_value": "1 Año",
+    "duration_max_label": "Extensión",
+    "duration_max_value": "Renovable",
+    "conditions_title": "Acreditación y Requisitos",
+    "conditions_list": [
       "Registro en el portal online del MFA (M-Press).",
       "Presentación del carnet de prensa y carta del empleador.",
-      "Verificación de antecedentes por Relaciones Públicas."
+      "Verificación de antecedentes por Relaciones Públicas.",
+      "Permiso del Thailand Film Office para rodajes."
     ],
-    "conditions_title": "Condiciones y Validez",
-    "duration_label": "Duración",
-    "duration_value": "1 año (renovable)",
-    "activity_label": "Actividad",
-    "activity_value": "Reportaje & Producción",
-    "warning_title": "Advertencia sobre rodajes",
-    "warning_text": "Filmar con visa de turista puede acarrear multas. El permiso de la 'Thailand Film Office' es obligatorio.",
-    "cta_btn": "Asistencia acreditación MFA"
+    "work_title": "Trabajo y Rodaje",
+    "work_warning_title": "Permiso de Rodaje",
+    "work_warning_text": "La visa por sí sola no es suficiente. Para cualquier producción comercial, se requiere un permiso de rodaje específico. Sin él, se arriesga a multas y confiscación de equipo.",
+    "renewal_title": "Renovación",
+    "renewal_text": "La visa puede renovarse anualmente siempre que se mantenga la acreditación con el Ministerio de Asuntos Exteriores (MFA).",
+    "limitations_title": "Limitaciones",
+    "limitations_risk_title": "Actividad Controlada",
+    "limitations_risk_text": "Tailandia vigila de cerca a los medios extranjeros. Cualquier reportaje políticamente sensible sin la acreditación adecuada puede llevar a la deportación.",
+    "cta_help_title": "¿Necesita acreditación?",
+    "cta_help_subtitle": "Ayudamos a los profesionales con los trámites del MFA.",
+    "cta_help_btn": "Solicitar asistencia",
+    "cta_compare_title": "¿Es Freelancer?",
+    "cta_compare_subtitle": "Para contenidos digitales, la DTV suele ser más simple.",
+    "cta_compare_btn": "Ver Visa DTV"
   },
   "official_visa_page": {
     "meta": {
@@ -1060,15 +1109,46 @@ export const es = {
     "hero_title": "Visa Oficial (Non-F) – Tailandia",
     "hero_subtitle": "Misiones diplomáticas y oficiales en Tailandia",
     "definition_title": "¿Qué es la Visa Oficial?",
-    "definition_content": "La Visa Non-Immigrant F (Official) está reservada a personas en misión oficial (diplomáticos, funcionarios de OI).",
+    "definition_content": "La Visa Non-Immigrant F (Official) está estrictamente reservada a personas en misión oficial para un gobierno extranjero o una organización internacional reconocida.",
     "audience_title": "Beneficiarios",
-    "audience_diplomatic_title": "Cuerpo Diplomático",
-    "audience_diplomatic_text": "Embajadas, Consulados, Agregados militares.",
-    "audience_oi_title": "OI / ONU",
-    "audience_oi_text": "Empleados de Naciones Unidas, UNICEF, etc., con base en Bangkok.",
-    "conditions_title": "Requisitos específicos",
-    "conditions_text": "Esta visa requiere imperativamente una nota verbal u orden de misión oficial.",
-    "cta_btn": "Solicitar asistencia"
+    "audience_compatible": "Perfiles Elegibles",
+    "audience_compatible_list": [
+      "Diplomáticos y personal de Embajadas.",
+      "Funcionarios de Naciones Unidas (ONU/UNICEF/ESCAP).",
+      "Militares y funcionarios en misión oficial."
+    ],
+    "audience_not_compatible": "No Elegibles",
+    "audience_not_compatible_list": [
+      "Contratistas privados que trabajan para gobiernos.",
+      "Consultores externos sin estatus oficial.",
+      "Familiares no declarados oficialmente."
+    ],
+    "duration_title": "Duración de la Misión",
+    "duration_initial_label": "Validez",
+    "duration_initial_value": "Misión",
+    "duration_max_label": "Extensión",
+    "duration_max_value": "Variable",
+    "conditions_title": "Requisitos Específicos",
+    "conditions_list": [
+      "Nota Verbal del Ministerio de Asuntos Exteriores.",
+      "Orden de Misión Oficial.",
+      "Pasaporte Diplomático o de Servicio (recomendado, no obligatorio).",
+      "Carta de invitación de la organización en Tailandia."
+    ],
+    "work_title": "Estatus Diplomático",
+    "work_warning_title": "Inmunidad y Reglas",
+    "work_warning_text": "Dependiendo de su rango y acuerdo con Tailandia, puede beneficiarse de inmunidad diplomática y exenciones fiscales. No se permite ninguna actividad comercial privada.",
+    "renewal_title": "Extensión",
+    "renewal_text": "Gestionada directamente por el departamento de protocolo del MFA o su organización. No requiere visitas a la oficina de inmigración estándar.",
+    "limitations_title": "Limitaciones",
+    "limitations_risk_title": "Fin de Misión",
+    "limitations_risk_text": "Al terminar su misión oficial, debe devolver su carnet diplomático y cambiar de estatus o abandonar el país inmediatamente.",
+    "cta_help_title": "¿Asistencia para Protocolo?",
+    "cta_help_subtitle": "Asistimos a organizaciones internacionales en sus trámites.",
+    "cta_help_btn": "Solicitar asistencia",
+    "cta_compare_title": "¿Misión comercial?",
+    "cta_compare_subtitle": "Si no tiene estatus diplomático, use la Visa Business.",
+    "cta_compare_btn": "Ver Visa Business"
   },
   "scientific_visa_page": {
     "meta": {
@@ -1079,20 +1159,46 @@ export const es = {
     "hero_title": "Visa de Investigación Científica (Non-RS) – Tailandia",
     "hero_subtitle": "Contribuir al avance científico en Tailandia",
     "definition_title": "¿Qué es la Visa de Investigación Científica?",
-    "definition_content": "La Visa Non-Immigrant RS (Research & Science) está diseñada para expertos que realizan trabajos científicos con un instituto tailandés.",
+    "definition_content": "La Visa Non-Immigrant RS (Research & Science) está diseñada para expertos y científicos que realizan trabajos de investigación con un instituto tailandés.",
     "audience_title": "Perfiles elegibles",
-    "audience_tech_title": "Expertos Técnicos",
-    "audience_tech_text": "Ingenieros y especialistas en transferencia de tecnología.",
-    "audience_academic_title": "Investigadores Académicos",
-    "audience_academic_text": "Científicos en misión en universidades o centros de investigación.",
+    "audience_compatible": "Perfiles Compatibles",
+    "audience_compatible_list": [
+      "Expertos Técnicos e Ingenieros.",
+      "Investigadores Académicos (Universidades, Centros Nacionales).",
+      "Especialistas en transferencia de tecnología."
+    ],
+    "audience_not_compatible": "No Compatibles",
+    "audience_not_compatible_list": [
+      "Investigadores independientes sin afiliación.",
+      "Profesores de idiomas (ver Visa ED).",
+      "Estudiantes de doctorado sin contrato."
+    ],
+    "duration_title": "Duración y Validez",
+    "duration_initial_label": "Validez",
+    "duration_initial_value": "1 Año",
+    "duration_max_label": "Renovación",
+    "duration_max_value": "Anual",
     "conditions_title": "Condiciones Requeridas",
     "conditions_list": [
-      "Invitación de un organismo de investigación tailandés.",
+      "Invitación de un organismo de investigación tailandés (ej: NRCT).",
       "Acuerdo de cooperación científica.",
       "Certificados de títulos y CV detallado.",
       "Prueba de financiación de la investigación."
     ],
-    "cta_btn": "Verificar patrocinio"
+    "work_title": "Trabajo e Investigación",
+    "work_warning_title": "Estatus Específico",
+    "work_warning_text": "Esta visa autoriza la investigación científica. Otras actividades comerciales no relacionadas están prohibidas. Un permiso de trabajo suele estar vinculado a la institución de acogida.",
+    "renewal_title": "Renovación",
+    "renewal_text": "Renovable anualmente siempre que el proyecto de investigación continúe y sea validado por el Consejo Nacional de Investigación de Tailandia (NRCT).",
+    "limitations_title": "Limitaciones",
+    "limitations_risk_title": "Dependencia Institucional",
+    "limitations_risk_text": "Su visa está totalmente ligada a su institución de acogida. Si el proyecto se detiene, la visa se cancela.",
+    "cta_help_title": "¿Necesita verificar su elegibilidad?",
+    "cta_help_subtitle": "Analizamos su perfil científico y su patrocinador.",
+    "cta_help_btn": "Verificar patrocinio",
+    "cta_compare_title": "¿Experto tecnológico?",
+    "cta_compare_subtitle": "La Visa SMART puede ser más ventajosa (4 años).",
+    "cta_compare_btn": "Ver Visa SMART"
   },
   "tourist_visa_page": {
     "hero_title": "Visa de Turista (TR)",

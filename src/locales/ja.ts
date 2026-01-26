@@ -849,72 +849,96 @@ export const ja = {
   },
   "media_visa_page": {
     "meta": {
-      "title": "タイメディア・ジャーナリストビザ (Non-M) | ガイド 2026",
-      "description": "タイのジャーナリスト、報道特派員、撮影クルーのためのビザ。認定と必要な条件。"
+      "title": "Thailand Media / Journalist Visa (Non-M) | Guide 2026",
+      "description": "Visa for journalists, press correspondents, and film crews in Thailand. Accreditation and required conditions."
     },
-    "hero_badge": "プレス・ジャーナリズム",
-    "hero_title": "メディアビザ (Non-M) – タイ",
-    "hero_subtitle": "タイでの報道やコンテンツ制作",
-    "definition_title": "メディアビザ (Non-M) とは？",
-    "definition_content": "Non-Immigrant M (Media) は、認定されたメディア専門家 (記者、特派員、撮影クルー) 向けのビザです。",
-    "accreditation_title": "重要ステップ：認定取得",
-    "accreditation_subtitle": "ビザ申請の前に、外務省 (MFA) からの認定を受ける必要があります。",
-    "accreditation_list": [
-      "外務省のポータルサイト (M-Press) での登録。",
-      "記者証と雇用主からのレター提出。",
-      "広報局による身辺調査。"
+    "hero_badge": "Press & Journalism",
+    "hero_title": "Media Visa (Non-M) – Thailand",
+    "hero_subtitle": "Cover the news or produce content in Thailand",
+    "definition_title": "What is the Media Visa (Non-M)?",
+    "definition_content": "The Non-Immigrant M (Media) Visa is intended for certified media professionals (journalists, correspondents, film crews) wishing to work or report in Thailand.",
+    "audience_title": "Who is this visa for?",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "Accredited Journalists.",
+      "Foreign Press Correspondents.",
+      "Film Crews with official permit."
     ],
-    "conditions_title": "条件と有効性",
-    "duration_label": "滞在期間",
-    "duration_value": "1年間 (更新可能)",
-    "activity_label": "活動内容",
-    "activity_value": "報道および制作活動",
-    "warning_title": "撮影に関する警告",
-    "warning_text": "観光ビザでの商業撮影は高額な罰金の対象です。タイ・フィルム・オフィスの許可も必須です。",
-    "cta_btn": "外務省認定の支援を受ける"
+    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible_list": [
+      "Independent YouTubers without permit.",
+      "Bloggers / Influencers (see DTV Visa).",
+      "Commercial productions without license."
+    ],
+    "duration_title": "Length of stay and validity",
+    "duration_initial_label": "Validity",
+    "duration_initial_value": "1 Year",
+    "duration_max_label": "Extension",
+    "duration_max_value": "Renewable",
+    "conditions_title": "Accreditation & Conditions",
+    "conditions_list": [
+      "Registration on the MFA online portal (M-Press).",
+      "Presentation of press card and letter from employer.",
+      "Background check by the Public Relations Department.",
+      "Thailand Film Office approval for filming."
+    ],
+    "work_title": "Working & Filming",
+    "work_warning_title": "Filming Permit",
+    "work_warning_text": "A visa alone is often not enough. For any commercial production, a specific filming permit is required. Without it, you risk heavy fines and confiscation of equipment.",
+    "renewal_title": "Renewal",
+    "renewal_text": "The visa can be renewed annually as long as accreditation with the Ministry of Foreign Affairs (MFA) is maintained.",
+    "limitations_title": "Limitations",
+    "limitations_risk_title": "Strictly Controlled Activity",
+    "limitations_risk_text": "Thailand monitors foreign media very closely. Any politically sensitive reporting without proper accreditation can lead to deportation.",
+    "cta_help_title": "Need accreditation assistance?",
+    "cta_help_subtitle": "We help media professionals with MFA formalities.",
+    "cta_help_btn": "Request assistance",
+    "cta_compare_title": "Are you a Freelancer?",
+    "cta_compare_subtitle": "For digital content, the DTV is often simpler.",
+    "cta_compare_btn": "See DTV Visa"
   },
   "official_visa_page": {
     "meta": {
-      "title": "タイ公用ビザ (Non-F) | ガイド 2026",
-      "description": "タイで任務に就く公務員、外交官、国際機関職員のためのビザ。"
+      "title": "Thailand Official Visa (Non-F) | Guide 2026",
+      "description": "Visa for officials, diplomats, and employees of international organizations on mission in Thailand."
     },
-    "hero_badge": "外交・公務",
-    "hero_title": "公務ビザ (Non-F) – タイ",
-    "hero_subtitle": "タイでの外交および公的任務",
-    "definition_title": "公務ビザとは？",
-    "definition_content": "Non-Immigrant F (Official) は、公的任務にある方 (外交官、国際機関職員) 向けのビザです。",
-    "audience_title": "受益者",
-    "audience_diplomatic_title": "外交団",
-    "audience_diplomatic_text": "大使館、領事館、武官。",
-    "audience_oi_title": "国際機関 / 国連",
-    "audience_oi_text": "バンコクを拠点とする国連職員、ユニセフ等。",
-    "conditions_title": "特有の要件",
-    "conditions_text": "本国政府または国際機関からの口上書 (Note Verbale) が必須です。",
-    "cta_btn": "支援を依頼する"
+    "hero_badge": "Diplomacy & State",
+    "hero_title": "Official Visa (Non-F) – Thailand",
+    "hero_subtitle": "Diplomatic and official missions in Thailand",
+    "definition_title": "What is the Official Visa?",
+    "definition_content": "The Non-Immigrant F (Official) Visa is reserved for people on official mission (diplomats, IO officials).",
+    "audience_title": "Beneficiaries",
+    "audience_diplomatic_title": "Diplomatic Corps",
+    "audience_diplomatic_text": "Ambassies, Consulates, Military Attaches.",
+    "audience_oi_title": "IO / UN",
+    "audience_oi_text": "United Nations employees, UNICEF, etc., based in Bangkok.",
+    "conditions_title": "Specific requirements",
+    "conditions_text": "This visa imperatively requires a verbal note or an official mission order.",
+    "cta_btn": "Request assistance"
   },
   "scientific_visa_page": {
     "meta": {
-      "title": "タイ科学研究ビザ (Non-RS) | ガイド 2026",
-      "description": "タイで研究活動を行う研究者、専門家、科学者のためのビザ。"
+      "title": "Thailand Scientific Research Visa (Non-RS) | Guide 2026",
+      "description": "Visa for researchers, experts, and scientists conducting research work in Thailand."
     },
-    "hero_badge": "研究・イノベーション",
-    "hero_title": "科学研究ビザ (Non-RS) – タイ",
-    "hero_subtitle": "タイの科学技術の発展に寄与する",
-    "definition_title": "科学研究ビザとは？",
-    "definition_content": "Non-Immigrant RS (Research & Science) は、タイの研究機関と協力して学術・研究活動を行う専門家向けです。",
-    "audience_title": "対象プロフィール",
-    "audience_tech_title": "技術エキスパート",
-    "audience_tech_text": "技術移転を専門とするエンジニアやスペシャリスト。",
-    "audience_academic_title": "学術研究者",
-    "audience_academic_text": "大学や国立研究センターでの任務に従事する科学者。",
-    "conditions_title": "必要条件",
+    "hero_badge": "Research & Innovation",
+    "hero_title": "Scientific Research Visa (Non-RS) – Thailand",
+    "hero_subtitle": "Contribute to scientific advancement in Thailand",
+    "definition_title": "What is the Scientific Research Visa?",
+    "definition_content": "The Non-Immigrant RS (Research & Science) Visa is designed for experts and researchers conducting scientific work with a Thai institute.",
+    "audience_title": "Eligible Profiles",
+    "audience_tech_title": "Technical Experts",
+    "audience_tech_text": "Engineers and specialists in technology transfer.",
+    "audience_academic_title": "Academic Researchers",
+    "audience_academic_text": "Scientists on mission in universities or national research centers.",
+    "conditions_title": "Required Conditions",
     "conditions_list": [
-      "タイの研究機関からの招待状。",
-      "機関間の学術協力協定書。",
-      "学位記および詳細な履歴書。",
-      "研究資金の証明。"
+      "Invitation from a Thai research organization (e.g., NRCT).",
+      "Scientific cooperation agreement between institutions.",
+      "Degree certificates and detailed CV.",
+      "Proof of research funding."
     ],
-    "cta_btn": "スポンサーシップを確認"
+    "cta_btn": "Check sponsorship"
   },
   "tourist_visa_page": {
     "meta": {

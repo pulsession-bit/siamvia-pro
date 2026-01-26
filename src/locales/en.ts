@@ -14,7 +14,9 @@ export const en = {
     "eligibility": "Contact an Expert",
     "ltr": "Visa LTR",
     "languages": "Languages",
-    "search": "Search", "comparator": "2026 Visa Comparator",
+    "search": "Search",
+    "search_placeholder": "Ask AI...",
+    "comparator": "2026 Visa Comparator",
     "all_visas": "All Visas",
     "business": "Business Visa",
     "smart": "SMART Visa",
@@ -964,22 +966,46 @@ export const en = {
     "hero_title": "Media Visa (Non-M) – Thailand",
     "hero_subtitle": "Cover the news or produce content in Thailand",
     "definition_title": "What is the Media Visa (Non-M)?",
-    "definition_content": "The Non-Immigrant M (Media) Visa is for certified media professionals (journalists, correspondents, film crews).",
-    "accreditation_title": "Accreditation: A Major Step",
-    "accreditation_subtitle": "Before applying for the visa, you must obtain accreditation from the Ministry of Foreign Affairs (MFA).",
-    "accreditation_list": [
-      "Registration on the MFA online portal (M-Press).",
-      "Presentation of press card and a letter from the employer.",
-      "Background check by the Public Relations Department."
+    "definition_content": "The Non-Immigrant M (Media) Visa is intended for certified media professionals (journalists, correspondents, film crews) wishing to work or report in Thailand.",
+    "audience_title": "Who is this visa for?",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "Accredited Journalists.",
+      "Foreign Press Correspondents.",
+      "Film Crews with official permit."
     ],
-    "conditions_title": "Conditions and Validity",
-    "duration_label": "Duration",
-    "duration_value": "1 year (renewable)",
-    "activity_label": "Activity",
-    "activity_value": "Reporting & Production",
-    "warning_title": "Filming Warning",
-    "warning_text": "Filming for a commercial production with a simple tourist visa is punishable by heavy fines. A permit from the 'Thailand Film Office' is also required.",
-    "cta_btn": "MFA accreditation assistance"
+    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible_list": [
+      "Independent YouTubers without permit.",
+      "Bloggers / Influencers (see DTV Visa).",
+      "Commercial productions without license."
+    ],
+    "duration_title": "Length of stay and validity",
+    "duration_initial_label": "Validity",
+    "duration_initial_value": "1 Year",
+    "duration_max_label": "Extension",
+    "duration_max_value": "Renewable",
+    "conditions_title": "Accreditation & Conditions",
+    "conditions_list": [
+      "Registration on the MFA online portal (M-Press).",
+      "Presentation of press card and letter from employer.",
+      "Background check by the Public Relations Department.",
+      "Thailand Film Office approval for filming."
+    ],
+    "work_title": "Working & Filming",
+    "work_warning_title": "Filming Permit",
+    "work_warning_text": "A visa alone is often not enough. For any commercial production, a specific filming permit is required. Without it, you risk heavy fines and confiscation of equipment.",
+    "renewal_title": "Renewal",
+    "renewal_text": "The visa can be renewed annually as long as accreditation with the Ministry of Foreign Affairs (MFA) is maintained.",
+    "limitations_title": "Limitations",
+    "limitations_risk_title": "Strictly Controlled Activity",
+    "limitations_risk_text": "Thailand monitors foreign media very closely. Any politically sensitive reporting without proper accreditation can lead to deportation.",
+    "cta_help_title": "Need accreditation assistance?",
+    "cta_help_subtitle": "We help media professionals with MFA formalities.",
+    "cta_help_btn": "Request assistance",
+    "cta_compare_title": "Are you a Freelancer?",
+    "cta_compare_subtitle": "For digital content, the DTV is often simpler.",
+    "cta_compare_btn": "See DTV Visa"
   },
   "official_visa_page": {
     "meta": {

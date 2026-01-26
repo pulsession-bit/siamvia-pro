@@ -858,22 +858,46 @@ export const it = {
     "hero_title": "Visto Media (Non-M) – Thailandia",
     "hero_subtitle": "Coprire l'attualità o produrre contenuti in Thailandia",
     "definition_title": "Cos'è il Visto Media (Non-M)?",
-    "definition_content": "Il Visto Non-Immigrant M (Media) si rivolge ai professionisti certificati (giornalisti, corrispondenti, troupe televisive).",
-    "accreditation_title": "L'Accreditamento: Passo Chiave",
-    "accreditation_subtitle": "Prima di richiedere il visto, è necessario ottenere l'accreditamento dal Ministero degli Affari Esteri (MFA).",
-    "accreditation_list": [
+    "definition_content": "Il Visto Non-Immigrant M (Media) si rivolge ai professionisti certificati (giornalisti, corrispondenti, troupe televisive) che desiderano lavorare in Thailandia.",
+    "audience_title": "A chi è rivolto?",
+    "audience_compatible": "Profili Compatibili",
+    "audience_compatible_list": [
+      "Giornalisti Accreditati.",
+      "Corrispondenti Stampa Estera.",
+      "Troupe Cinematografiche con permesso ufficiale."
+    ],
+    "audience_not_compatible": "Non Compatibles",
+    "audience_not_compatible_list": [
+      "YouTuber indipendenti senza permesso.",
+      "Blogger / Influencer (vedi Visto DTV).",
+      "Produzioni commerciali senza licenza."
+    ],
+    "duration_title": "Durata e Validità",
+    "duration_initial_label": "Validità",
+    "duration_initial_value": "1 Anno",
+    "duration_max_label": "Estensione",
+    "duration_max_value": "Rinnovabile",
+    "conditions_title": "Accreditamento e Requisiti",
+    "conditions_list": [
       "Registrazione sul portale online del MFA (M-Press).",
       "Presentazione della tessera stampa e lettera del datore di lavoro.",
-      "Verifica dei precedenti da parte delle Relazioni Pubbliche."
+      "Verifica dei precedenti da parte delle Relazioni Pubbliche.",
+      "Permesso del Thailand Film Office per riprese."
     ],
-    "conditions_title": "Condizioni e Validità",
-    "duration_label": "Durata",
-    "duration_value": "1 anno (rinnovabile)",
-    "activity_label": "Attività",
-    "activity_value": "Reportage & Produzione",
-    "warning_title": "Avvertenza sulle riprese",
-    "warning_text": "Girare con visto turistico può comportare multe. Il permesso del 'Thailand Film Office' è obbligatorio.",
-    "cta_btn": "Assistenza accreditamento MFA"
+    "work_title": "Lavoro e Riprese",
+    "work_warning_title": "Permesso di Riprese",
+    "work_warning_text": "Il visto da solo spesso non basta. Per qualsiasi produzione commerciale, è richiesto un permesso di riprese specifico. Senza di esso, rischi multe pesanti e la confisca dell'attrezzatura.",
+    "renewal_title": "Rinnovo",
+    "renewal_text": "Il visto può essere rinnovato annualmente purché venga mantenuto l'accreditamento presso il Ministero degli Affari Esteri (MFA).",
+    "limitations_title": "Limitazioni",
+    "limitations_risk_title": "Attività Controllata",
+    "limitations_risk_text": "La Thailandia sorveglia attentamente i media stranieri. Qualsiasi reportage politicamente sensibile senza il giusto accreditamento può portare all'espulsione.",
+    "cta_help_title": "Serve accreditamento?",
+    "cta_help_subtitle": "Aiutiamo i professionisti dei media con le pratiche MFA.",
+    "cta_help_btn": "Richiedi assistenza",
+    "cta_compare_title": "Sei Freelance?",
+    "cta_compare_subtitle": "Per contenuti digitali, il DTV è spesso più semplice.",
+    "cta_compare_btn": "Vedi Visto DTV"
   },
   "official_visa_page": {
     "meta": {
@@ -884,15 +908,46 @@ export const it = {
     "hero_title": "Visto Ufficiale (Non-F) – Thailandia",
     "hero_subtitle": "Missioni diplomatiche e ufficiali in Thailandia",
     "definition_title": "Cos'è il Visto Ufficiale?",
-    "definition_content": "Il Visto Non-Immigrant F (Official) è riservato a persone in missione ufficiale (diplomatici, funzionari di OI).",
+    "definition_content": "Il Visto Non-Immigrant F (Official) è strettamente riservato a persone in missione ufficiale per un governo straniero o un'organizzazione internazionale riconosciuta.",
     "audience_title": "Beneficiari",
-    "audience_diplomatic_title": "Corpo Diplomatico",
-    "audience_diplomatic_text": "Ambasciate, Consolati, Addetti militari.",
-    "audience_oi_title": "OI / ONU",
-    "audience_oi_text": "Dipendenti delle Nazioni Unite, UNICEF, ecc., con base a Bangkok.",
-    "conditions_title": "Requisiti specifici",
-    "conditions_text": "Questo visto richiede imperativamente una nota verbale o ordine di missione ufficiale.",
-    "cta_btn": "Richiedi assistenza"
+    "audience_compatible": "Profili Idonei",
+    "audience_compatible_list": [
+      "Diplomatici e personale delle Ambasciate.",
+      "Funzionari delle Nazioni Unite (ONU/UNICEF/ESCAP).",
+      "Militari e funzionari in missione ufficiale."
+    ],
+    "audience_not_compatible": "Non Idonei",
+    "audience_not_compatible_list": [
+      "Appaltatori privati che lavorano per governi.",
+      "Consulenti esterni senza status ufficiale.",
+      "Familiari non dichiarati ufficialmente."
+    ],
+    "duration_title": "Durata della Missione",
+    "duration_initial_label": "Validità",
+    "duration_initial_value": "Missione",
+    "duration_max_label": "Estensione",
+    "duration_max_value": "Variabile",
+    "conditions_title": "Requisiti Specifici",
+    "conditions_list": [
+      "Nota Verbale del Ministero degli Affari Esteri.",
+      "Ordine di Missione Ufficiale.",
+      "Passaporto Diplomatico o di Servizio (raccomandato).",
+      "Lettera di invito dell'organizzazione in Thailandia."
+    ],
+    "work_title": "Status Diplomatico",
+    "work_warning_title": "Immunità e Regole",
+    "work_warning_text": "A seconda del tuo grado e accordo con la Thailandia, puoi beneficiare di immunità diplomatica ed esenzioni fiscali. Nessuna attività commerciale privata è consentita.",
+    "renewal_title": "Estensione",
+    "renewal_text": "Gestita direttamente dal dipartimento del protocollo del MFA o dalla tua organizzazione.",
+    "limitations_title": "Limitazioni",
+    "limitations_risk_title": "Fine Missione",
+    "limitations_risk_text": "Al termine della missione ufficiale, devi restituire il tesserino diplomatico e cambiare status o lasciare il paese immediatamente.",
+    "cta_help_title": "Assistenza Protocollo?",
+    "cta_help_subtitle": "Assistiamo le organizzazioni internazionali nelle loro pratiche.",
+    "cta_help_btn": "Richiedi assistenza",
+    "cta_compare_title": "Missione commerciale?",
+    "cta_compare_subtitle": "Se non hai status diplomatico, usa il Visto Business.",
+    "cta_compare_btn": "Vedi Visto Business"
   },
   "scientific_visa_page": {
     "meta": {
@@ -900,23 +955,49 @@ export const it = {
       "description": "Visto per ricercatori, esperti e scienziati che svolgono lavori di ricerca in Thailandia."
     },
     "hero_badge": "Ricerca & Innovazione",
-    "hero_title": "Visto per la Ricerca Scientifica (Non-RS) – Thailandia",
+    "hero_title": "Visto di Ricerca Scientifica (Non-RS) – Thailandia",
     "hero_subtitle": "Contribuire al progresso scientifico in Thailandia",
-    "definition_title": "Cos'è il Visto per la Ricerca Scientifica?",
-    "definition_content": "Il Visto Non-Immigrant RS (Research & Science) è progettato per esperti che svolgono lavori scientifici con un istituto thailandese.",
-    "audience_title": "Profili ammissibili",
-    "audience_tech_title": "Esperti Tecnici",
-    "audience_tech_text": "Ingegneri e specialisti nel trasferimento tecnologico.",
-    "audience_academic_title": "Ricercatori Accademici",
-    "audience_academic_text": "Scienziati in missione in università o centri di ricerca.",
+    "definition_title": "Cos'è il Visto Scientifico?",
+    "definition_content": "Il Visto Non-Immigrant RS (Research & Science) è progettato per esperti e scienziati che svolgono lavori di ricerca con un istituto thailandese.",
+    "audience_title": "Profili idonei",
+    "audience_compatible": "Profili Compatibili",
+    "audience_compatible_list": [
+      "Esperti Tecnici e Ingegneri.",
+      "Ricercatori Accademici (Università, Centri Nazionali).",
+      "Specialisti in trasferimento tecnologico."
+    ],
+    "audience_not_compatible": "Non Compatibili",
+    "audience_not_compatible_list": [
+      "Ricercatori indipendenti senza affiliazione.",
+      "Insegnanti di lingue (vedi Visto ED).",
+      "Studenti di dottorato senza contratto."
+    ],
+    "duration_title": "Durata e Validità",
+    "duration_initial_label": "Validità",
+    "duration_initial_value": "1 Anno",
+    "duration_max_label": "Rinnovo",
+    "duration_max_value": "Annuale",
     "conditions_title": "Condizioni Richieste",
     "conditions_list": [
-      "Invito da un organismo di ricerca thailandese.",
+      "Invito da un organismo di ricerca thailandese (es: NRCT).",
       "Accordo di cooperazione scientifica.",
       "Certificati di laurea e CV dettagliato.",
       "Prova di finanziamento della ricerca."
     ],
-    "cta_btn": "Verifica sponsorizzazione"
+    "work_title": "Lavoro e Ricerca",
+    "work_warning_title": "Status Specifico",
+    "work_warning_text": "Questo visto autorizza la ricerca scientifica. Altre attività commerciali non correlate sono vietate. Un permesso di lavoro è solitamente legato all'istituzione ospitante.",
+    "renewal_title": "Rinnovo",
+    "renewal_text": "Rinnovabile annualmente purché il progetto di ricerca continui e sia validato dal Consiglio Nazionale delle Ricerche della Thailandia (NRCT).",
+    "limitations_title": "Limitazioni",
+    "limitations_risk_title": "Dipendenza Istituzionale",
+    "limitations_risk_text": "Il tuo visto è totalmente legato alla tua istituzione ospitante. Se il progetto si ferma, il visto viene cancellato.",
+    "cta_help_title": "Vuoi verificare la tua idoneità?",
+    "cta_help_subtitle": "Analizziamo il tuo profilo scientifico e il tuo sponsor.",
+    "cta_help_btn": "Verifica sponsor",
+    "cta_compare_title": "Esperto tecnologico?",
+    "cta_compare_subtitle": "Il Visto SMART può essere più vantaggioso (4 anni).",
+    "cta_compare_btn": "Vedi Visto SMART"
   },
   "tourist_visa_page": {
     "meta": {

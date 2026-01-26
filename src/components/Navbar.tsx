@@ -7,6 +7,8 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useCurrentLang, useLangPath } from '../hooks/useLang';
 import { MobileMenu } from './navbar/MobileMenu';
+import { DesktopMenu } from './navbar/DesktopMenu';
+import { NavbarSearch } from './navbar/NavbarSearch';
 import { LanguageSelector } from './navbar/LanguageSelector';
 import { REVERSE_MAP, PageKey, getTranslatedPath } from '../utils/slugs';
 
@@ -50,17 +52,19 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-slate-900 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
-          {/* Left Side: Burger Menu + Logo */}
-          <div className="flex items-center space-x-4 md:space-x-6">
+          {/* Left Side: Logo + Desktop Menu */}
+          <div className="flex items-center">
+            {/* Mobile Burger Menu */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-white hover:text-amber-400 transition-colors focus:outline-none"
+              className="lg:hidden p-2 text-white hover:text-amber-400 transition-colors focus:outline-none mr-2"
               aria-label="Toggle Menu"
             >
               {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
             </button>
 
-            <Link href={langPath('')} className="flex items-center space-x-2 group">
+            {/* Logo */}
+            <Link href={langPath('')} className="flex items-center space-x-2 group mr-6">
               <div className="bg-amber-500 p-2 rounded-lg shadow-lg group-hover:bg-amber-400 transition text-slate-900">
                 <Plane className="h-6 w-6 transform -rotate-45" />
               </div>
@@ -68,17 +72,22 @@ const Navbar: React.FC = () => {
                 Siam Visa <span className="text-amber-500">Pro</span>
               </span>
             </Link>
+
+            {/* Desktop Navigation */}
+            <DesktopMenu langPath={langPath} t={t} />
           </div>
 
-          {/* Right Side: CTA Button + Desktop Lang Selector */}
-          <div className="flex items-center space-x-4">
+          {/* Right Side: Search + Actions */}
+          <div className="flex items-center space-x-3 lg:space-x-4">
+            <NavbarSearch />
+
             <div className="hidden md:block">
               <LanguageSelector currentLang={currentLang} onSwitch={switchLanguage} />
             </div>
 
             <a
               href={SCORING_ENGINE_URL}
-              className="bg-amber-400 hover:bg-amber-300 text-slate-900 px-4 md:px-6 py-2 md:py-2.5 rounded-lg shadow-lg shadow-amber-400/20 text-sm font-bold border border-amber-300 transition-all transform hover:-translate-y-0.5"
+              className="bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 md:px-5 py-2 rounded-lg shadow-lg shadow-amber-400/20 text-sm font-bold border border-amber-300 transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
             >
               {t('nav.eligibility')}
             </a>
@@ -86,7 +95,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Unified Fullscreen Menu (Desktop & Mobile) */}
+      {/* Unified Fullscreen Menu (Mobile Only) */}
       <MobileMenu
         isOpen={isOpen}
         setIsOpen={setIsOpen}

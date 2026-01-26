@@ -11,7 +11,9 @@ export const fr = {
     "retirement": "Visa Retraite",
     "services": "Services",
     "faq": "FAQ",
-    "search": "Recherche", "comparator": "Comparateur de Visas 2026",
+    "search": "Recherche",
+    "search_placeholder": "Posez une question à l'IA...",
+    "comparator": "Comparateur de Visas 2026",
     "other_visas": "Autres Visas",
     "eligibility": "Contacter un expert",
     "see_services": "Voir nos services",
@@ -916,47 +918,102 @@ export const fr = {
   "media_visa_page": {
     "meta": {
       "title": "Visa Média / Journaliste Thaïlande (Non-M) | Guide 2026",
-      "description": "Visa pour les journalistes, correspondants de presse et équipes de tournage en Thaïlande. Accréditation et conditions."
+      "description": "Visa pour les journalistes, correspondants de presse et équipes de tournage en Thaïlande. Accréditation et conditions requises."
     },
     "hero_badge": "Presse & Journalisme",
     "hero_title": "Visa Média (Non-M) – Thaïlande",
     "hero_subtitle": "Couvrir l'actualité ou produire des contenus en Thaïlande",
     "definition_title": "Qu’est-ce que le Visa Média (Non-M) ?",
-    "definition_content": "Le Visa Non-Immigrant M (Media) s'adresse aux professionnels des médias certifiés (journalistes, correspondants, équipes de tournage).",
-    "accreditation_title": "L'Accréditation : Étape Majeure",
-    "accreditation_subtitle": "Avant de demander le visa, vous devez obtenir l'accréditation du Ministère des Affaires Étrangères (MFA).",
-    "accreditation_list": [
-      "Enregistrement sur le portail en ligne du MFA (M-Press).",
-      "Présentation de la carte de presse et d'une lettre de l'employeur.",
-      "Vérification des antécédents par le Département des Relations Publiques."
+    "definition_content": "Le Visa Non-Immigrant M (Media) s'adresse aux professionnels certifiés (journalistes, correspondants, équipes de tournage) souhaitant travailler en Thaïlande.",
+    "audience_title": "Pour qui ?",
+    "audience_compatible": "Profils Compatibles",
+    "audience_compatible_list": [
+      "Journalistes Accrédités.",
+      "Correspondants de Presse Étrangère.",
+      "Équipes de Cinéma avec permis officiel."
     ],
-    "conditions_title": "Conditions et Validité",
-    "duration_label": "Durée",
-    "duration_value": "1 an (renouvelable)",
-    "activity_label": "Activité",
-    "activity_value": "Reportage & Production",
-    "warning_title": "Mise en garde tournage",
-    "warning_text": "Filmer pour une production commerciale avec un simple visa touriste est passible de fortes amendes. Le permis du 'Thailand Film Office' est également requis.",
-    "cta_btn": "Assistance accréditation MFA"
+    "audience_not_compatible": "Non Compatibles",
+    "audience_not_compatible_list": [
+      "YouTubers indépendants sans permis.",
+      "Blogueurs / Influenceurs (voir Visa DTV).",
+      "Productions commerciales sans licence."
+    ],
+    "duration_title": "Durée et Validité",
+    "duration_initial_label": "Validité",
+    "duration_initial_value": "1 An",
+    "duration_max_label": "Extension",
+    "duration_max_value": "Renouvelable",
+    "conditions_title": "Accréditation et Requis",
+    "conditions_list": [
+      "Enregistrement sur le portail en ligne du MFA (M-Press).",
+      "Présentation de la carte de presse et lettre de l'employeur.",
+      "Vérification des antécédents par les Relations Publiques.",
+      "Permis du Thailand Film Office pour les tournages."
+    ],
+    "work_title": "Travail et Tournage",
+    "work_warning_title": "Permis de Tournage",
+    "work_warning_text": "Le visa seul ne suffit souvent pas. Pour toute production commerciale, un permis de tournage spécifique est requis. Sans lui, vous risquez de lourdes amendes et la confiscation du matériel.",
+    "renewal_title": "Renouvellement",
+    "renewal_text": "Le visa peut être renouvelé annuellement tant que l'accréditation auprès du Ministère des Affaires Étrangères (MFA) est maintenue.",
+    "limitations_title": "Limitations",
+    "limitations_risk_title": "Activité Contrôlée",
+    "limitations_risk_text": "La Thaïlande surveille de près les médias étrangers. Tout reportage politiquement sensible sans l'accréditation adéquate peut mener à l'expulsion.",
+    "cta_help_title": "Besoin d'accréditation ?",
+    "cta_help_subtitle": "Nous aidons les professionnels des médias avec les formalités MFA.",
+    "cta_help_btn": "Demander une assistance",
+    "cta_compare_title": "Vous êtes Freelance ?",
+    "cta_compare_subtitle": "Pour des contenus numériques, le DTV est souvent plus simple.",
+    "cta_compare_btn": "Voir Visa DTV"
   },
   "official_visa_page": {
     "meta": {
       "title": "Visa Officiel Thaïlande (Non-F) | Guide 2026",
-      "description": "Visa pour les officiels, diplomates et employés d'organisations internationales en mission en Thaïlande."
+      "description": "Visa pour les fonctionnaires, diplomates et employés d'organisations internationales en mission en Thaïlande."
     },
     "hero_badge": "Diplomatie & État",
     "hero_title": "Visa Officiel (Non-F) – Thaïlande",
     "hero_subtitle": "Missions diplomatiques et officielles en Thaïlande",
     "definition_title": "Qu’est-ce que le Visa Officiel ?",
-    "definition_content": "Le Visa Non-Immigrant F (Official) est réservé aux personnes en mission officielle (diplomates, fonctionnaires d'OI).",
+    "definition_content": "Le Visa Non-Immigrant F (Official) est strictement réservé aux personnes en mission officielle pour un gouvernement étranger ou une organisation internationale reconnue.",
     "audience_title": "Bénéficiaires",
-    "audience_diplomatic_title": "Corps Diplomatique",
-    "audience_diplomatic_text": "Ambassades, Consulats, Attachés militaires.",
-    "audience_oi_title": "OI / ONU",
-    "audience_oi_text": "Employés des Nations Unies, UNICEF, etc., basés à Bangkok.",
-    "conditions_title": "Exigences spécifiques",
-    "conditions_text": "Ce visa demande impérativement une note verbale ou un ordre de mission officiel.",
-    "cta_btn": "Demander une assistance"
+    "audience_compatible": "Profils Éligibles",
+    "audience_compatible_list": [
+      "Diplomates et personnel des Ambassades.",
+      "Fonctionnaires des Nations Unies (ONU/UNICEF/ESCAP).",
+      "Militaires et fonctionnaires en mission officielle."
+    ],
+    "audience_not_compatible": "Non Éligibles",
+    "audience_not_compatible_list": [
+      "Contractants privés travaillant pour des gouvernements.",
+      "Consultants externes sans statut officiel.",
+      "Membres de la famille non déclarés officiellement."
+    ],
+    "duration_title": "Durée de la Mission",
+    "duration_initial_label": "Validité",
+    "duration_initial_value": "Mission",
+    "duration_max_label": "Extension",
+    "duration_max_value": "Variable",
+    "conditions_title": "Exigences Spécifiques",
+    "conditions_list": [
+      "Note Verbale du Ministère des Affaires Étrangères.",
+      "Ordre de Mission Officiel.",
+      "Passeport Diplomatique ou de Service (recommandé).",
+      "Lettre d'invitation de l'organisation en Thaïlande."
+    ],
+    "work_title": "Statut Diplomatique",
+    "work_warning_title": "Immunité et Règles",
+    "work_warning_text": "Selon votre rang et l'accord avec la Thaïlande, vous pouvez bénéficier de l'immunité diplomatique et d'exemptions fiscales. Aucune activité commerciale privée n'est autorisée.",
+    "renewal_title": "Extension",
+    "renewal_text": "Gérée directement par le département du protocole du MFA ou votre organisation.",
+    "limitations_title": "Limitations",
+    "limitations_risk_title": "Fin de Mission",
+    "limitations_risk_text": "À la fin de votre mission officielle, vous devez rendre votre carte diplomatique et changer de statut ou quitter le pays immédiatement.",
+    "cta_help_title": "Assistance Protocole ?",
+    "cta_help_subtitle": "Nous assistons les organisations internationales dans leurs démarches.",
+    "cta_help_btn": "Demander une assistance",
+    "cta_compare_title": "Mission commerciale ?",
+    "cta_compare_subtitle": "Si vous n'avez pas de statut diplomatique, utilisez le Visa Business.",
+    "cta_compare_btn": "Voir Visa Business"
   },
   "scientific_visa_page": {
     "meta": {
@@ -969,18 +1026,44 @@ export const fr = {
     "definition_title": "Qu’est-ce que le Visa Recherche Scientifique ?",
     "definition_content": "Le Visa Non-Immigrant RS (Research & Science) est conçu pour les experts et chercheurs menant des travaux scientifiques avec un institut thaïlandais.",
     "audience_title": "Profils éligibles",
-    "audience_tech_title": "Experts Techniques",
-    "audience_tech_text": "Ingénieurs et spécialistes en transfert de technologie.",
-    "audience_academic_title": "Chercheurs Académiques",
-    "audience_academic_text": "Scientifiques en mission dans des universités ou centres de recherche.",
+    "audience_compatible": "Profils Compatibles",
+    "audience_compatible_list": [
+      "Experts Techniques et Ingénieurs.",
+      "Chercheurs Académiques (Universités, Centres Nationaux).",
+      "Spécialistes en transfert de technologie."
+    ],
+    "audience_not_compatible": "Non Compatibles",
+    "audience_not_compatible_list": [
+      "Chercheurs indépendants sans affiliation.",
+      "Professeurs de langues (voir Visa ED).",
+      "Doctorants sans contrat de recherche."
+    ],
+    "duration_title": "Durée et Validité",
+    "duration_initial_label": "Validité",
+    "duration_initial_value": "1 An",
+    "duration_max_label": "Renouvellement",
+    "duration_max_value": "Annuel",
     "conditions_title": "Conditions Requises",
     "conditions_list": [
       "Invitation d'un organisme de recherche thaïlandais (ex: NRCT).",
-      "Accord de coopération scientifique entre les institutions.",
+      "Accord de coopération scientifique.",
       "Certificats de diplômes et CV détaillé.",
       "Preuve de financement de la recherche."
     ],
-    "cta_btn": "Vérifier le parrainage"
+    "work_title": "Travail et Recherche",
+    "work_warning_title": "Statut Spécifique",
+    "work_warning_text": "Ce visa autorise la recherche scientifique. D'autres activités commerciales non liées sont interdites. Un permis de travail est généralement lié à l'institution hôte.",
+    "renewal_title": "Renouvellement",
+    "renewal_text": "Renouvelable annuellement tant que le projet de recherche continue et est validé par le Conseil National de Recherche de Thaïlande (NRCT).",
+    "limitations_title": "Limitations",
+    "limitations_risk_title": "Dépendance Institutionnelle",
+    "limitations_risk_text": "Votre visa est totalement lié à votre institution hôte. Si le projet s'arrête, le visa est annulé.",
+    "cta_help_title": "Besoin de vérifier votre éligibilité ?",
+    "cta_help_subtitle": "Nous analysons votre profil scientifique et votre sponsor.",
+    "cta_help_btn": "Vérifier le parrainage",
+    "cta_compare_title": "Expert technologique ?",
+    "cta_compare_subtitle": "Le Visa SMART peut être plus avantageux (4 ans).",
+    "cta_compare_btn": "Voir Visa SMART"
   },
   "eligibility": {
     "steps": [

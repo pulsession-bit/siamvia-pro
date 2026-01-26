@@ -682,22 +682,46 @@ export const de = {
     "hero_title": "Medienvisum (Non-M) – Thailand",
     "hero_subtitle": "Berichterstattung oder Produktion von Inhalten in Thailand",
     "definition_title": "Was ist das Medienvisum (Non-M)?",
-    "definition_content": "Das Non-Immigrant M (Media) Visum richtet sich an zertifizierte Medienvertreter (Journalisten, Korrespondenten, Filmteams).",
-    "accreditation_title": "Akkreditierung: Ein wichtiger Schritt",
-    "accreditation_subtitle": "Vor der Visumbeantragung müssen Sie die Akkreditierung durch das Außenministerium (MFA) einholen.",
-    "accreditation_list": [
-      "Registrierung auf dem Online-Portal des MFA (M-Press).",
-      "Vorlage des Presseausweises und eines Schreibens des Arbeitgebers.",
-      "Hintergrundüberprüfung durch das Public Relations Department."
+    "definition_content": "Das Non-Immigrant M (Media) Visum richtet sich an zertifizierte Medienvertreter (Journalisten, Korrespondenten, Filmteams), die in Thailand arbeiten möchten.",
+    "audience_title": "Für wen ist dieses Visum?",
+    "audience_compatible": "Kompatible Profile",
+    "audience_compatible_list": [
+      "Akkreditierte Journalisten.",
+      "Ausländische Pressekorrespondenten.",
+      "Filmteams mit Genehmigung."
     ],
-    "conditions_title": "Bedingungen und Gültigkeit",
-    "duration_label": "Dauer",
-    "duration_value": "1 Jahr (erneuerbar)",
-    "activity_label": "Tätigkeit",
-    "activity_value": "Berichterstattung & Produktion",
-    "warning_title": "Warnung vor Dreharbeiten",
-    "warning_text": "Dreharbeiten für eine kommerzielle Produktion mit einem einfachen Touristenvisum werden mit hohen Geldstrafen geahndet. Eine Genehmigung des 'Thailand Film Office' ist ebenfalls erforderlich.",
-    "cta_btn": "Unterstützung bei der MFA-Akkreditierung"
+    "audience_not_compatible": "Nicht kompatible Profile",
+    "audience_not_compatible_list": [
+      "Unabhängige YouTuber ohne Drehgenehmigung.",
+      "Blogger / Influencer (siehe DTV).",
+      "Kommerzielle Produktionen ohne Lizenz."
+    ],
+    "duration_title": "Aufenthaltsdauer und Gültigkeit",
+    "duration_initial_label": "Gültigkeit",
+    "duration_initial_value": "1 Jahr",
+    "duration_max_label": "Verlängerung",
+    "duration_max_value": "Erneuerbar",
+    "conditions_title": "Akkreditierung & Bedingungen",
+    "conditions_list": [
+      "Registrierung auf dem Online-Portal des MFA (M-Press).",
+      "Vorlage des Presseausweises und Arbeitgeberbriefs.",
+      "Überprüfung durch das Public Relations Department.",
+      "Genehmigung des Thailand Film Office für Dreharbeiten."
+    ],
+    "work_title": "Arbeiten & Drehen",
+    "work_warning_title": "Drehgenehmigung",
+    "work_warning_text": "Ein Visum allein reicht oft nicht aus. Für jede kommerzielle Produktion ist eine spezielle Drehgenehmigung erforderlich. Ohne diese riskieren Sie hohe Geldstrafen und die Beschlagnahmung der Ausrüstung.",
+    "renewal_title": "Erneuerung",
+    "renewal_text": "Das Visum kann jährlich verlängert werden, solange die Akkreditierung beim Außenministerium (MFA) aufrechterhalten wird.",
+    "limitations_title": "Einschränkungen",
+    "limitations_risk_title": "Streng kontrollierte Aktivität",
+    "limitations_risk_text": "Thailand überwacht ausländische Medien sehr genau. Jede politisch sensible Berichterstattung ohne ordnungsgemäße Akkreditierung kann zur Ausweisung führen.",
+    "cta_help_title": "Benötigen Sie eine Akkreditierung?",
+    "cta_help_subtitle": "Wir helfen Medienprofis bei den MFA-Formalitäten.",
+    "cta_help_btn": "Unterstützung anfordern",
+    "cta_compare_title": "Sind Sie Freelancer?",
+    "cta_compare_subtitle": "Für digitale Inhalte ist das DTV oft einfacher.",
+    "cta_compare_btn": "DTV Visum ansehen"
   },
   "official_visa_page": {
     "meta": {
