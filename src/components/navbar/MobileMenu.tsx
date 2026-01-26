@@ -55,8 +55,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                 onClick={() => setIsOpen(false)}
             />
 
-            <div className={`fixed inset-y-0 right-0 w-full md:w-96 bg-white z-[60] shadow-2xl transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-                <div className="flex flex-col h-full border-l border-slate-100">
+            <div className={`fixed inset-y-0 left-0 w-full md:w-96 bg-white z-[60] shadow-2xl transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+                <div className="flex flex-col h-full border-r border-slate-100">
                     <div className="flex items-center justify-between p-5 border-b border-slate-100">
                         <span className="text-xl font-bold text-slate-900">Siam Visa <span className="text-amber-500">Pro</span></span>
                         <button onClick={() => setIsOpen(false)} className="p-2 text-slate-500 hover:bg-slate-100 rounded-full">

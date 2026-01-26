@@ -7,6 +7,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useCurrentLang, useLangPath } from '../hooks/useLang';
 import { MobileMenu } from './navbar/MobileMenu';
+import { LanguageSelector } from './navbar/LanguageSelector';
 import { REVERSE_MAP, PageKey, getTranslatedPath } from '../utils/slugs';
 
 const Navbar: React.FC = () => {
@@ -49,27 +50,8 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-slate-900 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Link href={langPath('')} className="flex items-center space-x-2 group">
-              <div className="bg-amber-500 p-2 rounded-lg shadow-lg group-hover:bg-amber-400 transition">
-                <Plane className="h-6 w-6 text-slate-900 transform -rotate-45" />
-              </div>
-              <span className="text-xl font-bold tracking-tight text-white transition-colors">
-                Siam Visa <span className="text-amber-500">Pro</span>
-              </span>
-            </Link>
-          </div>
-
-          {/* Unified Right Side: CTA Button + Menu Toggle */}
+          {/* Left Side: Burger Menu + Logo */}
           <div className="flex items-center space-x-4 md:space-x-6">
-            <a
-              href={SCORING_ENGINE_URL}
-              className="bg-amber-400 hover:bg-amber-300 text-slate-900 px-4 md:px-6 py-2 md:py-2.5 rounded-lg shadow-lg shadow-amber-400/20 text-sm font-bold border border-amber-300 transition-all transform hover:-translate-y-0.5"
-            >
-              {t('nav.eligibility')}
-            </a>
-
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 text-white hover:text-amber-400 transition-colors focus:outline-none"
@@ -77,6 +59,29 @@ const Navbar: React.FC = () => {
             >
               {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
             </button>
+
+            <Link href={langPath('')} className="flex items-center space-x-2 group">
+              <div className="bg-amber-500 p-2 rounded-lg shadow-lg group-hover:bg-amber-400 transition text-slate-900">
+                <Plane className="h-6 w-6 transform -rotate-45" />
+              </div>
+              <span className="text-xl font-bold tracking-tight text-white transition-colors hidden sm:inline-block">
+                Siam Visa <span className="text-amber-500">Pro</span>
+              </span>
+            </Link>
+          </div>
+
+          {/* Right Side: CTA Button + Desktop Lang Selector */}
+          <div className="flex items-center space-x-4">
+            <div className="hidden md:block">
+              <LanguageSelector currentLang={currentLang} onSwitch={switchLanguage} />
+            </div>
+
+            <a
+              href={SCORING_ENGINE_URL}
+              className="bg-amber-400 hover:bg-amber-300 text-slate-900 px-4 md:px-6 py-2 md:py-2.5 rounded-lg shadow-lg shadow-amber-400/20 text-sm font-bold border border-amber-300 transition-all transform hover:-translate-y-0.5"
+            >
+              {t('nav.eligibility')}
+            </a>
           </div>
         </div>
       </div>
