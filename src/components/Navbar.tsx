@@ -7,7 +7,6 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useCurrentLang, useLangPath } from '../hooks/useLang';
 import { MobileMenu } from './navbar/MobileMenu';
-import { DesktopMenu } from './navbar/DesktopMenu';
 import { NavbarSearch } from './navbar/NavbarSearch';
 import { LanguageSelector } from './navbar/LanguageSelector';
 import { REVERSE_MAP, PageKey, getTranslatedPath } from '../utils/slugs';
@@ -57,7 +56,7 @@ const Navbar: React.FC = () => {
             {/* Mobile Burger Menu */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 text-white hover:text-amber-400 transition-colors focus:outline-none mr-2"
+              className="p-2 text-white hover:text-amber-400 transition-colors focus:outline-none mr-2"
               aria-label="Toggle Menu"
             >
               {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
@@ -72,9 +71,6 @@ const Navbar: React.FC = () => {
                 Siam Visa <span className="text-amber-500">Pro</span>
               </span>
             </Link>
-
-            {/* Desktop Navigation */}
-            <DesktopMenu langPath={langPath} t={t} />
           </div>
 
           {/* Right Side: Search + Actions */}
