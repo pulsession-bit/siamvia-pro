@@ -23,6 +23,7 @@ export type PageKey =
     | 'media-visa'
     | 'official-visa'
     | 'scientific-visa'
+    | 'apply'
     | 'about';
 
 export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
@@ -51,6 +52,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'media-visa': 'visa-media-thailande',
         'official-visa': 'visa-officiel-thailande',
         'scientific-visa': 'visa-scientifique-thailande',
+        apply: 'demande-de-visa',
         about: 'a-propos'
     },
     en: {
@@ -78,6 +80,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
+        apply: 'apply-visa',
         about: 'about-us'
     },
     de: {
@@ -105,6 +108,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
+        apply: 'apply-visa',
         about: 'ueber-uns'
     },
     es: {
@@ -132,6 +136,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
+        apply: 'solicitar-visa',
         about: 'sobre-nosotros'
     },
     it: {
@@ -159,6 +164,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
+        apply: 'richiedi-visto',
         about: 'chi-siamo'
     },
     th: {
@@ -186,6 +192,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
+        apply: 'apply',
         about: 'about'
     },
     ru: {
@@ -213,6 +220,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
+        apply: 'apply',
         about: 'about'
     },
     zh: {
@@ -240,6 +248,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
+        apply: 'apply',
         about: 'about'
     },
     ja: {
@@ -267,6 +276,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
+        apply: 'apply',
         about: 'about'
     },
     ko: {
@@ -294,6 +304,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
+        apply: 'apply',
         about: 'about'
     },
     ar: {
@@ -321,6 +332,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'media-visa': 'thailand-media-visa',
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
+        apply: 'apply',
         about: 'about'
     }
 };

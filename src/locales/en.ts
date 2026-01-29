@@ -2,6 +2,8 @@ export const en = {
   "nav": {
     "home": "Home",
     "dtv": "DTV Visa",
+    "visa_options": "Visa Options",
+    "eligibility_check": "Check Eligibility",
     "other_visas": "Other Visas",
     "tourist": "Tourist Visa (TR)",
     "elite": "Elite Visa",
@@ -120,6 +122,8 @@ export const en = {
     "description": "Get your Thai visa stress-free. Experts in DTV, Tourist and Retirement visas. Global support and optimized Portfolio."
   },
   "home_page": {
+    "member": "Client Area",
+    "eligibility": "Eligibility",
     "appointment_title": "Let's talk about your project",
     "appointment_subtitle": "Book a free call with a Thailand visa expert."
   },
@@ -159,15 +163,63 @@ export const en = {
       "details_tips_title": "More Details & Advice",
       "intro": "Choosing the right visa for Thailand mainly depends on the length of stay, intended activity, and applicant profile. This comparison presents the main visas available in 2026, their uses, and limitations.",
       "table": {
-        "headers": ["Visa", "Length of Stay", "Work Allowed", "Entries", "Main Profile"],
+        "headers": [
+          "Visa",
+          "Length of Stay",
+          "Work Allowed",
+          "Entries",
+          "Main Profile"
+        ],
         "rows": [
-          ["Visa Exemption", "Short term", "❌ No", "Multiple (limited)", "Short tourism"],
-          ["Tourist Visa (TR)", "Medium term", "❌ No", "Single", "Extended tourism"],
-          ["DTV Visa", "Long term", "✅ Remote work", "Multiple", "Digital nomad"],
-          ["LTR / Retirement Visa", "Long term", "❌ (except specific cases)", "Multiple", "Retired / resident"],
-          ["Elite Visa", "Very long term", "❌ No", "Multiple", "VIP Resident"],
-          ["Business Visa (Non-B)", "Variable", "✅ Yes", "Variable", "Work / business"],
-          ["Student Visa (ED)", "Variable", "❌ No", "Variable", "Study / training"]
+          [
+            "Visa Exemption",
+            "Short term",
+            "❌ No",
+            "Multiple (limited)",
+            "Short tourism"
+          ],
+          [
+            "Tourist Visa (TR)",
+            "Medium term",
+            "❌ No",
+            "Single",
+            "Extended tourism"
+          ],
+          [
+            "DTV Visa",
+            "Long term",
+            "✅ Remote work",
+            "Multiple",
+            "Digital nomad"
+          ],
+          [
+            "LTR / Retirement Visa",
+            "Long term",
+            "❌ (except specific cases)",
+            "Multiple",
+            "Retired / resident"
+          ],
+          [
+            "Elite Visa",
+            "Very long term",
+            "❌ No",
+            "Multiple",
+            "VIP Resident"
+          ],
+          [
+            "Business Visa (Non-B)",
+            "Variable",
+            "✅ Yes",
+            "Variable",
+            "Work / business"
+          ],
+          [
+            "Student Visa (ED)",
+            "Variable",
+            "❌ No",
+            "Variable",
+            "Study / training"
+          ]
         ]
       },
       "sections": [
@@ -1010,21 +1062,52 @@ export const en = {
   "official_visa_page": {
     "meta": {
       "title": "Thailand Official Visa (Non-F) | Guide 2026",
-      "description": "Visa for officials, diplomats, and employees of international organizations on mission in Thailand."
+      "description": "Visa for government officials, diplomats, and international organization employees on mission in Thailand."
     },
     "hero_badge": "Diplomacy & State",
     "hero_title": "Official Visa (Non-F) – Thailand",
     "hero_subtitle": "Diplomatic and official missions in Thailand",
     "definition_title": "What is the Official Visa?",
-    "definition_content": "The Non-Immigrant F (Official) Visa is reserved for people on official mission (diplomats, IO officials).",
+    "definition_content": "The Non-Immigrant F (Official) Visa is strictly reserved for persons on official mission for a foreign government or a recognized international organization.",
     "audience_title": "Beneficiaries",
-    "audience_diplomatic_title": "Diplomatic Corps",
-    "audience_diplomatic_text": "Ambassies, Consulates, Military Attaches.",
-    "audience_oi_title": "IO / UN",
-    "audience_oi_text": "United Nations employees, UNICEF, etc., based in Bangkok.",
-    "conditions_title": "Specific requirements",
-    "conditions_text": "This visa imperatively requires a verbal note or an official mission order.",
-    "cta_btn": "Request assistance"
+    "audience_compatible": "Eligible Profiles",
+    "audience_compatible_list": [
+      "Diplomats and Embassy staff.",
+      "United Nations officials (UN/UNICEF/ESCAP).",
+      "Military and officials on official mission."
+    ],
+    "audience_not_compatible": "Not Eligible",
+    "audience_not_compatible_list": [
+      "Private contractors working for governments.",
+      "External consultants without official status.",
+      "Family members not officially declared."
+    ],
+    "duration_title": "Mission Duration",
+    "duration_initial_label": "Validity",
+    "duration_initial_value": "Mission",
+    "duration_max_label": "Extension",
+    "duration_max_value": "Variable",
+    "conditions_title": "Specific Requirements",
+    "conditions_list": [
+      "Note Verbale from the Ministry of Foreign Affairs.",
+      "Official Mission Order.",
+      "Diplomatic or Service Passport (recommended).",
+      "Invitation letter from the organization in Thailand."
+    ],
+    "work_title": "Diplomatic Status",
+    "work_warning_title": "Immunity and Rules",
+    "work_warning_text": "Depending on your rank and the agreement with Thailand, you may benefit from diplomatic immunity and tax exemptions. No private commercial activity is authorized.",
+    "renewal_title": "Extension",
+    "renewal_text": "Managed directly by the MFA Protocol Department or your organization.",
+    "limitations_title": "Limitations",
+    "limitations_risk_title": "End of Mission",
+    "limitations_risk_text": "At the end of your official mission, you must return your diplomatic card and change status or leave the country immediately.",
+    "cta_help_title": "Protocol Assistance?",
+    "cta_help_subtitle": "We assist international organizations with their procedures.",
+    "cta_help_btn": "Request assistance",
+    "cta_compare_title": "Commercial Mission?",
+    "cta_compare_subtitle": "If you do not have diplomatic status, use the Business Visa.",
+    "cta_compare_btn": "See Business Visa"
   },
   "scientific_visa_page": {
     "meta": {
@@ -1037,18 +1120,44 @@ export const en = {
     "definition_title": "What is the Scientific Research Visa?",
     "definition_content": "The Non-Immigrant RS (Research & Science) Visa is designed for experts and researchers conducting scientific work with a Thai institute.",
     "audience_title": "Eligible Profiles",
-    "audience_tech_title": "Technical Experts",
-    "audience_tech_text": "Engineers and specialists in technology transfer.",
-    "audience_academic_title": "Academic Researchers",
-    "audience_academic_text": "Scientists on mission in universities or national research centers.",
-    "conditions_title": "Required Conditions",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "Technical Experts and Engineers.",
+      "Academic Researchers (Universities, National Centers).",
+      "Technology Transfer Specialists."
+    ],
+    "audience_not_compatible": "Not Compatible",
+    "audience_not_compatible_list": [
+      "Independent researchers without affiliation.",
+      "Language teachers (see ED Visa).",
+      "PhD students without a research contract."
+    ],
+    "duration_title": "Research Duration",
+    "duration_initial_label": "Validity",
+    "duration_initial_value": "1-2 Years",
+    "duration_max_label": "Extension",
+    "duration_max_value": "Renewable",
+    "conditions_title": "Requirements",
     "conditions_list": [
-      "Invitation from a Thai research organization (e.g., NRCT).",
-      "Scientific cooperation agreement between institutions.",
-      "Degree certificates and detailed CV.",
+      "Official letter from the National Research Council of Thailand (NRCT).",
+      "Collaboration contract with a Thai entity.",
+      "Proof of qualifications (PhD, Master, Publications).",
       "Proof of research funding."
     ],
-    "cta_btn": "Check sponsorship"
+    "work_title": "Research Activity",
+    "work_warning_title": "Scope of work",
+    "work_warning_text": "This visa authorizes research activities described in the contract. It does not allow working for a private company outside the research project.",
+    "renewal_title": "Renewal",
+    "renewal_text": "Renewable based on the progress of the research project and funding.",
+    "limitations_title": "Approval Required",
+    "limitations_risk_title": "NRCT Approval",
+    "limitations_risk_text": "The most difficult step is obtaining approval from the National Research Council. Without this, the RS visa cannot be issued.",
+    "cta_help_title": "Need help with NRCT?",
+    "cta_help_subtitle": "We guide researchers and institutes through the process.",
+    "cta_help_btn": "Contact an expert",
+    "cta_compare_title": "Tech Startup?",
+    "cta_compare_subtitle": "The SMART Visa might be more appropriate for innovation.",
+    "cta_compare_btn": "See SMART Visa"
   },
   "eligibility": {
     "steps": [
@@ -1484,6 +1593,7 @@ export const en = {
     "all_services": "All our services",
     "legal": "Terms & Conditions",
     "privacy": "Privacy Policy",
+    "details": "Visa Details",
     "sitemap": "Sitemap",
     "copyright": "All rights reserved.",
     "disclaimer": "SiamVisa Pro is a private facilitation agency, not affiliated with the Thai government.",
@@ -1537,5 +1647,43 @@ export const en = {
     "transfer_note": "Include your NAME in the transfer reference.",
     "btn_confirm_transfer": "I have made the transfer",
     "transfer_success_desc": "Thank you. Your order is pending funds arrival. Please email payment proof to contact@siamvisapro.com to activate service."
+  },
+  "apply_page": {
+    "meta": {
+      "title": "Thailand Visa Application | SiamVisa Pro",
+      "description": "Start your Thailand visa application online. Simple and fast process with expert support."
+    },
+    "hero_title": "Visa Application",
+    "hero_subtitle": "Start your travel project in just a few clicks",
+    "steps": {
+      "selection": {
+        "title": "Choose your Visa",
+        "subtitle": "Select the visa type that matches your project"
+      },
+      "personal": {
+        "title": "Personal Information",
+        "subtitle": "Tell us more about yourself",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "nationality": "Nationality"
+      },
+      "trip": {
+        "title": "Trip Details",
+        "subtitle": "Information about your stay",
+        "entry_date": "Planned Entry Date",
+        "duration": "Stay Duration (days)"
+      },
+      "confirm": {
+        "title": "Confirmation",
+        "subtitle": "Verify your information before sending",
+        "btn_submit": "SUBMIT MY APPLICATION",
+        "success_title": "Application Received!",
+        "success_desc": "Your application has been sent to our experts. You will receive an email response within 24 hours."
+      }
+    },
+    "next": "Next",
+    "prev": "Previous"
   }
 };

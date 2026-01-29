@@ -2,6 +2,9 @@ export const de = {
   "nav": {
     "home": "Startseite",
     "dtv": "DTV Visum",
+    "visa_options": "Visa-Optionen",
+    "eligibility_check": "Berechtigung prüfen",
+    "search_placeholder": "Frag KI...",
     "other_visas": "Andere Visa",
     "tourist": "Touristenvisum (TR)",
     "elite": "Elite Visum",
@@ -14,7 +17,8 @@ export const de = {
     "eligibility": "Experten kontaktieren",
     "ltr": "Visa LTR",
     "languages": "Sprachen",
-    "search": "Suche", "comparator": "Visa-Vergleich 2026",
+    "search": "Suche",
+    "comparator": "Visa-Vergleich 2026",
     "all_visas": "Alle Visa",
     "business": "Business-Visum",
     "smart": "SMART-Visum",
@@ -44,7 +48,9 @@ export const de = {
   },
   "home_page": {
     "appointment_title": "Lassen Sie uns über Ihr Projekt sprechen",
-    "appointment_subtitle": "Buchen Sie ein kostenloses Gespräch mit einem Thailand-Visa-Experten."
+    "appointment_subtitle": "Buchen Sie ein kostenloses Gespräch mit einem Thailand-Visa-Experten.",
+    "member": "Client Area",
+    "eligibility": "Eligibility"
   },
   "hero": {
     "new_badge": "NEU: DTV VISUM VERFÜGBAR",
@@ -740,7 +746,44 @@ export const de = {
     "audience_oi_text": "Mitarbeiter der Vereinten Nationen, UNICEF etc. mit Sitz in Bangkok.",
     "conditions_title": "Besondere Anforderungen",
     "conditions_text": "Dieses Visum erfordert zwingend eine Verbalnote oder einen offiziellen Marschbefehl.",
-    "cta_btn": "Unterstützung anfordern"
+    "cta_btn": "Unterstützung anfordern",
+    "audience_compatible": "Eligible Profiles",
+    "audience_compatible_list": [
+      "Diplomats and Embassy staff.",
+      "United Nations officials (UN/UNICEF/ESCAP).",
+      "Military and officials on official mission."
+    ],
+    "audience_not_compatible": "Not Eligible",
+    "audience_not_compatible_list": [
+      "Private contractors working for governments.",
+      "External consultants without official status.",
+      "Family members not officially declared."
+    ],
+    "duration_title": "Mission Duration",
+    "duration_initial_label": "Validity",
+    "duration_initial_value": "Mission",
+    "duration_max_label": "Extension",
+    "duration_max_value": "Variable",
+    "conditions_list": [
+      "Note Verbale from the Ministry of Foreign Affairs.",
+      "Official Mission Order.",
+      "Diplomatic or Service Passport (recommended).",
+      "Invitation letter from the organization in Thailand."
+    ],
+    "work_title": "Diplomatic Status",
+    "work_warning_title": "Immunity and Rules",
+    "work_warning_text": "Depending on your rank and the agreement with Thailand, you may benefit from diplomatic immunity and tax exemptions. No private commercial activity is authorized.",
+    "renewal_title": "Extension",
+    "renewal_text": "Managed directly by the MFA Protocol Department or your organization.",
+    "limitations_title": "Limitations",
+    "limitations_risk_title": "End of Mission",
+    "limitations_risk_text": "At the end of your official mission, you must return your diplomatic card and change status or leave the country immediately.",
+    "cta_help_title": "Protocol Assistance?",
+    "cta_help_subtitle": "We assist international organizations with their procedures.",
+    "cta_help_btn": "Request assistance",
+    "cta_compare_title": "Commercial Mission?",
+    "cta_compare_subtitle": "If you do not have diplomatic status, use the Business Visa.",
+    "cta_compare_btn": "See Business Visa"
   },
   "scientific_visa_page": {
     "meta": {
@@ -764,7 +807,38 @@ export const de = {
       "Abschlusszeugnisse und detaillierter Lebenslauf.",
       "Nachweis der Forschungsfinanzierung."
     ],
-    "cta_btn": "Sponsoring prüfen"
+    "cta_btn": "Sponsoring prüfen",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "Technical Experts and Engineers.",
+      "Academic Researchers (Universities, National Centers).",
+      "Technology Transfer Specialists."
+    ],
+    "audience_not_compatible": "Not Compatible",
+    "audience_not_compatible_list": [
+      "Independent researchers without affiliation.",
+      "Language teachers (see ED Visa).",
+      "PhD students without a research contract."
+    ],
+    "duration_title": "Research Duration",
+    "duration_initial_label": "Validity",
+    "duration_initial_value": "1-2 Years",
+    "duration_max_label": "Extension",
+    "duration_max_value": "Renewable",
+    "work_title": "Research Activity",
+    "work_warning_title": "Scope of work",
+    "work_warning_text": "This visa authorizes research activities described in the contract. It does not allow working for a private company outside the research project.",
+    "renewal_title": "Renewal",
+    "renewal_text": "Renewable based on the progress of the research project and funding.",
+    "limitations_title": "Approval Required",
+    "limitations_risk_title": "NRCT Approval",
+    "limitations_risk_text": "The most difficult step is obtaining approval from the National Research Council. Without this, the RS visa cannot be issued.",
+    "cta_help_title": "Need help with NRCT?",
+    "cta_help_subtitle": "We guide researchers and institutes through the process.",
+    "cta_help_btn": "Contact an expert",
+    "cta_compare_title": "Tech Startup?",
+    "cta_compare_subtitle": "The SMART Visa might be more appropriate for innovation.",
+    "cta_compare_btn": "See SMART Visa"
   },
   "eligibility": {
     "steps": [
@@ -912,15 +986,63 @@ export const de = {
       "details_tips_title": "Mehr Details & Tipps",
       "intro": "Die Wahl des richtigen Visums für Thailand hängt hauptsächlich von der Aufenthaltsdauer, der geplanten Tätigkeit und dem Profil des Antragstellers ab. Dieser Vergleich stellt die wichtigsten im Jahr 2026 verfügbaren Visa mit ihren Verwendungszwecken und Einschränkungen vor.",
       "table": {
-        "headers": ["Visum", "Aufenthaltsdauer", "Arbeit erlaubt", "Einreisen", "Hauptprofil"],
+        "headers": [
+          "Visum",
+          "Aufenthaltsdauer",
+          "Arbeit erlaubt",
+          "Einreisen",
+          "Hauptprofil"
+        ],
         "rows": [
-          ["Visumbefreiung", "Kurzaufenthalt", "❌ Nein", "Mehrfach (begrenzt)", "Kurztourismus"],
-          ["Touristenvisum (TR)", "Mittlerer Aufenthalt", "❌ Nein", "Einfach", "Längerer Tourismus"],
-          ["DTV-Visum", "Langzeitaufenthalt", "✅ Homeoffice", "Mehrfach", "Digitaler Nomade"],
-          ["LTR / Ruhestand", "Langzeitaufenthalt", "❌ (außer Sonderfälle)", "Mehrfach", "Rentner / Resident"],
-          ["Elite-Visum", "Sehr langer Aufenthalt", "❌ Nein", "Mehrfach", "VIP-Resident"],
-          ["Business-Visum (Non-B)", "Variabel", "✅ Ja", "Variabel", "Arbeit / Unternehmen"],
-          ["Studentenvisum (ED)", "Variabel", "❌ Nein", "Variabel", "Studium / Ausbildung"]
+          [
+            "Visumbefreiung",
+            "Kurzaufenthalt",
+            "❌ Nein",
+            "Mehrfach (begrenzt)",
+            "Kurztourismus"
+          ],
+          [
+            "Touristenvisum (TR)",
+            "Mittlerer Aufenthalt",
+            "❌ Nein",
+            "Einfach",
+            "Längerer Tourismus"
+          ],
+          [
+            "DTV-Visum",
+            "Langzeitaufenthalt",
+            "✅ Homeoffice",
+            "Mehrfach",
+            "Digitaler Nomade"
+          ],
+          [
+            "LTR / Ruhestand",
+            "Langzeitaufenthalt",
+            "❌ (außer Sonderfälle)",
+            "Mehrfach",
+            "Rentner / Resident"
+          ],
+          [
+            "Elite-Visum",
+            "Sehr langer Aufenthalt",
+            "❌ Nein",
+            "Mehrfach",
+            "VIP-Resident"
+          ],
+          [
+            "Business-Visum (Non-B)",
+            "Variabel",
+            "✅ Ja",
+            "Variabel",
+            "Arbeit / Unternehmen"
+          ],
+          [
+            "Studentenvisum (ED)",
+            "Variabel",
+            "❌ Nein",
+            "Variabel",
+            "Studium / Ausbildung"
+          ]
         ]
       },
       "sections": [
@@ -987,7 +1109,9 @@ export const de = {
     "alternative": "ALTERNATIVE",
     "commonRequirements": [
       "Passport",
-      "Nachweise"
+      "Nachweise",
+      "Proof of sufficient funds",
+      "Proof of local address / booking"
     ],
     "processDescription": "5-15 Tage Dauer.",
     "durations": {
@@ -999,7 +1123,10 @@ export const de = {
       "15 Days": "15 Tage",
       "4 Years": "4 Jahre",
       "Variable": "Variabel",
-      "90 Days": "90 Tage"
+      "90 Days": "90 Tage",
+      "6-12 Months": "6-12 Months",
+      "15 Years": "15 Years",
+      "20+ Years": "20+ Years"
     },
     "prices": {
       "High": "Hoch",
@@ -1098,6 +1225,10 @@ export const de = {
       "card_item2": "Digitale Nomaden & Freelancer",
       "card_item3": "Content Creator / Soft Power",
       "card_item4": "Muay Thai / Kochkurs-Teilnehmer"
+    },
+    "meta": {
+      "title": "Thailand DTV Visa 2026: Guide, Cost & Requirements | SiamVisaPro",
+      "description": "Complete guide to the Destination Thailand Visa (DTV). 5-year validity, legal work. 2026 conditions, cost, and expert portfolio assistance."
     }
   },
   "visa_run_page": {
@@ -1526,5 +1657,43 @@ export const de = {
     "office_usa": "HQ: 16192 Coastal Highway, Lewes, Delaware 19958, USA",
     "tax_id": "RC: 2417125",
     "legal_entity": "DigitGpt LLC"
+  },
+  "apply_page": {
+    "meta": {
+      "title": "Thailand Visa Application | SiamVisa Pro",
+      "description": "Start your Thailand visa application online. Simple and fast process with expert support."
+    },
+    "hero_title": "Visa Application",
+    "hero_subtitle": "Start your travel project in just a few clicks",
+    "steps": {
+      "selection": {
+        "title": "Choose your Visa",
+        "subtitle": "Select the visa type that matches your project"
+      },
+      "personal": {
+        "title": "Personal Information",
+        "subtitle": "Tell us more about yourself",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "nationality": "Nationality"
+      },
+      "trip": {
+        "title": "Trip Details",
+        "subtitle": "Information about your stay",
+        "entry_date": "Planned Entry Date",
+        "duration": "Stay Duration (days)"
+      },
+      "confirm": {
+        "title": "Confirmation",
+        "subtitle": "Verify your information before sending",
+        "btn_submit": "SUBMIT MY APPLICATION",
+        "success_title": "Application Received!",
+        "success_desc": "Your application has been sent to our experts. You will receive an email response within 24 hours."
+      }
+    },
+    "next": "Next",
+    "prev": "Previous"
   }
 };

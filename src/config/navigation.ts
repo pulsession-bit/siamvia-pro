@@ -1,6 +1,12 @@
 
 export const NAV_ITEMS = [
     {
+        key: 'apply',
+        labelKey: 'login.start_request',
+        path: 'apply',
+        items: []
+    },
+    {
         key: 'search',
         labelKey: 'nav.comparator',
         path: 'search',

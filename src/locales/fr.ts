@@ -39,7 +39,8 @@ export const fr = {
       "education": "Éducation",
       "elite": "Privilège Elite",
       "others": "Autres Visas"
-    }
+    },
+    "member": "Espace Client"
   },
   "ltr_page": {
     "meta": {
@@ -152,15 +153,63 @@ export const fr = {
       "details_tips_title": "Plus de Détails & Conseils",
       "intro": "Choisir le bon visa pour la Thaïlande dépend principalement de la durée du séjour, de l’activité prévue et du profil du demandeur. Ce comparatif présente les principaux visas disponibles en 2026, avec leurs usages et limites.",
       "table": {
-        "headers": ["Visa", "Durée de séjour", "Travail autorisé", "Entrées", "Profil principal"],
+        "headers": [
+          "Visa",
+          "Durée de séjour",
+          "Travail autorisé",
+          "Entrées",
+          "Profil principal"
+        ],
         "rows": [
-          ["Exemption de visa", "Courte durée", "❌ Non", "Multiple (limité)", "Tourisme court"],
-          ["Visa touristique (TR)", "Moyen séjour", "❌ Non", "Simple", "Tourisme prolongé"],
-          ["Visa DTV", "Long séjour", "✅ Télétravail", "Multiple", "Digital nomad"],
-          ["Visa LTR / Retraite", "Long séjour", "❌ (sauf cas spécifiques)", "Multiple", "Retraité / résident"],
-          ["Visa Elite", "Très long séjour", "❌ Non", "Multiple", "Résident VIP"],
-          ["Visa Business (Non-B)", "Variable", "✅ Oui", "Variable", "Travail / société"],
-          ["Visa Étudiant (ED)", "Variable", "❌ Non", "Variable", "Études / formation"]
+          [
+            "Exemption de visa",
+            "Courte durée",
+            "❌ Non",
+            "Multiple (limité)",
+            "Tourisme court"
+          ],
+          [
+            "Visa touristique (TR)",
+            "Moyen séjour",
+            "❌ Non",
+            "Simple",
+            "Tourisme prolongé"
+          ],
+          [
+            "Visa DTV",
+            "Long séjour",
+            "✅ Télétravail",
+            "Multiple",
+            "Digital nomad"
+          ],
+          [
+            "Visa LTR / Retraite",
+            "Long séjour",
+            "❌ (sauf cas spécifiques)",
+            "Multiple",
+            "Retraité / résident"
+          ],
+          [
+            "Visa Elite",
+            "Très long séjour",
+            "❌ Non",
+            "Multiple",
+            "Résident VIP"
+          ],
+          [
+            "Visa Business (Non-B)",
+            "Variable",
+            "✅ Oui",
+            "Variable",
+            "Travail / société"
+          ],
+          [
+            "Visa Étudiant (ED)",
+            "Variable",
+            "❌ Non",
+            "Variable",
+            "Études / formation"
+          ]
         ]
       },
       "sections": [
@@ -343,6 +392,66 @@ export const fr = {
     "ltr_feat3": "Support VIP",
     "btn_more": "En savoir plus",
     "btn_rates": "Voir les tarifs"
+  },
+  "tourist_visa_page": {
+    "meta": {
+      "title": "Visa Touristique Thaïlande (TR) | Extensions & Guide 2026",
+      "description": "Le visa classique pour découvrir la Thaïlande sans tracas. 60 jours à l'arrivée, extension de 30 jours possible. Documents requis et tarifs."
+    },
+    "hero_title": "Visa Touristique (TR)",
+    "hero_subtitle": "L'option classique pour explorer la Thaïlande jusqu'à 90 jours.",
+    "hero_description": "Le visa classique pour découvrir la Thaïlande sans tracas.",
+    "hero_tagline": "Extension possible sur place pour prolonger le plaisir.",
+    "pitfalls_title": "Précautions Importantes",
+    "rules_title": "Les Règles",
+    "duration_title": "Durée de Séjour",
+    "duration_desc": "60 jours à l'arrivée, prolongeable de 30 jours supplémentaires sur place.",
+    "validity_title": "Validité du Visa",
+    "validity_desc": "Le visa est valide 3 mois à partir de la date d'émission pour une entrée simple.",
+    "docs_title": "Documents Requis",
+    "doc1": "Passeport valide au moins 6 mois",
+    "doc2": "Photo d'identité aux normes",
+    "doc3": "Billet d'avion aller-retour (sortie < 90 jours)",
+    "doc4": "Réservation d'hôtel pour les premiers jours",
+    "doc5": "Relevé bancaire (solde > 20 000 THB)",
+    "warning_title": "Attention",
+    "warning_desc": "Le visa touristique n'autorise PAS à travailler en Thaïlande, même à distance. Pour le télétravail, privilégiez le visa DTV.",
+    "cta_title": "Besoin d'aide pour votre visa touristique ?",
+    "cta_desc": "Nous vérifions vos documents et gérons votre demande E-Visa pour maximiser vos chances d'approbation.",
+    "cta_btn": "Commander ce visa",
+    "highs_title": "Points Forts",
+    "highs": [
+      "Procédure simple et rapide",
+      "Frais consulaires faibles (env. 35€)",
+      "Idéal pour tester la vie en Thaïlande",
+      "Extension de 30 jours possible"
+    ],
+    "lows_title": "Points d'Attention",
+    "lows": [
+      "Durée totale limitée à 90 jours",
+      "Travail strictement interdit (même remote)",
+      "Entrée simple (visa caduc si sortie)",
+      "Preuve de sortie obligatoire"
+    ],
+    "faq_title": "Questions Fréquentes - Visa Touristique",
+    "faqs": [
+      {
+        "q": "Puis-je transformer mon visa touristique en un autre visa sur place ?",
+        "a": "C'est possible dans certains cas (ex: vers un visa Mariage ou Retraite), mais cela dépend de l'immigration locale. Souvent, il est plus simple et rapide de refaire une demande à l'extérieur."
+      },
+      {
+        "q": "Puis-je prolonger mon visa de 30 jours plusieurs fois ?",
+        "a": "Non, l'extension de 30 jours du visa touristique TR ne peut être faite qu'une seule fois par entrée dans un bureau de l'Immigration."
+      },
+      {
+        "q": "Que se passe-t-il si je dépasse la date de fin de mon visa ?",
+        "a": "Vous serez en situation d'\"Overstay\". L'amende est de 500 THB par jour de dépassement, payable à l'aéroport. Un dépassement important peut entraîner une interdiction de territoire."
+      },
+      {
+        "q": "Quelle est la valeur ajoutée de Siam Visa Pro par rapport à une demande seul ?",
+        "a": "Faire sa demande seul comporte des risques de refus liés à un dossier imprécis. Siam Visa Pro allie l'expertise humaine et la puissance de l'IA : nos outils d'intelligence artificielle analysent votre éligibilité en temps réel pour détecter les points faibles de votre dossier, tandis que nos experts optimisent votre portfolio et vos documents. Vous bénéficiez d'un double contrôle — technologique et humain — pour garantir le taux d'approbation le plus élevé possible."
+      }
+    ]
   },
   "dtv_page": {
     "badge": "Destination Thailand Visa",
@@ -1198,66 +1307,6 @@ export const fr = {
     "upsell_desc": "Si vous travaillez en ligne, le visa DTV est probablement une meilleure option (5 ans de validité).",
     "upsell_link": "Découvrir le Visa DTV"
   },
-  "tourist_visa_page": {
-    "hero_title": "Visa Touristique (TR)",
-    "hero_subtitle": "L'option classique pour explorer la Thaïlande jusqu'à 90 jours.",
-    "hero_description": "Le visa classique pour découvrir la Thaïlande sans tracas.",
-    "hero_tagline": "Extension possible sur place pour prolonger votre plaisir.",
-    "pitfalls_title": "Précautions Importantes",
-    "rules_title": "Les règles du jeu",
-    "duration_title": "Durée de séjour",
-    "duration_desc": "60 jours à l'arrivée, prolongeables de 30 jours supplémentaires sur place.",
-    "validity_title": "Validité du visa",
-    "validity_desc": "Le visa est valable 3 mois à compter de la date d'émission pour une entrée unique.",
-    "docs_title": "Documents requis",
-    "doc1": "Passeport valide au moins 6 mois",
-    "doc2": "Photo d'identité conforme aux normes",
-    "doc3": "Billet d'avion aller-retour (sortie < 90 jours)",
-    "doc4": "Réservation d'hôtel pour les premiers jours",
-    "doc5": "Relevé bancaire (solde > 20 000 THB)",
-    "warning_title": "Attention",
-    "warning_desc": "Le visa touristique ne vous autorise PAS à travailler en Thaïlande, même à distance. Pour le télétravail, optez pour le visa DTV.",
-    "cta_title": "Besoin d'aide pour votre visa touristique ?",
-    "cta_desc": "Nous vérifions vos documents et gérons votre demande E-Visa pour maximiser vos chances d'approbation.",
-    "cta_btn": "Commander ce visa",
-    "highs_title": "Points Forts",
-    "highs": [
-      "Procédure simple et rapide",
-      "Frais consulaires peu élevés (~35€)",
-      "Idéal pour tester la vie en Thaïlande",
-      "Extension possible de 30 jours"
-    ],
-    "lows_title": "Points de Vigilance",
-    "lows": [
-      "Durée totale limitée à 90 jours",
-      "Travail strictement interdit (même remote)",
-      "Entrée unique (fin du visa si sortie du pays)",
-      "Nécessite une preuve de sortie du territoire"
-    ],
-    "faq_title": "Questions Fréquentes - Visa Touristique",
-    "faqs": [
-      {
-        "q": "Puis-je transformer mon visa touristique en un autre visa sur place ?",
-        "a": "C'est possible dans certains cas (ex: vers un visa Mariage ou Retraite), mais cela dépend de l'immigration locale. Souvent, il est plus simple et rapide de refaire une demande à l'extérieur."
-      },
-      {
-        "q": "Puis-je prolonger mon visa de 30 jours plusieurs fois ?",
-        "a": "Non, l'extension de 30 jours du visa touristique TR ne peut être effectuée qu'une seule fois par entrée auprès d'un bureau de l'Immigration."
-      },
-      {
-        "q": "Que se passe-t-il si je reste après la date de fin de mon visa ?",
-        "a": "Vous serez en \"Overstay\". L'amende est de 500 THB par jour de dépassement, à régler à l'aéroport. Un dépassement important peut entraîner une interdiction de territoire."
-      },
-      {
-        "q": "Quelle est la valeur ajoutée de Siam Visa Pro par rapport à une demande en solo ?",
-        "a": "Faire sa demande seul comporte des risques de refus liés à un dossier imprécis. Siam Visa Pro combine l'expertise humaine et la puissance de l'IA : nos outils d'intelligence artificielle analysent votre éligibilité en temps réel pour détecter les points faibles de votre dossier, tandis que nos experts optimisent votre portfolio et vos documents. Vous bénéficiez d'une double vérification — technologique et humaine — pour garantir le taux d'approbation le plus élevé possible."
-      }
-    ],
-    "meta": {
-      "title": "Visa Touristique Thaïlande (TR) | E-Visa Rapide & Facile",
-      "description": "Demandez votre visa touristique pour la Thaïlande en ligne. Vérification des documents et gestion complète par Siam Visa Pro."
-    }
-  },
   "retirement_page": {
     "badge": "Longue Durée",
     "title": "Visa Retraite (Non-O / O-A)",
@@ -1589,5 +1638,43 @@ export const fr = {
     "transfer_note": "Indiquez votre NOM en référence du virement.",
     "btn_confirm_transfer": "J'ai effectué le virement",
     "transfer_success_desc": "Merci. Votre commande est enregistrée en attente de fonds. Veuillez envoyer la preuve de virement à contact@siamvisapro.com pour activer le service."
+  },
+  "apply_page": {
+    "meta": {
+      "title": "Demande de Visa Thaïlande | SiamVisa Pro",
+      "description": "Commencez votre demande de visa pour la Thaïlande en ligne. Processus simple et rapide avec accompagnement d'experts."
+    },
+    "hero_title": "Demande de Visa",
+    "hero_subtitle": "Commencez votre projet de voyage en quelques clics",
+    "steps": {
+      "selection": {
+        "title": "Choisissez votre Visa",
+        "subtitle": "Sélectionnez le type de visa qui correspond à votre projet"
+      },
+      "personal": {
+        "title": "Informations Personnelles",
+        "subtitle": "Dites-nous en plus sur vous",
+        "first_name": "Prénom",
+        "last_name": "Nom",
+        "email": "Email",
+        "phone": "Téléphone",
+        "nationality": "Nationalité"
+      },
+      "trip": {
+        "title": "Détails du Voyage",
+        "subtitle": "Informations sur votre séjour",
+        "entry_date": "Date d'entrée prévue",
+        "duration": "Durée du séjour (jours)"
+      },
+      "confirm": {
+        "title": "Confirmation",
+        "subtitle": "Vérifiez vos informations avant l'envoi",
+        "btn_submit": "ENVOYER MA DEMANDE",
+        "success_title": "Demande Reçue !",
+        "success_desc": "Votre demande a été transmise à nos experts. Vous recevrez une réponse par email sous 24h."
+      }
+    },
+    "next": "Suivant",
+    "prev": "Précédent"
   }
 };

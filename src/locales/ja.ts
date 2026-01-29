@@ -14,7 +14,8 @@ export const ja = {
     "eligibility": "専門家に相談する",
     "ltr": "LTRビザ",
     "languages": "言語",
-    "search": "検索", "comparator": "2026年 ビザ比較",
+    "search": "検索",
+    "comparator": "2026年 ビザ比較",
     "all_visas": "すべてのビザ",
     "business": "ビジネスビザ",
     "smart": "スマートビザ",
@@ -36,7 +37,10 @@ export const ja = {
       "education": "教育",
       "elite": "エリート特典",
       "others": "その他のビザ"
-    }
+    },
+    "visa_options": "Visa Options",
+    "eligibility_check": "Check Eligibility",
+    "search_placeholder": "Ask AI..."
   },
   "meta": {
     "title": "Siam Visa Pro | タイビザ専門家 - DTV, 観光 & 退職",
@@ -44,7 +48,9 @@ export const ja = {
   },
   "home_page": {
     "appointment_title": "あなたの計画についてお聞かせください",
-    "appointment_subtitle": "タイビザの専門家との無料相談を予約しましょう。"
+    "appointment_subtitle": "タイビザの専門家との無料相談を予約しましょう。",
+    "member": "Client Area",
+    "eligibility": "Eligibility"
   },
   "search_page": {
     "meta": {
@@ -82,15 +88,63 @@ export const ja = {
       "details_tips_title": "詳細とアドバイス",
       "intro": "タイの適切なビザの選択は、主に滞在期間、予定されている活動、および申請者のプロフィールによって決まります。この比較では、2026年に利用可能な主なビザとその用途および制限について説明します。",
       "table": {
-        "headers": ["ビザ", "滞在期間", "就労の可否", "入国回数", "主な対象者"],
+        "headers": [
+          "ビザ",
+          "滞在期間",
+          "就労の可否",
+          "入国回数",
+          "主な対象者"
+        ],
         "rows": [
-          ["ビザ免除", "短期滞在", "❌ 不可", "数回（制限あり）", "短期観光"],
-          ["観光ビザ (TR)", "中期滞在", "❌ 不可", "シングル", "長期観光"],
-          ["DTV ビザ", "長期滞在", "✅ リモートワーク", "マルチプル", "デジタルノマド"],
-          ["LTR / リタイアメント", "長期滞在", "❌ (例外あり)", "マルチプル", "退職者 / 居住者"],
-          ["エリートビザ", "超長期滞在", "❌ 不可", "マルチプル", "VIP居住者"],
-          ["ビジネスビザ (Non-B)", "不定", "✅ 可能", "不定", "就労 / 経営"],
-          ["学生ビザ (ED)", "不定", "❌ 不可", "不定", "留学 / 研修"]
+          [
+            "ビザ免除",
+            "短期滞在",
+            "❌ 不可",
+            "数回（制限あり）",
+            "短期観光"
+          ],
+          [
+            "観光ビザ (TR)",
+            "中期滞在",
+            "❌ 不可",
+            "シングル",
+            "長期観光"
+          ],
+          [
+            "DTV ビザ",
+            "長期滞在",
+            "✅ リモートワーク",
+            "マルチプル",
+            "デジタルノマド"
+          ],
+          [
+            "LTR / リタイアメント",
+            "長期滞在",
+            "❌ (例外あり)",
+            "マルチプル",
+            "退職者 / 居住者"
+          ],
+          [
+            "エリートビザ",
+            "超長期滞在",
+            "❌ 不可",
+            "マルチプル",
+            "VIP居住者"
+          ],
+          [
+            "ビジネスビザ (Non-B)",
+            "不定",
+            "✅ 可能",
+            "不定",
+            "就労 / 経営"
+          ],
+          [
+            "学生ビザ (ED)",
+            "不定",
+            "❌ 不可",
+            "不定",
+            "留学 / 研修"
+          ]
         ]
       },
       "sections": [
@@ -156,7 +210,10 @@ export const ja = {
     "expertPick": "推奨",
     "alternative": "代替",
     "commonRequirements": [
-      "旅券"
+      "旅券",
+      "Clean criminal record certificate",
+      "Proof of sufficient funds",
+      "Proof of local address / booking"
     ],
     "processDescription": "5-15日。",
     "durations": {
@@ -168,7 +225,10 @@ export const ja = {
       "15 Days": "15日",
       "4 Years": "4年",
       "Variable": "変動",
-      "90 Days": "90日"
+      "90 Days": "90日",
+      "6-12 Months": "6-12 Months",
+      "15 Years": "15 Years",
+      "20+ Years": "20+ Years"
     },
     "prices": {
       "High": "高い",
@@ -355,7 +415,14 @@ export const ja = {
     "bank_details_intro": "以下の口座に振り込んでください：",
     "account_holder": "受取人：",
     "btn_confirm_transfer": "振込完了",
-    "transfer_note": "備考に名前を記入してください。"
+    "transfer_note": "備考に名前を記入してください。",
+    "bank_mercury_title": "USD / International Transfer (Mercury Bank)",
+    "bank_wise_title": "Europe / IBAN Transfer (Wise)",
+    "routing_number": "Routing Number (ACH):",
+    "account_number": "Account Number:",
+    "iban": "IBAN:",
+    "swift": "BIC/SWIFT:",
+    "transfer_success_desc": "Thank you. Your order is pending funds arrival. Please email payment proof to contact@siamvisapro.com to activate service."
   },
   "login": {
     "title": "クライアントエリア",
@@ -369,7 +436,9 @@ export const ja = {
     "forgot": "パスワードを忘れた場合",
     "submit": "ログイン",
     "no_account": "アカウントをお持ちでないですか？",
-    "start_request": "申請を開始"
+    "start_request": "申請を開始",
+    "google_loading": "Logging in...",
+    "facebook_loading": "Logging in..."
   },
   "contact_page": {
     "meta": {
@@ -461,6 +530,10 @@ export const ja = {
       "card_item2": "デジタルノマド & フリーランス",
       "card_item3": "コンテンツクリエイター / ソフトパワー",
       "card_item4": "ムエタイ / 料理教室参加者"
+    },
+    "meta": {
+      "title": "Thailand DTV Visa 2026: Guide, Cost & Requirements | SiamVisaPro",
+      "description": "Complete guide to the Destination Thailand Visa (DTV). 5-year validity, legal work. 2026 conditions, cost, and expert portfolio assistance."
     }
   },
   "tourist_page": {
@@ -536,11 +609,45 @@ export const ja = {
       "招聘状または雇用契約書。",
       "会社の法的書類 (WP3, Por Por 20など)。",
       "外国人1名に対しタイ人従業員4名の比率。",
-      "労働許可証1件につき最低200万バーツの登録資本金。"
+      "労働許可証1件につき最低200万バーツの登録資本金。",
+      "Minimum salary respected according to nationality."
     ],
     "caution_title": "注意：フリーランス",
     "caution_text": "タイ国外のクライアントと仕事をするフリーランスの場合、通常はNon-BビザよりもDTVビザの方がはるかに簡単で低コストです。",
-    "cta_btn": "ビジネスエキスパートに相談する"
+    "cta_btn": "ビジネスエキスパートに相談する",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "Employees recruited by a Thai company.",
+      "Teachers in Thai schools.",
+      "Investors exercising a management function."
+    ],
+    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible_list": [
+      "Remote workers (see DTV Visa).",
+      "Digital nomads without a local employer.",
+      "Job seekers (forbidden to work without the visa)."
+    ],
+    "duration_max_label": "Max Extension",
+    "duration_max_value": "1 Year (Renewable)",
+    "work_title": "Work and authorized activities",
+    "work_warning_title": "Important Warning",
+    "work_warning_text": "This visa alone does NOT authorize you to work. You must obtain your Work Permit from the Ministry of Labor immediately after your arrival. Working with the visa alone is illegal.",
+    "work_allowed_label": "✅ Authorized (with Work Permit)",
+    "work_allowed_text": "Salaried work for the sponsor company, management, official signatures.",
+    "work_forbidden_label": "❌ Forbidden",
+    "work_forbidden_text": "Work for another company, manual work reserved for Thais.",
+    "renewal_title": "Renewal and extensions",
+    "renewal_text": "The initial 90-day visa can be extended to 1 year at the immigration office in Thailand. This extension is renewable every year as long as you are employed and the company respects tax and social criteria.",
+    "renewal_note": "Note: The extension often requires clear evidence of tax and social security payments.",
+    "limitations_title": "Limitations and points of vigilance",
+    "limitations_risk_title": "Risk of visa loss",
+    "limitations_risk_text": "If you leave your job or are dismissed, your visa is cancelled immediately (sometimes on the same day). You must leave the country or find a new job capable of sponsoring a new visa within 7 days (depending on the case).",
+    "cta_help_title": "Need help with this visa?",
+    "cta_help_subtitle": "We support companies and employees in the procedure.",
+    "cta_help_btn": "Check my eligibility",
+    "cta_compare_title": "Compare options",
+    "cta_compare_subtitle": "Non-B, LTR or DTV? Find the best visa.",
+    "cta_compare_btn": "See DTV Visa (Alternative)"
   },
   "exemption_visa_page": {
     "meta": {
@@ -675,7 +782,8 @@ export const ja = {
     "conditions_list": [
       "BOI (タイ投資委員会) による承認が必須。",
       "規定以上の給与または投資額。",
-      "重点産業に該当する認定企業での就労。"
+      "重点産業に該当する認定企業での就労。",
+      "Certified company in target industries."
     ],
     "work_title": "就労と許可される活動",
     "work_no_permit_title": "労働許可証が不要",
@@ -914,7 +1022,44 @@ export const ja = {
     "audience_oi_text": "United Nations employees, UNICEF, etc., based in Bangkok.",
     "conditions_title": "Specific requirements",
     "conditions_text": "This visa imperatively requires a verbal note or an official mission order.",
-    "cta_btn": "Request assistance"
+    "cta_btn": "Request assistance",
+    "audience_compatible": "Eligible Profiles",
+    "audience_compatible_list": [
+      "Diplomats and Embassy staff.",
+      "United Nations officials (UN/UNICEF/ESCAP).",
+      "Military and officials on official mission."
+    ],
+    "audience_not_compatible": "Not Eligible",
+    "audience_not_compatible_list": [
+      "Private contractors working for governments.",
+      "External consultants without official status.",
+      "Family members not officially declared."
+    ],
+    "duration_title": "Mission Duration",
+    "duration_initial_label": "Validity",
+    "duration_initial_value": "Mission",
+    "duration_max_label": "Extension",
+    "duration_max_value": "Variable",
+    "conditions_list": [
+      "Note Verbale from the Ministry of Foreign Affairs.",
+      "Official Mission Order.",
+      "Diplomatic or Service Passport (recommended).",
+      "Invitation letter from the organization in Thailand."
+    ],
+    "work_title": "Diplomatic Status",
+    "work_warning_title": "Immunity and Rules",
+    "work_warning_text": "Depending on your rank and the agreement with Thailand, you may benefit from diplomatic immunity and tax exemptions. No private commercial activity is authorized.",
+    "renewal_title": "Extension",
+    "renewal_text": "Managed directly by the MFA Protocol Department or your organization.",
+    "limitations_title": "Limitations",
+    "limitations_risk_title": "End of Mission",
+    "limitations_risk_text": "At the end of your official mission, you must return your diplomatic card and change status or leave the country immediately.",
+    "cta_help_title": "Protocol Assistance?",
+    "cta_help_subtitle": "We assist international organizations with their procedures.",
+    "cta_help_btn": "Request assistance",
+    "cta_compare_title": "Commercial Mission?",
+    "cta_compare_subtitle": "If you do not have diplomatic status, use the Business Visa.",
+    "cta_compare_btn": "See Business Visa"
   },
   "scientific_visa_page": {
     "meta": {
@@ -938,7 +1083,38 @@ export const ja = {
       "Degree certificates and detailed CV.",
       "Proof of research funding."
     ],
-    "cta_btn": "Check sponsorship"
+    "cta_btn": "Check sponsorship",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "Technical Experts and Engineers.",
+      "Academic Researchers (Universities, National Centers).",
+      "Technology Transfer Specialists."
+    ],
+    "audience_not_compatible": "Not Compatible",
+    "audience_not_compatible_list": [
+      "Independent researchers without affiliation.",
+      "Language teachers (see ED Visa).",
+      "PhD students without a research contract."
+    ],
+    "duration_title": "Research Duration",
+    "duration_initial_label": "Validity",
+    "duration_initial_value": "1-2 Years",
+    "duration_max_label": "Extension",
+    "duration_max_value": "Renewable",
+    "work_title": "Research Activity",
+    "work_warning_title": "Scope of work",
+    "work_warning_text": "This visa authorizes research activities described in the contract. It does not allow working for a private company outside the research project.",
+    "renewal_title": "Renewal",
+    "renewal_text": "Renewable based on the progress of the research project and funding.",
+    "limitations_title": "Approval Required",
+    "limitations_risk_title": "NRCT Approval",
+    "limitations_risk_text": "The most difficult step is obtaining approval from the National Research Council. Without this, the RS visa cannot be issued.",
+    "cta_help_title": "Need help with NRCT?",
+    "cta_help_subtitle": "We guide researchers and institutes through the process.",
+    "cta_help_btn": "Contact an expert",
+    "cta_compare_title": "Tech Startup?",
+    "cta_compare_subtitle": "The SMART Visa might be more appropriate for innovation.",
+    "cta_compare_btn": "See SMART Visa"
   },
   "tourist_visa_page": {
     "meta": {
@@ -995,7 +1171,10 @@ export const ja = {
         "q": "自分で申請するのと比べて、Siam Visa Proを利用する価値は何ですか？",
         "a": "個人申請では、書類の不備による却下のリスクがあります。Siam Visa Proは人間の専門知識とAIの力を組み合わせます。当社のAIツールがリアルタイムで適格性を分析して弱点を検出し、専門家がポートフォリオを最適化します。テクノロジーと人間のダブルチェックにより、最高水準の承認率を保証します。"
       }
-    ]
+    ],
+    "hero_description": "The classic visa to discover Thailand without hassle.",
+    "hero_tagline": "Extension possible on site to prolong your stay.",
+    "pitfalls_title": "Important Precautions"
   },
   "retirement_visa_page": {
     "hero_title": "退職者ビザ (Non-O / O-A)",
@@ -1285,5 +1464,245 @@ export const ja = {
     "office_usa": "HQ: 16192 Coastal Highway, Lewes, Delaware 19958, USA",
     "tax_id": "RC: 2417125",
     "legal_entity": "DigitGpt LLC"
+  },
+  "ltr_page": {
+    "meta": {
+      "title": "LTR Visa Thailand (Long Term Resident) - 10 Years | SiamVisaPro",
+      "description": "Get the 10-year LTR Visa for Thailand. Privileged tax residency (17%), work permit and VIP benefits. Free eligibility audit."
+    },
+    "badge": "10-Year Residence",
+    "hero_title": "Thailand LTR VISA",
+    "title": "LTR Visa: Long-Term Residence",
+    "subtitle": "The most advantageous tax and residency status for wealthy citizens.",
+    "cta": "Check my LTR eligibility",
+    "why_title": "Why choose the LTR?",
+    "benefit1_title": "10-Year Visa",
+    "benefit1_desc": "Renewable, with digital work permit included.",
+    "benefit2_title": "17% Tax",
+    "benefit2_desc": "Flat rate on local income for professionals.",
+    "benefit3_title": "VIP Service",
+    "benefit3_desc": "Priority airport access and 90-day reports waived.",
+    "cat1": "Wealthy Global Citizens",
+    "cat2": "Wealthy Pensioners",
+    "cat3": "Work-from-Thailand Professionals",
+    "cat4": "Highly-Skilled Experts",
+    "audit1": "Income Audit > $80k USD",
+    "audit2": "Investment Analysis",
+    "audit3": "Board of Investment Liaison",
+    "audit4": "Family Inclusion (4 persons)",
+    "pros_title": "Strengths",
+    "cons_title": "Weaknesses",
+    "pros": [
+      "10-year validity (5+5) renewable",
+      "Digital work permit included",
+      "International Airport Fast Track",
+      "Tax exemption on foreign income",
+      "17% rate for professionals",
+      "4 Dependents included (Spouse/Children)"
+    ],
+    "cons": [
+      "Very strict financial criteria (>$80k wealth)",
+      "Long validation process (BOI)",
+      "Heavy administrative paperwork initially",
+      "Mandatory health insurance (>$50k)",
+      "Investment required for certain categories"
+    ],
+    "faq_title": "Frequently Asked Questions (FAQ)",
+    "faq": [
+      {
+        "q": "What's the difference with Elite Visa?",
+        "a": "Elite Visa is paid and doesn't allow work. LTR is 'free' (reduced fees) if eligible and includes work permit."
+      },
+      {
+        "q": "Can I work with an LTR visa?",
+        "a": "Yes, it's one of the few visas including a digital work permit without Thai employee quota."
+      },
+      {
+        "q": "Minimum income required?",
+        "a": "$80,000 USD/year (2 years) or investment mix. Retirees eligible at $40,000 under investment conditions."
+      },
+      {
+        "q": "Processing time?",
+        "a": "1 to 3 months for BOI approval, then a few weeks for issuance."
+      }
+    ],
+    "high_value": {
+      "title": "Tax Optimization",
+      "highlight": "& Freedom",
+      "description": "The LTR is not just a visa, it's a privileged resident status that allows you to work legally and optimize your taxation with a flat rate of 17% for skilled professionals.",
+      "item1": "17% Flat Tax (Professionals)",
+      "item2": "Work Permit Included",
+      "item3": "Foreign Income Exemption",
+      "card_title": "Exclusive Benefits",
+      "card_item1": "VIP Airport Fast Track",
+      "card_item2": "No 90-Day Reporting",
+      "card_item3": "4 Dependents Included",
+      "card_item4": "Privileged Tax Residency"
+    }
+  },
+  "visa_run_page": {
+    "meta": {
+      "title": "Thailand Visa Run: Risks, Costs and Alternatives 2026",
+      "description": "Why doing Visa Runs in Thailand is dangerous in 2026. Discover refusal risks, hidden costs and legal alternatives (DTV, Elite)."
+    },
+    "hero": {
+      "title": "Stop doing",
+      "highlight": "Visa Runs.",
+      "subtitle": "Thai immigration has tightened the rules. Chaining visa exemptions and tourist entries is now a risky strategy.",
+      "cta": "See legal alternatives"
+    },
+    "dangers": {
+      "title": "Why it's over?",
+      "risk1_title": "Entry Denial",
+      "risk1_desc": "Immigration officers have discretionary power to deny entry, even with a valid visa, if they suspect illegal work.",
+      "risk2_title": "Interrogation & Stress",
+      "risk2_desc": "Ending up in the airport 'holding cell' waiting for the next flight home is not a way to live.",
+      "risk3_title": "Hidden Costs",
+      "risk3_desc": "Flights, last-minute hotels, taxis... A 'Visa Run' costs roughly 10,000 THB per month. That's 120,000 THB/year."
+    },
+    "solutions": {
+      "title": "Real Solutions (2026)",
+      "dtv": "DTV Visa (5 Years)",
+      "dtv_desc": "Perfect for digital nomads. ~15,000 THB once.",
+      "elite": "Elite Visa (5-20 Years)",
+      "elite_desc": "Absolute peace of mind for those who can invest.",
+      "ltr": "LTR Visa (10 Years)",
+      "ltr_desc": "For wealthy and talented profiles."
+    }
+  },
+  "elite_page": {
+    "badge": "Thailand Privilege",
+    "hero_title": "Thailand Elite Visa (Luxury & VIP)",
+    "hero_subtitle": "5 to 20 years visa. VIP Concierge. Airport Fast-Track.",
+    "hero_tagline": "The ultimate experience for living in Thailand.",
+    "why_title": "Why choose the Elite Visa?",
+    "duration_title": "5 to 20 Years of Serenity",
+    "duration_desc": "Choose the duration that suits you (5, 10, 15, or 20 years) and forget the hassle of visa extensions.",
+    "work_title": "Concierge Service",
+    "work_desc": "From your arrival at the airport with a personal assistant to opening your bank account, everything is facilitated for you.",
+    "finance_title": "One-time Investment",
+    "finance_desc": "No proof of funds / monthly income required. It is a one-time membership fee paid directly to the government.",
+    "who_title": "Who is it for?",
+    "who_wealthy": "Investors & Retirees",
+    "who_wealthy_desc": "Those who want to avoid the annual paperwork of retirement visas.",
+    "who_business": "Business Owners",
+    "who_business_desc": "Entrepreneurs wanting a stable base in Asia.",
+    "who_family": "Families",
+    "who_family_desc": "Flexible options to include spouse and children.",
+    "benefits_title": "Exclusive Privileges",
+    "benefits_desc": "In addition to the visa, access high-end services: Airport Limousine, Golf, Spa, Annual Health Check-up...",
+    "benefits_btn": "View Packages",
+    "cta_button": "Become a Member",
+    "highs_title": "Highlights",
+    "highs": [
+      "Ultra-long validity (up to 20 years)",
+      "VIP Airport Fast-Track Service (Arrival/Departure)",
+      "No age or monthly income requirements",
+      "24/7 Assistance for daily life"
+    ],
+    "lows_title": "Points of Attention",
+    "lows": [
+      "High initial cost (starting ~900,000 THB)",
+      "Work permit not automatically included",
+      "Processing time 1 to 3 months",
+      "Payment to government required before issuance"
+    ],
+    "faq_title": "Elite Visa - FAQ",
+    "faqs": [
+      {
+        "q": "Can I enter and leave Thailand multiple times with my Elite visa?",
+        "a": "Yes, it is a Multiple-Entry visa with unlimited entries for the duration of your membership (5 to 20 years)."
+      },
+      {
+        "q": "Do I have to pay taxes in Thailand with this visa?",
+        "a": "The Elite Visa does not automatically make you a tax resident. You only pay tax if you stay more than 180 days in a calendar year AND bring foreign income into Thailand in the same year."
+      },
+      {
+        "q": "Can my family accompany me?",
+        "a": "Yes, there are 'Family' packages that allow you to include immediate family members at a reduced rate."
+      },
+      {
+        "q": "Can I work with an Elite Visa?",
+        "a": "Technically no, it is a tourist visa. However, you can be a shareholder of a company, or work legally if you obtain a Work Permit (which is possible with the Elite Visa combined with a job offer)."
+      }
+    ],
+    "prestige_title": "Prestige <span className=\"text-amber-500\">Service</span>",
+    "prestige_desc": "SiamVisa Pro is your privileged agent for Thailand Privilege (Elite) membership.",
+    "prestige_list": [
+      "Program Choice (5/10/20 years)",
+      "Liaison with Elite Secretariat",
+      "Airport Formalities Management",
+      "Concierge Support"
+    ],
+    "quick_view": {
+      "btn": "⚡️ Quick View",
+      "title": "Elite Visa: Essentials",
+      "duration": "Validity",
+      "duration_val": "5 to 20 Years",
+      "cost": "Total Cost",
+      "cost_val": "900k (5y) to 5M THB (20y)",
+      "per_year": "Smoothed Cost / Year",
+      "per_year_val": "From 125k THB (~$3.6k) / year",
+      "runs": "Visa Runs",
+      "runs_val": "0 / Year (Zero)",
+      "entries": "Entries",
+      "entries_val": "Unlimited (VIP)",
+      "verdict": "VERDICT: Absolute comfort. You are buying total peace of mind for years."
+    },
+    "high_value": {
+      "title": "Prestige & Serenity",
+      "highlight": "Absolute",
+      "description": "No queues, no complicated 90-day reports, no hassle. Just the pleasure of living in Thailand with a VIP status guaranteed by the State.",
+      "item1": "VIP Airport Fast Track",
+      "item2": "5 to 20 Year Membership",
+      "item3": "24/7 Concierge",
+      "card_title": "Services Included",
+      "card_item1": "Limousine Service",
+      "card_item2": "Golf & Spa Privileges",
+      "card_item3": "Bank Account Opening",
+      "card_item4": "Annual Health Check-up"
+    },
+    "meta": {
+      "title": "Thailand Elite Visa (Thailand Privilege) | Official Packages & Rates",
+      "description": "Get the Thailand Elite Visa for 5, 10 or 20 years. VIP Service, Airport Fast-Track and Concierge. Discover official rates."
+    }
+  },
+  "apply_page": {
+    "meta": {
+      "title": "Thailand Visa Application | SiamVisa Pro",
+      "description": "Start your Thailand visa application online. Simple and fast process with expert support."
+    },
+    "hero_title": "Visa Application",
+    "hero_subtitle": "Start your travel project in just a few clicks",
+    "steps": {
+      "selection": {
+        "title": "Choose your Visa",
+        "subtitle": "Select the visa type that matches your project"
+      },
+      "personal": {
+        "title": "Personal Information",
+        "subtitle": "Tell us more about yourself",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "nationality": "Nationality"
+      },
+      "trip": {
+        "title": "Trip Details",
+        "subtitle": "Information about your stay",
+        "entry_date": "Planned Entry Date",
+        "duration": "Stay Duration (days)"
+      },
+      "confirm": {
+        "title": "Confirmation",
+        "subtitle": "Verify your information before sending",
+        "btn_submit": "SUBMIT MY APPLICATION",
+        "success_title": "Application Received!",
+        "success_desc": "Your application has been sent to our experts. You will receive an email response within 24 hours."
+      }
+    },
+    "next": "Next",
+    "prev": "Previous"
   }
 };

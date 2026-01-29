@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IMAGES } from '@/constants';
-import { Shield, FileText, Clock } from 'lucide-react';
+import { Shield, FileText, Clock, ArrowRight } from 'lucide-react';
 
 interface HomeHeroProps {
     t: (key: string) => string;
@@ -70,18 +70,19 @@ export const HomeHero: React.FC<HomeHeroProps> = ({ t, langPath, SCORING_ENGINE_
                 </div>
 
                 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 w-full justify-center">
+                    <Link
+                        href={langPath('apply')}
+                        className="bg-amber-500 text-slate-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-400 transition shadow-lg shadow-amber-500/20 flex items-center justify-center group"
+                    >
+                        {t('login.start_request') || 'Commencer une demande'}
+                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
                     <a
                         href={SCORING_ENGINE_URL}
-                        className="bg-amber-50 text-slate-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-400 transition shadow-lg shadow-amber-500/20 flex items-center justify-center"
+                        className="bg-transparent border-2 border-amber-400/50 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition flex items-center justify-center backdrop-blur-sm"
                     >
                         {t('hero.cta_eligibility')}
                     </a>
-                    <Link
-                        href={langPath('services')}
-                        className="bg-transparent border-2 border-slate-400 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition flex items-center justify-center backdrop-blur-sm"
-                    >
-                        {t('hero.cta_services')}
-                    </Link>
                 </div>
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
                     <div className="flex items-center justify-center bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-full py-2 px-6">
