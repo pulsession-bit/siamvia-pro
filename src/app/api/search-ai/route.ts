@@ -15,56 +15,46 @@ export async function POST(req: Request) {
 
         const prompt = `
         RÔLE
-        Tu es “SiamVisaPro – Hero Answer Writer”. Tu écris une réponse qui sera affichée DANS le header/hero (fond radial gradient).
-        Objectif: impact immédiat + lisibilité. Le hero a une hauteur variable: ta réponse doit rester compacte.
+        Tu es “SiamVisaPro – Hero Answer Writer”. Tu écris une réponse qui sera affichée DANS le header/hero.
+        
+        VALID VISA IDs (Use EXACTLY these IDs for "id" fields):
+        - Tourisme: setv, metv, voa, dtv, non-mt
+        - Long Terme: ltr-wgc, ltr-wp, ltr-wft, ltr-hsp, non-o-ret, non-oa-ret, non-ox-ret
+        - Travail/Business: non-b, smart-t, smart-e, smart-i, non-rs, non-m, non-o-vol
+        - Famille: non-o-mar, non-o-dep
+        - Éducation: non-ed-uni, non-ed-lang, non-ed-muay
+        - Elite/Privilege: elite-gold, elite-plat, elite-diam, elite-res
+        - Officiel/Religieux: non-f, non-r
 
         CONTRAINTES UI (STRICT)
         - Langue: "${lang || 'fr'}" (Force la réponse dans cette langue).
         - Sortie: JSON STRICT (aucun texte hors JSON).
-        - Longueur totale visée: 450–900 caractères (max 1 200).
-        - Pas de paragraphes longs. Préfère phrases courtes.
-        - Pas de jargon légal. Pas de promesses. Toujours inclure une ligne “Validation finale requise”.
-        - Évite les listes > 4 items.
-        - Si tu manques d’infos: pose au maximum 2 questions courtes dans “questions”.
+        - Longueur: Concis et impactant.
 
-        STRUCTURE HERO
-        Tu dois produire ces champs (tous obligatoires, même vides):
+        STRUCTURE JSON REQUISE:
         {
           "hero": {
             "kicker": "string (2–5 mots)",
             "title": "string (6–11 mots)",
-            "subtitle": "string (1 phrase, <= 120 caractères)",
+            "subtitle": "string (1 phrase)",
             "recommendation": {
-              "visa": "string (ex: Non-B, DTV, LTR, Touriste, Elite, etc.)",
+              "id": "VALID_ID_FROM_LIST (Required)",
+              "visa": "Display Name (ex: Visa Business Non-B)",
               "confidence": "low|medium|high",
-              "why": ["string", "string", "string"]  // 2 à 3 raisons maximum
+              "why": ["string", "string"]
             },
-            "watchouts": ["string", "string"],        // 1 à 2 points de vigilance max
+            "watchouts": ["string"],
             "alternatives": [
-              { "visa": "string", "when": "string (<= 70 caractères)" }
-            ],                                        // 0 à 2 alternatives max
-            "cta": {
-              "label": "string (<= 22 caractères)",
-              "action": "openEligibility|openCompare|openChat"
-            },
-            "disclaimer": "string (doit contenir: 'Validation finale requise.')",
-            "questions": ["string", "string"]         // 0 à 2 questions max si besoin
+              { "id": "VALID_ID_FROM_LIST", "visa": "Display Name", "when": "string" }
+            ],
+            "cta": { "label": "string", "action": "openEligibility|openCompare" },
+            "disclaimer": "Validation finale requise.",
+            "questions": ["string"]
           }
         }
 
-        STYLE (HERO)
-        - Ton: expert, neutre, direct.
-        - “title” doit être actionnable (“Le visa le plus probable: …”).
-        - “subtitle” doit résumer l’idée en 1 phrase simple.
-        - “why” = bénéfices concrets (droit au séjour / droit au travail / durée / simplicité).
-        - “watchouts” = contraintes (employeur, revenus, documents, délais).
-        - “alternatives” seulement si pertinentes.
-        - “cta.label” doit pousser l’étape suivante (ex: “Vérifier éligibilité”).
-
         ENTRÉES
         - Question utilisateur: <<USER_QUERY>> ${query} <<USER_QUERY>>
-
-        PRODUIS UNIQUEMENT LE JSON.
         `;
 
         // Direct fetch to emulate browser request with Referer
@@ -122,14 +112,21 @@ ${hero.watchouts?.map((w: string) => `• ${w}`).join('\n') || ''}
 
 ${hero.alternatives?.length > 0 ? `🔄 **Alternatives**\n` + hero.alternatives.map((a: any) => `• ${a.visa} : ${a.when}`).join('\n') : ''}
 
-_${hero.disclaimer}_
+_${hero.disclaimer || 'Validation finale requise.'}_
             `.trim();
 
-            const recId = hero.recommendation?.visa?.toLowerCase().replace(/\s/g, '-') || null;
+            // Use the explicit ID provided by AI, or fallback to slugification (less reliable)
+            const recId = hero.recommendation?.id || hero.recommendation?.visa?.toLowerCase().replace(/\s/g, '-') || null;
+
+            // Extract alternative IDs
+            // Ensure we handle both array of objects with id property, or loose strings (fallback)
+            const altIds = Array.isArray(hero.alternatives)
+                ? hero.alternatives.map((a: any) => a.id).filter(Boolean)
+                : [];
 
             return NextResponse.json({
                 recommendationId: recId,
-                alternativeIds: [], // Not strictly used by new logic but kept for interface
+                alternativeIds: altIds,
                 explanation: explanation,
                 // Pass raw hero data for future UI update
                 heroData: hero
