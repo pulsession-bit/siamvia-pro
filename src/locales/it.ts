@@ -864,11 +864,15 @@ export const it = {
     "work_title": "Lavoro e attività autorizzate",
     "work_allowed_title": "Lavoro Autorizzato (Sotto condizioni)",
     "work_allowed_text": "A differenza dei visti turistici, il Visto Non-O Famiglia permette di richiedere un permesso di lavoro (Work Permit).",
+    "work_warning_title": "Lavoro Autorizzato (Sotto condizioni)",
+    "work_warning_text": "A differenza dei visti turistici, il Visto Non-O Famiglia permette di richiedere un permesso di lavoro (Work Permit). Una volta ottenuto il permesso, puoi lavorare legalmente per qualsiasi azienda thailandese.",
     "renewal_title": "Rinnovi ed estensioni",
     "renewal_text": "L'estensione annuale si effettua presso l'ufficio immigrazione. Il processo richiede circa 30 giorni.",
-    "limitations_title": "Limitations e punti di attenzione",
+    "limitations_title": "Limitazioni e punti di attenzione",
     "limitations_divorce_title": "Divorzio = Annullamento",
     "limitations_divorce_text": "In caso di divorzio, il visto viene annullato immediatamente (solitamente 7 giorni per lasciare il territorio).",
+    "limitations_risk_title": "Divorzio = Annullamento",
+    "limitations_risk_text": "In caso di divorzio, il visto viene annullato immediatamente (solitamente 7 giorni per lasciare il territorio). È una situazione precaria per chi dipende interamente da questo visto.",
     "cta_help_title": "Serve assistenza per il matrimonio?",
     "cta_help_subtitle": "Gestiamo le pratiche per l'estensione per matrimonio.",
     "cta_help_btn": "Contatta un esperto",
@@ -929,6 +933,19 @@ export const it = {
     "definition_title": "Cos'è il Visto Medico?",
     "definition_content": "La Thailandia è una destinazione principale per il turismo medico. Il Visto Medico permette ai pazienti stranieri di soggiornare per trattamenti chirurgici o riabilitazione.",
     "audience_title": "Servizi e profili interessati",
+    "audience_compatible": "Profili Compatibili",
+    "audience_compatible_list": [
+      "Pazienti che necessitano di interventi chirurgici (estetica, ortopedia, cardiologia).",
+      "Persone in cerca di cure dentali complesse.",
+      "Pazienti con trattamenti cronici (dialisi, chemioterapia).",
+      "Persone in cerca di riabilitazione post-operatoria."
+    ],
+    "audience_not_compatible": "Profili Non Compatibili",
+    "audience_not_compatible_list": [
+      "Turisti con problemi di salute minori.",
+      "Persone senza appuntamento ospedaliero confermato.",
+      "Chi cerca di lavorare con pretesto medico."
+    ],
     "audience_types_title": "Tipi di Cure",
     "audience_types_list": [
       "Chirurgia estetica e ricostruttiva.",
@@ -939,6 +956,10 @@ export const it = {
     "audience_companion_title": "Accompagnatori",
     "audience_companion_text": "Fino a 3 familiari o assistenti possono ottenere un visto per dipendenti.",
     "duration_title": "Durata e Proroghe",
+    "duration_initial_label": "Validità Iniziale",
+    "duration_initial_value": "90 giorni",
+    "duration_max_label": "Estensione Massima",
+    "duration_max_value": "Secondo certificato medico",
     "duration_validity_label": "Validità Tipo",
     "duration_validity_value": "90 giorni",
     "duration_extension_label": "Estensione",
@@ -950,11 +971,22 @@ export const it = {
       "Prova di fondi sufficienti.",
       "Assicurazione sanitaria specifica."
     ],
+    "work_title": "Lavoro e attività autorizzate",
+    "work_warning_title": "Lavoro Non Autorizzato",
+    "work_warning_text": "Il Visto Medico non consente alcuna attività lavorativa. È esclusivamente destinato alle cure mediche. Qualsiasi lavoro, anche da remoto, è tecnicamente vietato.",
+    "renewal_title": "Rinnovo ed estensioni",
+    "renewal_text": "Le estensioni sono concesse in base al certificato medico dell'ospedale. La maggior parte degli ospedali internazionali dispone di un ufficio visti interno per facilitare le pratiche.",
+    "limitations_title": "Limitazioni e punti di attenzione",
+    "limitations_risk_title": "Dipendenza dall'Ospedale",
+    "limitations_risk_text": "Il visto è legato alla struttura sanitaria. Se cambi ospedale o interrompi il trattamento, il visto potrebbe essere revocato. Assicurati di mantenere la documentazione aggiornata.",
     "advantage_title": "Il vantaggio degli ospedali privati",
     "advantage_text": "La maggior parte dei grandi ospedali internazionali dispone di centri visti interni per le estensioni.",
     "cta_help_title": "Serve un collegamento medico?",
     "cta_help_subtitle": "Collaboriamo con le migliori strutture per facilitare l'ammissione e il visto.",
-    "cta_help_btn": "Contatta il nostro servizio di portineria"
+    "cta_help_btn": "Contatta il nostro servizio di portineria",
+    "cta_compare_title": "Esplora altre opzioni",
+    "cta_compare_subtitle": "Se hai bisogno di un soggiorno più lungo, considera altri tipi di visto.",
+    "cta_compare_btn": "Vedi Visto Elite"
   },
   "religious_visa_page": {
     "meta": {
@@ -965,7 +997,21 @@ export const it = {
     "hero_title": "Visto Religioso (Non-R) – Thailandia",
     "hero_subtitle": "Missione religiosa o studio del buddismo",
     "definition_title": "Cos'è il Visto Religioso?",
-    "definition_content": "Il Visto Non-Immigrant R (Religious) è riservato agli stranieri sponsorizzati da un'organizzazione riconosciuta dallo Stato.",
+    "definition_content": "Il Visto Non-Immigrant R (Religious) è riservato agli stranieri sponsorizzati da un'organizzazione religiosa riconosciuta dallo Stato thailandese per svolgere attività religiose ufficiali.",
+    "audience_title": "A chi è rivolto questo visto?",
+    "audience_compatible": "Profili Compatibili",
+    "audience_compatible_list": [
+      "Monaci e monache ordinati.",
+      "Missionari con sponsorizzazione ufficiale.",
+      "Studiosi di religione con invito istituzionale.",
+      "Volontari religiosi a lungo termine."
+    ],
+    "audience_not_compatible": "Profili Non Compatibili",
+    "audience_not_compatible_list": [
+      "Turisti spirituali senza affiliazione.",
+      "Praticanti occasionali di meditazione.",
+      "Persone senza sponsor religioso ufficiale."
+    ],
     "conditions_title": "Profili e Condizioni",
     "conditions_list": [
       "Essere sponsorizzati da un'organizzazione religiosa registrata.",
@@ -978,8 +1024,21 @@ export const it = {
     "duration_initial_value": "90 giorni",
     "duration_max_label": "Estensione Massima",
     "duration_max_value": "1 Anno (Rinnovabile)",
+    "work_title": "Lavoro e attività autorizzate",
+    "work_warning_title": "Lavoro Retribuito Vietato",
+    "work_warning_text": "Il Visto Religioso non consente alcuna attività lavorativa retribuita. Le attività devono essere esclusivamente religiose e non profit. Qualsiasi compenso monetario è severamente vietato.",
+    "renewal_title": "Rinnovo ed estensioni",
+    "renewal_text": "Le estensioni annuali richiedono il rinnovo della sponsorizzazione da parte dell'organizzazione religiosa e l'approvazione continua del Dipartimento degli Affari Religiosi.",
+    "limitations_title": "Limitazioni e punti di attenzione",
+    "limitations_risk_title": "Dipendenza dallo Sponsor",
+    "limitations_risk_text": "Il visto è strettamente legato all'organizzazione sponsor. Se lasci l'istituzione o perdi la sponsorizzazione, il visto viene revocato immediatamente.",
     "footer_note": "Questo visto richiede un coordinamento stretto con le autorità religiose nazionali.",
-    "cta_btn": "Richiedi consiglio specifico"
+    "cta_help_title": "Serve assistenza specifica?",
+    "cta_help_subtitle": "Il visto religioso richiede documentazione complessa e coordinamento con le autorità.",
+    "cta_help_btn": "Contatta un esperto",
+    "cta_compare_title": "Altre opzioni spirituali",
+    "cta_compare_subtitle": "Per ritiri di meditazione brevi, considera altri tipi di visto.",
+    "cta_compare_btn": "Vedi Visto Turistico"
   },
   "media_visa_page": {
     "meta": {

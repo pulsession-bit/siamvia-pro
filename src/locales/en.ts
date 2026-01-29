@@ -918,11 +918,15 @@ export const en = {
     "work_title": "Work and authorized activities",
     "work_allowed_title": "Work Authorized (Under conditions)",
     "work_allowed_text": "Unlike tourist visas, the Family Non-O Visa allows application for a work permit (Work Permit). Once the permit is obtained, you can work legally for any Thai company without needing a Business Visa (Non-B).",
+    "work_warning_title": "Work Authorized (Under conditions)",
+    "work_warning_text": "Unlike tourist visas, the Family Non-O Visa allows application for a work permit (Work Permit). Once the permit is obtained, you can work legally for any Thai company without needing a Business Visa (Non-B).",
     "renewal_title": "Renewal and extensions",
     "renewal_text": "The annual extension is done at the immigration office. The process takes about 30 days. You must prove every year that the funds are still in the bank and that the marital relationship is still active.",
     "limitations_title": "Limitations and points of vigilance",
     "limitations_divorce_title": "Divorce = Cancellation",
     "limitations_divorce_text": "In the event of divorce, the visa is cancelled immediately (often 7 days to leave the territory). This is a precarious situation for those who depend entirely on this visa.",
+    "limitations_risk_title": "Divorce = Cancellation",
+    "limitations_risk_text": "In the event of divorce, the visa is cancelled immediately (often 7 days to leave the territory). This is a precarious situation for those who depend entirely on this visa.",
     "cta_help_title": "Need marriage assistance?",
     "cta_help_subtitle": "We manage the paperwork for the marriage extension.",
     "cta_help_btn": "Contact an expert",
@@ -983,6 +987,19 @@ export const en = {
     "definition_title": "What is the Medical Visa?",
     "definition_content": "Thailand is a major medical tourism destination. The Medical Visa allows foreign patients to stay in the kingdom for surgical treatments, long-term care or rehabilitation cures.",
     "audience_title": "Services and Profiles concerned",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "Patients requiring surgery (cosmetic, orthopedic, cardiac).",
+      "People seeking complex dental care.",
+      "Patients with chronic treatments (dialysis, chemotherapy).",
+      "People seeking post-operative rehabilitation."
+    ],
+    "audience_not_compatible": "Non-Compatible Profiles",
+    "audience_not_compatible_list": [
+      "Tourists with minor health issues.",
+      "People without confirmed hospital appointment.",
+      "Those seeking to work under medical pretense."
+    ],
     "audience_types_title": "Types of Care",
     "audience_types_list": [
       "Cosmetic and reconstructive surgery.",
@@ -993,6 +1010,10 @@ export const en = {
     "audience_companion_title": "Companions",
     "audience_companion_text": "Up to 3 family members or caregivers can generally obtain a dependent visa to accompany the patient.",
     "duration_title": "Duration and Extensions",
+    "duration_initial_label": "Initial Validity",
+    "duration_initial_value": "90 days",
+    "duration_max_label": "Maximum Extension",
+    "duration_max_value": "Per medical certificate",
     "duration_validity_label": "Type Validity",
     "duration_validity_value": "90 days",
     "duration_extension_label": "Extension",
@@ -1001,14 +1022,25 @@ export const en = {
     "conditions_list": [
       "Medical certificate issued by a certified Thai hospital.",
       "Invitation letter from the health facility.",
-      "Proof of mapping funds to cover care and stay.",
+      "Proof of sufficient funds to cover care and stay.",
       "Health insurance specifically covering the treatment if required."
     ],
+    "work_title": "Work and authorized activities",
+    "work_warning_title": "Work Not Authorized",
+    "work_warning_text": "The Medical Visa does not allow any work activity. It is exclusively intended for medical treatment. Any work, even remote, is technically prohibited.",
+    "renewal_title": "Renewal and extensions",
+    "renewal_text": "Extensions are granted based on the hospital's medical certificate. Most international hospitals have an internal visa office to facilitate the process.",
+    "limitations_title": "Limitations and points of attention",
+    "limitations_risk_title": "Hospital Dependency",
+    "limitations_risk_text": "The visa is tied to the healthcare facility. If you change hospitals or discontinue treatment, the visa may be revoked. Make sure to keep documentation up to date.",
     "advantage_title": "The advantage of private hospitals",
     "advantage_text": "Most large international hospitals have internal visa centers to help patients with their extensions.",
     "cta_help_title": "Need a medical liaison?",
     "cta_help_subtitle": "We collaborate with the best facilities to facilitate your admission and visa.",
-    "cta_help_btn": "Contact our concierge service"
+    "cta_help_btn": "Contact our concierge service",
+    "cta_compare_title": "Explore other options",
+    "cta_compare_subtitle": "If you need a longer stay, consider other visa types.",
+    "cta_compare_btn": "See Elite Visa"
   },
   "religious_visa_page": {
     "meta": {
@@ -1020,6 +1052,20 @@ export const en = {
     "hero_subtitle": "Religious mission or study of Buddhism",
     "definition_title": "What is the Religious Visa?",
     "definition_content": "The Non-Immigrant R (Religious) Visa is reserved for foreigners wishing to engage in official religious activities in Thailand, sponsored by a recognized organization.",
+    "audience_title": "Who is this visa for?",
+    "audience_compatible": "Compatible Profiles",
+    "audience_compatible_list": [
+      "Ordained monks and nuns.",
+      "Missionaries with official sponsorship.",
+      "Religious scholars with institutional invitation.",
+      "Long-term religious volunteers."
+    ],
+    "audience_not_compatible": "Non-Compatible Profiles",
+    "audience_not_compatible_list": [
+      "Spiritual tourists without affiliation.",
+      "Casual meditation practitioners.",
+      "People without official religious sponsor."
+    ],
     "conditions_title": "Profiles and Conditions",
     "conditions_list": [
       "Be sponsored by a religious organization registered in Thailand.",
@@ -1032,8 +1078,21 @@ export const en = {
     "duration_initial_value": "90 days",
     "duration_max_label": "Max Extension",
     "duration_max_value": "1 Year (Renewable)",
+    "work_title": "Work and authorized activities",
+    "work_warning_title": "Paid Work Prohibited",
+    "work_warning_text": "The Religious Visa does not allow any paid work activity. Activities must be exclusively religious and non-profit. Any monetary compensation is strictly prohibited.",
+    "renewal_title": "Renewal and extensions",
+    "renewal_text": "Annual extensions require renewed sponsorship from the religious organization and continued approval from the Department of Religious Affairs.",
+    "limitations_title": "Limitations and points of attention",
+    "limitations_risk_title": "Sponsor Dependency",
+    "limitations_risk_text": "The visa is strictly tied to the sponsoring organization. If you leave the institution or lose sponsorship, the visa is revoked immediately.",
     "footer_note": "This visa requires close coordination with national religious authorities.",
-    "cta_btn": "Request specific advice"
+    "cta_help_title": "Need specific assistance?",
+    "cta_help_subtitle": "The religious visa requires complex documentation and coordination with authorities.",
+    "cta_help_btn": "Contact an expert",
+    "cta_compare_title": "Other spiritual options",
+    "cta_compare_subtitle": "For short meditation retreats, consider other visa types.",
+    "cta_compare_btn": "See Tourist Visa"
   },
   "media_visa_page": {
     "meta": {

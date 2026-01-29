@@ -933,11 +933,15 @@ export const fr = {
     "work_title": "Travail et activités autorisées",
     "work_allowed_title": "Travail Autorisé (Sous conditions)",
     "work_allowed_text": "Contrairement aux visas touristiques, le Visa Non-O Famille permet de demander un permis de travail (Work Permit). Une fois le permis obtenu, vous pouvez travailler légalement pour n'importe quelle entreprise thaïlandaise sans avoir besoin d'un Visa Business (Non-B).",
+    "work_warning_title": "Travail Autorisé (Sous conditions)",
+    "work_warning_text": "Contrairement aux visas touristiques, le Visa Non-O Famille permet de demander un permis de travail (Work Permit). Une fois le permis obtenu, vous pouvez travailler légalement pour n'importe quelle entreprise thaïlandaise sans avoir besoin d'un Visa Business (Non-B).",
     "renewal_title": "Renouvellement et extensions",
     "renewal_text": "L'extension annuelle se fait au bureau de l'immigration. Le processus prend environ 30 jours. Vous devez prouver chaque année que les fonds sont toujours en banque et que la relation maritale est toujours active.",
     "limitations_title": "Limitations et points de vigilance",
     "limitations_divorce_title": "Divorce = Annulation",
     "limitations_divorce_text": "En cas de divorce, le visa est annulé immédiatement (souvent 7 jours pour quitter le territoire). C'est une situation précaire pour ceux qui dépendent entièrement de ce visa.",
+    "limitations_risk_title": "Divorce = Annulation",
+    "limitations_risk_text": "En cas de divorce, le visa est annulé immédiatement (souvent 7 jours pour quitter le territoire). C'est une situation précaire pour ceux qui dépendent entièrement de ce visa.",
     "cta_help_title": "Besoin d'assistance mariage ?",
     "cta_help_subtitle": "Nous gérons la paperasse pour l'extension mariage.",
     "cta_help_btn": "Contacter un expert",
@@ -995,9 +999,22 @@ export const fr = {
     "hero_badge": "Soins & Santé",
     "hero_title": "Visa Médical (Non-MT / Non-O) – Thaïlande",
     "hero_subtitle": "Bénéficiez de soins de classe mondiale en Thaïlande",
-    "definition_title": "Qu’est-ce que le Visa Médical ?",
+    "definition_title": "Qu'est-ce que le Visa Médical ?",
     "definition_content": "La Thaïlande est une destination majeure du tourisme médical. Le Visa Médical permet aux patients étrangers de séjourner dans le royaume pour des traitements chirurgicaux, des soins de longue durée ou des cures de réhabilitation.",
     "audience_title": "Services et Profils concernés",
+    "audience_compatible": "Profils Compatibles",
+    "audience_compatible_list": [
+      "Patients nécessitant une chirurgie (esthétique, orthopédique, cardiaque).",
+      "Personnes en recherche de soins dentaires complexes.",
+      "Patients avec traitements chroniques (dialyse, chimiothérapie).",
+      "Personnes en recherche de rééducation post-opératoire."
+    ],
+    "audience_not_compatible": "Profils Non Compatibles",
+    "audience_not_compatible_list": [
+      "Touristes avec problèmes de santé mineurs.",
+      "Personnes sans rendez-vous hospitalier confirmé.",
+      "Ceux cherchant à travailler sous prétexte médical."
+    ],
     "audience_types_title": "Types de Soins",
     "audience_types_list": [
       "Chirurgie esthétique et réparatrice.",
@@ -1008,6 +1025,10 @@ export const fr = {
     "audience_companion_title": "Accompagnateurs",
     "audience_companion_text": "Jusqu'à 3 membres de la famille ou aidants peuvent généralement obtenir un visa de dépendant pour accompagner le patient.",
     "duration_title": "Durée et Prolongations",
+    "duration_initial_label": "Validité Initiale",
+    "duration_initial_value": "90 jours",
+    "duration_max_label": "Extension Maximale",
+    "duration_max_value": "Selon certificat médical",
     "duration_validity_label": "Validité Type",
     "duration_validity_value": "90 jours",
     "duration_extension_label": "Extension",
@@ -1019,11 +1040,22 @@ export const fr = {
       "Preuve de fonds suffisants pour couvrir les soins et le séjour.",
       "Assurance santé couvrant spécifiquement le traitement si requis."
     ],
+    "work_title": "Travail et activités autorisées",
+    "work_warning_title": "Travail Non Autorisé",
+    "work_warning_text": "Le Visa Médical n'autorise aucune activité professionnelle. Il est exclusivement destiné aux soins médicaux. Tout travail, même à distance, est techniquement interdit.",
+    "renewal_title": "Renouvellement et extensions",
+    "renewal_text": "Les extensions sont accordées sur la base du certificat médical de l'hôpital. La plupart des hôpitaux internationaux disposent d'un bureau de visas interne pour faciliter les démarches.",
+    "limitations_title": "Limitations et points de vigilance",
+    "limitations_risk_title": "Dépendance à l'Hôpital",
+    "limitations_risk_text": "Le visa est lié à l'établissement de santé. Si vous changez d'hôpital ou interrompez le traitement, le visa peut être révoqué. Assurez-vous de maintenir la documentation à jour.",
     "advantage_title": "L'avantage des hôpitaux privés",
     "advantage_text": "La plupart des grands hôpitaux internationaux disposent de centres de visas internes pour aider les patients avec leurs extensions.",
     "cta_help_title": "Besoin d'une liaison médicale ?",
     "cta_help_subtitle": "Nous collaborons avec les meilleurs établissements pour faciliter votre admission et votre visa.",
-    "cta_help_btn": "Contacter notre service conciergerie"
+    "cta_help_btn": "Contacter notre service conciergerie",
+    "cta_compare_title": "Explorer d'autres options",
+    "cta_compare_subtitle": "Si vous avez besoin d'un séjour plus long, envisagez d'autres types de visa.",
+    "cta_compare_btn": "Voir le Visa Elite"
   },
   "religious_visa_page": {
     "meta": {
@@ -1033,8 +1065,22 @@ export const fr = {
     "hero_badge": "Mission & Culte",
     "hero_title": "Visa Religieux (Non-R) – Thaïlande",
     "hero_subtitle": "Mission religieuse ou étude du bouddhisme",
-    "definition_title": "Qu’est-ce que le Visa Religieux ?",
+    "definition_title": "Qu'est-ce que le Visa Religieux ?",
     "definition_content": "Le Visa Non-Immigrant R (Religious) est réservé aux étrangers souhaitant s'engager dans des activités religieuses officielles en Thaïlande, parrainés par une organisation reconnue.",
+    "audience_title": "À qui s'adresse ce visa ?",
+    "audience_compatible": "Profils Compatibles",
+    "audience_compatible_list": [
+      "Moines et moniales ordonnés.",
+      "Missionnaires avec parrainage officiel.",
+      "Chercheurs religieux avec invitation institutionnelle.",
+      "Bénévoles religieux de longue durée."
+    ],
+    "audience_not_compatible": "Profils Non Compatibles",
+    "audience_not_compatible_list": [
+      "Touristes spirituels sans affiliation.",
+      "Pratiquants occasionnels de méditation.",
+      "Personnes sans parrain religieux officiel."
+    ],
     "conditions_title": "Profils et Conditions",
     "conditions_list": [
       "Être parrainé par une organisation religieuse enregistrée en Thaïlande.",
@@ -1047,8 +1093,21 @@ export const fr = {
     "duration_initial_value": "90 jours",
     "duration_max_label": "Extension Max",
     "duration_max_value": "1 An (Renouvelable)",
+    "work_title": "Travail et activités autorisées",
+    "work_warning_title": "Travail Rémunéré Interdit",
+    "work_warning_text": "Le Visa Religieux n'autorise aucune activité professionnelle rémunérée. Les activités doivent être exclusivement religieuses et à but non lucratif. Toute compensation monétaire est strictement interdite.",
+    "renewal_title": "Renouvellement et extensions",
+    "renewal_text": "Les extensions annuelles nécessitent le renouvellement du parrainage de l'organisation religieuse et l'approbation continue du Département des Affaires Religieuses.",
+    "limitations_title": "Limitations et points de vigilance",
+    "limitations_risk_title": "Dépendance au Parrain",
+    "limitations_risk_text": "Le visa est strictement lié à l'organisation parrain. Si vous quittez l'institution ou perdez le parrainage, le visa est révoqué immédiatement.",
     "footer_note": "Ce visa demande une coordination étroite avec les autorités religieuses nationales.",
-    "cta_btn": "Demander un conseil spécifique"
+    "cta_help_title": "Besoin d'assistance spécifique ?",
+    "cta_help_subtitle": "Le visa religieux nécessite une documentation complexe et une coordination avec les autorités.",
+    "cta_help_btn": "Contacter un expert",
+    "cta_compare_title": "Autres options spirituelles",
+    "cta_compare_subtitle": "Pour des retraites de méditation courtes, envisagez d'autres types de visa.",
+    "cta_compare_btn": "Voir le Visa Touriste"
   },
   "media_visa_page": {
     "meta": {
