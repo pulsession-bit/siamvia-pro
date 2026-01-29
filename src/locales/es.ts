@@ -49,8 +49,8 @@ export const es = {
   "home_page": {
     "appointment_title": "Hablemos de tu proyecto",
     "appointment_subtitle": "Reserva una llamada gratuita con un experto en visas para Tailandia.",
-    "member": "Client Area",
-    "eligibility": "Eligibility"
+    "member": "Área de Clientes",
+    "eligibility": "Elegibilidad"
   },
   "hero": {
     "new_badge": "NUEVO: VISA DTV DISPONIBLE",
@@ -137,56 +137,56 @@ export const es = {
         "a": "La Visa Elite es una membresía paga (sin requisitos de ingresos), mientras que la LTR se basa en la riqueza/ingresos y ofrece beneficios fiscales y de trabajo."
       }
     ],
-    "audit1": "Income Audit > $80k USD",
-    "audit2": "Investment Analysis",
-    "audit3": "Board of Investment Liaison",
-    "audit4": "Family Inclusion (4 persons)",
-    "pros_title": "Strengths",
+    "audit1": "Auditoría de ingresos > 80k USD",
+    "audit2": "Análisis de inversiones",
+    "audit3": "Enlace con la Junta de Inversiones (BOI)",
+    "audit4": "Inclusión familiar (4 personas)",
+    "pros_title": "Fortalezas",
     "pros": [
-      "10-year validity (5+5) renewable",
-      "Digital work permit included",
-      "International Airport Fast Track",
-      "Tax exemption on foreign income",
-      "17% rate for professionals",
-      "4 Dependents included (Spouse/Children)"
+      "Validez de 10 años (5+5) renovable",
+      "Permiso de trabajo digital incluido",
+      "Fast Track en Aeropuertos Internacionales",
+      "Exención de impuestos sobre ingresos extranjeros",
+      "Tasa del 17% para profesionales",
+      "4 dependientes incluidos (cónyuge/hijos)"
     ],
     "cons": [
-      "Very strict financial criteria (>$80k wealth)",
-      "Long validation process (BOI)",
-      "Heavy administrative paperwork initially",
-      "Mandatory health insurance (>$50k)",
-      "Investment required for certain categories"
+      "Criterios financieros muy estrictos (riqueza >80k$)",
+      "Proceso de validación largo (BOI)",
+      "Mucho trámite administrativo inicialmente",
+      "Seguro médico obligatorio (>50k$)",
+      "Inversión requerida para ciertas categorías"
     ],
     "faq": [
       {
-        "q": "What's the difference with Elite Visa?",
-        "a": "Elite Visa is paid and doesn't allow work. LTR is 'free' (reduced fees) if eligible and includes work permit."
+        "q": "¿Cuál es la diferencia con la Visa Elite?",
+        "a": "La Visa Elite es de pago y no permite trabajar. La LTR es 'gratis' (tarifas reducidas) si es elegible e incluye permiso de trabajo."
       },
       {
-        "q": "Can I work with an LTR visa?",
-        "a": "Yes, it's one of the few visas including a digital work permit without Thai employee quota."
+        "q": "¿Puedo trabajar con una visa LTR?",
+        "a": "Sí, es una de las pocas visas que incluye un permiso de trabajo digital sin cuotas de empleados tailandeses."
       },
       {
-        "q": "Minimum income required?",
-        "a": "$80,000 USD/year (2 years) or investment mix. Retirees eligible at $40,000 under investment conditions."
+        "q": "¿Renta mínima requerida?",
+        "a": "80.000 USD/año (2 años) o combinación de inversiones. Los jubilados son elegibles con 40.000 USD bajo condiciones de inversión."
       },
       {
-        "q": "Processing time?",
-        "a": "1 to 3 months for BOI approval, then a few weeks for issuance."
+        "q": "¿Tiempo de procesamiento?",
+        "a": "De 1 a 3 meses para la aprobación de la BOI, luego unas pocas semanas para la emisión."
       }
     ],
     "high_value": {
-      "title": "Tax Optimization",
-      "highlight": "& Freedom",
-      "description": "The LTR is not just a visa, it's a privileged resident status that allows you to work legally and optimize your taxation with a flat rate of 17% for skilled professionals.",
-      "item1": "17% Flat Tax (Professionals)",
-      "item2": "Work Permit Included",
-      "item3": "Foreign Income Exemption",
-      "card_title": "Exclusive Benefits",
-      "card_item1": "VIP Airport Fast Track",
-      "card_item2": "No 90-Day Reporting",
-      "card_item3": "4 Dependents Included",
-      "card_item4": "Privileged Tax Residency"
+      "title": "Optimización Fiscal",
+      "highlight": "& Libertad",
+      "description": "La LTR no es solo una visa, es un estatus de residente privilegiado que le permite trabajar legalmente y optimizar sus impuestos con una tasa fija del 17% para profesionales cualificados.",
+      "item1": "Tasa fija del 17% (Profesionales)",
+      "item2": "Permiso de trabajo incluido",
+      "item3": "Exención de ingresos extranjeros",
+      "card_title": "Beneficios Exclusivos",
+      "card_item1": "Fast Track VIP en Aeropuertos",
+      "card_item2": "Sin Informes de 90 Días",
+      "card_item3": "4 Dependents incluidos",
+      "card_item4": "Residencia Fiscal Privilegiada"
     }
   },
   "elite_page": {
@@ -417,10 +417,10 @@ export const es = {
     "bank_mercury_title": "USD / International Transfer (Mercury Bank)",
     "bank_wise_title": "Europe / IBAN Transfer (Wise)",
     "routing_number": "Routing Number (ACH):",
-    "account_number": "Account Number:",
+    "account_number": "Número de cuenta:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "Thank you. Your order is pending funds arrival. Please email payment proof to contact@siamvisapro.com to activate service."
+    "transfer_success_desc": "Gracias. Su pedido está pendiente de la llegada de los fondos. Por favor, envíe el comprobante de pago por correo electrónico a contact@siamvisapro.com para activar el servicio."
   },
   "login": {
     "title": "Área Cliente",
@@ -435,8 +435,8 @@ export const es = {
     "submit": "Entrar",
     "no_account": "¿Sin cuenta?",
     "start_request": "Iniciar solicitud",
-    "google_loading": "Logging in...",
-    "facebook_loading": "Logging in..."
+    "google_loading": "Iniciando sesión...",
+    "facebook_loading": "Iniciando sesión..."
   },
   "search_page": {
     "meta": {
@@ -715,8 +715,8 @@ export const es = {
       "card_item4": "Participantes en Muay Thai / Cocina"
     },
     "meta": {
-      "title": "Thailand DTV Visa 2026: Guide, Cost & Requirements | SiamVisaPro",
-      "description": "Complete guide to the Destination Thailand Visa (DTV). 5-year validity, legal work. 2026 conditions, cost, and expert portfolio assistance."
+      "title": "Visa DTV Tailandia 2026: Guía, Costo y Requisitos | SiamVisaPro",
+      "description": "Guía completa para la Visa Destination Thailand (DTV). 5 años de validez, trabajo legal. Condiciones 2026, costo y asistencia experta en portafolios."
     }
   },
   "retirement_page": {
@@ -926,6 +926,13 @@ export const es = {
       "SMART S (Startup): Fundadores de startups tech.",
       "SMART E (Ejecutivo): Altos directivos."
     ],
+    "audience_not_compatible": "Perfiles No Compatibles",
+    "audience_not_compatible_list": [
+      "Trabajadores remotos en sectores no tecnológicos (use el DTV).",
+      "Turistas generales (use el visado TR o la Exención).",
+      "Mano de obra poco cualificada o empresas no certificadas por el BOI.",
+      "Inversores pasivos sin una participación activa en el negocio."
+    ],
     "audience_industries": "Industrias Objetivo",
     "audience_industries_list": [
       "Digital & Tech, Automatización.",
@@ -952,6 +959,25 @@ export const es = {
     "limitations_title": "Limitaciones y puntos de vigilancia",
     "limitations_complex_title": "Proceso complejo",
     "limitations_complex_text": "La obtención requiere una validación técnica por parte de la BOI antes de la solicitud de la visa. El proceso completo puede tardar de 1 a 2 meses. No es una visa 'rápida' como la DTV.",
+    "faq_title": "FAQ - SMART Visa 2026",
+    "faqs": [
+      {
+        "q": "¿Necesito un permiso de trabajo clásico?",
+        "a": "No. La SMART Visa sustituye y le exime del permiso de trabajo clásico. Puede trabajar legalmente tan pronto como su visa sea validada."
+      },
+      {
+        "q": "¿Puedo traer a mi familia?",
+        "a": "Sí. Su cónyuge e hijos pueden obtener una SMART Visa como dependientes, lo que les da derecho a residir y trabajar (bajo condiciones) en Tailandia."
+      },
+      {
+        "q": "¿Es mejor que la Visa LTR?",
+        "a": "La LTR es por 10 años y tiene criterios diferentes. La SMART Visa es ideal para quienes no cumplen los requisitos de patrimonio de la LTR pero tienen salarios altos en tecnología."
+      },
+      {
+        "q": "¿Qué es el reporte anual?",
+        "a": "A diferencia de otras visas que requieren un reporte cada 90 días, los titulares de SMART Visa solo deben reportarse ante inmigración una vez al año."
+      }
+    ],
     "cta_eligible_title": "¿Es su empresa elegible?",
     "cta_eligible_subtitle": "Verifique si puede obtener la SMART Visa.",
     "cta_eligible_btn": "Hacer una simulación",
@@ -1632,104 +1658,104 @@ export const es = {
     "disclaimer": "Agencia privada.",
     "secure_payment": "Pago Seguro: Mercury & Wise",
     "author": "Raphaël Buresi",
-    "author_role": "Thailand Visa Expert",
-    "written_by": "Written by",
-    "last_updated": "Last updated",
-    "office_bkk": "Bangkok: Sukhumvit Rd, Khlong Toei, Bangkok 10110, Thailand",
-    "office_usa": "HQ: 16192 Coastal Highway, Lewes, Delaware 19958, USA",
+    "author_role": "Experto en Visados para Tailandia",
+    "written_by": "Escrito por",
+    "last_updated": "Última actualización",
+    "office_bkk": "Bangkok: Sukhumvit Rd, Khlong Toei, Bangkok 10110, Tailandia",
+    "office_usa": "HQ: 16192 Coastal Highway, Lewes, Delaware 19958, EE. UU.",
     "tax_id": "RC: 2417125",
     "legal_entity": "DigitGpt LLC"
   },
   "visa_run_page": {
     "meta": {
-      "title": "Thailand Visa Run: Risks, Costs and Alternatives 2026",
-      "description": "Why doing Visa Runs in Thailand is dangerous in 2026. Discover refusal risks, hidden costs and legal alternatives (DTV, Elite)."
+      "title": "Visa Run Tailandia: Riesgos, Costos y Alternativas 2026",
+      "description": "Por qué hacer Visa Runs en Tailandia es peligroso en 2026. Descubra los riesgos de rechazo, costos ocultos y alternativas legales (DTV, Elite)."
     },
     "hero": {
-      "title": "Stop doing",
+      "title": "Deje de hacer",
       "highlight": "Visa Runs.",
-      "subtitle": "Thai immigration has tightened the rules. Chaining visa exemptions and tourist entries is now a risky strategy.",
-      "cta": "See legal alternatives"
+      "subtitle": "Inmigración tailandesa ha endurecido las reglas. Encadenar exenciones de visa y entradas turísticas es ahora una estrategia arriesgada.",
+      "cta": "Ver alternativas legales"
     },
     "dangers": {
-      "title": "Why it's over?",
-      "risk1_title": "Entry Denial",
-      "risk1_desc": "Immigration officers have discretionary power to deny entry, even with a valid visa, if they suspect illegal work.",
-      "risk2_title": "Interrogation & Stress",
-      "risk2_desc": "Ending up in the airport 'holding cell' waiting for the next flight home is not a way to live.",
-      "risk3_title": "Hidden Costs",
-      "risk3_desc": "Flights, last-minute hotels, taxis... A 'Visa Run' costs roughly 10,000 THB per month. That's 120,000 THB/year."
+      "title": "¿Por qué se acabó?",
+      "risk1_title": "Denegación de Entrada",
+      "risk1_desc": "Los oficiales de inmigración tienen poder discrecional para denegar la entrada, incluso con una visa válida, si sospechan trabajo ilegal.",
+      "risk2_title": "Interrogatorios y Estrés",
+      "risk2_desc": "Terminar en la 'sala de espera' del aeropuerto esperando el próximo vuelo de regreso no es forma de vivir.",
+      "risk3_title": "Costos Ocultos",
+      "risk3_desc": "Vuelos, hoteles de último minuto, taxis... Un 'Visa Run' cuesta unos 10,000 THB al mes. Eso son 120,000 THB al año."
     },
     "solutions": {
-      "title": "Real Solutions (2026)",
-      "dtv": "DTV Visa (5 Years)",
-      "dtv_desc": "Perfect for digital nomads. ~15,000 THB once.",
-      "elite": "Elite Visa (5-20 Years)",
-      "elite_desc": "Absolute peace of mind for those who can invest.",
-      "ltr": "LTR Visa (10 Years)",
-      "ltr_desc": "For wealthy and talented profiles."
+      "title": "Soluciones Reales (2026)",
+      "dtv": "Visa DTV (5 Años)",
+      "dtv_desc": "Perfecta para nómadas digitales. ~15,000 THB una sola vez.",
+      "elite": "Visa Elite (5-20 Años)",
+      "elite_desc": "Tranquilidad absoluta para quienes pueden invertir.",
+      "ltr": "Visa LTR (10 Años)",
+      "ltr_desc": "Para perfiles adinerados y talentosos."
     }
   },
   "tourist_page": {
-    "badge": "Tourism & Leisure",
-    "title": "Tourist Visa (TR)",
-    "subtitle": "The classic option to explore Thailand for up to 90 days.",
-    "rules_title": "The Rules",
-    "duration": "Duration:",
-    "duration_val": "60 days on arrival.",
-    "extension": "Extension:",
-    "extension_val": "+30 days extendable locally (Immigration).",
-    "entries": "Entries:",
-    "entries_val": "Single Entry.",
-    "docs_title": "Required Documents",
-    "doc_passport": "Passport valid for 6 months",
-    "doc_photo": "Compliant ID photo",
-    "doc_ticket": "Flight ticket Out < 90 days",
-    "doc_hotel": "Hotel booking (first days)",
-    "doc_bank": "Bank statement (Balance > 20k THB)",
-    "price_label": "SiamVisaPro Assistance Fee:",
-    "price_sub": "Excluding consular fees (approx 35€)",
-    "btn_order": "Order this visa",
-    "upsell_title": "Want to stay longer?",
-    "upsell_desc": "If you work online, the DTV visa is probably a better option (5 years validity).",
-    "upsell_link": "Discover the DTV Visa"
+    "badge": "Turismo y Ocio",
+    "title": "Visa de Turista (TR)",
+    "subtitle": "La opción clásica para explorar Tailandia hasta por 90 días.",
+    "rules_title": "Las Reglas",
+    "duration": "Duración:",
+    "duration_val": "60 días a la llegada.",
+    "extension": "Prórroga:",
+    "extension_val": "+30 días prorrogables localmente (Inmigración).",
+    "entries": "Entradas:",
+    "entries_val": "Entrada Única.",
+    "docs_title": "Documentos Requeridos",
+    "doc_passport": "Pasaporte válido por 6 meses",
+    "doc_photo": "Foto de identidad conforme",
+    "doc_ticket": "Billete de salida < 90 días",
+    "doc_hotel": "Reserva de hotel (primeros días)",
+    "doc_bank": "Extracto bancario (Saldo > 20k THB)",
+    "price_label": "Tasa de asistencia de SiamVisaPro:",
+    "price_sub": "Excluyendo tasas consulares (aprox. 35€)",
+    "btn_order": "Pedir esta visa",
+    "upsell_title": "¿Quiere quedarse más tiempo?",
+    "upsell_desc": "Si trabaja en línea, la visa DTV es probablemente una mejor opción (5 años de validez).",
+    "upsell_link": "Descubra la Visa DTV"
   },
   "apply_page": {
     "meta": {
-      "title": "Thailand Visa Application | SiamVisa Pro",
-      "description": "Start your Thailand visa application online. Simple and fast process with expert support."
+      "title": "Solicitud de Visa para Tailandia | SiamVisa Pro",
+      "description": "Inicie su solicitud de visa para Tailandia en línea. Proceso simple y rápido con apoyo de expertos."
     },
-    "hero_title": "Visa Application",
-    "hero_subtitle": "Start your travel project in just a few clicks",
+    "hero_title": "Solicitud de Visa",
+    "hero_subtitle": "Inicie su proyecto de viaje en solo unos clics",
     "steps": {
       "selection": {
-        "title": "Choose your Visa",
-        "subtitle": "Select the visa type that matches your project"
+        "title": "Elija su Visa",
+        "subtitle": "Seleccione el tipo de visa que coincida con su proyecto"
       },
       "personal": {
-        "title": "Personal Information",
-        "subtitle": "Tell us more about yourself",
-        "first_name": "First Name",
-        "last_name": "Last Name",
-        "email": "Email",
-        "phone": "Phone",
-        "nationality": "Nationality"
+        "title": "Información Personal",
+        "subtitle": "Cuéntenos más sobre usted",
+        "first_name": "Nombre",
+        "last_name": "Apellido",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "nationality": "Nacionalidad"
       },
       "trip": {
-        "title": "Trip Details",
-        "subtitle": "Information about your stay",
-        "entry_date": "Planned Entry Date",
-        "duration": "Stay Duration (days)"
+        "title": "Detalles del Viaje",
+        "subtitle": "Información sobre su estancia",
+        "entry_date": "Fecha de Entrada Planificada",
+        "duration": "Duración de la Estancia (días)"
       },
       "confirm": {
-        "title": "Confirmation",
-        "subtitle": "Verify your information before sending",
-        "btn_submit": "SUBMIT MY APPLICATION",
-        "success_title": "Application Received!",
-        "success_desc": "Your application has been sent to our experts. You will receive an email response within 24 hours."
+        "title": "Confirmación",
+        "subtitle": "Verifique su información antes de enviar",
+        "btn_submit": "ENVIAR MI SOLICITUD",
+        "success_title": "¡Solicitud Recibida!",
+        "success_desc": "Su solicitud ha sido enviada a nuestros expertos. Recibirá una respuesta por correo electrónico en un plazo de 24 horas."
       }
     },
-    "next": "Next",
-    "prev": "Previous"
+    "next": "Siguiente",
+    "prev": "Anterior"
   }
 };

@@ -836,6 +836,13 @@ export const fr = {
       "SMART S (Startup) : Fondateurs de startups tech.",
       "SMART E (Executive) : Cadres supérieurs."
     ],
+    "audience_not_compatible": "Profils Non Compatibles",
+    "audience_not_compatible_list": [
+      "Travailleurs à distance hors secteurs technologiques (utilisez le DTV).",
+      "Touristes classiques (utilisez TR ou Exemption).",
+      "Main-d'œuvre peu qualifiée ou entreprises non agréées BOI.",
+      "Investisseurs passifs sans implication active dans l'entreprise."
+    ],
     "audience_industries": "Industries Cibles",
     "audience_industries_list": [
       "Digital & Tech, Automatisation.",
@@ -862,6 +869,25 @@ export const fr = {
     "limitations_title": "Limitations et points de vigilance",
     "limitations_complex_title": "Processus complexe",
     "limitations_complex_text": "L'obtention nécessite une validation technique par le BOI avant la demande de visa. Le processus complet peut prendre 1 à 2 mois. Ce n'est pas un visa 'rapide' comme le DTV.",
+    "faq_title": "FAQ - SMART Visa 2026",
+    "faqs": [
+      {
+        "q": "Ai-je besoin d'un permis de travail classique ?",
+        "a": "Non. Le SMART Visa remplace et vous exempte du permis de travail classique (Work Permit). Vous pouvez travailler dès la validation de votre visa."
+      },
+      {
+        "q": "Puis-je amener ma famille ?",
+        "a": "Oui. Votre conjoint et vos enfants peuvent obtenir un SMART Visa en tant que dépendants, ce qui leur donne le droit de séjourner et de travailler (sous conditions)."
+      },
+      {
+        "q": "Est-ce mieux que le Visa LTR ?",
+        "a": "Le LTR est valable 10 ans et a des critères différents. Le SMART Visa est idéal pour ceux qui ne remplissent pas les critères de patrimoine financier du LTR mais ont des salaires élevés dans la tech."
+      },
+      {
+        "q": "Qu'est-ce que le rapport annuel ?",
+        "a": "Contrairement aux autres visas qui exigent un rapport tous les 90 jours, les détenteurs d'un SMART Visa ne doivent se présenter à l'immigration qu'une fois par an."
+      }
+    ],
     "cta_eligible_title": "Votre entreprise est éligible ?",
     "cta_eligible_subtitle": "Vérifiez si vous pouvez obtenir le SMART Visa.",
     "cta_eligible_btn": "Faire une simulation",

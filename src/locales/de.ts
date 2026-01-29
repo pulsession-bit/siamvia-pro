@@ -49,8 +49,8 @@ export const de = {
   "home_page": {
     "appointment_title": "Lassen Sie uns über Ihr Projekt sprechen",
     "appointment_subtitle": "Buchen Sie ein kostenloses Gespräch mit einem Thailand-Visa-Experten.",
-    "member": "Client Area",
-    "eligibility": "Eligibility"
+    "member": "Kundenbereich",
+    "eligibility": "Eignung"
   },
   "hero": {
     "new_badge": "NEU: DTV VISUM VERFÜGBAR",
@@ -491,6 +491,13 @@ export const de = {
       "SMART S (Startup): Gründer von Tech-Startups.",
       "SMART E (Executive): Führungskräfte."
     ],
+    "audience_not_compatible": "Nicht kompatible Profile",
+    "audience_not_compatible_list": [
+      "Remote-Arbeiter in Nicht-Tech-Branchen (nutzen Sie das DTV).",
+      "Einfache Touristen (nutzen Sie TR oder Exemption).",
+      "Gering qualifizierte Arbeitskräfte oder Nicht-BOI-Unternehmen.",
+      "Passive Investoren ohne aktive geschäftliche Beteiligung."
+    ],
     "audience_industries": "Zielbranchen",
     "audience_industries_list": [
       "Digital & Tech, Automatisierung.",
@@ -517,6 +524,25 @@ export const de = {
     "limitations_title": "Einschränkungen und Wachsamkeitspunkte",
     "limitations_complex_title": "Komplexer Prozess",
     "limitations_complex_text": "Die Erlangung erfordert eine technische Validierung durch den BOI vor dem Visumantrag. Der gesamte Prozess kann 1 bis 2 Monate dauern. Es ist kein 'schnelles' Visum wie das DTV.",
+    "faq_title": "FAQ - SMART Visum 2026",
+    "faqs": [
+      {
+        "q": "Benötige ich eine klassische Arbeitserlaubnis?",
+        "a": "Nein. Das SMART Visum ersetzt die klassische Arbeitserlaubnis (Work Permit) und befreit Sie davon. Sie können legal arbeiten, sobald Ihr Visum validiert ist."
+      },
+      {
+        "q": "Kann ich meine Familie mitbringen?",
+        "a": "Ja. Ihr Ehepartner und Ihre Kinder können ein SMART Visum als Familienangehörige erhalten, was ihnen das Recht gibt, in Thailand zu leben und (unter Bedingungen) zu arbeiten."
+      },
+      {
+        "q": "Ist es besser als das LTR-Visum?",
+        "a": "Das LTR-Visum gilt für 10 Jahre und hat andere Kriterien. Das SMART Visum ist ideal für diejenigen, die die finanziellen Anforderungen des LTR nicht erfüllen, aber hohe Gehälter im Tech-Sektor haben."
+      },
+      {
+        "q": "Was ist die 1-Jahres-Meldung?",
+        "a": "Im Gegensatz zu anderen Visa, die alle 90 Tage eine Meldung erfordern, müssen sich Inhaber eines SMART Visums nur einmal im Jahr bei der Einwanderungsbehörde melden."
+      }
+    ],
     "cta_eligible_title": "Ist Ihr Unternehmen berechtigt?",
     "cta_eligible_subtitle": "Prüfen Sie, ob Sie das SMART Visum erhalten können.",
     "cta_eligible_btn": "Simulation starten",
@@ -1124,9 +1150,9 @@ export const de = {
       "4 Years": "4 Jahre",
       "Variable": "Variabel",
       "90 Days": "90 Tage",
-      "6-12 Months": "6-12 Months",
-      "15 Years": "15 Years",
-      "20+ Years": "20+ Years"
+      "6-12 Months": "6-12 Monate",
+      "15 Years": "15 Jahre",
+      "20+ Years": "20+ Jahre"
     },
     "prices": {
       "High": "Hoch",
@@ -1660,40 +1686,40 @@ export const de = {
   },
   "apply_page": {
     "meta": {
-      "title": "Thailand Visa Application | SiamVisa Pro",
-      "description": "Start your Thailand visa application online. Simple and fast process with expert support."
+      "title": "Thailand Visumantrag | SiamVisa Pro",
+      "description": "Starten Sie Ihren Thailand-Visumantrag online. Einfacher und schneller Prozess mit Expertenunterstützung."
     },
-    "hero_title": "Visa Application",
-    "hero_subtitle": "Start your travel project in just a few clicks",
+    "hero_title": "Visumantrag",
+    "hero_subtitle": "Starten Sie Ihr Reiseprojekt mit nur wenigen Klicks",
     "steps": {
       "selection": {
-        "title": "Choose your Visa",
-        "subtitle": "Select the visa type that matches your project"
+        "title": "Wählen Sie Ihr Visum",
+        "subtitle": "Wählen Sie den Visumtyp, der zu Ihrem Projekt passt"
       },
       "personal": {
-        "title": "Personal Information",
-        "subtitle": "Tell us more about yourself",
-        "first_name": "First Name",
-        "last_name": "Last Name",
-        "email": "Email",
-        "phone": "Phone",
-        "nationality": "Nationality"
+        "title": "Persönliche Informationen",
+        "subtitle": "Erzählen Sie uns mehr über sich",
+        "first_name": "Vorname",
+        "last_name": "Nachname",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "nationality": "Nationalität"
       },
       "trip": {
-        "title": "Trip Details",
-        "subtitle": "Information about your stay",
-        "entry_date": "Planned Entry Date",
-        "duration": "Stay Duration (days)"
+        "title": "Reisedetails",
+        "subtitle": "Informationen über Ihren Aufenthalt",
+        "entry_date": "Geplantes Einreisedatum",
+        "duration": "Aufenthaltsdauer (Tage)"
       },
       "confirm": {
-        "title": "Confirmation",
-        "subtitle": "Verify your information before sending",
-        "btn_submit": "SUBMIT MY APPLICATION",
-        "success_title": "Application Received!",
-        "success_desc": "Your application has been sent to our experts. You will receive an email response within 24 hours."
+        "title": "Bestätigung",
+        "subtitle": "Überprüfen Sie Ihre Informationen vor dem Senden",
+        "btn_submit": "MEINEN ANTRAG ABSENDEN",
+        "success_title": "Antrag eingegangen!",
+        "success_desc": "Ihr Antrag wurde an unsere Experten gesendet. Sie erhalten innerhalb von 24 Stunden eine Antwort per E-Mail."
       }
     },
-    "next": "Next",
-    "prev": "Previous"
+    "next": "Weiter",
+    "prev": "Zurück"
   }
 };

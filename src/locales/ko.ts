@@ -38,9 +38,9 @@ export const ko = {
       "elite": "엘리트 특권",
       "others": "기타 비자"
     },
-    "visa_options": "Visa Options",
-    "eligibility_check": "Check Eligibility",
-    "search_placeholder": "Ask AI..."
+    "visa_options": "비자 옵션",
+    "eligibility_check": "자격 확인",
+    "search_placeholder": "AI에게 질문하기..."
   },
   "meta": {
     "title": "Siam Visa Pro | 태국 비자 전문가 - DTV, 관광 및 은퇴",
@@ -49,8 +49,8 @@ export const ko = {
   "home_page": {
     "appointment_title": "당신의 프로젝트에 대해 이야기해 봅시다",
     "appointment_subtitle": "태국 비자 전문가와 무료 상담을 예약하세요.",
-    "member": "Client Area",
-    "eligibility": "Eligibility"
+    "member": "회원 센터",
+    "eligibility": "신청 자격"
   },
   "search_page": {
     "meta": {
@@ -226,9 +226,9 @@ export const ko = {
       "4 Years": "4년",
       "Variable": "다양",
       "90 Days": "90일",
-      "6-12 Months": "6-12 Months",
-      "15 Years": "15 Years",
-      "20+ Years": "20+ Years"
+      "6-12 Months": "6-12개월",
+      "15 Years": "15년",
+      "20+ Years": "20년 이상"
     },
     "prices": {
       "High": "높음",
@@ -422,7 +422,7 @@ export const ko = {
     "account_number": "Account Number:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "Thank you. Your order is pending funds arrival. Please email payment proof to contact@siamvisapro.com to activate service."
+    "transfer_success_desc": "감사합니다. 입금이 확인될 때까지 주문이 대기 상태입니다. 서비스를 활성화하려면 결제 증명서를 contact@siamvisapro.com으로 이메일 보내주세요."
   },
   "login": {
     "title": "고객 센터",
@@ -437,8 +437,8 @@ export const ko = {
     "submit": "로그인",
     "no_account": "계정이 없으신가요?",
     "start_request": "신청 시작",
-    "google_loading": "Logging in...",
-    "facebook_loading": "Logging in..."
+    "google_loading": "로그인 중...",
+    "facebook_loading": "로그인 중..."
   },
   "contact_page": {
     "meta": {
@@ -532,8 +532,8 @@ export const ko = {
       "card_item4": "무에타이 / 요리 수강생"
     },
     "meta": {
-      "title": "Thailand DTV Visa 2026: Guide, Cost & Requirements | SiamVisaPro",
-      "description": "Complete guide to the Destination Thailand Visa (DTV). 5-year validity, legal work. 2026 conditions, cost, and expert portfolio assistance."
+      "title": "태국 DTV 비자 2026: 가이드, 비용 및 요건 | SiamVisaPro",
+      "description": "Destination Thailand Visa (DTV) 완벽 가이드. 5년 유효, 합법적 근무. 2026년 조건, 비용 및 전문 포트폴리오 지원."
     }
   },
   "tourist_page": {
@@ -743,6 +743,13 @@ export const ko = {
       "SMART S (스타트업): 테크 스타트업 창업자.",
       "SMART E (임원): 고위 경영진."
     ],
+    "audience_not_compatible": "부적합한 프로필",
+    "audience_not_compatible_list": [
+      "비기술 분야의 원격 근무자 (DTV 비자를 이용하세요).",
+      "일반 관광객 (관광 비자(TR) 또는 무비자 입국을 이용하세요).",
+      "저숙련 노동자 또는 BOI 인증을 받지 않은 기업.",
+      "실질적인 비즈니스 참여가 없는 수동적 투자자."
+    ],
     "audience_industries": "대상 산업",
     "audience_industries_list": [
       "디지털 및 테크, 자동화.",
@@ -932,164 +939,164 @@ export const ko = {
   },
   "media_visa_page": {
     "meta": {
-      "title": "Thailand Media / Journalist Visa (Non-M) | Guide 2026",
-      "description": "Visa for journalists, press correspondents, and film crews in Thailand. Accreditation and required conditions."
+      "title": "태국 미디어 / 기자 비자 (Non-M) | 가이드 2026",
+      "description": "태국 내 기자, 특파원 및 촬영 팀을 위한 비자. 인증 및 필수 조건."
     },
-    "hero_badge": "Press & Journalism",
-    "hero_title": "Media Visa (Non-M) – Thailand",
-    "hero_subtitle": "Cover the news or produce content in Thailand",
-    "definition_title": "What is the Media Visa (Non-M)?",
-    "definition_content": "The Non-Immigrant M (Media) Visa is intended for certified media professionals (journalists, correspondents, film crews) wishing to work or report in Thailand.",
-    "audience_title": "Who is this visa for?",
-    "audience_compatible": "Compatible Profiles",
+    "hero_badge": "언론 및 저널리즘",
+    "hero_title": "미디어 비자 (Non-M) – 태국",
+    "hero_subtitle": "태국에서 뉴스 취재 또는 콘텐츠 제작",
+    "definition_title": "미디어 비자 (Non-M)란 무엇인가요?",
+    "definition_content": "Non-Immigrant M (Media) 비자는 태국에서 취업 또는 보도를 원하는 공인된 미디어 전문가(기자, 특파원, 촬영 팀)를 대상으로 합니다.",
+    "audience_title": "대상자는 누구인가요?",
+    "audience_compatible": "적합한 프로필",
     "audience_compatible_list": [
-      "Accredited Journalists.",
-      "Foreign Press Correspondents.",
-      "Film Crews with official permit."
+      "공인된 기자.",
+      "외신 특파원.",
+      "공식 허가를 받은 촬영 팀."
     ],
-    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible": "부적합한 프로필",
     "audience_not_compatible_list": [
-      "Independent YouTubers without permit.",
-      "Bloggers / Influencers (see DTV Visa).",
-      "Commercial productions without license."
+      "허가 없는 개인 유튜버.",
+      "블로거 / 인플루언서 (DTV 비자 참조).",
+      "면허 없는 상업 제작물."
     ],
-    "duration_title": "Length of stay and validity",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "1 Year",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Renewable",
-    "conditions_title": "Accreditation & Conditions",
+    "duration_title": "체류 기간 및 유효성",
+    "duration_initial_label": "유효 기간",
+    "duration_initial_value": "1년",
+    "duration_max_label": "연장",
+    "duration_max_value": "갱신 가능",
+    "conditions_title": "인증 및 조건",
     "conditions_list": [
-      "Registration on the MFA online portal (M-Press).",
-      "Presentation of press card and letter from employer.",
-      "Background check by the Public Relations Department.",
-      "Thailand Film Office approval for filming."
+      "외무부 온라인 포털(M-Press) 등록.",
+      "기자증 및 고용주 서신 제출.",
+      "홍보국(Public Relations Department) 신원 조회.",
+      "태국 영화국(Thailand Film Office) 촬영 승인."
     ],
-    "work_title": "Working & Filming",
-    "work_warning_title": "Filming Permit",
-    "work_warning_text": "A visa alone is often not enough. For any commercial production, a specific filming permit is required. Without it, you risk heavy fines and confiscation of equipment.",
-    "renewal_title": "Renewal",
-    "renewal_text": "The visa can be renewed annually as long as accreditation with the Ministry of Foreign Affairs (MFA) is maintained.",
-    "limitations_title": "Limitations",
-    "limitations_risk_title": "Strictly Controlled Activity",
-    "limitations_risk_text": "Thailand monitors foreign media very closely. Any politically sensitive reporting without proper accreditation can lead to deportation.",
-    "cta_help_title": "Need accreditation assistance?",
-    "cta_help_subtitle": "We help media professionals with MFA formalities.",
-    "cta_help_btn": "Request assistance",
-    "cta_compare_title": "Are you a Freelancer?",
-    "cta_compare_subtitle": "For digital content, the DTV is often simpler.",
-    "cta_compare_btn": "See DTV Visa"
+    "work_title": "업무 및 촬영",
+    "work_warning_title": "촬영 허가",
+    "work_warning_text": "비자만으로는 충분하지 않은 경우가 많습니다. 상업적 제작을 위해서는 특정 촬영 허가가 필요합니다. 허가 없이 촬영할 경우 고액의 벌금과 장비 압수 위험이 있습니다.",
+    "renewal_title": "갱신",
+    "renewal_text": "외무부(MFA) 인증이 유지되는 한 매년 갱신할 수 있습니다.",
+    "limitations_title": "제한 사항",
+    "limitations_risk_title": "엄격히 통제되는 활동",
+    "limitations_risk_text": "태국은 외신을 매우 면밀히 모니터링합니다. 적절한 인증 없이 정치적으로 민감한 보도를 할 경우 강제 추방될 수 있습니다.",
+    "cta_help_title": "인증 지원이 필요하신가요?",
+    "cta_help_subtitle": "미디어 전문가의 외무부 절차를 도와드립니다.",
+    "cta_help_btn": "지원 요청",
+    "cta_compare_title": "프리랜서이신가요?",
+    "cta_compare_subtitle": "디지털 콘텐츠의 경우 DTV가 종종 더 간단합니다.",
+    "cta_compare_btn": "DTV 비자 보기"
   },
   "official_visa_page": {
     "meta": {
-      "title": "Thailand Official Visa (Non-F) | Guide 2026",
-      "description": "Visa for officials, diplomats, and employees of international organizations on mission in Thailand."
+      "title": "태국 공무 비자 (Non-F) | 가이드 2026",
+      "description": "태국에서 임무를 수행하는 공무원, 외교관 및 국제기구 직원을 위한 비자."
     },
-    "hero_badge": "Diplomacy & State",
-    "hero_title": "Official Visa (Non-F) – Thailand",
-    "hero_subtitle": "Diplomatic and official missions in Thailand",
-    "definition_title": "What is the Official Visa?",
-    "definition_content": "The Non-Immigrant F (Official) Visa is reserved for people on official mission (diplomats, IO officials).",
-    "audience_title": "Beneficiaries",
-    "audience_diplomatic_title": "Diplomatic Corps",
-    "audience_diplomatic_text": "Ambassies, Consulates, Military Attaches.",
-    "audience_oi_title": "IO / UN",
-    "audience_oi_text": "United Nations employees, UNICEF, etc., based in Bangkok.",
-    "conditions_title": "Specific requirements",
-    "conditions_text": "This visa imperatively requires a verbal note or an official mission order.",
-    "cta_btn": "Request assistance",
-    "audience_compatible": "Eligible Profiles",
+    "hero_badge": "외교 및 공무",
+    "hero_title": "공무 비자 (Non-F) – 태국",
+    "hero_subtitle": "태국 내 외교 및 공식 임무 수행",
+    "definition_title": "공무 비자란 무엇인가요?",
+    "definition_content": "Non-Immigrant F (Official) 비자는 공식 임무를 수행하는 인원(외교관, 국제기구 직원)을 위해 지정된 비자입니다.",
+    "audience_title": "수혜 대상",
+    "audience_diplomatic_title": "외교단",
+    "audience_diplomatic_text": "대사관, 영사관, 무관부.",
+    "audience_oi_title": "국제기구 / UN",
+    "audience_oi_text": "방콕 소재 UN 직원, 유니세프 등.",
+    "conditions_title": "특수 요건",
+    "conditions_text": "이 비자는 반드시 외교 공문(Note Verbale) 또는 공식 파견 명령서가 필요합니다.",
+    "cta_btn": "지원 요청",
+    "audience_compatible": "대상 프로필",
     "audience_compatible_list": [
-      "Diplomats and Embassy staff.",
-      "United Nations officials (UN/UNICEF/ESCAP).",
-      "Military and officials on official mission."
+      "외교관 및 대사관 직원.",
+      "UN 관련 기구 직원 (UN/UNICEF/ESCAP).",
+      "공식 임무 수행 중인 군인 및 공무원."
     ],
-    "audience_not_compatible": "Not Eligible",
+    "audience_not_compatible": "대상 아님",
     "audience_not_compatible_list": [
-      "Private contractors working for governments.",
-      "External consultants without official status.",
-      "Family members not officially declared."
+      "정부 대상 민간 계약업체.",
+      "공식 지위 없는 외부 컨설턴트.",
+      "공식적으로 신고되지 않은 가족 구성원."
     ],
-    "duration_title": "Mission Duration",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "Mission",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Variable",
+    "duration_title": "임무 기간",
+    "duration_initial_label": "유효 기간",
+    "duration_initial_value": "임무 기간 동안",
+    "duration_max_label": "연장",
+    "duration_max_value": "가변적",
     "conditions_list": [
-      "Note Verbale from the Ministry of Foreign Affairs.",
-      "Official Mission Order.",
-      "Diplomatic or Service Passport (recommended).",
-      "Invitation letter from the organization in Thailand."
+      "외무부 발행 외교 공문(Note Verbale).",
+      "공식 파견 명령서.",
+      "외교관 및 관용 여권 (권장).",
+      "태국 내 관련 기관의 초청장."
     ],
-    "work_title": "Diplomatic Status",
-    "work_warning_title": "Immunity and Rules",
-    "work_warning_text": "Depending on your rank and the agreement with Thailand, you may benefit from diplomatic immunity and tax exemptions. No private commercial activity is authorized.",
-    "renewal_title": "Extension",
-    "renewal_text": "Managed directly by the MFA Protocol Department or your organization.",
-    "limitations_title": "Limitations",
-    "limitations_risk_title": "End of Mission",
-    "limitations_risk_text": "At the end of your official mission, you must return your diplomatic card and change status or leave the country immediately.",
-    "cta_help_title": "Protocol Assistance?",
-    "cta_help_subtitle": "We assist international organizations with their procedures.",
-    "cta_help_btn": "Request assistance",
-    "cta_compare_title": "Commercial Mission?",
-    "cta_compare_subtitle": "If you do not have diplomatic status, use the Business Visa.",
-    "cta_compare_btn": "See Business Visa"
+    "work_title": "외교적 지위",
+    "work_warning_title": "면책 특권 및 규칙",
+    "work_warning_text": "직급 및 태국과의 협정 내용에 따라 외교적 면책 특권과 세금 면제 혜택을 받을 수 있습니다. 사적인 영리 활동은 허용되지 않습니다.",
+    "renewal_title": "연장",
+    "renewal_text": "외무부 의전실(MFA Protocol Department) 또는 소속 기관에서 직접 관리합니다.",
+    "limitations_title": "제한 사항",
+    "limitations_risk_title": "임무 종료 시",
+    "limitations_risk_text": "공식 임무가 종료되면 외교관 카드를 반납하고 체류 자격을 변경하거나 즉시 출국해야 합니다.",
+    "cta_help_title": "프로토콜 지원이 필요하신가요?",
+    "cta_help_subtitle": "국제기구 담당자의 행정 절차를 도와드립니다.",
+    "cta_help_btn": "지원 요청",
+    "cta_compare_title": "상업적 임무이신가요?",
+    "cta_compare_subtitle": "외교적 지위가 없는 경우 비즈니스 비자를 이용하십시오.",
+    "cta_compare_btn": "비즈니스 비자 보기"
   },
   "scientific_visa_page": {
     "meta": {
-      "title": "Thailand Scientific Research Visa (Non-RS) | Guide 2026",
-      "description": "Visa for researchers, experts, and scientists conducting research work in Thailand."
+      "title": "태국 과학 연구 비자 (Non-RS) | 가이드 2026",
+      "description": "태국에서 연구 업무를 수행하는 연구자, 전문가 및 과학자를 위한 비자."
     },
-    "hero_badge": "Research & Innovation",
-    "hero_title": "Scientific Research Visa (Non-RS) – Thailand",
-    "hero_subtitle": "Contribute to scientific advancement in Thailand",
-    "definition_title": "What is the Scientific Research Visa?",
-    "definition_content": "The Non-Immigrant RS (Research & Science) Visa is designed for experts and researchers conducting scientific work with a Thai institute.",
-    "audience_title": "Eligible Profiles",
-    "audience_tech_title": "Technical Experts",
-    "audience_tech_text": "Engineers and specialists in technology transfer.",
-    "audience_academic_title": "Academic Researchers",
-    "audience_academic_text": "Scientists on mission in universities or national research centers.",
-    "conditions_title": "Required Conditions",
+    "hero_badge": "연구 및 혁신",
+    "hero_title": "과학 연구 비자 (Non-RS) – 태국",
+    "hero_subtitle": "태국의 과학 발전에 기여",
+    "definition_title": "과학 연구 비자란 무엇인가요?",
+    "definition_content": "Non-Immigrant RS (Research & Science) 비자는 태국 기관과 협력하여 과학적 업무를 수행하는 전문가 및 연구자를 위해 설계되었습니다.",
+    "audience_title": "대상 프로필",
+    "audience_tech_title": "기술 전문가",
+    "audience_tech_text": "기술 이전 분야의 엔지니어 및 전문가.",
+    "audience_academic_title": "학술 연구자",
+    "audience_academic_text": "대학교 또는 국립 연구 센터에서 임무를 수행하는 과학자.",
+    "conditions_title": "필수 조건",
     "conditions_list": [
-      "Invitation from a Thai research organization (e.g., NRCT).",
-      "Scientific cooperation agreement between institutions.",
-      "Degree certificates and detailed CV.",
-      "Proof of research funding."
+      "태국 연구 기관(예: NRCT)의 초청장.",
+      "기관 간의 과학 협력 계약.",
+      "학위 증명서 및 상세 이력서.",
+      "연구 자금 증명."
     ],
-    "cta_btn": "Check sponsorship",
-    "audience_compatible": "Compatible Profiles",
+    "cta_btn": "스폰서십 확인",
+    "audience_compatible": "적합한 프로필",
     "audience_compatible_list": [
-      "Technical Experts and Engineers.",
-      "Academic Researchers (Universities, National Centers).",
-      "Technology Transfer Specialists."
+      "기술 전문가 및 엔지니어.",
+      "학술 연구자 (대학교, 국립 센터).",
+      "기술 이전 전문가."
     ],
-    "audience_not_compatible": "Not Compatible",
+    "audience_not_compatible": "부적합한 프로필",
     "audience_not_compatible_list": [
-      "Independent researchers without affiliation.",
-      "Language teachers (see ED Visa).",
-      "PhD students without a research contract."
+      "소속 없는 독립 연구자.",
+      "어학 강사 (학생 비자(ED) 참조).",
+      "연구 계약이 없는 박사 과정 학생."
     ],
-    "duration_title": "Research Duration",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "1-2 Years",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Renewable",
-    "work_title": "Research Activity",
-    "work_warning_title": "Scope of work",
-    "work_warning_text": "This visa authorizes research activities described in the contract. It does not allow working for a private company outside the research project.",
-    "renewal_title": "Renewal",
-    "renewal_text": "Renewable based on the progress of the research project and funding.",
-    "limitations_title": "Approval Required",
-    "limitations_risk_title": "NRCT Approval",
-    "limitations_risk_text": "The most difficult step is obtaining approval from the National Research Council. Without this, the RS visa cannot be issued.",
-    "cta_help_title": "Need help with NRCT?",
-    "cta_help_subtitle": "We guide researchers and institutes through the process.",
-    "cta_help_btn": "Contact an expert",
-    "cta_compare_title": "Tech Startup?",
-    "cta_compare_subtitle": "The SMART Visa might be more appropriate for innovation.",
-    "cta_compare_btn": "See SMART Visa"
+    "duration_title": "연구 기간",
+    "duration_initial_label": "유효 기간",
+    "duration_initial_value": "1-2년",
+    "duration_max_label": "연장",
+    "duration_max_value": "갱신 가능",
+    "work_title": "연구 활동",
+    "work_warning_title": "업무 범위",
+    "work_warning_text": "이 비자는 계약서에 명시된 연구 활동만을 허가합니다. 연구 프로젝트 외의 민간 기업 근무는 허용되지 않습니다.",
+    "renewal_title": "갱신",
+    "renewal_text": "연구 프로젝트의 진행 상황과 자금 조달에 따라 갱신 가능합니다.",
+    "limitations_title": "승인 필수",
+    "limitations_risk_title": "NRCT 승인",
+    "limitations_risk_text": "가장 어려운 단계는 국가 연구 위원회(National Research Council)로부터 승인을 받는 것입니다. 이 승인 없이는 RS 비자를 발급받을 수 없습니다.",
+    "cta_help_title": "NRCT 관련 도움이 필요하신가요?",
+    "cta_help_subtitle": "연구자와 기관의 절차 진행을 안내해 드립니다.",
+    "cta_help_btn": "전문가 상담",
+    "cta_compare_title": "테크 스타트업이신가요?",
+    "cta_compare_subtitle": "혁신 분야라면 SMART 비자가 더 적합할 수 있습니다.",
+    "cta_compare_btn": "SMART 비자 보기"
   },
   "tourist_visa_page": {
     "meta": {
@@ -1443,22 +1450,22 @@ export const ko = {
     "partnership_text": "Siam Visa Pro는 AI 기반 행정 자동화 전문 기술 기업인 DigitGpt LLC에 의해 운영됩니다. 이 파트너십을 통해 비자 자격 AI와 같은 최첨단 도구를 제공할 수 있게 되었습니다."
   },
   "footer": {
-    "desc": "신뢰할 수 있는 태국 비자 파트너.",
+    "desc": "신뢰할 수 있는 태국 비자 파트너. 최신 DTV부터 복잡한 영사 절차까지 전문가가 지원합니다.",
     "col_visas": "비자",
     "col_support": "지원",
     "col_contact": "연락처",
     "all_services": "전체 서비스",
-    "legal": "약관",
-    "privacy": "개인정보",
-    "details": "Détails du visa",
+    "legal": "이용 약관",
+    "privacy": "개인정보 보호",
+    "details": "비자 상세 정보",
     "sitemap": "사이트맵",
-    "copyright": "판권 소유.",
-    "disclaimer": "민간 기관.",
-    "secure_payment": "안전 결제",
+    "copyright": "All rights reserved.",
+    "disclaimer": "본 사이트는 민간 대행사에 의해 운영됩니다.",
+    "secure_payment": "안전 결제: Mercury & Wise",
     "author": "Raphaël Buresi",
-    "author_role": "Thailand Visa Expert",
-    "written_by": "Written by",
-    "last_updated": "Last updated",
+    "author_role": "태국 비자 전문가",
+    "written_by": "작성자:",
+    "last_updated": "최종 업데이트:",
     "office_bkk": "Bangkok: Sukhumvit Rd, Khlong Toei, Bangkok 10110, Thailand",
     "office_usa": "HQ: 16192 Coastal Highway, Lewes, Delaware 19958, USA",
     "tax_id": "RC: 2417125",
@@ -1466,242 +1473,242 @@ export const ko = {
   },
   "ltr_page": {
     "meta": {
-      "title": "LTR Visa Thailand (Long Term Resident) - 10 Years | SiamVisaPro",
-      "description": "Get the 10-year LTR Visa for Thailand. Privileged tax residency (17%), work permit and VIP benefits. Free eligibility audit."
+      "title": "태국 LTR 비자 (장기 거주) - 10년 | SiamVisaPro",
+      "description": "태국 10년 LTR 비자를 받으세요. 우대된 세무 거주 지위(17%), 노동 허가 및 VIP 혜택. 무료 자격 진단 가능."
     },
-    "badge": "10-Year Residence",
-    "hero_title": "Thailand LTR VISA",
-    "title": "LTR Visa: Long-Term Residence",
-    "subtitle": "The most advantageous tax and residency status for wealthy citizens.",
-    "cta": "Check my LTR eligibility",
-    "why_title": "Why choose the LTR?",
-    "benefit1_title": "10-Year Visa",
-    "benefit1_desc": "Renewable, with digital work permit included.",
-    "benefit2_title": "17% Tax",
-    "benefit2_desc": "Flat rate on local income for professionals.",
-    "benefit3_title": "VIP Service",
-    "benefit3_desc": "Priority airport access and 90-day reports waived.",
-    "cat1": "Wealthy Global Citizens",
-    "cat2": "Wealthy Pensioners",
-    "cat3": "Work-from-Thailand Professionals",
-    "cat4": "Highly-Skilled Experts",
-    "audit1": "Income Audit > $80k USD",
-    "audit2": "Investment Analysis",
-    "audit3": "Board of Investment Liaison",
-    "audit4": "Family Inclusion (4 persons)",
-    "pros_title": "Strengths",
-    "cons_title": "Weaknesses",
+    "badge": "10년 거주",
+    "hero_title": "태국 LTR 비자",
+    "title": "LTR 비자: 장기 거주",
+    "subtitle": "자산가를 위한 가장 유리한 세제 및 거주 지위.",
+    "cta": "LTR 자격 확인하기",
+    "why_title": "왜 LTR을 선택해야 하나요?",
+    "benefit1_title": "10년 비자",
+    "benefit1_desc": "갱신 가능하며 디지털 노동 허가증이 포함됩니다.",
+    "benefit2_title": "17% 세율",
+    "benefit2_desc": "전문가를 위한 현지 소득 고정 세율.",
+    "benefit3_title": "VIP 서비스",
+    "benefit3_desc": "공항 우선 통과 및 90일 신고 면제.",
+    "cat1": "자산가 글로벌 시민",
+    "cat2": "자산가 연금 수령자",
+    "cat3": "태국 거격 거주 전문가",
+    "cat4": "고숙련 전문가",
+    "audit1": "소득 감사 > 8만 달러 ($)",
+    "audit2": "투자 분석",
+    "audit3": "투자청(BOI) 연락 지원",
+    "audit4": "가족 동반 (4명)",
+    "pros_title": "강점",
+    "cons_title": "약점",
     "pros": [
-      "10-year validity (5+5) renewable",
-      "Digital work permit included",
-      "International Airport Fast Track",
-      "Tax exemption on foreign income",
-      "17% rate for professionals",
-      "4 Dependents included (Spouse/Children)"
+      "10년 유효 기간 (5+5) 갱신 가능",
+      "디지털 노동 허가증 포함",
+      "국제공항 패스트 트랙(Fast Track) 이용",
+      "해외 소득 비과세",
+      "전문가 대상 17% 고정 세율",
+      "동반 가족 4명 포함 (배우자/자녀)"
     ],
     "cons": [
-      "Very strict financial criteria (>$80k wealth)",
-      "Long validation process (BOI)",
-      "Heavy administrative paperwork initially",
-      "Mandatory health insurance (>$50k)",
-      "Investment required for certain categories"
+      "매우 엄격한 재정 기준 (자산 8만 달러 이상)",
+      "긴 검증 프로세스 (BOI)",
+      "초기 행정 서류 작업 부담",
+      "필수 건강 보험 (5만 달러 이상 보장)",
+      "특정 카테고리의 경우 투자 필수"
     ],
-    "faq_title": "Frequently Asked Questions (FAQ)",
+    "faq_title": "자주 묻는 질문 (FAQ)",
     "faq": [
       {
-        "q": "What's the difference with Elite Visa?",
-        "a": "Elite Visa is paid and doesn't allow work. LTR is 'free' (reduced fees) if eligible and includes work permit."
+        "q": "엘리트 비자와의 차이점은 무엇인가요?",
+        "a": "엘리트 비자는 유료이며 근무가 불가능합니다. LTR은 자격이 될 경우 수수료가 저렴하고 노동 허가증이 포함됩니다."
       },
       {
-        "q": "Can I work with an LTR visa?",
-        "a": "Yes, it's one of the few visas including a digital work permit without Thai employee quota."
+        "q": "LTR 비자로 일할 수 있나요?",
+        "a": "네, 태국인 직원 고용 쿼터 없이 디지털 노동 허가증이 포함되는 몇 안 되는 비자 중 하나입니다."
       },
       {
-        "q": "Minimum income required?",
-        "a": "$80,000 USD/year (2 years) or investment mix. Retirees eligible at $40,000 under investment conditions."
+        "q": "필요한 최소 소득은 얼마인가요?",
+        "a": "연간 8만 달러 (최근 2년) 또는 투자 요건 충족 시 4만 달러부터 가능합니다."
       },
       {
-        "q": "Processing time?",
-        "a": "1 to 3 months for BOI approval, then a few weeks for issuance."
+        "q": "처리 기간은 얼마나 걸리나요?",
+        "a": "BOI 승인에 1~3개월, 이후 비자 발급에 수 주가 소요됩니다."
       }
     ],
     "high_value": {
-      "title": "Tax Optimization",
-      "highlight": "& Freedom",
-      "description": "The LTR is not just a visa, it's a privileged resident status that allows you to work legally and optimize your taxation with a flat rate of 17% for skilled professionals.",
-      "item1": "17% Flat Tax (Professionals)",
-      "item2": "Work Permit Included",
-      "item3": "Foreign Income Exemption",
-      "card_title": "Exclusive Benefits",
-      "card_item1": "VIP Airport Fast Track",
-      "card_item2": "No 90-Day Reporting",
-      "card_item3": "4 Dependents Included",
-      "card_item4": "Privileged Tax Residency"
+      "title": "세무 최적화",
+      "highlight": "& 자유",
+      "description": "LTR은 단순한 비자가 아니라 합법적으로 근무하고 숙련된 전문가를 위한 17% 고정 세율로 세금을 최적화할 수 있는 특권적인 거주자 지위입니다.",
+      "item1": "17% 고정 세율 (전문가)",
+      "item2": "노동 허가 포함",
+      "item3": "해외 소득 면제",
+      "card_title": "독점 혜택",
+      "card_item1": "VIP 공항 패스트 트랙",
+      "card_item2": "90일 보고 의무 없음",
+      "card_item3": "가족 4명 동반 포함",
+      "card_item4": "특권적 세무 거주 지위"
     }
   },
   "visa_run_page": {
     "meta": {
-      "title": "Thailand Visa Run: Risks, Costs and Alternatives 2026",
-      "description": "Why doing Visa Runs in Thailand is dangerous in 2026. Discover refusal risks, hidden costs and legal alternatives (DTV, Elite)."
+      "title": "태국 비자 런: 2026년 리스크, 비용 및 대안",
+      "description": "2026년에 태국에서 비자 런을 하는 것이 위험한 이유. 입국 거절 리스크, 숨겨진 비용 및 법적 대안(DTV, 엘리트)을 알아보세요."
     },
     "hero": {
-      "title": "Stop doing",
-      "highlight": "Visa Runs.",
-      "subtitle": "Thai immigration has tightened the rules. Chaining visa exemptions and tourist entries is now a risky strategy.",
-      "cta": "See legal alternatives"
+      "title": "그만 하세요,",
+      "highlight": "비자 런(Visa Run).",
+      "subtitle": "태국 이민국은 규정을 강화했습니다. 비자 면제와 관광 입국을 반복하는 것은 이제 위험한 전략입니다.",
+      "cta": "법적 대안 보기"
     },
     "dangers": {
-      "title": "Why it's over?",
-      "risk1_title": "Entry Denial",
-      "risk1_desc": "Immigration officers have discretionary power to deny entry, even with a valid visa, if they suspect illegal work.",
-      "risk2_title": "Interrogation & Stress",
-      "risk2_desc": "Ending up in the airport 'holding cell' waiting for the next flight home is not a way to live.",
-      "risk3_title": "Hidden Costs",
-      "risk3_desc": "Flights, last-minute hotels, taxis... A 'Visa Run' costs roughly 10,000 THB per month. That's 120,000 THB/year."
+      "title": "왜 끝났을까요?",
+      "risk1_title": "입국 거절",
+      "risk1_desc": "이민국 직원은 유효한 비자가 있더라도 불법 근무가 의심되는 경우 입국을 거절할 수 있는 재량권을 가집니다.",
+      "risk2_title": "심문 및 스트레스",
+      "risk2_desc": "공항 '대기실'에서 다음 귀국편을 기다리는 것은 지속 가능한 삶이 아닙니다.",
+      "risk3_title": "숨겨진 비용",
+      "risk3_desc": "항공권, 급박한 호텔 예약, 택시비... '비자 런' 한 번에 약 1만 바트가 소요됩니다. 연간 12만 바트가 넘는 금액입니다."
     },
     "solutions": {
-      "title": "Real Solutions (2026)",
-      "dtv": "DTV Visa (5 Years)",
-      "dtv_desc": "Perfect for digital nomads. ~15,000 THB once.",
-      "elite": "Elite Visa (5-20 Years)",
-      "elite_desc": "Absolute peace of mind for those who can invest.",
-      "ltr": "LTR Visa (10 Years)",
-      "ltr_desc": "For wealthy and talented profiles."
+      "title": "현실적인 해결책 (2026)",
+      "dtv": "DTV 비자 (5년)",
+      "dtv_desc": "디지털 노마드에게 완벽함. 한 번에 약 1.5만 바트.",
+      "elite": "엘리트 비자 (5-20년)",
+      "elite_desc": "투자가 가능한 분들을 위한 절대적인 평화.",
+      "ltr": "LTR 비자 (10년)",
+      "ltr_desc": "자산가 및 뛰어난 인재를 위한 옵션."
     }
   },
   "elite_page": {
-    "badge": "Thailand Privilege",
-    "hero_title": "Thailand Elite Visa (Luxury & VIP)",
-    "hero_subtitle": "5 to 20 years visa. VIP Concierge. Airport Fast-Track.",
-    "hero_tagline": "The ultimate experience for living in Thailand.",
-    "why_title": "Why choose the Elite Visa?",
-    "duration_title": "5 to 20 Years of Serenity",
-    "duration_desc": "Choose the duration that suits you (5, 10, 15, or 20 years) and forget the hassle of visa extensions.",
-    "work_title": "Concierge Service",
-    "work_desc": "From your arrival at the airport with a personal assistant to opening your bank account, everything is facilitated for you.",
-    "finance_title": "One-time Investment",
-    "finance_desc": "No proof of funds / monthly income required. It is a one-time membership fee paid directly to the government.",
-    "who_title": "Who is it for?",
-    "who_wealthy": "Investors & Retirees",
-    "who_wealthy_desc": "Those who want to avoid the annual paperwork of retirement visas.",
-    "who_business": "Business Owners",
-    "who_business_desc": "Entrepreneurs wanting a stable base in Asia.",
-    "who_family": "Families",
-    "who_family_desc": "Flexible options to include spouse and children.",
-    "benefits_title": "Exclusive Privileges",
-    "benefits_desc": "In addition to the visa, access high-end services: Airport Limousine, Golf, Spa, Annual Health Check-up...",
-    "benefits_btn": "View Packages",
-    "cta_button": "Become a Member",
-    "highs_title": "Highlights",
+    "badge": "태국 프리빌리지",
+    "hero_title": "태국 엘리트 비자 (럭셔리 & VIP)",
+    "hero_subtitle": "5~20년 비자. VIP 컨시어지. 공항 패스트 트랙.",
+    "hero_tagline": "태국 거주를 위한 궁극의 경험.",
+    "why_title": "왜 엘리트 비자를 선택해야 하나요?",
+    "duration_title": "5~20년의 평온함",
+    "duration_desc": "본인에게 맞는 기간(5, 10, 15 또는 20년)을 선택하고 비자 연장의 번거로움에서 벗어나세요.",
+    "work_title": "컨시어지 서비스",
+    "work_desc": "개인 비서와 함께하는 공항 도착부터 은행 계좌 개설까지, 모든 과정이 편리해집니다.",
+    "finance_title": "일회성 투자",
+    "finance_desc": "자금 증명이나 월 소득 증명이 불필요합니다. 정부에 직접 지불하는 일회성 멤버십 비용으로 취득 가능합니다.",
+    "who_title": "대상자는 누구인가요?",
+    "who_wealthy": "투자자 및 은퇴자",
+    "who_wealthy_desc": "은퇴 비자의 연례 행정 서류 작업을 피하고 싶은 분들.",
+    "who_business": "사업주",
+    "who_business_desc": "아시아에 안정적인 거점을 원하는 기업가.",
+    "who_family": "가족",
+    "who_family_desc": "배우자와 자녀를 포함할 수 있는 유연한 옵션.",
+    "benefits_title": "독점적 특권",
+    "benefits_desc": "비자 외에도 공항 리무진, 골프, 스파, 연례 건강 검진 등 하이엔드 서비스를 이용하세요.",
+    "benefits_btn": "패키지 보기",
+    "cta_button": "멤버 가입하기",
+    "highs_title": "주요 특징",
     "highs": [
-      "Ultra-long validity (up to 20 years)",
-      "VIP Airport Fast-Track Service (Arrival/Departure)",
-      "No age or monthly income requirements",
-      "24/7 Assistance for daily life"
+      "초박기 유효 기간 (최대 20년)",
+      "VIP 공항 패스트 트랙 서비스 (입출국 시)",
+      "나이 및 월 소득 요건 없음",
+      "일상 생활을 위한 24/7 지원"
     ],
-    "lows_title": "Points of Attention",
+    "lows_title": "주의 사항",
     "lows": [
-      "High initial cost (starting ~900,000 THB)",
-      "Work permit not automatically included",
-      "Processing time 1 to 3 months",
-      "Payment to government required before issuance"
+      "높은 초기 비용 (약 90만 바트부터)",
+      "노동 허가증이 자동 포함되지 않음",
+      "처리 기간 1~3개월 소요",
+      "비자 발급 전 정부 결제 필수"
     ],
-    "faq_title": "Elite Visa - FAQ",
+    "faq_title": "엘리트 비자 - FAQ",
     "faqs": [
       {
-        "q": "Can I enter and leave Thailand multiple times with my Elite visa?",
-        "a": "Yes, it is a Multiple-Entry visa with unlimited entries for the duration of your membership (5 to 20 years)."
+        "q": "엘리트 비자로 태국을 여러 번 출입국할 수 있나요?",
+        "a": "네, 멤버십 기간(5~20년) 동안 횟수 제한 없이 입국이 가능한 멀티플(Multiple-Entry) 비자입니다."
       },
       {
-        "q": "Do I have to pay taxes in Thailand with this visa?",
-        "a": "The Elite Visa does not automatically make you a tax resident. You only pay tax if you stay more than 180 days in a calendar year AND bring foreign income into Thailand in the same year."
+        "q": "이 비자로 태국에서 세금을 내야 하나요?",
+        "a": "엘리트 비자 자체가 자동으로 귀하를 세무 거주자로 만들지는 않습니다. 한 해에 180일 이상 머물고 동시에 해외 소득을 태국으로 반입하는 경우에만 과세 대상이 됩니다."
       },
       {
-        "q": "Can my family accompany me?",
-        "a": "Yes, there are 'Family' packages that allow you to include immediate family members at a reduced rate."
+        "q": "가족과 함께 신청할 수 있나요?",
+        "a": "네, 직계 가족을 할인된 가격으로 포함할 수 있는 'Family' 패키지가 있습니다."
       },
       {
-        "q": "Can I work with an Elite Visa?",
-        "a": "Technically no, it is a tourist visa. However, you can be a shareholder of a company, or work legally if you obtain a Work Permit (which is possible with the Elite Visa combined with a job offer)."
+        "q": "엘리트 비자로 일할 수 있나요?",
+        "a": "엄격히 말해 관광 카테고리이므로 불가합니다. 하지만 기업의 주주가 될 수 있으며, 별도의 잡 오퍼를 통해 노동 허가증(Work Permit)을 취득하면 합법적으로 일할 수 있습니다."
       }
     ],
-    "prestige_title": "Prestige <span className=\"text-amber-500\">Service</span>",
-    "prestige_desc": "SiamVisa Pro is your privileged agent for Thailand Privilege (Elite) membership.",
+    "prestige_title": "프레스티지 <span className=\"text-amber-500\">서비스</span>",
+    "prestige_desc": "SiamVisa Pro는 Thailand Privilege (엘리트) 멤버십의 공인 대행사입니다.",
     "prestige_list": [
-      "Program Choice (5/10/20 years)",
-      "Liaison with Elite Secretariat",
-      "Airport Formalities Management",
-      "Concierge Support"
+      "프로그램 선택 (5/10/20년)",
+      "엘리트 사무국 대외 협력",
+      "공항 수속 관리",
+      "컨시어지 지원"
     ],
     "quick_view": {
-      "btn": "⚡️ Quick View",
-      "title": "Elite Visa: Essentials",
-      "duration": "Validity",
-      "duration_val": "5 to 20 Years",
-      "cost": "Total Cost",
-      "cost_val": "900k (5y) to 5M THB (20y)",
-      "per_year": "Smoothed Cost / Year",
-      "per_year_val": "From 125k THB (~$3.6k) / year",
-      "runs": "Visa Runs",
-      "runs_val": "0 / Year (Zero)",
-      "entries": "Entries",
-      "entries_val": "Unlimited (VIP)",
-      "verdict": "VERDICT: Absolute comfort. You are buying total peace of mind for years."
+      "btn": "⚡️ 퀵 뷰",
+      "title": "엘리트 비자: 핵심 요약",
+      "duration": "유효 기간",
+      "duration_val": "5~20년",
+      "cost": "총 비용",
+      "cost_val": "90만 (5년) ~ 500만 바트 (20년)",
+      "per_year": "연간 환산 비용",
+      "per_year_val": "연간 약 12.5만 바트(약 500만원)부터",
+      "runs": "비자 런",
+      "runs_val": "0회 / 연간 (없음)",
+      "entries": "입국 횟수",
+      "entries_val": "무제한 (VIP)",
+      "verdict": "결론: 절대적인 편안함. 수년간의 마음의 평화와 VIP 지위를 누릴 수 있습니다."
     },
     "high_value": {
-      "title": "Prestige & Serenity",
-      "highlight": "Absolute",
-      "description": "No queues, no complicated 90-day reports, no hassle. Just the pleasure of living in Thailand with a VIP status guaranteed by the State.",
-      "item1": "VIP Airport Fast Track",
-      "item2": "5 to 20 Year Membership",
-      "item3": "24/7 Concierge",
-      "card_title": "Services Included",
-      "card_item1": "Limousine Service",
-      "card_item2": "Golf & Spa Privileges",
-      "card_item3": "Bank Account Opening",
-      "card_item4": "Annual Health Check-up"
+      "title": "명예와 평온",
+      "highlight": "절대적",
+      "description": "대기 줄도, 복잡한 90일 보고도, 번거로움도 없습니다. 국가가 보장하는 VIP 지위로 태국 생활을 온전히 즐기세요.",
+      "item1": "VIP 공항 패스트 트랙",
+      "item2": "5~20년 멤버십",
+      "item3": "24/7 컨시어지",
+      "card_title": "서비스 포함 내역",
+      "card_item1": "리무진 서비스",
+      "card_item2": "골프 및 스파 혜택",
+      "card_item3": "은행 계좌 개설",
+      "card_item4": "연례 건강 검진"
     },
     "meta": {
-      "title": "Thailand Elite Visa (Thailand Privilege) | Official Packages & Rates",
-      "description": "Get the Thailand Elite Visa for 5, 10 or 20 years. VIP Service, Airport Fast-Track and Concierge. Discover official rates."
+      "title": "태국 엘리트 비자 (Thailand Privilege) | 공식 패키지 및 요금",
+      "description": "5, 10, 20년 태국 엘리트 비자를 취득하세요. VIP 서비스, 공항 패스트 트랙 및 컨시어지. 공식 요금을 확인하세요."
     }
   },
   "apply_page": {
     "meta": {
-      "title": "Thailand Visa Application | SiamVisa Pro",
-      "description": "Start your Thailand visa application online. Simple and fast process with expert support."
+      "title": "태국 비자 신청 | SiamVisa Pro",
+      "description": "온라인으로 태국 비자 신청을 시작하세요. 전문가의 지원과 함께하는 쉽고 빠른 프로세스."
     },
-    "hero_title": "Visa Application",
-    "hero_subtitle": "Start your travel project in just a few clicks",
+    "hero_title": "비자 신청",
+    "hero_subtitle": "몇 번의 클릭만으로 여행 계획을 시작하세요",
     "steps": {
       "selection": {
-        "title": "Choose your Visa",
-        "subtitle": "Select the visa type that matches your project"
+        "title": "비자 선택",
+        "subtitle": "당신의 프로젝트에 적합한 비자 유형을 선택하세요"
       },
       "personal": {
-        "title": "Personal Information",
-        "subtitle": "Tell us more about yourself",
-        "first_name": "First Name",
-        "last_name": "Last Name",
-        "email": "Email",
-        "phone": "Phone",
-        "nationality": "Nationality"
+        "title": "개인 정보",
+        "subtitle": "신청자에 대해 더 자세히 알려주세요",
+        "first_name": "이름",
+        "last_name": "성",
+        "email": "이메일",
+        "phone": "전화번호",
+        "nationality": "국립"
       },
       "trip": {
-        "title": "Trip Details",
-        "subtitle": "Information about your stay",
-        "entry_date": "Planned Entry Date",
-        "duration": "Stay Duration (days)"
+        "title": "여행 상세",
+        "subtitle": "체류 기간 및 일정",
+        "entry_date": "입국 예정일",
+        "duration": "체류 기간 (일)"
       },
       "confirm": {
-        "title": "Confirmation",
-        "subtitle": "Verify your information before sending",
-        "btn_submit": "SUBMIT MY APPLICATION",
-        "success_title": "Application Received!",
-        "success_desc": "Your application has been sent to our experts. You will receive an email response within 24 hours."
+        "title": "확인",
+        "subtitle": "전송 전 정보를 다시 한 번 확인하세요",
+        "btn_submit": "신청서 제출하기",
+        "success_title": "신청 완료!",
+        "success_desc": "신청서가 전문가에게 전송되었습니다. 24시간 이내에 이메일 답변을 받으실 수 있습니다."
       }
     },
-    "next": "Next",
-    "prev": "Previous"
+    "next": "다음",
+    "prev": "이전"
   }
 };

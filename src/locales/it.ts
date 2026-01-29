@@ -49,8 +49,8 @@ export const it = {
   "home_page": {
     "appointment_title": "Parliamo del tuo progetto",
     "appointment_subtitle": "Prenota una chiamata gratuita con un esperto di visti per la Thailandia.",
-    "member": "Client Area",
-    "eligibility": "Eligibility"
+    "member": "Area Clienti",
+    "eligibility": "Idoneità"
   },
   "search_page": {
     "meta": {
@@ -226,9 +226,9 @@ export const it = {
       "4 Years": "4 anni",
       "Variable": "Variabile",
       "90 Days": "90 giorni",
-      "6-12 Months": "6-12 Months",
-      "15 Years": "15 Years",
-      "20+ Years": "20+ Years"
+      "6-12 Months": "6-12 mesi",
+      "15 Years": "15 anni",
+      "20+ Years": "oltre 20 anni"
     },
     "prices": {
       "High": "Alto",
@@ -422,7 +422,7 @@ export const it = {
     "account_number": "Account Number:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "Thank you. Your order is pending funds arrival. Please email payment proof to contact@siamvisapro.com to activate service."
+    "transfer_success_desc": "Grazie. Il tuo ordine è in attesa dell'arrivo dei fondi. Invia la prova del pagamento a contact@siamvisapro.com per attivare il servizio."
   },
   "login": {
     "title": "Area Clienti",
@@ -437,8 +437,8 @@ export const it = {
     "submit": "Accedi",
     "no_account": "Nessun account?",
     "start_request": "Inizia richiesta",
-    "google_loading": "Logging in...",
-    "facebook_loading": "Logging in..."
+    "google_loading": "Accesso in corso...",
+    "facebook_loading": "Accesso in corso..."
   },
   "contact_page": {
     "meta": {
@@ -767,6 +767,13 @@ export const it = {
       "SMART S (Startup): Fondatori di startup tech.",
       "SMART E (Executive): Dirigenti senior."
     ],
+    "audience_not_compatible": "Profili Non Compatibili",
+    "audience_not_compatible_list": [
+      "Lavoratori da remoto in settori non tecnologici (usa DTV).",
+      "Turisti generici (usa visto TR o Esenzione).",
+      "Manodopera poco qualificata o aziende non certificate BOI.",
+      "Investitori passivi senza un ruolo attivo nel business."
+    ],
     "audience_industries": "Industrie Target",
     "audience_industries_list": [
       "Digital & Tech, Automazione.",
@@ -793,6 +800,25 @@ export const it = {
     "limitations_title": "Limitazioni e punti di attenzione",
     "limitations_complex_title": "Processo complesso",
     "limitations_complex_text": "L'ottenimento richiede una validazione tecnica da parte della BOI prima della domanda di visto. L'intero processo può richiedere da 1 a 2 mesi. Non è un visto 'veloce' come il DTV.",
+    "faq_title": "FAQ - SMART Visa 2026",
+    "faqs": [
+      {
+        "q": "Ho bisogno di un permesso di lavoro classico?",
+        "a": "No. Lo SMART Visa sostituisce ed esenta dal classico Work Permit. Puoi lavorare legalmente non appena il visto viene convalidato."
+      },
+      {
+        "q": "Posso portare la mia famiglia?",
+        "a": "Sì. Il coniuge e i figli possono ottenere uno SMART Visa come dipendenti, il che dà loro il diritto di soggiornare e lavorare (a certe condizioni)."
+      },
+      {
+        "q": "È meglio del visto LTR?",
+        "a": "L'LTR è per 10 anni e ha criteri diversi. Lo SMART Visa è ideale per chi non soddisfa i requisiti di ricchezza finanziaria dell'LTR ma ha stipendi alti nel settore tech."
+      },
+      {
+        "q": "Cos'è il rapporto annuale?",
+        "a": "A differenza di altri visti che richiedono un rapporto ogni 90 giorni, i titolari di SMART Visa devono presentarsi all'Immigrazione solo una volta all'anno."
+      }
+    ],
     "cta_eligible_title": "La tua azienda è idonea?",
     "cta_eligible_subtitle": "Verifica se puoi ottenere lo SMART Visa.",
     "cta_eligible_btn": "Fai una simulazione",
@@ -1440,258 +1466,258 @@ export const it = {
     "all_services": "Tutti i servizi",
     "legal": "Termini",
     "privacy": "Privacy",
-    "details": "Détails du visa",
+    "details": "Dettagli del visto",
     "sitemap": "Mappa del sito",
     "copyright": "Diritti riservati.",
     "disclaimer": "Agenzia privata.",
     "secure_payment": "Pagamento Sicuro: Mercury & Wise",
     "author": "Raphaël Buresi",
-    "author_role": "Thailand Visa Expert",
-    "written_by": "Written by",
-    "last_updated": "Last updated",
-    "office_bkk": "Bangkok: Sukhumvit Rd, Khlong Toei, Bangkok 10110, Thailand",
-    "office_usa": "HQ: 16192 Coastal Highway, Lewes, Delaware 19958, USA",
+    "author_role": "Esperto di Visti Thailandia",
+    "written_by": "Scritto da",
+    "last_updated": "Ultimo aggiornamento",
+    "office_bkk": "Bangkok: Sukhumvit Rd, Khlong Toei, Bangkok 10110, Thailandia",
+    "office_usa": "Sede Centrale: 16192 Coastal Highway, Lewes, Delaware 19958, USA",
     "tax_id": "RC: 2417125",
     "legal_entity": "DigitGpt LLC"
   },
   "ltr_page": {
     "meta": {
-      "title": "LTR Visa Thailand (Long Term Resident) - 10 Years | SiamVisaPro",
-      "description": "Get the 10-year LTR Visa for Thailand. Privileged tax residency (17%), work permit and VIP benefits. Free eligibility audit."
+      "title": "Visto LTR Thailandia (Long Term Resident) - 10 Anni | SiamVisaPro",
+      "description": "Ottieni il Visto LTR di 10 anni per la Thailandia. Residenza fiscale privilegiata (17%), permesso di lavoro e vantaggi VIP. Audit gratuito."
     },
-    "badge": "10-Year Residence",
-    "hero_title": "Thailand LTR VISA",
-    "title": "LTR Visa: Long-Term Residence",
-    "subtitle": "The most advantageous tax and residency status for wealthy citizens.",
-    "cta": "Check my LTR eligibility",
-    "why_title": "Why choose the LTR?",
-    "benefit1_title": "10-Year Visa",
-    "benefit1_desc": "Renewable, with digital work permit included.",
-    "benefit2_title": "17% Tax",
-    "benefit2_desc": "Flat rate on local income for professionals.",
-    "benefit3_title": "VIP Service",
-    "benefit3_desc": "Priority airport access and 90-day reports waived.",
-    "cat1": "Wealthy Global Citizens",
-    "cat2": "Wealthy Pensioners",
-    "cat3": "Work-from-Thailand Professionals",
-    "cat4": "Highly-Skilled Experts",
-    "audit1": "Income Audit > $80k USD",
-    "audit2": "Investment Analysis",
-    "audit3": "Board of Investment Liaison",
-    "audit4": "Family Inclusion (4 persons)",
-    "pros_title": "Strengths",
-    "cons_title": "Weaknesses",
+    "badge": "Residenza di 10 Anni",
+    "hero_title": "Visto LTR Thailandia",
+    "title": "Visto LTR: Residenza a Lungo Termine",
+    "subtitle": "Lo status fiscale e di residenza più vantaggioso per cittadini facoltosi.",
+    "cta": "Verifica la mia idoneità LTR",
+    "why_title": "Perché scegliere l'LTR?",
+    "benefit1_title": "Visto di 10 Anni",
+    "benefit1_desc": "Rinnovabile, con permesso di lavoro digitale incluso.",
+    "benefit2_title": "Tassazione al 17%",
+    "benefit2_desc": "Aliquota forfettaria sul reddito locale per i professionisti.",
+    "benefit3_title": "Servizio VIP",
+    "benefit3_desc": "Accesso prioritario in aeroporto e report di 90 giorni esentati.",
+    "cat1": "Cittadini globali facoltosi",
+    "cat2": "Pensionati facoltosi",
+    "cat3": "Professionisti che lavorano dalla Thailandia",
+    "cat4": "Esperti altamente qualificati",
+    "audit1": "Audit del reddito > $80k USD",
+    "audit2": "Analisi degli investimenti",
+    "audit3": "Collegamento con il Board of Investment (BOI)",
+    "audit4": "Inclusione familiare (4 persone)",
+    "pros_title": "Punti di forza",
+    "cons_title": "Punti deboli",
     "pros": [
-      "10-year validity (5+5) renewable",
-      "Digital work permit included",
-      "International Airport Fast Track",
-      "Tax exemption on foreign income",
-      "17% rate for professionals",
-      "4 Dependents included (Spouse/Children)"
+      "Validità di 10 anni (5+5) rinnovabile",
+      "Permesso di lavoro digitale incluso",
+      "Fast Track negli aeroporti internazionali",
+      "Esenzione fiscale sui redditi esteri",
+      "Aliquota del 17% per i professionisti",
+      "4 dipendenti inclusi (coniuge/figli)"
     ],
     "cons": [
-      "Very strict financial criteria (>$80k wealth)",
-      "Long validation process (BOI)",
-      "Heavy administrative paperwork initially",
-      "Mandatory health insurance (>$50k)",
-      "Investment required for certain categories"
+      "Criteri finanziari molto rigidi (patrimonio >$80k)",
+      "Lungo processo di convalida (BOI)",
+      "Pesante carico burocratico iniziale",
+      "Assicurazione sanitaria obbligatoria (>$50k)",
+      "Investimento richiesto per alcune categorie"
     ],
-    "faq_title": "Frequently Asked Questions (FAQ)",
+    "faq_title": "Domande Frequenti (FAQ)",
     "faq": [
       {
-        "q": "What's the difference with Elite Visa?",
-        "a": "Elite Visa is paid and doesn't allow work. LTR is 'free' (reduced fees) if eligible and includes work permit."
+        "q": "Qual è la differenza con il Visto Elite?",
+        "a": "Il Visto Elite è a pagamento e non permette di lavorare. L'LTR è 'gratuito' (commissioni ridotte) se idonei e include il permesso di lavoro."
       },
       {
-        "q": "Can I work with an LTR visa?",
-        "a": "Yes, it's one of the few visas including a digital work permit without Thai employee quota."
+        "q": "Posso lavorare con un visto LTR?",
+        "a": "Sì, è uno dei pochi visti che include un permesso di lavoro digitale senza quote di dipendenti thailandesi."
       },
       {
-        "q": "Minimum income required?",
-        "a": "$80,000 USD/year (2 years) or investment mix. Retirees eligible at $40,000 under investment conditions."
+        "q": "Reddito minimo richiesto?",
+        "a": "$80.000 USD/anno (2 anni) o mix di investimenti. I pensionati sono idonei con $40.000 in determinate condizioni di investimento."
       },
       {
-        "q": "Processing time?",
-        "a": "1 to 3 months for BOI approval, then a few weeks for issuance."
+        "q": "Tempi di elaborazione?",
+        "a": "Da 1 a 3 mesi per l'approvazione del BOI, poi alcune settimane per il rilascio."
       }
     ],
     "high_value": {
-      "title": "Tax Optimization",
-      "highlight": "& Freedom",
-      "description": "The LTR is not just a visa, it's a privileged resident status that allows you to work legally and optimize your taxation with a flat rate of 17% for skilled professionals.",
-      "item1": "17% Flat Tax (Professionals)",
-      "item2": "Work Permit Included",
-      "item3": "Foreign Income Exemption",
-      "card_title": "Exclusive Benefits",
-      "card_item1": "VIP Airport Fast Track",
-      "card_item2": "No 90-Day Reporting",
-      "card_item3": "4 Dependents Included",
-      "card_item4": "Privileged Tax Residency"
+      "title": "Ottimizzazione Fiscale",
+      "highlight": "& Libertà",
+      "description": "L'LTR non è solo un visto, è uno status di residente privilegiato che ti permette di lavorare legalmente e ottimizzare la tua tassazione con un'aliquota forfettaria del 17% per i professionisti qualificati.",
+      "item1": "Tassa forfettaria del 17% (Professionisti)",
+      "item2": "Permesso di lavoro incluso",
+      "item3": "Esenzione dal reddito estero",
+      "card_title": "Vantaggi Esclusivi",
+      "card_item1": "Fast Track Aeroportuale VIP",
+      "card_item2": "Nessun rapporto di 90 giorni",
+      "card_item3": "4 dipendenti inclusi",
+      "card_item4": "Residenza fiscale privilegiata"
     }
   },
   "visa_run_page": {
     "meta": {
-      "title": "Thailand Visa Run: Risks, Costs and Alternatives 2026",
-      "description": "Why doing Visa Runs in Thailand is dangerous in 2026. Discover refusal risks, hidden costs and legal alternatives (DTV, Elite)."
+      "title": "Visa Run Thailandia: Rischi, Costi e Alternative 2026",
+      "description": "Perché fare Visa Run in Thailandia è pericoloso nel 2026. Scopri i rischi di rifiuto, i costi nascosti e le alternative legali (DTV, Elite)."
     },
     "hero": {
-      "title": "Stop doing",
-      "highlight": "Visa Runs.",
-      "subtitle": "Thai immigration has tightened the rules. Chaining visa exemptions and tourist entries is now a risky strategy.",
-      "cta": "See legal alternatives"
+      "title": "Smetti di fare",
+      "highlight": "Visa Run.",
+      "subtitle": "L'immigrazione thailandese ha inasprito le regole. Concatenare esenzioni dal visto ed entrate turistiche è ora una strategia rischiosa.",
+      "cta": "Vedi le alternative legali"
     },
     "dangers": {
-      "title": "Why it's over?",
-      "risk1_title": "Entry Denial",
-      "risk1_desc": "Immigration officers have discretionary power to deny entry, even with a valid visa, if they suspect illegal work.",
-      "risk2_title": "Interrogation & Stress",
-      "risk2_desc": "Ending up in the airport 'holding cell' waiting for the next flight home is not a way to live.",
-      "risk3_title": "Hidden Costs",
-      "risk3_desc": "Flights, last-minute hotels, taxis... A 'Visa Run' costs roughly 10,000 THB per month. That's 120,000 THB/year."
+      "title": "Perché è finita?",
+      "risk1_title": "Ingresso negato",
+      "risk1_desc": "Gli ufficiali dell'immigrazione hanno il potere discrezionale di negare l'ingresso, anche con un visto valido, se sospettano lavoro illegale.",
+      "risk2_title": "Interrogatori e Stress",
+      "risk2_desc": "Finire nella 'cella' dell'aeroporto in attesa del prossimo volo per tornare a casa non è un modo di vivere.",
+      "risk3_title": "Costi nascosti",
+      "risk3_desc": "Voli, hotel dell'ultimo minuto, taxi... Un 'Visa Run' costa circa 10.000 THB al mese. Sono 120.000 THB all'anno."
     },
     "solutions": {
-      "title": "Real Solutions (2026)",
-      "dtv": "DTV Visa (5 Years)",
-      "dtv_desc": "Perfect for digital nomads. ~15,000 THB once.",
-      "elite": "Elite Visa (5-20 Years)",
-      "elite_desc": "Absolute peace of mind for those who can invest.",
-      "ltr": "LTR Visa (10 Years)",
-      "ltr_desc": "For wealthy and talented profiles."
+      "title": "Soluzioni reali (2026)",
+      "dtv": "Visto DTV (5 anni)",
+      "dtv_desc": "Perfetto per i nomadi digitali. ~15.000 THB una sola volta.",
+      "elite": "Visto Elite (5-20 anni)",
+      "elite_desc": "Assoluta tranquillità per chi può investire.",
+      "ltr": "Visto LTR (10 anni)",
+      "ltr_desc": "Per profili facoltosi e di talento."
     }
   },
   "elite_page": {
     "badge": "Thailand Privilege",
-    "hero_title": "Thailand Elite Visa (Luxury & VIP)",
-    "hero_subtitle": "5 to 20 years visa. VIP Concierge. Airport Fast-Track.",
-    "hero_tagline": "The ultimate experience for living in Thailand.",
-    "why_title": "Why choose the Elite Visa?",
-    "duration_title": "5 to 20 Years of Serenity",
-    "duration_desc": "Choose the duration that suits you (5, 10, 15, or 20 years) and forget the hassle of visa extensions.",
-    "work_title": "Concierge Service",
-    "work_desc": "From your arrival at the airport with a personal assistant to opening your bank account, everything is facilitated for you.",
-    "finance_title": "One-time Investment",
-    "finance_desc": "No proof of funds / monthly income required. It is a one-time membership fee paid directly to the government.",
-    "who_title": "Who is it for?",
-    "who_wealthy": "Investors & Retirees",
-    "who_wealthy_desc": "Those who want to avoid the annual paperwork of retirement visas.",
-    "who_business": "Business Owners",
-    "who_business_desc": "Entrepreneurs wanting a stable base in Asia.",
-    "who_family": "Families",
-    "who_family_desc": "Flexible options to include spouse and children.",
-    "benefits_title": "Exclusive Privileges",
-    "benefits_desc": "In addition to the visa, access high-end services: Airport Limousine, Golf, Spa, Annual Health Check-up...",
-    "benefits_btn": "View Packages",
-    "cta_button": "Become a Member",
-    "highs_title": "Highlights",
+    "hero_title": "Visto Thailand Elite (Lusso & VIP)",
+    "hero_subtitle": "Visto da 5 a 20 anni. Concierge VIP. Fast-Track in aeroporto.",
+    "hero_tagline": "L'esperienza definitiva per vivere in Thailandia.",
+    "why_title": "Perché scegliere il Visto Elite?",
+    "duration_title": "Da 5 a 20 anni di serenità",
+    "duration_desc": "Scegli la durata più adatta a te (5, 10, 15 o 20 anni) e dimentica lo stress dei rinnovi del visto.",
+    "work_title": "Servizio Concierge",
+    "work_desc": "Dal tuo arrivo in aeroporto con un assistente personale all'apertura del tuo conto bancario, tutto è facilitato per te.",
+    "finance_title": "Investimento una tantum",
+    "finance_desc": "Nessuna prova di fondi / reddito mensile richiesto. Si tratta di una quota associativa una tantum pagata direttamente al governo.",
+    "who_title": "A chi è rivolto?",
+    "who_wealthy": "Investitori e Pensionati",
+    "who_wealthy_desc": "Coloro che vogliono evitare la burocrazia annuale dei visti per pensionati.",
+    "who_business": "Proprietari di aziende",
+    "who_business_desc": "Imprenditori che desiderano una base stabile in Asia.",
+    "who_family": "Famiglie",
+    "who_family_desc": "Opzioni flessibili per includere coniuge e figli.",
+    "benefits_title": "Privilegi Esclusivi",
+    "benefits_desc": "Oltre al visto, accedi a servizi di fascia alta: Limousine aeroportuale, Golf, Spa, Check-up sanitario annuale...",
+    "benefits_btn": "Visualizza pacchetti",
+    "cta_button": "Diventa un membro",
+    "highs_title": "Punti salienti",
     "highs": [
-      "Ultra-long validity (up to 20 years)",
-      "VIP Airport Fast-Track Service (Arrival/Departure)",
-      "No age or monthly income requirements",
-      "24/7 Assistance for daily life"
+      "Validità ultra-lunga (fino a 20 anni)",
+      "Servizio VIP Airport Fast-Track (Arrivo/Partenza)",
+      "Nessun requisito di età o reddito mensile",
+      "Assistenza 24 ore su 24, 7 giorni su 7 per la vita quotidiana"
     ],
-    "lows_title": "Points of Attention",
+    "lows_title": "Punti di attenzione",
     "lows": [
-      "High initial cost (starting ~900,000 THB)",
-      "Work permit not automatically included",
-      "Processing time 1 to 3 months",
-      "Payment to government required before issuance"
+      "Costo iniziale elevato (a partire da ~900.000 THB)",
+      "Permesso di lavoro non incluso automaticamente",
+      "Tempi di elaborazione da 1 a 3 mesi",
+      "Pagamento al governo richiesto prima del rilascio"
     ],
-    "faq_title": "Elite Visa - FAQ",
+    "faq_title": "Visto Elite - FAQ",
     "faqs": [
       {
-        "q": "Can I enter and leave Thailand multiple times with my Elite visa?",
-        "a": "Yes, it is a Multiple-Entry visa with unlimited entries for the duration of your membership (5 to 20 years)."
+        "q": "Posso entrare e uscire dalla Thailandia più volte con il mio visto Elite?",
+        "a": "Sì, è un visto per ingressi multipli con ingressi illimitati per tutta la durata della tua iscrizione (da 5 a 20 anni)."
       },
       {
-        "q": "Do I have to pay taxes in Thailand with this visa?",
-        "a": "The Elite Visa does not automatically make you a tax resident. You only pay tax if you stay more than 180 days in a calendar year AND bring foreign income into Thailand in the same year."
+        "q": "Devo pagare le tasse in Thailandia con questo visto?",
+        "a": "Il Visto Elite non ti rende automaticamente un residente fiscale. Paghi le tasse solo se soggiorni più di 180 giorni in un anno solare E porti reddito estero in Thailandia nello stesso anno."
       },
       {
-        "q": "Can my family accompany me?",
-        "a": "Yes, there are 'Family' packages that allow you to include immediate family members at a reduced rate."
+        "q": "La mia famiglia può accompagnarmi?",
+        "a": "Sì, esistono pacchetti 'Famiglia' che ti permettono di includere i tuoi familiari stretti a una tariffa ridotta."
       },
       {
-        "q": "Can I work with an Elite Visa?",
-        "a": "Technically no, it is a tourist visa. However, you can be a shareholder of a company, or work legally if you obtain a Work Permit (which is possible with the Elite Visa combined with a job offer)."
+        "q": "Posso lavorare con un Visto Elite?",
+        "a": "Tecnicamente no, è un visto turistico. Tuttavia, puoi essere azionista di una società o lavorare legalmente se ottieni un permesso di lavoro (possibile con il Visto Elite combinato con un'offerta di lavoro)."
       }
     ],
-    "prestige_title": "Prestige <span className=\"text-amber-500\">Service</span>",
-    "prestige_desc": "SiamVisa Pro is your privileged agent for Thailand Privilege (Elite) membership.",
+    "prestige_title": "Servizio <span className=\"text-amber-500\">Prestige</span>",
+    "prestige_desc": "SiamVisa Pro è il tuo agente privilegiato per l'iscrizione a Thailand Privilege (Elite).",
     "prestige_list": [
-      "Program Choice (5/10/20 years)",
-      "Liaison with Elite Secretariat",
-      "Airport Formalities Management",
-      "Concierge Support"
+      "Scelta del programma (5/10/20 anni)",
+      "Collegamento con la Segreteria Elite",
+      "Gestione delle formalità aeroportuali",
+      "Supporto Concierge"
     ],
     "quick_view": {
-      "btn": "⚡️ Quick View",
-      "title": "Elite Visa: Essentials",
-      "duration": "Validity",
-      "duration_val": "5 to 20 Years",
-      "cost": "Total Cost",
-      "cost_val": "900k (5y) to 5M THB (20y)",
-      "per_year": "Smoothed Cost / Year",
-      "per_year_val": "From 125k THB (~$3.6k) / year",
-      "runs": "Visa Runs",
-      "runs_val": "0 / Year (Zero)",
-      "entries": "Entries",
-      "entries_val": "Unlimited (VIP)",
-      "verdict": "VERDICT: Absolute comfort. You are buying total peace of mind for years."
+      "btn": "⚡️ Vista rapida",
+      "title": "Visto Elite: Elementi essenziali",
+      "duration": "Validità",
+      "duration_val": "Da 5 a 20 anni",
+      "cost": "Costo totale",
+      "cost_val": "900k (5a) a 5M THB (20a)",
+      "per_year": "Costo spalmato / Anno",
+      "per_year_val": "Da 125k THB (~$3,6k) / anno",
+      "runs": "Visa Run",
+      "runs_val": "0 / Anno (Zero)",
+      "entries": "Ingressi",
+      "entries_val": "Illimitati (VIP)",
+      "verdict": "VERDETTO: Comfort assoluto. Stai acquistando la totale tranquillità burocratica per anni."
     },
     "high_value": {
-      "title": "Prestige & Serenity",
-      "highlight": "Absolute",
-      "description": "No queues, no complicated 90-day reports, no hassle. Just the pleasure of living in Thailand with a VIP status guaranteed by the State.",
-      "item1": "VIP Airport Fast Track",
-      "item2": "5 to 20 Year Membership",
-      "item3": "24/7 Concierge",
-      "card_title": "Services Included",
-      "card_item1": "Limousine Service",
-      "card_item2": "Golf & Spa Privileges",
-      "card_item3": "Bank Account Opening",
-      "card_item4": "Annual Health Check-up"
+      "title": "Prestigio e Serenità",
+      "highlight": "Assoluta",
+      "description": "Niente code, niente complicati rapporti di 90 giorni, niente problemi. Solo il piacere di vivere in Thailandia con uno status VIP garantito dallo Stato.",
+      "item1": "Fast Track Aeroportuale VIP",
+      "item2": "Iscrizione da 5 a 20 anni",
+      "item3": "Concierge 24/7",
+      "card_title": "Servizi inclusi",
+      "card_item1": "Servizio Limousine",
+      "card_item2": "Privilegi Golf & Spa",
+      "card_item3": "Apertura conto bancario",
+      "card_item4": "Check-up sanitario annuale"
     },
     "meta": {
-      "title": "Thailand Elite Visa (Thailand Privilege) | Official Packages & Rates",
-      "description": "Get the Thailand Elite Visa for 5, 10 or 20 years. VIP Service, Airport Fast-Track and Concierge. Discover official rates."
+      "title": "Visto Thailand Elite (Thailand Privilege) | Pacchetti e tariffe ufficiali",
+      "description": "Ottieni il Visto Thailand Elite per 5, 10 o 20 anni. Servizio VIP, Fast-Track aeroportuale e Concierge. Scopri le tariffe ufficiali."
     }
   },
   "apply_page": {
     "meta": {
-      "title": "Thailand Visa Application | SiamVisa Pro",
-      "description": "Start your Thailand visa application online. Simple and fast process with expert support."
+      "title": "Domanda di Visto per la Thailandia | SiamVisa Pro",
+      "description": "Inizia la tua domanda di visto per la Thailandia online. Processo semplice e veloce con il supporto di esperti."
     },
-    "hero_title": "Visa Application",
-    "hero_subtitle": "Start your travel project in just a few clicks",
+    "hero_title": "Domanda di Visto",
+    "hero_subtitle": "Inizia il tuo progetto di viaggio in pochi clic",
     "steps": {
       "selection": {
-        "title": "Choose your Visa",
-        "subtitle": "Select the visa type that matches your project"
+        "title": "Scegli il tuo Visto",
+        "subtitle": "Seleziona il tipo di visto più adatto al tuo progetto"
       },
       "personal": {
-        "title": "Personal Information",
-        "subtitle": "Tell us more about yourself",
-        "first_name": "First Name",
-        "last_name": "Last Name",
+        "title": "Informazioni Personali",
+        "subtitle": "Raccontaci di più su di te",
+        "first_name": "Nome",
+        "last_name": "Cognome",
         "email": "Email",
-        "phone": "Phone",
-        "nationality": "Nationality"
+        "phone": "Telefono",
+        "nationality": "Nazionalità"
       },
       "trip": {
-        "title": "Trip Details",
-        "subtitle": "Information about your stay",
-        "entry_date": "Planned Entry Date",
-        "duration": "Stay Duration (days)"
+        "title": "Dettagli del Viaggio",
+        "subtitle": "Informazioni sul tuo soggiorno",
+        "entry_date": "Data di entrata prevista",
+        "duration": "Durata del soggiorno (giorni)"
       },
       "confirm": {
-        "title": "Confirmation",
-        "subtitle": "Verify your information before sending",
-        "btn_submit": "SUBMIT MY APPLICATION",
-        "success_title": "Application Received!",
-        "success_desc": "Your application has been sent to our experts. You will receive an email response within 24 hours."
+        "title": "Conferma",
+        "subtitle": "Verifica le tue informazioni prima di inviare",
+        "btn_submit": "INVIA LA MIA DOMANDA",
+        "success_title": "Domanda Ricevuta!",
+        "success_desc": "La tua domanda è stata inviata ai nostri esperti. Riceverai una risposta via email entro 24 ore."
       }
     },
-    "next": "Next",
-    "prev": "Previous"
+    "next": "Avanti",
+    "prev": "Precedente"
   }
 };

@@ -38,9 +38,9 @@ export const ar = {
       "elite": "امتيازات النخبة",
       "others": "تأشيرات أخرى"
     },
-    "visa_options": "Visa Options",
-    "eligibility_check": "Check Eligibility",
-    "search_placeholder": "Ask AI..."
+    "visa_options": "خيارات التأشيرة",
+    "eligibility_check": "فحص الأهلية",
+    "search_placeholder": "اسأل الذكاء الاصطناعي..."
   },
   "meta": {
     "title": "Siam Visa Pro | خبير تأشيرات تايلاند - DTV، السياحة والتقاعد",
@@ -49,8 +49,8 @@ export const ar = {
   "home_page": {
     "appointment_title": "لنتحدث عن مشروعك",
     "appointment_subtitle": "احجز مكالمة مجانية مع خبير تأشيرات تايلاند.",
-    "member": "Client Area",
-    "eligibility": "Eligibility"
+    "member": "منطقة الأعضاء",
+    "eligibility": "الأهلية"
   },
   "search_page": {
     "meta": {
@@ -210,10 +210,10 @@ export const ar = {
     "expertPick": "خبير",
     "alternative": "بديل",
     "commonRequirements": [
-      "جواز",
-      "Clean criminal record certificate",
-      "Proof of sufficient funds",
-      "Proof of local address / booking"
+      "جواز السفر",
+      "شهادة خلو من السوابق العدلية",
+      "إثبات وجود أموال كافية",
+      "إثبات عنوان محلي / حجز فندق"
     ],
     "processDescription": "5-15 يوم.",
     "durations": {
@@ -226,9 +226,9 @@ export const ar = {
       "4 Years": "4 سنوات",
       "Variable": "متغير",
       "90 Days": "90 يوم",
-      "6-12 Months": "6-12 Months",
-      "15 Years": "15 Years",
-      "20+ Years": "20+ Years"
+      "6-12 Months": "6-12 شهرًا",
+      "15 Years": "15 سنة",
+      "20+ Years": "20+ سنة"
     },
     "prices": {
       "High": "مرتفع",
@@ -422,7 +422,7 @@ export const ar = {
     "account_number": "Account Number:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "Thank you. Your order is pending funds arrival. Please email payment proof to contact@siamvisapro.com to activate service."
+    "transfer_success_desc": "شكرًا لك. طلبك قيد انتظار وصول الأموال. يرجى إرسال إثبات الدفع عبر البريد الإلكتروني إلى contact@siamvisapro.com لتفعيل الخدمة."
   },
   "login": {
     "title": "منطقة العملاء",
@@ -437,8 +437,8 @@ export const ar = {
     "submit": "دخول",
     "no_account": "لا حساب؟",
     "start_request": "بدء طلب",
-    "google_loading": "Logging in...",
-    "facebook_loading": "Logging in..."
+    "google_loading": "جاري تسجيل الدخول...",
+    "facebook_loading": "جاري تسجيل الدخول..."
   },
   "contact_page": {
     "meta": {
@@ -532,8 +532,8 @@ export const ar = {
       "card_item4": "المشاركون في الملاكمة التايلاندية / الطبخ"
     },
     "meta": {
-      "title": "Thailand DTV Visa 2026: Guide, Cost & Requirements | SiamVisaPro",
-      "description": "Complete guide to the Destination Thailand Visa (DTV). 5-year validity, legal work. 2026 conditions, cost, and expert portfolio assistance."
+      "title": "تأشيرة تايلاند DTV 2026: دليل وتكلفة ومتطلبات | SiamVisaPro",
+      "description": "دليل كامل لتأشيرة وجهة تايلاند (DTV). صالحة لمدة 5 سنوات، عمل قانوني. شروط 2026، التكلفة، ومساعدة الخبراء في الحقيبة المهنية."
     }
   },
   "business_visa_page": {
@@ -718,6 +718,13 @@ export const ar = {
       "SMART I (Investor): استثمارات مباشرة (> 20 مليون بات)。",
       "SMART S (Startup): مؤسسو الشركات الناشئة التقنية。",
       "SMART E (Executive): كبار المديرين التنفيذيين。"
+    ],
+    "audience_not_compatible": "الفئات غير المناسبة",
+    "audience_not_compatible_list": [
+      "العاملون عن بُعد في قطاعات غير تكنولوجية (يُنصح بتأشيرة DTV).",
+      "السياح العاديون (يُنصح بتأشيرة TR أو دخول بدون تأشيرة).",
+      "العمالة غير الماهرة أو الشركات غير المعتمدة من قبل BOI.",
+      "المستثمرون السلبيون الذين ليس لديهم دور نشط في العمل التجاري。"
     ],
     "audience_industries": "القطاعات المستهدفة",
     "audience_industries_list": [
@@ -908,164 +915,164 @@ export const ar = {
   },
   "media_visa_page": {
     "meta": {
-      "title": "Thailand Media / Journalist Visa (Non-M) | Guide 2026",
-      "description": "Visa for journalists, press correspondents, and film crews in Thailand. Accreditation and required conditions."
+      "title": "تأشيرة الإعلام/الصحافة تايلاند (Non-M) | دليل 2026",
+      "description": "تأشيرة للصحفيين والمراسلين وفرق التصوير في تايلاند. شروط الاعتماد والمتطلبات."
     },
-    "hero_badge": "Press & Journalism",
-    "hero_title": "Media Visa (Non-M) – Thailand",
-    "hero_subtitle": "Cover the news or produce content in Thailand",
-    "definition_title": "What is the Media Visa (Non-M)?",
-    "definition_content": "The Non-Immigrant M (Media) Visa is intended for certified media professionals (journalists, correspondents, film crews) wishing to work or report in Thailand.",
-    "audience_title": "Who is this visa for?",
-    "audience_compatible": "Compatible Profiles",
+    "hero_badge": "الصحافة والإعلام",
+    "hero_title": "تأشيرة الإعلام (Non-M) – تايلاند",
+    "hero_subtitle": "تغطية الأخبار أو إنتاج المحتوى في تايلاند",
+    "definition_title": "ما هي تأشيرة الإعلام (Non-M)؟",
+    "definition_content": "تأشيرة Non-Immigrant M (الإعلام) مخصصة للمهنيين الإعلاميين المعتمدين (الصحفيين والمراسلين وفرق التصوير) الراغبين في العمل أو التقارير في تايلاند.",
+    "audience_title": "لمن هذه التأشيرة؟",
+    "audience_compatible": "الملفات المتوافقة",
     "audience_compatible_list": [
-      "Accredited Journalists.",
-      "Foreign Press Correspondents.",
-      "Film Crews with official permit."
+      "الصحفيون المعتمدون.",
+      "مراسلو الصحافة الأجنبية.",
+      "فرق التصوير بتصريح رسمي."
     ],
-    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible": "الملفات غير المتوافقة",
     "audience_not_compatible_list": [
-      "Independent YouTubers without permit.",
-      "Bloggers / Influencers (see DTV Visa).",
-      "Commercial productions without license."
+      "مستخدمو يوتيوب المستقلون بدون تصريح.",
+      "المدونون / المؤثرون (راجع تأشيرة DTV).",
+      "الإنتاجات التجارية بدون ترخيص."
     ],
-    "duration_title": "Length of stay and validity",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "1 Year",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Renewable",
-    "conditions_title": "Accreditation & Conditions",
+    "duration_title": "مدة الإقامة والصلاحية",
+    "duration_initial_label": "الصلاحية",
+    "duration_initial_value": "سنة واحدة",
+    "duration_max_label": "التمديد",
+    "duration_max_value": "قابلة للتجديد",
+    "conditions_title": "الاعتماد والشروط",
     "conditions_list": [
-      "Registration on the MFA online portal (M-Press).",
-      "Presentation of press card and letter from employer.",
-      "Background check by the Public Relations Department.",
-      "Thailand Film Office approval for filming."
+      "التسجيل في بوابة وزارة الخارجية (M-Press).",
+      "تقديم بطاقة الصحافة وخطاب من جهة العمل.",
+      "فحص الخلفية من قبل إدارة العلاقات العامة.",
+      "موافقة مكتب السينما التايلاندي للتصوير."
     ],
-    "work_title": "Working & Filming",
-    "work_warning_title": "Filming Permit",
-    "work_warning_text": "A visa alone is often not enough. For any commercial production, a specific filming permit is required. Without it, you risk heavy fines and confiscation of equipment.",
-    "renewal_title": "Renewal",
-    "renewal_text": "The visa can be renewed annually as long as accreditation with the Ministry of Foreign Affairs (MFA) is maintained.",
-    "limitations_title": "Limitations",
-    "limitations_risk_title": "Strictly Controlled Activity",
-    "limitations_risk_text": "Thailand monitors foreign media very closely. Any politically sensitive reporting without proper accreditation can lead to deportation.",
-    "cta_help_title": "Need accreditation assistance?",
-    "cta_help_subtitle": "We help media professionals with MFA formalities.",
-    "cta_help_btn": "Request assistance",
-    "cta_compare_title": "Are you a Freelancer?",
-    "cta_compare_subtitle": "For digital content, the DTV is often simpler.",
-    "cta_compare_btn": "See DTV Visa"
+    "work_title": "العمل والتصوير",
+    "work_warning_title": "تصريح التصوير",
+    "work_warning_text": "التأشيرة وحدها غالباً لا تكفي. لأي إنتاج تجاري، مطلوب تصريح تصوير محدد. بدونه، تخاطر بغرامات كبيرة ومصادرة المعدات.",
+    "renewal_title": "التجديد",
+    "renewal_text": "يمكن تجديد التأشيرة سنوياً طالما يتم الحفاظ على الاعتماد لدى وزارة الخارجية.",
+    "limitations_title": "القيود",
+    "limitations_risk_title": "نشاط خاضع للرقابة الصارمة",
+    "limitations_risk_text": "تراقب تايلاند وسائل الإعلام الأجنبية عن كثب. أي تقارير حساسة سياسياً بدون اعتماد مناسب قد تؤدي إلى الترحيل.",
+    "cta_help_title": "هل تحتاج مساعدة في الاعتماد؟",
+    "cta_help_subtitle": "نساعد المهنيين الإعلاميين في إجراءات وزارة الخارجية.",
+    "cta_help_btn": "طلب المساعدة",
+    "cta_compare_title": "هل أنت مستقل؟",
+    "cta_compare_subtitle": "للمحتوى الرقمي، تأشيرة DTV غالباً أبسط.",
+    "cta_compare_btn": "عرض تأشيرة DTV"
   },
   "official_visa_page": {
     "meta": {
-      "title": "Thailand Official Visa (Non-F) | Guide 2026",
-      "description": "Visa for officials, diplomats, and employees of international organizations on mission in Thailand."
+      "title": "تأشيرة رسمية تايلاند (Non-F) | دليل 2026",
+      "description": "تأشيرة للمسؤولين والدبلوماسيين وموظفي المنظمات الدولية في مهمة بتايلاند."
     },
-    "hero_badge": "Diplomacy & State",
-    "hero_title": "Official Visa (Non-F) – Thailand",
-    "hero_subtitle": "Diplomatic and official missions in Thailand",
-    "definition_title": "What is the Official Visa?",
-    "definition_content": "The Non-Immigrant F (Official) Visa is reserved for people on official mission (diplomats, IO officials).",
-    "audience_title": "Beneficiaries",
-    "audience_diplomatic_title": "Diplomatic Corps",
-    "audience_diplomatic_text": "Ambassies, Consulates, Military Attaches.",
-    "audience_oi_title": "IO / UN",
-    "audience_oi_text": "United Nations employees, UNICEF, etc., based in Bangkok.",
-    "conditions_title": "Specific requirements",
-    "conditions_text": "This visa imperatively requires a verbal note or an official mission order.",
-    "cta_btn": "Request assistance",
-    "audience_compatible": "Eligible Profiles",
+    "hero_badge": "الدبلوماسية والدولة",
+    "hero_title": "التأشيرة الرسمية (Non-F) – تايلاند",
+    "hero_subtitle": "البعثات الدبلوماسية والرسمية في تايلاند",
+    "definition_title": "ما هي التأشيرة الرسمية؟",
+    "definition_content": "تأشيرة Non-Immigrant F (الرسمية) مخصصة للأشخاص في مهمة رسمية (الدبلوماسيين، موظفي المنظمات الدولية).",
+    "audience_title": "المستفيدون",
+    "audience_diplomatic_title": "السلك الدبلوماسي",
+    "audience_diplomatic_text": "السفارات، القنصليات، الملحقين العسكريين.",
+    "audience_oi_title": "المنظمات الدولية / الأمم المتحدة",
+    "audience_oi_text": "موظفو الأمم المتحدة، اليونيسف، إلخ، المقيمون في بانكوك.",
+    "conditions_title": "المتطلبات الخاصة",
+    "conditions_text": "تتطلب هذه التأشيرة حتماً مذكرة شفهية أو أمر مهمة رسمي.",
+    "cta_btn": "طلب المساعدة",
+    "audience_compatible": "الملفات المؤهلة",
     "audience_compatible_list": [
-      "Diplomats and Embassy staff.",
-      "United Nations officials (UN/UNICEF/ESCAP).",
-      "Military and officials on official mission."
+      "الدبلوماسيون وموظفو السفارات.",
+      "موظفو الأمم المتحدة (UN/UNICEF/ESCAP).",
+      "العسكريون والمسؤولون في مهمة رسمية."
     ],
-    "audience_not_compatible": "Not Eligible",
+    "audience_not_compatible": "غير مؤهلين",
     "audience_not_compatible_list": [
-      "Private contractors working for governments.",
-      "External consultants without official status.",
-      "Family members not officially declared."
+      "المقاولون الخاصون العاملون للحكومات.",
+      "المستشارون الخارجيون بدون وضع رسمي.",
+      "أفراد العائلة غير المُعلَن عنهم رسمياً."
     ],
-    "duration_title": "Mission Duration",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "Mission",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Variable",
+    "duration_title": "مدة المهمة",
+    "duration_initial_label": "الصلاحية",
+    "duration_initial_value": "المهمة",
+    "duration_max_label": "التمديد",
+    "duration_max_value": "متغير",
     "conditions_list": [
-      "Note Verbale from the Ministry of Foreign Affairs.",
-      "Official Mission Order.",
-      "Diplomatic or Service Passport (recommended).",
-      "Invitation letter from the organization in Thailand."
+      "مذكرة شفهية من وزارة الخارجية.",
+      "أمر مهمة رسمي.",
+      "جواز سفر دبلوماسي أو خدمة (مُوصى به).",
+      "خطاب دعوة من المنظمة في تايلاند."
     ],
-    "work_title": "Diplomatic Status",
-    "work_warning_title": "Immunity and Rules",
-    "work_warning_text": "Depending on your rank and the agreement with Thailand, you may benefit from diplomatic immunity and tax exemptions. No private commercial activity is authorized.",
-    "renewal_title": "Extension",
-    "renewal_text": "Managed directly by the MFA Protocol Department or your organization.",
-    "limitations_title": "Limitations",
-    "limitations_risk_title": "End of Mission",
-    "limitations_risk_text": "At the end of your official mission, you must return your diplomatic card and change status or leave the country immediately.",
-    "cta_help_title": "Protocol Assistance?",
-    "cta_help_subtitle": "We assist international organizations with their procedures.",
-    "cta_help_btn": "Request assistance",
-    "cta_compare_title": "Commercial Mission?",
-    "cta_compare_subtitle": "If you do not have diplomatic status, use the Business Visa.",
-    "cta_compare_btn": "See Business Visa"
+    "work_title": "الوضع الدبلوماسي",
+    "work_warning_title": "الحصانة والقواعد",
+    "work_warning_text": "حسب رتبتك والاتفاقية مع تايلاند، قد تستفيد من الحصانة الدبلوماسية والإعفاءات الضريبية. لا يُسمح بأي نشاط تجاري خاص.",
+    "renewal_title": "التمديد",
+    "renewal_text": "تتم إدارته مباشرة من قبل إدارة البروتوكول بوزارة الخارجية أو منظمتك.",
+    "limitations_title": "القيود",
+    "limitations_risk_title": "نهاية المهمة",
+    "limitations_risk_text": "عند انتهاء مهمتك الرسمية، يجب إعادة بطاقتك الدبلوماسية وتغيير وضعك أو مغادرة البلاد فوراً.",
+    "cta_help_title": "مساعدة بروتوكولية؟",
+    "cta_help_subtitle": "نساعد المنظمات الدولية في إجراءاتها.",
+    "cta_help_btn": "طلب المساعدة",
+    "cta_compare_title": "مهمة تجارية؟",
+    "cta_compare_subtitle": "إذا لم يكن لديك وضع دبلوماسي، استخدم تأشيرة الأعمال.",
+    "cta_compare_btn": "عرض تأشيرة الأعمال"
   },
   "scientific_visa_page": {
     "meta": {
-      "title": "Thailand Scientific Research Visa (Non-RS) | Guide 2026",
-      "description": "Visa for researchers, experts, and scientists conducting research work in Thailand."
+      "title": "تأشيرة البحث العلمي تايلاند (Non-RS) | دليل 2026",
+      "description": "تأشيرة للباحثين والخبراء والعلماء الذين يجرون أبحاثاً في تايلاند."
     },
-    "hero_badge": "Research & Innovation",
-    "hero_title": "Scientific Research Visa (Non-RS) – Thailand",
-    "hero_subtitle": "Contribute to scientific advancement in Thailand",
-    "definition_title": "What is the Scientific Research Visa?",
-    "definition_content": "The Non-Immigrant RS (Research & Science) Visa is designed for experts and researchers conducting scientific work with a Thai institute.",
-    "audience_title": "Eligible Profiles",
-    "audience_tech_title": "Technical Experts",
-    "audience_tech_text": "Engineers and specialists in technology transfer.",
-    "audience_academic_title": "Academic Researchers",
-    "audience_academic_text": "Scientists on mission in universities or national research centers.",
-    "conditions_title": "Required Conditions",
+    "hero_badge": "البحث والابتكار",
+    "hero_title": "تأشيرة البحث العلمي (Non-RS) – تايلاند",
+    "hero_subtitle": "المساهمة في التقدم العلمي في تايلاند",
+    "definition_title": "ما هي تأشيرة البحث العلمي؟",
+    "definition_content": "تأشيرة Non-Immigrant RS (البحث والعلوم) مصممة للخبراء والباحثين الذين يجرون أعمالاً علمية مع مؤسسة تايلاندية.",
+    "audience_title": "الملفات المؤهلة",
+    "audience_tech_title": "الخبراء التقنيون",
+    "audience_tech_text": "المهندسون والمتخصصون في نقل التكنولوجيا.",
+    "audience_academic_title": "الباحثون الأكاديميون",
+    "audience_academic_text": "العلماء في مهمة بالجامعات أو مراكز البحث الوطنية.",
+    "conditions_title": "الشروط المطلوبة",
     "conditions_list": [
-      "Invitation from a Thai research organization (e.g., NRCT).",
-      "Scientific cooperation agreement between institutions.",
-      "Degree certificates and detailed CV.",
-      "Proof of research funding."
+      "دعوة من منظمة بحثية تايلاندية (مثل NRCT).",
+      "اتفاقية تعاون علمي بين المؤسسات.",
+      "شهادات الدرجات العلمية والسيرة الذاتية المفصلة.",
+      "إثبات تمويل البحث."
     ],
-    "cta_btn": "Check sponsorship",
-    "audience_compatible": "Compatible Profiles",
+    "cta_btn": "التحقق من الرعاية",
+    "audience_compatible": "الملفات المتوافقة",
     "audience_compatible_list": [
-      "Technical Experts and Engineers.",
-      "Academic Researchers (Universities, National Centers).",
-      "Technology Transfer Specialists."
+      "الخبراء التقنيون والمهندسون.",
+      "الباحثون الأكاديميون (الجامعات، المراكز الوطنية).",
+      "متخصصو نقل التكنولوجيا."
     ],
-    "audience_not_compatible": "Not Compatible",
+    "audience_not_compatible": "غير متوافقين",
     "audience_not_compatible_list": [
-      "Independent researchers without affiliation.",
-      "Language teachers (see ED Visa).",
-      "PhD students without a research contract."
+      "الباحثون المستقلون بدون انتماء مؤسسي.",
+      "مدرسو اللغات (راجع تأشيرة ED).",
+      "طلاب الدكتوراه بدون عقد بحث."
     ],
-    "duration_title": "Research Duration",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "1-2 Years",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Renewable",
-    "work_title": "Research Activity",
-    "work_warning_title": "Scope of work",
-    "work_warning_text": "This visa authorizes research activities described in the contract. It does not allow working for a private company outside the research project.",
-    "renewal_title": "Renewal",
-    "renewal_text": "Renewable based on the progress of the research project and funding.",
-    "limitations_title": "Approval Required",
-    "limitations_risk_title": "NRCT Approval",
-    "limitations_risk_text": "The most difficult step is obtaining approval from the National Research Council. Without this, the RS visa cannot be issued.",
-    "cta_help_title": "Need help with NRCT?",
-    "cta_help_subtitle": "We guide researchers and institutes through the process.",
-    "cta_help_btn": "Contact an expert",
-    "cta_compare_title": "Tech Startup?",
-    "cta_compare_subtitle": "The SMART Visa might be more appropriate for innovation.",
-    "cta_compare_btn": "See SMART Visa"
+    "duration_title": "مدة البحث",
+    "duration_initial_label": "الصلاحية",
+    "duration_initial_value": "1-2 سنة",
+    "duration_max_label": "التمديد",
+    "duration_max_value": "قابلة للتجديد",
+    "work_title": "النشاط البحثي",
+    "work_warning_title": "نطاق العمل",
+    "work_warning_text": "هذه التأشيرة تسمح بالأنشطة البحثية المذكورة في العقد. لا تسمح بالعمل لشركة خاصة خارج مشروع البحث.",
+    "renewal_title": "التجديد",
+    "renewal_text": "قابلة للتجديد بناءً على تقدم مشروع البحث والتمويل.",
+    "limitations_title": "الموافقة المطلوبة",
+    "limitations_risk_title": "موافقة NRCT",
+    "limitations_risk_text": "أصعب خطوة هي الحصول على موافقة مجلس البحث الوطني. بدونها، لا يمكن إصدار تأشيرة RS.",
+    "cta_help_title": "تحتاج مساعدة مع NRCT؟",
+    "cta_help_subtitle": "نرشد الباحثين والمؤسسات خلال العملية.",
+    "cta_help_btn": "التواصل مع خبير",
+    "cta_compare_title": "شركة ناشئة تقنية؟",
+    "cta_compare_subtitle": "تأشيرة SMART قد تكون أكثر ملاءمة للابتكار.",
+    "cta_compare_btn": "عرض تأشيرة SMART"
   },
   "tourist_page": {
     "badge": "سياحة وترفيه",

@@ -821,6 +821,13 @@ export const en = {
       "SMART S (Startup): Tech startup founders.",
       "SMART E (Executive): Senior executives."
     ],
+    "audience_not_compatible": "Ineligible Profiles",
+    "audience_not_compatible_list": [
+      "Remote workers in non-tech industries (use DTV).",
+      "General tourists (use TR or Exemption).",
+      "Low-skilled labor or non-BOI companies.",
+      "Passive investors without active business involvement."
+    ],
     "audience_industries": "Target Industries",
     "audience_industries_list": [
       "Digital & Tech, Automation.",
@@ -847,6 +854,25 @@ export const en = {
     "limitations_title": "Limitations and points of vigilance",
     "limitations_complex_title": "Complex process",
     "limitations_complex_text": "Obtaining it requires technical validation by the BOI before the visa application. The full process can take 1 to 2 months. This is not a 'fast' visa like the DTV.",
+    "faq_title": "FAQ - SMART Visa 2026",
+    "faqs": [
+      {
+        "q": "Do I need a classic work permit?",
+        "a": "No. The SMART Visa replaces and exempts you from the classic Work Permit. You can work legally as soon as your visa is validated."
+      },
+      {
+        "q": "Can I bring my family?",
+        "a": "Yes. Your legal spouse and children can obtain a SMART Visa as dependents, giving them the right to stay and work (under conditions)."
+      },
+      {
+        "q": "Is it better than the LTR Visa?",
+        "a": "The LTR is for 10 years and has different criteria. The SMART Visa is ideal for those who don't meet the LTR financial wealth requirements but have high salaries in tech."
+      },
+      {
+        "q": "What is the 1-year reporting?",
+        "a": "Unlike other visas requiring a report every 90 days, SMART Visa holders only need to report to Immigration once a year."
+      }
+    ],
     "cta_eligible_title": "Is your company eligible?",
     "cta_eligible_subtitle": "Check if you can obtain the SMART Visa.",
     "cta_eligible_btn": "Run a simulation",

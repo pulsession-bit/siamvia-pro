@@ -38,9 +38,9 @@ export const ru = {
       "elite": "Элитные привилегии",
       "others": "Другие визы"
     },
-    "visa_options": "Visa Options",
-    "eligibility_check": "Check Eligibility",
-    "search_placeholder": "Ask AI..."
+    "visa_options": "Варианты виз",
+    "eligibility_check": "Проверка критериев",
+    "search_placeholder": "Спросить ИИ..."
   },
   "meta": {
     "title": "Siam Visa Pro | Эксперт по визам в Таиланд - DTV, Туризм и Пенсия",
@@ -49,8 +49,8 @@ export const ru = {
   "home_page": {
     "appointment_title": "Давайте обсудим ваш проект",
     "appointment_subtitle": "Запишитесь на бесплатную консультацию с экспертом по визам в Таиланд.",
-    "member": "Client Area",
-    "eligibility": "Eligibility"
+    "member": "Личный кабинет",
+    "eligibility": "Критерии"
   },
   "search_page": {
     "meta": {
@@ -211,9 +211,9 @@ export const ru = {
     "alternative": "АЛЬТЕРНАТИВА",
     "commonRequirements": [
       "Паспорт",
-      "Clean criminal record certificate",
-      "Proof of sufficient funds",
-      "Proof of local address / booking"
+      "Справка об отсутствии судимости (если требуется)",
+      "Подтверждение наличия средств",
+      "Бронирование отеля / адрес проживания"
     ],
     "processDescription": "5-15 дней.",
     "durations": {
@@ -226,9 +226,9 @@ export const ru = {
       "4 Years": "4 года",
       "Variable": "Разно",
       "90 Days": "90 дней",
-      "6-12 Months": "6-12 Months",
-      "15 Years": "15 Years",
-      "20+ Years": "20+ Years"
+      "6-12 Months": "6–12 месяцев",
+      "15 Years": "15 лет",
+      "20+ Years": "20+ лет"
     },
     "prices": {
       "High": "Высокая",
@@ -422,7 +422,7 @@ export const ru = {
     "account_number": "Account Number:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "Thank you. Your order is pending funds arrival. Please email payment proof to contact@siamvisapro.com to activate service."
+    "transfer_success_desc": "Спасибо. Ваш заказ ожидает поступления средств. Пожалуйста, отправьте подтверждение оплаты на почту contact@siamvisapro.com для активации услуги."
   },
   "login": {
     "title": "Клиентская зона",
@@ -437,8 +437,8 @@ export const ru = {
     "submit": "Войти",
     "no_account": "Нет аккаунта?",
     "start_request": "Начать заявку",
-    "google_loading": "Logging in...",
-    "facebook_loading": "Logging in..."
+    "google_loading": "Вход через Google...",
+    "facebook_loading": "Вход через Facebook..."
   },
   "contact_page": {
     "meta": {
@@ -532,8 +532,8 @@ export const ru = {
       "card_item4": "Обучение: Муай Тай / Кулинария"
     },
     "meta": {
-      "title": "Thailand DTV Visa 2026: Guide, Cost & Requirements | SiamVisaPro",
-      "description": "Complete guide to the Destination Thailand Visa (DTV). 5-year validity, legal work. 2026 conditions, cost, and expert portfolio assistance."
+      "title": "Виза DTV Таиланд 2026: Гид, Стоимость и Требования | SiamVisaPro",
+      "description": "Полный гид по визе Destination Thailand Visa (DTV). Срок действия 5 лет, легальная работа. Условия 2026 года, стоимость и помощь экспертов с портфолио."
     }
   },
   "tourist_page": {
@@ -743,6 +743,13 @@ export const ru = {
       "SMART S (Startup): Основатели тех-стартапов.",
       "SMART E (Executive): Топ-менеджеры."
     ],
+    "audience_not_compatible": "Неподходящие профили",
+    "audience_not_compatible_list": [
+      "Удаленные работники в нетехнологических отраслях (используйте DTV).",
+      "Обычные туристы (используйте визу TR или безвизовый въезд).",
+      "Неквалифицированная рабочая сила или компании без сертификации BOI.",
+      "Пассивные инвесторы без активного участия в бизнесе."
+    ],
     "audience_industries": "Целевые отрасли",
     "audience_industries_list": [
       "Digital & Tech, Автоматизация.",
@@ -768,6 +775,25 @@ export const ru = {
     "limitations_title": "Ограничения и важные моменты",
     "limitations_complex_title": "Сложный процесс",
     "limitations_complex_text": "Получение требует технической валидации от BOI перед подачей на визу. Весь процесс может занять от 1 до 2 месяцев. Это не «быстрая» виза, такая как DTV.",
+    "faq_title": "FAQ - SMART Visa 2026",
+    "faqs": [
+      {
+        "q": "Нужно ли мне классическое разрешение на работу?",
+        "a": "Нет. SMART Visa заменяет и освобождает вас от классического Work Permit. Вы можете работать легально сразу после подтверждения визы."
+      },
+      {
+        "q": "Могу ли я привезти семью?",
+        "a": "Да. Ваш законный супруг(а) и дети могут получить SMART Visa как иждивенцы, что дает им право на проживание и работу (на определенных условиях) в Таиланде."
+      },
+      {
+        "q": "Это лучше, чем виза LTR?",
+        "a": "LTR выдается на 10 лет и имеет другие критерии. SMART Visa идеальна для тех, кто не соответствует финансовым требованиям LTR к капиталу, но имеет высокую зарплату в тех-секторе."
+      },
+      {
+        "q": "Что такое годовая отчетность?",
+        "a": "В отличие от других виз, требующих отчет каждые 90 дней, владельцам SMART Visa нужно отмечаться в иммиграционной службе только раз в год."
+      }
+    ],
     "cta_eligible_title": "Ваша компания подходит?",
     "cta_eligible_subtitle": "Проверьте, можете ли вы получить SMART Visa.",
     "cta_eligible_btn": "Сделать симуляцию",
@@ -932,164 +958,164 @@ export const ru = {
   },
   "media_visa_page": {
     "meta": {
-      "title": "Thailand Media / Journalist Visa (Non-M) | Guide 2026",
-      "description": "Visa for journalists, press correspondents, and film crews in Thailand. Accreditation and required conditions."
+      "title": "Медиа-виза / Журналистская виза Таиланд (Non-M) | Гид 2026",
+      "description": "Виза для журналистов, корреспондентов и съёмочных групп в Таиланде. Аккредитация и условия."
     },
-    "hero_badge": "Press & Journalism",
-    "hero_title": "Media Visa (Non-M) – Thailand",
-    "hero_subtitle": "Cover the news or produce content in Thailand",
-    "definition_title": "What is the Media Visa (Non-M)?",
-    "definition_content": "The Non-Immigrant M (Media) Visa is intended for certified media professionals (journalists, correspondents, film crews) wishing to work or report in Thailand.",
-    "audience_title": "Who is this visa for?",
-    "audience_compatible": "Compatible Profiles",
+    "hero_badge": "Пресса и Журналистика",
+    "hero_title": "Медиа-виза (Non-M) – Таиланд",
+    "hero_subtitle": "Освещайте новости или создавайте контент в Таиланде",
+    "definition_title": "Что такое Медиа-виза (Non-M)?",
+    "definition_content": "Виза Non-Immigrant M (Медиа) предназначена для сертифицированных медиа-профессионалов (журналистов, корреспондентов, съёмочных групп), желающих работать или вести репортажи в Таиланде.",
+    "audience_title": "Для кого эта виза?",
+    "audience_compatible": "Подходящие профили",
     "audience_compatible_list": [
-      "Accredited Journalists.",
-      "Foreign Press Correspondents.",
-      "Film Crews with official permit."
+      "Аккредитованные журналисты.",
+      "Иностранные пресс-корреспонденты.",
+      "Съёмочные группы с официальным разрешением."
     ],
-    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible": "Неподходящие профили",
     "audience_not_compatible_list": [
-      "Independent YouTubers without permit.",
-      "Bloggers / Influencers (see DTV Visa).",
-      "Commercial productions without license."
+      "Независимые ютуберы без разрешения.",
+      "Блогеры / Инфлюенсеры (см. DTV-визу).",
+      "Коммерческие съёмки без лицензии."
     ],
-    "duration_title": "Length of stay and validity",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "1 Year",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Renewable",
-    "conditions_title": "Accreditation & Conditions",
+    "duration_title": "Срок пребывания и действия",
+    "duration_initial_label": "Срок действия",
+    "duration_initial_value": "1 год",
+    "duration_max_label": "Продление",
+    "duration_max_value": "Продлеваемая",
+    "conditions_title": "Аккредитация и условия",
     "conditions_list": [
-      "Registration on the MFA online portal (M-Press).",
-      "Presentation of press card and letter from employer.",
-      "Background check by the Public Relations Department.",
-      "Thailand Film Office approval for filming."
+      "Регистрация на портале МИД (M-Press).",
+      "Предъявление пресс-карты и письма от работодателя.",
+      "Проверка биографии Управлением по связям с общественностью.",
+      "Разрешение от Thailand Film Office для съёмок."
     ],
-    "work_title": "Working & Filming",
-    "work_warning_title": "Filming Permit",
-    "work_warning_text": "A visa alone is often not enough. For any commercial production, a specific filming permit is required. Without it, you risk heavy fines and confiscation of equipment.",
-    "renewal_title": "Renewal",
-    "renewal_text": "The visa can be renewed annually as long as accreditation with the Ministry of Foreign Affairs (MFA) is maintained.",
-    "limitations_title": "Limitations",
-    "limitations_risk_title": "Strictly Controlled Activity",
-    "limitations_risk_text": "Thailand monitors foreign media very closely. Any politically sensitive reporting without proper accreditation can lead to deportation.",
-    "cta_help_title": "Need accreditation assistance?",
-    "cta_help_subtitle": "We help media professionals with MFA formalities.",
-    "cta_help_btn": "Request assistance",
-    "cta_compare_title": "Are you a Freelancer?",
-    "cta_compare_subtitle": "For digital content, the DTV is often simpler.",
-    "cta_compare_btn": "See DTV Visa"
+    "work_title": "Работа и съёмки",
+    "work_warning_title": "Разрешение на съёмки",
+    "work_warning_text": "Одной визы часто недостаточно. Для любого коммерческого производства требуется специальное разрешение на съёмки. Без него вам грозят крупные штрафы и конфискация оборудования.",
+    "renewal_title": "Продление",
+    "renewal_text": "Визу можно продлевать ежегодно при сохранении аккредитации при МИД.",
+    "limitations_title": "Ограничения",
+    "limitations_risk_title": "Строго контролируемая деятельность",
+    "limitations_risk_text": "Таиланд очень внимательно следит за иностранными СМИ. Любые политически чувствительные репортажи без надлежащей аккредитации могут привести к депортации.",
+    "cta_help_title": "Нужна помощь с аккредитацией?",
+    "cta_help_subtitle": "Мы помогаем медиа-профессионалам с формальностями МИД.",
+    "cta_help_btn": "Запросить помощь",
+    "cta_compare_title": "Вы фрилансер?",
+    "cta_compare_subtitle": "Для цифрового контента DTV часто проще.",
+    "cta_compare_btn": "См. DTV-визу"
   },
   "official_visa_page": {
     "meta": {
-      "title": "Thailand Official Visa (Non-F) | Guide 2026",
-      "description": "Visa for officials, diplomats, and employees of international organizations on mission in Thailand."
+      "title": "Служебная виза Таиланд (Non-F) | Гид 2026",
+      "description": "Виза для чиновников, дипломатов и сотрудников международных организаций в командировке в Таиланде."
     },
-    "hero_badge": "Diplomacy & State",
-    "hero_title": "Official Visa (Non-F) – Thailand",
-    "hero_subtitle": "Diplomatic and official missions in Thailand",
-    "definition_title": "What is the Official Visa?",
-    "definition_content": "The Non-Immigrant F (Official) Visa is reserved for people on official mission (diplomats, IO officials).",
-    "audience_title": "Beneficiaries",
-    "audience_diplomatic_title": "Diplomatic Corps",
-    "audience_diplomatic_text": "Ambassies, Consulates, Military Attaches.",
-    "audience_oi_title": "IO / UN",
-    "audience_oi_text": "United Nations employees, UNICEF, etc., based in Bangkok.",
-    "conditions_title": "Specific requirements",
-    "conditions_text": "This visa imperatively requires a verbal note or an official mission order.",
-    "cta_btn": "Request assistance",
-    "audience_compatible": "Eligible Profiles",
+    "hero_badge": "Дипломатия и Государство",
+    "hero_title": "Служебная виза (Non-F) – Таиланд",
+    "hero_subtitle": "Дипломатические и служебные миссии в Таиланде",
+    "definition_title": "Что такое служебная виза?",
+    "definition_content": "Виза Non-Immigrant F (Служебная) предназначена для лиц, находящихся в официальной командировке (дипломаты, сотрудники международных организаций).",
+    "audience_title": "Получатели",
+    "audience_diplomatic_title": "Дипломатический корпус",
+    "audience_diplomatic_text": "Посольства, консульства, военные атташе.",
+    "audience_oi_title": "МО / ООН",
+    "audience_oi_text": "Сотрудники ООН, ЮНИСЕФ и др., базирующиеся в Бангкоке.",
+    "conditions_title": "Особые требования",
+    "conditions_text": "Эта виза обязательно требует вербальную ноту или официальный приказ о командировке.",
+    "cta_btn": "Запросить помощь",
+    "audience_compatible": "Подходящие профили",
     "audience_compatible_list": [
-      "Diplomats and Embassy staff.",
-      "United Nations officials (UN/UNICEF/ESCAP).",
-      "Military and officials on official mission."
+      "Дипломаты и сотрудники посольств.",
+      "Чиновники ООН (UN/UNICEF/ESCAP).",
+      "Военные и чиновники в официальной командировке."
     ],
-    "audience_not_compatible": "Not Eligible",
+    "audience_not_compatible": "Неподходящие профили",
     "audience_not_compatible_list": [
-      "Private contractors working for governments.",
-      "External consultants without official status.",
-      "Family members not officially declared."
+      "Частные подрядчики, работающие на правительства.",
+      "Внешние консультанты без официального статуса.",
+      "Члены семьи, официально не заявленные."
     ],
-    "duration_title": "Mission Duration",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "Mission",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Variable",
+    "duration_title": "Срок командировки",
+    "duration_initial_label": "Срок действия",
+    "duration_initial_value": "Командировка",
+    "duration_max_label": "Продление",
+    "duration_max_value": "Варьируется",
     "conditions_list": [
-      "Note Verbale from the Ministry of Foreign Affairs.",
-      "Official Mission Order.",
-      "Diplomatic or Service Passport (recommended).",
-      "Invitation letter from the organization in Thailand."
+      "Вербальная нота от МИД.",
+      "Официальный приказ о командировке.",
+      "Дипломатический или служебный паспорт (рекомендуется).",
+      "Пригласительное письмо от организации в Таиланде."
     ],
-    "work_title": "Diplomatic Status",
-    "work_warning_title": "Immunity and Rules",
-    "work_warning_text": "Depending on your rank and the agreement with Thailand, you may benefit from diplomatic immunity and tax exemptions. No private commercial activity is authorized.",
-    "renewal_title": "Extension",
-    "renewal_text": "Managed directly by the MFA Protocol Department or your organization.",
-    "limitations_title": "Limitations",
-    "limitations_risk_title": "End of Mission",
-    "limitations_risk_text": "At the end of your official mission, you must return your diplomatic card and change status or leave the country immediately.",
-    "cta_help_title": "Protocol Assistance?",
-    "cta_help_subtitle": "We assist international organizations with their procedures.",
-    "cta_help_btn": "Request assistance",
-    "cta_compare_title": "Commercial Mission?",
-    "cta_compare_subtitle": "If you do not have diplomatic status, use the Business Visa.",
-    "cta_compare_btn": "See Business Visa"
+    "work_title": "Дипломатический статус",
+    "work_warning_title": "Иммунитет и правила",
+    "work_warning_text": "В зависимости от вашего ранга и соглашения с Таиландом, вы можете пользоваться дипломатическим иммунитетом и налоговыми льготами. Частная коммерческая деятельность запрещена.",
+    "renewal_title": "Продление",
+    "renewal_text": "Управляется напрямую Протокольным отделом МИД или вашей организацией.",
+    "limitations_title": "Ограничения",
+    "limitations_risk_title": "Окончание командировки",
+    "limitations_risk_text": "По окончании официальной командировки вы должны вернуть дипломатическую карту и сменить статус или немедленно покинуть страну.",
+    "cta_help_title": "Протокольная помощь?",
+    "cta_help_subtitle": "Мы помогаем международным организациям с процедурами.",
+    "cta_help_btn": "Запросить помощь",
+    "cta_compare_title": "Коммерческая командировка?",
+    "cta_compare_subtitle": "Если у вас нет дипломатического статуса, используйте бизнес-визу.",
+    "cta_compare_btn": "См. Бизнес-визу"
   },
   "scientific_visa_page": {
     "meta": {
-      "title": "Thailand Scientific Research Visa (Non-RS) | Guide 2026",
-      "description": "Visa for researchers, experts, and scientists conducting research work in Thailand."
+      "title": "Научно-исследовательская виза Таиланд (Non-RS) | Гид 2026",
+      "description": "Виза для исследователей, экспертов и учёных, проводящих научную работу в Таиланде."
     },
-    "hero_badge": "Research & Innovation",
-    "hero_title": "Scientific Research Visa (Non-RS) – Thailand",
-    "hero_subtitle": "Contribute to scientific advancement in Thailand",
-    "definition_title": "What is the Scientific Research Visa?",
-    "definition_content": "The Non-Immigrant RS (Research & Science) Visa is designed for experts and researchers conducting scientific work with a Thai institute.",
-    "audience_title": "Eligible Profiles",
-    "audience_tech_title": "Technical Experts",
-    "audience_tech_text": "Engineers and specialists in technology transfer.",
-    "audience_academic_title": "Academic Researchers",
-    "audience_academic_text": "Scientists on mission in universities or national research centers.",
-    "conditions_title": "Required Conditions",
+    "hero_badge": "Исследования и Инновации",
+    "hero_title": "Научно-исследовательская виза (Non-RS) – Таиланд",
+    "hero_subtitle": "Вносите вклад в научный прогресс в Таиланде",
+    "definition_title": "Что такое научно-исследовательская виза?",
+    "definition_content": "Виза Non-Immigrant RS (Исследования и Наука) предназначена для экспертов и исследователей, проводящих научную работу с тайским институтом.",
+    "audience_title": "Подходящие профили",
+    "audience_tech_title": "Технические эксперты",
+    "audience_tech_text": "Инженеры и специалисты по трансферу технологий.",
+    "audience_academic_title": "Академические исследователи",
+    "audience_academic_text": "Учёные в командировке в университетах или национальных исследовательских центрах.",
+    "conditions_title": "Необходимые условия",
     "conditions_list": [
-      "Invitation from a Thai research organization (e.g., NRCT).",
-      "Scientific cooperation agreement between institutions.",
-      "Degree certificates and detailed CV.",
-      "Proof of research funding."
+      "Приглашение от тайской исследовательской организации (напр., NRCT).",
+      "Соглашение о научном сотрудничестве между учреждениями.",
+      "Дипломы и подробное резюме.",
+      "Подтверждение финансирования исследований."
     ],
-    "cta_btn": "Check sponsorship",
-    "audience_compatible": "Compatible Profiles",
+    "cta_btn": "Проверить спонсорство",
+    "audience_compatible": "Подходящие профили",
     "audience_compatible_list": [
-      "Technical Experts and Engineers.",
-      "Academic Researchers (Universities, National Centers).",
-      "Technology Transfer Specialists."
+      "Технические эксперты и инженеры.",
+      "Академические исследователи (университеты, национальные центры).",
+      "Специалисты по трансферу технологий."
     ],
-    "audience_not_compatible": "Not Compatible",
+    "audience_not_compatible": "Неподходящие профили",
     "audience_not_compatible_list": [
-      "Independent researchers without affiliation.",
-      "Language teachers (see ED Visa).",
-      "PhD students without a research contract."
+      "Независимые исследователи без аффилиации.",
+      "Преподаватели языков (см. ED-визу).",
+      "Аспиранты без исследовательского контракта."
     ],
-    "duration_title": "Research Duration",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "1-2 Years",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Renewable",
-    "work_title": "Research Activity",
-    "work_warning_title": "Scope of work",
-    "work_warning_text": "This visa authorizes research activities described in the contract. It does not allow working for a private company outside the research project.",
-    "renewal_title": "Renewal",
-    "renewal_text": "Renewable based on the progress of the research project and funding.",
-    "limitations_title": "Approval Required",
-    "limitations_risk_title": "NRCT Approval",
-    "limitations_risk_text": "The most difficult step is obtaining approval from the National Research Council. Without this, the RS visa cannot be issued.",
-    "cta_help_title": "Need help with NRCT?",
-    "cta_help_subtitle": "We guide researchers and institutes through the process.",
-    "cta_help_btn": "Contact an expert",
-    "cta_compare_title": "Tech Startup?",
-    "cta_compare_subtitle": "The SMART Visa might be more appropriate for innovation.",
-    "cta_compare_btn": "See SMART Visa"
+    "duration_title": "Срок исследований",
+    "duration_initial_label": "Срок действия",
+    "duration_initial_value": "1-2 года",
+    "duration_max_label": "Продление",
+    "duration_max_value": "Продлеваемая",
+    "work_title": "Исследовательская деятельность",
+    "work_warning_title": "Объём работы",
+    "work_warning_text": "Эта виза разрешает исследовательскую деятельность, указанную в контракте. Она не позволяет работать в частной компании вне исследовательского проекта.",
+    "renewal_title": "Продление",
+    "renewal_text": "Продлевается в зависимости от прогресса исследовательского проекта и финансирования.",
+    "limitations_title": "Требуется одобрение",
+    "limitations_risk_title": "Одобрение NRCT",
+    "limitations_risk_text": "Самый сложный этап — получение одобрения от Национального исследовательского совета. Без него RS-виза не может быть выдана.",
+    "cta_help_title": "Нужна помощь с NRCT?",
+    "cta_help_subtitle": "Мы сопровождаем исследователей и институты в процессе.",
+    "cta_help_btn": "Связаться с экспертом",
+    "cta_compare_title": "Технологический стартап?",
+    "cta_compare_subtitle": "SMART-виза может быть более подходящей для инноваций.",
+    "cta_compare_btn": "См. SMART-визу"
   },
   "retirement_page": {
     "meta": {
@@ -1471,237 +1497,237 @@ export const ru = {
     },
     "badge": "10-Year Residence",
     "hero_title": "Thailand LTR VISA",
-    "title": "LTR Visa: Long-Term Residence",
-    "subtitle": "The most advantageous tax and residency status for wealthy citizens.",
-    "cta": "Check my LTR eligibility",
-    "why_title": "Why choose the LTR?",
-    "benefit1_title": "10-Year Visa",
-    "benefit1_desc": "Renewable, with digital work permit included.",
-    "benefit2_title": "17% Tax",
-    "benefit2_desc": "Flat rate on local income for professionals.",
-    "benefit3_title": "VIP Service",
-    "benefit3_desc": "Priority airport access and 90-day reports waived.",
-    "cat1": "Wealthy Global Citizens",
-    "cat2": "Wealthy Pensioners",
-    "cat3": "Work-from-Thailand Professionals",
-    "cat4": "Highly-Skilled Experts",
-    "audit1": "Income Audit > $80k USD",
-    "audit2": "Investment Analysis",
-    "audit3": "Board of Investment Liaison",
-    "audit4": "Family Inclusion (4 persons)",
-    "pros_title": "Strengths",
-    "cons_title": "Weaknesses",
+    "title": "Виза LTR: Долгосрочный Резидент",
+    "subtitle": "Самый выгодный налоговый и резидентский статус для состоятельных граждан.",
+    "cta": "Проверить моё право на LTR",
+    "why_title": "Почему стоит выбрать LTR?",
+    "benefit1_title": "Виза на 10 лет",
+    "benefit1_desc": "Продлеваемая, с цифровым разрешением на работу.",
+    "benefit2_title": "Налог 17%",
+    "benefit2_desc": "Фиксированная ставка на местный доход для специалистов.",
+    "benefit3_title": "VIP Сервис",
+    "benefit3_desc": "Приоритетный проход в аэропорту и отсутствие отчетов каждые 90 дней.",
+    "cat1": "Состоятельные граждане мира",
+    "cat2": "Состоятельные пенсионеры",
+    "cat3": "Профессионалы, работающие из Таиланда",
+    "cat4": "Высококвалифицированные эксперты",
+    "audit1": "Аудит дохода > $80k USD",
+    "audit2": "Анализ инвестиций",
+    "audit3": "Связь с Советом по инвестициям (BOI)",
+    "audit4": "Включение семьи (4 человека)",
+    "pros_title": "Преимущества",
+    "cons_title": "Недостатки",
     "pros": [
-      "10-year validity (5+5) renewable",
-      "Digital work permit included",
-      "International Airport Fast Track",
-      "Tax exemption on foreign income",
-      "17% rate for professionals",
-      "4 Dependents included (Spouse/Children)"
+      "Срок действия 10 лет (5+5) с продлением",
+      "Цифровое разрешение на работу включено",
+      "VIP-проход (Fast Track) в международных аэропортах",
+      "Освобождение от налогов на зарубежный доход",
+      "Ставка 17% для специалистов",
+      "4 иждивенца включены (супруг/дети)"
     ],
     "cons": [
-      "Very strict financial criteria (>$80k wealth)",
-      "Long validation process (BOI)",
-      "Heavy administrative paperwork initially",
-      "Mandatory health insurance (>$50k)",
-      "Investment required for certain categories"
+      "Очень строгие финансовые критерии (состояние >$80k)",
+      "Долгий процесс утверждения (BOI)",
+      "Большой объем документов на начальном этапе",
+      "Обязательная медицинская страховка (>$50k)",
+      "Требуются инвестиции для определенных категорий"
     ],
-    "faq_title": "Frequently Asked Questions (FAQ)",
+    "faq_title": "Часто задаваемые вопросы (FAQ)",
     "faq": [
       {
-        "q": "What's the difference with Elite Visa?",
-        "a": "Elite Visa is paid and doesn't allow work. LTR is 'free' (reduced fees) if eligible and includes work permit."
+        "q": "В чем отличие от Elite Visa?",
+        "a": "Elite Visa платная и не позволяет работать. LTR «бесплатная» (сниженные пошлины) при соответствии критериям и включает разрешение на работу."
       },
       {
-        "q": "Can I work with an LTR visa?",
-        "a": "Yes, it's one of the few visas including a digital work permit without Thai employee quota."
+        "q": "Могу ли я работать по визе LTR?",
+        "a": "Да, это одна из немногих виз, включающих цифровое разрешение на работу без квот на тайских сотрудников."
       },
       {
-        "q": "Minimum income required?",
-        "a": "$80,000 USD/year (2 years) or investment mix. Retirees eligible at $40,000 under investment conditions."
+        "q": "Какой минимальный доход требуется?",
+        "a": "$80,000 USD в год (за 2 года) или комбинация с инвестициями. Пенсионеры могут претендовать при доходе $40,000 при определенных инвестициях."
       },
       {
-        "q": "Processing time?",
-        "a": "1 to 3 months for BOI approval, then a few weeks for issuance."
+        "q": "Срок оформления?",
+        "a": "От 1 до 3 месяцев на одобрение BOI, затем несколько недель на выдачу."
       }
     ],
     "high_value": {
-      "title": "Tax Optimization",
-      "highlight": "& Freedom",
-      "description": "The LTR is not just a visa, it's a privileged resident status that allows you to work legally and optimize your taxation with a flat rate of 17% for skilled professionals.",
-      "item1": "17% Flat Tax (Professionals)",
-      "item2": "Work Permit Included",
-      "item3": "Foreign Income Exemption",
-      "card_title": "Exclusive Benefits",
-      "card_item1": "VIP Airport Fast Track",
-      "card_item2": "No 90-Day Reporting",
-      "card_item3": "4 Dependents Included",
-      "card_item4": "Privileged Tax Residency"
+      "title": "Налоговая Оптимизация",
+      "highlight": "& Свобода",
+      "description": "LTR — это не просто виза, это привилегированный статус резидента, который позволяет легально работать и оптимизировать налоги с фиксированной ставкой 17% для квалифицированных специалистов.",
+      "item1": "Фиксированный налог 17% (для профи)",
+      "item2": "Разрешение на работу включено",
+      "item3": "Освобождение зарубежного дохода",
+      "card_title": "Эксклюзивные преимущества",
+      "card_item1": "VIP Fast Track в аэропорту",
+      "card_item2": "Без отчетов 90 дней",
+      "card_item3": "4 иждивенца включены",
+      "card_item4": "Привилегированное налоговое резидентство"
     }
   },
   "visa_run_page": {
     "meta": {
-      "title": "Thailand Visa Run: Risks, Costs and Alternatives 2026",
-      "description": "Why doing Visa Runs in Thailand is dangerous in 2026. Discover refusal risks, hidden costs and legal alternatives (DTV, Elite)."
+      "title": "Виза-ран в Таиланде: Риски, Расходы и Альтернативы 2026",
+      "description": "Почему делать виза-раны в Таиланде опасно в 2026 году. Узнайте о рисках отказа, скрытых расходах и легальных альтернативах (DTV, Elite)."
     },
     "hero": {
-      "title": "Stop doing",
-      "highlight": "Visa Runs.",
-      "subtitle": "Thai immigration has tightened the rules. Chaining visa exemptions and tourist entries is now a risky strategy.",
-      "cta": "See legal alternatives"
+      "title": "Хватит делать",
+      "highlight": "виза-раны.",
+      "subtitle": "Иммиграционная служба Таиланда ужесточила правила. Постоянные въезды по безвизу или турвизам теперь являются рискованной стратегией.",
+      "cta": "Посмотреть легальные альтернативы"
     },
     "dangers": {
-      "title": "Why it's over?",
-      "risk1_title": "Entry Denial",
-      "risk1_desc": "Immigration officers have discretionary power to deny entry, even with a valid visa, if they suspect illegal work.",
-      "risk2_title": "Interrogation & Stress",
-      "risk2_desc": "Ending up in the airport 'holding cell' waiting for the next flight home is not a way to live.",
-      "risk3_title": "Hidden Costs",
-      "risk3_desc": "Flights, last-minute hotels, taxis... A 'Visa Run' costs roughly 10,000 THB per month. That's 120,000 THB/year."
+      "title": "Почему это в прошлом?",
+      "risk1_title": "Отказ во въезде",
+      "risk1_desc": "Офицеры иммиграции имеют право отказать во въезде даже при наличии визы, если подозревают нелегальную работу.",
+      "risk2_title": "Допросы и стресс",
+      "risk2_desc": "Оказаться в 'комнате ожидания' аэропорта в ожидании обратного рейса — это не жизнь.",
+      "risk3_title": "Скрытые расходы",
+      "risk3_desc": "Перелеты, отели в последний момент, такси... Виза-ран обходится примерно в 10,000 THB в месяц. Это 120,000 THB в год."
     },
     "solutions": {
-      "title": "Real Solutions (2026)",
-      "dtv": "DTV Visa (5 Years)",
-      "dtv_desc": "Perfect for digital nomads. ~15,000 THB once.",
-      "elite": "Elite Visa (5-20 Years)",
-      "elite_desc": "Absolute peace of mind for those who can invest.",
-      "ltr": "LTR Visa (10 Years)",
-      "ltr_desc": "For wealthy and talented profiles."
+      "title": "Реальные решения (2026)",
+      "dtv": "Виза DTV (5 лет)",
+      "dtv_desc": "Идеально для цифровых кочевников. ~15,000 THB один раз.",
+      "elite": "Виза Elite (5-20 лет)",
+      "elite_desc": "Абсолютное спокойствие для тех, кто может инвестировать.",
+      "ltr": "Виза LTR (10 лет)",
+      "ltr_desc": "Для состоятельных и талантливых людей."
     }
   },
   "elite_page": {
     "badge": "Thailand Privilege",
-    "hero_title": "Thailand Elite Visa (Luxury & VIP)",
-    "hero_subtitle": "5 to 20 years visa. VIP Concierge. Airport Fast-Track.",
-    "hero_tagline": "The ultimate experience for living in Thailand.",
-    "why_title": "Why choose the Elite Visa?",
-    "duration_title": "5 to 20 Years of Serenity",
-    "duration_desc": "Choose the duration that suits you (5, 10, 15, or 20 years) and forget the hassle of visa extensions.",
-    "work_title": "Concierge Service",
-    "work_desc": "From your arrival at the airport with a personal assistant to opening your bank account, everything is facilitated for you.",
-    "finance_title": "One-time Investment",
-    "finance_desc": "No proof of funds / monthly income required. It is a one-time membership fee paid directly to the government.",
-    "who_title": "Who is it for?",
-    "who_wealthy": "Investors & Retirees",
-    "who_wealthy_desc": "Those who want to avoid the annual paperwork of retirement visas.",
-    "who_business": "Business Owners",
-    "who_business_desc": "Entrepreneurs wanting a stable base in Asia.",
-    "who_family": "Families",
-    "who_family_desc": "Flexible options to include spouse and children.",
-    "benefits_title": "Exclusive Privileges",
-    "benefits_desc": "In addition to the visa, access high-end services: Airport Limousine, Golf, Spa, Annual Health Check-up...",
-    "benefits_btn": "View Packages",
-    "cta_button": "Become a Member",
-    "highs_title": "Highlights",
+    "hero_title": "Элитная виза Таиланда (Luxury & VIP)",
+    "hero_subtitle": "Виза от 5 до 20 лет. VIP-консьерж. Fast-Track в аэропорту.",
+    "hero_tagline": "Ультимативный опыт проживания в Таиланде.",
+    "why_title": "Почему стоит выбрать Elite Visa?",
+    "duration_title": "От 5 до 20 лет спокойствия",
+    "duration_desc": "Выберите подходящий вам срок (5, 10, 15 или 20 лет) и забудьте о хлопотах с продлением визы.",
+    "work_title": "Консьерж-сервис",
+    "work_desc": "От встречи в аэропорту с персональным ассистентом до открытия банковского счета — всё организовано для вашего удобства.",
+    "finance_title": "Единоразовая инвестиция",
+    "finance_desc": "Никаких справок о доходах или выписок со счета. Это единоразовый членский взнос, выплачиваемый государству.",
+    "who_title": "Для кого эта виза?",
+    "who_wealthy": "Инвесторы и Пенсионеры",
+    "who_wealthy_desc": "Те, кто хочет избежать ежегодной бумажной волокиты с пенсионными визами.",
+    "who_business": "Владельцы бизнеса",
+    "who_business_desc": "Предприниматели, которым нужна стабильная база в Азии.",
+    "who_family": "Семьи",
+    "who_family_desc": "Гибкие варианты включения супругов и детей.",
+    "benefits_title": "Эксклюзивные привилегии",
+    "benefits_desc": "В дополнение к визе вы получаете доступ к услугам премиум-класса: лимузин, гольф, спа, ежегодный медосмотр...",
+    "benefits_btn": "Посмотреть пакеты",
+    "cta_button": "Стать участником",
+    "highs_title": "Особенности",
     "highs": [
-      "Ultra-long validity (up to 20 years)",
-      "VIP Airport Fast-Track Service (Arrival/Departure)",
-      "No age or monthly income requirements",
-      "24/7 Assistance for daily life"
+      "Сверхдлинный срок действия (до 20 лет)",
+      "VIP Fast-Track в аэропорту (прилет/вылет)",
+      "Нет требований по возрасту или доходу",
+      "Поддержка 24/7 по любым вопросам"
     ],
-    "lows_title": "Points of Attention",
+    "lows_title": "Важные нюансы",
     "lows": [
-      "High initial cost (starting ~900,000 THB)",
-      "Work permit not automatically included",
-      "Processing time 1 to 3 months",
-      "Payment to government required before issuance"
+      "Высокая начальная стоимость (от ~900,000 THB)",
+      "Разрешение на работу не включено автоматически",
+      "Срок оформления от 1 до 3 месяцев",
+      "Оплата государству требуется до выдачи визы"
     ],
     "faq_title": "Elite Visa - FAQ",
     "faqs": [
       {
-        "q": "Can I enter and leave Thailand multiple times with my Elite visa?",
-        "a": "Yes, it is a Multiple-Entry visa with unlimited entries for the duration of your membership (5 to 20 years)."
+        "q": "Могу ли я многократно въезжать и выезжать из Таиланда?",
+        "a": "Да, это многократная виза с неограниченным количеством въездов на весь срок членства (от 5 до 20 лет)."
       },
       {
-        "q": "Do I have to pay taxes in Thailand with this visa?",
-        "a": "The Elite Visa does not automatically make you a tax resident. You only pay tax if you stay more than 180 days in a calendar year AND bring foreign income into Thailand in the same year."
+        "q": "Нужно ли мне платить налоги в Таиланде с этой визой?",
+        "a": "Elite Visa не делает вас автоматически налоговым резидентом. Вы платите налоги только если живете более 180 дней в году И ввозите доход из-за границы в том же году."
       },
       {
-        "q": "Can my family accompany me?",
-        "a": "Yes, there are 'Family' packages that allow you to include immediate family members at a reduced rate."
+        "q": "Может ли моя семья поехать со мной?",
+        "a": "Да, существуют семейные пакеты, позволяющие включить близких родственников по сниженной ставке."
       },
       {
-        "q": "Can I work with an Elite Visa?",
-        "a": "Technically no, it is a tourist visa. However, you can be a shareholder of a company, or work legally if you obtain a Work Permit (which is possible with the Elite Visa combined with a job offer)."
+        "q": "Могу ли я работать по элитной визе?",
+        "a": "Технически нет, это туристическая виза. Однако вы можете быть акционером компании или работать легально, если получите Work Permit (что возможно при наличии предложения о работе)."
       }
     ],
-    "prestige_title": "Prestige <span className=\"text-amber-500\">Service</span>",
-    "prestige_desc": "SiamVisa Pro is your privileged agent for Thailand Privilege (Elite) membership.",
+    "prestige_title": "Сервис <span className=\"text-amber-500\">Премиум-класса</span>",
+    "prestige_desc": "SiamVisa Pro — ваш привилегированный агент по оформлению членства Thailand Privilege (Elite).",
     "prestige_list": [
-      "Program Choice (5/10/20 years)",
-      "Liaison with Elite Secretariat",
-      "Airport Formalities Management",
-      "Concierge Support"
+      "Выбор программы (5/10/20 лет)",
+      "Взаимодействие с секретариатом Elite",
+      "Управление аэропортовыми формальностями",
+      "Поддержка консьерж-службы"
     ],
     "quick_view": {
-      "btn": "⚡️ Quick View",
-      "title": "Elite Visa: Essentials",
-      "duration": "Validity",
-      "duration_val": "5 to 20 Years",
-      "cost": "Total Cost",
-      "cost_val": "900k (5y) to 5M THB (20y)",
-      "per_year": "Smoothed Cost / Year",
-      "per_year_val": "From 125k THB (~$3.6k) / year",
-      "runs": "Visa Runs",
-      "runs_val": "0 / Year (Zero)",
-      "entries": "Entries",
-      "entries_val": "Unlimited (VIP)",
-      "verdict": "VERDICT: Absolute comfort. You are buying total peace of mind for years."
+      "btn": "⚡️ Быстрый обзор",
+      "title": "Elite Visa: Главное",
+      "duration": "Срок действия",
+      "duration_val": "От 5 до 20 лет",
+      "cost": "Общая стоимость",
+      "cost_val": "от 900к (5 лет) до 5 млн THB (20 лет)",
+      "per_year": "Стоимость в год (в среднем)",
+      "per_year_val": "от 125к THB (~$3.6k) в год",
+      "runs": "Виза-раны",
+      "runs_val": "0 в год (Ноль)",
+      "entries": "Въезды",
+      "entries_val": "Без ограничений (VIP)",
+      "verdict": "ИТОГ: Абсолютный комфорт. Вы покупаете полное спокойствие на долгие годы."
     },
     "high_value": {
-      "title": "Prestige & Serenity",
-      "highlight": "Absolute",
-      "description": "No queues, no complicated 90-day reports, no hassle. Just the pleasure of living in Thailand with a VIP status guaranteed by the State.",
-      "item1": "VIP Airport Fast Track",
-      "item2": "5 to 20 Year Membership",
-      "item3": "24/7 Concierge",
-      "card_title": "Services Included",
-      "card_item1": "Limousine Service",
-      "card_item2": "Golf & Spa Privileges",
-      "card_item3": "Bank Account Opening",
-      "card_item4": "Annual Health Check-up"
+      "title": "Престиж и Спокойствие",
+      "highlight": "Абсолютное",
+      "description": "Никаких очередей, никаких сложных отчетов 90 дней, никаких хлопот. Только удовольствие от жизни в Таиланде с VIP-статусом, гарантированным государством.",
+      "item1": "VIP Fast Track в аэропорту",
+      "item2": "Членство на 5-20 лет",
+      "item3": "Консьерж 24/7",
+      "card_title": "Включенные услуги",
+      "card_item1": "Услуги лимузина",
+      "card_item2": "Привилегии в гольф-клубах и спа",
+      "card_item3": "Открытие банковского счета",
+      "card_item4": "Ежегодный медосмотр"
     },
     "meta": {
-      "title": "Thailand Elite Visa (Thailand Privilege) | Official Packages & Rates",
-      "description": "Get the Thailand Elite Visa for 5, 10 or 20 years. VIP Service, Airport Fast-Track and Concierge. Discover official rates."
+      "title": "Elite Visa Таиланда (Thailand Privilege) | Пакеты и цены",
+      "description": "Получите элитную визу в Таиланд на 5, 10 или 20 лет. VIP-сервис, Fast-Track в аэропорту и консьерж. Узнайте официальные цены."
     }
   },
   "apply_page": {
     "meta": {
-      "title": "Thailand Visa Application | SiamVisa Pro",
-      "description": "Start your Thailand visa application online. Simple and fast process with expert support."
+      "title": "Заявка на визу в Таиланд | SiamVisa Pro",
+      "description": "Начните оформление визы в Таиланд онлайн. Простой и быстрый процесс с экспертной поддержкой."
     },
-    "hero_title": "Visa Application",
-    "hero_subtitle": "Start your travel project in just a few clicks",
+    "hero_title": "Оформление визы",
+    "hero_subtitle": "Начните планировать поездку всего за несколько кликов",
     "steps": {
       "selection": {
-        "title": "Choose your Visa",
-        "subtitle": "Select the visa type that matches your project"
+        "title": "Выберите вашу визу",
+        "subtitle": "Выберите тип визы, подходящий для вашего проекта"
       },
       "personal": {
-        "title": "Personal Information",
-        "subtitle": "Tell us more about yourself",
-        "first_name": "First Name",
-        "last_name": "Last Name",
+        "title": "Личная информация",
+        "subtitle": "Расскажите нам немного о себе",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
         "email": "Email",
-        "phone": "Phone",
-        "nationality": "Nationality"
+        "phone": "Телефон",
+        "nationality": "Гражданство"
       },
       "trip": {
-        "title": "Trip Details",
-        "subtitle": "Information about your stay",
-        "entry_date": "Planned Entry Date",
-        "duration": "Stay Duration (days)"
+        "title": "Детали поездки",
+        "subtitle": "Информация о вашем пребывании",
+        "entry_date": "Планируемая дата въезда",
+        "duration": "Длительность (дней)"
       },
       "confirm": {
-        "title": "Confirmation",
-        "subtitle": "Verify your information before sending",
-        "btn_submit": "SUBMIT MY APPLICATION",
-        "success_title": "Application Received!",
-        "success_desc": "Your application has been sent to our experts. You will receive an email response within 24 hours."
+        "title": "Подтверждение",
+        "subtitle": "Проверьте данные перед отправкой",
+        "btn_submit": "ОТПРАВИТЬ ЗАЯВКУ",
+        "success_title": "Заявка получена!",
+        "success_desc": "Ваша заявка отправлена нашим экспертам. Вы получите ответ по электронной почте в течение 24 часов."
       }
     },
-    "next": "Next",
-    "prev": "Previous"
+    "next": "Далее",
+    "prev": "Назад"
   }
 };

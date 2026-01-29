@@ -38,9 +38,9 @@ export const zh = {
       "elite": "精英特权",
       "others": "其他签证"
     },
-    "visa_options": "Visa Options",
-    "eligibility_check": "Check Eligibility",
-    "search_placeholder": "Ask AI..."
+    "visa_options": "签证选项",
+    "eligibility_check": "资格自测",
+    "search_placeholder": "咨询 AI..."
   },
   "meta": {
     "title": "Siam Visa Pro | 泰国签证专家 - DTV, 旅游与退休",
@@ -49,8 +49,8 @@ export const zh = {
   "home_page": {
     "appointment_title": "让我们聊聊您的计划",
     "appointment_subtitle": "预约泰国签证专家的免费咨询。",
-    "member": "Client Area",
-    "eligibility": "Eligibility"
+    "member": "会员中心",
+    "eligibility": "申请资格"
   },
   "search_page": {
     "meta": {
@@ -211,9 +211,9 @@ export const zh = {
     "alternative": "替代",
     "commonRequirements": [
       "护照",
-      "Clean criminal record certificate",
-      "Proof of sufficient funds",
-      "Proof of local address / booking"
+      "无犯罪记录证明 (如要求)",
+      "存款/财务证明",
+      "当地住址证明 / 酒店预订"
     ],
     "processDescription": "5-15天。",
     "durations": {
@@ -226,9 +226,9 @@ export const zh = {
       "4 Years": "4年",
       "Variable": "视情况",
       "90 Days": "90天",
-      "6-12 Months": "6-12 Months",
-      "15 Years": "15 Years",
-      "20+ Years": "20+ Years"
+      "6-12 Months": "6-12 个月",
+      "15 Years": "15 年",
+      "20+ Years": "20+ 年"
     },
     "prices": {
       "High": "高",
@@ -422,7 +422,7 @@ export const zh = {
     "account_number": "Account Number:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "Thank you. Your order is pending funds arrival. Please email payment proof to contact@siamvisapro.com to activate service."
+    "transfer_success_desc": "谢谢。您的订单正在等待资金到账。请将付款凭证发送至 contact@siamvisapro.com 以激活服务。"
   },
   "login": {
     "title": "客户中心",
@@ -437,8 +437,8 @@ export const zh = {
     "submit": "登录",
     "no_account": "没有账号？",
     "start_request": "开始申请",
-    "google_loading": "Logging in...",
-    "facebook_loading": "Logging in..."
+    "google_loading": "登录中...",
+    "facebook_loading": "登录中..."
   },
   "contact_page": {
     "meta": {
@@ -532,8 +532,8 @@ export const zh = {
       "card_item4": "泰拳 / 烹饪学员"
     },
     "meta": {
-      "title": "Thailand DTV Visa 2026: Guide, Cost & Requirements | SiamVisaPro",
-      "description": "Complete guide to the Destination Thailand Visa (DTV). 5-year validity, legal work. 2026 conditions, cost, and expert portfolio assistance."
+      "title": "泰国 DTV 签证 2026: 指南, 费用与要求 | SiamVisaPro",
+      "description": "Destination Thailand Visa (DTV) 完整指南。5 年有效期，合法工作。2026 年申请条件、费用及专家作品集协助。"
     }
   },
   "tourist_page": {
@@ -743,6 +743,13 @@ export const zh = {
       "SMART S (初创)：科技初创企业创始人。",
       "SMART E (高管)：高级管理人员。"
     ],
+    "audience_not_compatible": "不适合的人群",
+    "audience_not_compatible_list": [
+      "非技术行业的远程工作者（请使用 DTV 签证）。",
+      "普通游客（请使用 TR 旅游签或免签入境）。",
+      "低技能劳动力或非 BOI 认证的公司。",
+      "无实际业务参与的被动投资者。"
+    ],
     "audience_industries": "目标产业",
     "audience_industries_list": [
       "数字与科技、自动化。",
@@ -768,6 +775,25 @@ export const zh = {
     "limitations_title": "限制与注意事项",
     "limitations_complex_title": "流程较为复杂",
     "limitations_complex_text": "申请签证前需经过 BOI 的技术审核，整个过程可能需要1-2个月。这不是像 DTV 那样的“快速”签证。",
+    "faq_title": "常见问题 - SMART 签证 2026",
+    "faqs": [
+      {
+        "q": "我需要传统的工作许可吗？",
+        "a": "不需要。SMART 签证取代并免除了传统的工作许可 (Work Permit)。签证验证后即可合法工作。"
+      },
+      {
+        "q": "我可以带家属吗？",
+        "a": "可以。您的合法配偶和子女可以获得 SMART 随行签证，享有在泰居住和工作（需符合条件）的权利。"
+      },
+      {
+        "q": "它比 LTR 签证更好吗？",
+        "a": "LTR 签证有效期为10年，标准不同。SMART 签证非常适合那些不符合 LTR 资产要求但在科技行业拥有高薪的人士。"
+      },
+      {
+        "q": "什么是年度报到？",
+        "a": "与其他签证每90天报到一次不同，SMART 签证持有者只需每年向移民局报到一次。"
+      }
+    ],
     "cta_eligible_title": "您的公司符合条件吗？",
     "cta_eligible_subtitle": "核实您是否可以获得 SMART 签证。",
     "cta_eligible_btn": "进行测评",
@@ -932,164 +958,164 @@ export const zh = {
   },
   "media_visa_page": {
     "meta": {
-      "title": "Thailand Media / Journalist Visa (Non-M) | Guide 2026",
-      "description": "Visa for journalists, press correspondents, and film crews in Thailand. Accreditation and required conditions."
+      "title": "泰国媒体/记者签证 (Non-M) | 2026指南",
+      "description": "泰国记者、新闻通讯员和摄制组签证。认证条件及要求。"
     },
-    "hero_badge": "Press & Journalism",
-    "hero_title": "Media Visa (Non-M) – Thailand",
-    "hero_subtitle": "Cover the news or produce content in Thailand",
-    "definition_title": "What is the Media Visa (Non-M)?",
-    "definition_content": "The Non-Immigrant M (Media) Visa is intended for certified media professionals (journalists, correspondents, film crews) wishing to work or report in Thailand.",
-    "audience_title": "Who is this visa for?",
-    "audience_compatible": "Compatible Profiles",
+    "hero_badge": "新闻与媒体",
+    "hero_title": "媒体签证 (Non-M) – 泰国",
+    "hero_subtitle": "在泰国进行新闻报道或内容制作",
+    "definition_title": "什么是媒体签证 (Non-M)？",
+    "definition_content": "非移民M（媒体）签证面向希望在泰国工作或进行报道的认证媒体专业人士（记者、通讯员、摄制组）。",
+    "audience_title": "此签证适用于？",
+    "audience_compatible": "适合的申请人",
     "audience_compatible_list": [
-      "Accredited Journalists.",
-      "Foreign Press Correspondents.",
-      "Film Crews with official permit."
+      "认证记者。",
+      "外国新闻通讯员。",
+      "持有官方许可的摄制组。"
     ],
-    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible": "不适合的申请人",
     "audience_not_compatible_list": [
-      "Independent YouTubers without permit.",
-      "Bloggers / Influencers (see DTV Visa).",
-      "Commercial productions without license."
+      "无许可的独立YouTuber。",
+      "博主/网红（请参阅DTV签证）。",
+      "无执照的商业制作。"
     ],
-    "duration_title": "Length of stay and validity",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "1 Year",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Renewable",
-    "conditions_title": "Accreditation & Conditions",
+    "duration_title": "停留期限与有效性",
+    "duration_initial_label": "有效期",
+    "duration_initial_value": "1年",
+    "duration_max_label": "延期",
+    "duration_max_value": "可续签",
+    "conditions_title": "认证与条件",
     "conditions_list": [
-      "Registration on the MFA online portal (M-Press).",
-      "Presentation of press card and letter from employer.",
-      "Background check by the Public Relations Department.",
-      "Thailand Film Office approval for filming."
+      "在外交部在线门户（M-Press）注册。",
+      "提供记者证和雇主信函。",
+      "公共关系部的背景调查。",
+      "拍摄需获得泰国电影局批准。"
     ],
-    "work_title": "Working & Filming",
-    "work_warning_title": "Filming Permit",
-    "work_warning_text": "A visa alone is often not enough. For any commercial production, a specific filming permit is required. Without it, you risk heavy fines and confiscation of equipment.",
-    "renewal_title": "Renewal",
-    "renewal_text": "The visa can be renewed annually as long as accreditation with the Ministry of Foreign Affairs (MFA) is maintained.",
-    "limitations_title": "Limitations",
-    "limitations_risk_title": "Strictly Controlled Activity",
-    "limitations_risk_text": "Thailand monitors foreign media very closely. Any politically sensitive reporting without proper accreditation can lead to deportation.",
-    "cta_help_title": "Need accreditation assistance?",
-    "cta_help_subtitle": "We help media professionals with MFA formalities.",
-    "cta_help_btn": "Request assistance",
-    "cta_compare_title": "Are you a Freelancer?",
-    "cta_compare_subtitle": "For digital content, the DTV is often simpler.",
-    "cta_compare_btn": "See DTV Visa"
+    "work_title": "工作与拍摄",
+    "work_warning_title": "拍摄许可",
+    "work_warning_text": "仅有签证通常不够。任何商业制作都需要特定的拍摄许可。没有许可，您可能面临高额罚款和设备没收的风险。",
+    "renewal_title": "续签",
+    "renewal_text": "只要保持外交部的认证，签证可每年续签。",
+    "limitations_title": "限制",
+    "limitations_risk_title": "严格管控的活动",
+    "limitations_risk_text": "泰国对外国媒体进行严密监控。任何未经适当认证的政治敏感报道都可能导致驱逐出境。",
+    "cta_help_title": "需要认证协助？",
+    "cta_help_subtitle": "我们帮助媒体专业人士处理外交部手续。",
+    "cta_help_btn": "请求协助",
+    "cta_compare_title": "您是自由职业者？",
+    "cta_compare_subtitle": "对于数字内容，DTV签证通常更简单。",
+    "cta_compare_btn": "查看DTV签证"
   },
   "official_visa_page": {
     "meta": {
-      "title": "Thailand Official Visa (Non-F) | Guide 2026",
-      "description": "Visa for officials, diplomats, and employees of international organizations on mission in Thailand."
+      "title": "泰国公务签证 (Non-F) | 2026指南",
+      "description": "在泰国执行任务的官员、外交官和国际组织雇员的签证。"
     },
-    "hero_badge": "Diplomacy & State",
-    "hero_title": "Official Visa (Non-F) – Thailand",
-    "hero_subtitle": "Diplomatic and official missions in Thailand",
-    "definition_title": "What is the Official Visa?",
-    "definition_content": "The Non-Immigrant F (Official) Visa is reserved for people on official mission (diplomats, IO officials).",
-    "audience_title": "Beneficiaries",
-    "audience_diplomatic_title": "Diplomatic Corps",
-    "audience_diplomatic_text": "Ambassies, Consulates, Military Attaches.",
-    "audience_oi_title": "IO / UN",
-    "audience_oi_text": "United Nations employees, UNICEF, etc., based in Bangkok.",
-    "conditions_title": "Specific requirements",
-    "conditions_text": "This visa imperatively requires a verbal note or an official mission order.",
-    "cta_btn": "Request assistance",
-    "audience_compatible": "Eligible Profiles",
+    "hero_badge": "外交与公务",
+    "hero_title": "公务签证 (Non-F) – 泰国",
+    "hero_subtitle": "在泰国的外交和公务任务",
+    "definition_title": "什么是公务签证？",
+    "definition_content": "非移民F（公务）签证专门为执行公务任务的人员（外交官、国际组织官员）而设。",
+    "audience_title": "受益者",
+    "audience_diplomatic_title": "外交人员",
+    "audience_diplomatic_text": "大使馆、领事馆、武官。",
+    "audience_oi_title": "国际组织 / 联合国",
+    "audience_oi_text": "驻曼谷的联合国雇员、联合国儿童基金会等。",
+    "conditions_title": "特定要求",
+    "conditions_text": "此签证必须要有外交照会或官方任务令。",
+    "cta_btn": "请求协助",
+    "audience_compatible": "符合条件的申请人",
     "audience_compatible_list": [
-      "Diplomats and Embassy staff.",
-      "United Nations officials (UN/UNICEF/ESCAP).",
-      "Military and officials on official mission."
+      "外交官和大使馆工作人员。",
+      "联合国官员 (UN/UNICEF/ESCAP)。",
+      "执行公务任务的军事人员和官员。"
     ],
-    "audience_not_compatible": "Not Eligible",
+    "audience_not_compatible": "不符合条件",
     "audience_not_compatible_list": [
-      "Private contractors working for governments.",
-      "External consultants without official status.",
-      "Family members not officially declared."
+      "为政府工作的私人承包商。",
+      "没有官方身份的外部顾问。",
+      "未正式申报的家庭成员。"
     ],
-    "duration_title": "Mission Duration",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "Mission",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Variable",
+    "duration_title": "任务期限",
+    "duration_initial_label": "有效期",
+    "duration_initial_value": "任务期间",
+    "duration_max_label": "延期",
+    "duration_max_value": "视情况而定",
     "conditions_list": [
-      "Note Verbale from the Ministry of Foreign Affairs.",
-      "Official Mission Order.",
-      "Diplomatic or Service Passport (recommended).",
-      "Invitation letter from the organization in Thailand."
+      "外交部的外交照会。",
+      "官方任务令。",
+      "外交护照或公务护照（推荐）。",
+      "泰国组织的邀请函。"
     ],
-    "work_title": "Diplomatic Status",
-    "work_warning_title": "Immunity and Rules",
-    "work_warning_text": "Depending on your rank and the agreement with Thailand, you may benefit from diplomatic immunity and tax exemptions. No private commercial activity is authorized.",
-    "renewal_title": "Extension",
-    "renewal_text": "Managed directly by the MFA Protocol Department or your organization.",
-    "limitations_title": "Limitations",
-    "limitations_risk_title": "End of Mission",
-    "limitations_risk_text": "At the end of your official mission, you must return your diplomatic card and change status or leave the country immediately.",
-    "cta_help_title": "Protocol Assistance?",
-    "cta_help_subtitle": "We assist international organizations with their procedures.",
-    "cta_help_btn": "Request assistance",
-    "cta_compare_title": "Commercial Mission?",
-    "cta_compare_subtitle": "If you do not have diplomatic status, use the Business Visa.",
-    "cta_compare_btn": "See Business Visa"
+    "work_title": "外交身份",
+    "work_warning_title": "豁免权与规则",
+    "work_warning_text": "根据您的级别和与泰国的协议，您可能享有外交豁免权和税收减免。不允许任何私人商业活动。",
+    "renewal_title": "延期",
+    "renewal_text": "由外交部礼宾司或您的组织直接管理。",
+    "limitations_title": "限制",
+    "limitations_risk_title": "任务结束",
+    "limitations_risk_text": "在您的公务任务结束时，您必须归还外交卡并更改身份或立即离开该国。",
+    "cta_help_title": "需要礼宾协助？",
+    "cta_help_subtitle": "我们协助国际组织办理相关手续。",
+    "cta_help_btn": "请求协助",
+    "cta_compare_title": "商务任务？",
+    "cta_compare_subtitle": "如果您没有外交身份，请使用商务签证。",
+    "cta_compare_btn": "查看商务签证"
   },
   "scientific_visa_page": {
     "meta": {
-      "title": "Thailand Scientific Research Visa (Non-RS) | Guide 2026",
-      "description": "Visa for researchers, experts, and scientists conducting research work in Thailand."
+      "title": "泰国科学研究签证 (Non-RS) | 2026指南",
+      "description": "在泰国进行研究工作的研究人员、专家和科学家的签证。"
     },
-    "hero_badge": "Research & Innovation",
-    "hero_title": "Scientific Research Visa (Non-RS) – Thailand",
-    "hero_subtitle": "Contribute to scientific advancement in Thailand",
-    "definition_title": "What is the Scientific Research Visa?",
-    "definition_content": "The Non-Immigrant RS (Research & Science) Visa is designed for experts and researchers conducting scientific work with a Thai institute.",
-    "audience_title": "Eligible Profiles",
-    "audience_tech_title": "Technical Experts",
-    "audience_tech_text": "Engineers and specialists in technology transfer.",
-    "audience_academic_title": "Academic Researchers",
-    "audience_academic_text": "Scientists on mission in universities or national research centers.",
-    "conditions_title": "Required Conditions",
+    "hero_badge": "研究与创新",
+    "hero_title": "科学研究签证 (Non-RS) – 泰国",
+    "hero_subtitle": "为泰国的科学进步做出贡献",
+    "definition_title": "什么是科学研究签证？",
+    "definition_content": "非移民RS（研究与科学）签证专为与泰国机构合作开展科学研究的专家和研究人员设计。",
+    "audience_title": "符合条件的申请人",
+    "audience_tech_title": "技术专家",
+    "audience_tech_text": "从事技术转让的工程师和专家。",
+    "audience_academic_title": "学术研究人员",
+    "audience_academic_text": "在大学或国家研究中心执行任务的科学家。",
+    "conditions_title": "所需条件",
     "conditions_list": [
-      "Invitation from a Thai research organization (e.g., NRCT).",
-      "Scientific cooperation agreement between institutions.",
-      "Degree certificates and detailed CV.",
-      "Proof of research funding."
+      "来自泰国研究机构（如NRCT）的邀请。",
+      "机构间的科学合作协议。",
+      "学位证书和详细简历。",
+      "研究资金证明。"
     ],
-    "cta_btn": "Check sponsorship",
-    "audience_compatible": "Compatible Profiles",
+    "cta_btn": "检查赞助资格",
+    "audience_compatible": "适合的申请人",
     "audience_compatible_list": [
-      "Technical Experts and Engineers.",
-      "Academic Researchers (Universities, National Centers).",
-      "Technology Transfer Specialists."
+      "技术专家和工程师。",
+      "学术研究人员（大学、国家中心）。",
+      "技术转让专家。"
     ],
-    "audience_not_compatible": "Not Compatible",
+    "audience_not_compatible": "不适合的申请人",
     "audience_not_compatible_list": [
-      "Independent researchers without affiliation.",
-      "Language teachers (see ED Visa).",
-      "PhD students without a research contract."
+      "没有隶属关系的独立研究人员。",
+      "语言教师（请参阅ED签证）。",
+      "没有研究合同的博士生。"
     ],
-    "duration_title": "Research Duration",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "1-2 Years",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Renewable",
-    "work_title": "Research Activity",
-    "work_warning_title": "Scope of work",
-    "work_warning_text": "This visa authorizes research activities described in the contract. It does not allow working for a private company outside the research project.",
-    "renewal_title": "Renewal",
-    "renewal_text": "Renewable based on the progress of the research project and funding.",
-    "limitations_title": "Approval Required",
-    "limitations_risk_title": "NRCT Approval",
-    "limitations_risk_text": "The most difficult step is obtaining approval from the National Research Council. Without this, the RS visa cannot be issued.",
-    "cta_help_title": "Need help with NRCT?",
-    "cta_help_subtitle": "We guide researchers and institutes through the process.",
-    "cta_help_btn": "Contact an expert",
-    "cta_compare_title": "Tech Startup?",
-    "cta_compare_subtitle": "The SMART Visa might be more appropriate for innovation.",
-    "cta_compare_btn": "See SMART Visa"
+    "duration_title": "研究期限",
+    "duration_initial_label": "有效期",
+    "duration_initial_value": "1-2年",
+    "duration_max_label": "延期",
+    "duration_max_value": "可续签",
+    "work_title": "研究活动",
+    "work_warning_title": "工作范围",
+    "work_warning_text": "此签证授权合同中描述的研究活动。不允许在研究项目以外为私人公司工作。",
+    "renewal_title": "续签",
+    "renewal_text": "根据研究项目的进展和资金情况可续签。",
+    "limitations_title": "需要批准",
+    "limitations_risk_title": "NRCT批准",
+    "limitations_risk_text": "最困难的步骤是获得国家研究理事会的批准。没有这个批准，RS签证无法签发。",
+    "cta_help_title": "需要NRCT方面的帮助？",
+    "cta_help_subtitle": "我们指导研究人员和机构完成整个流程。",
+    "cta_help_btn": "联系专家",
+    "cta_compare_title": "科技初创公司？",
+    "cta_compare_subtitle": "SMART签证可能更适合创新领域。",
+    "cta_compare_btn": "查看SMART签证"
   },
   "retirement_page": {
     "meta": {
@@ -1471,237 +1497,237 @@ export const zh = {
     },
     "badge": "10-Year Residence",
     "hero_title": "Thailand LTR VISA",
-    "title": "LTR Visa: Long-Term Residence",
-    "subtitle": "The most advantageous tax and residency status for wealthy citizens.",
-    "cta": "Check my LTR eligibility",
-    "why_title": "Why choose the LTR?",
-    "benefit1_title": "10-Year Visa",
-    "benefit1_desc": "Renewable, with digital work permit included.",
-    "benefit2_title": "17% Tax",
-    "benefit2_desc": "Flat rate on local income for professionals.",
-    "benefit3_title": "VIP Service",
-    "benefit3_desc": "Priority airport access and 90-day reports waived.",
-    "cat1": "Wealthy Global Citizens",
-    "cat2": "Wealthy Pensioners",
-    "cat3": "Work-from-Thailand Professionals",
-    "cat4": "Highly-Skilled Experts",
-    "audit1": "Income Audit > $80k USD",
-    "audit2": "Investment Analysis",
-    "audit3": "Board of Investment Liaison",
-    "audit4": "Family Inclusion (4 persons)",
-    "pros_title": "Strengths",
-    "cons_title": "Weaknesses",
+    "title": "LTR 签证：长期居留",
+    "subtitle": "针对富裕公民的最有利的税务和居留身份。",
+    "cta": "检查我的 LTR 申请资格",
+    "why_title": "为什么选择 LTR？",
+    "benefit1_title": "10 年签证",
+    "benefit1_desc": "可续签，包含数字工作许可。",
+    "benefit2_title": "17% 税率",
+    "benefit2_desc": "专业人士当地收入的固定税率。",
+    "benefit3_title": "VIP 服务",
+    "benefit3_desc": "机场优先通道，且无需进行 90 天报到。",
+    "cat1": "富裕全球公民",
+    "cat2": "富裕退休人员",
+    "cat3": "从泰国远程工作的专业人士",
+    "cat4": "高技能专家",
+    "audit1": "收入审核 > 8万美元",
+    "audit2": "投资分析",
+    "audit3": "投资委 (BOI) 联络",
+    "audit4": "包含家属（4 人）",
+    "pros_title": "核心优势",
+    "cons_title": "申请门槛",
     "pros": [
-      "10-year validity (5+5) renewable",
-      "Digital work permit included",
-      "International Airport Fast Track",
-      "Tax exemption on foreign income",
-      "17% rate for professionals",
-      "4 Dependents included (Spouse/Children)"
+      "10 年有效期 (5+5) 可续签",
+      "包含数字工作许可",
+      "国际机场快速通关服务",
+      "海外收入免税",
+      "专业人士固定 17% 税率",
+      "包含 4 名家属（配偶/子女）"
     ],
     "cons": [
-      "Very strict financial criteria (>$80k wealth)",
-      "Long validation process (BOI)",
-      "Heavy administrative paperwork initially",
-      "Mandatory health insurance (>$50k)",
-      "Investment required for certain categories"
+      "非常严格的财务标准（资产 > 8万美元）",
+      "核核过程较长 (BOI)",
+      "初始阶段涉及大量行政文件",
+      "强制性医疗保险（保额 > 5万美元）",
+      "某些类别需要进行投资"
     ],
-    "faq_title": "Frequently Asked Questions (FAQ)",
+    "faq_title": "常见问题 (FAQ)",
     "faq": [
       {
-        "q": "What's the difference with Elite Visa?",
-        "a": "Elite Visa is paid and doesn't allow work. LTR is 'free' (reduced fees) if eligible and includes work permit."
+        "q": "与精英签证有何区别？",
+        "a": "精英签证是付费会员制且不允许工作。LTR 在符合条件时“免费”（仅需支付低额规费）且包含工作许可。"
       },
       {
-        "q": "Can I work with an LTR visa?",
-        "a": "Yes, it's one of the few visas including a digital work permit without Thai employee quota."
+        "q": "持有 LTR 签证可以工作吗？",
+        "a": "可以。它是少数包含数字工作许可且无需泰籍员工配额的签证之一。"
       },
       {
-        "q": "Minimum income required?",
-        "a": "$80,000 USD/year (2 years) or investment mix. Retirees eligible at $40,000 under investment conditions."
+        "q": "要求的最低收入是多少？",
+        "a": "年收入 8 万美元（最近 2 年）或投资组合。退休人员在满足投资条件时，年收入要求为 4 万美元。"
       },
       {
-        "q": "Processing time?",
-        "a": "1 to 3 months for BOI approval, then a few weeks for issuance."
+        "q": "处理时间是多久？",
+        "a": "BOI 审批需 1 到 3 个月，之后几周内签发。"
       }
     ],
     "high_value": {
-      "title": "Tax Optimization",
-      "highlight": "& Freedom",
-      "description": "The LTR is not just a visa, it's a privileged resident status that allows you to work legally and optimize your taxation with a flat rate of 17% for skilled professionals.",
-      "item1": "17% Flat Tax (Professionals)",
-      "item2": "Work Permit Included",
-      "item3": "Foreign Income Exemption",
-      "card_title": "Exclusive Benefits",
-      "card_item1": "VIP Airport Fast Track",
-      "card_item2": "No 90-Day Reporting",
-      "card_item3": "4 Dependents Included",
-      "card_item4": "Privileged Tax Residency"
+      "title": "税务优化",
+      "highlight": "& 自由",
+      "description": "LTR 不仅仅是一种签证，它是一种特许居民身份，允许您合法工作，并通过对高技能专业人士实行 17% 的固定税率来优化您的税务。",
+      "item1": "17% 固定税率（专业人士）",
+      "item2": "包含工作许可",
+      "item3": "海外收入免税",
+      "card_title": "专属特权",
+      "card_item1": "机场 VIP 快速通道",
+      "card_item2": "免除 90 天报到",
+      "card_item3": "包含 4 名家属",
+      "card_item4": "特许税务居民身份"
     }
   },
   "visa_run_page": {
     "meta": {
-      "title": "Thailand Visa Run: Risks, Costs and Alternatives 2026",
-      "description": "Why doing Visa Runs in Thailand is dangerous in 2026. Discover refusal risks, hidden costs and legal alternatives (DTV, Elite)."
+      "title": "泰国 Visa Run：风险、成本与 2026 年替代方案",
+      "description": "为什么在 2026 年频繁出入境（Visa Run）是危险的。了解拒签风险、隐藏成本和法律替代方案（DTV、精英签证）。"
     },
     "hero": {
-      "title": "Stop doing",
-      "highlight": "Visa Runs.",
-      "subtitle": "Thai immigration has tightened the rules. Chaining visa exemptions and tourist entries is now a risky strategy.",
-      "cta": "See legal alternatives"
+      "title": "停止频繁的",
+      "highlight": "Visa Runs。",
+      "subtitle": "泰国移民局已收紧规则。连续使用免签和旅游入境现在是一种高风险策略。",
+      "cta": "查看合法替代方案"
     },
     "dangers": {
-      "title": "Why it's over?",
-      "risk1_title": "Entry Denial",
-      "risk1_desc": "Immigration officers have discretionary power to deny entry, even with a valid visa, if they suspect illegal work.",
-      "risk2_title": "Interrogation & Stress",
-      "risk2_desc": "Ending up in the airport 'holding cell' waiting for the next flight home is not a way to live.",
-      "risk3_title": "Hidden Costs",
-      "risk3_desc": "Flights, last-minute hotels, taxis... A 'Visa Run' costs roughly 10,000 THB per month. That's 120,000 THB/year."
+      "title": "为什么这种方式已行不通？",
+      "risk1_title": "拒绝入境",
+      "risk1_desc": "如果由于怀疑非法工作，移民官员有权酌情拒绝入境，即使持有有效签证。",
+      "risk2_title": "盘问与压力",
+      "risk2_desc": "最后在机场“拘留室”等待下一班回国航班，这不是你想要的生活方式。",
+      "risk3_title": "隐藏成本",
+      "risk3_desc": "机票、临时酒店、出租车……一次“Visa Run”每月大约花费 1 万泰铢。一年就是 12 万泰铢。"
     },
     "solutions": {
-      "title": "Real Solutions (2026)",
-      "dtv": "DTV Visa (5 Years)",
-      "dtv_desc": "Perfect for digital nomads. ~15,000 THB once.",
-      "elite": "Elite Visa (5-20 Years)",
-      "elite_desc": "Absolute peace of mind for those who can invest.",
-      "ltr": "LTR Visa (10 Years)",
-      "ltr_desc": "For wealthy and talented profiles."
+      "title": "真正的解决方案 (2026)",
+      "dtv": "DTV 签证 (5 年)",
+      "dtv_desc": "数字游民的完美选择。约 1.5 万泰铢，一次性解决。",
+      "elite": "精英签证 (5-20 年)",
+      "elite_desc": "适合有投资能力人群的绝对省心之选。",
+      "ltr": "LTR 签证 (10 年)",
+      "ltr_desc": "适合富裕及人才群体。"
     }
   },
   "elite_page": {
     "badge": "Thailand Privilege",
-    "hero_title": "Thailand Elite Visa (Luxury & VIP)",
-    "hero_subtitle": "5 to 20 years visa. VIP Concierge. Airport Fast-Track.",
-    "hero_tagline": "The ultimate experience for living in Thailand.",
-    "why_title": "Why choose the Elite Visa?",
-    "duration_title": "5 to 20 Years of Serenity",
-    "duration_desc": "Choose the duration that suits you (5, 10, 15, or 20 years) and forget the hassle of visa extensions.",
-    "work_title": "Concierge Service",
-    "work_desc": "From your arrival at the airport with a personal assistant to opening your bank account, everything is facilitated for you.",
-    "finance_title": "One-time Investment",
-    "finance_desc": "No proof of funds / monthly income required. It is a one-time membership fee paid directly to the government.",
-    "who_title": "Who is it for?",
-    "who_wealthy": "Investors & Retirees",
-    "who_wealthy_desc": "Those who want to avoid the annual paperwork of retirement visas.",
-    "who_business": "Business Owners",
-    "who_business_desc": "Entrepreneurs wanting a stable base in Asia.",
-    "who_family": "Families",
-    "who_family_desc": "Flexible options to include spouse and children.",
-    "benefits_title": "Exclusive Privileges",
-    "benefits_desc": "In addition to the visa, access high-end services: Airport Limousine, Golf, Spa, Annual Health Check-up...",
-    "benefits_btn": "View Packages",
-    "cta_button": "Become a Member",
-    "highs_title": "Highlights",
+    "hero_title": "泰国精英签证 (豪华 & VIP)",
+    "hero_subtitle": "5 至 20 年签证。VIP 礼宾服务。机场快速通关。",
+    "hero_tagline": "在泰生活的极尽体验。",
+    "why_title": "为什么选择精英签证？",
+    "duration_title": "5 至 20 年的安宁",
+    "duration_desc": "选择适合您的年限（5、10、15 或 20 年），忘掉签证延期的烦恼。",
+    "work_title": "礼宾服务",
+    "work_desc": "从抵达机场时由私人助理迎接，到协助开设银行账户，一切都为您安排妥当。",
+    "finance_title": "一次性投资",
+    "finance_desc": "无需资金证明或月收入证明。这是一次性向政府支付的会员费。",
+    "who_title": "该签证适合谁？",
+    "who_wealthy": "投资者与退休人员",
+    "who_wealthy_desc": "希望避免退休签证繁琐年度手续的人士。",
+    "who_business": "企业主",
+    "who_business_desc": "希望在亚洲建立稳定基地的企业家。",
+    "who_family": "家庭",
+    "who_family_desc": "灵活的方案，可包含配偶和子女。",
+    "benefits_title": "专属特权",
+    "benefits_desc": "除了签证，还可享受高端服务：机场豪华轿车接送、高尔夫、水疗、年度体检……",
+    "benefits_btn": "查看服务套餐",
+    "cta_button": "成为会员",
+    "highs_title": "核心亮点",
     "highs": [
-      "Ultra-long validity (up to 20 years)",
-      "VIP Airport Fast-Track Service (Arrival/Departure)",
-      "No age or monthly income requirements",
-      "24/7 Assistance for daily life"
+      "超长有效期（最高 20 年）",
+      "机场 VIP 快速通关服务（抵达/出发）",
+      "无年龄或月收入要求",
+      "24/7 全天候生活协助"
     ],
-    "lows_title": "Points of Attention",
+    "lows_title": "注意事项",
     "lows": [
-      "High initial cost (starting ~900,000 THB)",
-      "Work permit not automatically included",
-      "Processing time 1 to 3 months",
-      "Payment to government required before issuance"
+      "初始成本较高（约 90 万泰铢起）",
+      "不自动包含工作许可",
+      "处理时间为 1 到 3 个月",
+      "签发前需向政府支付费用"
     ],
-    "faq_title": "Elite Visa - FAQ",
+    "faq_title": "精英签证 - FAQ",
     "faqs": [
       {
-        "q": "Can I enter and leave Thailand multiple times with my Elite visa?",
-        "a": "Yes, it is a Multiple-Entry visa with unlimited entries for the duration of your membership (5 to 20 years)."
+        "q": "持有精英签证可以多次进出泰国吗？",
+        "a": "可以。这是一种多次入境签证，在会员有效期内（5 至 20 年）可无限次入境。"
       },
       {
-        "q": "Do I have to pay taxes in Thailand with this visa?",
-        "a": "The Elite Visa does not automatically make you a tax resident. You only pay tax if you stay more than 180 days in a calendar year AND bring foreign income into Thailand in the same year."
+        "q": "持有该签证需要在泰国缴税吗？",
+        "a": "精英签证不会自动让您成为税务居民。只有当您在一个日历年内停留超过 180 天，并且在同一年将海外收入带入泰国时，才需要缴税。"
       },
       {
-        "q": "Can my family accompany me?",
-        "a": "Yes, there are 'Family' packages that allow you to include immediate family members at a reduced rate."
+        "q": "我的家人可以随行吗？",
+        "a": "可以。有专门的“家庭”套餐，允许您以优惠价格包含直系亲属。"
       },
       {
-        "q": "Can I work with an Elite Visa?",
-        "a": "Technically no, it is a tourist visa. However, you can be a shareholder of a company, or work legally if you obtain a Work Permit (which is possible with the Elite Visa combined with a job offer)."
+        "q": "持有精英签证可以工作吗？",
+        "a": "从技术上讲，这是一种旅游签证，不允许直接工作。但是，您可以担任公司股东；或者如果您获得了工作邀请并办理了工作许可 (Work Permit)，则可以合法工作。"
       }
     ],
-    "prestige_title": "Prestige <span className=\"text-amber-500\">Service</span>",
-    "prestige_desc": "SiamVisa Pro is your privileged agent for Thailand Privilege (Elite) membership.",
+    "prestige_title": "尊享 <span className=\"text-amber-500\">服务</span>",
+    "prestige_desc": "SiamVisa Pro 是您申请泰国精英会员 (Thailand Privilege) 的首选代理。",
     "prestige_list": [
-      "Program Choice (5/10/20 years)",
-      "Liaison with Elite Secretariat",
-      "Airport Formalities Management",
-      "Concierge Support"
+      "项目选择 (5/10/20 年)",
+      "与精英签证秘书处联络",
+      "机场手续管理",
+      "礼宾支持"
     ],
     "quick_view": {
-      "btn": "⚡️ Quick View",
-      "title": "Elite Visa: Essentials",
-      "duration": "Validity",
-      "duration_val": "5 to 20 Years",
-      "cost": "Total Cost",
-      "cost_val": "900k (5y) to 5M THB (20y)",
-      "per_year": "Smoothed Cost / Year",
-      "per_year_val": "From 125k THB (~$3.6k) / year",
-      "runs": "Visa Runs",
-      "runs_val": "0 / Year (Zero)",
-      "entries": "Entries",
-      "entries_val": "Unlimited (VIP)",
-      "verdict": "VERDICT: Absolute comfort. You are buying total peace of mind for years."
+      "btn": "⚡️ 快速预览",
+      "title": "精英签证：核心要点",
+      "duration": "有效期",
+      "duration_val": "5 至 20 年",
+      "cost": "总计费用",
+      "cost_val": "90 万 (5年) 至 500 万泰铢 (20年)",
+      "per_year": "每年平摊成本",
+      "per_year_val": "约 12.5 万泰铢 (~3,600 美元) 起 / 年",
+      "runs": "离境延签 (Visa Run)",
+      "runs_val": "0 次 / 年 (无需)",
+      "entries": "入境次数",
+      "entries_val": "无限次 (VIP)",
+      "verdict": "评价：极致舒适。您买下的是未来多年的绝对安宁。"
     },
     "high_value": {
-      "title": "Prestige & Serenity",
-      "highlight": "Absolute",
-      "description": "No queues, no complicated 90-day reports, no hassle. Just the pleasure of living in Thailand with a VIP status guaranteed by the State.",
-      "item1": "VIP Airport Fast Track",
-      "item2": "5 to 20 Year Membership",
-      "item3": "24/7 Concierge",
-      "card_title": "Services Included",
-      "card_item1": "Limousine Service",
-      "card_item2": "Golf & Spa Privileges",
-      "card_item3": "Bank Account Opening",
-      "card_item4": "Annual Health Check-up"
+      "title": "尊贵与安宁",
+      "highlight": "极致",
+      "description": "无需排队，无需繁琐的 90 天报到，没有任何麻烦。只需享受国家保障的 VIP 身份，在泰国愉快生活。",
+      "item1": "机场 VIP 快速通道",
+      "item2": "5 至 20 年会员资格",
+      "item3": "24/7 礼宾服务",
+      "card_title": "包含服务",
+      "card_item1": "豪华轿车接送",
+      "card_item2": "高尔夫与水疗特权",
+      "card_item3": "银行开户协助",
+      "card_item4": "年度健康体检"
     },
     "meta": {
-      "title": "Thailand Elite Visa (Thailand Privilege) | Official Packages & Rates",
-      "description": "Get the Thailand Elite Visa for 5, 10 or 20 years. VIP Service, Airport Fast-Track and Concierge. Discover official rates."
+      "title": "泰国精英签证 (Thailand Privilege) | 官方套餐与价格",
+      "description": "获得 5、10 或 20 年的泰国精英签证。享受 VIP 服务、机场快速通关和礼宾服务。查看官方价格。"
     }
   },
   "apply_page": {
     "meta": {
-      "title": "Thailand Visa Application | SiamVisa Pro",
-      "description": "Start your Thailand visa application online. Simple and fast process with expert support."
+      "title": "泰国签证申请 | SiamVisa Pro",
+      "description": "在线开始您的泰国签证申请。在专家支持下体验简单快捷流程。"
     },
-    "hero_title": "Visa Application",
-    "hero_subtitle": "Start your travel project in just a few clicks",
+    "hero_title": "签证申请",
+    "hero_subtitle": "只需点击几下即可开启您的旅程",
     "steps": {
       "selection": {
-        "title": "Choose your Visa",
-        "subtitle": "Select the visa type that matches your project"
+        "title": "选择您的签证",
+        "subtitle": "选择最符合您计划的签证类型"
       },
       "personal": {
-        "title": "Personal Information",
-        "subtitle": "Tell us more about yourself",
-        "first_name": "First Name",
-        "last_name": "Last Name",
-        "email": "Email",
-        "phone": "Phone",
-        "nationality": "Nationality"
+        "title": "个人信息",
+        "subtitle": "让我们更多地了解您",
+        "first_name": "名字",
+        "last_name": "姓氏",
+        "email": "电子邮箱",
+        "phone": "电话号码",
+        "nationality": "国籍"
       },
       "trip": {
-        "title": "Trip Details",
-        "subtitle": "Information about your stay",
-        "entry_date": "Planned Entry Date",
-        "duration": "Stay Duration (days)"
+        "title": "旅程详情",
+        "subtitle": "关于您在泰停留的信息",
+        "entry_date": "计划入境日期",
+        "duration": "停留时长（天）"
       },
       "confirm": {
-        "title": "Confirmation",
-        "subtitle": "Verify your information before sending",
-        "btn_submit": "SUBMIT MY APPLICATION",
-        "success_title": "Application Received!",
-        "success_desc": "Your application has been sent to our experts. You will receive an email response within 24 hours."
+        "title": "确认信息",
+        "subtitle": "发送前请核实您的信息",
+        "btn_submit": "提交我的申请",
+        "success_title": "申请已收到！",
+        "success_desc": "您的申请已发送给我们的专家。您将在 24 小时内收到电子邮件回复。"
       }
     },
-    "next": "Next",
-    "prev": "Previous"
+    "next": "下一步",
+    "prev": "上一步"
   }
 };
