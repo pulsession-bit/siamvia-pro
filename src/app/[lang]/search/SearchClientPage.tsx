@@ -61,10 +61,6 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
                 ctaLabel={localT.ai_cta}
                 onCtaClick={() => document.getElementById('ai-section')?.scrollIntoView({ behavior: 'smooth' })}
             >
-                <VisaComparatorTable
-                    tableI18n={localT.comparator_guide.table}
-                    compact={true}
-                />
                 <div id="ai-section">
                     <SearchAI
                         onSearch={handleAiSearch}
@@ -77,6 +73,10 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
                         compact={true}
                     />
                 </div>
+                <VisaComparatorTable
+                    tableI18n={localT.comparator_guide.table}
+                    compact={true}
+                />
             </SearchHero>
 
             {/* 2. Exploration Visuelle (Grid) */}
