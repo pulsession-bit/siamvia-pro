@@ -1155,38 +1155,45 @@ export const zh = {
       "title": "泰国旅游签证 (TR) | 延期与指南 2026",
       "description": "探索泰国无压力的经典签证。抵达时60天，可延期30天。所需文件及费用。"
     },
-    "hero_title": "旅游签证 (TR)",
-    "hero_subtitle": "探索泰国长达 90 天的经典选择。",
-    "rules_title": "游戏规则",
-    "duration_title": "停留时间",
-    "duration_desc": "入境时获得 60 天停留期，可在当地移民局续签 30 天。",
-    "validity_title": "签证有效期",
-    "validity_desc": "签证自签发之日起 3 个月内有效，单次入境。",
-    "docs_title": "所需文件",
-    "doc1": "有效期至少 6 个月的护照",
-    "doc2": "符合标准的证件照",
-    "doc3": "往返机票 (离境时间 < 90 天)",
-    "doc4": "前几天的酒店预订证明",
-    "doc5": "银行流水 (余额 > 20,000 泰铢)",
-    "warning_title": "注意",
-    "warning_desc": "旅游签证不允许您在泰国工作，包括远程工作。如需远程工作，请选择 DTV 签证。",
-    "cta_title": "需要旅游签证方面的帮助吗？",
-    "cta_desc": "我们将检查您的材料并管理您的电子签证申请，以最大限度提高获签率。",
-    "cta_btn": "订购此签证",
-    "highs_title": "核心优势",
-    "highs": [
-      "流程简单快捷",
-      "领事费用经济",
-      "不需要高额储蓄",
-      "适合探索性旅游"
+    "hero_badge": "旅游",
+    "hero_title": "旅游签证 (TR) – 泰国",
+    "hero_subtitle": "探索泰国长达 90 天",
+    "definition_title": "什么是旅游签证 (TR)？",
+    "definition_content": "旅游签证 (TR) 是针对希望以旅游为目的在泰国停留超过 60 天免签期（总计可达 90 天）的游客的标准选择。",
+    "audience_title": "适用人群",
+    "audience_compatible": "符合条件",
+    "audience_compatible_list": [
+      "计划长假的游客（最长3个月）",
+      "探访朋友或家人",
+      "考察旅行者"
     ],
-    "lows_title": "限制条件",
-    "lows": [
-      "停留时间短（最多90天）",
-      "单次入境（Single Entry）",
-      "严禁工作（包括远程工作）",
-      "需要提供离境机票"
+    "audience_not_compatible": "不符合条件",
+    "audience_not_compatible_list": [
+      "工作的数字游民（见 DTV）",
+      "当地求职者",
+      "希望长期定居者"
     ],
+    "duration_title": "时长与有效期",
+    "duration_initial_label": "初次入境",
+    "duration_initial_value": "60 天",
+    "duration_max_label": "延期",
+    "duration_max_value": "+ 30 天",
+    "conditions_title": "文件与要求",
+    "conditions_list": [
+      "有效期至少6个月的护照",
+      "符合标准的证件照",
+      "出境机票（90天内）",
+      "酒店预订证明",
+      "银行流水（余额 > 20,000 泰铢）"
+    ],
+    "work_title": "工作限制",
+    "work_warning_title": "严禁工作",
+    "work_warning_text": "旅游签证不允许在泰国工作，即使是远程工作也不行。如需远程工作，必须申请 DTV 签证。",
+    "renewal_title": "延期",
+    "renewal_text": "此签证可在泰国任何移民局办理一次延期，时长30天，费用为1,900泰铢。",
+    "limitations_title": "限制",
+    "limitations_risk_title": "单次入境",
+    "limitations_risk_text": "这是单次入境签证。如果您离开泰国，签证即作废（除非申请回头签 Re-Entry Permit，但这不会延长总停留时间）。",
     "faq_title": "常见问题 - 旅游签证",
     "faqs": [
       {
@@ -1206,9 +1213,12 @@ export const zh = {
         "a": "自行申请常因材料不准确而面临拒签风险。Siam Visa Pro 将人类专家的经验与 AI 的力量相结合：我们的 AI 工具实时分析您的资格，识别申请中的弱点，而我们的专家则优化您的作品集。您将受益于技术与人工的双重检查，确保获得最高的获签率。"
       }
     ],
-    "hero_description": "无需繁琐手续，探索泰国的经典签证。",
-    "hero_tagline": "可在当地办理延期，延长您的停留时间。",
-    "pitfalls_title": "重要注意事项"
+    "cta_help_title": "需要申请协助吗？",
+    "cta_help_subtitle": "我们为您管理电子签证流程。",
+    "cta_help_btn": "订购旅游签证",
+    "cta_compare_title": "短期停留？",
+    "cta_compare_subtitle": "少于60天可能不需要签证。",
+    "cta_compare_btn": "查看免签政策"
   },
   "retirement_visa_page": {
     "hero_title": "退休签证 (Non-O / O-A)",

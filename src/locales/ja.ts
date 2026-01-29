@@ -1155,38 +1155,45 @@ export const ja = {
       "title": "タイ観光ビザ (TR) | 延長とガイド 2026",
       "description": "ストレスなくタイを発見するためのクラシックなビザ。到着時に60日間、30日間の延長が可能。必要書類と費用。"
     },
-    "hero_title": "観光ビザ (TR)",
-    "hero_subtitle": "タイを最大90日間探索するための定番オプション。",
-    "rules_title": "基本ルール",
-    "duration_title": "滞在期間",
-    "duration_desc": "入国時に60日間。現地イミグレーションにてさらに30日間の延長が可能です。",
-    "validity_title": "ビザの有効期限",
-    "validity_desc": "ビザは発行日から3ヶ月間有効で、シングルエントリーとなります。",
-    "docs_title": "必要書類",
-    "doc1": "有効期限が6ヶ月以上残っているパスポート",
-    "doc2": "規格に沿った証明写真",
-    "doc3": "往復航空券（出国日が90日以内）",
-    "doc4": "最初の数日間のホテル予約確認書",
-    "doc5": "銀行残高証明（20,000バーツ以上の残高）",
-    "warning_title": "注意",
-    "warning_desc": "観光ビザでは、リモートワークを含めタイ国内での就労は一切認められていません。リモートワーカーの方はDTVビザをご検討ください。",
-    "cta_title": "観光ビザの申請でお困りですか？",
-    "cta_desc": "必要書類を不備なく揃え、e-Visa申請を代行することで、承認率を最大限に高めます。",
-    "cta_btn": "このビザを申し込む",
-    "highs_title": "主な利点",
-    "highs": [
-      "シンプルで迅速なプロセス",
-      "手頃な領事手数料",
-      "多額の貯蓄証明は不要",
-      "観光や下見に最適"
+    "hero_badge": "観光",
+    "hero_title": "観光ビザ (TR) – タイ",
+    "hero_subtitle": "最長90日間タイを探索できます",
+    "definition_title": "観光ビザ (TR) とは何ですか？",
+    "definition_content": "観光ビザ（TR）は、60日間のビザ免除期間よりも長く（合計最大90日まで）観光目的でタイに滞在したい訪問者のための標準的なオプションです。",
+    "audience_title": "対象者",
+    "audience_compatible": "申請資格のある方",
+    "audience_compatible_list": [
+      "長期休暇の旅行者（最大3ヶ月）",
+      "友人や家族の訪問",
+      "タイ移住の下見"
     ],
-    "lows_title": "制限事項",
-    "lows": [
-      "滞在期間が短い（最長90日）",
-      "1回限りの入国（シングルエントリ）",
-      "就労は厳禁（リモートワーク含む）",
-      "出国便のチケットが必要"
+    "audience_not_compatible": "対象外の方",
+    "audience_not_compatible_list": [
+      "仕事をするデジタルノマド（DTV参照）",
+      "現地就職希望者",
+      "長期移住希望者"
     ],
+    "duration_title": "期間と有効性",
+    "duration_initial_label": "初回滞在",
+    "duration_initial_value": "60 日間",
+    "duration_max_label": "延長",
+    "duration_max_value": "+ 30 日間",
+    "conditions_title": "必要書類と条件",
+    "conditions_list": [
+      "有効期限6ヶ月以上のパスポート",
+      "規格に適合した証明写真",
+      "タイ出国用航空券（90日以内）",
+      "宿泊予約確認書",
+      "銀行残高証明（20,000バーツ以上）"
+    ],
+    "work_title": "就労制限",
+    "work_warning_title": "就労厳禁",
+    "work_warning_text": "観光ビザでは、リモートワークを含め、タイ国内での就労は一切認められていません。リモートワークにはDTVビザが必要です。",
+    "renewal_title": "延長",
+    "renewal_text": "このビザは、タイ国内のイミグレーションオフィスにて1,900バーツの手数料で1回のみ30日間の延長が可能です。",
+    "limitations_title": "制限事項",
+    "limitations_risk_title": "シングルエントリー",
+    "limitations_risk_text": "これはシングルエントリービザです。タイを出国するとビザは失効します（リエントリーパーミットを取得しない限り）。",
     "faq_title": "よくある質問 - 観光ビザ",
     "faqs": [
       {
@@ -1206,9 +1213,12 @@ export const ja = {
         "a": "個人申請では、書類の不備による却下のリスクがあります。Siam Visa Proは人間の専門知識とAIの力を組み合わせます。当社のAIツールがリアルタイムで適格性を分析して弱点を検出し、専門家がポートフォリオを最適化します。テクノロジーと人間のダブルチェックにより、最高水準の承認率を保証します。"
       }
     ],
-    "hero_description": "タイをストレスなく探索するための定番ビザ。",
-    "hero_tagline": "現地での延長が可能で、滞在時間を延ばすことができます。",
-    "pitfalls_title": "重要な注意事項"
+    "cta_help_title": "申請のサポートが必要ですか？",
+    "cta_help_subtitle": "e-Visa手続きを代行いたします。",
+    "cta_help_btn": "観光ビザを申し込む",
+    "cta_compare_title": "短期滞在ですか？",
+    "cta_compare_subtitle": "60日未満の場合、ビザは不要かもしれません。",
+    "cta_compare_btn": "ビザ免除を見る"
   },
   "retirement_visa_page": {
     "hero_title": "退職者ビザ (Non-O / O-A)",

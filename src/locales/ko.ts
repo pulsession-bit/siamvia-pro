@@ -1131,38 +1131,45 @@ export const ko = {
       "title": "태국 관광 비자 (TR) | 연장 및 가이드 2026",
       "description": "스트레스 없이 태국을 발견하기 위한 클래식 비자. 도착 시 60일, 30일 연장 가능. 필요 서류 및 비용."
     },
-    "hero_title": "관광 비자 (TR)",
-    "hero_subtitle": "최대 90일 동안 태국을 탐험할 수 있는 가장 대중적인 선택.",
-    "rules_title": "이용 규칙",
-    "duration_title": "체류 기간",
-    "duration_desc": "입국 시 60일 체류 가능하며, 현지 이민국에서 30일 추가 연장이 가능합니다.",
-    "validity_title": "비자 유효 기간",
-    "validity_desc": "비자는 발급일로부터 3개월 동안 유효하며, 단수 입국용입니다.",
-    "docs_title": "필요 서류",
-    "doc1": "최소 6개월 이상 유효한 여권",
-    "doc2": "규격에 맞는 여권 사진",
-    "doc3": "왕복 항공권 (출국일 90일 이내)",
-    "doc4": "초기 체류 기간의 호텔 예약 확인서",
-    "doc5": "은행 잔고 증명서 (20,000 바트 이상)",
-    "warning_title": "주의 사항",
-    "warning_desc": "관광 비자로는 원격 근무를 포함하여 태국 내에서 일할 수 없습니다. 원격 근무자의 경우 DTV 비자를 선택하세요.",
-    "cta_title": "관광 비자 신청에 도움이 필요하신가요?",
-    "cta_desc": "저희가 서류를 검토하고 전자비자 신청을 관리하여 승인 확률을 최대로 높여 드립니다.",
-    "cta_btn": "이 비자 신청하기",
-    "highs_title": "주요 장점",
-    "highs": [
-      "간편하고 빠른 절차",
-      "저렴한 영사 수수료",
-      "고액의 잔고 증명 불필요",
-      "탐색형 여행에 최적"
+    "hero_badge": "관광",
+    "hero_title": "관광 비자 (TR) – 태국",
+    "hero_subtitle": "최대 90일 동안 태국을 탐험하세요",
+    "definition_title": "관광 비자 (TR)란 무엇인가요?",
+    "definition_content": "관광 비자 (TR)는 60일 비자 면제 기간보다 더 긴 기간(최대 90일) 동안 태국을 관광 목적으로 방문하고자 하는 여행객을 위한 표준 옵션입니다.",
+    "audience_title": "대상",
+    "audience_compatible": "신청 가능 대상",
+    "audience_compatible_list": [
+      "장기 휴가를 계획 중인 관광객 (최대 3개월)",
+      "친구 또는 가족 방문",
+      "탐색형 여행객"
     ],
-    "lows_title": "제한 사항",
-    "lows": [
-      "짧은 체류 기간 (최대 90일)",
-      "단수 입국 (Single Entry)",
-      "근무 엄격 금지 (원격 근무 포함)",
-      "출국 항공권 필수"
+    "audience_not_compatible": "신청 불가 대상",
+    "audience_not_compatible_list": [
+      "일하는 디지털 노마드 (DTV 참조)",
+      "현지 취업 희망자",
+      "장기 정착 희망자"
     ],
+    "duration_title": "기간 및 유효성",
+    "duration_initial_label": "초기 체류",
+    "duration_initial_value": "60일",
+    "duration_max_label": "연장",
+    "duration_max_value": "+ 30일",
+    "conditions_title": "서류 및 요건",
+    "conditions_list": [
+      "유효기간 6개월 이상 여권",
+      "규격에 맞는 여권 사진",
+      "출국 항공권 (90일 이내)",
+      "호텔 예약 확인서",
+      "은행 잔고 증명서 (20,000 바트 이상)"
+    ],
+    "work_title": "근무 제한",
+    "work_warning_title": "근무 절대 금지",
+    "work_warning_text": "관광 비자로는 원격 근무를 포함하여 태국 내에서 일할 수 없습니다. 원격 근무를 원하시면 DTV 비자가 필요합니다.",
+    "renewal_title": "연장",
+    "renewal_text": "이 비자는 태국 내 모든 이민국에서 1,900 바트의 수수료를 내고 30일간 1회 연장할 수 있습니다.",
+    "limitations_title": "제한 사항",
+    "limitations_risk_title": "단수 입국",
+    "limitations_risk_text": "이 비자는 단수 입국용입니다. 태국을 떠나면 비자는 즉시 취소됩니다 (재입국 허가를 받지 않는 한).",
     "faq_title": "자주 묻는 질문 - 관광 비자",
     "faqs": [
       {
@@ -1182,9 +1189,12 @@ export const ko = {
         "a": "혼자 신청할 경우 서류 미비로 인해 거절될 위험이 큽니다. Siam Visa Pro는 인간의 전문성과 AI의 기술을 결합합니다. AI 도구가 실시간으로 승인 가능성을 분석해 약점을 찾아내고, 전문가가 포트폴리오를 최적화합니다. 기술과 전문가의 이중 점검으로 최고의 승인율을 보장합니다."
       }
     ],
-    "hero_description": "번거로움 없이 태국을 발견하기 위한 클래식 비자。",
-    "hero_tagline": "현지에서 연장이 가능하여 체류 기간을 늘릴 수 있습니다。",
-    "pitfalls_title": "주요 주의 사항"
+    "cta_help_title": "신청에 도움이 필요하신가요?",
+    "cta_help_subtitle": "전자비자 신청 과정을 대신 처리해 드립니다.",
+    "cta_help_btn": "관광 비자 주문하기",
+    "cta_compare_title": "더 짧은 체류?",
+    "cta_compare_subtitle": "60일 미만 체류 시 비자가 필요 없을 수 있습니다.",
+    "cta_compare_btn": "비자 면제 보기"
   },
   "retirement_page": {
     "meta": {
