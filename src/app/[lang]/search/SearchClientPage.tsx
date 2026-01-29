@@ -36,6 +36,8 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
         setSearch,
         activeCategory,
         setActiveCategory,
+        activeDuration,
+        setActiveDuration,
         selectedVisa,
         setSelectedVisa,
         aiResponse,
@@ -91,6 +93,8 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
                             categories={localT.categories}
                             activeCategory={activeCategory}
                             setActiveCategory={setActiveCategory}
+                            activeDuration={activeDuration}
+                            setActiveDuration={setActiveDuration}
                         />
                     </div>
 

@@ -19,6 +19,7 @@ export const useVisaSearch = (globalLang: string) => {
 
     const [search, setSearch] = useState('');
     const [activeCategory, setActiveCategory] = useState<string | null>(null);
+    const [activeDuration, setActiveDuration] = useState<string | null>(null); // 'short' | 'long'
     const [selectedVisa, setSelectedVisa] = useState<any | null>(null);
 
     const [aiResponse, setAiResponse] = useState<string | null>(null);
@@ -79,10 +80,19 @@ export const useVisaSearch = (globalLang: string) => {
             const matchesSearch = visa.name[lang].toLowerCase().includes(search.toLowerCase());
             const matchesCategory = activeCategory ? visa.category === activeCategory : true;
 
+            let matchesDuration = true;
+            if (activeDuration === 'short') {
+                // Short term: Days or Months, NOT Years
+                matchesDuration = !visa.duration.toLowerCase().includes('year');
+            } else if (activeDuration === 'long') {
+                // Long term: Years
+                matchesDuration = visa.duration.toLowerCase().includes('year');
+            }
+
             if (recommendedVisaId === visa.id) return true;
             if (alternativeVisaIds.includes(visa.id)) return true;
 
-            return matchesSearch && matchesCategory;
+            return matchesSearch && matchesCategory && matchesDuration;
         });
 
         return [...list].sort((a, b) => {
@@ -92,7 +102,7 @@ export const useVisaSearch = (globalLang: string) => {
             if (!alternativeVisaIds.includes(a.id) && alternativeVisaIds.includes(b.id)) return 1;
             return 0;
         });
-    }, [lang, search, activeCategory, recommendedVisaId, alternativeVisaIds]);
+    }, [lang, search, activeCategory, activeDuration, recommendedVisaId, alternativeVisaIds]);
 
     return {
         lang,
@@ -100,6 +110,8 @@ export const useVisaSearch = (globalLang: string) => {
         setSearch,
         activeCategory,
         setActiveCategory,
+        activeDuration,
+        setActiveDuration,
         selectedVisa,
         setSelectedVisa,
         aiResponse,

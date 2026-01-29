@@ -6,6 +6,8 @@ interface CategoryFiltersProps {
     categories: Record<string, string>;
     activeCategory: string | null;
     setActiveCategory: (cat: string | null) => void;
+    activeDuration: string | null;
+    setActiveDuration: (dur: string | null) => void;
 }
 
 // Maps for Tailwind classes to ensure they are generated
@@ -31,7 +33,9 @@ export const CategoryFilters: React.FC<CategoryFiltersProps> = ({
     allVisasLabel,
     categories,
     activeCategory,
-    setActiveCategory
+    setActiveCategory,
+    activeDuration,
+    setActiveDuration
 }) => {
     return (
         <div className="flex flex-wrap items-center gap-3">
@@ -63,6 +67,25 @@ export const CategoryFilters: React.FC<CategoryFiltersProps> = ({
                     </button>
                 );
             })}
+
+            {/* Separator */}
+            <div className="w-px h-8 bg-slate-200 mx-2 hidden md:block"></div>
+
+            {/* Duration Filters */}
+            <div className="flex bg-slate-100 p-1 rounded-full border border-slate-200/60">
+                <button
+                    onClick={() => setActiveDuration(activeDuration === 'short' ? null : 'short')}
+                    className={`px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${activeDuration === 'short' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                >
+                    Short Term
+                </button>
+                <button
+                    onClick={() => setActiveDuration(activeDuration === 'long' ? null : 'long')}
+                    className={`px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${activeDuration === 'long' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                >
+                    Long Term
+                </button>
+            </div>
         </div>
     );
 
