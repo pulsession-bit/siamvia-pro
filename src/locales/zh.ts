@@ -734,7 +734,7 @@ export const zh = {
     "hero_title": "SMART 签证 – 泰国",
     "hero_subtitle": "面向人才与投资者的4年期签证",
     "definition_title": "什么是 SMART 签证？",
-    "definition_content": "SMART 签证是一种特殊签证，旨在吸引科技、医疗、环境等目标产业 (S-Curve Industries) 的高技能人才、投资者、高管和初创企业。",
+    "definition_content": "SMART 签证是一种特殊签证，旨在吸引科技、医疗、环境等目标产业 (S-Curve Industries) 的高技能人才、投资者、高管和初创企业。它提供卓越的福利，如免除传统的工作许可，有效期长达4年。",
     "audience_title": "该签证适用于谁？",
     "audience_compatible": "适合人群",
     "audience_compatible_list": [
@@ -758,14 +758,13 @@ export const zh = {
     "conditions_list": [
       "必须获得 BOI (泰国投资委) 批准。",
       "符合规定的最低薪资或投资额。",
-      "受雇于目标产业内的认证公司。",
-      "Certified company in target industries."
+      "受雇于目标产业内的认证公司。"
     ],
     "work_title": "工作与许可活动",
     "work_no_permit_title": "无需额外办理工作许可",
-    "work_no_permit_text": "SMART 签证本身即包含工作许可，您无需单独申请蓝本 (Work Permit)。此外，配偶及子女也可享受同等待遇。",
+    "work_no_permit_text": "SMART 签证本身即包含工作许可，您无需单独申请蓝本 (Work Permit)。此外，配偶及子女也可享受同等待遇，并可在泰国居住（在一定条件下也可工作）。",
     "renewal_title": "续签与延期",
-    "renewal_text": "只要符合 BOI 标准，签证可每4年续签一次。最大优势是将90日报到简化为年度报到。",
+    "renewal_text": "只要符合 BOI 标准，签证可每4年续签一次（或在合同结束时）。最大优势是将90日报到简化为年度报到，而非其他签证的每90天报到一次。",
     "limitations_title": "限制与注意事项",
     "limitations_complex_title": "流程较为复杂",
     "limitations_complex_text": "申请签证前需经过 BOI 的技术审核，整个过程可能需要1-2个月。这不是像 DTV 那样的“快速”签证。",

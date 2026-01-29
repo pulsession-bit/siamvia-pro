@@ -758,7 +758,7 @@ export const ja = {
     "hero_title": "SMARTビザ – タイ",
     "hero_subtitle": "高度人材・投資家のための4年ビザ",
     "definition_title": "SMARTビザとは？",
-    "definition_content": "SMARTビザは、テック、ヘルスケア、環境などの重点産業 (S-Curve Industries) において、高度なスキルを持つ人材、投資家、経営者、スタートアップを惹きつけるために設計された特別なビザです。",
+    "definition_content": "SMARTビザは、テック、ヘルスケア、環境などの重点産業 (S-Curve Industries) において、高度なスキルを持つ人材、投資家、経営者、スタートアップを惹きつけるために設計された特別なビザです。通常の労働許可証の免除や4年間の有効期間など、非常に優れた特典があります。",
     "audience_title": "対象者は？",
     "audience_compatible": "適合するプロフィール",
     "audience_compatible_list": [
@@ -782,17 +782,16 @@ export const ja = {
     "conditions_list": [
       "BOI (タイ投資委員会) による承認が必須。",
       "規定以上の給与または投資額。",
-      "重点産業に該当する認定企業での就労。",
-      "Certified company in target industries."
+      "重点産業に該当する認定企業での就労。"
     ],
     "work_title": "就労と許可される活動",
     "work_no_permit_title": "労働許可証が不要",
-    "work_no_permit_text": "SMARTビザは労働許可証を兼ねているため、別途ワークパーミットを申請する必要はありません。",
+    "work_no_permit_text": "SMARTビザは労働許可証を兼ねているため、別途ワークパーミットを申請する必要はありません。また、配偶者や子供も同等のステータスを得ることができ、タイでの居住（および条件付きでの就労）が可能です。",
     "renewal_title": "更新と延長",
-    "renewal_text": "BOIの基準を満たし続ける限り、4年ごとに更新可能です。最大の利点は90日レポートが1年レポートになることです。",
+    "renewal_text": "BOIの基準を満たし続ける限り、4年ごと（または契約終了時）に更新可能です。最大の利点は90日レポートが1年レポートになることで、他のビザのように90日ごとに入国管理局へ報告する必要がないことです。",
     "limitations_title": "制限と注意点",
     "limitations_complex_title": "複雑な審査プロセス",
-    "limitations_complex_text": "ビザ申請の前にBOIによる技術的な審査が必要で、完了までに1〜2ヶ月かかる場合があります。",
+    "limitations_complex_text": "ビザ申請の前にBOIによる技術的な審査が必要で、完了までに1〜2ヶ月かかる場合があります。DTVのような「迅速な」ビザではありません。",
     "cta_eligible_title": "あなたの会社は対象ですか？",
     "cta_eligible_subtitle": "SMARTビザが取得可能か確認しましょう。",
     "cta_eligible_btn": "診断を受ける",

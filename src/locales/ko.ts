@@ -734,7 +734,7 @@ export const ko = {
     "hero_title": "SMART 비자 – 태국",
     "hero_subtitle": "인재 및 투자자를 위한 4년 비자",
     "definition_title": "SMART 비자란 무엇인가요?",
-    "definition_content": "SMART 비자는 기술, 의료, 환경 등 핵심 산업(S-Curve Industries)의 고숙련 인재, 투자자, 임원 및 스타트업 유치를 위해 설계된 특별 비자입니다.",
+    "definition_content": "SMART 비자는 기술, 의료, 환경 등 핵심 산업(S-Curve Industries)의 고숙련 인재, 투자자, 임원 및 스타트업 유치를 위해 설계된 특별 비자입니다. 일반 노동 허가 면제와 4년의 유효 기간 등 파격적인 혜택을 제공합니다.",
     "audience_title": "대상자는 누구인가요?",
     "audience_compatible": "적합한 프로필",
     "audience_compatible_list": [
@@ -758,17 +758,16 @@ export const ko = {
     "conditions_list": [
       "BOI(태국 투자청) 승인 필수.",
       "최소 급여 또는 투자 금액 충족.",
-      "대상 산업 내 인증 기업 근무.",
-      "Certified company in target industries."
+      "대상 산업 내 인증 기업 근무."
     ],
     "work_title": "취업 및 허용 활동",
     "work_no_permit_title": "노동 허가증 불필요",
-    "work_no_permit_text": "SMART 비자는 노동 허가증을 대체하므로 별도의 워크 퍼밋 신청이 필요 없습니다.",
+    "work_no_permit_text": "SMART 비자는 노동 허가증을 대체하므로 별도의 워크 퍼밋 신청이 필요 없습니다. 또한 본인의 배우자와 자녀도 동일한 지위를 누리며 태국에서 거주(및 조건부 취업)가 가능합니다.",
     "renewal_title": "갱신 및 연장",
-    "renewal_text": "BOI 기준을 충족하는 한 4년마다 갱신 가능합니다. 최대 장점은 90일 보고가 연 1회 보고로 간소화된다는 점입니다.",
+    "renewal_text": "BOI 기준을 충족하는 한 4년마다(또는 계약 종료 시) 갱신 가능합니다. 최대 장점은 타 비자처럼 90일마다 보고할 필요 없이 연 1회 보고로 간소화된다는 점입니다.",
     "limitations_title": "제한 및 주의사항",
     "limitations_complex_title": "복잡한 절차",
-    "limitations_complex_text": "비자 신청 전 BOI의 기술적 검증이 필요하며, 전체 과정에 1~2개월이 소요될 수 있습니다.",
+    "limitations_complex_text": "비자 신청 전 BOI의 기술적 검증이 필요하며, 전체 과정에 1~2개월이 소요될 수 있습니다. DTV와 같은 '빠른' 비자가 아닙니다.",
     "cta_eligible_title": "귀하의 회사가 해당되나요?",
     "cta_eligible_subtitle": "SMART 비자 취득 가능 여부를 확인하세요.",
     "cta_eligible_btn": "시뮬레이션 해보기",
