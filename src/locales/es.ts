@@ -1344,12 +1344,12 @@ export const es = {
       }
     ],
     "meta": {
-      "title": "Thailand Tourist Visa (TR) | Extensions & Guide 2026",
-      "description": "The classic visa to discover Thailand without hassle. 60 days on arrival, extendable by 30 days. Required documents and costs."
+      "title": "Visa de Turista Tailandia (TR) | Extensiones y Guía 2026",
+      "description": "La visa clásica para descubrir Tailandia sin complicaciones. 60 días a la llegada, prorrogables 30 días. Documentos requeridos y costos."
     },
-    "hero_description": "The classic visa to discover Thailand without hassle.",
-    "hero_tagline": "Extension possible on site to prolong your stay.",
-    "pitfalls_title": "Important Precautions"
+    "hero_description": "La visa clásica para descubrir Tailandia sin complicaciones.",
+    "hero_tagline": "Extensión posible en el lugar para prolongar su estancia.",
+    "pitfalls_title": "Precauciones importantes"
   },
   "retirement_visa_page": {
     "hero_title": "Visa de Retiro (Non-O / O-A)",

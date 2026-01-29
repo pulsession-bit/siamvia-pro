@@ -1147,9 +1147,9 @@ export const ar = {
         "a": "ينطوي التقديم الفردي على مخاطر الرفض بسبب المستندات غير الدقيقة. تجمع Siam Visa Pro بين الخبرة البشرية وقوة الذكاء الاصطناعي: تقوم أدوات الذكاء الاصطناعي لدينا بتحليل أهليتك في الوقت الفعلي لاكتشاف نقاط الضعف، بينما يقوم خبراؤنا بتحسين حقيبة أعمالك. ستستفيد من فحص مزدوج —تقني وبشري— لضمان أعلى معدل موافقة ممكن."
       }
     ],
-    "hero_description": "The classic visa to discover Thailand without hassle.",
-    "hero_tagline": "Extension possible on site to prolong your stay.",
-    "pitfalls_title": "Important Precautions"
+    "hero_description": "التأشيرة الكلاسيكية لاكتشاف تايلاند دون عناء。",
+    "hero_tagline": "التمديد ممكن في الموقع لإطالة مدة إقامتك。",
+    "pitfalls_title": "احتياطات هامة"
   },
   "retirement_page": {
     "meta": {

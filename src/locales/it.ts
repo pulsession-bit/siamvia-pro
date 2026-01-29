@@ -1161,9 +1161,9 @@ export const it = {
         "a": "Presentare la domanda da soli comporta rischi di rifiuto a causa di documenti imprecisi. Siam Visa Pro combina l'esperienza umana con la potenza dell'IA: i nostri strumenti di intelligenza artificiale analizzano la tua idoneità in tempo reale per rilevare i punti deboli, mentre i nostri esperti ottimizzano il tuo portfolio. Benefici di un doppio controllo —tecnologico e umano— per garantire il massimo tasso di approvazione."
       }
     ],
-    "hero_description": "The classic visa to discover Thailand without hassle.",
-    "hero_tagline": "Extension possible on site to prolong your stay.",
-    "pitfalls_title": "Important Precautions"
+    "hero_description": "Il visto classico per scoprire la Thailandia senza stress.",
+    "hero_tagline": "Estensione possibile sul posto per prolungare il soggiorno.",
+    "pitfalls_title": "Precauzioni Importanti"
   },
   "retirement_visa_page": {
     "hero_title": "Visto Pensionati (Non-O / O-A)",

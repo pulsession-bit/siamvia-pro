@@ -1171,9 +1171,9 @@ export const th = {
         "a": "การยื่นเองมีความเสี่ยงที่จะถูกปฏิเสธเนื่องจากเอกสารไม่ครบถ้วน Siam Visa Pro รวมความเชี่ยวชาญของมนุษย์และพลังของ AI เพื่อวิเคราะห์โอกาสและตรวจสอบจุดอ่อนในเอกสารของคุณ พร้อมทั้งจัดทำพอร์ตโฟลิโอให้ เพื่อให้อัตราการอนุมัติสูงที่สุด"
       }
     ],
-    "hero_description": "The classic visa to discover Thailand without hassle.",
-    "hero_tagline": "Extension possible on site to prolong your stay.",
-    "pitfalls_title": "Important Precautions"
+    "hero_description": "วีซ่าคลาสสิกสำหรับสำรวจไทยอย่างไร้กังวล",
+    "hero_tagline": "สามารถขยายเวลาพำนักได้ในพื้นที่เพื่อเพิ่มระยะเวลาของคุณ",
+    "pitfalls_title": "ข้อควรระวังสำคัญ"
   },
   "retirement_visa_page": {
     "hero_title": "วีซ่าเกษียณ (Non-O / O-A)",

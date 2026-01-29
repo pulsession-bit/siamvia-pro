@@ -1147,9 +1147,9 @@ export const ko = {
         "a": "혼자 신청할 경우 서류 미비로 인해 거절될 위험이 큽니다. Siam Visa Pro는 인간의 전문성과 AI의 기술을 결합합니다. AI 도구가 실시간으로 승인 가능성을 분석해 약점을 찾아내고, 전문가가 포트폴리오를 최적화합니다. 기술과 전문가의 이중 점검으로 최고의 승인율을 보장합니다."
       }
     ],
-    "hero_description": "The classic visa to discover Thailand without hassle.",
-    "hero_tagline": "Extension possible on site to prolong your stay.",
-    "pitfalls_title": "Important Precautions"
+    "hero_description": "번거로움 없이 태국을 발견하기 위한 클래식 비자。",
+    "hero_tagline": "현지에서 연장이 가능하여 체류 기간을 늘릴 수 있습니다。",
+    "pitfalls_title": "주요 주의 사항"
   },
   "retirement_page": {
     "meta": {

@@ -1171,9 +1171,9 @@ export const zh = {
         "a": "自行申请常因材料不准确而面临拒签风险。Siam Visa Pro 将人类专家的经验与 AI 的力量相结合：我们的 AI 工具实时分析您的资格，识别申请中的弱点，而我们的专家则优化您的作品集。您将受益于技术与人工的双重检查，确保获得最高的获签率。"
       }
     ],
-    "hero_description": "The classic visa to discover Thailand without hassle.",
-    "hero_tagline": "Extension possible on site to prolong your stay.",
-    "pitfalls_title": "Important Precautions"
+    "hero_description": "无需繁琐手续，探索泰国的经典签证。",
+    "hero_tagline": "可在当地办理延期，延长您的停留时间。",
+    "pitfalls_title": "重要注意事项"
   },
   "retirement_visa_page": {
     "hero_title": "退休签证 (Non-O / O-A)",

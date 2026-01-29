@@ -1171,9 +1171,9 @@ export const ja = {
         "a": "個人申請では、書類の不備による却下のリスクがあります。Siam Visa Proは人間の専門知識とAIの力を組み合わせます。当社のAIツールがリアルタイムで適格性を分析して弱点を検出し、専門家がポートフォリオを最適化します。テクノロジーと人間のダブルチェックにより、最高水準の承認率を保証します。"
       }
     ],
-    "hero_description": "The classic visa to discover Thailand without hassle.",
-    "hero_tagline": "Extension possible on site to prolong your stay.",
-    "pitfalls_title": "Important Precautions"
+    "hero_description": "タイをストレスなく探索するための定番ビザ。",
+    "hero_tagline": "現地での延長が可能で、滞在時間を延ばすことができます。",
+    "pitfalls_title": "重要な注意事項"
   },
   "retirement_visa_page": {
     "hero_title": "退職者ビザ (Non-O / O-A)",
