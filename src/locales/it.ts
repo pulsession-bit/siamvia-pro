@@ -800,6 +800,8 @@ export const it = {
     "limitations_title": "Limitazioni e punti di attenzione",
     "limitations_complex_title": "Processo complesso",
     "limitations_complex_text": "L'ottenimento richiede una validazione tecnica da parte della BOI prima della domanda di visto. L'intero processo può richiedere da 1 a 2 mesi. Non è un visto 'veloce' come il DTV.",
+    "limitations_risk_title": "Dipendenza dal BOI",
+    "limitations_risk_text": "Il tuo visto dipende dal mantenimento del tuo status con il BOI. Se perdi il lavoro o l'azienda perde la certificazione, il visto può essere revocato.",
     "faq_title": "FAQ - SMART Visa 2026",
     "faqs": [
       {
@@ -819,6 +821,9 @@ export const it = {
         "a": "A differenza di altri visti che richiedono un rapporto ogni 90 giorni, i titolari di SMART Visa devono presentarsi all'Immigrazione solo una volta all'anno."
       }
     ],
+    "cta_help_title": "Hai bisogno di aiuto con questo visto?",
+    "cta_help_subtitle": "Supportiamo aziende e dipendenti nel processo BOI.",
+    "cta_help_btn": "Consultare un esperto",
     "cta_eligible_title": "La tua azienda è idonea?",
     "cta_eligible_subtitle": "Verifica se puoi ottenere lo SMART Visa.",
     "cta_eligible_btn": "Fai una simulazione",

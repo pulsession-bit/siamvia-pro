@@ -775,6 +775,8 @@ export const zh = {
     "limitations_title": "限制与注意事项",
     "limitations_complex_title": "流程较为复杂",
     "limitations_complex_text": "申请签证前需经过 BOI 的技术审核，整个过程可能需要1-2个月。这不是像 DTV 那样的“快速”签证。",
+    "limitations_risk_title": "依赖 BOI 状态",
+    "limitations_risk_text": "您的签证取决于您在 BOI 的状态。如果失业或公司失去认证，您的签证可能会被撤销。",
     "faq_title": "常见问题 - SMART 签证 2026",
     "faqs": [
       {
@@ -794,6 +796,9 @@ export const zh = {
         "a": "与其他签证每90天报到一次不同，SMART 签证持有者只需每年向移民局报到一次。"
       }
     ],
+    "cta_help_title": "需要签证协助吗？",
+    "cta_help_subtitle": "我们协助企业和员工完成 BOI 流程。",
+    "cta_help_btn": "咨询专家",
     "cta_eligible_title": "您的公司符合条件吗？",
     "cta_eligible_subtitle": "核实您是否可以获得 SMART 签证。",
     "cta_eligible_btn": "进行测评",

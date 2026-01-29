@@ -854,6 +854,8 @@ export const en = {
     "limitations_title": "Limitations and points of vigilance",
     "limitations_complex_title": "Complex process",
     "limitations_complex_text": "Obtaining it requires technical validation by the BOI before the visa application. The full process can take 1 to 2 months. This is not a 'fast' visa like the DTV.",
+    "limitations_risk_title": "BOI Dependency",
+    "limitations_risk_text": "Your visa depends on maintaining your status with the BOI. If you lose your job or the company loses its certification, your visa may be revoked.",
     "faq_title": "FAQ - SMART Visa 2026",
     "faqs": [
       {
@@ -873,6 +875,9 @@ export const en = {
         "a": "Unlike other visas requiring a report every 90 days, SMART Visa holders only need to report to Immigration once a year."
       }
     ],
+    "cta_help_title": "Need help with this visa?",
+    "cta_help_subtitle": "We support companies and employees through the BOI process.",
+    "cta_help_btn": "Consult an expert",
     "cta_eligible_title": "Is your company eligible?",
     "cta_eligible_subtitle": "Check if you can obtain the SMART Visa.",
     "cta_eligible_btn": "Run a simulation",

@@ -90,7 +90,7 @@ export const VisaPageTemplate: React.FC<VisaPageTemplateProps> = ({
                                 </Card>
                             )}
                             {/* Industries (Specific to SMART/Scientific) */}
-                            {t(`${pageKey}.audience_industries`) && (
+                            {t(`${pageKey}.audience_industries`) && t(`${pageKey}.audience_industries`) !== `${pageKey}.audience_industries` && (
                                 <Card variant="white" className="p-6 border-l-4 border-amber-500 bg-amber-50/10 md:col-span-2">
                                     <h3 className="font-bold text-slate-900 mb-3 flex items-center">
                                         <Globe className="h-5 w-5 text-amber-600 mr-2" />

@@ -524,6 +524,8 @@ export const de = {
     "limitations_title": "Einschränkungen und Wachsamkeitspunkte",
     "limitations_complex_title": "Komplexer Prozess",
     "limitations_complex_text": "Die Erlangung erfordert eine technische Validierung durch den BOI vor dem Visumantrag. Der gesamte Prozess kann 1 bis 2 Monate dauern. Es ist kein 'schnelles' Visum wie das DTV.",
+    "limitations_risk_title": "BOI-Abhängigkeit",
+    "limitations_risk_text": "Ihr Visum hängt von der Aufrechterhaltung Ihres Status beim BOI ab. Wenn Sie Ihren Job verlieren oder das Unternehmen seine Zertifizierung verliert, kann Ihr Visum widerrufen werden.",
     "faq_title": "FAQ - SMART Visum 2026",
     "faqs": [
       {
@@ -543,6 +545,9 @@ export const de = {
         "a": "Im Gegensatz zu anderen Visa, die alle 90 Tage eine Meldung erfordern, müssen sich Inhaber eines SMART Visums nur einmal im Jahr bei der Einwanderungsbehörde melden."
       }
     ],
+    "cta_help_title": "Benötigen Sie Hilfe bei diesem Visum?",
+    "cta_help_subtitle": "Wir unterstützen Unternehmen und Mitarbeiter beim BOI-Prozess.",
+    "cta_help_btn": "Experten konsultieren",
     "cta_eligible_title": "Ist Ihr Unternehmen berechtigt?",
     "cta_eligible_subtitle": "Prüfen Sie, ob Sie das SMART Visum erhalten können.",
     "cta_eligible_btn": "Simulation starten",

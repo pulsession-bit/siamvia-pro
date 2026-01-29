@@ -799,6 +799,8 @@ export const ja = {
     "limitations_title": "制限と注意点",
     "limitations_complex_title": "複雑な審査プロセス",
     "limitations_complex_text": "ビザ申請の前にBOIによる技術的な審査が必要で、完了までに1〜2ヶ月かかる場合があります。DTVのような「迅速な」ビザではありません。",
+    "limitations_risk_title": "BOIへの依存",
+    "limitations_risk_text": "あなたのビザはBOIでのステータス維持に依存しています。職を失ったり、会社が認定を失ったりすると、ビザが取り消される可能性があります。",
     "faq_title": "よくある質問 - SMARTビザ 2026",
     "faqs": [
       {
@@ -818,6 +820,9 @@ export const ja = {
         "a": "通常のビザは90日ごとの居住報告が必要ですが、SMARTビザ保持者は1年に1回の報告で済みます。"
       }
     ],
+    "cta_help_title": "このビザについてサポートが必要ですか？",
+    "cta_help_subtitle": "BOIプロセスを通じて企業と従業員をサポートします。",
+    "cta_help_btn": "専門家に相談する",
     "cta_eligible_title": "あなたの会社は対象ですか？",
     "cta_eligible_subtitle": "SMARTビザが取得可能か確認しましょう。",
     "cta_eligible_btn": "診断を受ける",
