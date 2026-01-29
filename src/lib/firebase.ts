@@ -27,6 +27,21 @@ try {
 
     if (typeof window !== 'undefined') {
         analytics = getAnalytics(app);
+
+        // Initialize App Check
+        // Ensure you have NEXT_PUBLIC_RECAPTCHA_SITE_KEY in your .env.local
+        const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+        if (siteKey) {
+            import("firebase/app-check").then(({ initializeAppCheck, ReCaptchaV3Provider }) => {
+                initializeAppCheck(app, {
+                    provider: new ReCaptchaV3Provider(siteKey),
+                    isTokenAutoRefreshEnabled: true
+                });
+                console.log("Firebase App Check initialized.");
+            }).catch(err => console.error("Failed to load App Check:", err));
+        } else {
+            console.warn("App Check not initialized: NEXT_PUBLIC_RECAPTCHA_SITE_KEY is missing.");
+        }
     }
 } catch (error) {
     console.error("Firebase initialization error:", error);
