@@ -89,8 +89,8 @@ export default async function LangLayout({ children, params }: Props) {
                     </CartProvider>
                 </LanguageProvider>
                 <Analytics />
-                {/* <SpeedInsights /> */}
-                <Script src="//code.tidio.co/uqia2uffujyfrwmdhfzniodpqgvgy73b.js" strategy="lazyOnload" />
+                <SpeedInsights />
+                <Script src="https://code.tidio.co/uqia2uffujyfrwmdhfzniodpqgvgy73b.js" strategy="lazyOnload" />
             </body>
         </html>
     );

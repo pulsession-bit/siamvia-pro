@@ -12,7 +12,7 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
     backgroundImage,
-    imageAlt = 'Hero background',
+    imageAlt = 'Thailand visa services - SiamVisa Pro',
     badge,
     title,
     subtitle,

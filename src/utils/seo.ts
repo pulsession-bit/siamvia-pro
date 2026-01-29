@@ -94,6 +94,9 @@ export function generateMetadataWithHreflang(options: {
     // Add x-default pointing to English version
     languages['x-default'] = `${baseUrl}${getTranslatedPath(pageKey, 'en')}`;
 
+    // Default OG image - using a professional Thailand visa themed image
+    const ogImage = 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200&h=630&fit=crop&q=80';
+
     return {
         title: finalTitle,
         description,
@@ -108,6 +111,20 @@ export function generateMetadataWithHreflang(options: {
             siteName: 'SiamVisa Pro',
             locale: getOGLocale(lang),
             type: 'website',
+            images: [
+                {
+                    url: ogImage,
+                    width: 1200,
+                    height: 630,
+                    alt: finalTitle,
+                },
+            ],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: finalTitle,
+            description,
+            images: [ogImage],
         },
     };
 }
