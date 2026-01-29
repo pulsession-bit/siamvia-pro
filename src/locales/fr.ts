@@ -398,41 +398,45 @@ export const fr = {
       "title": "Visa Touristique Thaïlande (TR) | Extensions & Guide 2026",
       "description": "Le visa classique pour découvrir la Thaïlande sans tracas. 60 jours à l'arrivée, extension de 30 jours possible. Documents requis et tarifs."
     },
-    "hero_title": "Visa Touristique (TR)",
-    "hero_subtitle": "L'option classique pour explorer la Thaïlande jusqu'à 90 jours.",
-    "hero_description": "Le visa classique pour découvrir la Thaïlande sans tracas.",
-    "hero_tagline": "Extension possible sur place pour prolonger le plaisir.",
-    "pitfalls_title": "Précautions Importantes",
-    "rules_title": "Les Règles",
-    "duration_title": "Durée de Séjour",
-    "duration_desc": "60 jours à l'arrivée, prolongeable de 30 jours supplémentaires sur place.",
-    "validity_title": "Validité du Visa",
-    "validity_desc": "Le visa est valide 3 mois à partir de la date d'émission pour une entrée simple.",
-    "docs_title": "Documents Requis",
-    "doc1": "Passeport valide au moins 6 mois",
-    "doc2": "Photo d'identité aux normes",
-    "doc3": "Billet d'avion aller-retour (sortie < 90 jours)",
-    "doc4": "Réservation d'hôtel pour les premiers jours",
-    "doc5": "Relevé bancaire (solde > 20 000 THB)",
-    "warning_title": "Attention",
-    "warning_desc": "Le visa touristique n'autorise PAS à travailler en Thaïlande, même à distance. Pour le télétravail, privilégiez le visa DTV.",
-    "cta_title": "Besoin d'aide pour votre visa touristique ?",
-    "cta_desc": "Nous vérifions vos documents et gérons votre demande E-Visa pour maximiser vos chances d'approbation.",
-    "cta_btn": "Commander ce visa",
-    "highs_title": "Points Forts",
-    "highs": [
-      "Procédure simple et rapide",
-      "Frais consulaires faibles (env. 35€)",
-      "Idéal pour tester la vie en Thaïlande",
-      "Extension de 30 jours possible"
+    "hero_badge": "Tourisme",
+    "hero_title": "Visa Touristique (TR) – Thaïlande",
+    "hero_subtitle": "Explorez la Thaïlande jusqu'à 90 jours",
+    "definition_title": "Qu'est-ce que le Visa Touristique (TR) ?",
+    "definition_content": "Le Visa Touristique (TR) est l'option standard pour les visiteurs souhaitant séjourner en Thaïlande à des fins touristiques pour une durée supérieure aux 60 jours de l'exemption de visa, jusqu'à 90 jours au total.",
+    "audience_title": "À qui s'adresse ce visa ?",
+    "audience_compatible": "Profils Éligibles",
+    "audience_compatible_list": [
+      "Touristes pour de longues vacances (jusqu'à 3 mois)",
+      "Visites à des amis ou de la famille",
+      "Voyageurs en repérage"
     ],
-    "lows_title": "Points d'Attention",
-    "lows": [
-      "Durée totale limitée à 90 jours",
-      "Travail strictement interdit (même remote)",
-      "Entrée simple (visa caduc si sortie)",
-      "Preuve de sortie obligatoire"
+    "audience_not_compatible": "Non Éligibles",
+    "audience_not_compatible_list": [
+      "Nomades digitaux travaillant (voir DTV)",
+      "Personnes cherchant un emploi local",
+      "Ceux souhaitant s'installer à long terme"
     ],
+    "duration_title": "Durée et Validità",
+    "duration_initial_label": "Entrée Initiale",
+    "duration_initial_value": "60 Jours",
+    "duration_max_label": "Extension",
+    "duration_max_value": "+ 30 Jours",
+    "conditions_title": "Documents et Conditions",
+    "conditions_list": [
+      "Passeport valide au moins 6 mois",
+      "Photo d'identité conforme",
+      "Billet d'avion de sortie (sous 90 jours)",
+      "Réservation d'hôtel",
+      "Relevé bancaire (solde > 20 000 THB)"
+    ],
+    "work_title": "Limitations de Travail",
+    "work_warning_title": "Interdiction Formelle de Travailler",
+    "work_warning_text": "Le visa touristique n'autorise PAS à travailler en Thaïlande, même à distance. Pour le télétravail, le visa DTV est requis.",
+    "renewal_title": "Extension",
+    "renewal_text": "Ce visa peut être prolongé une seule fois pour 30 jours dans n'importe quel bureau de l'immigration en Thaïlande, moyennant 1 900 THB.",
+    "limitations_title": "Limitations",
+    "limitations_risk_title": "Entrée Unique",
+    "limitations_risk_text": "C'est un visa à entrée unique. Si vous sortez de Thaïlande, le visa est annulé (sauf demande de Re-Entry permit, qui ne prolonge pas la durée).",
     "faq_title": "Questions Fréquentes - Visa Touristique",
     "faqs": [
       {
@@ -448,10 +452,16 @@ export const fr = {
         "a": "Vous serez en situation d'\"Overstay\". L'amende est de 500 THB par jour de dépassement, payable à l'aéroport. Un dépassement important peut entraîner une interdiction de territoire."
       },
       {
-        "q": "Quelle est la valeur ajoutée de Siam Visa Pro par rapport à une demande seul ?",
-        "a": "Faire sa demande seul comporte des risques de refus liés à un dossier imprécis. Siam Visa Pro allie l'expertise humaine et la puissance de l'IA : nos outils d'intelligence artificielle analysent votre éligibilité en temps réel pour détecter les points faibles de votre dossier, tandis que nos experts optimisent votre portfolio et vos documents. Vous bénéficiez d'un double contrôle — technologique et humain — pour garantir le taux d'approbation le plus élevé possible."
+        "q": "Quelle est la valeur ajoutée de Siam Visa Pro par rapport à une demande seule ?",
+        "a": "Faire sa demande seul comporte des risques de refus pour documents imprécis. Siam Visa Pro allie expertise humaine et puissance IA : nos outils d'intelligence artificielle analysent votre dossier en temps réel pour détecter les points faibles, tandis que nos experts optimisent votre portfolio. Vous bénéficiez d'un double contrôle — technologique et humain — pour garantir un taux d'approbation maximal."
       }
-    ]
+    ],
+    "cta_help_title": "Besoin d'aide pour votre demande ?",
+    "cta_help_subtitle": "Nous gérons la procédure E-Visa pour vous.",
+    "cta_help_btn": "Commander Visa Touristique",
+    "cta_compare_title": "Séjours plus courts ?",
+    "cta_compare_subtitle": "Pour moins de 60 jours, vous n'avez peut-être pas besoin de visa.",
+    "cta_compare_btn": "Voir Exemption de Visa"
   },
   "dtv_page": {
     "badge": "Destination Thailand Visa",

@@ -1327,38 +1327,49 @@ export const es = {
     "cta_compare_btn": "Ver Visa SMART"
   },
   "tourist_visa_page": {
-    "hero_title": "Visa de Turista (TR)",
-    "hero_subtitle": "La opción clásica para explorar Tailandia hasta 90 días.",
-    "rules_title": "Las reglas del juego",
-    "duration_title": "Duración de la estancia",
-    "duration_desc": "60 días a la llegada, prorrogables 30 días adicionales en el lugar.",
-    "validity_title": "Validez de la visa",
-    "validity_desc": "La visa es válida por 3 meses a partir de la fecha de emisión para una sola entrada.",
-    "docs_title": "Documentos requeridos",
-    "doc1": "Pasaporte válido por al menos 6 meses",
-    "doc2": "Foto de identidad que cumpla con las normas",
-    "doc3": "Billete de avión de ida y vuelta (salida < 90 días)",
-    "doc4": "Reserva de hotel para los primeros días",
-    "doc5": "Extracto bancario (saldo > 20.000 THB)",
-    "warning_title": "Atención",
-    "warning_desc": "La visa de turista NO le autoriza a trabajar en Tailandia, ni siquiera de forma remota. Para el teletrabajo, opte por la visa DTV.",
-    "cta_title": "¿Necesita ayuda con su visa de turista?",
-    "cta_desc": "Verificamos sus documentos y gestionamos su solicitud de E-Visa para maximizar sus posibilidades de aprobación.",
-    "cta_btn": "Pedir esta visa",
-    "highs_title": "Puntos Fuertes",
-    "highs": [
-      "Proceso simple y rápido",
-      "Tasas consulares económicas",
-      "No requiere grandes ahorros",
-      "Ideal para estancias de exploración"
+    "meta": {
+      "title": "Visa de Turista Tailandia (TR) | Extensiones y Guía 2026",
+      "description": "La visa clásica para descubrir Tailandia sin complicaciones. 60 días a la llegada, prorrogables 30 días. Documentos requeridos y costos."
+    },
+    "hero_badge": "Turismo",
+    "hero_title": "Visa de Turista (TR) – Tailandia",
+    "hero_subtitle": "Explore Tailandia hasta 90 días",
+    "definition_title": "¿Qué es la Visa de Turista (TR)?",
+    "definition_content": "La Visa de Turista (TR) es la opción estándar para los visitantes que desean permanecer en Tailandia con fines turísticos por un período superior a los 60 días de la exención de visa, hasta 90 días en total.",
+    "audience_title": "¿A quién va dirigida?",
+    "audience_compatible": "Perfiles Elegibles",
+    "audience_compatible_list": [
+      "Turistas en vacaciones largas (hasta 3 meses)",
+      "Visitas a amigos o familiares",
+      "Viajeros de exploración"
     ],
-    "lows_title": "Limitaciones",
-    "lows": [
-      "Duración corta (máx. 90 días)",
-      "Una sola entrada (Single Entry)",
-      "Trabajo (incluso remoto) estrictamente prohibido",
-      "Requiere billete de salida confirmado"
+    "audience_not_compatible": "No Elegibles",
+    "audience_not_compatible_list": [
+      "Nómadas digitales trabajando (ver DTV)",
+      "Buscadores de empleo local",
+      "Personas que desean establecerse a largo plazo"
     ],
+    "duration_title": "Duración y Validez",
+    "duration_initial_label": "Entrada Inicial",
+    "duration_initial_value": "60 Días",
+    "duration_max_label": "Extensión",
+    "duration_max_value": "+ 30 Días",
+    "conditions_title": "Documentos y Requisitos",
+    "conditions_list": [
+      "Pasaporte válido por al menos 6 meses",
+      "Foto de identidad conforme",
+      "Billete de avión de salida (dentro de 90 días)",
+      "Reserva de hotel",
+      "Extracto bancario (saldo > 20.000 THB)"
+    ],
+    "work_title": "Limitaciones Laborales",
+    "work_warning_title": "Prohibición Estricta de Trabajar",
+    "work_warning_text": "La visa de turista NO autoriza a trabajar en Tailandia, ni siquiera de forma remota. Para el teletrabajo, se requiere la visa DTV.",
+    "renewal_title": "Extensión",
+    "renewal_text": "Esta visa puede extenderse una sola vez por 30 días en cualquier oficina de inmigración en Tailandia por una tarifa de 1.900 THB.",
+    "limitations_title": "Limitaciones",
+    "limitations_risk_title": "Entrada Única",
+    "limitations_risk_text": "Es una visa de entrada única. Si sale de Tailandia, la visa se cancela (a menos que solicite un Re-Entry permit, que no extiende la duración total).",
     "faq_title": "Preguntas Frecuentes - Visa Turista",
     "faqs": [
       {
@@ -1378,13 +1389,12 @@ export const es = {
         "a": "Solicitar por cuenta propia conlleva riesgos de rechazo por documentos imprecisos. Siam Visa Pro combina la experiencia humana con el poder de la IA: nuestras herramientas de IA analizan su elegibilidad en tiempo real para detectar puntos débiles, mientras nuestros expertos optimizan su portafolio. Se beneficia de una doble verificación —tecnológica y humana— para garantizar la mayor tasa de aprobación."
       }
     ],
-    "meta": {
-      "title": "Visa de Turista Tailandia (TR) | Extensiones y Guía 2026",
-      "description": "La visa clásica para descubrir Tailandia sin complicaciones. 60 días a la llegada, prorrogables 30 días. Documentos requeridos y costos."
-    },
-    "hero_description": "La visa clásica para descubrir Tailandia sin complicaciones.",
-    "hero_tagline": "Extensión posible en el lugar para prolongar su estancia.",
-    "pitfalls_title": "Precauciones importantes"
+    "cta_help_title": "¿Necesita ayuda con su solicitud?",
+    "cta_help_subtitle": "Gestionamos el proceso de E-Visa por usted.",
+    "cta_help_btn": "Pedir Visa de Turista",
+    "cta_compare_title": "¿Estancias más cortas?",
+    "cta_compare_subtitle": "Para menos de 60 días, es posible que no necesite visa.",
+    "cta_compare_btn": "Ver Exención de Visa"
   },
   "retirement_visa_page": {
     "hero_title": "Visa de Retiro (Non-O / O-A)",

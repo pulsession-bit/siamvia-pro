@@ -1349,41 +1349,45 @@ export const de = {
       "title": "Thailand Touristenvisum (TR) | Verlängerungen & Leitfaden 2026",
       "description": "Das klassische Visum, um Thailand stressfrei zu entdecken. 60 Tage bei Ankunft, verlängerbar um 30 Tage. Erforderliche Dokumente und Kosten."
     },
-    "hero_title": "Touristenvisum (TR)",
-    "hero_subtitle": "Die klassische Option, um Thailand bis zu 90 Tage zu erkunden.",
-    "hero_description": "Das klassische Visum, um Thailand stressfrei zu entdecken.",
-    "hero_tagline": "Verlängerung vor Ort möglich, um Ihren Aufenthalt zu verlängern.",
-    "pitfalls_title": "Wichtige Vorsichtsmaßnahmen",
-    "rules_title": "Die Regeln",
-    "duration_title": "Dauer des Aufenthalts",
-    "duration_desc": "60 Tage bei der Ankunft, vor Ort um weitere 30 Tage verlängerbar.",
-    "validity_title": "Gültigkeit des Visums",
-    "validity_desc": "Das Visum ist ab dem Ausstellungsdatum 3 Monate lang für eine einmalige Einreise gültig.",
-    "docs_title": "Erforderliche Dokumente",
-    "doc1": "Reisepass, der noch mindestens 6 Monate gültig ist",
-    "doc2": "Passfoto gemäß den Standards",
-    "doc3": "Hin- und Rückflugticket (Ausreise < 90 Tage)",
-    "doc4": "Hotelbuchung für die ersten Tage",
-    "doc5": "Bankauszug (Saldo > 20.000 THB)",
-    "warning_title": "Achtung",
-    "warning_desc": "Das Touristenvisum berechtigt Sie NICHT dazu, in Thailand zu arbeiten, auch nicht aus der Ferne. Für Fernarbeit wählen Sie das DTV-Visum.",
-    "cta_title": "Hilfe bei Ihrem Touristenvisum benötigt?",
-    "cta_desc": "Wir prüfen Ihre Dokumente und verwalten Ihren E-Visum-Antrag, um Ihre Chancen auf Genehmigung zu maximieren.",
-    "cta_btn": "Dieses Visum bestellen",
-    "highs_title": "Stärken",
-    "highs": [
-      "Einfacher und schneller Prozess",
-      "Günstige Konsulatsgebühren",
-      "Keine hohen Ersparnisse erforderlich",
-      "Ideal für Entdeckungstouren"
+    "hero_badge": "Tourismus",
+    "hero_title": "Touristenvisum (TR) – Thailand",
+    "hero_subtitle": "Erkunden Sie Thailand bis zu 90 Tage",
+    "definition_title": "Was ist das Touristenvisum (TR)?",
+    "definition_content": "Das Touristenvisum (TR) ist die Standardoption für Besucher, die für touristische Zwecke länger als die 60-tägige Visumbefreiung in Thailand bleiben möchten, insgesamt bis zu 90 Tage.",
+    "audience_title": "Wer ist die Zielgruppe?",
+    "audience_compatible": "Geeignete Profile",
+    "audience_compatible_list": [
+      "Touristen im langen Urlaub (bis zu 3 Monate)",
+      "Besuch bei Freunden oder Familie",
+      "Erkundungsreisende"
     ],
-    "lows_title": "Einschränkungen",
-    "lows": [
-      "Kurze Dauer (max. 90 Tage)",
-      "Nur eine Einreise (Single Entry)",
-      "Arbeit (auch remote) streng verboten",
-      "Erfordert ein Ausreiseticket"
+    "audience_not_compatible": "Nicht geeignet",
+    "audience_not_compatible_list": [
+      "Digitale Nomaden, die arbeiten (siehe DTV)",
+      "Arbeitsuchende vor Ort",
+      "Personen, die sich langfristig niederlassen wollen"
     ],
+    "duration_title": "Dauer und Gültigkeit",
+    "duration_initial_label": "Erste Einreise",
+    "duration_initial_value": "60 Tage",
+    "duration_max_label": "Verlängerung",
+    "duration_max_value": "+ 30 Tage",
+    "conditions_title": "Dokumente und Anforderungen",
+    "conditions_list": [
+      "Reisepass, der noch mindestens 6 Monate gültig ist",
+      "Konformes Passfoto",
+      "Hin- und Rückflugticket (Ausreise < 90 Tage)",
+      "Hotelbuchung",
+      "Bankauszug (Saldo > 20.000 THB)"
+    ],
+    "work_title": "Arbeitseinschränkungen",
+    "work_warning_title": "Striktes Arbeitsverbot",
+    "work_warning_text": "Das Touristenvisum berechtigt NICHT dazu, in Thailand zu arbeiten, auch nicht aus der Ferne. Für Fernarbeit ist das DTV-Visum erforderlich.",
+    "renewal_title": "Verlängerung",
+    "renewal_text": "Dieses Visum kann einmalig um 30 Tage bei jedem Einwanderungsbüro in Thailand gegen eine Gebühr von 1.900 THB verlängert werden.",
+    "limitations_title": "Einschränkungen",
+    "limitations_risk_title": "Einmalige Einreise",
+    "limitations_risk_text": "Dies ist ein Visum für die einmalige Einreise. Wenn Sie Thailand verlassen, wird das Visum ungültig (außer Sie beantragen eine Re-Entry Permit, was jedoch die Gesamtdauer nicht verlängert).",
     "faq_title": "Häufig gestellte Fragen - Touristenvisum",
     "faqs": [
       {
@@ -1402,7 +1406,13 @@ export const de = {
         "q": "Was ist der Mehrwert von Siam Visa Pro im Vergleich zu einer Eigenbeantragung?",
         "a": "Eine Eigenbeantragung birgt Risiken von Ablehnungen aufgrund ungenauer Unterlagen. Siam Visa Pro kombiniert menschliche Expertise mit der Kraft der KI: Unsere KI-Tools analysieren Ihre Eignung in Echtzeit, um Schwachstellen in Ihrem Dossier zu erkennen, während unsere Experten Ihr Portfolio und Ihre Dokumente optimieren. Sie profitieren von einer doppelten Prüfung – technologisch und menschlich – um die höchstmögliche Genehmigungsrate zu garantieren."
       }
-    ]
+    ],
+    "cta_help_title": "Hilfe bei Ihrem Antrag benötigt?",
+    "cta_help_subtitle": "Wir verwalten das E-Visa-Verfahren für Sie.",
+    "cta_help_btn": "Touristenvisum bestellen",
+    "cta_compare_title": "Kürzere Aufenthalte?",
+    "cta_compare_subtitle": "Für weniger als 60 Tage benötigen Sie möglicherweise kein Visum.",
+    "cta_compare_btn": "Visumbefreiung ansehen"
   },
   "retirement_visa_page": {
     "hero_title": "Ruhestandsvisum (Non-O / O-A)",

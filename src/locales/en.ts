@@ -1347,41 +1347,45 @@ export const en = {
       "title": "Thailand Tourist Visa (TR) | Extensions & Guide 2026",
       "description": "The classic visa to discover Thailand without hassle. 60 days on arrival, extendable by 30 days. Required documents and costs."
     },
-    "hero_title": "Tourist Visa (TR)",
-    "hero_subtitle": "The classic option to explore Thailand for up to 90 days.",
-    "hero_description": "The classic visa to discover Thailand without hassle.",
-    "hero_tagline": "Extension possible on site to prolong your stay.",
-    "pitfalls_title": "Important Precautions",
-    "rules_title": "The Rules",
-    "duration_title": "Length of Stay",
-    "duration_desc": "60 days on arrival, extendable by an additional 30 days locally.",
-    "validity_title": "Visa Validity",
-    "validity_desc": "The visa is valid for 3 months from the date of issue for a single entry.",
-    "docs_title": "Required Documents",
-    "doc1": "Passport valid for at least 6 months",
-    "doc2": "ID photo compliant with standards",
-    "doc3": "Round-trip flight ticket (exit < 90 days)",
-    "doc4": "Hotel booking for the first days",
-    "doc5": "Bank statement (balance > 20,000 THB)",
-    "warning_title": "Warning",
-    "warning_desc": "The tourist visa does NOT authorize you to work in Thailand, even remotely. For remote work, choose the DTV visa.",
-    "cta_title": "Need help with your tourist visa?",
-    "cta_desc": "We verify your documents and manage your E-Visa application to maximize your chances of approval.",
-    "cta_btn": "Order this visa",
-    "highs_title": "Highlights",
-    "highs": [
-      "Simple and fast procedure",
-      "Low consular fees (approx $35)",
-      "Ideal for testing life in Thailand",
-      "30-day extension possible"
+    "hero_badge": "Tourism",
+    "hero_title": "Tourist Visa (TR) – Thailand",
+    "hero_subtitle": "Explore Thailand for up to 90 days",
+    "definition_title": "What is the Tourist Visa (TR)?",
+    "definition_content": "The Tourist Visa (TR) is the standard option for visitors wishing to stay in Thailand for tourism purposes for a period longer than the 60-day visa exemption, up to 90 days total.",
+    "audience_title": "Who is this visa for?",
+    "audience_compatible": "Eligible Profiles",
+    "audience_compatible_list": [
+      "Tourists on long holidays (up to 3 months)",
+      "Visiting friends or family",
+      "Exploratory travelers"
     ],
-    "lows_title": "Points of Attention",
-    "lows": [
-      "Total duration limited to 90 days",
-      "Work strictly forbidden (even remote)",
-      "Single entry (visa ends if you leave)",
-      "Requires proof of onward travel"
+    "audience_not_compatible": "Not Eligible",
+    "audience_not_compatible_list": [
+      "Digital nomads working (see DTV)",
+      "Job seekers looking for local employment",
+      "Those wanting to settle long-term"
     ],
+    "duration_title": "Duration and Validity",
+    "duration_initial_label": "Initial Entry",
+    "duration_initial_value": "60 Days",
+    "duration_max_label": "Extension",
+    "duration_max_value": "+ 30 Days",
+    "conditions_title": "Documents and Requirements",
+    "conditions_list": [
+      "Passport valid for at least 6 months",
+      "Compliant ID photo",
+      "Exit flight ticket (within 90 days)",
+      "Hotel reservation",
+      "Bank statement (balance > 20,000 THB)"
+    ],
+    "work_title": "Work Limitations",
+    "work_warning_title": "Strict No Work Policy",
+    "work_warning_text": "The tourist visa does NOT authorize working in Thailand, even remotely. For remote work, the DTV visa is required.",
+    "renewal_title": "Extension",
+    "renewal_text": "This visa can be extended once for 30 days at any immigration office in Thailand for a fee of 1,900 THB.",
+    "limitations_title": "Limitations",
+    "limitations_risk_title": "Single Entry Only",
+    "limitations_risk_text": "This is a single-entry visa. If you leave Thailand, the visa is cancelled (unless you apply for a Re-Entry permit, which does not extend the total duration).",
     "faq_title": "Frequently Asked Questions - Tourist Visa",
     "faqs": [
       {
@@ -1400,7 +1404,13 @@ export const en = {
         "q": "What is the added value of Siam Visa Pro compared to a solo application?",
         "a": "Applying on your own carries risks of refusal due to an imprecise file. Siam Visa Pro combines human expertise and the power of AI: our artificial intelligence tools analyze your eligibility in real-time to detect your file's weak points, while our experts optimize your portfolio and your documents. You benefit from a double check — technological and human — to guarantee the highest possible approval rate."
       }
-    ]
+    ],
+    "cta_help_title": "Need help with your application?",
+    "cta_help_subtitle": "We handle the E-Visa process for you.",
+    "cta_help_btn": "Order Tourist Visa",
+    "cta_compare_title": "Shorter stays?",
+    "cta_compare_subtitle": "For less than 60 days, you might not need a visa.",
+    "cta_compare_btn": "See Visa Exemption"
   },
   "retirement_page": {
     "meta": {
