@@ -1200,38 +1200,45 @@ export const it = {
       "title": "Visto Turistico Thailandia (TR) | Estensioni e Guida 2026",
       "description": "Il visto classico per scoprire la Thailandia senza stress. 60 giorni all'arrivo, estendibile di 30 giorni. Documenti e costi richiesti."
     },
-    "hero_title": "Visto Turistico (TR)",
-    "hero_subtitle": "L'opzione classica per esplorare la Thailandia fino a 90 giorni.",
-    "rules_title": "Le regole del gioco",
-    "duration_title": "Durata del soggiorno",
-    "duration_desc": "60 giorni all'arrivo, estendibili di altri 30 giorni sul posto.",
-    "validity_title": "Validità del visto",
-    "validity_desc": "Il visto è valido per 3 mesi dalla data di emissione per un singolo ingresso.",
-    "docs_title": "Documenti richiesti",
-    "doc1": "Passaporto valido per almeno 6 mesi",
-    "doc2": "Fototessera conforme agli standard",
-    "doc3": "Biglietto aereo di andata e ritorno (uscita < 90 giorni)",
-    "doc4": "Prenotazione alberghiera per i primi giorni",
-    "doc5": "Estratto conto bancario (saldo > 20.000 THB)",
-    "warning_title": "Attenzione",
-    "warning_desc": "Il visto turistico NON ti autorizza a lavorare in Thailandia, nemmeno da remoto. Per il telelavoro, scegli il visto DTV.",
-    "cta_title": "Serve aiuto per il tuo visto turistico?",
-    "cta_desc": "Controlliamo i tuoi documenti e gestiamo la tua richiesta di E-Visa per massimizzare le tue possibilità di approvazione.",
-    "cta_btn": "Ordina questo visto",
-    "highs_title": "Punti di Forza",
-    "highs": [
-      "Processo semplice e veloce",
-      "Tasse consolari economiche",
-      "Nessun risparmio elevato richiesto",
-      "Ideale per esplorare il paese"
+    "hero_badge": "Turismo",
+    "hero_title": "Visto Turistico (TR) – Thailandia",
+    "hero_subtitle": "Esplora la Thailandia fino a 90 giorni",
+    "definition_title": "Cos'è il Visto Turistico (TR)?",
+    "definition_content": "Il Visto Turistico (TR) è l'opzione standard per i visitatori che desiderano soggiornare in Thailandia per scopi turistici per un periodo superiore ai 30 giorni dell'esenzione visto, ma inferiore ai 90 giorni.",
+    "audience_title": "A chi è rivolto?",
+    "audience_compatible": "Profili Idonei",
+    "audience_compatible_list": [
+      "Turisti in vacanza lunga (fino a 3 mesi)",
+      "Visitatori di amici o parenti",
+      "Viaggiatori esplorativi"
     ],
-    "lows_title": "Limitazioni",
-    "lows": [
-      "Breve durata (max 90 giorni)",
-      "Ingresso singolo (Single Entry)",
-      "Lavoro (anche remoto) severamente vietato",
-      "Richiede biglietto di uscita confermato"
+    "audience_not_compatible": "Non Idonei",
+    "audience_not_compatible_list": [
+      "Nomadi digitali che lavorano (ved. DTV)",
+      "Chi cerca lavoro in loco",
+      "Chi vuole stabilirsi a lungo termine"
     ],
+    "duration_title": "Durata e Validità",
+    "duration_initial_label": "Ingresso Iniziale",
+    "duration_initial_value": "60 Giorni",
+    "duration_max_label": "Estensione",
+    "duration_max_value": "+ 30 Giorni",
+    "conditions_title": "Documenti e Requisiti",
+    "conditions_list": [
+      "Passaporto valido per almeno 6 mesi",
+      "Fototessera conforme",
+      "Biglietto aereo di uscita (entro 90 giorni)",
+      "Prenotazione alberghiera",
+      "Estratto conto bancario (saldo > 20.000 THB)"
+    ],
+    "work_title": "Limitazioni Lavorative",
+    "work_warning_title": "Divieto Assoluto di Lavoro",
+    "work_warning_text": "Il visto turistico NON autorizza a lavorare in Thailandia, nemmeno da remoto. Per il telelavoro, è necessario il visto DTV.",
+    "renewal_title": "Estensione",
+    "renewal_text": "Questo visto può essere esteso una sola volta per 30 giorni presso qualsiasi ufficio immigrazione in Thailandia al costo di 1.900 THB.",
+    "limitations_title": "Limitazioni",
+    "limitations_risk_title": "Nessun Multi-Entry",
+    "limitations_risk_text": "Questo è un visto a ingresso singolo. Se lasci la Thailandia, il visto viene annullato (a meno che non richiedi un Re-Entry permit, che però non estende la durata totale).",
     "faq_title": "Domande Frequenti - Visto Turistico",
     "faqs": [
       {
@@ -1251,9 +1258,12 @@ export const it = {
         "a": "Presentare la domanda da soli comporta rischi di rifiuto a causa di documenti imprecisi. Siam Visa Pro combina l'esperienza umana con la potenza dell'IA: i nostri strumenti di intelligenza artificiale analizzano la tua idoneità in tempo reale per rilevare i punti deboli, mentre i nostri esperti ottimizzano il tuo portfolio. Benefici di un doppio controllo —tecnologico e umano— per garantire il massimo tasso di approvazione."
       }
     ],
-    "hero_description": "Il visto classico per scoprire la Thailandia senza stress.",
-    "hero_tagline": "Estensione possibile sul posto per prolungare il soggiorno.",
-    "pitfalls_title": "Precauzioni Importanti"
+    "cta_help_title": "Serve aiuto con la richiesta?",
+    "cta_help_subtitle": "Gestiamo la procedura E-Visa per te.",
+    "cta_help_btn": "Ordina Visto Turistico",
+    "cta_compare_title": "Soggiorni più brevi?",
+    "cta_compare_subtitle": "Per meno di 60 giorni, potresti non aver bisogno di visto.",
+    "cta_compare_btn": "Vedi Esenzione Visto"
   },
   "retirement_visa_page": {
     "hero_title": "Visto Pensionati (Non-O / O-A)",
