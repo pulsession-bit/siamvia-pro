@@ -920,12 +920,20 @@ export const it = {
       "Permesso di Lavoro obbligatorio (anche per volontariato).",
       "Fedina penale spesso richiesta."
     ],
-    "warning_title": "Vigilanza: La 'Grey Area'",
-    "warning_regulation_title": "Regolamentazione rigorosa",
-    "warning_regulation_text": "Molte agenzie vendono 'Visti Volontari' senza un reale impegno umanitario. L'immigrazione controlla attentamente questi visti.",
+    "work_title": "Normative & Lavoro",
+    "work_warning_title": "Attenzione alla 'Zona Grigia'",
+    "work_warning_text": "Molte agenzie vendono falsi 'Visti Volontari'. L'immigrazione sorveglia molto attentamente. Se non riesci a dimostrare un'attività reale durante un controllo, il visto verrà annullato immediatamente.",
+    "renewal_title": "Rinnovo",
+    "renewal_text": "Questo visto può essere rinnovato annualmente presso l'Immigrazione thailandese, finché l'organizzazione conferma il tuo ruolo di volontario.",
+    "limitations_title": "Limitazioni Importanti",
+    "limitations_risk_title": "Permesso di Lavoro Richiesto",
+    "limitations_risk_text": "Attenzione: Il volontariato è considerato lavoro. Un Work Permit è legalmente obbligatorio oltre al visto per essere in regola.",
     "cta_help_title": "Serve aiuto per la tua pratica?",
     "cta_help_subtitle": "Il visto volontari richiede una documentazione complessa. Ti aiutiamo a verificare la conformità.",
-    "cta_help_btn": "Consulta un esperto"
+    "cta_help_btn": "Consulta un esperto",
+    "cta_compare_title": "Missione breve?",
+    "cta_compare_subtitle": "Per meno di 30 giorni, un visto turistico può bastare.",
+    "cta_compare_btn": "Vedi Visto Turistico"
   },
   "medical_visa_page": {
     "meta": {

@@ -999,12 +999,20 @@ export const fr = {
       "Work Permit obligatoire (même pour du bénévolat).",
       "Casier judiciaire souvent requis pour l'enseignement."
     ],
-    "warning_title": "Vigilance : Le 'Grey Area'",
-    "warning_regulation_title": "Réglementation stricte",
-    "warning_regulation_text": "Beaucoup d'agences vendent des 'Visas Volontaires' sans réel engagement humanitaire. L'immigration thaïlandaise surveille de très près ces visas. En cas de contrôle, si vous n'êtes pas capable de prouver votre activité réelle, le visa sera annulé.",
+    "work_title": "Réglementation & Travail",
+    "work_warning_title": "Attention au 'Grey Area'",
+    "work_warning_text": "Beaucoup d'agences vendent des 'Visas Volontaires' fictifs. L'immigration surveille cela de très près. Si vous ne pouvez pas prouver une activité réelle lors d'un contrôle, votre visa sera annulé immédiatement.",
+    "renewal_title": "Renouvellement",
+    "renewal_text": "Ce visa peut être renouvelé annuellement auprès de l'immigration thaïlandaise, tant que l'organisation confirme votre rôle de bénévole.",
+    "limitations_title": "Restrictions Importantes",
+    "limitations_risk_title": "Permis de Travail Requis",
+    "limitations_risk_text": "Attention : Le bénévolat est considéré comme du travail. Un Work Permit est légalement obligatoire en plus du visa pour être en règle.",
     "cta_help_title": "Besoin d'aide pour votre dossier ?",
-    "cta_help_subtitle": "Le visa volontaire demande une documentation complexe. Nous vous aidons à vérifier la conformité.",
-    "cta_help_btn": "Consulter un expert"
+    "cta_help_subtitle": "Le visa volontaire demande une documentation complexe. Nous vérifions tout pour vous.",
+    "cta_help_btn": "Consulter un expert",
+    "cta_compare_title": "Mission courte ?",
+    "cta_compare_subtitle": "Pour moins de 30 jours, un visa touriste peut suffire.",
+    "cta_compare_btn": "Voir Visa Touriste"
   },
   "medical_visa_page": {
     "meta": {

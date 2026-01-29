@@ -644,12 +644,20 @@ export const de = {
       "Arbeitserlaubnis obligatorisch (auch für Ehrenamt).",
       "Führungszeugnis oft für den Unterricht erforderlich."
     ],
-    "warning_title": "Wachsamkeit: Der 'Grey Area'",
-    "warning_regulation_title": "Strenge Regulierung",
-    "warning_regulation_text": "Viele Agenturen verkaufen 'Freiwilligenvisa' ohne wirkliches humanitäres Engagement. Die thailändische Einwanderungsbehörde überwacht diese Visa sehr genau. Im Falle einer Kontrolle wird das Visum annulliert, wenn Sie Ihre tatsächliche Tätigkeit nicht nachweisen können.",
+    "work_title": "Vorschriften & Arbeit",
+    "work_warning_title": "Vorsicht vor der 'Grauzone'",
+    "work_warning_text": "Viele Agenturen verkaufen gefälschte 'Freiwilligenvisa'. Die Einwanderungsbehörde überwacht dies sehr genau. Wenn Sie bei einer Kontrolle keine tatsächliche Tätigkeit nachweisen können, wird Ihr Visum sofort annulliert.",
+    "renewal_title": "Verlängerung",
+    "renewal_text": "Dieses Visum kann jährlich bei der thailändischen Einwanderungsbehörde verlängert werden, solange die Organisation Ihre Freiwilligenrolle bestätigt.",
+    "limitations_title": "Wichtige Einschränkungen",
+    "limitations_risk_title": "Arbeitserlaubnis Erforderlich",
+    "limitations_risk_text": "Achtung: Freiwilligenarbeit gilt als Arbeit. Eine Arbeitserlaubnis (Work Permit) ist zusätzlich zum Visum gesetzlich vorgeschrieben.",
     "cta_help_title": "Hilfe beim Dossier benötigt?",
     "cta_help_subtitle": "Das Freiwilligenvisum erfordert eine komplexe Dokumentation. Wir helfen Ihnen, die Konformität sicherzustellen.",
-    "cta_help_btn": "Einen Experten konsultieren"
+    "cta_help_btn": "Einen Experten konsultieren",
+    "cta_compare_title": "Kurze Mission?",
+    "cta_compare_subtitle": "Für weniger als 30 Tage kann ein Touristenvisum ausreichen.",
+    "cta_compare_btn": "Touristenvisum ansehen"
   },
   "medical_visa_page": {
     "meta": {

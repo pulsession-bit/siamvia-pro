@@ -895,12 +895,20 @@ export const zh = {
       "必须办理工作许可 (志愿者也需要)。",
       "部分教学项目需要无犯罪记录证明。"
     ],
-    "warning_title": "警示：灰色地带",
-    "warning_regulation_title": "监管严格",
-    "warning_regulation_text": "许多中介销售没有实报内容的“志愿者签”。泰国移民局正严查此类签证，若无法证明实际活动，签证将被撤销。",
+    "work_title": "法规与工作",
+    "work_warning_title": "警惕“灰色地带”",
+    "work_warning_text": "许多中介出售虚假的“志愿者签证”。移民局对此监控非常严格。如果在检查中无法证明实际活动，您的签证将立即被取消。",
+    "renewal_title": "续签",
+    "renewal_text": "只要组织确认您的志愿者角色，此签证可在泰国移民局每年续签。",
+    "limitations_title": "重要限制",
+    "limitations_risk_title": "必须持有工作许可",
+    "limitations_risk_text": "注意：志愿服务被视为工作。为了合规，除签证外，法律上还必须持有工作许可证 (Work Permit)。",
     "cta_help_title": "需要档案办理帮助吗？",
     "cta_help_subtitle": "志愿者签材料复杂，我们帮您核查合规性。",
-    "cta_help_btn": "咨询专家"
+    "cta_help_btn": "咨询专家",
+    "cta_compare_title": "短期任务？",
+    "cta_compare_subtitle": "少于30天，旅游签证可能已足够。",
+    "cta_compare_btn": "查看旅游签证"
   },
   "medical_visa_page": {
     "meta": {

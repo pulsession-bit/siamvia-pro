@@ -1079,12 +1079,20 @@ export const es = {
       "Permiso de Trabajo obligatorio (incluso para voluntariado).",
       "Antecedentes penales a menudo requeridos."
     ],
-    "warning_title": "Vigilancia: El 'Grey Area'",
-    "warning_regulation_title": "Reglamentación estricta",
-    "warning_regulation_text": "Muchas agencias venden 'Visas de Voluntario' sin compromiso humanitario real. Inmigración vigila de cerca estas visas.",
+    "work_title": "Normativa & Trabajo",
+    "work_warning_title": "Cuidado con la 'Zona Gris'",
+    "work_warning_text": "Muchas agencias venden 'Visas de Voluntario' falsas. Inmigración vigila de cerca. Si no puede demostrar una actividad real durante un control, su visa será cancelada de inmediato.",
+    "renewal_title": "Renovación",
+    "renewal_text": "Esta visa se puede renovar anualmente en Inmigración Tailandesa, siempre que la organización confirme su papel de voluntario.",
+    "limitations_title": "Restricciones Importantes",
+    "limitations_risk_title": "Permiso de Trabajo Requerido",
+    "limitations_risk_text": "Atención: El voluntariado se considera trabajo. Un Work Permit es legalmente obligatorio además de la visa para estar en regla.",
     "cta_help_title": "¿Necesita ayuda con su expediente?",
     "cta_help_subtitle": "La visa de voluntario requiere documentación compleja. Le ayudamos a verificar la conformidad.",
-    "cta_help_btn": "Consultar a un experto"
+    "cta_help_btn": "Consultar a un experto",
+    "cta_compare_title": "¿Misión corta?",
+    "cta_compare_subtitle": "Para menos de 30 días, una visa de turista puede ser suficiente.",
+    "cta_compare_btn": "Ver Visa de Turista"
   },
   "medical_visa_page": {
     "meta": {

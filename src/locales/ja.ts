@@ -919,12 +919,20 @@ export const ja = {
       "ワークパーミット必須 (ボランティアでも必要)。",
       "無犯罪証明書 (教育関連の場合)。"
     ],
-    "warning_title": "重要：グレーゾーンへの注意",
-    "warning_regulation_title": "厳格な規制",
-    "warning_regulation_text": "実態のないボランティアビザを販売する業者が存在しますが、入国管理局の監視が非常に厳しくなっています。",
+    "work_title": "規制と労働",
+    "work_warning_title": "「グレーゾーン」に注意",
+    "work_warning_text": "多くの業者が偽の「ボランティアビザ」を販売しており、入国管理局は厳重に監視しています。検査時に実際の活動を証明できない場合、ビザは即座に取り消されます。",
+    "renewal_title": "更新",
+    "renewal_text": "このビザは、組織がボランティアとしての役割を確認する限り、タイ入国管理局で毎年更新できます。",
+    "limitations_title": "重要な制限事項",
+    "limitations_risk_title": "労働許可証が必須",
+    "limitations_risk_text": "注意：ボランティア活動も労働と見なされます。法的に遵守するためには、ビザに加えてワークパーミット（労働許可証）が必須です。",
     "cta_help_title": "書類作成でお困りですか？",
     "cta_help_subtitle": "ボランティアビザは提出書類が複雑です。適合性の確認をサポートします。",
-    "cta_help_btn": "専門家に相談"
+    "cta_help_btn": "専門家に相談",
+    "cta_compare_title": "短期ミッション？",
+    "cta_compare_subtitle": "30日未満の場合、観光ビザで十分な場合があります。",
+    "cta_compare_btn": "観光ビザを見る"
   },
   "medical_visa_page": {
     "meta": {

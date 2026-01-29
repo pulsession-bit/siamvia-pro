@@ -895,12 +895,20 @@ export const ko = {
       "워크 퍼밋 필수 (봉사 활동도 해당).",
       "범죄 경력 증명 (교육 분야 등)."
     ],
-    "warning_title": "주의: 규제 강화",
-    "warning_regulation_title": "엄격한 관리",
-    "warning_regulation_text": "실제 활동 없이 비자만 판매하는 업체들이 있어 이민국에서 엄격히 감시하고 있습니다.",
+    "work_title": "규정 및 업무",
+    "work_warning_title": "'회색 지대' 주의",
+    "work_warning_text": "많은 대행사가 가짜 '자원봉사 비자'를 판매합니다. 이민국은 이를 매우 엄격하게 감시합니다. 검사 시 실제 활동을 증명할 수 없으면 비자가 즉시 취소됩니다.",
+    "renewal_title": "연장",
+    "renewal_text": "이 비자는 당국이 귀하의 자원봉사 역할을 확인하는 한 태국 이민국에서 매년 갱신할 수 있습니다.",
+    "limitations_title": "중요 제한 사항",
+    "limitations_risk_title": "워크 퍼밋 필수",
+    "limitations_risk_text": "주의: 자원봉사도 업무로 간주됩니다. 규정을 준수하려면 비자 외에도 법적으로 워크 퍼밋(Work Permit)이 필수입니다.",
     "cta_help_title": "서류 준비에 도움이 필요하신가요?",
     "cta_help_subtitle": "자원봉사 비자는 서류가 복잡합니다. 적합성 확인을 도와드립니다.",
-    "cta_help_btn": "전문가 상담"
+    "cta_help_btn": "전문가 상담",
+    "cta_compare_title": "단기 미션?",
+    "cta_compare_subtitle": "30일 미만인 경우 관광 비자로 충분할 수 있습니다.",
+    "cta_compare_btn": "관광 비자 보기"
   },
   "medical_visa_page": {
     "meta": {

@@ -974,12 +974,20 @@ export const en = {
       "Work Permit mandatory (even for volunteering).",
       "Criminal record often required for teaching."
     ],
-    "warning_title": "Vigilance: The 'Grey Area'",
-    "warning_regulation_title": "Strict regulation",
-    "warning_regulation_text": "Many agencies sell 'Volunteer Visas' without real humanitarian commitment. Thai immigration monitors these visas very closely. In case of control, if you are not able to prove your real activity, the visa will be cancelled.",
+    "work_title": "Regulations & Work",
+    "work_warning_title": "Beware of the 'Grey Area'",
+    "work_warning_text": "Many agencies sell fake 'Volunteer Visas'. Immigration monitors this very closely. If you cannot prove actual activity during a check, your visa will be cancelled immediately.",
+    "renewal_title": "Renewal",
+    "renewal_text": "This visa can be renewed annually at Thai Immigration, as long as the organization confirms your volunteer role.",
+    "limitations_title": "Important Restrictions",
+    "limitations_risk_title": "Work Permit Required",
+    "limitations_risk_text": "Attention: Volunteering is considered work. A Work Permit is legally mandatory in addition to the visa to be compliant.",
     "cta_help_title": "Need help with your file?",
     "cta_help_subtitle": "The volunteer visa requires complex documentation. We help you check compliance.",
-    "cta_help_btn": "Consult an expert"
+    "cta_help_btn": "Consult an expert",
+    "cta_compare_title": "Short Mission?",
+    "cta_compare_subtitle": "For less than 30 days, a tourist visa may suffice.",
+    "cta_compare_btn": "See Tourist Visa"
   },
   "medical_visa_page": {
     "meta": {
