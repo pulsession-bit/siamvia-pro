@@ -38,9 +38,9 @@ export const th = {
       "elite": "เอกสิทธิ์ระดับสูง",
       "others": "วีซ่าอื่นๆ"
     },
-    "visa_options": "Visa Options",
-    "eligibility_check": "Check Eligibility",
-    "search_placeholder": "Ask AI..."
+    "visa_options": "ตัวเลือกวีซ่า",
+    "eligibility_check": "ตรวจสอบสิทธิ์",
+    "search_placeholder": "ถาม AI..."
   },
   "meta": {
     "title": "Siam Visa Pro | ผู้เชี่ยวชาญด้านวีซ่าไทย - DTV, ท่องเที่ยว และเกษียณอายุ",
@@ -49,8 +49,8 @@ export const th = {
   "home_page": {
     "appointment_title": "มาพูดคุยเกี่ยวกับโครงการของคุณ",
     "appointment_subtitle": "นัดหมายปรึกษาฟรีกับผู้เชี่ยวชาญด้านวีซ่าไทย",
-    "member": "Client Area",
-    "eligibility": "Eligibility"
+    "member": "พื้นที่สมาชิก",
+    "eligibility": "ตรวจสอบสิทธิ์"
   },
   "search_page": {
     "meta": {
@@ -210,10 +210,10 @@ export const th = {
     "expertPick": "แนะนำ",
     "alternative": "ทางเลือก",
     "commonRequirements": [
-      "พาสปอร์ต",
-      "Clean criminal record certificate",
-      "Proof of sufficient funds",
-      "Proof of local address / booking"
+      "หนังสือเดินทาง",
+      "ใบรับรองประวัติอาชญากรรม (หากจำเป็น)",
+      "หลักฐานทางการเงินที่เพียงพอ",
+      "หลักฐานที่พัก / การจองโรงแรม"
     ],
     "processDescription": "5-15 วัน.",
     "durations": {
@@ -226,9 +226,9 @@ export const th = {
       "4 Years": "4 ปี",
       "Variable": "แปรผัน",
       "90 Days": "90 วัน",
-      "6-12 Months": "6-12 Months",
-      "15 Years": "15 Years",
-      "20+ Years": "20+ Years"
+      "6-12 Months": "6-12 เดือน",
+      "15 Years": "15 ปี",
+      "20+ Years": "20+ ปี"
     },
     "prices": {
       "High": "สูง",
@@ -395,9 +395,9 @@ export const th = {
     "submit": "ส่งคำขอ",
     "success_title": "ส่งแล้ว!",
     "success_desc": "ผู้เชี่ยวชาญจะติดต่อกลับเร็วๆ นี้.",
-    "error_init": "Initialization error",
-    "error_service": "Booking service temporarily unavailable.",
-    "error_generic": "An error occurred."
+    "error_init": "เกิดข้อผิดพลาดในการเริ่มต้น",
+    "error_service": "บริการนัดหมายไม่พร้อมใช้งานชั่วคราว",
+    "error_generic": "เกิดข้อผิดพลาดขึ้น"
   },
   "cart": {
     "title": "ตะกร้าของคุณ",
@@ -422,7 +422,7 @@ export const th = {
     "account_number": "Account Number:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "Thank you. Your order is pending funds arrival. Please email payment proof to contact@siamvisapro.com to activate service."
+    "transfer_success_desc": "ขอบคุณ คำสั่งซื้อของคุณอยู่ระหว่างรอการยืนยันการโอนเงิน กรุณาส่งหลักฐานการชำระเงินมาที่ contact@siamvisapro.com เพื่อเปิดใช้งานบริการ"
   },
   "login": {
     "title": "พื้นที่ลูกค้า",
@@ -437,8 +437,8 @@ export const th = {
     "submit": "เข้าสู่ระบบ",
     "no_account": "ยังไม่มีบัญชี?",
     "start_request": "เริ่มคำขอ",
-    "google_loading": "Logging in...",
-    "facebook_loading": "Logging in..."
+    "google_loading": "กำลังเข้าสู่ระบบด้วย Google...",
+    "facebook_loading": "กำลังเข้าสู่ระบบด้วย Facebook..."
   },
   "contact_page": {
     "meta": {
@@ -532,8 +532,8 @@ export const th = {
       "card_item4": "ผู้เรียนมวยไทย / ทำอาหาร"
     },
     "meta": {
-      "title": "Thailand DTV Visa 2026: Guide, Cost & Requirements | SiamVisaPro",
-      "description": "Complete guide to the Destination Thailand Visa (DTV). 5-year validity, legal work. 2026 conditions, cost, and expert portfolio assistance."
+      "title": "วีซ่าไทย DTV 2026: คู่มือ ราคา และข้อกำหนด | SiamVisaPro",
+      "description": "คู่มือฉบับสมบูรณ์เกี่ยวกับวีซ่า Destination Thailand Visa (DTV) อายุ 5 ปี ทำงานได้อย่างถูกต้องตามกฎหมาย เงื่อนไขปี 2026 ราคา และการช่วยเหลือด้านพอร์ตโฟลิโอโดยผู้เชี่ยวชาญ"
     }
   },
   "business_visa_page": {
@@ -908,164 +908,164 @@ export const th = {
   },
   "media_visa_page": {
     "meta": {
-      "title": "Thailand Media / Journalist Visa (Non-M) | Guide 2026",
-      "description": "Visa for journalists, press correspondents, and film crews in Thailand. Accreditation and required conditions."
+      "title": "วีซ่าสื่อ/ผู้สื่อข่าวไทย (Non-M) | คู่มือ 2026",
+      "description": "วีซ่าสำหรับนักข่าว ผู้สื่อข่าว และทีมงานถ่ายทำภาพยนตร์ในประเทศไทย การรับรองและเงื่อนไขที่จำเป็น"
     },
-    "hero_badge": "Press & Journalism",
-    "hero_title": "Media Visa (Non-M) – Thailand",
-    "hero_subtitle": "Cover the news or produce content in Thailand",
-    "definition_title": "What is the Media Visa (Non-M)?",
-    "definition_content": "The Non-Immigrant M (Media) Visa is intended for certified media professionals (journalists, correspondents, film crews) wishing to work or report in Thailand.",
-    "audience_title": "Who is this visa for?",
-    "audience_compatible": "Compatible Profiles",
+    "hero_badge": "สื่อมวลชนและวารสารศาสตร์",
+    "hero_title": "วีซ่าสื่อ (Non-M) – ประเทศไทย",
+    "hero_subtitle": "รายงานข่าวหรือผลิตเนื้อหาในประเทศไทย",
+    "definition_title": "วีซ่าสื่อ (Non-M) คืออะไร?",
+    "definition_content": "วีซ่า Non-Immigrant M (สื่อ) มีไว้สำหรับมืออาชีพด้านสื่อที่ได้รับการรับรอง (นักข่าว, ผู้สื่อข่าวสำนักข่าวต่างประเทศ, ทีมงานภาพยนตร์) ที่ต้องการเข้ามาทำงานหรือรายงานข่าวในไทย",
+    "audience_title": "วีซ่านี้เหมาะสำหรับใคร?",
+    "audience_compatible": "กลุ่มที่เหมาะสม",
     "audience_compatible_list": [
-      "Accredited Journalists.",
-      "Foreign Press Correspondents.",
-      "Film Crews with official permit."
+      "นักข่าวที่ได้รับการรับรอง",
+      "ผู้สื่อข่าวสำนักข่าวต่างประเทศ",
+      "ทีมงานถ่ายทำภาพยนตร์ที่มีใบอนุญาตอย่างเป็นทางการ"
     ],
-    "audience_not_compatible": "Incompatible Profiles",
+    "audience_not_compatible": "กลุ่มที่ไม่เหมาะสม",
     "audience_not_compatible_list": [
-      "Independent YouTubers without permit.",
-      "Bloggers / Influencers (see DTV Visa).",
-      "Commercial productions without license."
+      "ยูทูบเบอร์อิสระที่ไม่มีใบอนุญาต",
+      "บล็อกเกอร์ / อินฟลูเอนเซอร์ (ดูวีซ่า DTV)",
+      "การผลิตเชิงพาณิชย์ที่ไม่มีใบอนุญาต"
     ],
-    "duration_title": "Length of stay and validity",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "1 Year",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Renewable",
-    "conditions_title": "Accreditation & Conditions",
+    "duration_title": "ระยะเวลาพำนักและความถูกต้อง",
+    "duration_initial_label": "อายุการใช้งาน",
+    "duration_initial_value": "1 ปี",
+    "duration_max_label": "การต่ออายุ",
+    "duration_max_value": "ต่ออายุได้",
+    "conditions_title": "การรับรองและเงื่อนไข",
     "conditions_list": [
-      "Registration on the MFA online portal (M-Press).",
-      "Presentation of press card and letter from employer.",
-      "Background check by the Public Relations Department.",
-      "Thailand Film Office approval for filming."
+      "ลงทะเบียนในพอร์ทัลออนไลน์ของกระทรวงการต่างประเทศ (M-Press)",
+      "แสดงบัตรผู้สื่อข่าวหรือหนังสือรับรองจากนายจ้าง",
+      "ผ่านการตรวจสอบประวัติโดยกรมประชาสัมพันธ์",
+      "ได้รับอนุมัติจากสำนักงานกองทุนพัฒนาภาพยนตร์และวีดิทัศน์แห่งชาติสำหรับการถ่ายทำ"
     ],
-    "work_title": "Working & Filming",
-    "work_warning_title": "Filming Permit",
-    "work_warning_text": "A visa alone is often not enough. For any commercial production, a specific filming permit is required. Without it, you risk heavy fines and confiscation of equipment.",
-    "renewal_title": "Renewal",
-    "renewal_text": "The visa can be renewed annually as long as accreditation with the Ministry of Foreign Affairs (MFA) is maintained.",
-    "limitations_title": "Limitations",
-    "limitations_risk_title": "Strictly Controlled Activity",
-    "limitations_risk_text": "Thailand monitors foreign media very closely. Any politically sensitive reporting without proper accreditation can lead to deportation.",
-    "cta_help_title": "Need accreditation assistance?",
-    "cta_help_subtitle": "We help media professionals with MFA formalities.",
-    "cta_help_btn": "Request assistance",
-    "cta_compare_title": "Are you a Freelancer?",
-    "cta_compare_subtitle": "For digital content, the DTV is often simpler.",
-    "cta_compare_btn": "See DTV Visa"
+    "work_title": "การทำงานและการถ่ายทำ",
+    "work_warning_title": "ใบอนุญาตการถ่ายทำ",
+    "work_warning_text": "ลำพังเพียงวีซ่ามักไม่เพียงพอ สำหรับการผลิตเชิงพาณิชย์ทุกประเภท จำเป็นต้องมีใบอนุญาตถ่ายทำเฉพาะ หากไม่มี คุณอาจเสี่ยงต่อการถูกปรับหนักและริบอุปกรณ์",
+    "renewal_title": "การต่ออายุ",
+    "renewal_text": "วีซ่าสามารถต่ออายุได้ทุกปีตราบเท่าที่ยังคงได้รับการรับรองจากกระทรวงการต่างประเทศ (MFA)",
+    "limitations_title": "ข้อจำกัด",
+    "limitations_risk_title": "กิจกรรมที่ได้รับการควบคุมอย่างเข้มงวด",
+    "limitations_risk_text": "ประเทศไทยติดตามสื่อมวลชนต่างชาติอย่างใกล้ชิด การรายงานข่าวที่มีความอ่อนไหวทางการเมืองโดยไม่มีการรับรองที่ถูกต้องอาจนำไปสู่การเนรเทศ",
+    "cta_help_title": "ต้องการความช่วยเหลือเรื่องการรับรองใช่ไหม?",
+    "cta_help_subtitle": "เราช่วยเหลิอมืออาชีพด้านสื่อเกี่ยวกับพิธีการของกระทรวงการต่างประเทศ",
+    "cta_help_btn": "ขอความช่วยเหลือ",
+    "cta_compare_title": "คุณเป็นฟรีแลนซ์ใช่ไหม?",
+    "cta_compare_subtitle": "สำหรับเนื้อหาดิจิทัล วีซ่า DTV มักจะง่ายกว่า",
+    "cta_compare_btn": "ดูวีซ่า DTV"
   },
   "official_visa_page": {
     "meta": {
-      "title": "Thailand Official Visa (Non-F) | Guide 2026",
-      "description": "Visa for officials, diplomats, and employees of international organizations on mission in Thailand."
+      "title": "วีซ่าราชการไทย (Non-F) | คู่มือ 2026",
+      "description": "วีซ่าสำหรับข้าราชการ นักการทูต และพนักงานขององค์กรระหว่างประเทศที่มาปฏิบัติภารกิจในประเทศไทย"
     },
-    "hero_badge": "Diplomacy & State",
-    "hero_title": "Official Visa (Non-F) – Thailand",
-    "hero_subtitle": "Diplomatic and official missions in Thailand",
-    "definition_title": "What is the Official Visa?",
-    "definition_content": "The Non-Immigrant F (Official) Visa is reserved for people on official mission (diplomats, IO officials).",
-    "audience_title": "Beneficiaries",
-    "audience_diplomatic_title": "Diplomatic Corps",
-    "audience_diplomatic_text": "Ambassies, Consulates, Military Attaches.",
-    "audience_oi_title": "IO / UN",
-    "audience_oi_text": "United Nations employees, UNICEF, etc., based in Bangkok.",
-    "conditions_title": "Specific requirements",
-    "conditions_text": "This visa imperatively requires a verbal note or an official mission order.",
-    "cta_btn": "Request assistance",
-    "audience_compatible": "Eligible Profiles",
+    "hero_badge": "การทูตและรัฐ",
+    "hero_title": "วีซ่าราชการ (Non-F) – ประเทศไทย",
+    "hero_subtitle": "ภารกิจทางการทูตและทางราชการในประเทศไทย",
+    "definition_title": "วีซ่าราชการคืออะไร?",
+    "definition_content": "วีซ่า Non-Immigrant F (ราชการ) สงวนไว้สำหรับบุคคลที่มาปฏิบัติภารกิจอย่างเป็นทางการ (นักการทูต, เจ้าหน้าที่องค์กรระหว่างประเทศ)",
+    "audience_title": "ผู้ได้รับสิทธิ",
+    "audience_diplomatic_title": "คณะทูต",
+    "audience_diplomatic_text": "สถานเอกอัครราชทูต, สถานกงสุล, ผู้ช่วยทูตฝ่ายทหาร",
+    "audience_oi_title": "องค์กรระหว่างประเทศ / UN",
+    "audience_oi_text": "พนักงานสหประชาชาติ, ยูนิเซฟ ฯลฯ ที่มีฐานปฏิบัติงานในกรุงเทพฯ",
+    "conditions_title": "ข้อกำหนดเฉพาะ",
+    "conditions_text": "วีซ่านี้จำเป็นต้องมี Note Verbale (หนังสือธรรมสาร) หรือคำสั่งมอบหมายภารกิจอย่างเป็นทางการ",
+    "cta_btn": "ขอความช่วยเหลือ",
+    "audience_compatible": "กลุ่มที่เหมาะสม",
     "audience_compatible_list": [
-      "Diplomats and Embassy staff.",
-      "United Nations officials (UN/UNICEF/ESCAP).",
-      "Military and officials on official mission."
+      "นักการทูตและเจ้าหน้าที่สถานทูต",
+      "เจ้าหน้าที่สหประชาชาติ (UN/UNICEF/ESCAP)",
+      "ทหารและข้าราชการที่ปฏิบัติภารกิจราชการ"
     ],
-    "audience_not_compatible": "Not Eligible",
+    "audience_not_compatible": "กลุ่มที่ไม่เหมาะสม",
     "audience_not_compatible_list": [
-      "Private contractors working for governments.",
-      "External consultants without official status.",
-      "Family members not officially declared."
+      "ผู้รับเหมาเอกชนที่ทำงานให้รัฐบาล",
+      "ที่ปรึกษาภายนอกที่ไม่มีสถานะเป็นทางการ",
+      "สมาชิกในครอบครัวที่ไม่ได้รับการแจ้งชื่ออย่างเป็นทางการ"
     ],
-    "duration_title": "Mission Duration",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "Mission",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Variable",
+    "duration_title": "ระยะเวลาภารกิจ",
+    "duration_initial_label": "อายุการใช้งาน",
+    "duration_initial_value": "ตามภารกิจ",
+    "duration_max_label": "การต่ออายุ",
+    "duration_max_value": "แปรผัน",
     "conditions_list": [
-      "Note Verbale from the Ministry of Foreign Affairs.",
-      "Official Mission Order.",
-      "Diplomatic or Service Passport (recommended).",
-      "Invitation letter from the organization in Thailand."
+      "Note Verbale จากกระทรวงการต่างประเทศ",
+      "คำสั่งมอบหมายภารกิจอย่างเป็นทางการ",
+      "หนังสือเดินทางทูตหรือราชการ (แนะนำ)",
+      "จดหมายเชิญจากองค์กรในประเทศไทย"
     ],
-    "work_title": "Diplomatic Status",
-    "work_warning_title": "Immunity and Rules",
-    "work_warning_text": "Depending on your rank and the agreement with Thailand, you may benefit from diplomatic immunity and tax exemptions. No private commercial activity is authorized.",
-    "renewal_title": "Extension",
-    "renewal_text": "Managed directly by the MFA Protocol Department or your organization.",
-    "limitations_title": "Limitations",
-    "limitations_risk_title": "End of Mission",
-    "limitations_risk_text": "At the end of your official mission, you must return your diplomatic card and change status or leave the country immediately.",
-    "cta_help_title": "Protocol Assistance?",
-    "cta_help_subtitle": "We assist international organizations with their procedures.",
-    "cta_help_btn": "Request assistance",
-    "cta_compare_title": "Commercial Mission?",
-    "cta_compare_subtitle": "If you do not have diplomatic status, use the Business Visa.",
-    "cta_compare_btn": "See Business Visa"
+    "work_title": "สถานะทางการทูต",
+    "work_warning_title": "เอกสิทธิ์และความคุ้มกัน",
+    "work_warning_text": "ขึ้นอยู่กับระดับตำแหน่งและข้อตกลงกับประเทศไทย คุณอาจได้รับเอกสิทธิ์และความคุ้มกันทางการทูต รวมถึงการยกเว้นภาษี ไม่อนุญาตให้ประกอบกิจกรรมเชิงพาณิชย์ส่วนตัว",
+    "renewal_title": "การขยายเวลา",
+    "renewal_text": "จัดการโดยตรงผ่านกรมพิธีการทูต กระทรวงการต่างประเทศ หรือองค์กรของคุณ",
+    "limitations_title": "ข้อจำกัด",
+    "limitations_risk_title": "การสิ้นสุดภารกิจ",
+    "limitations_risk_text": "เมื่อสิ้นสุดภารกิจราชการ คุณต้องคืนบัตรทูตและเปลี่ยนสถานะหรือเดินทางออกนอกประเทศทันที",
+    "cta_help_title": "ความช่วยเหลือด้านพิธีการทูต?",
+    "cta_help_subtitle": "เราช่วยเหลือองค์กรระหว่างประเทศในขั้นตอนการดำเนินการต่างๆ",
+    "cta_help_btn": "ขอรับความช่วยเหลือ",
+    "cta_compare_title": "ภารกิจเชิงพาณิชย์?",
+    "cta_compare_subtitle": "หากคุณไม่มีสถานะทางการทูต โปรดใช้หน้าวีซ่าธุรกิจ",
+    "cta_compare_btn": "ดูวีซ่าธุรกิจ"
   },
   "scientific_visa_page": {
     "meta": {
-      "title": "Thailand Scientific Research Visa (Non-RS) | Guide 2026",
-      "description": "Visa for researchers, experts, and scientists conducting research work in Thailand."
+      "title": "วีซ่าวิจัยทางวิทยาศาสตร์ไทย (Non-RS) | คู่มือ 2026",
+      "description": "วีซ่าสำหรับนักวิจัย ผู้เชี่ยวชาญ และนักวิทยาศาสตร์ที่เข้ามาทำงานวิจัยในประเทศไทย"
     },
-    "hero_badge": "Research & Innovation",
-    "hero_title": "Scientific Research Visa (Non-RS) – Thailand",
-    "hero_subtitle": "Contribute to scientific advancement in Thailand",
-    "definition_title": "What is the Scientific Research Visa?",
-    "definition_content": "The Non-Immigrant RS (Research & Science) Visa is designed for experts and researchers conducting scientific work with a Thai institute.",
-    "audience_title": "Eligible Profiles",
-    "audience_tech_title": "Technical Experts",
-    "audience_tech_text": "Engineers and specialists in technology transfer.",
-    "audience_academic_title": "Academic Researchers",
-    "audience_academic_text": "Scientists on mission in universities or national research centers.",
-    "conditions_title": "Required Conditions",
+    "hero_badge": "วิจัยและนวัตกรรม",
+    "hero_title": "วีซ่าวิจัยทางวิทยาศาสตร์ (Non-RS) – ประเทศไทย",
+    "hero_subtitle": "มีส่วนร่วมในความก้าวหน้าทางวิทยาศาสตร์ในประเทศไทย",
+    "definition_title": "วีซ่าวิจัยทางวิทยาศาสตร์คืออะไร?",
+    "definition_content": "วีซ่า Non-Immigrant RS (วิจัยและวิทยาศาสตร์) ออกแบบมาสำหรับผู้เชี่ยวชาญและนักวิจัยที่เข้ามาทำงานวิจัยทางวิทยาศาสตร์ร่วมกับสถาบันในไทย",
+    "audience_title": "กลุ่มเป้าหมายที่ได้รับสิทธิ",
+    "audience_tech_title": "ผู้เชี่ยวชาญด้านเทคนิค",
+    "audience_tech_text": "วิศวกรและผู้เชี่ยวชาญด้านการถ่ายทอดเทคโนโลยี",
+    "audience_academic_title": "นักวิจัยทางวิชาการ",
+    "audience_academic_text": "นักวิทยาศาสตร์ที่มีภารกิจในมหาวิทยาลัยหรือศูนย์วิจัยระดับชาติ",
+    "conditions_title": "เงื่อนไขที่จำเป็น",
     "conditions_list": [
-      "Invitation from a Thai research organization (e.g., NRCT).",
-      "Scientific cooperation agreement between institutions.",
-      "Degree certificates and detailed CV.",
-      "Proof of research funding."
+      "จดหมายเชิญจากองค์กรวิจัยในไทย (เช่น วช.)",
+      "ข้อตกลงความร่วมมือทางวิทยาศาสตร์ระหว่างสถาบัน",
+      "ใบรับรองวุฒิการศึกษาและประวัติโดยย่อ (CV) อย่างละเอียด",
+      "หลักฐานการจัดหาเงินทุนสำหรับงานวิจัย"
     ],
-    "cta_btn": "Check sponsorship",
-    "audience_compatible": "Compatible Profiles",
+    "cta_btn": "ตรวจสอบการอุปถัมภ์",
+    "audience_compatible": "กลุ่มที่เหมาะสม",
     "audience_compatible_list": [
-      "Technical Experts and Engineers.",
-      "Academic Researchers (Universities, National Centers).",
-      "Technology Transfer Specialists."
+      "ผู้เชี่ยวชาญด้านเทคนิคและวิศวกร",
+      "นักวิจัยทางวิชาการ (มหาวิทยาลัย, ศูนย์วิจัยระดับชาติ)",
+      "ผู้เชี่ยวชาญด้านการถ่ายทอดเทคโนโลยี"
     ],
-    "audience_not_compatible": "Not Compatible",
+    "audience_not_compatible": "กลุ่มที่ไม่เหมาะสม",
     "audience_not_compatible_list": [
-      "Independent researchers without affiliation.",
-      "Language teachers (see ED Visa).",
-      "PhD students without a research contract."
+      "นักวิจัยอิสระที่ไม่มีสังกัด",
+      "ครูสอนภาษา (ดูวีซ่า ED)",
+      "นักศึกษาระดับปริญญาเอกที่ไม่มีสัญญาการทำงานวิจัย"
     ],
-    "duration_title": "Research Duration",
-    "duration_initial_label": "Validity",
-    "duration_initial_value": "1-2 Years",
-    "duration_max_label": "Extension",
-    "duration_max_value": "Renewable",
-    "work_title": "Research Activity",
-    "work_warning_title": "Scope of work",
-    "work_warning_text": "This visa authorizes research activities described in the contract. It does not allow working for a private company outside the research project.",
-    "renewal_title": "Renewal",
-    "renewal_text": "Renewable based on the progress of the research project and funding.",
-    "limitations_title": "Approval Required",
-    "limitations_risk_title": "NRCT Approval",
-    "limitations_risk_text": "The most difficult step is obtaining approval from the National Research Council. Without this, the RS visa cannot be issued.",
-    "cta_help_title": "Need help with NRCT?",
-    "cta_help_subtitle": "We guide researchers and institutes through the process.",
-    "cta_help_btn": "Contact an expert",
-    "cta_compare_title": "Tech Startup?",
-    "cta_compare_subtitle": "The SMART Visa might be more appropriate for innovation.",
-    "cta_compare_btn": "See SMART Visa"
+    "duration_title": "ระยะเวลาการวิจัย",
+    "duration_initial_label": "อายุการใช้งาน",
+    "duration_initial_value": "1-2 ปี",
+    "duration_max_label": "การต่ออายุ",
+    "duration_max_value": "ต่ออายุได้",
+    "work_title": "กิจกรรมการวิจัย",
+    "work_warning_title": "ขอบเขตของงาน",
+    "work_warning_text": "วีซ่านี้อนุญาตเฉพาะกิจกรรมการวิจัยที่ระบุไว้ในสัญญาเท่านั้น ไม่อนุญาตให้ทำงานในบริษัทเอกชนนอกเหนือจากโครงการวิจัยดังกล่าว",
+    "renewal_title": "การต่ออายุ",
+    "renewal_text": "สามารถต่ออายุได้โดยพิจารณาจากความก้าวหน้าของโครงการวิจัยและการจัดหาเงินทุน",
+    "limitations_title": "ต้องได้รับการอนุมัติ",
+    "limitations_risk_title": "การอนุมัติจาก วช. (NRCT)",
+    "limitations_risk_text": "ขั้นตอนที่ยากที่สุดคือการได้รับการอนุมัติจากสภาวิจัยแห่งชาติ (วช.) หากปราศจากการอนุมัตินี้ จะไม่สามารถออกวีซ่า RS ได้",
+    "cta_help_title": "ต้องการความช่วยเหลือเกี่ยวกับ วช. หรือไม่?",
+    "cta_help_subtitle": "เราให้คำแนะนำนักวิจัยและสถาบันผ่านกระบวนการต่างๆ",
+    "cta_help_btn": "ติดต่อผู้เชี่ยวชาญ",
+    "cta_compare_title": "เทคโนโลยีสตาร์ทอัพ?",
+    "cta_compare_subtitle": "SMART Visa อาจจะเหมาะสมกว่าสำหรับนวัตกรรม",
+    "cta_compare_btn": "ดู SMART Visa"
   },
   "tourist_page": {
     "badge": "ท่องเที่ยว",
@@ -1450,258 +1450,258 @@ export const th = {
     "all_services": "บริการทั้งหมด",
     "legal": "ข้อกำหนด",
     "privacy": "ส่วนตัว",
-    "details": "Détails du visa",
+    "details": "รายละเอียดวีซ่า",
     "sitemap": "แผนผังเว็บไซต์",
     "copyright": "สงวนลิขสิทธิ์",
     "disclaimer": "ตัวแทนเอกชน",
     "secure_payment": "ชำระเงินปลอดภัย",
     "author": "Raphaël Buresi",
-    "author_role": "Thailand Visa Expert",
-    "written_by": "Written by",
-    "last_updated": "Last updated",
-    "office_bkk": "Bangkok: Sukhumvit Rd, Khlong Toei, Bangkok 10110, Thailand",
-    "office_usa": "HQ: 16192 Coastal Highway, Lewes, Delaware 19958, USA",
+    "author_role": "ผู้เชี่ยวชาญวีซ่าไทย",
+    "written_by": "เขียนโดย",
+    "last_updated": "อัปเดตล่าสุดเมื่อ",
+    "office_bkk": "กรุงเทพฯ: ถนนสุขุมวิท, คลองเตย, กรุงเทพฯ 10110, ประเทศไทย",
+    "office_usa": "สำนักงานใหญ่: 16192 Coastal Highway, Lewes, Delaware 19958, USA",
     "tax_id": "RC: 2417125",
     "legal_entity": "DigitGpt LLC"
   },
   "ltr_page": {
     "meta": {
-      "title": "LTR Visa Thailand (Long Term Resident) - 10 Years | SiamVisaPro",
-      "description": "Get the 10-year LTR Visa for Thailand. Privileged tax residency (17%), work permit and VIP benefits. Free eligibility audit."
+      "title": "วีซ่า LTR ไทย (พำนักระยะยาว) - 10 ปี | SiamVisaPro",
+      "description": "ขอรับวีซ่า LTR 10 ปีสำหรับประเทศไทย สถานะผู้อยู่อาศัยที่ได้รับสิทธิพิเศษทางภาษี (17%) ใบอนุญาตทำงาน และสิทธิประโยชน์ระดับ VIP ตรวจสอบสิทธิ์ฟรี"
     },
-    "badge": "10-Year Residence",
-    "hero_title": "Thailand LTR VISA",
-    "title": "LTR Visa: Long-Term Residence",
-    "subtitle": "The most advantageous tax and residency status for wealthy citizens.",
-    "cta": "Check my LTR eligibility",
-    "why_title": "Why choose the LTR?",
-    "benefit1_title": "10-Year Visa",
-    "benefit1_desc": "Renewable, with digital work permit included.",
-    "benefit2_title": "17% Tax",
-    "benefit2_desc": "Flat rate on local income for professionals.",
-    "benefit3_title": "VIP Service",
-    "benefit3_desc": "Priority airport access and 90-day reports waived.",
-    "cat1": "Wealthy Global Citizens",
-    "cat2": "Wealthy Pensioners",
-    "cat3": "Work-from-Thailand Professionals",
-    "cat4": "Highly-Skilled Experts",
-    "audit1": "Income Audit > $80k USD",
-    "audit2": "Investment Analysis",
-    "audit3": "Board of Investment Liaison",
-    "audit4": "Family Inclusion (4 persons)",
-    "pros_title": "Strengths",
-    "cons_title": "Weaknesses",
+    "badge": "พำนัก 10 ปี",
+    "hero_title": "วีซ่า LTR ประเทศไทย",
+    "title": "วีซ่า LTR: การพำนักระยะยาว",
+    "subtitle": "สถานะทางภาษีและการพำนักที่ได้เปรียบที่สุดสำหรับพลเมืองที่มีฐานะดี",
+    "cta": "ตรวจสอบสิทธิ์ LTR ของฉัน",
+    "why_title": "ทำไมต้องเลือก LTR?",
+    "benefit1_title": "วีซ่า 10 ปี",
+    "benefit1_desc": "ต่ออายุได้ พร้อมใบอนุญาตทำงานดิจิทัลในตัว",
+    "benefit2_title": "ภาษี 17%",
+    "benefit2_desc": "อัตราคงที่สำหรับรายได้ในท้องถิ่นสำหรับมืออาชีพ",
+    "benefit3_title": "บริการระดับ VIP",
+    "benefit3_desc": "ช่องทางด่วนในสนามบินและยกเว้นการรายงานตัวทุก 90 วัน",
+    "cat1": "พลเมืองโลกที่มีฐานะดี",
+    "cat2": "ผู้เกษียณอายุที่มีฐานะดี",
+    "cat3": "มืออาชีพที่ทำงานจากไทย",
+    "cat4": "ผู้เชี่ยวชาญทักษะสูง",
+    "audit1": "ตรวจสอบรายได้ > $80,000 USD",
+    "audit2": "วิเคราะห์การลงทุน",
+    "audit3": "การประสานงานกับ BOI",
+    "audit4": "รวมครอบครัว (สูงสุด 4 คน)",
+    "pros_title": "จุดแข็ง",
+    "cons_title": "จุดอ่อน",
     "pros": [
-      "10-year validity (5+5) renewable",
-      "Digital work permit included",
-      "International Airport Fast Track",
-      "Tax exemption on foreign income",
-      "17% rate for professionals",
-      "4 Dependents included (Spouse/Children)"
+      "มีอายุ 10 ปี (5+5) ต่ออายุได้",
+      "รวมใบอนุญาตทำงานดิจิทัล",
+      "ช่องทางด่วนในสนามบินนานาชาติ",
+      "ยกเว้นภาษีสำหรับรายได้จากต่างประเทศ",
+      "อัตราภาษี 17% สำหรับมืออาชีพ",
+      "รวมผู้ติดตาม 4 คน (คู่สมรส/บุตร)"
     ],
     "cons": [
-      "Very strict financial criteria (>$80k wealth)",
-      "Long validation process (BOI)",
-      "Heavy administrative paperwork initially",
-      "Mandatory health insurance (>$50k)",
-      "Investment required for certain categories"
+      "เกณฑ์ทางการเงินที่เข้มงวดมาก (ความมั่งคั่ง > $80,000)",
+      "กระบวนการตรวจสอบที่ยาวนาน (BOI)",
+      "งานเอกสารที่ค่อนข้างหนักในช่วงแรก",
+      "บังคับทำประกันสุขภาพ (วงเงินคุ้มครอง > $50,000)",
+      "ต้องมีการลงทุนสำหรับบางหมวดหมู่"
     ],
-    "faq_title": "Frequently Asked Questions (FAQ)",
+    "faq_title": "คำถามที่พบบ่อย (FAQ)",
     "faq": [
       {
-        "q": "What's the difference with Elite Visa?",
-        "a": "Elite Visa is paid and doesn't allow work. LTR is 'free' (reduced fees) if eligible and includes work permit."
+        "q": "ความแตกต่างกับวีซ่าอีลิทคืออะไร?",
+        "a": "วีซ่าอีลิทเป็นวีซ่าแบบชำระค่าสมาชิกและไม่อนุญาตให้ทำงาน LTR 'ฟรี' (ค่าธรรมเนียมลดลง) หากคุณมีคุณสมบัติครบถ้วนและรวมใบอนุญาตทำงานด้วย"
       },
       {
-        "q": "Can I work with an LTR visa?",
-        "a": "Yes, it's one of the few visas including a digital work permit without Thai employee quota."
+        "q": "ฉันสามารถทำงานด้วยวีซ่า LTR ได้หรือไม่?",
+        "a": "ได้ นี่เป็นหนึ่งในไม่กี่วีซ่าที่รวมใบอนุญาตทำงานดิจิทัลโดยไม่มีข้อกำหนดเรื่องโควต้าพนักงานไทย"
       },
       {
-        "q": "Minimum income required?",
-        "a": "$80,000 USD/year (2 years) or investment mix. Retirees eligible at $40,000 under investment conditions."
+        "q": "รายได้ขั้นต่ำที่ต้องการคือเท่าไร?",
+        "a": "$80,000 USD ต่อปี (ย้อนหลัง 2 ปี) หรือมีการลงทุนผสมผสาน สำหรับผู้เกษียณอายุสามารถรับสิทธิ์ได้ที่ $40,000 ภายใต้เงื่อนไขการลงทุน"
       },
       {
-        "q": "Processing time?",
-        "a": "1 to 3 months for BOI approval, then a few weeks for issuance."
+        "q": "ระยะเวลาดำเนินการนานเท่าไร?",
+        "a": "1 ถึง 3 เดือนสำหรับการอนุมัติจาก BOI จากนั้นใช้เวลาอีกไม่กี่สัปดาห์ในการออกวีซ่า"
       }
     ],
     "high_value": {
-      "title": "Tax Optimization",
-      "highlight": "& Freedom",
-      "description": "The LTR is not just a visa, it's a privileged resident status that allows you to work legally and optimize your taxation with a flat rate of 17% for skilled professionals.",
-      "item1": "17% Flat Tax (Professionals)",
-      "item2": "Work Permit Included",
-      "item3": "Foreign Income Exemption",
-      "card_title": "Exclusive Benefits",
-      "card_item1": "VIP Airport Fast Track",
-      "card_item2": "No 90-Day Reporting",
-      "card_item3": "4 Dependents Included",
-      "card_item4": "Privileged Tax Residency"
+      "title": "การเพิ่มประสิทธิภาพภาษี",
+      "highlight": "& อิสระ",
+      "description": "LTR ไม่ใช่แค่ศวีซ่า แต่เป็นสถานะผู้อยู่อาศัยที่ได้รับสิทธิพิเศษที่ช่วยให้คุณทำงานได้อย่างถูกต้องตามกฎหมาย และเพิ่มประสิทธิภาพการเสียภาษีของคุณด้วยอัตราคงที่ 17% สำหรับมืออาชีพที่มีทักษะ",
+      "item1": "ภาษีอัตราคงที่ 17% (สำหรับมืออาชีพ)",
+      "item2": "รวมใบอนุญาตทำงาน",
+      "item3": "ยกเว้นภาษีสำหรับรายได้จากต่างประเทศ",
+      "card_title": "สิทธิประโยชน์พิเศษ",
+      "card_item1": "ช่องทางด่วน VIP ในสนามบิน",
+      "card_item2": "ไม่ต้องรายงานตัวทุก 90 วัน",
+      "card_item3": "รวมผู้ติดตาม 4 คน",
+      "card_item4": "สถานะผู้อยู่อาศัยทางภาษีที่ได้รับสิทธิพิเศษ"
     }
   },
   "visa_run_page": {
     "meta": {
-      "title": "Thailand Visa Run: Risks, Costs and Alternatives 2026",
-      "description": "Why doing Visa Runs in Thailand is dangerous in 2026. Discover refusal risks, hidden costs and legal alternatives (DTV, Elite)."
+      "title": "Thailand Visa Run: ความเสี่ยง ค่าใช้จ่าย และทางเลือกอื่นในปี 2026",
+      "description": "ทำไมการทำ Visa Run ในไทยจึงอันตรายในปี 2026 ค้นพบความเสี่ยงในการถูกปฏิเสธ ค่าใช้จ่ายแฝง และทางเลือกที่ถูกกฎหมาย (DTV, Elite)"
     },
     "hero": {
-      "title": "Stop doing",
-      "highlight": "Visa Runs.",
-      "subtitle": "Thai immigration has tightened the rules. Chaining visa exemptions and tourist entries is now a risky strategy.",
-      "cta": "See legal alternatives"
+      "title": "หยุดทำ",
+      "highlight": "Visa Run.",
+      "subtitle": "สำนักงานตรวจคนเข้าเมืองของไทยได้เข้มงวดกฎระเบียบมากขึ้น การทำ Visa Run ซ้ำๆ ด้วยการยกเว้นวีซ่าหรือวีซ่าท่องเที่ยวถือเป็นกลยุทธ์ที่มีความเสี่ยงสูงในปัจจุบัน",
+      "cta": "ดูทางเลือกที่ถูกกฎหมาย"
     },
     "dangers": {
-      "title": "Why it's over?",
-      "risk1_title": "Entry Denial",
-      "risk1_desc": "Immigration officers have discretionary power to deny entry, even with a valid visa, if they suspect illegal work.",
-      "risk2_title": "Interrogation & Stress",
-      "risk2_desc": "Ending up in the airport 'holding cell' waiting for the next flight home is not a way to live.",
-      "risk3_title": "Hidden Costs",
-      "risk3_desc": "Flights, last-minute hotels, taxis... A 'Visa Run' costs roughly 10,000 THB per month. That's 120,000 THB/year."
+      "title": "ทำไมถึงยุคสมัยนี้ถึงทำไม่ได้แล้ว?",
+      "risk1_title": "การถูกปฏิเสธเข้าเมือง",
+      "risk1_desc": "เจ้าหน้าที่ตรวจคนเข้าเมืองมีอำนาจตัดสินใจเด็ดขาดในการปฏิเสธการเข้าเมือง แม้จะมีวีซ่าที่ถูกต้อง หากพวกเขาสงสัยว่ามีการทำงานอย่างผิดกฎหมาย",
+      "risk2_title": "การสอบสวนและความเครียด",
+      "risk2_desc": "การต้องไปอยู่ใน 'ห้องกักตัว' ของสนามบินเพื่อรอเที่ยวบินถัดไปกลับบ้านไม่ใช่รูปแบบชีวิตที่น่ารื่นรมย์",
+      "risk3_title": "ค่าใช้จ่ายแฝง",
+      "risk3_desc": "ค่าตั๋วเครื่องบิน, โรงแรมนาทีสุดท้าย, ค่าแท็กซี่... การทำ 'Visa Run' มีค่าใช้จ่ายประมาณ 10,000 บาทต่อเดือน หรือ 120,000 บาทต่อปี"
     },
     "solutions": {
-      "title": "Real Solutions (2026)",
-      "dtv": "DTV Visa (5 Years)",
-      "dtv_desc": "Perfect for digital nomads. ~15,000 THB once.",
-      "elite": "Elite Visa (5-20 Years)",
-      "elite_desc": "Absolute peace of mind for those who can invest.",
-      "ltr": "LTR Visa (10 Years)",
-      "ltr_desc": "For wealthy and talented profiles."
+      "title": "ทางออกที่แท้จริง (2026)",
+      "dtv": "วีซ่า DTV (5 ปี)",
+      "dtv_desc": "สมบูรณ์แบบสำหรับ Digital Nomads เสียค่าธรรมเนียมประมาณ 15,000 บาท ครั้งเดียว",
+      "elite": "วีซ่าอีลิท (5-20 ปี)",
+      "elite_desc": "ความอุ่นใจอย่างที่สุดสำหรับผู้ที่มีกำลังลงทุน",
+      "ltr": "วีซ่า LTR (10 ปี)",
+      "ltr_desc": "สำหรับโปรไฟล์ที่มีฐานะดีและมีความสามารถสูง"
     }
   },
   "elite_page": {
     "badge": "Thailand Privilege",
-    "hero_title": "Thailand Elite Visa (Luxury & VIP)",
-    "hero_subtitle": "5 to 20 years visa. VIP Concierge. Airport Fast-Track.",
-    "hero_tagline": "The ultimate experience for living in Thailand.",
-    "why_title": "Why choose the Elite Visa?",
-    "duration_title": "5 to 20 Years of Serenity",
-    "duration_desc": "Choose the duration that suits you (5, 10, 15, or 20 years) and forget the hassle of visa extensions.",
-    "work_title": "Concierge Service",
-    "work_desc": "From your arrival at the airport with a personal assistant to opening your bank account, everything is facilitated for you.",
-    "finance_title": "One-time Investment",
-    "finance_desc": "No proof of funds / monthly income required. It is a one-time membership fee paid directly to the government.",
-    "who_title": "Who is it for?",
-    "who_wealthy": "Investors & Retirees",
-    "who_wealthy_desc": "Those who want to avoid the annual paperwork of retirement visas.",
-    "who_business": "Business Owners",
-    "who_business_desc": "Entrepreneurs wanting a stable base in Asia.",
-    "who_family": "Families",
-    "who_family_desc": "Flexible options to include spouse and children.",
-    "benefits_title": "Exclusive Privileges",
-    "benefits_desc": "In addition to the visa, access high-end services: Airport Limousine, Golf, Spa, Annual Health Check-up...",
-    "benefits_btn": "View Packages",
-    "cta_button": "Become a Member",
-    "highs_title": "Highlights",
+    "hero_title": "วีซ่าไทยอีลิท (หรูหรา & VIP)",
+    "hero_subtitle": "วีซ่า 5 ถึง 20 ปี คอนเซียร์จระดับ VIP ช่องทางด่วนในสนามบิน",
+    "hero_tagline": "ประสบการณ์ที่สุดของการใช้ชีวิตในประเทศไทย",
+    "why_title": "ทำไมต้องเลือกวีซ่าอีลิท?",
+    "duration_title": "5 ถึง 20 ปีแห่งความสงบสุข",
+    "duration_desc": "เลือกระยะเวลาที่เหมาะกับคุณ (5, 10, 15 หรือ 20 ปี) และลืมความวุ่นวายเรื่องการต่ออายุวีซ่าไปได้เลย",
+    "work_title": "บริการคอนเซียร์จ",
+    "work_desc": "ตั้งแต่การมาถึงสนามบินพร้อมผู้ช่วยส่วนตัวไปจนถึงการเปิดบัญชีธนาคาร ทุกอย่างจะได้รับการอำนวยความสะดวกเพื่อคุณ",
+    "finance_title": "การลงทุนครั้งเดียว",
+    "finance_desc": "ไม่ต้องใช้หลักฐานทางการเงิน / รายได้ต่อเดือน เป็นการชำระค่าสมาชิกเพียงครั้งเดียวโดยตรงให้กับทางรัฐบาล",
+    "who_title": "วีซ่านี้เหมาะสำหรับใคร?",
+    "who_wealthy": "นักลงทุน & ผู้เกษียณอายุ",
+    "who_wealthy_desc": "ผู้ที่ต้องการหลีกเลี่ยงงานเอกสารรายปีของวีซ่าเกษียณอายุ",
+    "who_business": "เจ้าของธุรกิจ",
+    "who_business_desc": "ผู้ประกอบการที่ต้องการฐานที่มั่นคงในเอเชีย",
+    "who_family": "ครอบครัว",
+    "who_family_desc": "ตัวเลือกที่ยืดหยุ่นเพื่อรวมคู่สมรสและบุตร",
+    "benefits_title": "สิทธิพิเศษพิเศษ",
+    "benefits_desc": "นอกเหนือจากวีซ่าแล้ว คุณยังสามารถเข้าถึงบริการระดับไฮเอนด์: รถลิมูซีนสนามบิน, กอล์ฟ, สปา, การตรวจสุขภาพประจำปี...",
+    "benefits_btn": "ดูแพ็กเกจ",
+    "cta_button": "สมัครสมาชิก",
+    "highs_title": "จุดเด่น",
     "highs": [
-      "Ultra-long validity (up to 20 years)",
-      "VIP Airport Fast-Track Service (Arrival/Departure)",
-      "No age or monthly income requirements",
-      "24/7 Assistance for daily life"
+      "ความถูกต้องยาวนานเป็นพิเศษ (สูงสุด 20 ปี)",
+      "บริการช่องทางด่วน VIP ในสนามบิน (ขาเข้า/ขาออก)",
+      "ไม่มีข้อกำหนดด้านอายุหรือรายได้ต่อเดือน",
+      "ความช่วยเหลือตลอด 24 ชั่วโมงทุกวันสำหรับการใช้ชีวิตประจำวัน"
     ],
-    "lows_title": "Points of Attention",
+    "lows_title": "ข้อควรระวัง",
     "lows": [
-      "High initial cost (starting ~900,000 THB)",
-      "Work permit not automatically included",
-      "Processing time 1 to 3 months",
-      "Payment to government required before issuance"
+      "ค่าใช้จ่ายเริ่มต้นสูง (เริ่มต้นประมาณ 900,000 บาท)",
+      "ไม่รวมใบอนุญาตทำงานโดยอัตโนมัติ",
+      "ระยะเวลาดำเนินการ 1 ถึง 3 เดือน",
+      "ต้องชำระเงินให้รัฐบาลก่อนการออกวีซ่า"
     ],
-    "faq_title": "Elite Visa - FAQ",
+    "faq_title": "วีซ่าอีลิท - คำถามที่พบบ่อย",
     "faqs": [
       {
-        "q": "Can I enter and leave Thailand multiple times with my Elite visa?",
-        "a": "Yes, it is a Multiple-Entry visa with unlimited entries for the duration of your membership (5 to 20 years)."
+        "q": "ฉันสามารถเดินทางเข้าและออกจากประเทศไทยหลายครั้งด้วยวีซ่าอีลิทได้หรือไม่?",
+        "a": "ได้ เป็นวีซ่าประเภท Multiple-Entry ที่เข้าออกได้ไม่จำกัดจำนวนครั้งตลอดระยะเวลาสมาชิกของคุณ (5 ถึง 20 ปี)"
       },
       {
-        "q": "Do I have to pay taxes in Thailand with this visa?",
-        "a": "The Elite Visa does not automatically make you a tax resident. You only pay tax if you stay more than 180 days in a calendar year AND bring foreign income into Thailand in the same year."
+        "q": "ฉันต้องเสียภาษีในประเทศไทยด้วยวีซ่านี้หรือไม่?",
+        "a": "วีซ่าอีลิทไม่ได้ทำให้คุณกลายเป็นผู้อยู่อาศัยทางภาษีโดยอัตโนมัติ คุณจะเสียภาษีต่อเมื่อคุณพำนักอยู่ในไทยเกิน 180 วันในปีปฏิทิน และนำรายได้จากต่างประเทศเข้ามาในไทยในปีเดียวกันนั้นด้วย"
       },
       {
-        "q": "Can my family accompany me?",
-        "a": "Yes, there are 'Family' packages that allow you to include immediate family members at a reduced rate."
+        "q": "ครอบครัวสามารถติดตามฉันได้ไหม?",
+        "a": "ได้ มีแพ็กเกจแบบ 'ครอบครัว' ที่ช่วยให้คุณรวมสมาชิกในครอบครัวสายตรงได้ในอัตราที่ลดลง"
       },
       {
-        "q": "Can I work with an Elite Visa?",
-        "a": "Technically no, it is a tourist visa. However, you can be a shareholder of a company, or work legally if you obtain a Work Permit (which is possible with the Elite Visa combined with a job offer)."
+        "q": "ฉันสามารถทำงานด้วยวีซ่าอีลิทได้หรือไม่?",
+        "a": "ทางเทคนิคแล้วไม่ได้ เนื่องจากเป็นวีซ่าประเภทท่องเที่ยว อย่างไรก็ตาม คุณสามารถเป็นผู้ถือหุ้นของบริษัท หรือทำงานได้อย่างถูกต้องตามกฎหมายหากคุณได้รับใบอนุญาตทำงาน (Work Permit) (ซึ่งสามารถทำได้ด้วยวีซ่าอีลิทควบคู่ไปกับข้อเสนอจ้างงาน)"
       }
     ],
-    "prestige_title": "Prestige <span className=\"text-amber-500\">Service</span>",
-    "prestige_desc": "SiamVisa Pro is your privileged agent for Thailand Privilege (Elite) membership.",
+    "prestige_title": "บริการ <span className=\"text-amber-500\">ระดับพรีเมียม</span>",
+    "prestige_desc": "SiamVisa Pro เป็นตัวแทนที่ได้รับสิทธิพิเศษของคุณสำหรับการสมัครสมาชิก Thailand Privilege (Elite)",
     "prestige_list": [
-      "Program Choice (5/10/20 years)",
-      "Liaison with Elite Secretariat",
-      "Airport Formalities Management",
-      "Concierge Support"
+      "การเลือกโปรแกรม (5/10/20 ปี)",
+      "การประสานงานกับสำนักงานเลขาธิการอีลิท",
+      "การจัดการพิธีการในสนามบิน",
+      "การสนับสนุนด้านคอนเซียร์จ"
     ],
     "quick_view": {
-      "btn": "⚡️ Quick View",
-      "title": "Elite Visa: Essentials",
-      "duration": "Validity",
-      "duration_val": "5 to 20 Years",
-      "cost": "Total Cost",
-      "cost_val": "900k (5y) to 5M THB (20y)",
-      "per_year": "Smoothed Cost / Year",
-      "per_year_val": "From 125k THB (~$3.6k) / year",
-      "runs": "Visa Runs",
-      "runs_val": "0 / Year (Zero)",
-      "entries": "Entries",
-      "entries_val": "Unlimited (VIP)",
-      "verdict": "VERDICT: Absolute comfort. You are buying total peace of mind for years."
+      "btn": "⚡️ ข้อมูลด่วน",
+      "title": "วีซ่าอีลิท: ข้อมูลสำคัญ",
+      "duration": "ความถูกต้อง",
+      "duration_val": "5 ถึง 20 ปี",
+      "cost": "ค่าใช้จ่ายทั้งหมด",
+      "cost_val": "900,000 (5 ปี) ถึง 5 ล้านบาท (20 ปี)",
+      "per_year": "เฉลี่ยค่าใช้จ่าย / ปี",
+      "per_year_val": "เริ่มต้น 125,000 บาท (~$3.6k) / ปี",
+      "runs": "วีซ่ารัน",
+      "runs_val": "0 / ปี (ศูนย์)",
+      "entries": "การเข้าประเทศ",
+      "entries_val": "ไม่จำกัด (VIP)",
+      "verdict": "คำตัดสิน: ความสะดวกสบายที่สมบูรณ์แบบ คุณกำลังซื้อความอุ่นใจอย่างที่สุดสำหรับเวลาหลายปี"
     },
     "high_value": {
-      "title": "Prestige & Serenity",
-      "highlight": "Absolute",
-      "description": "No queues, no complicated 90-day reports, no hassle. Just the pleasure of living in Thailand with a VIP status guaranteed by the State.",
-      "item1": "VIP Airport Fast Track",
-      "item2": "5 to 20 Year Membership",
-      "item3": "24/7 Concierge",
-      "card_title": "Services Included",
-      "card_item1": "Limousine Service",
-      "card_item2": "Golf & Spa Privileges",
-      "card_item3": "Bank Account Opening",
-      "card_item4": "Annual Health Check-up"
+      "title": "ความภูมิฐาน & ความสงบสุข",
+      "highlight": "ที่สมบูรณ์แบบ",
+      "description": "ไม่มีการต่อคิว ไม่มีการรายงานตัว 90 วันที่ยุ่งยาก ไม่มีความวุ่นวาย มีเพียงความสุขในการใช้ชีวิตในไทยด้วยสถานะ VIP ที่รับรองโดยรัฐ",
+      "item1": "ช่องทางด่วน VIP ในสนามบิน",
+      "item2": "สมาชิก 5 ถึง 20 ปี",
+      "item3": "คอนเซียร์จ 24 ชั่วโมงทุกวัน",
+      "card_title": "รวมบริการ",
+      "card_item1": "บริการรถลิมูซีน",
+      "card_item2": "สิทธิพิเศษกอล์ฟ & สปา",
+      "card_item3": "การเปิดบัญชีธนาคาร",
+      "card_item4": "การตรวจสุขภาพประจำปี"
     },
     "meta": {
-      "title": "Thailand Elite Visa (Thailand Privilege) | Official Packages & Rates",
-      "description": "Get the Thailand Elite Visa for 5, 10 or 20 years. VIP Service, Airport Fast-Track and Concierge. Discover official rates."
+      "title": "วีซ่าไทยอีลิท (Thailand Privilege) | แพ็กเกจและอัตราค่าธรรมเนียมอย่างเป็นทางการ",
+      "description": "ขอรับวีซ่าไทยอีลิท 5, 10 หรือ 20 ปี บริการ VIP ช่องทางด่วนในสนามบิน และคอนเซียร์จ ค้นหาอัตราค่าธรรมเนียมอย่างเป็นทางการ"
     }
   },
   "apply_page": {
     "meta": {
-      "title": "Thailand Visa Application | SiamVisa Pro",
-      "description": "Start your Thailand visa application online. Simple and fast process with expert support."
+      "title": "ใบสมัครวีซ่าประเทศไทย | SiamVisa Pro",
+      "description": "เริ่มต้นสมัครวีซ่าประเทศไทยออนไลน์ ขั้นตอนที่ง่ายและรวดเร็วพร้อมการสนับสนุนจากผู้เชี่ยวชาญ"
     },
-    "hero_title": "Visa Application",
-    "hero_subtitle": "Start your travel project in just a few clicks",
+    "hero_title": "การสมัครวีซ่า",
+    "hero_subtitle": "เริ่มต้นโครงการเดินทางของคุณในเวลาเพียงไม่กี่คลิก",
     "steps": {
       "selection": {
-        "title": "Choose your Visa",
-        "subtitle": "Select the visa type that matches your project"
+        "title": "เลือกวีซ่าของคุณ",
+        "subtitle": "เลือกประเภทวีซ่าที่ตรงกับแผนการเดินทางของคุณ"
       },
       "personal": {
-        "title": "Personal Information",
-        "subtitle": "Tell us more about yourself",
-        "first_name": "First Name",
-        "last_name": "Last Name",
-        "email": "Email",
-        "phone": "Phone",
-        "nationality": "Nationality"
+        "title": "ข้อมูลส่วนตัว",
+        "subtitle": "บอกข้อมูลเกี่ยวกับตัวคุณให้เราทราบ",
+        "first_name": "ชื่อ",
+        "last_name": "นามสกุล",
+        "email": "อีเมล",
+        "phone": "โทรศัพท์",
+        "nationality": "สัญชาติ"
       },
       "trip": {
-        "title": "Trip Details",
-        "subtitle": "Information about your stay",
-        "entry_date": "Planned Entry Date",
-        "duration": "Stay Duration (days)"
+        "title": "รายละเอียดการเดินทาง",
+        "subtitle": "ข้อมูลเกี่ยวกับระยะเวลาพำนักของคุณ",
+        "entry_date": "วันที่คาดว่าจะเข้าประเทศ",
+        "duration": "ระยะเวลาพำนัก (วัน)"
       },
       "confirm": {
-        "title": "Confirmation",
-        "subtitle": "Verify your information before sending",
-        "btn_submit": "SUBMIT MY APPLICATION",
-        "success_title": "Application Received!",
-        "success_desc": "Your application has been sent to our experts. You will receive an email response within 24 hours."
+        "title": "ยืนยันข้อมูล",
+        "subtitle": "ตรวจสอบข้อมูลของคุณก่อนส่ง",
+        "btn_submit": "ส่งใบสมัครของฉัน",
+        "success_title": "ได้รับใบสมัครแล้ว!",
+        "success_desc": "ใบสมัครของคุณถูกส่งไปยังผู้เชี่ยวชาญของเราแล้ว คุณจะได้รับการตอบกลับทางอีเมลภายใน 24 ชั่วโมง"
       }
     },
-    "next": "Next",
-    "prev": "Previous"
+    "next": "ถัดไป",
+    "prev": "ก่อนหน้า"
   }
 };
