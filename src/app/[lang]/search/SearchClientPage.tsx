@@ -73,10 +73,12 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
                         compact={true}
                     />
                 </div>
-                <VisaComparatorTable
-                    tableI18n={localT.comparator_guide.table}
-                    compact={true}
-                />
+                {!aiResponse && (
+                    <VisaComparatorTable
+                        tableI18n={localT.comparator_guide.table}
+                        compact={true}
+                    />
+                )}
             </SearchHero>
 
             {/* 2. Exploration Visuelle (Grid) */}

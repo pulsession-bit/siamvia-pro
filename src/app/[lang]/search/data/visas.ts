@@ -18,6 +18,15 @@ export const CATEGORY_ICONS: Record<string, any> = {
     privilege: Crown
 };
 
+export const CATEGORY_COLORS: Record<string, string> = {
+    work: 'indigo',
+    tourism: 'sky',
+    longterm: 'emerald',
+    family: 'rose',
+    education: 'violet',
+    privilege: 'amber'
+};
+
 export const VISAS_DATA: any[] = [
     { id: 'ltr-wgc', category: 'longterm', name: { fr: 'LTR - Citoyen Mondial Riche', en: 'LTR - Wealthy Global Citizen', th: 'LTR - ผู้มีความมั่งคั่งสูง', zh: 'LTR - 全球富裕公民', ja: 'LTR - 裕福なグローバル市民', de: 'LTR - Wohlhabender Weltbürger', es: 'LTR - Ciudadano Global Acaudalado', it: 'LTR - Cittadino Globale Facoltoso', ru: 'LTR - Состоятельный гражданин мира', ko: 'LTR - 부유한 글로벌 시민', ar: 'LTR - مواطن عالمي ثري' }, duration: '10 Years', price: 'High' },
     { id: 'ltr-wp', category: 'longterm', name: { fr: 'LTR - Retraité Riche', en: 'LTR - Wealthy Pensioner', th: 'LTR - ผู้เกษียณอายุที่มีความมั่งคั่ง', zh: 'LTR - 富裕退休者', ja: 'LTR - 裕福な年금受給者', de: 'LTR - Wohlhabender Rentner', es: 'LTR - Pensionista Acaudalado', it: 'LTR - Pensionato Facoltoso', ru: 'LTR - Состоятельный пенсионер', ko: 'LTR - 부유한 은퇴자', ar: 'LTR - متقاعد ثري' }, duration: '10 Years', price: 'High' },
