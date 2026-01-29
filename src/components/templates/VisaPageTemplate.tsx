@@ -39,6 +39,19 @@ export const VisaPageTemplate: React.FC<VisaPageTemplateProps> = ({
         return Array.isArray(val) ? (val as unknown as string[]) : [];
     };
 
+    // Helper to try multiple keys and return the first valid translation
+    const tOr = (...keys: string[]): string => {
+        for (const key of keys) {
+            const fullKey = `${pageKey}.${key}`;
+            const val = t(fullKey);
+            if (val && val !== fullKey) {
+                return val;
+            }
+        }
+        // If all fail, return the first key translation (likely the raw key)
+        return t(`${pageKey}.${keys[0]}`);
+    };
+
     return (
         <div className="bg-slate-50 min-h-screen pb-20">
             {/* 1. HERO SECTION */}
@@ -113,19 +126,19 @@ export const VisaPageTemplate: React.FC<VisaPageTemplateProps> = ({
                             <Card variant="white" className="p-5 text-center">
                                 <Clock className="h-8 w-8 text-amber-500 mx-auto mb-2" />
                                 <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">
-                                    {t(`${pageKey}.duration_initial_label`) || t(`${pageKey}.duration_standard_label`)}
+                                    {tOr('duration_initial_label', 'duration_standard_label')}
                                 </div>
                                 <div className="text-xl font-bold text-slate-900">
-                                    {t(`${pageKey}.duration_initial_value`) || t(`${pageKey}.duration_standard_value`)}
+                                    {tOr('duration_initial_value', 'duration_standard_value')}
                                 </div>
                             </Card>
                             <Card variant="white" className="p-5 text-center">
                                 <Globe className="h-8 w-8 text-blue-500 mx-auto mb-2" />
                                 <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">
-                                    {t(`${pageKey}.duration_max_label`) || t(`${pageKey}.duration_reporting_label`)}
+                                    {tOr('duration_max_label', 'duration_reporting_label')}
                                 </div>
                                 <div className="text-xl font-bold text-slate-900">
-                                    {t(`${pageKey}.duration_max_value`) || t(`${pageKey}.duration_reporting_value`)}
+                                    {tOr('duration_max_value', 'duration_reporting_value')}
                                 </div>
                             </Card>
                         </div>
@@ -154,10 +167,10 @@ export const VisaPageTemplate: React.FC<VisaPageTemplateProps> = ({
                                 <AlertTriangle className="h-6 w-6 text-red-600 mr-3 mt-1 flex-shrink-0" />
                                 <div>
                                     <h3 className="text-lg font-bold text-red-800 mb-1">
-                                        {t(`${pageKey}.work_warning_title`) || t(`${pageKey}.work_no_permit_title`)}
+                                        {tOr('work_warning_title', 'work_no_permit_title')}
                                     </h3>
                                     <p className="text-slate-700">
-                                        {t(`${pageKey}.work_warning_text`) || t(`${pageKey}.work_no_permit_text`)}
+                                        {tOr('work_warning_text', 'work_no_permit_text')}
                                     </p>
                                 </div>
                             </div>
@@ -202,10 +215,10 @@ export const VisaPageTemplate: React.FC<VisaPageTemplateProps> = ({
                                 <ShieldAlert className="h-6 w-6 mr-3 flex-shrink-0 text-slate-500" />
                                 <div>
                                     <h3 className="font-bold mb-2">
-                                        {t(`${pageKey}.limitations_risk_title`) || t(`${pageKey}.limitations_complex_title`)}
+                                        {tOr('limitations_risk_title', 'limitations_complex_title')}
                                     </h3>
                                     <p className="text-sm leading-relaxed">
-                                        {t(`${pageKey}.limitations_risk_text`) || t(`${pageKey}.limitations_complex_text`)}
+                                        {tOr('limitations_risk_text', 'limitations_complex_text')}
                                     </p>
                                 </div>
                             </div>
@@ -217,13 +230,13 @@ export const VisaPageTemplate: React.FC<VisaPageTemplateProps> = ({
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
                     <Card variant="dark" className="p-8 text-center flex flex-col justify-center items-center">
                         <h3 className="text-xl font-bold text-white mb-2">
-                            {t(`${pageKey}.cta_help_title`) || t(`${pageKey}.cta_eligible_title`) || t(`${pageKey}.cta_school_title`)}
+                            {tOr('cta_help_title', 'cta_eligible_title', 'cta_school_title')}
                         </h3>
                         <p className="text-slate-400 mb-6 text-sm">
-                            {t(`${pageKey}.cta_help_subtitle`) || t(`${pageKey}.cta_eligible_subtitle`) || t(`${pageKey}.cta_school_subtitle`)}
+                            {tOr('cta_help_subtitle', 'cta_eligible_subtitle', 'cta_school_subtitle')}
                         </p>
                         <CTAButton href={ctaHelpLink} variant="primary" fullWidth>
-                            {t(`${pageKey}.cta_help_btn`) || t(`${pageKey}.cta_eligible_btn`) || t(`${pageKey}.cta_school_btn`)}
+                            {tOr('cta_help_btn', 'cta_eligible_btn', 'cta_school_btn')}
                         </CTAButton>
                     </Card>
                     <Card variant="white" className="p-8 text-center flex flex-col justify-center items-center">
