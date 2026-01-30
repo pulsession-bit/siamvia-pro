@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp, getApps, getApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
@@ -21,7 +21,8 @@ let auth: any;
 let analytics: any;
 
 try {
-    app = initializeApp(firebaseConfig);
+    // Évite la double initialisation (HMR en dev)
+    app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
     db = getFirestore(app);
     auth = getAuth(app);
 

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useLanguage } from "../contexts/LanguageContext";
-import { Loader2, Phone, MessageSquare, Mail, Video, Calendar, Clock } from "lucide-react";
+import { Loader2, Phone, MessageSquare, Mail, Video, Calendar, Clock, User } from "lucide-react";
 import { useAppointmentForm, ContactMethod } from "./appointment/useAppointmentForm";
 import { AppointmentSuccess } from "./appointment/AppointmentSuccess";
 
@@ -43,6 +43,37 @@ const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
       <div className="text-center">
         <h2 className="text-3xl font-black text-slate-900 tracking-tight">{t('appointment.title')}</h2>
         <p className="text-slate-500 mt-2 text-sm font-medium">{t('appointment.subtitle')}</p>
+      </div>
+
+      {/* Nom et Email */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="space-y-2">
+          <label className="flex items-center text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] ml-1">
+            <User className="w-3 h-3 mr-2" /> {t('appointment.name_label') || 'Nom complet'}
+          </label>
+          <input
+            type="text"
+            className="w-full rounded-2xl border border-slate-100 bg-slate-50 px-5 py-4 focus:bg-white focus:ring-4 focus:ring-amber-500/10 focus:border-amber-500 outline-none transition-all font-bold text-slate-700"
+            value={state.fullName}
+            onChange={(e) => actions.setFullName(e.target.value)}
+            placeholder="Jean Dupont"
+            required
+          />
+        </div>
+
+        <div className="space-y-2">
+          <label className="flex items-center text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] ml-1">
+            <Mail className="w-3 h-3 mr-2" /> {t('appointment.email_label') || 'Email'}
+          </label>
+          <input
+            type="email"
+            className="w-full rounded-2xl border border-slate-100 bg-slate-50 px-5 py-4 focus:bg-white focus:ring-4 focus:ring-amber-500/10 focus:border-amber-500 outline-none transition-all font-bold text-slate-700"
+            value={state.email}
+            onChange={(e) => actions.setEmail(e.target.value)}
+            placeholder="votre@email.com"
+            required
+          />
+        </div>
       </div>
 
       {/* Grid Date & Heure */}

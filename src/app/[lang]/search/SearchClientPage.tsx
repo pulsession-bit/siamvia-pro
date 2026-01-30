@@ -158,9 +158,9 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
 
             {/* 5. Appointment Modal Overlay */}
             {showAppointment && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+                <div className="fixed inset-0 flex items-center justify-center p-4" style={{ zIndex: 10001 }}>
                     <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-md" onClick={() => setShowAppointment(false)}></div>
-                    <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 w-full max-w-xl relative animate-in zoom-in-95 fade-in duration-200">
+                    <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 w-full max-w-xl relative animate-in zoom-in-95 fade-in duration-200" style={{ zIndex: 10002 }}>
                         <button
                             onClick={() => setShowAppointment(false)}
                             className="absolute top-6 right-6 p-2 text-slate-400 hover:text-slate-900 transition-colors z-[110]"

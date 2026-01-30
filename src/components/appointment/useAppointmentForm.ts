@@ -8,6 +8,8 @@ export type ContactMethod = "phone" | "whatsapp" | "email" | "video";
 
 export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void) => {
     const { language, t } = useLanguage();
+    const [fullName, setFullName] = useState("");
+    const [email, setEmail] = useState("");
     const [date, setDate] = useState("");
     const [slot, setSlot] = useState("");
     const [contactMethod, setContactMethod] = useState<ContactMethod>("whatsapp");
@@ -64,6 +66,8 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
             }
 
             await addDoc(collection(db, "appointments"), {
+                fullName: fullName.trim(),
+                email: email.trim().toLowerCase(),
                 date,
                 slot,
                 contactMethod,
@@ -91,7 +95,7 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
     };
 
     return {
-        state: { date, slot, contactMethod, contactValue, isSubmitting, submitStatus, errorMessage, isAuthReady },
-        actions: { setDate, setSlot, setContactMethod, setContactValue, submitForm, resetForm }
+        state: { fullName, email, date, slot, contactMethod, contactValue, isSubmitting, submitStatus, errorMessage, isAuthReady },
+        actions: { setFullName, setEmail, setDate, setSlot, setContactMethod, setContactValue, submitForm, resetForm }
     };
 };

@@ -3,9 +3,11 @@
 import React, { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { PageContainer, Card, HeroSection, SectionTitle } from '@/components/ui/PageComponents';
-import { Check, ArrowRight, ArrowLeft, User, Globe, Plane, Calendar, Clock, Send } from 'lucide-react';
+import { Check, ArrowRight, ArrowLeft, User, Globe, Plane, Calendar, Clock, Send, Loader2, AlertCircle } from 'lucide-react';
 import { VISAS_DATA } from '@/app/[lang]/search/data/visas';
 import { IMAGES } from '@/constants';
+import { db } from '@/lib/firebase';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
 type Step = 'selection' | 'personal' | 'trip' | 'confirm' | 'success';
 
@@ -38,10 +40,41 @@ const ApplicationFlow: React.FC = () => {
         else if (step === 'confirm') setStep('trip');
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitError, setSubmitError] = useState<string | null>(null);
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Simulate submission
-        setStep('success');
+        setIsSubmitting(true);
+        setSubmitError(null);
+
+        try {
+            // Save to Firestore
+            const applicationData = {
+                visaId: formData.visaId,
+                firstName: formData.firstName.trim(),
+                lastName: formData.lastName.trim(),
+                email: formData.email.trim().toLowerCase(),
+                phone: formData.phone?.trim() || '',
+                nationality: formData.nationality?.trim() || '',
+                entryDate: formData.entryDate || null,
+                duration: formData.duration ? parseInt(formData.duration, 10) : null,
+                language,
+                status: 'pending',
+                createdAt: serverTimestamp(),
+                source: 'website',
+            };
+
+            await addDoc(collection(db, 'visa_applications'), applicationData);
+
+            // Success - move to success step
+            setStep('success');
+        } catch (error) {
+            console.error('Submission error:', error);
+            setSubmitError(error instanceof Error ? error.message : 'Une erreur est survenue. Veuillez réessayer.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const selectedVisa = VISAS_DATA.find(v => v.id === formData.visaId);
@@ -263,12 +296,36 @@ const ApplicationFlow: React.FC = () => {
                                 </div>
                             </div>
 
+                            {submitError && (
+                                <div className="mt-6 p-4 bg-red-50 border border-red-200 rounded-2xl flex items-start gap-3">
+                                    <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                                    <p className="text-red-700 text-sm font-medium">{submitError}</p>
+                                </div>
+                            )}
+
                             <div className="flex gap-4 mt-12">
-                                <button onClick={handlePrev} className="flex-1 py-4 px-6 rounded-2xl font-black uppercase tracking-widest text-[10px] border-2 border-slate-100 text-slate-400 hover:text-slate-600 hover:border-slate-200 transition-all flex items-center justify-center gap-2">
+                                <button
+                                    onClick={handlePrev}
+                                    disabled={isSubmitting}
+                                    className="flex-1 py-4 px-6 rounded-2xl font-black uppercase tracking-widest text-[10px] border-2 border-slate-100 text-slate-400 hover:text-slate-600 hover:border-slate-200 transition-all flex items-center justify-center gap-2 disabled:opacity-50"
+                                >
                                     <ArrowLeft size={14} /> {t('apply_page.prev')}
                                 </button>
-                                <button onClick={handleSubmit} className="flex-[2] py-5 px-6 rounded-3xl font-black text-lg bg-amber-500 text-slate-900 hover:bg-amber-400 transition-all flex items-center justify-center gap-3 shadow-xl shadow-amber-500/20 active:scale-95">
-                                    {t('apply_page.steps.confirm.btn_submit')} <Send size={20} />
+                                <button
+                                    onClick={handleSubmit}
+                                    disabled={isSubmitting}
+                                    className="flex-[2] py-5 px-6 rounded-3xl font-black text-lg bg-amber-500 text-slate-900 hover:bg-amber-400 transition-all flex items-center justify-center gap-3 shadow-xl shadow-amber-500/20 active:scale-95 disabled:opacity-70 disabled:cursor-not-allowed"
+                                >
+                                    {isSubmitting ? (
+                                        <>
+                                            <Loader2 size={20} className="animate-spin" />
+                                            Envoi en cours...
+                                        </>
+                                    ) : (
+                                        <>
+                                            {t('apply_page.steps.confirm.btn_submit')} <Send size={20} />
+                                        </>
+                                    )}
                                 </button>
                             </div>
                         </Card>
