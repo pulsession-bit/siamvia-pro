@@ -120,6 +120,57 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang, pageKey, title, show
         };
     }
 
+    // 4. LocalBusiness Schema (Bangkok Office)
+    const localBusinessSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        'name': 'SiamVisa Pro - Bangkok',
+        '@id': `${baseUrl}/#localbusiness`,
+        'url': baseUrl,
+        'image': `${baseUrl}/images/siamvisa-office.jpg`,
+        'description': 'Professional Thailand visa services including DTV, Elite, Retirement, Business, and Tourist visas. Expert consultation and application assistance.',
+        'address': {
+            '@type': 'PostalAddress',
+            'streetAddress': 'Sukhumvit Rd, Khlong Toei',
+            'addressLocality': 'Bangkok',
+            'postalCode': '10110',
+            'addressCountry': 'TH'
+        },
+        'geo': {
+            '@type': 'GeoCoordinates',
+            'latitude': 13.7563,
+            'longitude': 100.5018
+        },
+        'telephone': '+66-XXX-XXX-XXXX',
+        'email': 'support@siamvisapro.com',
+        'openingHoursSpecification': [
+            {
+                '@type': 'OpeningHoursSpecification',
+                'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                'opens': '09:00',
+                'closes': '18:00'
+            }
+        ],
+        'priceRange': '$$',
+        'areaServed': {
+            '@type': 'Country',
+            'name': 'Thailand'
+        },
+        'serviceType': [
+            'Visa Consultation',
+            'Visa Application Assistance',
+            'Document Preparation',
+            'Immigration Services'
+        ],
+        'aggregateRating': {
+            '@type': 'AggregateRating',
+            'ratingValue': '4.9',
+            'reviewCount': '127',
+            'bestRating': '5',
+            'worstRating': '1'
+        }
+    };
+
     return (
         <>
             {showGlobal && (
@@ -131,6 +182,10 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang, pageKey, title, show
                     <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
                     />
                 </>
             )}

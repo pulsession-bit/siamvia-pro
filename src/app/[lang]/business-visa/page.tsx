@@ -24,6 +24,18 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     });
 }
 
-export default function Page() {
-    return <BusinessVisaClientPage />;
+import { SchemaOrg } from '@/components/SchemaOrg';
+import { VisaServiceSchemas } from '@/components/ServiceSchema';
+
+export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    const t = translations[lang as keyof typeof translations] || translations.en;
+
+    return (
+        <>
+            <SchemaOrg lang={lang} pageKey="business-visa" title={t.nav.business || 'Business Visa'} showGlobal={false} />
+            {VisaServiceSchemas.business(lang)}
+            <BusinessVisaClientPage />
+        </>
+    );
 }

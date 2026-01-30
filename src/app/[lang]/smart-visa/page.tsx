@@ -24,6 +24,18 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     });
 }
 
-export default function Page() {
-    return <SmartClientPage />;
+import { SchemaOrg } from '@/components/SchemaOrg';
+import { VisaServiceSchemas } from '@/components/ServiceSchema';
+
+export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    const t = translations[lang as keyof typeof translations] || translations.en;
+
+    return (
+        <>
+            <SchemaOrg lang={lang} pageKey="smart-visa" title={t.nav.smart || 'SMART Visa'} showGlobal={false} />
+            {VisaServiceSchemas.smart(lang)}
+            <SmartClientPage />
+        </>
+    );
 }

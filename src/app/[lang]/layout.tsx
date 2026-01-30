@@ -59,6 +59,16 @@ export default async function LangLayout({ children, params }: Props) {
 
     return (
         <html lang={lang}>
+            <head>
+                {/* DNS Prefetch & Preconnect for faster external resource loading */}
+                <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+                <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+                <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+                <link rel="dns-prefetch" href="https://code.tidio.co" />
+                <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+                <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+            </head>
             <body className={inter.className}>
                 {/* Google tag (gtag.js) */}
                 <Script

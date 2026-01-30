@@ -945,6 +945,19 @@ export const ja = {
     "definition_title": "医療ビザとは？",
     "definition_content": "タイはメディカルツーリズムの主要目的地です。外科手術、長期治療、リハビリ目的の滞在を許可するビザです。",
     "audience_title": "対象となる医療とプロフィール",
+    "audience_compatible": "適合するプロフィール",
+    "audience_compatible_list": [
+      "手術が必要な患者様 (美容・整形・心臓)。",
+      "高度な歯科治療を希望される方。",
+      "慢性疾患の治療中の方 (人工透析・化学療法)。",
+      "術後のリハビリを希望される方。"
+    ],
+    "audience_not_compatible": "不適合なプロフィール",
+    "audience_not_compatible_list": [
+      "軽度の健康問題がある観光客。",
+      "病院の予約が確定していない方。",
+      "医療を口実に就労を希望する方。"
+    ],
     "audience_types_title": "治療の種類",
     "audience_types_list": [
       "美容・形成外科手術。",
@@ -955,6 +968,10 @@ export const ja = {
     "audience_companion_title": "付き添いの方",
     "audience_companion_text": "最大3名までの家族や介護者が帯同ビザを取得可能です。",
     "duration_title": "滞在期間と延長",
+    "duration_initial_label": "初回有効期間",
+    "duration_initial_value": "90日間",
+    "duration_max_label": "最大延長期間",
+    "duration_max_value": "医師の診断書に基づく",
     "duration_validity_label": "標準有効期間",
     "duration_validity_value": "90日間",
     "duration_extension_label": "延長",
@@ -966,11 +983,22 @@ export const ja = {
       "治療費と滞在費をカバーする資金証明。",
       "特定治療に対応した医療保険。"
     ],
+    "work_title": "就労と許可される活動",
+    "work_warning_title": "就労禁止",
+    "work_warning_text": "医療ビザでは一切の就労活動が認められていません。医療目的に限定されます。リモートワークであっても技術的には禁止されています。",
+    "renewal_title": "更新と延長",
+    "renewal_text": "延長は病院の診断書に基づいて許可されます。多くの国際病院には院内にビザセンターがあり、手続きをサポートしています。",
+    "limitations_title": "制限と注意点",
+    "limitations_risk_title": "病院への依存",
+    "limitations_risk_text": "ビザは医療機関に紐付けられています。病院を変更したり治療を中止すると、ビザが取り消される可能性があります。書類を常に最新の状態に保つことが重要です。",
     "advantage_title": "私立病院の利点",
     "advantage_text": "主要な国際病院の多くは院内にビザセンターがあり、延長手続きを支援してくれます。",
     "cta_help_title": "医療機関との連携が必要ですか？",
     "cta_help_subtitle": "スムーズな受け入れとビザ取得をサポートします。",
-    "cta_help_btn": "コンシェルジュに相談"
+    "cta_help_btn": "コンシェルジュに相談",
+    "cta_compare_title": "他の選択肢を検討",
+    "cta_compare_subtitle": "長期滞在が必要な場合、他のビザタイプも検討してください。",
+    "cta_compare_btn": "エリートビザを見る"
   },
   "religious_visa_page": {
     "meta": {
@@ -982,20 +1010,48 @@ export const ja = {
     "hero_subtitle": "宗教任務または仏教の研究",
     "definition_title": "宗教ビザとは？",
     "definition_content": "Non-Immigrant R (Religious) ビザは、公認団体に後援された宗教活動に従事する外国人のためのものです。",
+    "audience_title": "対象者",
+    "audience_compatible": "適合するプロフィール",
+    "audience_compatible_list": [
+      "得度した僧侶・尼僧。",
+      "公式な後援を受けた宣教師。",
+      "機関からの招待を受けた宗教学者。",
+      "長期の宗教ボランティア。"
+    ],
+    "audience_not_compatible": "不適合なプロフィール",
+    "audience_not_compatible_list": [
+      "所属のないスピリチュアル観光客。",
+      "カジュアルな瞑想実践者。",
+      "公式な宗教スポンサーがない方。"
+    ],
     "conditions_title": "対象と条件",
     "conditions_list": [
-      "登録宗教団体による後援。",
-      "宗教省または仏教事務局による承認。",
-      "給与を受け取らないとの誓約書。",
-      "宗教施設での居住証明。"
+      "タイに登録された宗教団体による後援。",
+      "宗教省または国立仏教事務局による承認。",
+      "給与を受け取らないとの正式な誓約書。",
+      "宗教施設内での居住証明。"
     ],
     "duration_title": "有効性、延長",
     "duration_initial_label": "初回有効期間",
     "duration_initial_value": "90日間",
     "duration_max_label": "最大延長",
     "duration_max_value": "1年間 (更新可能)",
+    "work_title": "就労と許可される活動",
+    "work_warning_title": "有給就労禁止",
+    "work_warning_text": "宗教ビザでは有給の就労活動は一切認められていません。活動は宗教的かつ非営利目的に限定されます。金銭的報酬は厳禁です。",
+    "renewal_title": "更新と延長",
+    "renewal_text": "年次延長には、宗教団体からの継続的な後援と宗教省の承認が必要です。",
+    "limitations_title": "制限と注意点",
+    "limitations_risk_title": "スポンサーへの依存",
+    "limitations_risk_text": "ビザは後援団体に厳密に紐付けられています。施設を離れたり後援を失うと、ビザは即座に取り消されます。",
     "footer_note": "このビザは各宗教当局との密接な調整が必要です。",
-    "cta_btn": "専門的なアドバイスを求める"
+    "cta_btn": "専門的なアドバイスを求める",
+    "cta_help_title": "専門的なサポートが必要ですか？",
+    "cta_help_subtitle": "宗教ビザは複雑な書類と当局との調整が必要です。",
+    "cta_help_btn": "専門家に相談",
+    "cta_compare_title": "他のスピリチュアルな選択肢",
+    "cta_compare_subtitle": "短期の瞑想リトリートには、他のビザタイプをご検討ください。",
+    "cta_compare_btn": "観光ビザを見る"
   },
   "media_visa_page": {
     "meta": {

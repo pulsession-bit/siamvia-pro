@@ -921,6 +921,19 @@ export const ko = {
     "definition_title": "의료 비자란 무엇인가요?",
     "definition_content": "태국은 의료 관광의 중심지입니다. 의료 비자는 수술, 장기 치료 또는 재활을 목적으로 체류하는 외국인 환자를 위한 비자입니다.",
     "audience_title": "대상 의료 서비스 및 프로필",
+    "audience_compatible": "적합한 프로필",
+    "audience_compatible_list": [
+      "수술이 필요한 환자 (성형, 정형외과, 심장).",
+      "고난도 치과 치료를 원하는 분.",
+      "만성 질환 치료 중인 분 (투석, 항암 치료).",
+      "수술 후 재활을 원하는 분."
+    ],
+    "audience_not_compatible": "부적합한 프로필",
+    "audience_not_compatible_list": [
+      "경미한 건강 문제가 있는 관광객.",
+      "병원 예약이 확정되지 않은 분.",
+      "의료를 구실로 취업을 원하는 분."
+    ],
     "audience_types_title": "치료 유형",
     "audience_types_list": [
       "성형 및 재건 수술.",
@@ -931,6 +944,10 @@ export const ko = {
     "audience_companion_title": "동반 보호자",
     "audience_companion_text": "최대 3명의 가족 또는 간병인이 동반 비자를 취득할 수 있습니다.",
     "duration_title": "체류 기간 및 연장",
+    "duration_initial_label": "초기 유효 기간",
+    "duration_initial_value": "90일",
+    "duration_max_label": "최대 연장",
+    "duration_max_value": "의료 증명서에 따라",
     "duration_validity_label": "표준 유효 기간",
     "duration_validity_value": "90일",
     "duration_extension_label": "연장",
@@ -942,11 +959,22 @@ export const ko = {
       "치료 및 체류 비용 감당 능력을 보여주는 재정 증명.",
       "치료 목적 특화 의료 보험."
     ],
+    "work_title": "업무 및 허가된 활동",
+    "work_warning_title": "취업 불허",
+    "work_warning_text": "의료 비자는 어떤 취업 활동도 허용하지 않습니다. 의료 치료 목적으로만 사용됩니다. 원격 근무도 기술적으로 금지됩니다.",
+    "renewal_title": "갱신 및 연장",
+    "renewal_text": "연장은 병원의 의료 증명서를 기반으로 승인됩니다. 대부분의 국제 병원에는 절차를 돕는 내부 비자 사무소가 있습니다.",
+    "limitations_title": "제한 및 주의 사항",
+    "limitations_risk_title": "병원 의존성",
+    "limitations_risk_text": "비자는 의료 기관에 연결되어 있습니다. 병원을 변경하거나 치료를 중단하면 비자가 취소될 수 있습니다. 서류를 항상 최신 상태로 유지하세요.",
     "advantage_title": "사립 병원의 장점",
     "advantage_text": "대부분의 대형 국제 병원에는 연장 절차를 돕는 비자 센터가 내부에 있습니다.",
     "cta_help_title": "의료 연계 서비스가 필요하신가요?",
     "cta_help_subtitle": "입원 및 비자 절차를 원활하게 진행하도록 도와드립니다.",
-    "cta_help_btn": "컨시어지 서비스 문의"
+    "cta_help_btn": "컨시어지 서비스 문의",
+    "cta_compare_title": "다른 옵션 탐색",
+    "cta_compare_subtitle": "장기 체류가 필요하시면 다른 비자 유형을 고려하세요.",
+    "cta_compare_btn": "엘리트 비자 보기"
   },
   "religious_visa_page": {
     "meta": {
@@ -958,11 +986,25 @@ export const ko = {
     "hero_subtitle": "종교적 임무 또는 불교 연구",
     "definition_title": "종교 비자란 무엇인가요?",
     "definition_content": "Non-Immigrant R (Religious) 비자는 공인된 종교 단체의 후원을 받아 종교 활동을 하려는 외국인을 위한 비자입니다.",
+    "audience_title": "대상자는 누구인가요?",
+    "audience_compatible": "적합한 프로필",
+    "audience_compatible_list": [
+      "서품받은 승려 및 수녀.",
+      "공식 후원을 받는 선교사.",
+      "기관 초청을 받은 종교 학자.",
+      "장기 종교 봉사자."
+    ],
+    "audience_not_compatible": "부적합한 프로필",
+    "audience_not_compatible_list": [
+      "소속이 없는 영적 관광객.",
+      "일반적인 명상 수련자.",
+      "공식 종교 후원자가 없는 분."
+    ],
     "conditions_title": "조건 사항",
     "conditions_list": [
-      "등록된 종교 단체의 후원.",
+      "태국에 등록된 종교 단체의 후원.",
       "종교청 또는 국립 불교 사무국의 승인.",
-      "급여를 받지 않겠다는 서약.",
+      "급여를 받지 않겠다는 정식 서약.",
       "종교 시설 내 거주 증명."
     ],
     "duration_title": "유효성 및 연장",
@@ -970,8 +1012,22 @@ export const ko = {
     "duration_initial_value": "90일",
     "duration_max_label": "최대 연장",
     "duration_max_value": "1년 (갱신 가능)",
+    "work_title": "업무 및 허가된 활동",
+    "work_warning_title": "유급 근무 금지",
+    "work_warning_text": "종교 비자는 어떤 유급 근무도 허용하지 않습니다. 활동은 종교적이고 비영리적이어야 합니다. 금전적 보상은 엄격히 금지됩니다.",
+    "renewal_title": "갱신 및 연장",
+    "renewal_text": "연간 연장은 종교 단체의 지속적인 후원과 종교청의 승인이 필요합니다.",
+    "limitations_title": "제한 및 주의 사항",
+    "limitations_risk_title": "후원자 의존성",
+    "limitations_risk_text": "비자는 후원 단체에 엄격하게 연결됩니다. 기관을 떠나거나 후원을 잃으면 비자가 즉시 취소됩니다.",
     "footer_note": "이 비자는 국내 종교 당국과의 긴밀한 협의가 필요합니다.",
-    "cta_btn": "상담 요청"
+    "cta_btn": "상담 요청",
+    "cta_help_title": "특별한 지원이 필요하신가요?",
+    "cta_help_subtitle": "종교 비자는 복잡한 서류와 당국과의 협조가 필요합니다.",
+    "cta_help_btn": "전문가 상담",
+    "cta_compare_title": "다른 영적 옵션",
+    "cta_compare_subtitle": "단기 명상 수련의 경우 다른 비자 유형을 고려하세요.",
+    "cta_compare_btn": "관광 비자 보기"
   },
   "media_visa_page": {
     "meta": {

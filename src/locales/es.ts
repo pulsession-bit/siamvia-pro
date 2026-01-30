@@ -1105,6 +1105,19 @@ export const es = {
     "definition_title": "¿Qué es la Visa Médica?",
     "definition_content": "Tailandia es un destino principal de turismo médico. La Visa Médica permite a los pacientes extranjeros permanecer para tratamientos quirúrgicos o rehabilitación.",
     "audience_title": "Servicios y Perfiles afectados",
+    "audience_compatible": "Perfiles Compatibles",
+    "audience_compatible_list": [
+      "Pacientes que requieren cirugía (estética, ortopédica, cardíaca).",
+      "Personas que buscan cuidados dentales complejos.",
+      "Pacientes con tratamientos crónicos (diálisis, quimioterapia).",
+      "Personas que buscan rehabilitación postoperatoria."
+    ],
+    "audience_not_compatible": "Perfiles No Compatibles",
+    "audience_not_compatible_list": [
+      "Turistas con problemas de salud menores.",
+      "Personas sin cita hospitalaria confirmada.",
+      "Quienes buscan trabajar bajo pretexto médico."
+    ],
     "audience_types_title": "Tipos de Cuidados",
     "audience_types_list": [
       "Cirugía estética y reparadora.",
@@ -1115,6 +1128,10 @@ export const es = {
     "audience_companion_title": "Acompañantes",
     "audience_companion_text": "Hasta 3 familiares o cuidadores pueden obtener una visa de dependiente.",
     "duration_title": "Duración y Prórrogas",
+    "duration_initial_label": "Validez Inicial",
+    "duration_initial_value": "90 días",
+    "duration_max_label": "Extensión Máxima",
+    "duration_max_value": "Según certificado médico",
     "duration_validity_label": "Validez Tipo",
     "duration_validity_value": "90 días",
     "duration_extension_label": "Extensión",
@@ -1126,11 +1143,22 @@ export const es = {
       "Prueba de fondos suficientes.",
       "Seguro médico específico."
     ],
+    "work_title": "Trabajo y actividades autorizadas",
+    "work_warning_title": "Trabajo No Autorizado",
+    "work_warning_text": "La Visa Médica no permite ninguna actividad laboral. Está exclusivamente destinada al tratamiento médico. Cualquier trabajo, incluso remoto, está técnicamente prohibido.",
+    "renewal_title": "Renovación y extensiones",
+    "renewal_text": "Las extensiones se conceden en base al certificado médico del hospital. La mayoría de los hospitales internacionales tienen una oficina de visas interna para facilitar el proceso.",
+    "limitations_title": "Limitaciones y puntos de atención",
+    "limitations_risk_title": "Dependencia del Hospital",
+    "limitations_risk_text": "La visa está vinculada al centro de salud. Si cambia de hospital o interrumpe el tratamiento, la visa puede ser revocada. Asegúrese de mantener la documentación actualizada.",
     "advantage_title": "La ventaja de los hospitales privados",
     "advantage_text": "La mayoría de los grandes hospitales internacionales tienen centros de visas internos para las extensiones.",
     "cta_help_title": "¿Necesita un enlace médico?",
     "cta_help_subtitle": "Colaboramos con los mejores centros para facilitar su admisión y su visa.",
-    "cta_help_btn": "Contactar con nuestro servicio de conserjería"
+    "cta_help_btn": "Contactar con nuestro servicio de conserjería",
+    "cta_compare_title": "Explorar otras opciones",
+    "cta_compare_subtitle": "Si necesita una estancia más larga, considere otros tipos de visa.",
+    "cta_compare_btn": "Ver Visa Elite"
   },
   "religious_visa_page": {
     "meta": {
@@ -1181,8 +1209,7 @@ export const es = {
     "cta_compare_title": "¿Solo retiro corto?",
     "cta_compare_subtitle": "La visa de turista es suficiente para meditación < 90 días.",
     "cta_compare_btn": "Ver Visa Turista",
-    "footer_note": "This visa requires close coordination with national religious authorities.",
-    "cta_btn": "Request specific advice"
+    "footer_note": "Esta visa requiere coordinación cercana con las autoridades religiosas nacionales."
   },
   "media_visa_page": {
     "meta": {

@@ -921,6 +921,19 @@ export const zh = {
     "definition_title": "什么是医疗签证？",
     "definition_content": "泰国是全球领先的医疗旅游目的地。医疗签证允许外国患者在泰进行手术治疗、长期护理或康复疗程。",
     "audience_title": "涉及的服务与人群",
+    "audience_compatible": "适合人群",
+    "audience_compatible_list": [
+      "需要手术的患者（整容、骨科、心脏）。",
+      "需要复杂牙科治疗的人士。",
+      "慢性疾病治疗患者（透析、化疗）。",
+      "需要术后康复的人士。"
+    ],
+    "audience_not_compatible": "不适合人群",
+    "audience_not_compatible_list": [
+      "有轻微健康问题的游客。",
+      "未确认医院预约的人士。",
+      "以医疗为借口工作的人士。"
+    ],
     "audience_types_title": "治疗类型",
     "audience_types_list": [
       "美容整容手术。",
@@ -931,6 +944,10 @@ export const zh = {
     "audience_companion_title": "陪护人员",
     "audience_companion_text": "通常最多允许3名家属或护理人员办理随行签证。",
     "duration_title": "停留与延期",
+    "duration_initial_label": "初始效期",
+    "duration_initial_value": "90天",
+    "duration_max_label": "最高延期",
+    "duration_max_value": "依据医疗证明",
     "duration_validity_label": "通常效期",
     "duration_validity_value": "90天",
     "duration_extension_label": "延期",
@@ -942,11 +959,22 @@ export const zh = {
       "足以支付治疗及生活的费用证明。",
       "覆盖相关治疗的健康保险。"
     ],
+    "work_title": "工作与许可活动",
+    "work_warning_title": "禁止工作",
+    "work_warning_text": "医疗签证不允许任何工作活动。仅限用于医疗治疗。即使是远程工作也在技术上被禁止。",
+    "renewal_title": "续签与延期",
+    "renewal_text": "延期基于医院的医疗证明批准。大多数国际医院设有内部签证办事处协助办理。",
+    "limitations_title": "限制与注意事项",
+    "limitations_risk_title": "医院依赖性",
+    "limitations_risk_text": "签证与医疗机构绑定。如果更换医院或停止治疗，签证可能被取消。请确保文件始终保持最新。",
     "advantage_title": "私立医院的优势",
     "advantage_text": "大多数大型国际医院都设有内部签证中心，协助患者办理延期。",
     "cta_help_title": "需要医疗对接吗？",
     "cta_help_subtitle": "我们与顶级机构合作，简化您的入院和签证流程。",
-    "cta_help_btn": "联系礼宾服务"
+    "cta_help_btn": "联系礼宾服务",
+    "cta_compare_title": "探索其他选择",
+    "cta_compare_subtitle": "如果需要更长时间停留，请考虑其他签证类型。",
+    "cta_compare_btn": "查看精英签证"
   },
   "religious_visa_page": {
     "meta": {
@@ -958,11 +986,25 @@ export const zh = {
     "hero_subtitle": "宗教使命或进行佛学研究",
     "definition_title": "什么是宗教签证？",
     "definition_content": "Non-Immigrant R (Religious) 签证专为受认证组织派遣，在泰从事官方宗教活动的外国人而设。",
+    "audience_title": "此签证适用于？",
+    "audience_compatible": "适合人群",
+    "audience_compatible_list": [
+      "已出家的僧侣和尼姑。",
+      "获得官方担保的传教士。",
+      "获机构邀请的宗教学者。",
+      "长期宗教志愿者。"
+    ],
+    "audience_not_compatible": "不适合人群",
+    "audience_not_compatible_list": [
+      "无宗教归属的灵性游客。",
+      "普通禅修者。",
+      "无官方宗教担保人的人士。"
+    ],
     "conditions_title": "人群与条件",
     "conditions_list": [
-      "受获准注册的宗教机构担保。",
+      "受在泰国注册的宗教机构担保。",
       "获得宗教事务部或国家佛教局核准。",
-      "书面保证不收取薪酬。",
+      "书面保证不收取任何薪酬。",
       "在宗教机构内的居住证明。"
     ],
     "duration_title": "有效期与延期",
@@ -970,8 +1012,22 @@ export const zh = {
     "duration_initial_value": "90天",
     "duration_max_label": "最高续签",
     "duration_max_value": "1年 (可续签)",
+    "work_title": "工作与许可活动",
+    "work_warning_title": "禁止有偿工作",
+    "work_warning_text": "宗教签证不允许任何有偿工作活动。活动必须是纯宗教性和非营利性的。任何金钱报酬都被严格禁止。",
+    "renewal_title": "续签与延期",
+    "renewal_text": "年度延期需要宗教组织的持续担保和宗教事务部的继续批准。",
+    "limitations_title": "限制与注意事项",
+    "limitations_risk_title": "担保人依赖性",
+    "limitations_risk_text": "签证与担保组织严格绑定。如果离开机构或失去担保，签证将立即被取消。",
     "footer_note": "此签证需要与国家宗教管理部门密切协调。",
-    "cta_btn": "寻求具体建议"
+    "cta_btn": "寻求具体建议",
+    "cta_help_title": "需要专业帮助？",
+    "cta_help_subtitle": "宗教签证需要复杂的文件和与当局的协调。",
+    "cta_help_btn": "咨询专家",
+    "cta_compare_title": "其他灵性选择",
+    "cta_compare_subtitle": "短期禅修静修，请考虑其他签证类型。",
+    "cta_compare_btn": "查看旅游签证"
   },
   "media_visa_page": {
     "meta": {

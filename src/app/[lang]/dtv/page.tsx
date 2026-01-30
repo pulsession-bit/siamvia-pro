@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 }
 
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { VisaServiceSchemas } from '@/components/ServiceSchema';
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
@@ -33,6 +34,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
   return (
     <>
       <SchemaOrg lang={lang} pageKey="dtv" title={t.nav.dtv} showGlobal={false} />
+      {VisaServiceSchemas.dtv(lang)}
       <DTVClientPage />
     </>
   );

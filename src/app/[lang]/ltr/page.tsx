@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 import { SchemaOrg } from '@/components/SchemaOrg';
+import { VisaServiceSchemas } from '@/components/ServiceSchema';
 
 export default async function LTRPage({ params }: Props) {
     const { lang } = await params;
@@ -38,6 +39,7 @@ export default async function LTRPage({ params }: Props) {
     return (
         <>
             <SchemaOrg lang={lang} pageKey="ltr" title={t.nav.ltr} showGlobal={false} />
+            {VisaServiceSchemas.ltr(lang)}
             <LTRClientPage />
         </>
     );

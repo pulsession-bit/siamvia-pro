@@ -670,6 +670,19 @@ export const de = {
     "definition_title": "Was ist das medizinische Visum?",
     "definition_content": "Thailand ist ein wichtiges Ziel für Medizintourismus. Das medizinische Visum ermöglicht es ausländischen Patienten, für chirurgische Behandlungen, Langzeitpflege oder Rehabilitationskuren im Königreich zu bleiben.",
     "audience_title": "Betroffene Dienstleistungen und Profile",
+    "audience_compatible": "Geeignete Profile",
+    "audience_compatible_list": [
+      "Patienten, die Operationen benötigen (Ästhetik, Orthopädie, Kardiologie).",
+      "Personen, die komplexe Zahnbehandlungen suchen.",
+      "Patienten mit chronischen Behandlungen (Dialyse, Chemotherapie).",
+      "Personen, die postoperative Rehabilitation suchen."
+    ],
+    "audience_not_compatible": "Nicht geeignete Profile",
+    "audience_not_compatible_list": [
+      "Touristen mit kleinen Gesundheitsproblemen.",
+      "Personen ohne bestätigten Krankenhaustermin.",
+      "Personen, die unter medizinischem Vorwand arbeiten wollen."
+    ],
     "audience_types_title": "Arten der Versorgung",
     "audience_types_list": [
       "Ästhetische und rekonstruktive Chirurgie.",
@@ -680,6 +693,10 @@ export const de = {
     "audience_companion_title": "Begleitpersonen",
     "audience_companion_text": "Bis zu 3 Familienmitglieder oder Betreuer können in der Regel ein Abhängigenvisum erhalten, um den Patienten zu begleiten.",
     "duration_title": "Dauer und Verlängerungen",
+    "duration_initial_label": "Ursprüngliche Gültigkeit",
+    "duration_initial_value": "90 Tage",
+    "duration_max_label": "Maximale Verlängerung",
+    "duration_max_value": "Gemäß ärztlichem Attest",
     "duration_validity_label": "Typische Gültigkeit",
     "duration_validity_value": "90 Tage",
     "duration_extension_label": "Verlängerung",
@@ -691,11 +708,22 @@ export const de = {
       "Nachweis ausreichender Mittel zur Deckung der Kosten.",
       "Krankenversicherung, die die Behandlung abdeckt."
     ],
+    "work_title": "Arbeit und erlaubte Tätigkeiten",
+    "work_warning_title": "Arbeit nicht erlaubt",
+    "work_warning_text": "Das medizinische Visum erlaubt keine Arbeitstätigkeit. Es ist ausschließlich für medizinische Behandlungen bestimmt. Jede Arbeit, auch remote, ist technisch verboten.",
+    "renewal_title": "Verlängerung und Erneuerung",
+    "renewal_text": "Verlängerungen werden auf der Grundlage des ärztlichen Attests des Krankenhauses gewährt. Die meisten internationalen Krankenhäuser haben ein internes Visabüro zur Erleichterung des Prozesses.",
+    "limitations_title": "Einschränkungen und Hinweise",
+    "limitations_risk_title": "Abhängigkeit vom Krankenhaus",
+    "limitations_risk_text": "Das Visum ist an die Gesundheitseinrichtung gebunden. Wenn Sie das Krankenhaus wechseln oder die Behandlung abbrechen, kann das Visum widerrufen werden. Halten Sie die Dokumentation aktuell.",
     "advantage_title": "Der Vorteil privater Krankenhäuser",
     "advantage_text": "Die meisten großen internationalen Krankenhäuser verfügen über interne Visazentren, um Patienten bei ihren Verlängerungen zu helfen.",
     "cta_help_title": "Medizinische Verbindung benötigt?",
     "cta_help_subtitle": "Wir arbeiten mit den besten Einrichtungen zusammen, um Ihre Aufnahme und Ihr Visum zu erleichtern.",
-    "cta_help_btn": "Unseren Concierge-Service kontaktieren"
+    "cta_help_btn": "Unseren Concierge-Service kontaktieren",
+    "cta_compare_title": "Andere Optionen erkunden",
+    "cta_compare_subtitle": "Wenn Sie einen längeren Aufenthalt benötigen, ziehen Sie andere Visatypen in Betracht.",
+    "cta_compare_btn": "Elite Visum ansehen"
   },
   "religious_visa_page": {
     "meta": {
@@ -707,6 +735,20 @@ export const de = {
     "hero_subtitle": "Religiöse Mission oder Studium des Buddhismus",
     "definition_title": "Was ist das religiöse Visum?",
     "definition_content": "Das Non-Immigrant R (Religious) Visum ist Ausländern vorbehalten, die offizielle religiöse Aktivitäten in Thailand ausüben möchten, gesponsert von einer anerkannten Organisation.",
+    "audience_title": "Für wen ist dieses Visum?",
+    "audience_compatible": "Geeignete Profile",
+    "audience_compatible_list": [
+      "Ordinierte Mönche und Nonnen.",
+      "Missionare mit offizieller Förderung.",
+      "Religionswissenschaftler mit institutioneller Einladung.",
+      "Langzeit-Religionsfreiwillige."
+    ],
+    "audience_not_compatible": "Nicht geeignete Profile",
+    "audience_not_compatible_list": [
+      "Spirituelle Touristen ohne Zugehörigkeit.",
+      "Gelegentliche Meditationspraktizierende.",
+      "Personen ohne offiziellen religiösen Sponsor."
+    ],
     "conditions_title": "Profile und Bedingungen",
     "conditions_list": [
       "Sponsoring durch eine in Thailand registrierte religiöse Organisation.",
@@ -719,8 +761,21 @@ export const de = {
     "duration_initial_value": "90 Tage",
     "duration_max_label": "Max. Verlängerung",
     "duration_max_value": "1 Jahr (Erneuerbar)",
+    "work_title": "Arbeit und erlaubte Tätigkeiten",
+    "work_warning_title": "Bezahlte Arbeit verboten",
+    "work_warning_text": "Das religiöse Visum erlaubt keine bezahlte Arbeitstätigkeit. Die Aktivitäten müssen ausschließlich religiös und gemeinnützig sein. Jede Geldentschädigung ist streng verboten.",
+    "renewal_title": "Verlängerung und Erneuerung",
+    "renewal_text": "Jährliche Verlängerungen erfordern die Erneuerung des Sponsorings durch die religiöse Organisation und die fortlaufende Genehmigung des Department of Religious Affairs.",
+    "limitations_title": "Einschränkungen und Hinweise",
+    "limitations_risk_title": "Abhängigkeit vom Sponsor",
+    "limitations_risk_text": "Das Visum ist streng an die Sponsororganisation gebunden. Wenn Sie die Institution verlassen oder das Sponsoring verlieren, wird das Visum sofort widerrufen.",
     "footer_note": "Dieses Visum erfordert eine enge Abstimmung mit den nationalen Religionsbehörden.",
-    "cta_btn": "Spezifische Beratung anfordern"
+    "cta_help_title": "Spezifische Unterstützung benötigt?",
+    "cta_help_subtitle": "Das religiöse Visum erfordert komplexe Dokumentation und Koordination mit den Behörden.",
+    "cta_help_btn": "Einen Experten kontaktieren",
+    "cta_compare_title": "Andere spirituelle Optionen",
+    "cta_compare_subtitle": "Für kurze Meditationsretreats ziehen Sie andere Visatypen in Betracht.",
+    "cta_compare_btn": "Touristenvisum ansehen"
   },
   "media_visa_page": {
     "meta": {

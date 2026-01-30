@@ -24,6 +24,18 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     });
 }
 
-export default function Page() {
-    return <FamilyClientPage />;
+import { SchemaOrg } from '@/components/SchemaOrg';
+import { VisaServiceSchemas } from '@/components/ServiceSchema';
+
+export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    const t = translations[lang as keyof typeof translations] || translations.en;
+
+    return (
+        <>
+            <SchemaOrg lang={lang} pageKey="family-visa" title={t.nav.family || 'Family Visa'} showGlobal={false} />
+            {VisaServiceSchemas.family(lang)}
+            <FamilyClientPage />
+        </>
+    );
 }
