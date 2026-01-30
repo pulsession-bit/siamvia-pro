@@ -20,6 +20,11 @@ export const LanguageProvider: React.FC<{
 }> = ({ children, initialLang, dictionary, fallbackDictionary }) => {
   const [language, setLanguage] = useState<Language>(initialLang);
 
+  // Sync state if prop changes (essential for client-side navigation between locales)
+  React.useEffect(() => {
+    setLanguage(initialLang);
+  }, [initialLang]);
+
   const t = (path: string): string => {
     const keys = path.split('.');
     let current: any = dictionary;
