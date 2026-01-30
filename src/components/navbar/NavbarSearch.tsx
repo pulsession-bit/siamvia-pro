@@ -24,7 +24,7 @@ export const NavbarSearch: React.FC = () => {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder={t('nav.search_placeholder') || 'Ask AI...'}
-                className="w-full bg-slate-100 text-slate-900 border border-slate-200 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 placeholder-slate-400 text-sm transition-all"
+                className="w-full bg-slate-800 text-white border border-slate-700 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 placeholder-slate-400 text-sm transition-all"
             />
             <button
                 type="submit"

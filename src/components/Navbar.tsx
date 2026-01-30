@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
 
 
   return (
-    <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-slate-200/60 shadow-sm">
+    <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-slate-900 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           {/* Left Side: Logo + Desktop Menu */}
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
             {/* Mobile Burger Menu */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-slate-900 hover:text-amber-500 transition-colors focus:outline-none mr-2"
+              className="p-2 text-white hover:text-amber-500 transition-colors focus:outline-none mr-2"
               aria-label="Toggle Menu"
             >
               {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
@@ -67,8 +67,8 @@ const Navbar: React.FC = () => {
               <div className="bg-amber-500 p-2 rounded-lg shadow-lg group-hover:bg-amber-400 transition text-slate-900">
                 <Plane className="h-6 w-6 transform -rotate-45" />
               </div>
-              <span className="text-xl font-bold tracking-tight text-slate-900 transition-colors hidden sm:inline-block">
-                Siam Visa <span className="text-amber-600">Pro</span>
+              <span className="text-xl font-bold tracking-tight text-white transition-colors hidden sm:inline-block">
+                Siam Visa <span className="text-amber-500">Pro</span>
               </span>
             </Link>
           </div>
@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
 
             <a
               href={SCORING_ENGINE_URL}
-              className="bg-slate-900 hover:bg-amber-500 hover:text-slate-900 text-white px-3 md:px-5 py-2 rounded-lg shadow-lg shadow-slate-900/20 hover:shadow-amber-500/20 text-sm font-bold border border-transparent transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
+              className="bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 md:px-5 py-2 rounded-lg shadow-lg shadow-amber-400/20 text-sm font-bold border border-amber-300 transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
             >
               {t('nav.eligibility')}
             </a>
