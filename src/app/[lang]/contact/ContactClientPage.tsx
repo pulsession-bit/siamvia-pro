@@ -70,51 +70,10 @@ const ContactClientPage: React.FC = () => {
                                 </button>
                             </div>
                         ) : (
-                            <form onSubmit={handleSubmit} className="space-y-6">
-                                <h2 className="text-2xl font-bold text-slate-900 mb-6">{t('contact_page.form_title')}</h2>
-
-                                {['name', 'email', 'subject'].map((field) => (
-                                    <div key={field}>
-                                        <label className="block text-sm font-medium text-slate-700 mb-1 uppercase tracking-wider text-[10px] font-black">
-                                            {t(`contact_page.${field}_label`)}
-                                        </label>
-                                        <input
-                                            type={field === 'email' ? 'email' : 'text'}
-                                            name={field}
-                                            required
-                                            value={(formData as any)[field]}
-                                            onChange={handleChange}
-                                            className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-slate-50 focus:bg-white focus:ring-4 focus:ring-amber-500/10 focus:border-amber-500 outline-none transition-all"
-                                        />
-                                    </div>
-                                ))}
-
-                                <div>
-                                    <label className="block text-sm font-medium text-slate-700 mb-1 uppercase tracking-wider text-[10px] font-black">
-                                        {t('contact_page.message_label')}
-                                    </label>
-                                    <textarea
-                                        name="message"
-                                        required
-                                        rows={4}
-                                        value={formData.message}
-                                        onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-slate-50 focus:bg-white focus:ring-4 focus:ring-amber-500/10 focus:border-amber-500 outline-none transition-all resize-none"
-                                    />
-                                </div>
-
-                                <button
-                                    type="submit"
-                                    disabled={isSubmitting}
-                                    className="w-full bg-amber-500 text-slate-900 py-4 rounded-xl font-bold shadow-xl shadow-amber-500/20 hover:bg-amber-400 transition-all flex items-center justify-center disabled:opacity-70 disabled:cursor-not-allowed transform active:scale-95"
-                                >
-                                    {isSubmitting ? (
-                                        <><Loader2 className="w-5 h-5 animate-spin mr-2" />{t('contact_page.btn_sending')}</>
-                                    ) : (
-                                        <><Send className="w-5 h-5 mr-2" />{t('contact_page.btn_send')}</>
-                                    )}
-                                </button>
-                            </form>
+                            <ExpertAppointmentForm
+                                visaContext="contact_page"
+                                onSuccess={() => setIsSuccess(true)}
+                            />
                         )}
                     </div>
                 </div>
