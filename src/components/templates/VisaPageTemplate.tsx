@@ -3,8 +3,9 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { HeroSection, PageContainer, SectionTitle, Card, CTAButton } from '@/components/ui/PageComponents';
-import { CheckCircle2, AlertTriangle, Clock, Globe, ShieldAlert, ArrowRight, Plane, HelpCircle } from 'lucide-react';
+import { CheckCircle2, AlertTriangle, Clock, Globe, ShieldAlert, ArrowRight, Plane, HelpCircle, X } from 'lucide-react';
 import { IMAGES } from '@/constants';
+import dynamic from 'next/dynamic';
 
 interface VisaPageTemplateProps {
     pageKey: string; // The translation key prefix, e.g., 'exemption_visa_page'
@@ -51,6 +52,15 @@ export const VisaPageTemplate: React.FC<VisaPageTemplateProps> = ({
         // If all fail, return the first key translation (likely the raw key)
         return t(`${pageKey}.${keys[0]}`);
     };
+
+    // State for appointment modal
+    const [showAppointment, setShowAppointment] = React.useState(false);
+
+    // Dynamic import for the form to avoid initial payload bloat
+    const ExpertAppointmentForm = React.useMemo(() => dynamic(() => import('@/components/ExpertAppointmentForm'), {
+        ssr: false,
+        loading: () => <div className="p-8 text-center">Loading...</div>
+    }), []);
 
     return (
         <div className="bg-slate-50 min-h-screen pb-20">
@@ -235,9 +245,12 @@ export const VisaPageTemplate: React.FC<VisaPageTemplateProps> = ({
                         <p className="text-slate-400 mb-6 text-sm">
                             {tOr('cta_help_subtitle', 'cta_eligible_subtitle', 'cta_school_subtitle')}
                         </p>
-                        <CTAButton href={ctaHelpLink} variant="primary" fullWidth>
+                        <button
+                            onClick={() => setShowAppointment(true)}
+                            className="w-full bg-amber-500 text-slate-900 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-amber-400 transition-all transform active:scale-95"
+                        >
                             {tOr('cta_help_btn', 'cta_eligible_btn', 'cta_school_btn')}
-                        </CTAButton>
+                        </button>
                     </Card>
                     <Card variant="white" className="p-8 text-center flex flex-col justify-center items-center">
                         <h3 className="text-xl font-bold text-slate-800 mb-2">{t(`${pageKey}.cta_compare_title`)}</h3>
@@ -248,6 +261,26 @@ export const VisaPageTemplate: React.FC<VisaPageTemplateProps> = ({
                     </Card>
                 </div>
             </PageContainer>
+
+            {/* Appointment Modal Overlay */}
+            {showAppointment && (
+                <div className="fixed inset-0 flex items-center justify-center p-4 z-[9999]">
+                    <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-md" onClick={() => setShowAppointment(false)}></div>
+                    <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 w-full max-w-xl relative animate-in zoom-in-95 fade-in duration-200 z-[10000] max-h-[90vh] overflow-y-auto">
+                        <button
+                            onClick={() => setShowAppointment(false)}
+                            className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-900 transition-colors z-[110]"
+                        >
+                            <X size={24} />
+                        </button>
+                        <ExpertAppointmentForm
+                            visaContext={pageKey}
+                            onSuccess={() => { }}
+                            onCancel={() => setShowAppointment(false)}
+                        />
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
