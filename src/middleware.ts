@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const LOCALES = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
-const DEFAULT_LOCALE = "en";
+const DEFAULT_LOCALE = "fr";
 const LOCALE_COOKIE = "NEXT_LOCALE";
 
 function detectFromAcceptLanguage(header: string | null): string | null {

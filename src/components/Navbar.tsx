@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
 
               <button
                 onClick={() => setShowAppointment(true)}
-                className="bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 md:px-5 py-2 rounded-lg shadow-lg shadow-amber-400/20 text-sm font-bold border border-amber-300 transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
+                className="hidden md:block bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 md:px-5 py-2 rounded-lg shadow-lg shadow-amber-400/20 text-sm font-bold border border-amber-300 transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
               >
                 {t('nav.eligibility')}
               </button>
