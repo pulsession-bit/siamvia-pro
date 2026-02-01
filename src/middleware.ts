@@ -37,6 +37,12 @@ export function middleware(req: NextRequest) {
         return NextResponse.next();
     }
 
+    // Explicitly allow the root path to pass through to the page handler
+    // This allows src/app/(redirect)/page.tsx to handle the smart redirect logic
+    if (pathname === '/') {
+        return NextResponse.next();
+    }
+
     // 1) Check if already has locale prefix
     const first = pathname.split("/")[1];
     if (LOCALES.includes(first as any)) return NextResponse.next();
