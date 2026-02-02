@@ -180,21 +180,7 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
                 </div>
             )}
 
-            {/* 6. Mobile Sticky CTA */}
-            <div className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-3rem)] max-w-sm">
-                <button
-                    onClick={() => setShowAppointment(true)}
-                    className="w-full bg-slate-900 text-white p-4 rounded-2xl font-bold shadow-2xl flex items-center justify-between border border-white/10 backdrop-blur-md bg-slate-900/90 animate-in slide-in-from-bottom-8 duration-500"
-                >
-                    <span className="flex items-center gap-3">
-                        <div className="bg-amber-500 p-2 rounded-lg">
-                            <Search className="text-slate-900" size={18} />
-                        </div>
-                        {localT.contactUsBtn}
-                    </span>
-                    <X className="rotate-45" size={20} />
-                </button>
-            </div>
+
         </div>
     );
 };
