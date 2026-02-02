@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { db, auth } from "@/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { signInAnonymously, onAuthStateChanged, createUserWithEmailAndPassword } from "firebase/auth";
+import { signInAnonymously, onAuthStateChanged, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export type ContactMethod = "phone" | "whatsapp" | "email" | "video";
@@ -18,6 +18,7 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
     // Account Creation State
     const [createAccount, setCreateAccount] = useState(false);
     const [password, setPassword] = useState("");
+    const [isGoogleLinked, setIsGoogleLinked] = useState(false);
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -34,6 +35,12 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setIsAuthReady(true);
+                // If user is already logged in (and not anonymous), we could pre-fill info
+                if (!user.isAnonymous) {
+                    setIsGoogleLinked(user.providerData.some(p => p.providerId === 'google.com'));
+                    setFullName(user.displayName || "");
+                    setEmail(user.email || "");
+                }
             } else {
                 signInAnonymously(auth)
                     .then(() => setIsAuthReady(true))
@@ -45,6 +52,26 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
         });
         return () => unsubscribe && unsubscribe();
     }, [t]);
+
+    const handleGoogleLogin = async () => {
+        if (!auth) return;
+        setErrorMessage("");
+        try {
+            const provider = new GoogleAuthProvider();
+            const result = await signInWithPopup(auth, provider);
+            const user = result.user;
+
+            // Auto-fill from Google Profile
+            setFullName(user.displayName || "");
+            setEmail(user.email || "");
+            setCreateAccount(false); // No need to create account manually
+            setIsGoogleLinked(true);
+
+        } catch (error: any) {
+            console.error("Google Auth Error:", error);
+            setErrorMessage(t('appointment.error_google') || "Erreur lors de la connexion Google.");
+        }
+    };
 
     const resetForm = () => {
         setSubmitStatus('idle');
@@ -103,7 +130,7 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
                 source: "website_v2",
                 visaContext: visaContext || 'general',
                 userId: userId,
-                hasAccount: createAccount
+                hasAccount: createAccount || isGoogleLinked
             });
 
             setSubmitStatus('success');
@@ -121,7 +148,7 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
     };
 
     return {
-        state: { fullName, email, date, slot, contactMethod, contactValue, createAccount, password, isSubmitting, submitStatus, errorMessage, isAuthReady },
-        actions: { setFullName, setEmail, setDate, setSlot, setContactMethod, setContactValue, setCreateAccount, setPassword, submitForm, resetForm }
+        state: { fullName, email, date, slot, contactMethod, contactValue, createAccount, password, isGoogleLinked, isSubmitting, submitStatus, errorMessage, isAuthReady },
+        actions: { setFullName, setEmail, setDate, setSlot, setContactMethod, setContactValue, setCreateAccount, setPassword, handleGoogleLogin, submitForm, resetForm }
     };
 };
