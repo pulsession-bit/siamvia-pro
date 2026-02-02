@@ -76,6 +76,10 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
                         throw new Error(t('appointment.error_email_exists') || "Un compte existe déjà avec cet email. Veuillez vous connecter.");
                     } else if (authError.code === 'auth/weak-password') {
                         throw new Error(t('appointment.error_weak_pass') || "Le mot de passe doit contenir au moins 6 caractères.");
+                    } else if (authError.message?.includes('Password must contain an upper case character')) {
+                        throw new Error(t('appointment.error_pass_uppercase') || "Le mot de passe doit contenir au moins une majuscule.");
+                    } else if (authError.code === 'auth/password-does-not-meet-requirements') {
+                        throw new Error(t('appointment.error_pass_requirements') || "Le mot de passe ne respecte pas les critères de sécurité (min 6 caractères, 1 majuscule).");
                     } else {
                         throw authError; // Re-throw other errors
                     }

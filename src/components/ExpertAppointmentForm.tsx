@@ -169,7 +169,7 @@ const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
               required={state.createAccount}
             />
             <p className="text-xs text-slate-400 mt-2 ml-1">
-              {t('appointment.password_help') || "Minimum 6 caractères. Vous servira pour accéder à votre espace client."}
+              {t('appointment.password_help') || "Minimum 6 caractères & 1 majuscule. Vous servira pour accéder à votre espace client."}
             </p>
           </div>
         </div>
