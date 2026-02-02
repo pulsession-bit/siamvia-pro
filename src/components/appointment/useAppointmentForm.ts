@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { db, auth } from "@/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { signInAnonymously, onAuthStateChanged } from "firebase/auth";
+import { signInAnonymously, onAuthStateChanged, createUserWithEmailAndPassword } from "firebase/auth";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export type ContactMethod = "phone" | "whatsapp" | "email" | "video";
@@ -14,6 +14,10 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
     const [slot, setSlot] = useState("");
     const [contactMethod, setContactMethod] = useState<ContactMethod>("whatsapp");
     const [contactValue, setContactValue] = useState("");
+
+    // Account Creation State
+    const [createAccount, setCreateAccount] = useState(false);
+    const [password, setPassword] = useState("");
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -59,10 +63,27 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
         setErrorMessage("");
 
         try {
-            let currentUser = auth.currentUser;
-            if (!currentUser) {
+            let userId = auth.currentUser?.uid || 'anonymous';
+
+            // Logic to create account
+            if (createAccount && password) {
+                try {
+                    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                    userId = userCredential.user.uid;
+                } catch (authError: any) {
+                    // Handle specific auth errors (e.g., email-already-in-use)
+                    if (authError.code === 'auth/email-already-in-use') {
+                        throw new Error(t('appointment.error_email_exists') || "Un compte existe déjà avec cet email. Veuillez vous connecter.");
+                    } else if (authError.code === 'auth/weak-password') {
+                        throw new Error(t('appointment.error_weak_pass') || "Le mot de passe doit contenir au moins 6 caractères.");
+                    } else {
+                        throw authError; // Re-throw other errors
+                    }
+                }
+            } else if (!auth.currentUser) {
+                // Determine anonymous fallback if not creating account and no user
                 const result = await signInAnonymously(auth);
-                currentUser = result.user;
+                userId = result.user.uid;
             }
 
             await addDoc(collection(db, "appointments"), {
@@ -77,7 +98,8 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
                 createdAt: serverTimestamp(),
                 source: "website_v2",
                 visaContext: visaContext || 'general',
-                userId: currentUser?.uid || 'anonymous'
+                userId: userId,
+                hasAccount: createAccount
             });
 
             setSubmitStatus('success');
@@ -95,7 +117,7 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
     };
 
     return {
-        state: { fullName, email, date, slot, contactMethod, contactValue, isSubmitting, submitStatus, errorMessage, isAuthReady },
-        actions: { setFullName, setEmail, setDate, setSlot, setContactMethod, setContactValue, submitForm, resetForm }
+        state: { fullName, email, date, slot, contactMethod, contactValue, createAccount, password, isSubmitting, submitStatus, errorMessage, isAuthReady },
+        actions: { setFullName, setEmail, setDate, setSlot, setContactMethod, setContactValue, setCreateAccount, setPassword, submitForm, resetForm }
     };
 };

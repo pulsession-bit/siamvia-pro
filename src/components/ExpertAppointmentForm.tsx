@@ -139,13 +139,51 @@ const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
         </div>
       </div>
 
-      {/* Erreurs */}
-      {state.errorMessage && (
-        <div className="bg-red-50 border border-red-100 rounded-2xl p-4 text-red-600 text-sm font-bold flex items-center animate-shake">
-          <div className="w-2 h-2 bg-red-500 rounded-full mr-3 animate-pulse"></div>
-          {state.errorMessage}
+
+      {/* Account Creation Option */}
+      <div className="bg-slate-50 rounded-2xl p-5 border border-slate-100">
+        <label className="flex items-center cursor-pointer group">
+          <input
+            type="checkbox"
+            className="w-5 h-5 rounded border-slate-300 text-amber-500 focus:ring-amber-500"
+            checked={state.createAccount}
+            onChange={(e) => actions.setCreateAccount(e.target.checked)}
+          />
+          <span className="ml-3 font-bold text-slate-700 group-hover:text-slate-900 transition-colors">
+            {t('appointment.create_account_label') || "Créer un compte pour suivre mon dossier"}
+          </span>
+        </label>
+
+        <div className={`grid transition-all duration-300 ease-in-out ${state.createAccount ? 'grid-rows-[1fr] opacity-100 mt-4' : 'grid-rows-[0fr] opacity-0'}`}>
+          <div className="overflow-hidden">
+            <label className="block text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] ml-1 mb-2">
+              {t('appointment.password_label') || 'Mot de passe'}
+            </label>
+            <input
+              type="password"
+              className="w-full rounded-2xl border border-slate-100 bg-white px-5 py-4 focus:ring-4 focus:ring-amber-500/10 focus:border-amber-500 outline-none transition-all font-bold text-slate-700"
+              value={state.password}
+              onChange={(e) => actions.setPassword(e.target.value)}
+              placeholder="••••••••"
+              minLength={6}
+              required={state.createAccount}
+            />
+            <p className="text-xs text-slate-400 mt-2 ml-1">
+              {t('appointment.password_help') || "Minimum 6 caractères. Vous servira pour accéder à votre espace client."}
+            </p>
+          </div>
         </div>
-      )}
+      </div>
+
+      {/* Erreurs */}
+      {
+        state.errorMessage && (
+          <div className="bg-red-50 border border-red-100 rounded-2xl p-4 text-red-600 text-sm font-bold flex items-center animate-shake">
+            <div className="w-2 h-2 bg-red-500 rounded-full mr-3 animate-pulse"></div>
+            {state.errorMessage}
+          </div>
+        )
+      }
 
       {/* Submit */}
       <div className="pt-4">
@@ -170,7 +208,7 @@ const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
           </button>
         )}
       </div>
-    </form>
+    </form >
   );
 };
 
