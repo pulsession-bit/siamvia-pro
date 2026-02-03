@@ -370,9 +370,12 @@ export const ar = {
     }
   },
   "appointment": {
-    "title": "حجز استشارة",
-    "subtitle": "اختر التاريخ والوقت.",
-    "date_label": "التاريخ",
+    "title": "حجز موعد مع خبير",
+    "subtitle": "اختر تاريخًا واثنين من الفترات الزمنية. ثم حدد كيف تريد أن يتم الاتصال بك.",
+    "name_label": "اسمك",
+    "email_label": "البريد الإلكتروني",
+    "google_btn": "سجّل باستخدام Google",
+    "google_connected": "تم الاتصال بـ Google",
     "time_label": "الوقت",
     "channel_label": "طريقة الاتصال",
     "phone_placeholder": "الرقم مع الرمز الدولي",

@@ -368,9 +368,12 @@ export const es = {
     }
   },
   "appointment": {
-    "title": "Reservar Consulta",
-    "subtitle": "Elija fecha y hora.",
-    "date_label": "Fecha",
+    "title": "Reservar cita con un experto",
+    "subtitle": "Elija una fecha y dos franjas horarias. Luego indique cómo desea ser contactado.",
+    "name_label": "Su Nombre",
+    "email_label": "Su Correo Electrónico",
+    "google_btn": "Registrarse con Google",
+    "google_connected": "Conectado con Google",
     "time_label": "Hora",
     "channel_label": "Canal preferido",
     "phone_placeholder": "Nº con prefijo (ej: +34...)",

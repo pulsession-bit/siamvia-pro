@@ -370,8 +370,12 @@ export const it = {
     }
   },
   "appointment": {
-    "title": "Prenota Consulenza",
-    "subtitle": "Scegli data e ora.",
+    "title": "Prenota appuntamento esperto",
+    "subtitle": "Scegli una data e due fasce orarie. Indica poi come desideri essere ricontattato.",
+    "name_label": "Il tuo Nome",
+    "email_label": "La tua Email",
+    "google_btn": "Registrati con Google",
+    "google_connected": "Connesso con Google",
     "date_label": "Data",
     "time_label": "Ora",
     "channel_label": "Canale preferito",

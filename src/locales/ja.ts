@@ -370,8 +370,12 @@ export const ja = {
     }
   },
   "appointment": {
-    "title": "専門家相談の予約",
-    "subtitle": "日時を選択してください。",
+    "title": "専門家予約",
+    "subtitle": "日付と2つの時間枠を選択してください。その後、連絡方法を指定してください。",
+    "name_label": "お名前",
+    "email_label": "メールアドレス",
+    "google_btn": "Googleで登録",
+    "google_connected": "Googleに接続済み",
     "date_label": "日付",
     "time_label": "時間",
     "channel_label": "希望する連絡方法",

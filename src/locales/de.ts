@@ -978,8 +978,12 @@ export const de = {
     }
   },
   "appointment": {
-    "title": "Expertenberatung buchen",
-    "subtitle": "Wählen Sie ein Datum und eine Uhrzeit.",
+    "title": "Expertentermin buchen",
+    "subtitle": "Wählen Sie ein Datum und zwei Zeitfenster. Geben Sie dann an, wie Sie kontaktiert werden möchten.",
+    "name_label": "Ihr Name",
+    "email_label": "Ihre E-Mail",
+    "google_btn": "Mit Google registrieren",
+    "google_connected": "Mit Google verbunden",
     "date_label": "Datum",
     "time_label": "Uhrzeit",
     "channel_label": "Bevorzugter Kanal",

@@ -370,9 +370,12 @@ export const ru = {
     }
   },
   "appointment": {
-    "title": "Запись к эксперту",
-    "subtitle": "Выберите дату и время.",
-    "date_label": "Дата",
+    "title": "Записаться к эксперту",
+    "subtitle": "Выберите дату и два временных слота. Затем укажите, как с вами связаться.",
+    "name_label": "Ваше Имя",
+    "email_label": "Ваш Email",
+    "google_btn": "Регистрация через Google",
+    "google_connected": "Подключено к Google",
     "time_label": "Время",
     "channel_label": "Способ связи",
     "phone_placeholder": "Номер с кодом страны",

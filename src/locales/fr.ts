@@ -1324,6 +1324,10 @@ export const fr = {
   "appointment": {
     "title": "Prendre rendez-vous avec un expert",
     "subtitle": "Choisissez une date et proposez deux créneaux horaires. Indiquez ensuite comment vous souhaitez être recontacté.",
+    "name_label": "Votre Nom",
+    "email_label": "Votre Email",
+    "google_btn": "S'enregistrer avec Google",
+    "google_connected": "Connecté avec Google",
     "date_label": "Date souhaitée",
     "time_label": "Heure",
     "channel_label": "Canal de contact préféré",

@@ -370,8 +370,12 @@ export const ko = {
     }
   },
   "appointment": {
-    "title": "전문가 상담 예약",
-    "subtitle": "날짜와 시간을 선택하세요.",
+    "title": "전문가 예약",
+    "subtitle": "날짜와 두 개의 시간대를 선택하세요. 그 다음 연락 방법을 지정해 주세요.",
+    "name_label": "성명",
+    "email_label": "이메일",
+    "google_btn": "Google로 등록",
+    "google_connected": "Google에 연결됨",
     "date_label": "날짜",
     "time_label": "시간",
     "channel_label": "연락 방법",

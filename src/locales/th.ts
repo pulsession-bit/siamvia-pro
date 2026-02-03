@@ -370,8 +370,12 @@ export const th = {
     }
   },
   "appointment": {
-    "title": "นัดปรึกษาผู้เชี่ยวชาญ",
-    "subtitle": "เลือกวันและเวลา.",
+    "title": "นัดหมายผู้เชี่ยวชาญ",
+    "subtitle": "เลือกวันและสองช่วงเวลา จากนั้นระบุวิธีที่คุณต้องการให้ติดต่อกลับ",
+    "name_label": "ชื่อของคุณ",
+    "email_label": "อีเมลของคุณ",
+    "google_btn": "ลงทะเบียนด้วย Google",
+    "google_connected": "เชื่อมต่อกับ Google แล้ว",
     "date_label": "วันที่",
     "time_label": "เวลา",
     "channel_label": "ช่องทางการติดต่อที่สะดวก",

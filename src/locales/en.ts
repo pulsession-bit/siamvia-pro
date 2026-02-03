@@ -1297,8 +1297,12 @@ export const en = {
     }
   },
   "appointment": {
-    "title": "Book an Expert Consultation",
-    "subtitle": "Choose a date and propose two time slots. Then indicate how you wish to be contacted.",
+    "title": "Book an expert appointment",
+    "subtitle": "Choose a date and two time slots. Then indicate how you wish to be contacted.",
+    "name_label": "Your Name",
+    "email_label": "Your Email",
+    "google_btn": "Register with Google",
+    "google_connected": "Connected with Google",
     "date_label": "Date",
     "time_label": "Time",
     "channel_label": "Preferred contact channel",

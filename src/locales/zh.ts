@@ -370,8 +370,12 @@ export const zh = {
     }
   },
   "appointment": {
-    "title": "预约专家咨询",
-    "subtitle": "选择日期和时间。",
+    "title": "预订专家预约",
+    "subtitle": "选择日期和两个时段。然后注明您希望的联系方式。",
+    "name_label": "您的姓名",
+    "email_label": "您的电子邮件",
+    "google_btn": "使用 Google 注册",
+    "google_connected": "已连接 Google",
     "date_label": "日期",
     "time_label": "时间",
     "channel_label": "首选联系方式",
