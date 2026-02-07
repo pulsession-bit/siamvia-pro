@@ -71,5 +71,18 @@ service cloud.firestore {
       allow create: if isAuthenticated();
       allow delete: if isNexusMaster() || isSystemAdmin();
     }
+
+    // VISA APPLICATIONS (Demandes de visa)
+    match /visa_applications/{applicationId} {
+      allow create: if true; // Public form submission
+      allow read, update, delete: if hasStaffAccess() || isSystemAdmin();
+    }
+
+    // INGRESS EVENTS (Événements d'ingestion - Server-side only)
+    // Ces événements sont créés par des scripts backend/Cloud Functions
+    match /ingress_events/{eventId} {
+      allow read: if hasStaffAccess() || isSystemAdmin();
+      allow create, update, delete: if isSystemAdmin(); // Only backend/admin can write
+    }
   }
 }

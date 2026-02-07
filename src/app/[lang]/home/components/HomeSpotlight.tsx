@@ -88,6 +88,8 @@ export const HomeSpotlight: React.FC<HomeSpotlightProps> = ({ t, SCORING_ENGINE_
                                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
                                     alt="Coworking"
                                     fill
+                                    loading="lazy"
+                                    quality={80}
                                     className="object-cover"
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                 />
@@ -97,6 +99,8 @@ export const HomeSpotlight: React.FC<HomeSpotlightProps> = ({ t, SCORING_ENGINE_
                                     src="https://images.unsplash.com/photo-1559628233-100c798642d4?auto=format&fit=crop&w=800&q=80"
                                     alt="Bangkok"
                                     fill
+                                    loading="lazy"
+                                    quality={80}
                                     className="object-cover"
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                 />

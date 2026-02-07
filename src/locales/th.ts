@@ -401,7 +401,15 @@ export const th = {
     "success_desc": "ผู้เชี่ยวชาญจะติดต่อกลับเร็วๆ นี้.",
     "error_init": "เกิดข้อผิดพลาดในการเริ่มต้น",
     "error_service": "บริการนัดหมายไม่พร้อมใช้งานชั่วคราว",
-    "error_generic": "เกิดข้อผิดพลาดขึ้น"
+    "error_generic": "เกิดข้อผิดพลาดขึ้น",
+    "error_email_exists": "อีเมลนี้ถูกใช้งานแล้ว",
+    "error_weak_pass": "รหัสผ่านอ่อนเกินไป",
+    "error_pass_uppercase": "ต้องมีตัวพิมพ์ใหญ่อย่างน้อย 1 ตัว",
+    "error_pass_requirements": "8 ตัวอักษรขึ้นไป มีตัวเลขและอักขระพิเศษ",
+    "error_google": "เข้าสู่ระบบด้วย Google ผิดพลาด",
+    "create_account_label": "สร้างบัญชี",
+    "password_label": "รหัสผ่าน",
+    "password_help": "จำเป็นสำหรับเข้าสู่ระบบสมาชิก"
   },
   "cart": {
     "title": "ตะกร้าของคุณ",

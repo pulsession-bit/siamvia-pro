@@ -12,16 +12,6 @@ interface HomeVisasProps {
 export const HomeVisas: React.FC<HomeVisasProps> = ({ t, langPath }) => {
     return (
         <section className="py-20 relative overflow-hidden bg-slate-900">
-            <div className="absolute inset-0">
-                <Image
-                    src={IMAGES.BEACH}
-                    alt="Beach"
-                    fill
-                    className="object-cover"
-                    sizes="100vw"
-                />
-                <div className="absolute inset-0 bg-slate-900/80 backdrop-blur-[2px]"></div>
-            </div>
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold text-white mb-4">{t('visas.title')}</h2>
@@ -38,6 +28,8 @@ export const HomeVisas: React.FC<HomeVisasProps> = ({ t, langPath }) => {
                                 src={IMAGES.COWORKING}
                                 alt="DTV Chiang Mai"
                                 fill
+                                loading="lazy"
+                                quality={80}
                                 className="object-cover group-hover:scale-110 transition duration-500"
                                 sizes="(max-width: 768px) 100vw, 33vw"
                             />
@@ -66,6 +58,8 @@ export const HomeVisas: React.FC<HomeVisasProps> = ({ t, langPath }) => {
                                 src={IMAGES.TOURIST}
                                 alt="Tourist"
                                 fill
+                                loading="lazy"
+                                quality={80}
                                 className="object-cover group-hover:scale-110 transition duration-500"
                                 sizes="(max-width: 768px) 100vw, 33vw"
                             />
@@ -94,6 +88,8 @@ export const HomeVisas: React.FC<HomeVisasProps> = ({ t, langPath }) => {
                                 src={IMAGES.LTR}
                                 alt="LTR"
                                 fill
+                                loading="lazy"
+                                quality={80}
                                 className="object-cover group-hover:scale-110 transition duration-500"
                                 sizes="(max-width: 768px) 100vw, 33vw"
                             />
