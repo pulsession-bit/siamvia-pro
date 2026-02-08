@@ -12,7 +12,7 @@ interface CTAButtonProps {
 }
 
 const ctaVariants = {
-    primary: 'bg-primary text-dark hover:bg-primary-light shadow-primary',
+    primary: 'bg-primary text-slate-900 hover:bg-primary-light shadow-primary',
     secondary: 'bg-dark text-white hover:bg-dark-light shadow-lg',
     outline: 'bg-transparent border-2 border-slate-400 text-slate-700 hover:bg-slate-50',
 };
