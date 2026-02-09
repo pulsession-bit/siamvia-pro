@@ -15,7 +15,7 @@ export const fr = {
     "search_placeholder": "Posez une question à l'IA...",
     "comparator": "Comparateur de Visas 2026",
     "other_visas": "Autres Visas",
-    "eligibility": "Contacter un expert",
+    "eligibility": "Démarrer votre Audit",
     "see_services": "Voir nos services",
     "ltr": "Visa LTR",
     "languages": "Langues",

@@ -6,7 +6,7 @@
  * External URLs
  */
 export const URLS = {
-    SCORING_ENGINE: 'https://desk.siamvisapro.com',
+    SCORING_ENGINE: 'https://audit.siamvisapro.com/',
     WHATSAPP: 'https://wa.me/33773726887',
 } as const;
 

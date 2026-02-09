@@ -167,7 +167,7 @@ const FAQClientPage: React.FC<FAQClientPageProps> = ({ data }) => {
                     <p className="text-slate-300 mb-8 max-w-lg mx-auto leading-relaxed">
                         {data?.not_found_desc || t('faq_page.not_found_desc')}
                     </p>
-                    <CTAButton href={URLS.SCORING_ENGINE} variant="primary">
+                    <CTAButton href={URLS.SCORING_ENGINE} className="bg-white text-slate-900 hover:bg-slate-100 shadow-lg border-none">
                         {data?.not_found_btn || t('faq_page.not_found_btn')}
                     </CTAButton>
                 </Card>

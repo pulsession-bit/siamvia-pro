@@ -1,14 +1,22 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { URLS, IMAGES } from '@/constants';
 import { PageContainer, Card } from '@/components/ui/PageComponents';
 import { VisaHero } from '@/components/visa/VisaHero';
 import { ServiceCard } from '@/components/services/ServiceCard';
+import { X } from 'lucide-react';
+
+const ExpertAppointmentForm = dynamic(() => import('@/components/ExpertAppointmentForm'), {
+    ssr: false,
+    loading: () => <div className="p-8 text-center">Loading...</div>
+});
 
 const ServicesClientPage: React.FC = () => {
     const { t } = useLanguage();
+    const [showAppointment, setShowAppointment] = useState(false);
 
     const tiers = [
         {
@@ -104,7 +112,7 @@ const ServicesClientPage: React.FC = () => {
                             {t('services_page.custom_support_desc')}
                         </p>
                         <button
-                            onClick={() => window.location.href = '#'}
+                            onClick={() => setShowAppointment(true)}
                             className="bg-amber-500 text-slate-900 px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[10px]"
                         >
                             {t('services_page.custom_support_btn')}
@@ -112,6 +120,26 @@ const ServicesClientPage: React.FC = () => {
                     </Card>
                 </div>
             </PageContainer>
+
+            {/* Appointment Modal Overlay */}
+            {showAppointment && (
+                <div className="fixed inset-0 flex items-center justify-center p-4 z-[9999]">
+                    <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-md" onClick={() => setShowAppointment(false)}></div>
+                    <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 w-full max-w-xl relative animate-in zoom-in-95 fade-in duration-200 z-[10000] max-h-[90vh] overflow-y-auto">
+                        <button
+                            onClick={() => setShowAppointment(false)}
+                            className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-900 transition-colors z-[110]"
+                        >
+                            <X size={24} />
+                        </button>
+                        <ExpertAppointmentForm
+                            visaContext="services_page"
+                            onSuccess={() => { }}
+                            onCancel={() => setShowAppointment(false)}
+                        />
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
