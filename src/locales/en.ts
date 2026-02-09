@@ -13,7 +13,7 @@ export const en = {
     "faq": "FAQ",
     "contact": "Contact",
     "member": "Client Area",
-    "eligibility": "Contact an Expert",
+    "eligibility": "Start your Audit",
     "ltr": "Visa LTR",
     "languages": "Languages",
     "search": "Search",
@@ -698,7 +698,7 @@ export const en = {
     "limitations_risk_text": "If you leave your job or are dismissed, your visa is cancelled immediately (sometimes on the same day). You must leave the country or find a new job capable of sponsoring a new visa within 7 days (depending on the case).",
     "cta_help_title": "Need help with this visa?",
     "cta_help_subtitle": "We support companies and employees in the procedure.",
-    "cta_help_btn": "Check my eligibility",
+    "cta_help_btn": "Start your Audit",
     "cta_compare_title": "Compare options",
     "cta_compare_subtitle": "Non-B, LTR or DTV? Find the best visa.",
     "cta_compare_btn": "See DTV Visa (Alternative)"
@@ -748,7 +748,7 @@ export const en = {
     "limitations_risk_text": "If you do not have a return/onward ticket within 60 days, the airline may deny you boarding from your home country. Consider renting a ticket or buying a flexible one if your plan is unclear.",
     "cta_help_title": "Want to stay longer?",
     "cta_help_subtitle": "Discover the DTV Visa (5 years) or LTR (10 years).",
-    "cta_help_btn": "See DTV Visa",
+    "cta_help_btn": "Start your Audit",
     "cta_compare_title": "Compare options",
     "cta_compare_subtitle": "Tourist, Exemption or Retirement?",
     "cta_compare_btn": "See Tourist Visa (TR)"
@@ -798,7 +798,7 @@ export const en = {
     "limitations_control_text": "Immigration performs random language tests during extensions. If you have an ED \"Thai Language\" visa but do not speak a word of Thai, your extension will be refused and your visa cancelled.",
     "cta_school_title": "Looking for a school?",
     "cta_school_subtitle": "Our educational partners can help you.",
-    "cta_school_btn": "Find a school",
+    "cta_school_btn": "Start your Audit",
     "cta_compare_title": "Compare options",
     "cta_compare_subtitle": "Student vs DTV (if you work online).",
     "cta_compare_btn": "See DTV Visa"
@@ -877,7 +877,7 @@ export const en = {
     ],
     "cta_help_title": "Need help with this visa?",
     "cta_help_subtitle": "We support companies and employees through the BOI process.",
-    "cta_help_btn": "Consult an expert",
+    "cta_help_btn": "Start your Audit",
     "cta_eligible_title": "Is your company eligible?",
     "cta_eligible_subtitle": "Check if you can obtain the SMART Visa.",
     "cta_eligible_btn": "Run a simulation",
@@ -934,7 +934,7 @@ export const en = {
     "limitations_risk_text": "In the event of divorce, the visa is cancelled immediately (often 7 days to leave the territory). This is a precarious situation for those who depend entirely on this visa.",
     "cta_help_title": "Need marriage assistance?",
     "cta_help_subtitle": "We manage the paperwork for the marriage extension.",
-    "cta_help_btn": "Contact an expert",
+    "cta_help_btn": "Start your Audit",
     "cta_compare_title": "Not yet married?",
     "cta_compare_subtitle": "Look at individual long-term visas.",
     "cta_compare_btn": "See Elite Visa (Independent)"
@@ -984,7 +984,7 @@ export const en = {
     "limitations_risk_text": "Attention: Volunteering is considered work. A Work Permit is legally mandatory in addition to the visa to be compliant.",
     "cta_help_title": "Need help with your file?",
     "cta_help_subtitle": "The volunteer visa requires complex documentation. We help you check compliance.",
-    "cta_help_btn": "Consult an expert",
+    "cta_help_btn": "Start your Audit",
     "cta_compare_title": "Short Mission?",
     "cta_compare_subtitle": "For less than 30 days, a tourist visa may suffice.",
     "cta_compare_btn": "See Tourist Visa"
@@ -1050,7 +1050,7 @@ export const en = {
     "advantage_text": "Most large international hospitals have internal visa centers to help patients with their extensions.",
     "cta_help_title": "Need a medical liaison?",
     "cta_help_subtitle": "We collaborate with the best facilities to facilitate your admission and visa.",
-    "cta_help_btn": "Contact our concierge service",
+    "cta_help_btn": "Start your Audit",
     "cta_compare_title": "Explore other options",
     "cta_compare_subtitle": "If you need a longer stay, consider other visa types.",
     "cta_compare_btn": "See Elite Visa"
@@ -1102,7 +1102,7 @@ export const en = {
     "footer_note": "This visa requires close coordination with national religious authorities.",
     "cta_help_title": "Need specific assistance?",
     "cta_help_subtitle": "The religious visa requires complex documentation and coordination with authorities.",
-    "cta_help_btn": "Contact an expert",
+    "cta_help_btn": "Start your Audit",
     "cta_compare_title": "Other spiritual options",
     "cta_compare_subtitle": "For short meditation retreats, consider other visa types.",
     "cta_compare_btn": "See Tourist Visa"
@@ -1152,7 +1152,7 @@ export const en = {
     "limitations_risk_text": "Thailand monitors foreign media very closely. Any politically sensitive reporting without proper accreditation can lead to deportation.",
     "cta_help_title": "Need accreditation assistance?",
     "cta_help_subtitle": "We help media professionals with MFA formalities.",
-    "cta_help_btn": "Request assistance",
+    "cta_help_btn": "Start your Audit",
     "cta_compare_title": "Are you a Freelancer?",
     "cta_compare_subtitle": "For digital content, the DTV is often simpler.",
     "cta_compare_btn": "See DTV Visa"
@@ -1202,7 +1202,7 @@ export const en = {
     "limitations_risk_text": "At the end of your official mission, you must return your diplomatic card and change status or leave the country immediately.",
     "cta_help_title": "Protocol Assistance?",
     "cta_help_subtitle": "We assist international organizations with their procedures.",
-    "cta_help_btn": "Request assistance",
+    "cta_help_btn": "Start your Audit",
     "cta_compare_title": "Commercial Mission?",
     "cta_compare_subtitle": "If you do not have diplomatic status, use the Business Visa.",
     "cta_compare_btn": "See Business Visa"
@@ -1252,7 +1252,7 @@ export const en = {
     "limitations_risk_text": "The most difficult step is obtaining approval from the National Research Council. Without this, the RS visa cannot be issued.",
     "cta_help_title": "Need help with NRCT?",
     "cta_help_subtitle": "We guide researchers and institutes through the process.",
-    "cta_help_btn": "Contact an expert",
+    "cta_help_btn": "Start your Audit",
     "cta_compare_title": "Tech Startup?",
     "cta_compare_subtitle": "The SMART Visa might be more appropriate for innovation.",
     "cta_compare_btn": "See SMART Visa"
@@ -1427,7 +1427,7 @@ export const en = {
     ],
     "cta_help_title": "Need help with your application?",
     "cta_help_subtitle": "We handle the E-Visa process for you.",
-    "cta_help_btn": "Order Tourist Visa",
+    "cta_help_btn": "Start your Audit",
     "cta_compare_title": "Shorter stays?",
     "cta_compare_subtitle": "For less than 60 days, you might not need a visa.",
     "cta_compare_btn": "See Visa Exemption"

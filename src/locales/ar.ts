@@ -11,7 +11,7 @@ export const ar = {
     "faq": "أسئلة شائعة",
     "contact": "اتصل بنا",
     "member": "منطقة الأعضاء",
-    "eligibility": "اتصل بخبير",
+    "eligibility": "ابدأ تقييمك",
     "ltr": "تأشيرة LTR",
     "languages": "اللغات",
     "search": "بحث",
@@ -607,7 +607,7 @@ export const ar = {
     "limitations_risk_text": "إذا تركت عملك أو تم فصلك ، فسيتم إلغاء تأشيرتك على الفور (أحيانًا في نفس اليوم)。يجب عليك مغادرة البلاد أو العثور على وظيفة جديدة قادرة على رعاية تأشيرة جديدة في غضون 7 أيام (حسب الحالة)。",
     "cta_help_title": "هل تحتاج إلى مساعدة في هذه التأشيرة؟",
     "cta_help_subtitle": "نحن ندعم الشركات والموظفين في الإجراء。",
-    "cta_help_btn": "تحقق من أهليتي",
+    "cta_help_btn": "ابدأ تقييمك",
     "cta_compare_title": "قارن الخيارات",
     "cta_compare_subtitle": "Non-B أو LTR أو DTV؟ ابحث عن أفضل تأشيرة。",
     "cta_compare_btn": "انظر تأشيرة DTV (بديل)"
@@ -657,7 +657,7 @@ export const ar = {
     "limitations_risk_text": "إذا لم تكن لديك تذكرة عودة خلال 60 يوماً، فقد ترفض شركة الطيران صعودك للطائرة في مطار المغادرة.",
     "cta_help_title": "هل تريد البقاء لفترة أطول؟",
     "cta_help_subtitle": "اكتشف تأشيرة DTV (5 سنوات) أو LTR (10 سنوات).",
-    "cta_help_btn": "مشاهدة تأشيرة DTV",
+    "cta_help_btn": "ابدأ تقييمك",
     "cta_compare_title": "مقارنة الخيارات",
     "cta_compare_subtitle": "سياحة، إعفاء أم تقاعد؟",
     "cta_compare_btn": "مشاهدة التأشيرة السياحية (TR)"
@@ -785,7 +785,7 @@ export const ar = {
     ],
     "cta_help_title": "هل تحتاج مساعدة بخصوص هذه التأشيرة؟",
     "cta_help_subtitle": "نحن ندعم الشركات والموظفين خلال عملية BOI.",
-    "cta_help_btn": "استشر خبيراً",
+    "cta_help_btn": "ابدأ تقييمك",
     "cta_eligible_title": "هل شركتك مؤهلة؟",
     "cta_eligible_subtitle": "تحقق ما إذا كان بإمكانك الحصول على تأشيرة SMART.",
     "cta_eligible_btn": "إجراء محاكاة",
@@ -842,7 +842,7 @@ export const ar = {
     "limitations_risk_text": "في حالة الطلاق، تلغى التأشيرة فوراً (عادةً ما يتم منح 7 أيام للمغادرة).",
     "cta_help_title": "تحتاج مساعدة في تأشيرة الزواج؟",
     "cta_help_subtitle": "نتولى عنك إعداد ملف التمديد بالزواج.",
-    "cta_help_btn": "اتصل بخبير",
+    "cta_help_btn": "ابدأ تقييمك",
     "cta_compare_title": "لست متزوجاً بعد؟",
     "cta_compare_subtitle": "شاهد تأشيرات الإقامة الطويلة الفردية.",
     "cta_compare_btn": "مشاهدة تأشيرة النخبة (إليت)"
@@ -892,7 +892,7 @@ export const ar = {
     "limitations_risk_text": "تنبيه: يُعتبر العمل التطوعي عملاً. يعد تصريح العمل (Work Permit) إلزامياً قانونياً بالإضافة إلى التأشيرة لتكون مطابقاً للقانون.",
     "cta_help_title": "تحتاج مساعدة في ملفك؟",
     "cta_help_subtitle": "تتطلب تأشيرة التطوع وثائق معقدة. نساعدك في التحقق من المطابقة.",
-    "cta_help_btn": "استشارة خبير",
+    "cta_help_btn": "ابدأ تقييمك",
     "cta_compare_title": "مهمة قصيرة؟",
     "cta_compare_subtitle": "لأقل من 30 يوماً، قد تكفي التأشيرة السياحية.",
     "cta_compare_btn": "انظر التأشيرة السياحية"
@@ -958,7 +958,7 @@ export const ar = {
     "advantage_text": "توفر معظم المستشفيات الدولية الكبيرة مراكز تأشيرات داخلية لتسهيل إجراءات التمديد.",
     "cta_help_title": "تحتاج لتنسيق مع مستشفى؟",
     "cta_help_subtitle": "نحن نتعاون مع أفضل المؤسسات لتسهيل قبولك وحصولك على التأشيرة.",
-    "cta_help_btn": "اتصل بخدمة الكونسيرج",
+    "cta_help_btn": "ابدأ تقييمك",
     "cta_compare_title": "استكشف خيارات أخرى",
     "cta_compare_subtitle": "إذا كنت بحاجة لإقامة أطول، فكر في أنواع تأشيرات أخرى.",
     "cta_compare_btn": "انظر تأشيرة إيليت"
@@ -1011,7 +1011,7 @@ export const ar = {
     "cta_btn": "طلب نصيحة",
     "cta_help_title": "تحتاج مساعدة خاصة؟",
     "cta_help_subtitle": "التأشيرة الدينية تتطلب وثائق معقدة وتنسيقاً مع السلطات.",
-    "cta_help_btn": "استشارة خبير",
+    "cta_help_btn": "ابدأ تقييمك",
     "cta_compare_title": "خيارات روحية أخرى",
     "cta_compare_subtitle": "لمعتكفات التأمل القصيرة، فكر في أنواع تأشيرات أخرى.",
     "cta_compare_btn": "انظر التأشيرة السياحية"
@@ -1061,7 +1061,7 @@ export const ar = {
     "limitations_risk_text": "تراقب تايلاند وسائل الإعلام الأجنبية عن كثب. أي تقارير حساسة سياسياً بدون اعتماد مناسب قد تؤدي إلى الترحيل.",
     "cta_help_title": "هل تحتاج مساعدة في الاعتماد؟",
     "cta_help_subtitle": "نساعد المهنيين الإعلاميين في إجراءات وزارة الخارجية.",
-    "cta_help_btn": "طلب المساعدة",
+    "cta_help_btn": "ابدأ تقييمك",
     "cta_compare_title": "هل أنت مستقل؟",
     "cta_compare_subtitle": "للمحتوى الرقمي، تأشيرة DTV غالباً أبسط.",
     "cta_compare_btn": "عرض تأشيرة DTV"
@@ -1117,7 +1117,7 @@ export const ar = {
     "limitations_risk_text": "عند انتهاء مهمتك الرسمية، يجب إعادة بطاقتك الدبلوماسية وتغيير وضعك أو مغادرة البلاد فوراً.",
     "cta_help_title": "مساعدة بروتوكولية؟",
     "cta_help_subtitle": "نساعد المنظمات الدولية في إجراءاتها.",
-    "cta_help_btn": "طلب المساعدة",
+    "cta_help_btn": "ابدأ تقييمك",
     "cta_compare_title": "مهمة تجارية؟",
     "cta_compare_subtitle": "إذا لم يكن لديك وضع دبلوماسي، استخدم تأشيرة الأعمال.",
     "cta_compare_btn": "عرض تأشيرة الأعمال"
@@ -1172,7 +1172,7 @@ export const ar = {
     "limitations_risk_text": "أصعب خطوة هي الحصول على موافقة مجلس البحث الوطني. بدونها، لا يمكن إصدار تأشيرة RS.",
     "cta_help_title": "تحتاج مساعدة مع NRCT؟",
     "cta_help_subtitle": "نرشد الباحثين والمؤسسات خلال العملية.",
-    "cta_help_btn": "التواصل مع خبير",
+    "cta_help_btn": "ابدأ تقييمك",
     "cta_compare_title": "شركة ناشئة تقنية؟",
     "cta_compare_subtitle": "تأشيرة SMART قد تكون أكثر ملاءمة للابتكار.",
     "cta_compare_btn": "عرض تأشيرة SMART"
@@ -1266,7 +1266,7 @@ export const ar = {
     ],
     "cta_help_title": "هل تحتاج مساعدة في الطلب؟",
     "cta_help_subtitle": "نتولى إدارة التأشيرة الإلكترونية نيابة عنك.",
-    "cta_help_btn": "طلب تأشيرة سياحية",
+    "cta_help_btn": "ابدأ تقييمك",
     "cta_compare_title": "إقامة أقصر؟",
     "cta_compare_subtitle": "لأقل من 60 يوماً، قد لا تحتاج إلى تأشيرة.",
     "cta_compare_btn": "انظر الإعفاء من التأشيرة"

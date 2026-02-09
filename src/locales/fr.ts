@@ -458,7 +458,7 @@ export const fr = {
     ],
     "cta_help_title": "Besoin d'aide pour votre demande ?",
     "cta_help_subtitle": "Nous gérons la procédure E-Visa pour vous.",
-    "cta_help_btn": "Commander Visa Touristique",
+    "cta_help_btn": "Démarrer votre Audit",
     "cta_compare_title": "Séjours plus courts ?",
     "cta_compare_subtitle": "Pour moins de 60 jours, vous n'avez peut-être pas besoin de visa.",
     "cta_compare_btn": "Voir Exemption de Visa"
@@ -723,7 +723,7 @@ export const fr = {
     "limitations_risk_text": "Si vous quittez votre emploi ou êtes licencié, votre visa est annulé immédiatement (parfois le jour même). Vous devez quitter le pays ou trouver un nouvel emploi capable de sponsoriser un nouveau visa sous 7 jours (selon les cas).",
     "cta_help_title": "Besoin d'aide pour ce visa ?",
     "cta_help_subtitle": "Nous accompagnons les entreprises et les employés dans la procédure.",
-    "cta_help_btn": "Vérifier mon éligibilité",
+    "cta_help_btn": "Démarrer votre Audit",
     "cta_compare_title": "Comparer les options",
     "cta_compare_subtitle": "Non-B, LTR ou DTV ? Trouvez le meilleur visa.",
     "cta_compare_btn": "Voir le Visa DTV (Alternative)"
@@ -773,7 +773,7 @@ export const fr = {
     "limitations_risk_text": "Si vous n'avez pas de billet de retour/sortie sous 60 jours, la compagnie aérienne peut vous refuser l'embarquement au départ de l'Europe. Pensez à louer un billet ou en acheter un modifiable si votre plan est flou.",
     "cta_help_title": "Vous voulez rester plus longtemps ?",
     "cta_help_subtitle": "Découvrez le Visa DTV (5 ans) ou LTR (10 ans).",
-    "cta_help_btn": "Voir le Visa DTV",
+    "cta_help_btn": "Démarrer votre Audit",
     "cta_compare_title": "Comparer les options",
     "cta_compare_subtitle": "Touriste, Exemption ou Retraite ?",
     "cta_compare_btn": "Voir le Visa Touristique (TR)"
@@ -902,7 +902,7 @@ export const fr = {
     ],
     "cta_help_title": "Besoin d'aide pour ce visa ?",
     "cta_help_subtitle": "Nous accompagnons les entreprises et employés dans le processus BOI.",
-    "cta_help_btn": "Consulter un expert",
+    "cta_help_btn": "Démarrer votre Audit",
     "cta_eligible_title": "Votre entreprise est éligible ?",
     "cta_eligible_subtitle": "Vérifiez si vous pouvez obtenir le SMART Visa.",
     "cta_eligible_btn": "Faire une simulation",
@@ -959,7 +959,7 @@ export const fr = {
     "limitations_risk_text": "En cas de divorce, le visa est annulé immédiatement (souvent 7 jours pour quitter le territoire). C'est une situation précaire pour ceux qui dépendent entièrement de ce visa.",
     "cta_help_title": "Besoin d'assistance mariage ?",
     "cta_help_subtitle": "Nous gérons la paperasse pour l'extension mariage.",
-    "cta_help_btn": "Contacter un expert",
+    "cta_help_btn": "Démarrer votre Audit",
     "cta_compare_title": "Pas encore marié ?",
     "cta_compare_subtitle": "Regardez les visas longue durée individuels.",
     "cta_compare_btn": "Voir le Visa Elite (Indépendant)"
@@ -1009,7 +1009,7 @@ export const fr = {
     "limitations_risk_text": "Attention : Le bénévolat est considéré comme du travail. Un Work Permit est légalement obligatoire en plus du visa pour être en règle.",
     "cta_help_title": "Besoin d'aide pour votre dossier ?",
     "cta_help_subtitle": "Le visa volontaire demande une documentation complexe. Nous vérifions tout pour vous.",
-    "cta_help_btn": "Consulter un expert",
+    "cta_help_btn": "Démarrer votre Audit",
     "cta_compare_title": "Mission courte ?",
     "cta_compare_subtitle": "Pour moins de 30 jours, un visa touriste peut suffire.",
     "cta_compare_btn": "Voir Visa Touriste"
@@ -1075,7 +1075,7 @@ export const fr = {
     "advantage_text": "La plupart des grands hôpitaux internationaux disposent de centres de visas internes pour aider les patients avec leurs extensions.",
     "cta_help_title": "Besoin d'une liaison médicale ?",
     "cta_help_subtitle": "Nous collaborons avec les meilleurs établissements pour faciliter votre admission et votre visa.",
-    "cta_help_btn": "Contacter notre service conciergerie",
+    "cta_help_btn": "Démarrer votre Audit",
     "cta_compare_title": "Explorer d'autres options",
     "cta_compare_subtitle": "Si vous avez besoin d'un séjour plus long, envisagez d'autres types de visa.",
     "cta_compare_btn": "Voir le Visa Elite"
@@ -1127,7 +1127,7 @@ export const fr = {
     "footer_note": "Ce visa demande une coordination étroite avec les autorités religieuses nationales.",
     "cta_help_title": "Besoin d'assistance spécifique ?",
     "cta_help_subtitle": "Le visa religieux nécessite une documentation complexe et une coordination avec les autorités.",
-    "cta_help_btn": "Contacter un expert",
+    "cta_help_btn": "Démarrer votre Audit",
     "cta_compare_title": "Autres options spirituelles",
     "cta_compare_subtitle": "Pour des retraites de méditation courtes, envisagez d'autres types de visa.",
     "cta_compare_btn": "Voir le Visa Touriste"
@@ -1177,7 +1177,7 @@ export const fr = {
     "limitations_risk_text": "La Thaïlande surveille de près les médias étrangers. Tout reportage politiquement sensible sans l'accréditation adéquate peut mener à l'expulsion.",
     "cta_help_title": "Besoin d'accréditation ?",
     "cta_help_subtitle": "Nous aidons les professionnels des médias avec les formalités MFA.",
-    "cta_help_btn": "Demander une assistance",
+    "cta_help_btn": "Démarrer votre Audit",
     "cta_compare_title": "Vous êtes Freelance ?",
     "cta_compare_subtitle": "Pour des contenus numériques, le DTV est souvent plus simple.",
     "cta_compare_btn": "Voir Visa DTV"
@@ -1227,7 +1227,7 @@ export const fr = {
     "limitations_risk_text": "À la fin de votre mission officielle, vous devez rendre votre carte diplomatique et changer de statut ou quitter le pays immédiatement.",
     "cta_help_title": "Assistance Protocole ?",
     "cta_help_subtitle": "Nous assistons les organisations internationales dans leurs démarches.",
-    "cta_help_btn": "Demander une assistance",
+    "cta_help_btn": "Démarrer votre Audit",
     "cta_compare_title": "Mission commerciale ?",
     "cta_compare_subtitle": "Si vous n'avez pas de statut diplomatique, utilisez le Visa Business.",
     "cta_compare_btn": "Voir Visa Business"
@@ -1277,7 +1277,7 @@ export const fr = {
     "limitations_risk_text": "Votre visa est totalement lié à votre institution hôte. Si le projet s'arrête, le visa est annulé.",
     "cta_help_title": "Besoin de vérifier votre éligibilité ?",
     "cta_help_subtitle": "Nous analysons votre profil scientifique et votre sponsor.",
-    "cta_help_btn": "Vérifier le parrainage",
+    "cta_help_btn": "Démarrer votre Audit",
     "cta_compare_title": "Expert technologique ?",
     "cta_compare_subtitle": "Le Visa SMART peut être plus avantageux (4 ans).",
     "cta_compare_btn": "Voir Visa SMART"

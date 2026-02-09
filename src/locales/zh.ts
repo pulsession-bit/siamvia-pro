@@ -11,7 +11,7 @@ export const zh = {
     "faq": "常见问题",
     "contact": "联系我们",
     "member": "会员中心",
-    "eligibility": "联系专家",
+    "eligibility": "开始您的评估",
     "ltr": "LTR 签证",
     "languages": "语言",
     "search": "搜索",
@@ -632,7 +632,7 @@ export const zh = {
     "limitations_risk_text": "如果您离职或被解雇，您的签证将立即被撤销（有时在同一天）。您必须在7天内（视情况而定）离境或找到能够担保新签证的新工作。",
     "cta_help_title": "需要办理此签证的帮助吗？",
     "cta_help_subtitle": "我们为企业和员工提供全程支持。",
-    "cta_help_btn": "检查我的申请资格",
+    "cta_help_btn": "开始您的评估",
     "cta_compare_title": "比较选项",
     "cta_compare_subtitle": "Non-B、LTR 还是 DTV？找到最适合您的签证。",
     "cta_compare_btn": "查看 DTV 签证 (替代方案)"
@@ -682,7 +682,7 @@ export const zh = {
     "limitations_risk_text": "如果您没有60天内的离境机票，航空公司可能会在出发地拒绝您登机。",
     "cta_help_title": "想待更久？",
     "cta_help_subtitle": "了解 DTV 签证 (5年) 或 LTR 签证 (10年)。",
-    "cta_help_btn": "查看 DTV 签证",
+    "cta_help_btn": "开始您的评估",
     "cta_compare_title": "比较选项",
     "cta_compare_subtitle": "旅游、免签还是退休？",
     "cta_compare_btn": "查看旅游签证 (TR)"
@@ -810,7 +810,7 @@ export const zh = {
     ],
     "cta_help_title": "需要签证协助吗？",
     "cta_help_subtitle": "我们协助企业和员工完成 BOI 流程。",
-    "cta_help_btn": "咨询专家",
+    "cta_help_btn": "开始您的评估",
     "cta_eligible_title": "您的公司符合条件吗？",
     "cta_eligible_subtitle": "核实您是否可以获得 SMART 签证。",
     "cta_eligible_btn": "进行测评",
@@ -867,7 +867,7 @@ export const zh = {
     "limitations_risk_text": "一旦离婚，签证将立即失效 (通常有7天离境宽限期)。",
     "cta_help_title": "需要婚姻签辅助办理吗？",
     "cta_help_subtitle": "我们为您处理繁琐的延期文件。",
-    "cta_help_btn": "联系专家",
+    "cta_help_btn": "开始您的评估",
     "cta_compare_title": "尚未结婚？",
     "cta_compare_subtitle": "查看个人长期停留签证。",
     "cta_compare_btn": "查看精英签证 (独立身份)"
@@ -917,7 +917,7 @@ export const zh = {
     "limitations_risk_text": "注意：志愿服务被视为工作。为了合规，除签证外，法律上还必须持有工作许可证 (Work Permit)。",
     "cta_help_title": "需要档案办理帮助吗？",
     "cta_help_subtitle": "志愿者签材料复杂，我们帮您核查合规性。",
-    "cta_help_btn": "咨询专家",
+    "cta_help_btn": "开始您的评估",
     "cta_compare_title": "短期任务？",
     "cta_compare_subtitle": "少于30天，旅游签证可能已足够。",
     "cta_compare_btn": "查看旅游签证"
@@ -983,7 +983,7 @@ export const zh = {
     "advantage_text": "大多数大型国际医院都设有内部签证中心，协助患者办理延期。",
     "cta_help_title": "需要医疗对接吗？",
     "cta_help_subtitle": "我们与顶级机构合作，简化您的入院和签证流程。",
-    "cta_help_btn": "联系礼宾服务",
+    "cta_help_btn": "开始您的评估",
     "cta_compare_title": "探索其他选择",
     "cta_compare_subtitle": "如果需要更长时间停留，请考虑其他签证类型。",
     "cta_compare_btn": "查看精英签证"
@@ -1036,7 +1036,7 @@ export const zh = {
     "cta_btn": "寻求具体建议",
     "cta_help_title": "需要专业帮助？",
     "cta_help_subtitle": "宗教签证需要复杂的文件和与当局的协调。",
-    "cta_help_btn": "咨询专家",
+    "cta_help_btn": "开始您的评估",
     "cta_compare_title": "其他灵性选择",
     "cta_compare_subtitle": "短期禅修静修，请考虑其他签证类型。",
     "cta_compare_btn": "查看旅游签证"
@@ -1086,7 +1086,7 @@ export const zh = {
     "limitations_risk_text": "泰国对外国媒体进行严密监控。任何未经适当认证的政治敏感报道都可能导致驱逐出境。",
     "cta_help_title": "需要认证协助？",
     "cta_help_subtitle": "我们帮助媒体专业人士处理外交部手续。",
-    "cta_help_btn": "请求协助",
+    "cta_help_btn": "开始您的评估",
     "cta_compare_title": "您是自由职业者？",
     "cta_compare_subtitle": "对于数字内容，DTV签证通常更简单。",
     "cta_compare_btn": "查看DTV签证"
@@ -1142,7 +1142,7 @@ export const zh = {
     "limitations_risk_text": "在您的公务任务结束时，您必须归还外交卡并更改身份或立即离开该国。",
     "cta_help_title": "需要礼宾协助？",
     "cta_help_subtitle": "我们协助国际组织办理相关手续。",
-    "cta_help_btn": "请求协助",
+    "cta_help_btn": "开始您的评估",
     "cta_compare_title": "商务任务？",
     "cta_compare_subtitle": "如果您没有外交身份，请使用商务签证。",
     "cta_compare_btn": "查看商务签证"
@@ -1197,7 +1197,7 @@ export const zh = {
     "limitations_risk_text": "最困难的步骤是获得国家研究理事会的批准。没有这个批准，RS签证无法签发。",
     "cta_help_title": "需要NRCT方面的帮助？",
     "cta_help_subtitle": "我们指导研究人员和机构完成整个流程。",
-    "cta_help_btn": "联系专家",
+    "cta_help_btn": "开始您的评估",
     "cta_compare_title": "科技初创公司？",
     "cta_compare_subtitle": "SMART签证可能更适合创新领域。",
     "cta_compare_btn": "查看SMART签证"
@@ -1291,7 +1291,7 @@ export const zh = {
     ],
     "cta_help_title": "需要申请协助吗？",
     "cta_help_subtitle": "我们为您管理电子签证流程。",
-    "cta_help_btn": "订购旅游签证",
+    "cta_help_btn": "开始您的评估",
     "cta_compare_title": "短期停留？",
     "cta_compare_subtitle": "少于60天可能不需要签证。",
     "cta_compare_btn": "查看免签政策"

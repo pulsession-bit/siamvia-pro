@@ -14,7 +14,7 @@ export const it = {
     "faq": "FAQ",
     "contact": "Contatti",
     "member": "Area Clienti",
-    "eligibility": "Contatta un esperto",
+    "eligibility": "Inizia il tuo Audit",
     "ltr": "Visto LTR",
     "languages": "Lingue",
     "search": "Ricerca",
@@ -656,7 +656,7 @@ export const it = {
     "limitations_risk_text": "Se lasci il lavoro o vieni licenziato, il tuo visto viene annullato immediatamente (a volte lo stesso giorno). Devi lasciare il paese o trovare un nuovo lavoro in grado di sponsorizzare un nuovo visto entro 7 giorni (a seconda dei casi).",
     "cta_help_title": "Serve aiuto con questo visto?",
     "cta_help_subtitle": "Supportiamo aziende e dipendenti nella procedura.",
-    "cta_help_btn": "Verifica la mia idoneità",
+    "cta_help_btn": "Inizia il tuo Audit",
     "cta_compare_title": "Confronta le opzioni",
     "cta_compare_subtitle": "Non-B, LTR o DTV? Trova il visto migliore.",
     "cta_compare_btn": "Vedi Visto DTV (Alternativa)"
@@ -706,7 +706,7 @@ export const it = {
     "limitations_risk_text": "Se non hai un biglietto di ritorno/uscita entro 60 giorni, la compagnia aerea può rifiutarti l'imbarco.",
     "cta_help_title": "Vuoi restare più a lungo?",
     "cta_help_subtitle": "Scopri il Visto DTV (5 anni) o LTR (10 anni).",
-    "cta_help_btn": "Vedi il Visto DTV",
+    "cta_help_btn": "Inizia il tuo Audit",
     "cta_compare_title": "Confronta opzioni",
     "cta_compare_subtitle": "Turista, Esenzione o Pensione?",
     "cta_compare_btn": "Vedi il Visto Turistico (TR)"
@@ -835,7 +835,7 @@ export const it = {
     ],
     "cta_help_title": "Hai bisogno di aiuto con questo visto?",
     "cta_help_subtitle": "Supportiamo aziende e dipendenti nel processo BOI.",
-    "cta_help_btn": "Consultare un esperto",
+    "cta_help_btn": "Inizia il tuo Audit",
     "cta_eligible_title": "La tua azienda è idonea?",
     "cta_eligible_subtitle": "Verifica se puoi ottenere lo SMART Visa.",
     "cta_eligible_btn": "Fai una simulazione",
@@ -892,7 +892,7 @@ export const it = {
     "limitations_risk_text": "In caso di divorzio, il visto viene annullato immediatamente (solitamente 7 giorni per lasciare il territorio). È una situazione precaria per chi dipende interamente da questo visto.",
     "cta_help_title": "Serve assistenza per il matrimonio?",
     "cta_help_subtitle": "Gestiamo le pratiche per l'estensione per matrimonio.",
-    "cta_help_btn": "Contatta un esperto",
+    "cta_help_btn": "Inizia il tuo Audit",
     "cta_compare_title": "Non sei ancora sposato?",
     "cta_compare_subtitle": "Guarda i visti a lungo termine individuali.",
     "cta_compare_btn": "Vedi il Visto Elite (Indipendente)"
@@ -942,7 +942,7 @@ export const it = {
     "limitations_risk_text": "Attenzione: Il volontariato è considerato lavoro. Un Work Permit è legalmente obbligatorio oltre al visto per essere in regola.",
     "cta_help_title": "Serve aiuto per la tua pratica?",
     "cta_help_subtitle": "Il visto volontari richiede una documentazione complessa. Ti aiutiamo a verificare la conformità.",
-    "cta_help_btn": "Consulta un esperto",
+    "cta_help_btn": "Inizia il tuo Audit",
     "cta_compare_title": "Missione breve?",
     "cta_compare_subtitle": "Per meno di 30 giorni, un visto turistico può bastare.",
     "cta_compare_btn": "Vedi Visto Turistico"
@@ -1008,7 +1008,7 @@ export const it = {
     "advantage_text": "La maggior parte dei grandi ospedali internazionali dispone di centri visti interni per le estensioni.",
     "cta_help_title": "Serve un collegamento medico?",
     "cta_help_subtitle": "Collaboriamo con le migliori strutture per facilitare l'ammissione e il visto.",
-    "cta_help_btn": "Contatta il nostro servizio di portineria",
+    "cta_help_btn": "Inizia il tuo Audit",
     "cta_compare_title": "Esplora altre opzioni",
     "cta_compare_subtitle": "Se hai bisogno di un soggiorno più lungo, considera altri tipi di visto.",
     "cta_compare_btn": "Vedi Visto Elite"
@@ -1060,7 +1060,7 @@ export const it = {
     "footer_note": "Questo visto richiede un coordinamento stretto con le autorità religiose nazionali.",
     "cta_help_title": "Serve assistenza specifica?",
     "cta_help_subtitle": "Il visto religioso richiede documentazione complessa e coordinamento con le autorità.",
-    "cta_help_btn": "Contatta un esperto",
+    "cta_help_btn": "Inizia il tuo Audit",
     "cta_compare_title": "Altre opzioni spirituali",
     "cta_compare_subtitle": "Per ritiri di meditazione brevi, considera altri tipi di visto.",
     "cta_compare_btn": "Vedi Visto Turistico"
@@ -1110,7 +1110,7 @@ export const it = {
     "limitations_risk_text": "La Thailandia sorveglia attentamente i media stranieri. Qualsiasi reportage politicamente sensibile senza il giusto accreditamento può portare all'espulsione.",
     "cta_help_title": "Serve accreditamento?",
     "cta_help_subtitle": "Aiutiamo i professionisti dei media con le pratiche MFA.",
-    "cta_help_btn": "Richiedi assistenza",
+    "cta_help_btn": "Inizia il tuo Audit",
     "cta_compare_title": "Sei Freelance?",
     "cta_compare_subtitle": "Per contenuti digitali, il DTV è spesso più semplice.",
     "cta_compare_btn": "Vedi Visto DTV"
@@ -1160,7 +1160,7 @@ export const it = {
     "limitations_risk_text": "Al termine della missione ufficiale, devi restituire il tesserino diplomatico e cambiare status o lasciare il paese immediatamente.",
     "cta_help_title": "Assistenza Protocollo?",
     "cta_help_subtitle": "Assistiamo le organizzazioni internazionali nelle loro pratiche.",
-    "cta_help_btn": "Richiedi assistenza",
+    "cta_help_btn": "Inizia il tuo Audit",
     "cta_compare_title": "Missione commerciale?",
     "cta_compare_subtitle": "Se non hai status diplomatico, usa il Visto Business.",
     "cta_compare_btn": "Vedi Visto Business"
@@ -1210,7 +1210,7 @@ export const it = {
     "limitations_risk_text": "Il tuo visto è totalmente legato alla tua istituzione ospitante. Se il progetto si ferma, il visto viene cancellato.",
     "cta_help_title": "Vuoi verificare la tua idoneità?",
     "cta_help_subtitle": "Analizziamo il tuo profilo scientifico e il tuo sponsor.",
-    "cta_help_btn": "Verifica sponsor",
+    "cta_help_btn": "Inizia il tuo Audit",
     "cta_compare_title": "Esperto tecnologico?",
     "cta_compare_subtitle": "Il Visto SMART può essere più vantaggioso (4 anni).",
     "cta_compare_btn": "Vedi Visto SMART"
@@ -1280,7 +1280,7 @@ export const it = {
     ],
     "cta_help_title": "Serve aiuto con la richiesta?",
     "cta_help_subtitle": "Gestiamo la procedura E-Visa per te.",
-    "cta_help_btn": "Ordina Visto Turistico",
+    "cta_help_btn": "Inizia il tuo Audit",
     "cta_compare_title": "Soggiorni più brevi?",
     "cta_compare_subtitle": "Per meno di 60 giorni, potresti non aver bisogno di visto.",
     "cta_compare_btn": "Vedi Esenzione Visto"

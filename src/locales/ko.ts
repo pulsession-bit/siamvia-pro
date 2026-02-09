@@ -11,7 +11,7 @@ export const ko = {
     "faq": "자주 묻는 질문",
     "contact": "문의하기",
     "member": "회원 공간",
-    "eligibility": "전문가에게 문의",
+    "eligibility": "무료 진단 시작",
     "ltr": "LTR 비자",
     "languages": "언어",
     "search": "검색",
@@ -632,7 +632,7 @@ export const ko = {
     "limitations_risk_text": "퇴직하거나 해고될 경우, 비자는 즉시 (때로는 당일) 취소됩니다。7일 이내에 (경우에 따라 다름) 출국하거나 새로운 비자를 스폰서할 수 있는 새로운 직장을 찾아야 합니다。",
     "cta_help_title": "이 비자에 도움이 필요하신가요?",
     "cta_help_subtitle": "기업 및 직원의 절차 진행을 지원합니다。",
-    "cta_help_btn": "신청 자격 확인하기",
+    "cta_help_btn": "무료 진단 시작",
     "cta_compare_title": "옵션 비교",
     "cta_compare_subtitle": "Non-B, LTR 또는 DTV? 최적의 비자를 찾아보세요。",
     "cta_compare_btn": "DTV 비자 보기 (대안)"
@@ -682,7 +682,7 @@ export const ko = {
     "limitations_risk_text": "60일 이내 출국 항공권이 없는 경우, 항공사에서 탑승을 거부할 수 있습니다.",
     "cta_help_title": "더 오래 머물고 싶으신가요?",
     "cta_help_subtitle": "DTV 비자(5년) 또는 LTR 비자(10년)를 알아보세요.",
-    "cta_help_btn": "DTV 비자 보기",
+    "cta_help_btn": "무료 진단 시작",
     "cta_compare_title": "옵션 비교",
     "cta_compare_subtitle": "관광, 면제 또는 은퇴?",
     "cta_compare_btn": "관광 비자(TR) 보기"
@@ -810,7 +810,7 @@ export const ko = {
     ],
     "cta_help_title": "이 비자에 대해 도움이 필요하십니까?",
     "cta_help_subtitle": "BOI 절차를 통해 기업과 직원을 지원합니다.",
-    "cta_help_btn": "전문가 상담",
+    "cta_help_btn": "무료 진단 시작",
     "cta_eligible_title": "귀하의 회사가 해당되나요?",
     "cta_eligible_subtitle": "SMART 비자 취득 가능 여부를 확인하세요.",
     "cta_eligible_btn": "시뮬레이션 해보기",
@@ -867,7 +867,7 @@ export const ko = {
     "limitations_risk_text": "이혼할 경우 비자는 즉시 취소되며, 보통 7일 이내에 출국해야 합니다.",
     "cta_help_title": "결혼 비자 지원이 필요하신가요?",
     "cta_help_subtitle": "혼인 연장 관련 복잡한 서류 작업을 대행해 드립니다.",
-    "cta_help_btn": "전문가 상담",
+    "cta_help_btn": "무료 진단 시작",
     "cta_compare_title": "아직 미혼이신가요?",
     "cta_compare_subtitle": "개별 장기 체류 비자를 확인해 보세요.",
     "cta_compare_btn": "엘리트 비자 보기"
@@ -917,7 +917,7 @@ export const ko = {
     "limitations_risk_text": "주의: 자원봉사도 업무로 간주됩니다. 규정을 준수하려면 비자 외에도 법적으로 워크 퍼밋(Work Permit)이 필수입니다.",
     "cta_help_title": "서류 준비에 도움이 필요하신가요?",
     "cta_help_subtitle": "자원봉사 비자는 서류가 복잡합니다. 적합성 확인을 도와드립니다.",
-    "cta_help_btn": "전문가 상담",
+    "cta_help_btn": "무료 진단 시작",
     "cta_compare_title": "단기 미션?",
     "cta_compare_subtitle": "30일 미만인 경우 관광 비자로 충분할 수 있습니다.",
     "cta_compare_btn": "관광 비자 보기"
@@ -983,7 +983,7 @@ export const ko = {
     "advantage_text": "대부분의 대형 국제 병원에는 연장 절차를 돕는 비자 센터가 내부에 있습니다.",
     "cta_help_title": "의료 연계 서비스가 필요하신가요?",
     "cta_help_subtitle": "입원 및 비자 절차를 원활하게 진행하도록 도와드립니다.",
-    "cta_help_btn": "컨시어지 서비스 문의",
+    "cta_help_btn": "무료 진단 시작",
     "cta_compare_title": "다른 옵션 탐색",
     "cta_compare_subtitle": "장기 체류가 필요하시면 다른 비자 유형을 고려하세요.",
     "cta_compare_btn": "엘리트 비자 보기"
@@ -1036,7 +1036,7 @@ export const ko = {
     "cta_btn": "상담 요청",
     "cta_help_title": "특별한 지원이 필요하신가요?",
     "cta_help_subtitle": "종교 비자는 복잡한 서류와 당국과의 협조가 필요합니다.",
-    "cta_help_btn": "전문가 상담",
+    "cta_help_btn": "무료 진단 시작",
     "cta_compare_title": "다른 영적 옵션",
     "cta_compare_subtitle": "단기 명상 수련의 경우 다른 비자 유형을 고려하세요.",
     "cta_compare_btn": "관광 비자 보기"
@@ -1086,7 +1086,7 @@ export const ko = {
     "limitations_risk_text": "태국은 외신을 매우 면밀히 모니터링합니다. 적절한 인증 없이 정치적으로 민감한 보도를 할 경우 강제 추방될 수 있습니다.",
     "cta_help_title": "인증 지원이 필요하신가요?",
     "cta_help_subtitle": "미디어 전문가의 외무부 절차를 도와드립니다.",
-    "cta_help_btn": "지원 요청",
+    "cta_help_btn": "무료 진단 시작",
     "cta_compare_title": "프리랜서이신가요?",
     "cta_compare_subtitle": "디지털 콘텐츠의 경우 DTV가 종종 더 간단합니다.",
     "cta_compare_btn": "DTV 비자 보기"
@@ -1142,7 +1142,7 @@ export const ko = {
     "limitations_risk_text": "공식 임무가 종료되면 외교관 카드를 반납하고 체류 자격을 변경하거나 즉시 출국해야 합니다.",
     "cta_help_title": "프로토콜 지원이 필요하신가요?",
     "cta_help_subtitle": "국제기구 담당자의 행정 절차를 도와드립니다.",
-    "cta_help_btn": "지원 요청",
+    "cta_help_btn": "무료 진단 시작",
     "cta_compare_title": "상업적 임무이신가요?",
     "cta_compare_subtitle": "외교적 지위가 없는 경우 비즈니스 비자를 이용하십시오.",
     "cta_compare_btn": "비즈니스 비자 보기"
@@ -1197,7 +1197,7 @@ export const ko = {
     "limitations_risk_text": "가장 어려운 단계는 국가 연구 위원회(National Research Council)로부터 승인을 받는 것입니다. 이 승인 없이는 RS 비자를 발급받을 수 없습니다.",
     "cta_help_title": "NRCT 관련 도움이 필요하신가요?",
     "cta_help_subtitle": "연구자와 기관의 절차 진행을 안내해 드립니다.",
-    "cta_help_btn": "전문가 상담",
+    "cta_help_btn": "무료 진단 시작",
     "cta_compare_title": "테크 스타트업이신가요?",
     "cta_compare_subtitle": "혁신 분야라면 SMART 비자가 더 적합할 수 있습니다.",
     "cta_compare_btn": "SMART 비자 보기"
@@ -1267,7 +1267,7 @@ export const ko = {
     ],
     "cta_help_title": "신청에 도움이 필요하신가요?",
     "cta_help_subtitle": "전자비자 신청 과정을 대신 처리해 드립니다.",
-    "cta_help_btn": "관광 비자 주문하기",
+    "cta_help_btn": "무료 진단 시작",
     "cta_compare_title": "더 짧은 체류?",
     "cta_compare_subtitle": "60일 미만 체류 시 비자가 필요 없을 수 있습니다.",
     "cta_compare_btn": "비자 면제 보기"

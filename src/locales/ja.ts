@@ -11,7 +11,7 @@ export const ja = {
     "faq": "よくある質問",
     "contact": "お問い合わせ",
     "member": "会員エリア",
-    "eligibility": "専門家に相談する",
+    "eligibility": "無料診断を始める",
     "ltr": "LTRビザ",
     "languages": "言語",
     "search": "検索",
@@ -656,7 +656,7 @@ export const ja = {
     "limitations_risk_text": "退職または解雇された場合、ビザは直ちに（時には当日中に）失効します。7日以内（ケースバイケース）に出国するか、新しいビザをスポンサーできる新しい就職先を見つける必要があります。",
     "cta_help_title": "このビザに関するサポートが必要ですか？",
     "cta_help_subtitle": "企業の皆様および従業員の皆様の手続きをサポートいたします。",
-    "cta_help_btn": "申請資格を確認する",
+    "cta_help_btn": "無料診断を始める",
     "cta_compare_title": "オプションを比較する",
     "cta_compare_subtitle": "Non-B、LTR、またはDTV？最適なビザを見つけましょう。",
     "cta_compare_btn": "DTVビザを見る（代替案）"
@@ -706,7 +706,7 @@ export const ja = {
     "limitations_risk_text": "60日以内の出国航空券がない場合、出発地の空港で航空会社から搭乗を拒否される可能性があります。",
     "cta_help_title": "もっと長く滞在したいですか？",
     "cta_help_subtitle": "DTVビザ (5年) または LTRビザ (10年) をご検討ください。",
-    "cta_help_btn": "DTVビザを見る",
+    "cta_help_btn": "無料診断を始める",
     "cta_compare_title": "オプションを比較",
     "cta_compare_subtitle": "観光、免除、それともリタイアメント？",
     "cta_compare_btn": "観光ビザ (TR) を見る"
@@ -834,7 +834,7 @@ export const ja = {
     ],
     "cta_help_title": "このビザについてサポートが必要ですか？",
     "cta_help_subtitle": "BOIプロセスを通じて企業と従業員をサポートします。",
-    "cta_help_btn": "専門家に相談する",
+    "cta_help_btn": "無料診断を始める",
     "cta_eligible_title": "あなたの会社は対象ですか？",
     "cta_eligible_subtitle": "SMARTビザが取得可能か確認しましょう。",
     "cta_eligible_btn": "診断を受ける",
@@ -891,7 +891,7 @@ export const ja = {
     "limitations_risk_text": "離婚した場合、ビザは直ちに失効します。通常、7日以内に出国する必要があります。",
     "cta_help_title": "結婚ビザでお困りですか？",
     "cta_help_subtitle": "更新手続きの煩雑な事務作業を代行します。",
-    "cta_help_btn": "専門家に相談",
+    "cta_help_btn": "無料診断を始める",
     "cta_compare_title": "まだ独身ですか？",
     "cta_compare_subtitle": "個別の長期滞在ビザをご検討ください。",
     "cta_compare_btn": "エリートビザを見る"
@@ -941,7 +941,7 @@ export const ja = {
     "limitations_risk_text": "注意：ボランティア活動も労働と見なされます。法的に遵守するためには、ビザに加えてワークパーミット（労働許可証）が必須です。",
     "cta_help_title": "書類作成でお困りですか？",
     "cta_help_subtitle": "ボランティアビザは提出書類が複雑です。適合性の確認をサポートします。",
-    "cta_help_btn": "専門家に相談",
+    "cta_help_btn": "無料診断を始める",
     "cta_compare_title": "短期ミッション？",
     "cta_compare_subtitle": "30日未満の場合、観光ビザで十分な場合があります。",
     "cta_compare_btn": "観光ビザを見る"
@@ -1007,7 +1007,7 @@ export const ja = {
     "advantage_text": "主要な国際病院の多くは院内にビザセンターがあり、延長手続きを支援してくれます。",
     "cta_help_title": "医療機関との連携が必要ですか？",
     "cta_help_subtitle": "スムーズな受け入れとビザ取得をサポートします。",
-    "cta_help_btn": "コンシェルジュに相談",
+    "cta_help_btn": "無料診断を始める",
     "cta_compare_title": "他の選択肢を検討",
     "cta_compare_subtitle": "長期滞在が必要な場合、他のビザタイプも検討してください。",
     "cta_compare_btn": "エリートビザを見る"
@@ -1060,7 +1060,7 @@ export const ja = {
     "cta_btn": "専門的なアドバイスを求める",
     "cta_help_title": "専門的なサポートが必要ですか？",
     "cta_help_subtitle": "宗教ビザは複雑な書類と当局との調整が必要です。",
-    "cta_help_btn": "専門家に相談",
+    "cta_help_btn": "無料診断を始める",
     "cta_compare_title": "他のスピリチュアルな選択肢",
     "cta_compare_subtitle": "短期の瞑想リトリートには、他のビザタイプをご検討ください。",
     "cta_compare_btn": "観光ビザを見る"
@@ -1110,7 +1110,7 @@ export const ja = {
     "limitations_risk_text": "タイは海外メディアを非常に厳格に監視しています。適切な認定なしに政治的にデリケートな報道を行うと、国外追放になる可能性があります。",
     "cta_help_title": "認定のサポートが必要ですか？",
     "cta_help_subtitle": "外務省の手続きをサポートします。",
-    "cta_help_btn": "サポートをリクエスト",
+    "cta_help_btn": "無料診断を始める",
     "cta_compare_title": "フリーランスですか？",
     "cta_compare_subtitle": "デジタルコンテンツ制作なら、DTVビザの方が簡単な場合があります。",
     "cta_compare_btn": "DTVビザを見る"
@@ -1166,7 +1166,7 @@ export const ja = {
     "limitations_risk_text": "公式任務が終了した際は、外交官カードを返却し、ステータスを変更するか直ちに帰国する必要があります。",
     "cta_help_title": "プロトコル・サポートが必要ですか？",
     "cta_help_subtitle": "国際機関の手続きをサポートします。",
-    "cta_help_btn": "サポートをリクエスト",
+    "cta_help_btn": "無料診断を始める",
     "cta_compare_title": "ビジネス目的ですか？",
     "cta_compare_subtitle": "外交官ステータスがない場合は、ビジネスビザを使用してください。",
     "cta_compare_btn": "ビジネスビザを見る"
@@ -1221,7 +1221,7 @@ export const ja = {
     "limitations_risk_text": "最も困難なステップは、国家研究評議会（NRCT）からの承認を得ることです。これがないとRSビザは発行されません。",
     "cta_help_title": "NRCTの承認でお困りですか？",
     "cta_help_subtitle": "研究者や機関の手続きを案内します。",
-    "cta_help_btn": "専門家に相談",
+    "cta_help_btn": "無料診断を始める",
     "cta_compare_title": "テックスタートアップですか？",
     "cta_compare_subtitle": "イノベーション目的であれば、SMARTビザの方が適切な場合があります。",
     "cta_compare_btn": "SMARTビザを見る"
@@ -1291,7 +1291,7 @@ export const ja = {
     ],
     "cta_help_title": "申請のサポートが必要ですか？",
     "cta_help_subtitle": "e-Visa手続きを代行いたします。",
-    "cta_help_btn": "観光ビザを申し込む",
+    "cta_help_btn": "無料診断を始める",
     "cta_compare_title": "短期滞在ですか？",
     "cta_compare_subtitle": "60日未満の場合、ビザは不要かもしれません。",
     "cta_compare_btn": "ビザ免除を見る"

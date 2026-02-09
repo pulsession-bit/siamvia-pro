@@ -14,7 +14,7 @@ export const de = {
     "faq": "FAQ",
     "contact": "Kontakt",
     "member": "Kundenbereich",
-    "eligibility": "Experten kontaktieren",
+    "eligibility": "Audit starten",
     "ltr": "Visa LTR",
     "languages": "Sprachen",
     "search": "Suche",
@@ -368,7 +368,7 @@ export const de = {
     "limitations_risk_text": "Wenn Sie Ihren Arbeitsplatz verlassen oder entlassen werden, wird Ihr Visum sofort annulliert (manchmal noch am selben Tag). Sie müssen das Land verlassen oder innerhalb von 7 Tagen (je nach Fall) eine neue Stelle finden, die ein neues Visum sponsern kann.",
     "cta_help_title": "Benötigen Sie Hilfe bei diesem Visum?",
     "cta_help_subtitle": "Wir begleiten Unternehmen und Mitarbeiter bei dem Verfahren.",
-    "cta_help_btn": "Meine Berechtigung prüfen",
+    "cta_help_btn": "Audit starten",
     "cta_compare_title": "Optionen vergleichen",
     "cta_compare_subtitle": "Non-B, LTR oder DTV? Finden Sie das beste Visum.",
     "cta_compare_btn": "DTV Visum ansehen (Alternative)"
@@ -418,7 +418,7 @@ export const de = {
     "limitations_risk_text": "Wenn Sie kein Rück- oder Ausreiseticket innerhalb von 60 Tagen haben, kann die Fluggesellschaft Ihnen das Boarding verweigern.",
     "cta_help_title": "Möchten Sie länger bleiben?",
     "cta_help_subtitle": "Entdecken Sie das DTV-Visum (5 Jahre) oder LTR (10 Jahre).",
-    "cta_help_btn": "DTV-Visum ansehen",
+    "cta_help_btn": "Audit starten",
     "cta_compare_title": "Optionen vergleichen",
     "cta_compare_subtitle": "Tourist, Befreiung oder Ruhestand?",
     "cta_compare_btn": "Touristenvisum (TR) ansehen"
@@ -547,7 +547,7 @@ export const de = {
     ],
     "cta_help_title": "Benötigen Sie Hilfe bei diesem Visum?",
     "cta_help_subtitle": "Wir unterstützen Unternehmen und Mitarbeiter beim BOI-Prozess.",
-    "cta_help_btn": "Experten konsultieren",
+    "cta_help_btn": "Audit starten",
     "cta_eligible_title": "Ist Ihr Unternehmen berechtigt?",
     "cta_eligible_subtitle": "Prüfen Sie, ob Sie das SMART Visum erhalten können.",
     "cta_eligible_btn": "Simulation starten",
@@ -604,7 +604,7 @@ export const de = {
     "limitations_risk_text": "Im Falle einer Scheidung wird das Visum sofort annulliert (oft verbleiben 7 Tage zum Verlassen des Landes). Dies ist eine prekäre Situation für jene, die vollständig von diesem Visum abhängen.",
     "cta_help_title": "Unterstützung bei der Heirat benötigt?",
     "cta_help_subtitle": "Wir verwalten den Papierkram für die Heiratsverlängerung.",
-    "cta_help_btn": "Einen Experten kontaktieren",
+    "cta_help_btn": "Audit starten",
     "cta_compare_title": "Noch nicht verheiratet?",
     "cta_compare_subtitle": "Sehen Sie sich individuelle Langzeitvisa an.",
     "cta_compare_btn": "Elite Visum ansehen (Unabhängig)"
@@ -654,7 +654,7 @@ export const de = {
     "limitations_risk_text": "Achtung: Freiwilligenarbeit gilt als Arbeit. Eine Arbeitserlaubnis (Work Permit) ist zusätzlich zum Visum gesetzlich vorgeschrieben.",
     "cta_help_title": "Hilfe beim Dossier benötigt?",
     "cta_help_subtitle": "Das Freiwilligenvisum erfordert eine komplexe Dokumentation. Wir helfen Ihnen, die Konformität sicherzustellen.",
-    "cta_help_btn": "Einen Experten konsultieren",
+    "cta_help_btn": "Audit starten",
     "cta_compare_title": "Kurze Mission?",
     "cta_compare_subtitle": "Für weniger als 30 Tage kann ein Touristenvisum ausreichen.",
     "cta_compare_btn": "Touristenvisum ansehen"
@@ -720,7 +720,7 @@ export const de = {
     "advantage_text": "Die meisten großen internationalen Krankenhäuser verfügen über interne Visazentren, um Patienten bei ihren Verlängerungen zu helfen.",
     "cta_help_title": "Medizinische Verbindung benötigt?",
     "cta_help_subtitle": "Wir arbeiten mit den besten Einrichtungen zusammen, um Ihre Aufnahme und Ihr Visum zu erleichtern.",
-    "cta_help_btn": "Unseren Concierge-Service kontaktieren",
+    "cta_help_btn": "Audit starten",
     "cta_compare_title": "Andere Optionen erkunden",
     "cta_compare_subtitle": "Wenn Sie einen längeren Aufenthalt benötigen, ziehen Sie andere Visatypen in Betracht.",
     "cta_compare_btn": "Elite Visum ansehen"
@@ -772,7 +772,7 @@ export const de = {
     "footer_note": "Dieses Visum erfordert eine enge Abstimmung mit den nationalen Religionsbehörden.",
     "cta_help_title": "Spezifische Unterstützung benötigt?",
     "cta_help_subtitle": "Das religiöse Visum erfordert komplexe Dokumentation und Koordination mit den Behörden.",
-    "cta_help_btn": "Einen Experten kontaktieren",
+    "cta_help_btn": "Audit starten",
     "cta_compare_title": "Andere spirituelle Optionen",
     "cta_compare_subtitle": "Für kurze Meditationsretreats ziehen Sie andere Visatypen in Betracht.",
     "cta_compare_btn": "Touristenvisum ansehen"
@@ -822,7 +822,7 @@ export const de = {
     "limitations_risk_text": "Thailand überwacht ausländische Medien sehr genau. Jede politisch sensible Berichterstattung ohne ordnungsgemäße Akkreditierung kann zur Ausweisung führen.",
     "cta_help_title": "Benötigen Sie eine Akkreditierung?",
     "cta_help_subtitle": "Wir helfen Medienprofis bei den MFA-Formalitäten.",
-    "cta_help_btn": "Unterstützung anfordern",
+    "cta_help_btn": "Audit starten",
     "cta_compare_title": "Sind Sie Freelancer?",
     "cta_compare_subtitle": "Für digitale Inhalte ist das DTV oft einfacher.",
     "cta_compare_btn": "DTV Visum ansehen"
@@ -878,7 +878,7 @@ export const de = {
     "limitations_risk_text": "At the end of your official mission, you must return your diplomatic card and change status or leave the country immediately.",
     "cta_help_title": "Protocol Assistance?",
     "cta_help_subtitle": "We assist international organizations with their procedures.",
-    "cta_help_btn": "Request assistance",
+    "cta_help_btn": "Audit starten",
     "cta_compare_title": "Commercial Mission?",
     "cta_compare_subtitle": "If you do not have diplomatic status, use the Business Visa.",
     "cta_compare_btn": "See Business Visa"
@@ -933,7 +933,7 @@ export const de = {
     "limitations_risk_text": "The most difficult step is obtaining approval from the National Research Council. Without this, the RS visa cannot be issued.",
     "cta_help_title": "Need help with NRCT?",
     "cta_help_subtitle": "We guide researchers and institutes through the process.",
-    "cta_help_btn": "Contact an expert",
+    "cta_help_btn": "Audit starten",
     "cta_compare_title": "Tech Startup?",
     "cta_compare_subtitle": "The SMART Visa might be more appropriate for innovation.",
     "cta_compare_btn": "See SMART Visa"
@@ -1484,7 +1484,7 @@ export const de = {
     ],
     "cta_help_title": "Hilfe bei Ihrem Antrag benötigt?",
     "cta_help_subtitle": "Wir verwalten das E-Visa-Verfahren für Sie.",
-    "cta_help_btn": "Touristenvisum bestellen",
+    "cta_help_btn": "Audit starten",
     "cta_compare_title": "Kürzere Aufenthalte?",
     "cta_compare_subtitle": "Für weniger als 60 Tage benötigen Sie möglicherweise kein Visum.",
     "cta_compare_btn": "Visumbefreiung ansehen"
