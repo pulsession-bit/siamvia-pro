@@ -12,7 +12,7 @@ interface CardProps {
 
 const cardVariants = {
     white: 'bg-white text-slate-900',
-    dark: 'bg-dark text-white',
+    dark: 'bg-slate-900 text-white',
     amber: 'bg-amber-50 text-slate-900 border-amber-200',
     light: 'bg-slate-50 text-slate-900',
 };

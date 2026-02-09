@@ -21,7 +21,7 @@ const ExpertAppointmentForm = dynamic(() => import('@/components/ExpertAppointme
 
 const HomeClientPage: React.FC = () => {
     const { t } = useLanguage();
-    const SCORING_ENGINE_URL = 'https://desk.siamvisapro.com';
+    const SCORING_ENGINE_URL = 'https://audit.siamvisapro.com/';
     const langPath = useLangPath();
 
     return (
