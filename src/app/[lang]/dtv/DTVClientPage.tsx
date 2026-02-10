@@ -12,11 +12,11 @@ import { RelatedPages } from '@/components/RelatedPages';
 import { VisaHero } from '@/components/visa/VisaHero';
 import { VisaFeatureSummary } from '@/components/visa/VisaFeatureSummary';
 import { AuthorEEAT } from '@/components/AuthorEEAT';
+import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 
 const DTVClientPage: React.FC = () => {
     const { t } = useLanguage();
     const langPath = useLangPath();
-    const SCORING_ENGINE_URL = 'https://desk.siamvisapro.com';
 
     return (
         <div className="bg-slate-50 min-h-screen pb-20">
@@ -49,8 +49,8 @@ const DTVClientPage: React.FC = () => {
                     ctaTitle={t('dtv_page.portfolio_title')}
                     ctaDesc={t('dtv_page.portfolio_desc')}
                     ctaBtnText={t('dtv_page.portfolio_btn')}
-                    ctaHref={langPath('services')}
-                    scoringUrl={SCORING_ENGINE_URL}
+                    ctaHref="#appointment-section"
+                    scoringUrl="#appointment-section"
                 />
 
                 {/* 3. High Value Feature Block */}
@@ -130,6 +130,34 @@ const DTVClientPage: React.FC = () => {
                     ]}
                 />
             </div>
+
+            {/* 7. Appointment Section */}
+            <section id="appointment-section" className="py-24 bg-slate-50 border-t">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="bg-slate-900 rounded-[3rem] shadow-2xl overflow-hidden lg:grid lg:grid-cols-2">
+                        <div className="p-12 lg:p-20 text-white flex flex-col justify-center">
+                            <h2 className="text-4xl font-black mb-6 leading-tight">{t('dtv_page.hero_title')} <span className="text-amber-500">DTV</span></h2>
+                            <p className="text-slate-400 mb-8 text-lg">{t('dtv_page.portfolio_desc')}</p>
+                            <ul className="space-y-4">
+                                {[
+                                    t('dtv_page.who_remote'),
+                                    t('dtv_page.who_freelance'),
+                                    t('dtv_page.who_softpower'),
+                                    t('dtv_page.duration_title')
+                                ].map((item, idx) => (
+                                    <li key={idx} className="flex items-center space-x-3 text-base font-bold">
+                                        <Check className="text-amber-500 w-6 h-6 flex-shrink-0" />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="p-12 lg:p-20 bg-white">
+                            <ExpertAppointmentForm />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };
