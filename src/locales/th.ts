@@ -1380,7 +1380,7 @@ export const th = {
           },
           {
             "q": "หากต้องการพำนักในไทยเกิน 90 วัน ควรเลือกวีซ่าประเภทไหน?",
-            "a": "หากต้องการพำนักเกิน 90 วัน คุณควรเลือกวีซ่าพำนักระยะยาว เช่น <a href='/th/dtv' class='text-amber-600 font-medium hover:underline'>วีซ่า DTV</a> (5 ปี), <a href='/th/ltr' class='text-amber-600 font-medium hover:underline'>วีซ่า LTR</a> (10 ปี) หรือ <a href='/th/retirement-visa' class='text-amber-600 font-medium hover:underline'>วีซ่าเกษียณอายุ</a> (Non-O) สำหรับ <a href='/th/tourist-visa' class='text-amber-600 font-medium hover:underline'>วีซ่าท่องเที่ยว</a> จะจำกัดสูงสุดที่ 90 วัน (60+30)"
+            "a": "หากต้องการพำนักเกิน 90 วัน คุณควรเลือกวีซ่าพำนักระยะยาว เช่น <a href='/th/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>วีซ่า DTV</a> (5 ปี), <a href='/th/long-term-resident-visa' class='text-amber-600 font-medium hover:underline'>วีซ่า LTR</a> (10 ปี) หรือ <a href='/th/retirement-visa' class='text-amber-600 font-medium hover:underline'>วีซ่าเกษียณอายุ</a> (Non-O) สำหรับ <a href='/th/tourist-visa' class='text-amber-600 font-medium hover:underline'>วีซ่าท่องเที่ยว</a> จะจำกัดสูงสุดที่ 90 วัน (60+30)"
           },
           {
             "q": "สามารถเข้าไทยโดยไม่ต้องมีวีซ่าแล้วไปขยายเวลาในประเทศได้ไหม?",
@@ -1388,15 +1388,15 @@ export const th = {
           },
           {
             "q": "สามารถเปลี่ยนประเภทวีซ่าเมื่ออยู่ในประเทศไทยได้หรือไม่?",
-            "a": "ในบางกรณีสามารถทำได้ (เช่น เปลี่ยนจากท่องเที่ยวเป็นวีซ่าเกษียณ) แต่ไม่ได้ทำได้แบบอัตโนมัติหรือได้รับการรับประกันเสมอไป การเปลี่ยนเป็นประเภท <a href='/th/dtv' class='text-amber-600 font-medium hover:underline'>วีซ่า DTV</a> มักจะต้องสมัครใหม่จากนอกประเทศไทย"
+            "a": "ในบางกรณีสามารถทำได้ (เช่น เปลี่ยนจากท่องเที่ยวเป็นวีซ่าเกษียณ) แต่ไม่ได้ทำได้แบบอัตโนมัติหรือได้รับการรับประกันเสมอไป การเปลี่ยนเป็นประเภท <a href='/th/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>วีซ่า DTV</a> มักจะต้องสมัครใหม่จากนอกประเทศไทย"
           },
           {
             "q": "ระยะเวลาสูงสุดที่สามารถพำนักในไทยได้ถูกต้องตามกฎหมายคือเท่าใด?",
-            "a": "ด้วย <a href='/th/elite-visa' class='text-amber-600 font-medium hover:underline'>วีซ่าอีลิท</a> หรือ LTR คุณสามารถอยู่ได้นานถึง 20 ปี สำหรับ DTV จะได้ 180 วันต่อการเข้าหนึ่งครั้ง (สามารถขยายเวลาได้) วีซ่าท่องเที่ยวสูงสุดคือ 90 วัน"
+            "a": "ด้วย <a href='/th/thailand-resident-visa' class='text-amber-600 font-medium hover:underline'>วีซ่าอีลิท</a> หรือ LTR คุณสามารถอยู่ได้นานถึง 20 ปี สำหรับ DTV จะได้ 180 วันต่อการเข้าหนึ่งครั้ง (สามารถขยายเวลาได้) วีซ่าท่องเที่ยวสูงสุดคือ 90 วัน"
           },
           {
             "q": "สามารถเข้าประเทศไทยได้กี่ครั้งต่อปี?",
-            "a": "ไม่มีกฎระเบียบที่ระบุตัวเลขที่ชัดเจน แต่ทาง ตม. จะเฝ้าสังเกตการเข้าออกประเทศซ้ำๆ (<a href='/th/visa-run' class='text-amber-600 font-medium hover:underline'>Visa Run</a>) สำหรับผู้ถือวีซ่าแบบเข้าได้หลายครั้ง (Multi-Entry) เช่น <a href='/th/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a> หรืออีลิท จะสามารถเข้าออกได้ไม่จำกัดจำนวนครั้ง"
+            "a": "ไม่มีกฎระเบียบที่ระบุตัวเลขที่ชัดเจน แต่ทาง ตม. จะเฝ้าสังเกตการเข้าออกประเทศซ้ำๆ (<a href='/th/thailand-visa-run-risks' class='text-amber-600 font-medium hover:underline'>Visa Run</a>) สำหรับผู้ถือวีซ่าแบบเข้าได้หลายครั้ง (Multi-Entry) เช่น <a href='/th/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV</a> หรืออีลิท จะสามารถเข้าออกได้ไม่จำกัดจำนวนครั้ง"
           },
           {
             "q": "กฎระเบียบด้านวีซ่าของไทยเปลี่ยนแปลงบ่อยไหม?",
@@ -1413,23 +1413,23 @@ export const th = {
           },
           {
             "q": "การทำงานทางไกล (Remote Work) ในไทยได้รับอนุญาตหรือไม่?",
-            "a": "ได้รับอนุญาตเฉพาะกับวีซ่าที่เหมาะสมเท่านั้น เช่น <a href='/th/dtv' class='text-amber-600 font-medium hover:underline'>วีซ่า DTV</a> หรือ LTR การทำงานทางไกลต้องเป็นการทำงานให้กับบริษัทต่างชาติ โดยไม่มีกิจกรรมที่แข่งขันกับคนไทยในท้องถิ่น"
+            "a": "ได้รับอนุญาตเฉพาะกับวีซ่าที่เหมาะสมเท่านั้น เช่น <a href='/th/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>วีซ่า DTV</a> หรือ LTR การทำงานทางไกลต้องเป็นการทำงานให้กับบริษัทต่างชาติ โดยไม่มีกิจกรรมที่แข่งขันกับคนไทยในท้องถิ่น"
           },
           {
             "q": "การทำงานท้องถิ่นกับการทำงานทางไกลต่างกันอย่างไร?",
-            "a": "การทำงานท้องถิ่นต้องมีนายจ้างในไทยและต้องมีใบอนุญาตทำงาน (Work Permit) การทำงานทางไกล (ให้กับลูกค้า/นายจ้างต่างชาติ) ภายใต้ <a href='/th/dtv' class='text-amber-600 font-medium hover:underline'>วีซ่า DTV</a> สามารถทำได้โดยไม่ต้องขอใบอนุญาตทำงาน"
+            "a": "การทำงานท้องถิ่นต้องมีนายจ้างในไทยและต้องมีใบอนุญาตทำงาน (Work Permit) การทำงานทางไกล (ให้กับลูกค้า/นายจ้างต่างชาติ) ภายใต้ <a href='/th/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>วีซ่า DTV</a> สามารถทำได้โดยไม่ต้องขอใบอนุญาตทำงาน"
           },
           {
             "q": "ต้องมีใบอนุญาตทำงานไหมหากทำงานจากประเทศไทย?",
-            "a": "หากเป็น <a href='/th/dtv' class='text-amber-600 font-medium hover:underline'>วีซ่า DTV</a> (สำหรับการทำงานทางไกล) ไม่จำเป็นต้องมี แต่สำหรับวีซ่าประเภทอื่น (เช่น Non-B) จำเป็นต้องมีใบอนุญาตทำงาน (Work Permit) อย่างเคร่งครัด"
+            "a": "หากเป็น <a href='/th/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>วีซ่า DTV</a> (สำหรับการทำงานทางไกล) ไม่จำเป็นต้องมี แต่สำหรับวีซ่าประเภทอื่น (เช่น Non-B) จำเป็นต้องมีใบอนุญาตทำงาน (Work Permit) อย่างเคร่งครัด"
           },
           {
             "q": "สามารถจดทะเบียนบริษัทในไทยด้วยวีซ่าได้หรือไม่?",
-            "a": "คุณสามารถเป็นผู้ถือหุ้นได้ แต่หากต้องการทำงานอย่างต่อเนื่องหรือเป็นกรรมการผู้มีอำนาจลงนาม คุณต้องมี <a href='/th/business-visa' class='text-amber-600 font-medium hover:underline'>วีซ่า Non-B</a> และใบอนุญาตทำงาน"
+            "a": "คุณสามารถเป็นผู้ถือหุ้นได้ แต่หากต้องการทำงานอย่างต่อเนื่องหรือเป็นกรรมการผู้มีอำนาจลงนาม คุณต้องมี <a href='/th/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>วีซ่า Non-B</a> และใบอนุญาตทำงาน"
           },
           {
             "q": "วีซ่าประเภทใดบ้างที่อนุญาตให้ทำงานในไทยได้อย่างถูกต้องกฎหมาย?",
-            "a": "<a href='/th/business-visa' class='text-amber-600 font-medium hover:underline'>วีซ่า Non-B</a> (ต้องมีใบอนุญาตทำงาน), <a href='/th/ltr' class='text-amber-600 font-medium hover:underline'>วีซ่า LTR</a> (รวมใบอนุญาตทำงานดิจิทัล), <a href='/th/dtv' class='text-amber-600 font-medium hover:underline'>วีซ่า DTV</a> (เฉพาะการทำงานทางไกลเท่านั้น) และวีซ่าอีลิท (หากใช้ควบคู่กับตัวเลือกการทำงานที่หาได้ยาก มิฉะนั้นจะไม่ได้รับอนุญาต)"
+            "a": "<a href='/th/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>วีซ่า Non-B</a> (ต้องมีใบอนุญาตทำงาน), <a href='/th/long-term-resident-visa' class='text-amber-600 font-medium hover:underline'>วีซ่า LTR</a> (รวมใบอนุญาตทำงานดิจิทัล), <a href='/th/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>วีซ่า DTV</a> (เฉพาะการทำงานทางไกลเท่านั้น) และวีซ่าอีลิท (หากใช้ควบคู่กับตัวเลือกการทำงานที่หาได้ยาก มิฉะนั้นจะไม่ได้รับอนุญาต)"
           },
           {
             "q": "ความเสี่ยงของการทำงานโดยไม่มีวีซ่าที่เหมาะสมคืออะไร?",
@@ -1504,11 +1504,11 @@ export const th = {
           },
           {
             "q": "วีซ่าประเภทไหนเหมาะสำหรับการอยู่ไทยโดยไม่ทำงาน?",
-            "a": "วีซ่าอีลิท (แบบชำระเงิน, VIP), <a href='/th/retirement-visa' class='text-amber-600 font-medium hover:underline'>วีซ่าเกษียณอายุ</a> (อายุ 50+), หรือ <a href='/th/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a> (หากคุณมีรายได้ Passive income หรือร่วมกิจกรรม Soft Power)"
+            "a": "วีซ่าอีลิท (แบบชำระเงิน, VIP), <a href='/th/retirement-visa' class='text-amber-600 font-medium hover:underline'>วีซ่าเกษียณอายุ</a> (อายุ 50+), หรือ <a href='/th/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV</a> (หากคุณมีรายได้ Passive income หรือร่วมกิจกรรม Soft Power)"
           },
           {
             "q": "วีซ่าประเภทไหนที่ช่วยให้อยู่ไทยได้นานโดยไม่ต้องออกนอกประเทศ?",
-            "a": "<a href='/th/elite-visa' class='text-amber-600 font-medium hover:underline'>วีซ่าอีลิท</a> หรือ <a href='/th/retirement-visa' class='text-amber-600 font-medium hover:underline'>วีซ่าเกษียณอายุ</a> (ด้วยการขยายเวลาพำนักรายปีในไทย) เป็นทางเลือกที่ดีที่สุดเพื่อหลีกเลี่ยงการถูกบังคับให้ออกนอกประเทศ"
+            "a": "<a href='/th/thailand-resident-visa' class='text-amber-600 font-medium hover:underline'>วีซ่าอีลิท</a> หรือ <a href='/th/retirement-visa' class='text-amber-600 font-medium hover:underline'>วีซ่าเกษียณอายุ</a> (ด้วยการขยายเวลาพำนักรายปีในไทย) เป็นทางเลือกที่ดีที่สุดเพื่อหลีกเลี่ยงการถูกบังคับให้ออกนอกประเทศ"
           }
         ]
       }

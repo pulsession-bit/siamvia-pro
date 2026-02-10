@@ -1380,7 +1380,7 @@ export const ja = {
           },
           {
             "q": "タイに90日以上滞在するにはどのビザを選ぶべきですか？",
-            "a": "90日以上の滞在には、<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>（5年）、<a href='/ja/ltr' class='text-amber-600 font-medium hover:underline'>LTRビザ</a>（10年）、または<a href='/ja/retirement-visa' class='text-amber-600 font-medium hover:underline'>退職者ビザ</a>（Non-O）などの長期滞在ビザを選択する必要があります。<a href='/ja/tourist-visa' class='text-amber-600 font-medium hover:underline'>観光ビザ</a>は最大90日間（60+30）に制限されています。"
+            "a": "90日以上の滞在には、<a href='/ja/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>（5年）、<a href='/ja/long-term-resident-visa' class='text-amber-600 font-medium hover:underline'>LTRビザ</a>（10年）、または<a href='/ja/retirement-visa' class='text-amber-600 font-medium hover:underline'>退職者ビザ</a>（Non-O）などの長期滞在ビザを選択する必要があります。<a href='/ja/tourist-visa' class='text-amber-600 font-medium hover:underline'>観光ビザ</a>は最大90日間（60+30）に制限されています。"
           },
           {
             "q": "ビザなしで入国して現地で延長できますか？",
@@ -1388,15 +1388,15 @@ export const ja = {
           },
           {
             "q": "タイ入国後にビザの種類を変更できますか？",
-            "a": "一部のケース（例：観光から退職者へ）では可能ですが、自動的ではなく、保証もされていません。<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>への切り替えなどは、通常、国外から新しく申請する必要があります。"
+            "a": "一部のケース（例：観光から退職者へ）では可能ですが、自動的ではなく、保証もされていません。<a href='/ja/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>への切り替えなどは、通常、国外から新しく申請する必要があります。"
           },
           {
             "q": "タイでの合法的な最大滞在期間は？",
-            "a": "<a href='/ja/elite-visa' class='text-amber-600 font-medium hover:underline'>エリートビザ</a>やLTRであれば、最大20年まで可能です。DTVは1回の入国で180日間（延長可能）。観光ビザは最大90日間です。"
+            "a": "<a href='/ja/thailand-resident-visa' class='text-amber-600 font-medium hover:underline'>エリートビザ</a>やLTRであれば、最大20年まで可能です。DTVは1回の入国で180日間（延長可能）。観光ビザは最大90日間です。"
           },
           {
             "q": "年に何回タイに入国できますか？",
-            "a": "厳格な明文規定はありませんが、入国管理局は繰り返しの入国（<a href='/ja/visa-run' class='text-amber-600 font-medium hover:underline'>ビザラン</a>）を監視しています。マルチプルビザ（<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>、エリート）であれば、入国回数に制限はありません。"
+            "a": "厳格な明文規定はありませんが、入国管理局は繰り返しの入国（<a href='/ja/thailand-visa-run-risks' class='text-amber-600 font-medium hover:underline'>ビザラン</a>）を監視しています。マルチプルビザ（<a href='/ja/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV</a>、エリート）であれば、入国回数に制限はありません。"
           },
           {
             "q": "タイのビザルールは頻繁に変わりますか？",
@@ -1413,23 +1413,23 @@ export const ja = {
           },
           {
             "q": "タイでリモートワークは許可されていますか？",
-            "a": "はい。ただし、<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>やLTRなど、特定の適合するビザを保持している場合に限ります。リモートワークは、現地の活動と競合しない範囲で、外国の団体に対して行われる必要があります。"
+            "a": "はい。ただし、<a href='/ja/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>やLTRなど、特定の適合するビザを保持している場合に限ります。リモートワークは、現地の活動と競合しない範囲で、外国の団体に対して行われる必要があります。"
           },
           {
             "q": "現地就労とリモートワークの違いは何ですか？",
-            "a": "現地就労はタイの雇用主を伴い、労働許可証（Work Permit）が厳密に必要です。リモートワーク（外国のクライアント/雇主向け）は、<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>のもとで労働許可証なしで許容されます。"
+            "a": "現地就労はタイの雇用主を伴い、労働許可証（Work Permit）が厳密に必要です。リモートワーク（外国のクライアント/雇主向け）は、<a href='/ja/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>のもとで労働許可証なしで許容されます。"
           },
           {
             "q": "タイから仕事をするのに労働許可証は必要ですか？",
-            "a": "<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>（リモートワーク用）であれば不要です。それ以外のビザ（Non-Bなど）では、労働許可証（Work Permit）が厳密に必須です。"
+            "a": "<a href='/ja/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>（リモートワーク用）であれば不要です。それ以外のビザ（Non-Bなど）では、労働許可証（Work Permit）が厳密に必須です。"
           },
           {
             "q": "ビザを持ってタイで起業できますか？",
-            "a": "株主になることは可能ですが、実際に働いたりサイン権を持つ取締役になるには、<a href='/ja/business-visa' class='text-amber-600 font-medium hover:underline'>Non-Bビザ</a>と労働許可証が必要です。"
+            "a": "株主になることは可能ですが、実際に働いたりサイン権を持つ取締役になるには、<a href='/ja/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>Non-Bビザ</a>と労働許可証が必要です。"
           },
           {
             "q": "タイで合法的に働けるのはどのビザですか？",
-            "a": "<a href='/ja/business-visa' class='text-amber-600 font-medium hover:underline'>Non-Bビザ</a>（労働許可証付き）、<a href='/ja/ltr' class='text-amber-600 font-medium hover:underline'>LTRビザ</a>（デジタル労働許可証含む）、<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>（リモートワークのみ）、およびエリートビザ（稀な就労オプションを付加した場合のみ）。"
+            "a": "<a href='/ja/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>Non-Bビザ</a>（労働許可証付き）、<a href='/ja/long-term-resident-visa' class='text-amber-600 font-medium hover:underline'>LTRビザ</a>（デジタル労働許可証含む）、<a href='/ja/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTVビザ</a>（リモートワークのみ）、およびエリートビザ（稀な就労オプションを付加した場合のみ）。"
           },
           {
             "q": "不適切なビザでの就労：リスクは何ですか？",
@@ -1504,11 +1504,11 @@ export const ja = {
           },
           {
             "q": "働かずにタイに住むためのビザは？",
-            "a": "エリートビザ（有料、VIP）、<a href='/ja/retirement-visa' class='text-amber-600 font-medium hover:underline'>退職者ビザ</a>（50歳以上）、または<a href='/ja/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>（不労所得やソフトパワー活動がある場合。要確認）。"
+            "a": "エリートビザ（有料、VIP）、<a href='/ja/retirement-visa' class='text-amber-600 font-medium hover:underline'>退職者ビザ</a>（50歳以上）、または<a href='/ja/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV</a>（不労所得やソフトパワー活動がある場合。要確認）。"
           },
           {
             "q": "出国せずに長期間タイに滞在するためのビザは？",
-            "a": "<a href='/ja/elite-visa' class='text-amber-600 font-medium hover:underline'>エリートビザ</a>または<a href='/ja/retirement-visa' class='text-amber-600 font-medium hover:underline'>退職者ビザ</a>（現地での年次更新を伴うもの）が、強制的な出国を避けるために最適です。"
+            "a": "<a href='/ja/thailand-resident-visa' class='text-amber-600 font-medium hover:underline'>エリートビザ</a>または<a href='/ja/retirement-visa' class='text-amber-600 font-medium hover:underline'>退職者ビザ</a>（現地での年次更新を伴うもの）が、強制的な出国を避けるために最適です。"
           }
         ]
       }

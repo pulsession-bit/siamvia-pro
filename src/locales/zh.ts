@@ -1380,7 +1380,7 @@ export const zh = {
           },
           {
             "q": "想在泰国停留超过90天应该选哪种签证？",
-            "a": "如果计划停留超过90天，您应该选择长期签证，如 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV 签证</a>（5年）、<a href='/zh/ltr' class='text-amber-600 font-medium hover:underline'>LTR 签证</a>（10年）或 <a href='/zh/retirement-visa' class='text-amber-600 font-medium hover:underline'>退休签证</a>（Non-O）。<a href='/zh/tourist-visa' class='text-amber-600 font-medium hover:underline'>旅游签证</a>最长限制为90天（60+30）。"
+            "a": "如果计划停留超过90天，您应该选择长期签证，如 <a href='/zh/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV 签证</a>（5年）、<a href='/zh/global-wealthy-citizen-visa' class='text-amber-600 font-medium hover:underline'>LTR 签证</a>（10年）或 <a href='/zh/retirement-visa' class='text-amber-600 font-medium hover:underline'>退休签证</a>（Non-O）。<a href='/zh/tourist-visa' class='text-amber-600 font-medium hover:underline'>旅游签证</a>最长限制为90天（60+30）。"
           },
           {
             "q": "可以免签入境然后在当地延期吗？",
@@ -1388,15 +1388,15 @@ export const zh = {
           },
           {
             "q": "可以在泰国境内更换签证类型吗？",
-            "a": "在某些情况下是可以的（例如：旅游签转退休签），但这既不是自动的也无法百分之百保证。某些转换（如转为 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV 签证</a>）通常要求在境外重新申请。"
+            "a": "在某些情况下是可以的（例如：旅游签转退休签），但这既不是自动的也无法百分之百保证。某些转换（如转为 <a href='/zh/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV 签证</a>）通常要求在境外重新申请。"
           },
           {
             "q": "在泰国合法停留的最长期限是多少？",
-            "a": "持有 <a href='/zh/elite-visa' class='text-amber-600 font-medium hover:underline'>精英签证</a> 或 LTR 签证，最长可达20年。持有 DTV 签证，每次入境可停留180天（可延期）。持有旅游签证，最长为90天。"
+            "a": "持有 <a href='/zh/thailand-resident-visa' class='text-amber-600 font-medium hover:underline'>精英签证</a> 或 LTR 签证，最长可达20年。持有 DTV 签证，每次入境可停留180天（可延期）。持有旅游签证，最长为90天。"
           },
           {
             "q": "每年可以入境泰国多少次？",
-            "a": "虽然没有明确的文字限制，但移民局会监控频繁出入境（<a href='/zh/visa-run' class='text-amber-600 font-medium hover:underline'>Visa Run</a>）的行为。持有多次往返签证（如 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>、精英签），入境次数是不限的。"
+            "a": "虽然没有明确的文字限制，但移民局会监控频繁出入境（<a href='/zh/thailand-visa-run-risks' class='text-amber-600 font-medium hover:underline'>Visa Run</a>）的行为。持有多次往返签证（如 <a href='/zh/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV</a>、精英签），入境次数是不限的。"
           },
           {
             "q": "泰国的签证规则经常变化吗？",
@@ -1413,23 +1413,23 @@ export const zh = {
           },
           {
             "q": "在泰国允许远程办公吗？",
-            "a": "允许，但仅限持特定的合适签证，如 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV 签证</a> 或 LTR 签证。远程办公必须是为海外实体服务，且不涉及当地竞争性活动。"
+            "a": "允许，但仅限持特定的合适签证，如 <a href='/zh/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV 签证</a> 或 LTR 签证。远程办公必须是为海外实体服务，且不涉及当地竞争性活动。"
           },
           {
             "q": "当地工作和远程办公有什么区别？",
-            "a": "当地工作涉及泰国雇主，且必须持有工作许可（Work Permit）。持 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV 签证</a> 开展远程办公（为境外客户/雇主服务）是被允许的，无需工作许可。"
+            "a": "当地工作涉及泰国雇主，且必须持有工作许可（Work Permit）。持 <a href='/zh/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV 签证</a> 开展远程办公（为境外客户/雇主服务）是被允许的，无需工作许可。"
           },
           {
             "q": "在泰国远程办公需要工作许可吗？",
-            "a": "持 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV 签证</a>（针对远程办公）无需工作许可。对于其他任何签证（如 Non-B），工作许可（Work Permit）是强制要求的。"
+            "a": "持 <a href='/zh/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV 签证</a>（针对远程办公）无需工作许可。对于其他任何签证（如 Non-B），工作许可（Work Permit）是强制要求的。"
           },
           {
             "q": "可以持签证在泰国创办公司吗？",
-            "a": "您可以作为股东，但要积极参与经营或担任签字董事，您需要 <a href='/zh/business-visa' class='text-amber-600 font-medium hover:underline'>Non-B 签证</a> 及工作许可。"
+            "a": "您可以作为股东，但要积极参与经营或担任签字董事，您需要 <a href='/zh/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>Non-B 签证</a> 及工作许可。"
           },
           {
             "q": "哪些签证允许在泰国合法工作？",
-            "a": "<a href='/zh/business-visa' class='text-amber-600 font-medium hover:underline'>Non-B 签证</a>（配工作许可）、<a href='/zh/ltr' class='text-amber-600 font-medium hover:underline'>LTR 签证</a>（包含数字工作许可）、<a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV 签证</a>（仅限远程办公）以及精英签证（若配有极少数的工作选项，否则不包含）。"
+            "a": "<a href='/zh/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>Non-B 签证</a>（配工作许可）、<a href='/zh/global-wealthy-citizen-visa' class='text-amber-600 font-medium hover:underline'>LTR 签证</a>（包含数字工作许可）、<a href='/zh/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV 签证</a>（仅限远程办公）以及精英签证（若配有极少数的工作选项，否则不包含）。"
           },
           {
             "q": "持不当签证工作的风险有哪些？",
@@ -1504,11 +1504,11 @@ export const zh = {
           },
           {
             "q": "不工作在泰国生活的理想签证？",
-            "a": "精英签证（付费、VIP）、<a href='/zh/retirement-visa' class='text-amber-600 font-medium hover:underline'>退休签证</a>（50岁以上）或 <a href='/zh/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>（如果您有被动收入或从事软实力活动，需确认）。"
+            "a": "精英签证（付费、VIP）、<a href='/zh/retirement-visa' class='text-amber-600 font-medium hover:underline'>退休签证</a>（50岁以上）或 <a href='/zh/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV</a>（如果您有被动收入或从事软实力活动，需确认）。"
           },
           {
             "q": "哪种签证可以长期在泰国停留而无需离境？",
-            "a": "<a href='/zh/elite-visa' class='text-amber-600 font-medium hover:underline'>精英签证</a> 或 <a href='/zh/retirement-visa' class='text-amber-600 font-medium hover:underline'>退休签证</a>（配以每年的境内延期）是避免强制离境的最佳选择。"
+            "a": "<a href='/zh/thailand-resident-visa' class='text-amber-600 font-medium hover:underline'>精英签证</a> 或 <a href='/zh/retirement-visa' class='text-amber-600 font-medium hover:underline'>退休签证</a>（配以每年的境内延期）是避免强制离境的最佳选择。"
           }
         ]
       }

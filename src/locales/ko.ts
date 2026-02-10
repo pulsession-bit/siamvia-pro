@@ -1380,7 +1380,7 @@ export const ko = {
           },
           {
             "q": "태국에 90일 이상 머물려면 어떤 비자를 선택해야 하나요?",
-            "a": "90일 이상 체류하려면 <a href='/ko/dtv' class='text-amber-600 font-medium hover:underline'>DTV 비자</a>(5년), <a href='/ko/ltr' class='text-amber-600 font-medium hover:underline'>LTR 비자</a>(10년) 또는 <a href='/ko/retirement-visa' class='text-amber-600 font-medium hover:underline'>은퇴 비자</a>(Non-O)와 같은 장기 비자를 선택해야 합니다. <a href='/ko/tourist-visa' class='text-amber-600 font-medium hover:underline'>관광 비자</a>는 최대 90일(60+30)로 제한됩니다."
+            "a": "90일 이상 체류하려면 <a href='/ko/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV 비자</a>(5년), <a href='/ko/long-term-resident-visa' class='text-amber-600 font-medium hover:underline'>LTR 비자</a>(10년) 또는 <a href='/ko/retirement-visa' class='text-amber-600 font-medium hover:underline'>은퇴 비자</a>(Non-O)와 같은 장기 비자를 선택해야 합니다. <a href='/ko/tourist-visa' class='text-amber-600 font-medium hover:underline'>관광 비자</a>는 최대 90일(60+30)로 제한됩니다."
           },
           {
             "q": "비자 없이 입국해서 현지에서 연장할 수 있나요?",
@@ -1388,15 +1388,15 @@ export const ko = {
           },
           {
             "q": "태국 입국 후 비자 종류를 변경할 수 있나요?",
-            "a": "일부 경우(예: 관광에서 은퇴자로) 가능하지만 자동이 아니며 보장되지도 않습니다. <a href='/ko/dtv' class='text-amber-600 font-medium hover:underline'>DTV 비자</a> 등으로의 전환은 보통 해외에서 새로 신청해야 합니다."
+            "a": "일부 경우(예: 관광에서 은퇴자로) 가능하지만 자동이 아니며 보장되지도 않습니다. <a href='/ko/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV 비자</a> 등으로의 전환은 보통 해외에서 새로 신청해야 합니다."
           },
           {
             "q": "태국에서의 합법적인 최대 체류 기간은 얼마인가요?",
-            "a": "<a href='/ko/elite-visa' class='text-amber-600 font-medium hover:underline'>엘리트 비자</a>나 LTR의 경우 최대 20년까지 가능합니다. DTV는 1회 입국 시 180일(연장 가능)입니다. 관광 비자는 최대 90일입니다."
+            "a": "<a href='/ko/thailand-resident-visa' class='text-amber-600 font-medium hover:underline'>엘리트 비자</a>나 LTR의 경우 최대 20년까지 가능합니다. DTV는 1회 입국 시 180일(연장 가능)입니다. 관광 비자는 최대 90일입니다."
           },
           {
             "q": "연간 몇 번 태국에 입국할 수 있나요?",
-            "a": "엄격한 명문 규정은 없으나 이민국은 반복적인 입출국(<a href='/ko/visa-run' class='text-amber-600 font-medium hover:underline'>비자 런</a>)을 모니터링합니다. 멀티플 비자(<a href='/ko/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>, 엘리트)의 경우 입국 횟수에 제한이 없습니다."
+            "a": "엄격한 명문 규정은 없으나 이민국은 반복적인 입출국(<a href='/ko/thailand-visa-run-risks' class='text-amber-600 font-medium hover:underline'>비자 런</a>)을 모니터링합니다. 멀티플 비자(<a href='/ko/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV</a>, 엘리트)의 경우 입국 횟수에 제한이 없습니다."
           },
           {
             "q": "태국의 비자 규정은 자주 바뀌나요?",
@@ -1413,23 +1413,23 @@ export const ko = {
           },
           {
             "q": "태국에서 원격 근무가 허용되나요?",
-            "a": "네, 하지만 <a href='/ko/dtv' class='text-amber-600 font-medium hover:underline'>DTV 비자</a>나 LTR 등 특정 적합 비자를 소지한 경우에만 해당됩니다. 원격 근무는 현지 활동과 경쟁하지 않는 범위에서 외국 법인을 위해 수행되어야 합니다."
+            "a": "네, 하지만 <a href='/ko/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV 비자</a>나 LTR 등 특정 적합 비자를 소지한 경우에만 해당됩니다. 원격 근무는 현지 활동과 경쟁하지 않는 범위에서 외국 법인을 위해 수행되어야 합니다."
           },
           {
             "q": "현지 취업과 원격 근무의 차이점은 무엇인가요?",
-            "a": "현지 취업은 태국 고용주가 있어야 하며 노동 허가증(Work Permit)이 엄격히 필요합니다. 원격 근무(해외 클라이언트/고용주 대상)는 <a href='/ko/dtv' class='text-amber-600 font-medium hover:underline'>DTV 비자</a> 하에 노동 허가증 없이 허용됩니다."
+            "a": "현지 취업은 태국 고용주가 있어야 하며 노동 허가증(Work Permit)이 엄격히 필요합니다. 원격 근무(해외 클라이언트/고용주 대상)는 <a href='/ko/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV 비자</a> 하에 노동 허가증 없이 허용됩니다."
           },
           {
             "q": "태국에서 일하려면 노동 허가증이 필요한가요?",
-            "a": "<a href='/ko/dtv' class='text-amber-600 font-medium hover:underline'>DTV 비자</a>(원격 근무용)라면 필요 없습니다. 그 외의 모든 비자(Non-B 등)에서는 노동 허가증(Work Permit)이 엄격히 필수입니다."
+            "a": "<a href='/ko/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV 비자</a>(원격 근무용)라면 필요 없습니다. 그 외의 모든 비자(Non-B 등)에서는 노동 허가증(Work Permit)이 엄격히 필수입니다."
           },
           {
             "q": "비자를 가지고 태국에서 창업할 수 있나요?",
-            "a": "주주가 될 수는 있지만 실제로 일하거나 사인권이 있는 이사가 되려면 <a href='/ko/business-visa' class='text-amber-600 font-medium hover:underline'>Non-B 비자</a>와 노동 허가증이 필요합니다."
+            "a": "주주가 될 수는 있지만 실제로 일하거나 사인권이 있는 이사가 되려면 <a href='/ko/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>Non-B 비자</a>와 노동 허가증이 필요합니다."
           },
           {
             "q": "태국에서 합법적으로 일할 수 있는 비자는 무엇인가요?",
-            "a": "<a href='/ko/business-visa' class='text-amber-600 font-medium hover:underline'>Non-B 비자</a>(노동 허가증 포함), <a href='/ko/ltr' class='text-amber-600 font-medium hover:underline'>LTR 비자</a>(디지털 노동 허가 포함), <a href='/ko/dtv' class='text-amber-600 font-medium hover:underline'>DTV 비자</a>(원격 근무 전용) 및 엘리트 비자(드문 취업 옵션을 추가한 경우, 그 외에는 불가)."
+            "a": "<a href='/ko/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>Non-B 비자</a>(노동 허가증 포함), <a href='/ko/long-term-resident-visa' class='text-amber-600 font-medium hover:underline'>LTR 비자</a>(디지털 노동 허가 포함), <a href='/ko/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV 비자</a>(원격 근무 전용) 및 엘리트 비자(드문 취업 옵션을 추가한 경우, 그 외에는 불가)."
           },
           {
             "q": "부적절한 비자로 근무 시 어떤 위험이 있나요?",
@@ -1504,11 +1504,11 @@ export const ko = {
           },
           {
             "q": "일하지 않고 태국에 거주하기 위한 비자는?",
-            "a": "엘리트 비자(유료, VIP), <a href='/ko/retirement-visa' class='text-amber-600 font-medium hover:underline'>은퇴 비자</a>(50세 이상) 또는 <a href='/ko/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>(불로소득이나 소프트 파워 활동이 있는 경우. 확인 필요)."
+            "a": "엘리트 비자(유료, VIP), <a href='/ko/retirement-visa' class='text-amber-600 font-medium hover:underline'>은퇴 비자</a>(50세 이상) 또는 <a href='/ko/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV</a>(불로소득이나 소프트 파워 활동이 있는 경우. 확인 필요)."
           },
           {
             "q": "출국 없이 장기간 태국에 체류하기 위한 비자는?",
-            "a": "<a href='/ko/elite-visa' class='text-amber-600 font-medium hover:underline'>엘리트 비자</a> 또는 <a href='/ko/retirement-visa' class='text-amber-600 font-medium hover:underline'>은퇴 비자</a>(현지 연례 연장 포함)가 강제 출국을 피하는 데 가장 좋습니다."
+            "a": "<a href='/ko/thailand-resident-visa' class='text-amber-600 font-medium hover:underline'>엘리트 비자</a> 또는 <a href='/ko/retirement-visa' class='text-amber-600 font-medium hover:underline'>은퇴 비자</a>(현지 연례 연장 포함)가 강제 출국을 피하는 데 가장 좋습니다."
           }
         ]
       }

@@ -1379,7 +1379,7 @@ export const ru = {
           },
           {
             "q": "Какую визу выбрать, чтобы остаться в Таиланде более чем на 90 дней?",
-            "a": "Для пребывания более 90 дней стоит выбрать долгосрочную визу, такую как <a href='/ru/dtv' class='text-amber-600 font-medium hover:underline'>Виза DTV</a> (5 лет), <a href='/ru/ltr' class='text-amber-600 font-medium hover:underline'>Виза LTR</a> (10 лет) или <a href='/ru/retirement-visa' class='text-amber-600 font-medium hover:underline'>Пенсионная виза</a> (Non-O). <a href='/ru/tourist-visa' class='text-amber-600 font-medium hover:underline'>Туристические визы</a> ограничены максимум 90 днями (60+30)."
+            "a": "Для пребывания более 90 дней стоит выбрать долгосрочную визу, такую как <a href='/ru/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>Виза DTV</a> (5 лет), <a href='/ru/long-term-resident-visa' class='text-amber-600 font-medium hover:underline'>Виза LTR</a> (10 лет) или <a href='/ru/retirement-visa' class='text-amber-600 font-medium hover:underline'>Пенсионная виза</a> (Non-O). <a href='/ru/tourist-visa' class='text-amber-600 font-medium hover:underline'>Туристические визы</a> ограничены максимум 90 днями (60+30)."
           },
           {
             "q": "Можно ли въехать в Таиланд без визы и продлить пребывание на месте?",
@@ -1387,15 +1387,15 @@ export const ru = {
           },
           {
             "q": "Можно ли сменить тип визы, уже находясь в Таиланде?",
-            "a": "В некоторых случаях — да (например, с туристической на пенсионную), но это не гарантировано. Некоторые переходы, например на <a href='/ru/dtv' class='text-amber-600 font-medium hover:underline'>визу DTV</a>, часто требуют подачи новой заявки из-за пределов страны."
+            "a": "В некоторых случаях — да (например, с туристической на пенсионную), но это не гарантировано. Некоторые переходы, например на <a href='/ru/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>визу DTV</a>, часто требуют подачи новой заявки из-за пределов страны."
           },
           {
             "q": "Каков максимальный срок легального пребывания в Таиланде?",
-            "a": "С <a href='/ru/elite-visa' class='text-amber-600 font-medium hover:underline'>визой Elite</a> или LTR — до 20 лет. С визой DTV — 180 дней за один въезд (можно продлить). С туристической визой — максимум 90 дней."
+            "a": "С <a href='/ru/thailand-resident-visa' class='text-amber-600 font-medium hover:underline'>визой Elite</a> или LTR — до 20 лет. С визой DTV — 180 дней за один въезд (можно продлить). С туристической визой — максимум 90 дней."
           },
           {
             "q": "Сколько раз в год можно въезжать в Таиланд?",
-            "a": "Строгого письменного лимита нет, но иммиграционная служба отслеживает частые въезды-выезды (<a href='/ru/visa-run' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). С многократной визой (<a href='/ru/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite) количество въездов не ограничено."
+            "a": "Строгого письменного лимита нет, но иммиграционная служба отслеживает частые въезды-выезды (<a href='/ru/thailand-visa-run-risks' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). С многократной визой (<a href='/ru/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite) количество въездов не ограничено."
           },
           {
             "q": "Часто ли меняются визовые правила в Таиланде?",
@@ -1412,23 +1412,23 @@ export const ru = {
           },
           {
             "q": "Разрешена ли удаленная работа в Таиланде?",
-            "a": "Да, только по определенным подходящим визам, таким как <a href='/ru/dtv' class='text-amber-600 font-medium hover:underline'>Виза DTV</a> или LTR. Удаленная работа должна выполняться на иностранную компанию без конкуренции с местным рынком."
+            "a": "Да, только по определенным подходящим визам, таким как <a href='/ru/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>Виза DTV</a> или LTR. Удаленная работа должна выполняться на иностранную компанию без конкуренции с местным рынком."
           },
           {
             "q": "В чем разница между местной работой и удаленной работой?",
-            "a": "Местная работа подразумевает тайского работодателя и строго требует разрешения на работу (Work Permit). Удаленная работа (на иностранного клиента/работодателя) допускается по <a href='/ru/dtv' class='text-amber-600 font-medium hover:underline'>визе DTV</a> без Work Permit."
+            "a": "Местная работа подразумевает тайского работодателя и строго требует разрешения на работу (Work Permit). Удаленная работа (на иностранного клиента/работодателя) допускается по <a href='/ru/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>визе DTV</a> без Work Permit."
           },
           {
             "q": "Нужно ли разрешение на работу для удаленки из Таиланда?",
-            "a": "Не требуется с <a href='/ru/dtv' class='text-amber-600 font-medium hover:underline'>визой DTV</a> (для удаленной работы). Для любой другой визы (Non-B) разрешение на работу (Work Permit) строго обязательно."
+            "a": "Не требуется с <a href='/ru/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>визой DTV</a> (для удаленной работы). Для любой другой визы (Non-B) разрешение на работу (Work Permit) строго обязательно."
           },
           {
             "q": "Можно ли открыть компанию в Таиланде по визе?",
-            "a": "Вы можете быть акционером, но чтобы активно работать в ней или быть директором с правом подписи, вам нужна <a href='/ru/business-visa' class='text-amber-600 font-medium hover:underline'>виза Non-B</a> и разрешение на работу."
+            "a": "Вы можете быть акционером, но чтобы активно работать в ней или быть директором с правом подписи, вам нужна <a href='/ru/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>виза Non-B</a> и разрешение на работу."
           },
           {
             "q": "Какие визы позволяют легально работать в Таиланде?",
-            "a": "<a href='/ru/business-visa' class='text-amber-600 font-medium hover:underline'>Виза Non-B</a> (с Work Permit), <a href='/ru/ltr' class='text-amber-600 font-medium hover:underline'>виза LTR</a> (цифровое разрешение включено), <a href='/ru/dtv' class='text-amber-600 font-medium hover:underline'>виза DTV</a> (только удаленка) и виза Elite (если с редкой опцией для работы, иначе нет)."
+            "a": "<a href='/ru/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>Виза Non-B</a> (с Work Permit), <a href='/ru/long-term-resident-visa' class='text-amber-600 font-medium hover:underline'>виза LTR</a> (цифровое разрешение включено), <a href='/ru/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>виза DTV</a> (только удаленка) и виза Elite (если с редкой опцией для работы, иначе нет)."
           },
           {
             "q": "Риски работы без подходящей визы?",
@@ -1503,11 +1503,11 @@ export const ru = {
           },
           {
             "q": "Какая виза подходит для жизни в Таиланде без работы?",
-            "a": "Виза Elite (платная, VIP), <a href='/ru/retirement-visa' class='text-amber-600 font-medium hover:underline'>Пенсионная виза</a> (50+ лет) или <a href='/ru/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a> (при наличии пассивного дохода, нужно подтверждение)."
+            "a": "Виза Elite (платная, VIP), <a href='/ru/retirement-visa' class='text-amber-600 font-medium hover:underline'>Пенсионная виза</a> (50+ лет) или <a href='/ru/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV</a> (при наличии пассивного дохода, нужно подтверждение)."
           },
           {
             "q": "По какой визе можно долго жить в Таиланде не выезжая?",
-            "a": "<a href='/ru/elite-visa' class='text-amber-600 font-medium hover:underline'>Виза Elite</a> или <a href='/ru/retirement-visa' class='text-amber-600 font-medium hover:underline'>Пенсионная виза</a> (с ежегодным продлением на месте) лучше всего подходят, чтобы избежать обязательных выездов."
+            "a": "<a href='/ru/thailand-resident-visa' class='text-amber-600 font-medium hover:underline'>Виза Elite</a> или <a href='/ru/retirement-visa' class='text-amber-600 font-medium hover:underline'>Пенсионная виза</a> (с ежегодным продлением на месте) лучше всего подходят, чтобы избежать обязательных выездов."
           }
         ]
       }
