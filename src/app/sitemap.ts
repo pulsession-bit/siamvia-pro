@@ -26,6 +26,7 @@ const pages: PageKey[] = [
     'scientific-visa',
     'apply',
     'about',
+    'ai-technology',
     'faq',
     'contact',
     'terms',

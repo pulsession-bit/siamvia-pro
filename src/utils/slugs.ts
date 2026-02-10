@@ -24,7 +24,8 @@ export type PageKey =
     | 'official-visa'
     | 'scientific-visa'
     | 'apply'
-    | 'about';
+    | 'about'
+    | 'ai-technology';
 
 export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     fr: {
@@ -53,7 +54,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'official-visa': 'visa-officiel-thailande',
         'scientific-visa': 'visa-scientifique-thailande',
         apply: 'demande-de-visa',
-        about: 'a-propos'
+        about: 'a-propos',
+        'ai-technology': 'technologie-ia-visa'
     },
     en: {
         home: '',
@@ -81,7 +83,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply-visa',
-        about: 'about-us'
+        about: 'about-us',
+        'ai-technology': 'ai-visa-technology'
     },
     de: {
         home: '',
@@ -109,7 +112,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply-visa',
-        about: 'ueber-uns'
+        about: 'ueber-uns',
+        'ai-technology': 'ki-visum-technologie'
     },
     es: {
         home: '',
@@ -137,7 +141,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'solicitar-visa',
-        about: 'sobre-nosotros'
+        about: 'sobre-nosotros',
+        'ai-technology': 'tecnologia-ia-visa'
     },
     it: {
         home: '',
@@ -165,7 +170,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'richiedi-visto',
-        about: 'chi-siamo'
+        about: 'chi-siamo',
+        'ai-technology': 'tecnologia-ia-visto'
     },
     th: {
         home: '',
@@ -193,7 +199,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply',
-        about: 'about'
+        about: 'about',
+        'ai-technology': 'ai-technology'
     },
     ru: {
         home: '',
@@ -221,7 +228,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply',
-        about: 'about'
+        about: 'about',
+        'ai-technology': 'ai-technology'
     },
     zh: {
         home: '',
@@ -249,7 +257,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply',
-        about: 'about'
+        about: 'about',
+        'ai-technology': 'ai-technology'
     },
     ja: {
         home: '',
@@ -277,7 +286,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply',
-        about: 'about'
+        about: 'about',
+        'ai-technology': 'ai-technology'
     },
     ko: {
         home: '',
@@ -305,7 +315,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply',
-        about: 'about'
+        about: 'about',
+        'ai-technology': 'ai-technology'
     },
     ar: {
         home: '',
@@ -333,7 +344,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'official-visa': 'thailand-official-visa',
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply',
-        about: 'about'
+        about: 'about',
+        'ai-technology': 'ai-technology'
     }
 };
 
