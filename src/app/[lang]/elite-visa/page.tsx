@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { VisaServiceSchemas } from '@/components/ServiceSchema';
+import { EliteSchemaAI } from '@/components/EliteSchemaAI';
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
     const { lang } = await params;
@@ -36,6 +37,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
         <>
             <SchemaOrg lang={lang} pageKey="elite-visa" title={t.nav.elite} showGlobal={false} />
             {VisaServiceSchemas.elite(lang)}
+            <EliteSchemaAI lang={lang} />
             <EliteClientPage />
         </>
     );

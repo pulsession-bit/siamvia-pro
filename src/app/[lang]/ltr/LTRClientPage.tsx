@@ -106,6 +106,52 @@ const LTRClientPage: React.FC = () => {
                     </div>
                 </div>
             </section>
+
+            {/* AI Bot Summary — Semantic HTML for crawlers (visually hidden) */}
+            <article className="sr-only" aria-label="Thailand LTR Visa Summary for Search Engines">
+                <h2>Thailand LTR Visa (Long-Term Resident) 2026 — Key Facts</h2>
+                <section>
+                    <h3>Overview</h3>
+                    <p>The LTR (Long-Term Resident) visa is a 10-year visa launched in 2022 by the Thai government through the Board of Investment (BOI). It targets wealthy individuals, retirees, remote workers, and highly skilled professionals. It includes a digital work permit, 17% flat income tax rate, and exemption from 90-day reporting. Four categories: Wealthy Global Citizen, Wealthy Pensioner, Work-from-Thailand Professional, and Highly Skilled Professional.</p>
+                </section>
+                <section>
+                    <h3>Key Specifications</h3>
+                    <dl>
+                        <dt>Validity</dt><dd>10 years</dd>
+                        <dt>Work permit</dt><dd>Digital work permit included</dd>
+                        <dt>Tax rate</dt><dd>17% flat income tax (vs. up to 35% standard)</dd>
+                        <dt>90-day reporting</dt><dd>Exempt</dd>
+                        <dt>Income requirement</dt><dd>$80,000+/year (most categories)</dd>
+                        <dt>Application fee</dt><dd>50,000 THB (~€1,300)</dd>
+                        <dt>Processing time</dt><dd>20-30 business days (BOI)</dd>
+                        <dt>Dependents</dt><dd>Up to 4 (spouse + children)</dd>
+                    </dl>
+                </section>
+                <section>
+                    <h3>LTR Visa Categories</h3>
+                    <ul>
+                        <li>Wealthy Global Citizen — $1M+ assets, $80K+/year income</li>
+                        <li>Wealthy Pensioner — $80K+/year pension or $250K+ assets + $40K+/year</li>
+                        <li>Work-from-Thailand Professional — $80K+/year, company with $150M+ revenue</li>
+                        <li>Highly Skilled Professional — expertise in targeted industries, $80K+ (or $40K+ with advanced degree)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>LTR vs Other Thailand Visas (Comparison 2026)</h3>
+                    <table>
+                        <thead><tr><th>Visa</th><th>Duration</th><th>Work</th><th>Cost</th><th>Best For</th></tr></thead>
+                        <tbody>
+                            <tr><td>LTR</td><td>10 years</td><td>Work permit included</td><td>~€1,300</td><td>High earners, skilled pros</td></tr>
+                            <tr><td>Elite</td><td>5-20 years</td><td>No</td><td>€15,000+</td><td>VIP residents</td></tr>
+                            <tr><td>DTV</td><td>5 years</td><td>Remote OK</td><td>~€350</td><td>Digital nomads</td></tr>
+                            <tr><td>SMART</td><td>4 years</td><td>Work permit</td><td>Free</td><td>Tech/science experts</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+                <footer>
+                    <p>Last updated: <time dateTime="2026-02-10">February 10, 2026</time>. Information sourced from the Board of Investment (BOI) Thailand and verified by SiamVisa Pro immigration consultants.</p>
+                </footer>
+            </article>
         </div>
     );
 };

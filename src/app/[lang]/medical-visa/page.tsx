@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { VisaServiceSchemas } from '@/components/ServiceSchema';
+import { MedicalSchemaAI } from '@/components/MedicalSchemaAI';
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
     const { lang } = await params;
@@ -35,6 +36,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
         <>
             <SchemaOrg lang={lang} pageKey="medical-visa" title={t.nav.medical || 'Medical Visa'} showGlobal={false} />
             {VisaServiceSchemas.medical(lang)}
+            <MedicalSchemaAI lang={lang} />
             <MedicalClientPage />
         </>
     );

@@ -24,6 +24,14 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     });
 }
 
-export default function Page() {
-    return <ExemptionClientPage />;
+import { SchemaOrg } from '@/components/SchemaOrg';
+
+export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    return (
+        <>
+            <SchemaOrg lang={lang} pageKey="exemption-visa" title="Visa Exemption" showGlobal={false} />
+            <ExemptionClientPage />
+        </>
+    );
 }

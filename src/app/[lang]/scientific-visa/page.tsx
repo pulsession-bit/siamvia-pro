@@ -24,6 +24,14 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     });
 }
 
-export default function Page() {
-    return <ScientificClientPage />;
+import { SchemaOrg } from '@/components/SchemaOrg';
+
+export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    return (
+        <>
+            <SchemaOrg lang={lang} pageKey="scientific-visa" title="Scientific Visa" showGlobal={false} />
+            <ScientificClientPage />
+        </>
+    );
 }

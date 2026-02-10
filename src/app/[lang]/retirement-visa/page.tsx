@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
 import { SchemaOrg } from '@/components/SchemaOrg';
 import { VisaServiceSchemas } from '@/components/ServiceSchema';
+import { RetirementSchemaAI } from '@/components/RetirementSchemaAI';
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
     const { lang } = await params;
@@ -35,6 +36,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
         <>
             <SchemaOrg lang={lang} pageKey="retirement-visa" title={t.nav.retirement} showGlobal={false} />
             {VisaServiceSchemas.retirement(lang)}
+            <RetirementSchemaAI lang={lang} />
             <RetirementVisaClientPage />
         </>
     );
