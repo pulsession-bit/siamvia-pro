@@ -123,23 +123,20 @@ export const AITechnologySchemaAI: React.FC<AITechnologySchemaAIProps> = ({ lang
         ]
     };
 
-    // 4. Service Schema
+    // 4. Service Schema — V2 (user-provided)
     const serviceSchema = {
         '@context': 'https://schema.org',
         '@type': 'Service',
-        'name': 'AI-Powered Visa Consultation',
-        'serviceType': 'Immigration Technology Service',
+        'name': 'Thailand Visa Eligibility Audit',
+        'serviceType': 'AI-powered Thailand Visa Analysis',
         'provider': {
             '@type': 'Organization',
             'name': 'Siam Visa Pro',
             'url': baseUrl
         },
-        'description': 'AI-assisted visa application service combining scoring engine, live AI voice agent, and automated audit reports for all Thailand visa types.',
+        'description': 'AI-based audit for DTV, Tourist, Retirement, LTR and Non-B Thailand visas, including eligibility scoring and document verification.',
         'url': pageUrl,
-        'areaServed': {
-            '@type': 'Country',
-            'name': 'Thailand'
-        },
+        'areaServed': 'Worldwide',
         'availableChannel': {
             '@type': 'ServiceChannel',
             'serviceUrl': 'https://audit.siamvisapro.com',
@@ -153,24 +150,24 @@ export const AITechnologySchemaAI: React.FC<AITechnologySchemaAIProps> = ({ lang
                     '@type': 'Offer',
                     'itemOffered': {
                         '@type': 'Service',
-                        'name': 'AI Visa Score',
-                        'description': 'Free eligibility score out of 100 with detailed breakdown'
+                        'name': 'AI Visa Eligibility Score',
+                        'description': 'Free eligibility score out of 100 analyzing 120+ consular criteria for DTV, Tourist, Retirement, LTR and Non-B Thailand visas'
                     }
                 },
                 {
                     '@type': 'Offer',
                     'itemOffered': {
                         '@type': 'Service',
-                        'name': 'Live AI Agent Consultation',
-                        'description': 'Real-time voice consultation with AI expert powered by Google Gemini 2.5'
+                        'name': 'Live AI Expert Consultation',
+                        'description': 'Real-time voice consultation with AI expert trained in Thai immigration law, powered by Google Gemini 2.5, available 24/7'
                     }
                 },
                 {
                     '@type': 'Offer',
                     'itemOffered': {
                         '@type': 'Service',
-                        'name': 'AI Audit Report',
-                        'description': 'Comprehensive PDF report with action plan, validated by human experts'
+                        'name': 'Complete Visa Audit Report',
+                        'description': 'Detailed PDF report with annotated eligibility score, recommended visa, document checklist, timeline and legal options comparison, validated by human experts'
                     }
                 }
             ]
