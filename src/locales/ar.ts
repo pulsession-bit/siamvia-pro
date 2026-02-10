@@ -1379,7 +1379,7 @@ export const ar = {
           },
           {
             "q": "أي تأشيرة أختار للبقاء لأكثر من 90 يوماً في تايلاند؟",
-            "a": "للبقاء لأكثر من 90 يوماً، يجب عليك اختيار تأشيرة إقامة طويلة مثل <a href='/ar/dtv' class='text-amber-600 font-medium hover:underline'>تأشيرة DTV</a> (5 سنوات)، أو <a href='/ar/ltr' class='text-amber-600 font-medium hover:underline'>تأشيرة LTR</a> (10 سنوات) أو <a href='/ar/retirement-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة التقاعد</a> (Non-O). التأشيرات السياحية محدودة بحد أقصى 90 يوماً (60+30)."
+            "a": "للبقاء لأكثر من 90 يوماً، يجب عليك اختيار تأشيرة إقامة طويلة مثل <a href='/ar/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة DTV</a> (5 سنوات)، أو <a href='/ar/long-term-resident-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة LTR</a> (10 سنوات) أو <a href='/ar/retirement-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة التقاعد</a> (Non-O). التأشيرات السياحية محدودة بحد أقصى 90 يوماً (60+30)."
           },
           {
             "q": "هل يمكن الدخول إلى تايلاند بدون تأشيرة والتمديد في الموقع؟",
@@ -1387,15 +1387,15 @@ export const ar = {
           },
           {
             "q": "هل يمكن تغيير نوع التأشيرة بمجرد الوصول إلى تايلاند؟",
-            "a": "في بعض الحالات نعم (مثل التحويل من سياحية إلى تقاعد)، لكنه ليس أمراً تلقائياً ولا مضموناً. بعض التحويلات مثل التحويل إلى <a href='/ar/dtv' class='text-amber-600 font-medium hover:underline'>تأشيرة DTV</a> غالباً ما تتطلب طلباً جديداً من خارج البلاد."
+            "a": "في بعض الحالات نعم (مثل التحويل من سياحية إلى تقاعد)، لكنه ليس أمراً تلقائياً ولا مضموناً. بعض التحويلات مثل التحويل إلى <a href='/ar/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة DTV</a> غالباً ما تتطلب طلباً جديداً من خارج البلاد."
           },
           {
             "q": "ما هي أقصى مدة إقامة قانونية في تايلاند؟",
-            "a": "مع <a href='/ar/elite-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة النخبة</a> أو LTR، يمكن أن تصل المدة إلى 20 عاماً. مع DTV، هناك 180 يوماً لكل دخول (قابلة للتمديد). مع التأشيرة السياحية، الحد الأقصى هو 90 يوماً."
+            "a": "مع <a href='/ar/thailand-resident-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة النخبة</a> أو LTR، يمكن أن تصل المدة إلى 20 عاماً. مع DTV، هناك 180 يوماً لكل دخول (قابلة للتمديد). مع التأشيرة السياحية، الحد الأقصى هو 90 يوماً."
           },
           {
             "q": "كم مرة يمكنني دخول تايلاند في السنة؟",
-            "a": "لا يوجد حد مكتوب بصرامة، لكن إدارة الهجرة تراقب مرات الدخول المتكررة (<a href='/ar/visa-run' class='text-amber-600 font-medium hover:underline'>رحلة تجديد الفيزا</a>). مع تأشيرة الدخول المتعدد (<a href='/ar/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>، النخبة)، فإن عدد مرات الدخول غير محدود."
+            "a": "لا يوجد حد مكتوب بصرامة، لكن إدارة الهجرة تراقب مرات الدخول المتكررة (<a href='/ar/thailand-visa-run-risks' class='text-amber-600 font-medium hover:underline'>رحلة تجديد الفيزا</a>). مع تأشيرة الدخول المتعدد (<a href='/ar/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV</a>، النخبة)، فإن عدد مرات الدخول غير محدود."
           },
           {
             "q": "هل تتغير قواعد التأشيرة في تايلاند كثيراً؟",
@@ -1412,23 +1412,23 @@ export const ar = {
           },
           {
             "q": "هل العمل عن بعد مسموح به في تايلاند؟",
-            "a": "نعم، ولكن فقط مع تأشيرات محددة ومناسبة مثل <a href='/ar/dtv' class='text-amber-600 font-medium hover:underline'>تأشيرة DTV</a> أو LTR. يجب أن يتم العمل عن بعد لفائدة جهة أجنبية، دون وجود منافسة محلية."
+            "a": "نعم، ولكن فقط مع تأشيرات محددة ومناسبة مثل <a href='/ar/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة DTV</a> أو LTR. يجب أن يتم العمل عن بعد لفائدة جهة أجنبية، دون وجود منافسة محلية."
           },
           {
             "q": "ما الفرق بين العمل المحلي والعمل عن بعد؟",
-            "a": "العمل المحلي يتطلب صاحب عمل تايلاندي ويتطلب بشكل إلزامي تصريح عمل (Work Permit). أما العمل عن بعد (لصالح عميل/صاحب عمل أجنبي) فهو مسموح به تحت <a href='/ar/dtv' class='text-amber-600 font-medium hover:underline'>تأشيرة DTV</a> بدون الحاجة لتصريح عمل."
+            "a": "العمل المحلي يتطلب صاحب عمل تايلاندي ويتطلب بشكل إلزامي تصريح عمل (Work Permit). أما العمل عن بعد (لصالح عميل/صاحب عمل أجنبي) فهو مسموح به تحت <a href='/ar/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة DTV</a> بدون الحاجة لتصريح عمل."
           },
           {
             "q": "هل أحتاج إلى تصريح عمل للعمل من تايلاند؟",
-            "a": "ليس مع <a href='/ar/dtv' class='text-amber-600 font-medium hover:underline'>تأشيرة DTV</a> (للعمل عن بعد). أما لأي تأشيرة أخرى (مثل Non-B)، فإن تصريح العمل (Work Permit) ضروري وإلزامي تماماً."
+            "a": "ليس مع <a href='/ar/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة DTV</a> (للعمل عن بعد). أما لأي تأشيرة أخرى (مثل Non-B)، فإن تصريح العمل (Work Permit) ضروري وإلزامي تماماً."
           },
           {
             "q": "هل يمكنني إنشاء شركة في تايلاند بتأشيرة؟",
-            "a": "يمكنك أن تكون مساهماً، ولكن لكي تعمل فيها بنشاط أو تكون مديراً مفوضاً بالتوقيع، ستحتاج إلى <a href='/ar/business-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة Non-B</a> وتصريح عمل."
+            "a": "يمكنك أن تكون مساهماً، ولكن لكي تعمل فيها بنشاط أو تكون مديراً مفوضاً بالتوقيع، ستحتاج إلى <a href='/ar/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة Non-B</a> وتصريح عمل."
           },
           {
             "q": "ما هي التأشيرات التي تسمح بالعمل قانونياً في تايلاند؟",
-            "a": "<a href='/ar/business-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة Non-B</a> (مع تصريح عمل)، و<a href='/ar/ltr' class='text-amber-600 font-medium hover:underline'>تأشيرة LTR</a> (تشمل تصريح عمل رقمي)، و<a href='/ar/dtv' class='text-amber-600 font-medium hover:underline'>تأشيرة DTV</a> (للعمل عن بعد فقط)، وتأشيرة النخبة (إذا اقترنت بخيار عمل نادر، وإلا فلا)."
+            "a": "<a href='/ar/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة Non-B</a> (مع تصريح عمل)، و<a href='/ar/long-term-resident-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة LTR</a> (تشمل تصريح عمل رقمي)، و<a href='/ar/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة DTV</a> (للعمل عن بعد فقط)، وتأشيرة النخبة (إذا اقترنت بخيار عمل نادر، وإلا فلا)."
           },
           {
             "q": "العمل بدون تأشيرة مناسبة: ما هي المخاطر؟",
@@ -1503,11 +1503,11 @@ export const ar = {
           },
           {
             "q": "أي تأشيرة للعيش في تايلاند بدون عمل؟",
-            "a": "تأشيرة النخبة (مدفوعة، VIP)، أو <a href='/ar/retirement-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة التقاعد</a> (+50 عاماً)، أو <a href='/ar/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a> (إذا كان لديك دخل سلبي أو نشاط قوة ناعمة، يتم التأكيد)."
+            "a": "تأشيرة النخبة (مدفوعة، VIP)، أو <a href='/ar/retirement-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة التقاعد</a> (+50 عاماً)، أو <a href='/ar/destination-thailand-visa' class='text-amber-600 font-medium hover:underline'>DTV</a> (إذا كان لديك دخل سلبي أو نشاط قوة ناعمة، يتم التأكيد)."
           },
           {
             "q": "أي تأشيرة للبقاء لفترة طويلة في تايلاند دون مغادرة البلاد؟",
-            "a": "<a href='/ar/elite-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة النخبة</a> أو <a href='/ar/retirement-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة التقاعد</a> (مع تمديدات سنوية في الموقع) هي الأفضل لتجنب المغادرة الإجبارية."
+            "a": "<a href='/ar/thailand-resident-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة النخبة</a> أو <a href='/ar/retirement-visa' class='text-amber-600 font-medium hover:underline'>تأشيرة التقاعد</a> (مع تمديدات سنوية في الموقع) هي الأفضل لتجنب المغادرة الإجبارية."
           }
         ]
       }

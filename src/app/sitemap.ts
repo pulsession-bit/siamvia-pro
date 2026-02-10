@@ -24,6 +24,8 @@ const pages: PageKey[] = [
     'media-visa',
     'official-visa',
     'scientific-visa',
+    'apply',
+    'about',
     'faq',
     'contact',
     'terms',

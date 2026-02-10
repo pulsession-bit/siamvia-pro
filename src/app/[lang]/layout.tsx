@@ -4,7 +4,6 @@ import { CartProvider } from '@/contexts/CartContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CartDrawer from '@/components/CartDrawer';
-import { SchemaOrg } from '@/components/SchemaOrg';
 import { translations } from '@/utils/translations';
 import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -91,7 +90,6 @@ export default async function LangLayout({ children, params }: Props) {
                     fallbackDictionary={lang !== 'en' ? englishFallback : undefined}
                 >
                     <CartProvider>
-                        <SchemaOrg lang={lang} pageKey="home" />
                         <Navbar />
                         <CartDrawer />
                         <main className="min-h-screen pt-20">{children}</main>

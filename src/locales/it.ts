@@ -1369,7 +1369,7 @@ export const it = {
           },
           {
             "q": "Quale visto scegliere per restare più di 90 giorni in Thailandia?",
-            "a": "Per più di 90 giorni, devi optare per un visto a lungo termine come il <a href='/it/dtv' class='text-amber-600 font-medium hover:underline'>Visto DTV</a> (5 anni), il <a href='/it/ltr' class='text-amber-600 font-medium hover:underline'>Visto LTR</a> (10 anni) o il <a href='/it/retirement-visa' class='text-amber-600 font-medium hover:underline'>Visto Pensionati</a> (Non-O). I <a href='/it/tourist-visa' class='text-amber-600 font-medium hover:underline'>visti turistici</a> sono limitati a un massimo di 90 giorni (60+30)."
+            "a": "Per più di 90 giorni, devi optare per un visto a lungo termine come il <a href='/it/visto-destinazione-thailandia' class='text-amber-600 font-medium hover:underline'>Visto DTV</a> (5 anni), il <a href='/it/visto-residenza-lungo-termine' class='text-amber-600 font-medium hover:underline'>Visto LTR</a> (10 anni) o il <a href='/it/visto-pensionati' class='text-amber-600 font-medium hover:underline'>Visto Pensionati</a> (Non-O). I <a href='/it/visto-turistico' class='text-amber-600 font-medium hover:underline'>visti turistici</a> sono limitati a un massimo di 90 giorni (60+30)."
           },
           {
             "q": "Si può entrare in Thailandia senza visto e prolungare in loco?",
@@ -1377,15 +1377,15 @@ export const it = {
           },
           {
             "q": "Si può cambiare tipo di visto una volta in Thailandia?",
-            "a": "In alcuni casi sì (es: da Turistico a Pensionati), ma non è automatico né garantito. Alcune conversioni come verso un <a href='/it/dtv' class='text-amber-600 font-medium hover:underline'>Visto DTV</a> spesso richiedono una nuova domanda dall'esterno del paese."
+            "a": "In alcuni casi sì (es: da Turistico a Pensionati), ma non è automatico né garantito. Alcune conversioni come verso un <a href='/it/visto-destinazione-thailandia' class='text-amber-600 font-medium hover:underline'>Visto DTV</a> spesso richiedono una nuova domanda dall'esterno del paese."
           },
           {
             "q": "Qual è la durata massima di soggiorno legale in Thailandia?",
-            "a": "Con un <a href='/it/elite-visa' class='text-amber-600 font-medium hover:underline'>Visto Elite</a> o LTR, si può arrivare fino a 20 anni. Con un DTV, sono 180 giorni per ingresso (prorogabile). Con un visto turistico, sono 90 giorni massimo."
+            "a": "Con un <a href='/it/visto-elite-thailandia' class='text-amber-600 font-medium hover:underline'>Visto Elite</a> o LTR, si può arrivare fino a 20 anni. Con un DTV, sono 180 giorni per ingresso (prorogabile). Con un visto turistico, sono 90 giorni massimo."
           },
           {
             "q": "Quante volte si può entrare in Thailandia all'anno?",
-            "a": "Non c'è un limite scritto rigoroso, ma l'immigrazione sorveglia gli ingressi ripetuti (<a href='/it/visa-run' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). Con un visto Multi-Entry (<a href='/it/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite), gli ingressi sono illimitati."
+            "a": "Non c'è un limite scritto rigoroso, ma l'immigrazione sorveglia gli ingressi ripetuti (<a href='/it/rischi-visa-run-thailandia' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). Con un visto Multi-Entry (<a href='/it/visto-destinazione-thailandia' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite), gli ingressi sono illimitati."
           },
           {
             "q": "Le regole sui visti cambiano spesso in Thailandia?",
@@ -1398,27 +1398,27 @@ export const it = {
         "questions": [
           {
             "q": "Si può lavorare in Thailandia con un visto turistico?",
-            "a": "No. Il <a href='/it/tourist-visa' class='text-amber-600 font-medium hover:underline'>visto turistico</a> non autorizza alcuna attività professionale in Thailandia, incluso il telelavoro retribuito. Lavorare con un visto turistico espone a sanzioni (multa, espulsione)."
+            "a": "No. Il <a href='/it/visto-turistico' class='text-amber-600 font-medium hover:underline'>visto turistico</a> non autorizza alcuna attività professionale in Thailandia, incluso il telelavoro retribuito. Lavorare con un visto turistico espone a sanzioni (multa, espulsione)."
           },
           {
             "q": "Il telelavoro è autorizzato in Thailandia?",
-            "a": "Sì, solo con determinati visti adatti, come il <a href='/it/dtv' class='text-amber-600 font-medium hover:underline'>Visto DTV</a> o l'LTR. Il telelavoro deve essere svolto per un'entità straniera, senza attività locale concorrente."
+            "a": "Sì, solo con determinati visti adatti, come il <a href='/it/visto-destinazione-thailandia' class='text-amber-600 font-medium hover:underline'>Visto DTV</a> o l'LTR. Il telelavoro deve essere svolto per un'entità straniera, senza attività locale concorrente."
           },
           {
             "q": "Qual è la differenza tra lavoro locale e lavoro a distanza?",
-            "a": "Il lavoro locale implica un datore di lavoro thailandese e richiede obbligatoriamente un permesso di lavoro (Work Permit). Il lavoro a distanza (per un cliente/datore di lavoro straniero) è tollerato sotto <a href='/it/dtv' class='text-amber-600 font-medium hover:underline'>visto DTV</a> senza Work Permit."
+            "a": "Il lavoro locale implica un datore di lavoro thailandese e richiede obbligatoriamente un permesso di lavoro (Work Permit). Il lavoro a distanza (per un cliente/datore di lavoro straniero) è tollerato sotto <a href='/it/visto-destinazione-thailandia' class='text-amber-600 font-medium hover:underline'>visto DTV</a> senza Work Permit."
           },
           {
             "q": "Serve un permesso di lavoro per lavorare dalla Thailandia?",
-            "a": "Non con il <a href='/it/dtv' class='text-amber-600 font-medium hover:underline'>visto DTV</a> (per il lavoro a distanza). Per qualsiasi altro visto (Non-B), un permesso di lavoro (Work Permit) è strettamente obbligatorio."
+            "a": "Non con il <a href='/it/visto-destinazione-thailandia' class='text-amber-600 font-medium hover:underline'>visto DTV</a> (per il lavoro a distanza). Per qualsiasi altro visto (Non-B), un permesso di lavoro (Work Permit) è strettamente obbligatorio."
           },
           {
             "q": "Si può creare un'impresa in Thailandia con un visto?",
-            "a": "Puoi essere socio, ma per lavorarci attivamente o essere un amministratore firmatario, serve un <a href='/it/business-visa' class='text-amber-600 font-medium hover:underline'>visto Non-B</a> e un permesso di lavoro."
+            "a": "Puoi essere socio, ma per lavorarci attivamente o essere un amministratore firmatario, serve un <a href='/it/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>visto Non-B</a> e un permesso di lavoro."
           },
           {
             "q": "Quali visti permettono di lavorare legalmente in Thailandia?",
-            "a": "Il <a href='/it/business-visa' class='text-amber-600 font-medium hover:underline'>visto Non-B</a> (con Work Permit), il <a href='/it/ltr' class='text-amber-600 font-medium hover:underline'>visto LTR</a> (Work Permit digitale incluso), il <a href='/it/dtv' class='text-amber-600 font-medium hover:underline'>visto DTV</a> (solo telelavoro) e il visto Elite (se abbinato a una rara opzione di lavoro, altrimenti no)."
+            "a": "Il <a href='/it/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>visto Non-B</a> (con Work Permit), il <a href='/it/visto-residenza-lungo-termine' class='text-amber-600 font-medium hover:underline'>visto LTR</a> (Work Permit digitale incluso), il <a href='/it/visto-destinazione-thailandia' class='text-amber-600 font-medium hover:underline'>visto DTV</a> (solo telelavoro) e il visto Elite (se abbinato a una rara opzione di lavoro, altrimenti no)."
           },
           {
             "q": "Lavorare senza visto adatto: quali sono i rischi?",
@@ -1489,15 +1489,15 @@ export const it = {
         "questions": [
           {
             "q": "Quale visto per vivere in Thailandia dopo i 50 anni?",
-            "a": "Il <a href='/it/retirement-visa' class='text-amber-600 font-medium hover:underline'>visto Pensionati</a> (Non-O o O-A) è il più adatto se non lavori. L'LTR 'Wealthy Pensioner' è un'opzione VIP."
+            "a": "Il <a href='/it/visto-pensionati' class='text-amber-600 font-medium hover:underline'>visto Pensionati</a> (Non-O o O-A) è il più adatto se non lavori. L'LTR 'Wealthy Pensioner' è un'opzione VIP."
           },
           {
             "q": "Quale visto per vivere in Thailandia senza lavorare?",
-            "a": "Visto Elite (a pagamento, VIP), <a href='/it/retirement-visa' class='text-amber-600 font-medium hover:underline'>Visto Pensionati</a> (+50 anni), o <a href='/it/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a> (se hai redditi passivi o attività soft power, da confermare)."
+            "a": "Visto Elite (a pagamento, VIP), <a href='/it/visto-pensionati' class='text-amber-600 font-medium hover:underline'>Visto Pensionati</a> (+50 anni), o <a href='/it/visto-destinazione-thailandia' class='text-amber-600 font-medium hover:underline'>DTV</a> (se hai redditi passivi o attività soft power, da confermare)."
           },
           {
             "q": "Quale visto per restare a lungo in Thailandia senza uscire dal paese?",
-            "a": "Il <a href='/it/elite-visa' class='text-amber-600 font-medium hover:underline'>visto Elite</a> o il <a href='/it/retirement-visa' class='text-amber-600 font-medium hover:underline'>visto Pensionati</a> (con proroghe annuali sul posto) sono i migliori per evitare uscite obbligatorie."
+            "a": "Il <a href='/it/visto-elite-thailandia' class='text-amber-600 font-medium hover:underline'>visto Elite</a> o il <a href='/it/visto-pensionati' class='text-amber-600 font-medium hover:underline'>visto Pensionati</a> (con proroghe annuali sul posto) sono i migliori per evitare uscite obbligatorie."
           }
         ]
       }

@@ -1573,7 +1573,7 @@ export const de = {
           },
           {
             "q": "Welches Visum soll ich wählen, um länger als 90 Tage in Thailand zu bleiben?",
-            "a": "Für mehr als 90 Tage sollten Sie sich für ein Langzeitvisum entscheiden, wie das <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> (5 Jahre), das <a href='/de/ltr' class='text-amber-600 font-medium hover:underline'>LTR Visum</a> (10 Jahre) oder das <a href='/de/retirement-visa' class='text-amber-600 font-medium hover:underline'>Ruhestandsvisum</a> (Non-O). <a href='/de/tourist-visa' class='text-amber-600 font-medium hover:underline'>Touristenvisa</a> sind auf maximal 90 Tage (60+30) begrenzt."
+            "a": "Für mehr als 90 Tage sollten Sie sich für ein Langzeitvisum entscheiden, wie das <a href='/de/destination-thailand-visum' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> (5 Jahre), das <a href='/de/long-term-resident-visa' class='text-amber-600 font-medium hover:underline'>LTR Visum</a> (10 Jahre) oder das <a href='/de/ruhestandsvisum' class='text-amber-600 font-medium hover:underline'>Ruhestandsvisum</a> (Non-O). <a href='/de/touristenvisum' class='text-amber-600 font-medium hover:underline'>Touristenvisa</a> sind auf maximal 90 Tage (60+30) begrenzt."
           },
           {
             "q": "Kann man ohne Visum einreisen und vor Ort verlängern?",
@@ -1581,15 +1581,15 @@ export const de = {
           },
           {
             "q": "Kann man den Visumtyp in Thailand ändern?",
-            "a": "In einigen Fällen ja (z. B. Tourist zu Ruhestand), aber das ist weder automatisch noch garantiert. Bestimmte Umwandlungen, wie zum <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV Visum</a>, erfordern oft einen Neuantrag im Ausland."
+            "a": "In einigen Fällen ja (z. B. Tourist zu Ruhestand), aber das ist weder automatisch noch garantiert. Bestimmte Umwandlungen, wie zum <a href='/de/destination-thailand-visum' class='text-amber-600 font-medium hover:underline'>DTV Visum</a>, erfordern oft einen Neuantrag im Ausland."
           },
           {
             "q": "Was ist die maximale legale Aufenthaltsdauer in Thailand?",
-            "a": "Mit einem <a href='/de/elite-visa' class='text-amber-600 font-medium hover:underline'>Elite Visum</a> oder LTR können es bis zu 20 Jahre sein. Mit einem DTV sind es 180 Tage pro Einreise (verlängerbar). Mit einem Touristenvisum sind es maximal 90 Tage."
+            "a": "Mit einem <a href='/de/thailand-elite-visum' class='text-amber-600 font-medium hover:underline'>Elite Visum</a> oder LTR können es bis zu 20 Jahre sein. Mit einem DTV sind es 180 Tage pro Einreise (verlängerbar). Mit einem Touristenvisum sind es maximal 90 Tage."
           },
           {
             "q": "Wie oft kann man pro Jahr nach Thailand einreisen?",
-            "a": "Es gibt keine strikte schriftliche Grenze, aber die Einwanderungsbehörde überwacht wiederholte Einreisen (<a href='/de/visa-run' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). Mit einem Multi-Entry-Visum (<a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite) sind die Einreisen unbegrenzt."
+            "a": "Es gibt keine strikte schriftliche Grenze, aber die Einwanderungsbehörde überwacht wiederholte Einreisen (<a href='/de/thailand-visa-run-risiken' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). Mit einem Multi-Entry-Visum (<a href='/de/destination-thailand-visum' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite) sind die Einreisen unbegrenzt."
           },
           {
             "q": "Ändern sich die Visaregeln in Thailand oft?",
@@ -1602,27 +1602,27 @@ export const de = {
         "questions": [
           {
             "q": "Kann man mit einem Touristenvisum in Thailand arbeiten?",
-            "a": "Nein. Das <a href='/de/tourist-visa' class='text-amber-600 font-medium hover:underline'>Touristenvisum</a> erlaubt keinerlei berufliche Tätigkeit in Thailand, auch keine bezahlte Fernarbeit. Arbeiten mit einem Touristenvisum kann zu Strafen (Geldstrafe, Abschiebung) führen."
+            "a": "Nein. Das <a href='/de/touristenvisum' class='text-amber-600 font-medium hover:underline'>Touristenvisum</a> erlaubt keinerlei berufliche Tätigkeit in Thailand, auch keine bezahlte Fernarbeit. Arbeiten mit einem Touristenvisum kann zu Strafen (Geldstrafe, Abschiebung) führen."
           },
           {
             "q": "Ist Fernarbeit (Homeoffice) in Thailand erlaubt?",
-            "a": "Ja, aber nur mit bestimmten Visa wie dem <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> oder LTR. Die Fernarbeit muss für ein ausländisches Unternehmen ausgeübt werden, ohne lokale thailändische Geschäftstätigkeit."
+            "a": "Ja, aber nur mit bestimmten Visa wie dem <a href='/de/destination-thailand-visum' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> oder LTR. Die Fernarbeit muss für ein ausländisches Unternehmen ausgeübt werden, ohne lokale thailändische Geschäftstätigkeit."
           },
           {
             "q": "Was ist der Unterschied zwischen lokaler Arbeit und Fernarbeit?",
-            "a": "Lokale Arbeit beinhaltet einen thailändischen Arbeitgeber und erfordert zwingend eine Arbeitserlaubnis (Work Permit). Fernarbeit (für einen ausländischen Kunden/Arbeitgeber) wird unter dem <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> ohne Arbeitserlaubnis toleriert."
+            "a": "Lokale Arbeit beinhaltet einen thailändischen Arbeitgeber und erfordert zwingend eine Arbeitserlaubnis (Work Permit). Fernarbeit (für einen ausländischen Kunden/Arbeitgeber) wird unter dem <a href='/de/destination-thailand-visum' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> ohne Arbeitserlaubnis toleriert."
           },
           {
             "q": "Brauche ich eine Arbeitserlaubnis, um von Thailand aus zu arbeiten?",
-            "a": "Nicht mit dem <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> (für Fernarbeit). Für jedes andere Visum (Non-B) ist eine Arbeitserlaubnis (Work Permit) strikt obligatorisch."
+            "a": "Nicht mit dem <a href='/de/destination-thailand-visum' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> (für Fernarbeit). Für jedes andere Visum (Non-B) ist eine Arbeitserlaubnis (Work Permit) strikt obligatorisch."
           },
           {
             "q": "Kann man mit einem Visum in Thailand ein Unternehmen gründen?",
-            "a": "Sie können Gesellschafter sein, aber um dort aktiv zu arbeiten oder zeichnungsberechtigter Direktor zu sein, benötigen Sie ein <a href='/de/business-visa' class='text-amber-600 font-medium hover:underline'>Non-B Visum</a> und eine Arbeitserlaubnis."
+            "a": "Sie können Gesellschafter sein, aber um dort aktiv zu arbeiten oder zeichnungsberechtigter Direktor zu sein, benötigen Sie ein <a href='/de/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>Non-B Visum</a> und eine Arbeitserlaubnis."
           },
           {
             "q": "Welche Visa ermöglichen es, legal in Thailand zu arbeiten?",
-            "a": "Das <a href='/de/business-visa' class='text-amber-600 font-medium hover:underline'>Non-B Visum</a> (mit Work Permit), das <a href='/de/ltr' class='text-amber-600 font-medium hover:underline'>LTR Visum</a> (digitale Arbeitserlaubnis enthalten), das <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> (nur Fernarbeit) und das Elite-Visum (falls mit einer seltenen Arbeitsoption gekoppelt, sonst nicht)."
+            "a": "Das <a href='/de/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>Non-B Visum</a> (mit Work Permit), das <a href='/de/long-term-resident-visa' class='text-amber-600 font-medium hover:underline'>LTR Visum</a> (digitale Arbeitserlaubnis enthalten), das <a href='/de/destination-thailand-visum' class='text-amber-600 font-medium hover:underline'>DTV Visum</a> (nur Fernarbeit) und das Elite-Visum (falls mit einer seltenen Arbeitsoption gekoppelt, sonst nicht)."
           },
           {
             "q": "Arbeiten ohne passendes Visum: Was sind die Risiken?",
@@ -1693,15 +1693,15 @@ export const de = {
         "questions": [
           {
             "q": "Welches Visum für das Leben in Thailand ab 50?",
-            "a": "Das <a href='/de/retirement-visa' class='text-amber-600 font-medium hover:underline'>Ruhestandsvisum</a> (Non-O oder O-A) ist am besten geeignet, wenn Sie nicht arbeiten. Das LTR 'Wealthy Pensioner' ist eine VIP-Option."
+            "a": "Das <a href='/de/ruhestandsvisum' class='text-amber-600 font-medium hover:underline'>Ruhestandsvisum</a> (Non-O oder O-A) ist am besten geeignet, wenn Sie nicht arbeiten. Das LTR 'Wealthy Pensioner' ist eine VIP-Option."
           },
           {
             "q": "Welches Visum für das Leben in Thailand ohne zu arbeiten?",
-            "a": "Elite Visum (kostenpflichtig, VIP), <a href='/de/retirement-visa' class='text-amber-600 font-medium hover:underline'>Ruhestandsvisum</a> (+50 Jahre) oder <a href='/de/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a> (falls Sie passives Einkommen oder Soft-Power-Aktivitäten haben, zu bestätigen)."
+            "a": "Elite Visum (kostenpflichtig, VIP), <a href='/de/ruhestandsvisum' class='text-amber-600 font-medium hover:underline'>Ruhestandsvisum</a> (+50 Jahre) oder <a href='/de/destination-thailand-visum' class='text-amber-600 font-medium hover:underline'>DTV</a> (falls Sie passives Einkommen oder Soft-Power-Aktivitäten haben, zu bestätigen)."
           },
           {
             "q": "Welches Visum für einen langen Aufenthalt in Thailand ohne Ausreise?",
-            "a": "Das <a href='/de/elite-visa' class='text-amber-600 font-medium hover:underline'>Elite Visum</a> oder das <a href='/de/retirement-visa' class='text-amber-600 font-medium hover:underline'>Ruhestandsvisum</a> (mit jährlichen Verlängerungen vor Ort) sind am besten geeignet, um obligatorische Ausreisen zu vermeiden."
+            "a": "Das <a href='/de/thailand-elite-visum' class='text-amber-600 font-medium hover:underline'>Elite Visum</a> oder das <a href='/de/ruhestandsvisum' class='text-amber-600 font-medium hover:underline'>Ruhestandsvisum</a> (mit jährlichen Verlängerungen vor Ort) sind am besten geeignet, um obligatorische Ausreisen zu vermeiden."
           }
         ]
       }

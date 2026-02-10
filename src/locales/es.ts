@@ -1526,7 +1526,7 @@ export const es = {
           },
           {
             "q": "¿Qué visa elegir para quedarse más de 90 días en Tailandia?",
-            "a": "Para más de 90 días, debe optar por una visa de larga estancia como la <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> (5 años), la <a href='/es/ltr' class='text-amber-600 font-medium hover:underline'>Visa LTR</a> (10 años) o la <a href='/es/retirement-visa' class='text-amber-600 font-medium hover:underline'>Visa de Jubilación</a> (Non-O). Las <a href='/es/tourist-visa' class='text-amber-600 font-medium hover:underline'>visas turísticas</a> están limitadas a un máximo de 90 días (60+30)."
+            "a": "Para más de 90 días, debe optar por una visa de larga estancia como la <a href='/es/visado-destino-tailandia' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> (5 años), la <a href='/es/visado-residencia-larga-duracion' class='text-amber-600 font-medium hover:underline'>Visa LTR</a> (10 años) o la <a href='/es/visado-jubilacion' class='text-amber-600 font-medium hover:underline'>Visa de Jubilación</a> (Non-O). Las <a href='/es/visado-turista' class='text-amber-600 font-medium hover:underline'>visas turísticas</a> están limitadas a un máximo de 90 días (60+30)."
           },
           {
             "q": "¿Se puede entrar en Tailandia sin visa y prorrogar en el lugar?",
@@ -1534,15 +1534,15 @@ export const es = {
           },
           {
             "q": "¿Se puede cambiar de tipo de visa una vez en Tailandia?",
-            "a": "En algunos casos, sí (ej: Turística a Jubilación), pero no es automático ni está garantizado. Algunas conversiones como hacia una <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> a menudo requieren una nueva solicitud desde el exterior del país."
+            "a": "En algunos casos, sí (ej: Turística a Jubilación), pero no es automático ni está garantizado. Algunas conversiones como hacia una <a href='/es/visado-destino-tailandia' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> a menudo requieren una nueva solicitud desde el exterior del país."
           },
           {
             "q": "¿Cuál es la duración máxima de estancia legal en Tailandia?",
-            "a": "Con una <a href='/es/elite-visa' class='text-amber-600 font-medium hover:underline'>Visa Elite</a> o LTR, puede durar hasta 20 años. Con una DTV, son 180 días por entrada (prorrogable). Con una visa de turista, son 90 días máximo."
+            "a": "Con una <a href='/es/visado-elite-tailandia' class='text-amber-600 font-medium hover:underline'>Visa Elite</a> o LTR, puede durar hasta 20 años. Con una DTV, son 180 días por entrada (prorrogable). Con una visa de turista, son 90 días máximo."
           },
           {
             "q": "¿Cuántas veces se puede entrar en Tailandia al año?",
-            "a": "No hay un límite escrito estricto, pero inmigración vigila las entradas repetidas (<a href='/es/visa-run' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). Con una visa Multi-Entry (<a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite), las entradas son ilimitadas."
+            "a": "No hay un límite escrito estricto, pero inmigración vigila las entradas repetidas (<a href='/es/riesgos-visa-run-tailandia' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). Con una visa Multi-Entry (<a href='/es/visado-destino-tailandia' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite), las entradas son ilimitadas."
           },
           {
             "q": "¿Cambian las reglas de visa a menudo en Tailandia?",
@@ -1555,27 +1555,27 @@ export const es = {
         "questions": [
           {
             "q": "¿Se puede trabajar en Tailandia con una visa turística?",
-            "a": "No. La <a href='/es/tourist-visa' class='text-amber-600 font-medium hover:underline'>visa turística</a> no autoriza ninguna actividad profesional en Tailandia, incluido el teletrabajo remunerado. Trabajar con una visa turística expone a sanciones (multa, expulsión)."
+            "a": "No. La <a href='/es/visado-turista' class='text-amber-600 font-medium hover:underline'>visa turística</a> no autoriza ninguna actividad profesional en Tailandia, incluido el teletrabajo remunerado. Trabajar con una visa turística expone a sanciones (multa, expulsión)."
           },
           {
             "q": "¿Está permitido el teletrabajo en Tailandia?",
-            "a": "Sí, únicamente con ciertas visas adaptadas, como la <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> o la LTR. El teletrabajo debe ejercerse para una entidad extranjera, sin actividad local competente."
+            "a": "Sí, únicamente con ciertas visas adaptadas, como la <a href='/es/visado-destino-tailandia' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> o la LTR. El teletrabajo debe ejercerse para una entidad extranjera, sin actividad local competente."
           },
           {
             "q": "¿Cuál es la diferencia entre trabajo local y trabajo a distancia?",
-            "a": "El trabajo local implica un empleador tailandés y requiere obligatoriamente un permiso de trabajo (Work Permit). El trabajo a distancia (para un cliente/empleador extranjero) se tolera bajo <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>visa DTV</a> sin permiso de trabajo."
+            "a": "El trabajo local implica un empleador tailandés y requiere obligatoriamente un permiso de trabajo (Work Permit). El trabajo a distancia (para un cliente/empleador extranjero) se tolera bajo <a href='/es/visado-destino-tailandia' class='text-amber-600 font-medium hover:underline'>visa DTV</a> sin permiso de trabajo."
           },
           {
             "q": "¿Hace falta un permiso de trabajo para trabajar desde Tailandia?",
-            "a": "No con la <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>visa DTV</a> (para el trabajo a distancia). Para cualquier otra visa (Non-B), un permiso de trabajo (Work Permit) es estrictamente obligatorio."
+            "a": "No con la <a href='/es/visado-destino-tailandia' class='text-amber-600 font-medium hover:underline'>visa DTV</a> (para el trabajo a distancia). Para cualquier otra visa (Non-B), un permiso de trabajo (Work Permit) es estrictamente obligatorio."
           },
           {
             "q": "¿Se puede crear una empresa en Tailandia con una visa?",
-            "a": "Puede ser accionista, pero para trabajar allí activamente o ser director firmante, necesita una <a href='/es/business-visa' class='text-amber-600 font-medium hover:underline'>visa Non-B</a> y un permiso de trabajo."
+            "a": "Puede ser accionista, pero para trabajar allí activamente o ser director firmante, necesita una <a href='/es/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>visa Non-B</a> y un permiso de trabajo."
           },
           {
             "q": "¿Qué visas permiten trabajar legalmente en Tailandia?",
-            "a": "La <a href='/es/business-visa' class='text-amber-600 font-medium hover:underline'>visa Non-B</a> (con Work Permit), la <a href='/es/ltr' class='text-amber-600 font-medium hover:underline'>visa LTR</a> (permiso de trabajo digital incluido), la <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>visa DTV</a> (solo teletrabajo) y la visa Elite (si se combina con una opción de trabajo rara, si no, no)."
+            "a": "La <a href='/es/thailand-business-visa' class='text-amber-600 font-medium hover:underline'>visa Non-B</a> (con Work Permit), la <a href='/es/visado-residencia-larga-duracion' class='text-amber-600 font-medium hover:underline'>visa LTR</a> (permiso de trabajo digital incluido), la <a href='/es/visado-destino-tailandia' class='text-amber-600 font-medium hover:underline'>visa DTV</a> (solo teletrabajo) y la visa Elite (si se combina con una opción de trabajo rara, si no, no)."
           },
           {
             "q": "Trabajar sin visa adaptada: ¿cuáles son los riesgos?",
@@ -1646,15 +1646,15 @@ export const es = {
         "questions": [
           {
             "q": "¿Qué visa para vivir en Tailandia después de los 50 años?",
-            "a": "La <a href='/es/retirement-visa' class='text-amber-600 font-medium hover:underline'>visa de Jubilación</a> (Non-O o O-A) es la más adecuada si no trabaja. El LTR 'Wealthy Pensioner' es una opción VIP."
+            "a": "La <a href='/es/visado-jubilacion' class='text-amber-600 font-medium hover:underline'>visa de Jubilación</a> (Non-O o O-A) es la más adecuada si no trabaja. El LTR 'Wealthy Pensioner' es una opción VIP."
           },
           {
             "q": "¿Qué visa para vivir en Tailandia sin trabajar?",
-            "a": "Visa Elite (de pago, VIP), <a href='/es/retirement-visa' class='text-amber-600 font-medium hover:underline'>Visa de Jubilación</a> (+50 años), o <a href='/es/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a> (si tiene ingresos pasivos o actividad soft power, a confirmar)."
+            "a": "Visa Elite (de pago, VIP), <a href='/es/visado-jubilacion' class='text-amber-600 font-medium hover:underline'>Visa de Jubilación</a> (+50 años), o <a href='/es/visado-destino-tailandia' class='text-amber-600 font-medium hover:underline'>DTV</a> (si tiene ingresos pasivos o actividad soft power, a confirmar)."
           },
           {
             "q": "¿Qué visa para quedarse mucho tiempo en Tailandia sin salir del país?",
-            "a": "La <a href='/es/elite-visa' class='text-amber-600 font-medium hover:underline'>visa Elite</a> o la <a href='/es/retirement-visa' class='text-amber-600 font-medium hover:underline'>visa de Jubilación</a> (con prórrogas anuales en el lugar) son las mejores para evitar salidas obligatorias."
+            "a": "La <a href='/es/visado-elite-tailandia' class='text-amber-600 font-medium hover:underline'>visa Elite</a> o la <a href='/es/visado-jubilacion' class='text-amber-600 font-medium hover:underline'>visa de Jubilación</a> (con prórrogas anuales en el lugar) son las mejores para evitar salidas obligatorias."
           }
         ]
       }

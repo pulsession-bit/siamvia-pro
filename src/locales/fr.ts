@@ -1531,7 +1531,7 @@ export const fr = {
           },
           {
             "q": "Quel visa choisir pour rester plus de 90 jours en Thaïlande ?",
-            "a": "Pour plus de 90 jours, vous devez opter pour un visa long séjour comme le <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> (5 ans), le <a href='/fr/ltr' class='text-amber-600 font-medium hover:underline'>Visa LTR</a> (10 ans) ou le <a href='/fr/retirement-visa' class='text-amber-600 font-medium hover:underline'>Visa Retraite</a> (Non-O). Les <a href='/fr/tourist-visa' class='text-amber-600 font-medium hover:underline'>visas touristiques</a> sont limités à 90 jours maximum (60+30)."
+            "a": "Pour plus de 90 jours, vous devez opter pour un visa long séjour comme le <a href='/fr/visa-dtv-thailande' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> (5 ans), le <a href='/fr/visa-ltr-thailande' class='text-amber-600 font-medium hover:underline'>Visa LTR</a> (10 ans) ou le <a href='/fr/visa-retraite-thailande' class='text-amber-600 font-medium hover:underline'>Visa Retraite</a> (Non-O). Les <a href='/fr/visa-touristique-thailande' class='text-amber-600 font-medium hover:underline'>visas touristiques</a> sont limités à 90 jours maximum (60+30)."
           },
           {
             "q": "Peut-on entrer en Thaïlande sans visa et prolonger sur place ?",
@@ -1539,15 +1539,15 @@ export const fr = {
           },
           {
             "q": "Peut-on changer de type de visa une fois en Thaïlande ?",
-            "a": "Dans certains cas, oui (ex: Touristique vers Retraite), mais ce n’est ni automatique ni garanti. Certaines conversions comme vers un <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> exigent souvent une nouvelle demande depuis l'extérieur du pays."
+            "a": "Dans certains cas, oui (ex: Touristique vers Retraite), mais ce n’est ni automatique ni garanti. Certaines conversions comme vers un <a href='/fr/visa-dtv-thailande' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> exigent souvent une nouvelle demande depuis l'extérieur du pays."
           },
           {
             "q": "Quelle est la durée maximale de séjour légal en Thaïlande ?",
-            "a": "Avec un <a href='/fr/elite-visa' class='text-amber-600 font-medium hover:underline'>Visa Elite</a> ou LTR, cela peut aller jusqu'à 20 ans. Avec un DTV, c'est 180 jours par entrée (extensible). Avec un visa touriste, c'est 90 jours maximum."
+            "a": "Avec un <a href='/fr/visa-elite-thailande' class='text-amber-600 font-medium hover:underline'>Visa Elite</a> ou LTR, cela peut aller jusqu'à 20 ans. Avec un DTV, c'est 180 jours par entrée (extensible). Avec un visa touriste, c'est 90 jours maximum."
           },
           {
             "q": "Combien de fois peut-on entrer en Thaïlande par an ?",
-            "a": "Il n'y a pas de limite écrite stricte, mais l'immigration surveille les entrées répétées (<a href='/fr/visa-run' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). Avec un visa Multi-Entry (<a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite), les entrées sont illimitées."
+            "a": "Il n'y a pas de limite écrite stricte, mais l'immigration surveille les entrées répétées (<a href='/fr/risques-visa-run-thailande' class='text-amber-600 font-medium hover:underline'>Visa Run</a>). Avec un visa Multi-Entry (<a href='/fr/visa-dtv-thailande' class='text-amber-600 font-medium hover:underline'>DTV</a>, Elite), les entrées sont illimitées."
           },
           {
             "q": "Les règles de visa changent-elles souvent en Thaïlande ?",
@@ -1560,27 +1560,27 @@ export const fr = {
         "questions": [
           {
             "q": "Peut-on travailler en Thaïlande avec un visa touristique ?",
-            "a": "Non. Le <a href='/fr/tourist-visa' class='text-amber-600 font-medium hover:underline'>visa touristique</a> n’autorise aucune activité professionnelle en Thaïlande, y compris le télétravail rémunéré. Travailler avec un visa touristique expose à des sanctions (amende, expulsion)."
+            "a": "Non. Le <a href='/fr/visa-touristique-thailande' class='text-amber-600 font-medium hover:underline'>visa touristique</a> n’autorise aucune activité professionnelle en Thaïlande, y compris le télétravail rémunéré. Travailler avec un visa touristique expose à des sanctions (amende, expulsion)."
           },
           {
             "q": "Le télétravail est-il autorisé en Thaïlande ?",
-            "a": "Oui, uniquement avec certains visas adaptés, comme le <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> ou le LTR. Le télétravail doit être exercé pour une entité étrangère, sans activité locale concurrente."
+            "a": "Oui, uniquement avec certains visas adaptés, comme le <a href='/fr/visa-dtv-thailande' class='text-amber-600 font-medium hover:underline'>Visa DTV</a> ou le LTR. Le télétravail doit être exercé pour une entité étrangère, sans activité locale concurrente."
           },
           {
             "q": "Quelle est la différence entre travail local et travail à distance ?",
-            "a": "Le travail local implique un employeur thaïlandais et nécessite obligatoirement un Work Permit. Le travail à distance (pour un client/employeur étranger) est toléré sous <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>visa DTV</a> sans Work Permit."
+            "a": "Le travail local implique un employeur thaïlandais et nécessite obligatoirement un Work Permit. Le travail à distance (pour un client/employeur étranger) est toléré sous <a href='/fr/visa-dtv-thailande' class='text-amber-600 font-medium hover:underline'>visa DTV</a> sans Work Permit."
           },
           {
             "q": "Faut-il un permis de travail pour travailler depuis la Thaïlande ?",
-            "a": "Pas avec le <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>visa DTV</a> (pour le travail à distance). Pour tout autre visa (Non-B), un permis de travail (Work Permit) est strictement obligatoire."
+            "a": "Pas avec le <a href='/fr/visa-dtv-thailande' class='text-amber-600 font-medium hover:underline'>visa DTV</a> (pour le travail à distance). Pour tout autre visa (Non-B), un permis de travail (Work Permit) est strictement obligatoire."
           },
           {
             "q": "Peut-on créer une entreprise en Thaïlande avec un visa ?",
-            "a": "Vous pouvez être actionnaire, mais pour y travailler activement ou être directeur signataire, il vous faut un <a href='/fr/business-visa' class='text-amber-600 font-medium hover:underline'>visa Non-B</a> et un permis de travail."
+            "a": "Vous pouvez être actionnaire, mais pour y travailler activement ou être directeur signataire, il vous faut un <a href='/fr/visa-business-thailande' class='text-amber-600 font-medium hover:underline'>visa Non-B</a> et un permis de travail."
           },
           {
             "q": "Quels visas permettent de travailler légalement en Thaïlande ?",
-            "a": "Le <a href='/fr/business-visa' class='text-amber-600 font-medium hover:underline'>visa Non-B</a> (avec Work Permit), le <a href='/fr/ltr' class='text-amber-600 font-medium hover:underline'>visa LTR</a> (Work Permit numérique inclus), le <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>visa DTV</a> (télétravail uniquement), et le visa Elite (si couplé à une option travail rare, sinon non)."
+            "a": "Le <a href='/fr/visa-business-thailande' class='text-amber-600 font-medium hover:underline'>visa Non-B</a> (avec Work Permit), le <a href='/fr/visa-ltr-thailande' class='text-amber-600 font-medium hover:underline'>visa LTR</a> (Work Permit numérique inclus), le <a href='/fr/visa-dtv-thailande' class='text-amber-600 font-medium hover:underline'>visa DTV</a> (télétravail uniquement), et le visa Elite (si couplé à une option travail rare, sinon non)."
           },
           {
             "q": "Travailler sans visa adapté : quels sont les risques ?",
@@ -1651,15 +1651,15 @@ export const fr = {
         "questions": [
           {
             "q": "Quel visa pour vivre en Thaïlande après 50 ans ?",
-            "a": "Le <a href='/fr/retirement-visa' class='text-amber-600 font-medium hover:underline'>visa Retraite</a> (Non-O ou O-A) est le plus adapté si vous ne travaillez pas. Le LTR 'Wealthy Pensioner' est une option VIP."
+            "a": "Le <a href='/fr/visa-retraite-thailande' class='text-amber-600 font-medium hover:underline'>visa Retraite</a> (Non-O ou O-A) est le plus adapté si vous ne travaillez pas. Le LTR 'Wealthy Pensioner' est une option VIP."
           },
           {
             "q": "Quel visa pour vivre en Thaïlande sans travailler ?",
-            "a": "Visa Elite (payant, VIP), <a href='/fr/retirement-visa' class='text-amber-600 font-medium hover:underline'>Visa Retraite</a> (+50 ans), ou <a href='/fr/dtv' class='text-amber-600 font-medium hover:underline'>DTV</a> (si vous avez des revenus passifs ou activité soft power, à confirmer)."
+            "a": "Visa Elite (payant, VIP), <a href='/fr/visa-retraite-thailande' class='text-amber-600 font-medium hover:underline'>Visa Retraite</a> (+50 ans), ou <a href='/fr/visa-dtv-thailande' class='text-amber-600 font-medium hover:underline'>DTV</a> (si vous avez des revenus passifs ou activité soft power, à confirmer)."
           },
           {
             "q": "Quel visa pour rester longtemps en Thaïlande sans sortir du pays ?",
-            "a": "Le <a href='/fr/elite-visa' class='text-amber-600 font-medium hover:underline'>visa Elite</a> ou le <a href='/fr/retirement-visa' class='text-amber-600 font-medium hover:underline'>visa Retraite</a> (avec extensions annuelles sur place) sont les meilleurs pour éviter les sorties obligatoires."
+            "a": "Le <a href='/fr/visa-elite-thailande' class='text-amber-600 font-medium hover:underline'>visa Elite</a> ou le <a href='/fr/visa-retraite-thailande' class='text-amber-600 font-medium hover:underline'>visa Retraite</a> (avec extensions annuelles sur place) sont les meilleurs pour éviter les sorties obligatoires."
           }
         ]
       }
