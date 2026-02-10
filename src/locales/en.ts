@@ -117,6 +117,38 @@ export const en = {
       "card_item4": "Privileged Tax Residency"
     }
   },
+  "ai_block": {
+    "badge": "Proprietary AI Technologies",
+    "title": "Expertise enhanced by ",
+    "title_highlight": "Artificial Intelligence",
+    "subtitle": "Siam Visa Pro combines human expertise with cutting-edge AI to analyze your documents, score your eligibility, and guide you in real time — a first in the immigration industry.",
+    "score_badge": "Scoring Engine",
+    "score_title": "AI Visa Score",
+    "score_desc": "Our AI algorithm analyzes your profile, documents, and situation to generate an eligibility score out of 100. Identify your strengths and fix weaknesses before submission.",
+    "score_label": "Strong Case — Ready for submission",
+    "score_feat1": "Intelligent document analysis",
+    "score_feat2": "Refusal risk detection",
+    "score_feat3": "Personalized recommendations",
+    "agent_badge": "AI Voice Agent",
+    "agent_title": "Talk to an AI Expert (Live)",
+    "agent_desc": "Call our AI agent powered by Gemini 2.5 in one click. It knows every visa type, every condition, every exception. Ask your questions in English or French, in real time.",
+    "agent_preview": "\"Hello! To guide you, what is the purpose of your stay and how long do you plan to stay in Thailand?\"",
+    "agent_feat1": "Real-time voice call",
+    "agent_feat2": "Specialist in all Thai visas",
+    "agent_feat3": "Available 24/7, multilingual",
+    "synth_badge": "Synthesis & Action Plan",
+    "synth_title": "Complete Audit Report",
+    "synth_desc": "After the analysis, the AI generates a detailed report: strengths, areas of concern, recommended visa, and a step-by-step action plan to maximize your chances.",
+    "synth_plan": "Recommended Action Plan",
+    "synth_step1": "Careful review of documents",
+    "synth_step2": "Visa application submission",
+    "synth_step3": "Tracking and monitoring your E-Visa",
+    "synth_feat1": "Exportable PDF report",
+    "synth_feat2": "Visa automatically targeted",
+    "synth_feat3": "Key documents checklist",
+    "cta": "Start my Free AI Audit",
+    "cta_sub": "Instant results — No commitment"
+  },
   "meta": {
     "title": "Siam Visa Pro | Thailand Visa Expert - DTV, Tourist & Retirement",
     "description": "Get your Thai visa stress-free. Experts in DTV, Tourist and Retirement visas. Global support and optimized Portfolio."
@@ -1669,6 +1701,35 @@ export const en = {
           {
             "q": "Which visa to stay long in Thailand without leaving the country?",
             "a": "The Elite visa or Retirement visa (with annual extensions on site) are best to avoid mandatory exits."
+          }
+        ]
+      },
+      {
+        "title": "Artificial Intelligence & Technology",
+        "questions": [
+          {
+            "q": "How does Siam Visa Pro's AI Visa Score work?",
+            "a": "Our AI scoring engine analyzes your complete profile (nationality, employment, documents provided, travel history) and generates an eligibility score out of 100. It identifies your strengths, detects refusal risks, and proposes a personalized action plan. The analysis is instant and free."
+          },
+          {
+            "q": "What is the AI Expert Agent (live voice call)?",
+            "a": "Our AI Agent is a voice assistant powered by Google's Gemini 2.5, specialized in Thai immigration. With one click, you start a real-time voice call with an AI expert who knows every visa type, condition, and exception. It responds in English and French, 24/7."
+          },
+          {
+            "q": "Does AI replace human consultants?",
+            "a": "No. Our approach is a hybrid model. AI pre-analyzes your case, scores your eligibility, and generates an initial report. Then our human experts validate, adjust, and manage the embassy submission. You get the best of both worlds: AI speed + human judgment."
+          },
+          {
+            "q": "Is the AI Audit Report reliable?",
+            "a": "Yes. Our AI is trained on official rules from the Thai Ministry of Foreign Affairs and continuously updated. The report includes strengths, areas of concern, recommended visa, and an action plan. However, it is then validated by a human expert to ensure relevance."
+          },
+          {
+            "q": "Is the AI audit free?",
+            "a": "Yes, the initial audit and AI score are completely free with no commitment. You instantly receive your score /100, your synthesis, and your action plan. Assistance services (portfolio, embassy submission) are paid but optional."
+          },
+          {
+            "q": "What AI technologies do you use?",
+            "a": "We use Google's Gemini 2.5 for our live voice agent, a proprietary scoring engine for document analysis, and natural language processing models for understanding applications in multiple languages. Everything is hosted on secure GDPR-compliant servers."
           }
         ]
       }

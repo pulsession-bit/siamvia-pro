@@ -338,6 +338,38 @@ export const fr = {
       "ltr_desc": "Pour les profils fortunés et talentueux."
     }
   },
+  "ai_block": {
+    "badge": "Technologies IA Propriétaires",
+    "title": "Une expertise augmentée par l'",
+    "title_highlight": "Intelligence Artificielle",
+    "subtitle": "Siam Visa Pro combine expertise humaine et IA de pointe pour analyser votre dossier, scorer votre éligibilité et vous guider en temps réel — une première dans le secteur de l'immigration.",
+    "score_badge": "Moteur de Scoring",
+    "score_title": "Visa Score IA",
+    "score_desc": "Notre algorithme IA analyse votre profil, vos documents et votre situation pour générer un score d'éligibilité sur 100. Identifiez vos points forts et corrigez vos faiblesses avant le dépôt.",
+    "score_label": "Dossier Solide — Prêt pour soumission",
+    "score_feat1": "Analyse documentaire intelligente",
+    "score_feat2": "Détection des risques de refus",
+    "score_feat3": "Recommandations personnalisées",
+    "agent_badge": "Agent Vocal IA",
+    "agent_title": "Parler à un Expert IA (Live)",
+    "agent_desc": "Appelez notre agent IA propulsé par Gemini 2.5 en un clic. Il connaît chaque type de visa, chaque condition, chaque exception. Posez vos questions en français ou en anglais, en temps réel.",
+    "agent_preview": "« Bonjour ! Pour vous orienter, quel est le motif de votre séjour et combien de temps prévoyez-vous de rester en Thaïlande ? »",
+    "agent_feat1": "Appel vocal en temps réel",
+    "agent_feat2": "Spécialiste de tous les visas thaïlandais",
+    "agent_feat3": "Disponible 24h/24, multilingue",
+    "synth_badge": "Synthèse & Plan d'Action",
+    "synth_title": "Rapport d'Audit Complet",
+    "synth_desc": "À l'issue de l'analyse, l'IA génère un rapport détaillé : points forts, points d'attention, visa recommandé et plan d'action étape par étape pour maximiser vos chances.",
+    "synth_plan": "Plan d'Action Recommandé",
+    "synth_step1": "Relecture attentive des documents",
+    "synth_step2": "Soumission de la demande de visa",
+    "synth_step3": "Suivi et tracking de votre E-Visa",
+    "synth_feat1": "Rapport PDF exportable",
+    "synth_feat2": "Visa ciblé automatiquement",
+    "synth_feat3": "Documents clés à préparer listés",
+    "cta": "Démarrer mon Audit IA Gratuit",
+    "cta_sub": "Résultat instantané — Aucun engagement"
+  },
   "meta": {
     "title": "Siam Visa Pro | Expert Visa Thaïlande - DTV, Tourisme & Retraite",
     "description": "Obtenez votre visa pour la Thaïlande sans stress. Experts en Visa DTV, Touristique et Retraite. Accompagnement complet, Portfolio optimisé et suivi E-Visa."
@@ -1660,6 +1692,35 @@ export const fr = {
           {
             "q": "Quel visa pour rester longtemps en Thaïlande sans sortir du pays ?",
             "a": "Le <a href='/fr/visa-elite-thailande' class='text-amber-600 font-medium hover:underline'>visa Elite</a> ou le <a href='/fr/visa-retraite-thailande' class='text-amber-600 font-medium hover:underline'>visa Retraite</a> (avec extensions annuelles sur place) sont les meilleurs pour éviter les sorties obligatoires."
+          }
+        ]
+      },
+      {
+        "title": "Intelligence Artificielle & Technologie",
+        "questions": [
+          {
+            "q": "Comment fonctionne le Visa Score IA de Siam Visa Pro ?",
+            "a": "Notre moteur de scoring IA analyse votre profil complet (nationalité, situation professionnelle, documents fournis, historique de voyage) et génère un score d'éligibilité sur 100. Il identifie vos points forts, détecte les risques de refus et propose un plan d'action personnalisé. L'analyse est instantanée et gratuite."
+          },
+          {
+            "q": "Qu'est-ce que l'Agent IA Expert (appel vocal live) ?",
+            "a": "Notre Agent IA est un assistant vocal propulsé par Gemini 2.5 de Google, spécialisé dans l'immigration thaïlandaise. En un clic, vous lancez un appel vocal en temps réel avec un expert IA qui connaît tous les types de visas, conditions et exceptions. Il répond en français et en anglais, 24h/24."
+          },
+          {
+            "q": "L'IA remplace-t-elle les consultants humains ?",
+            "a": "Non. Notre approche est un modèle hybride. L'IA pré-analyse votre dossier, score votre éligibilité et génère un rapport initial. Ensuite, nos experts humains valident, ajustent et gèrent le dépôt auprès de l'ambassade. Vous bénéficiez du meilleur des deux mondes : rapidité de l'IA + jugement humain."
+          },
+          {
+            "q": "Le rapport d'Audit IA est-il fiable ?",
+            "a": "Oui. Notre IA est entraînée sur les règles officielles du Ministère des Affaires Étrangères thaïlandais et mise à jour en continu. Le rapport inclut les points forts, points d'attention, le visa recommandé et un plan d'action. Toutefois, il est ensuite validé par un expert humain pour garantir sa pertinence."
+          },
+          {
+            "q": "L'audit IA est-il gratuit ?",
+            "a": "Oui, l'audit initial et le score IA sont entièrement gratuits et sans engagement. Vous recevez instantanément votre score /100, votre synthèse et votre plan d'action. Les services d'accompagnement (portfolio, dépôt ambassade) sont payants mais optionnels."
+          },
+          {
+            "q": "Quelles technologies d'IA utilisez-vous ?",
+            "a": "Nous utilisons Gemini 2.5 de Google pour notre agent vocal live, un moteur de scoring propriétaire pour l'analyse documentaire, et des modèles de traitement du langage naturel pour la compréhension des dossiers en plusieurs langues. Tout est hébergé sur des serveurs sécurisés conformes au RGPD."
           }
         ]
       }

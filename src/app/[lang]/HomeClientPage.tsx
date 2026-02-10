@@ -7,6 +7,7 @@ import { useLangPath } from '@/hooks/useLang';
 import { HomeHero } from './home/components/HomeHero';
 import { HomeSpotlight } from './home/components/HomeSpotlight';
 import { HomeVisas } from './home/components/HomeVisas';
+import { HomeAIBlock } from './home/components/HomeAIBlock';
 import { HomeCTA } from './home/components/HomeCTA';
 
 const LoadingState = () => {
@@ -43,6 +44,13 @@ const HomeClientPage: React.FC = () => {
             <HomeVisas
                 t={t}
                 langPath={langPath}
+            />
+
+            {/* 3.5. AI Technology Block */}
+            <HomeAIBlock
+                t={t}
+                langPath={langPath}
+                SCORING_ENGINE_URL={SCORING_ENGINE_URL}
             />
 
             {/* 4. Appointment Form Section */}
