@@ -26,7 +26,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'official-visa': 'visa-officiel-thailande',
     'scientific-visa': 'visa-scientifique-thailande',
     apply: 'demande-de-visa',
-    about: 'a-propos'
+    about: 'a-propos',
+    'ai-technology': 'technologie-ia-visa'
   },
   en: {
     dtv: 'thailand-dtv-visa',
@@ -53,7 +54,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'official-visa': 'thailand-official-visa',
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply-visa',
-    about: 'about-us'
+    about: 'about-us',
+    'ai-technology': 'ai-visa-technology'
   },
   de: {
     dtv: 'destination-thailand-visum',
@@ -80,7 +82,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'official-visa': 'thailand-official-visa',
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply-visa',
-    about: 'ueber-uns'
+    about: 'ueber-uns',
+    'ai-technology': 'ki-visum-technologie'
   },
   es: {
     dtv: 'visado-destino-tailandia',
@@ -107,7 +110,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'official-visa': 'thailand-official-visa',
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'solicitar-visa',
-    about: 'sobre-nosotros'
+    about: 'sobre-nosotros',
+    'ai-technology': 'tecnologia-ia-visa'
   },
   it: {
     dtv: 'visto-destinazione-thailandia',
@@ -134,7 +138,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'official-visa': 'thailand-official-visa',
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'richiedi-visto',
-    about: 'chi-siamo'
+    about: 'chi-siamo',
+    'ai-technology': 'tecnologia-ia-visto'
   },
   th: {
     dtv: 'destination-thailand-visa',
@@ -161,7 +166,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'official-visa': 'thailand-official-visa',
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply',
-    about: 'about'
+    about: 'about',
+    'ai-technology': 'ai-technology'
   },
   ru: {
     dtv: 'destination-thailand-visa',
@@ -188,7 +194,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'official-visa': 'thailand-official-visa',
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply',
-    about: 'about'
+    about: 'about',
+    'ai-technology': 'ai-technology'
   },
   zh: {
     dtv: 'destination-thailand-visa',
@@ -215,7 +222,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'official-visa': 'thailand-official-visa',
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply',
-    about: 'about'
+    about: 'about',
+    'ai-technology': 'ai-technology'
   },
   ja: {
     dtv: 'destination-thailand-visa',
@@ -242,7 +250,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'official-visa': 'thailand-official-visa',
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply',
-    about: 'about'
+    about: 'about',
+    'ai-technology': 'ai-technology'
   },
   ko: {
     dtv: 'destination-thailand-visa',
@@ -269,7 +278,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'official-visa': 'thailand-official-visa',
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply',
-    about: 'about'
+    about: 'about',
+    'ai-technology': 'ai-technology'
   },
   ar: {
     dtv: 'destination-thailand-visa',
@@ -296,7 +306,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'official-visa': 'thailand-official-visa',
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply',
-    about: 'about'
+    about: 'about',
+    'ai-technology': 'ai-technology'
   }
 };
 
