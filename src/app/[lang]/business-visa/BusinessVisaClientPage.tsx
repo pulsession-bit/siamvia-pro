@@ -11,8 +11,8 @@ const BusinessVisaClientPage: React.FC = () => {
             pageKey="business_visa_page"
             heroImage={IMAGES.BANGKOK_SKYLINE || "https://images.unsplash.com/photo-1577979749830-f1d742b96791?auto=format&fit=crop&w=1920&q=80"}
             heroIcon={<Briefcase className="h-6 w-6" />}
-            ctaHelpLink="/contact"
-            ctaCompareLink="/dtv"
+            
+            ctaComparePageKey="dtv"
             visaConfig={{
                 type: "Business / Travail",
                 duration: "90 Jours (renouvelable)",

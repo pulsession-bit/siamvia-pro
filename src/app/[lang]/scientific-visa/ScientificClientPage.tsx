@@ -11,8 +11,8 @@ const ScientificClientPage: React.FC = () => {
             pageKey="scientific_visa_page"
             heroImage="https://images.unsplash.com/photo-1576086213369-97a306d36557"
             heroIcon={<Microscope className="h-6 w-6" />}
-            ctaHelpLink="/contact"
-            ctaCompareLink="/smart-visa"
+            
+            ctaComparePageKey="smart-visa"
             visaConfig={{
                 type: "Scientifique / Recherche",
                 duration: "1 An (Renouv.)",

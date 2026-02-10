@@ -11,8 +11,8 @@ const MedicalClientPage: React.FC = () => {
             pageKey="medical_visa_page"
             heroImage="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d"
             heroIcon={<Stethoscope className="h-6 w-6" />}
-            ctaHelpLink="/contact"
-            ctaCompareLink="/tourist-visa"
+            
+            ctaComparePageKey="tourist-visa"
             visaConfig={{
                 type: "Médical (MT)",
                 duration: "60 Jours",

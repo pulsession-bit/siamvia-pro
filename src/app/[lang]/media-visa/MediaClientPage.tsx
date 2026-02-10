@@ -11,8 +11,8 @@ const MediaClientPage: React.FC = () => {
             pageKey="media_visa_page"
             heroImage="https://images.unsplash.com/photo-1495020689067-958852a7765e"
             heroIcon={<Newspaper className="h-6 w-6" />}
-            ctaHelpLink="/contact"
-            ctaCompareLink="/business-visa"
+            
+            ctaComparePageKey="business-visa"
             visaConfig={{
                 type: "Média / Presse",
                 duration: "1 An (Renouv.)",

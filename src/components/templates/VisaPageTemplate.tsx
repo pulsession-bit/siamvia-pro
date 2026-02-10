@@ -5,6 +5,8 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { HeroSection, PageContainer, SectionTitle, Card, CTAButton } from '@/components/ui/PageComponents';
 import { CheckCircle2, AlertTriangle, Clock, Globe, ShieldAlert, ArrowRight, Plane, HelpCircle } from 'lucide-react';
 import { IMAGES } from '@/constants';
+import { useLangPath } from '@/hooks/useLang';
+import { PageKey } from '@/utils/slugs';
 
 interface VisaPageTemplateProps {
     pageKey: string; // The translation key prefix, e.g., 'exemption_visa_page'
@@ -20,7 +22,7 @@ interface VisaPageTemplateProps {
         riskLevel?: string;
     };
     ctaHelpLink?: string;
-    ctaCompareLink?: string;
+    ctaComparePageKey?: PageKey; // Changed to accept PageKey instead of URL
 }
 
 export const VisaPageTemplate: React.FC<VisaPageTemplateProps> = ({
@@ -28,10 +30,12 @@ export const VisaPageTemplate: React.FC<VisaPageTemplateProps> = ({
     heroImage,
     heroImageAlt,
     heroIcon = <Plane className="h-6 w-6" />,
-    ctaHelpLink = "/dtv", // Default redirect
-    ctaCompareLink = "/tourist-visa" // Default compare
+    ctaHelpLink = "https://audit.siamvisapro.com/", // Default to audit tool
+    ctaComparePageKey = "tourist-visa" // Default compare page key
 }) => {
     const { t } = useLanguage();
+    const langPath = useLangPath();
+    const ctaCompareLink = langPath(ctaComparePageKey);
 
     // Helper to safely get array translations
     const getList = (key: string): string[] => {

@@ -11,8 +11,8 @@ const SmartClientPage: React.FC = () => {
             pageKey="smart_visa_page"
             heroImage={IMAGES.OFFICE || "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1920&q=80"}
             heroIcon={<Lightbulb className="h-6 w-6" />}
-            ctaHelpLink="/contact"
-            ctaCompareLink="/ltr"
+            
+            ctaComparePageKey="ltr"
             visaConfig={{
                 type: "Innovation / Tech",
                 duration: "4 Ans",

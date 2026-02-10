@@ -11,8 +11,8 @@ const VolunteerClientPage: React.FC = () => {
             pageKey="volunteer_visa_page"
             heroImage="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c"
             heroIcon={<Heart className="h-6 w-6" />}
-            ctaHelpLink="/contact"
-            ctaCompareLink="/tourist-visa"
+            
+            ctaComparePageKey="tourist-visa"
             visaConfig={{
                 type: "Bénévolat / ONG",
                 duration: "90 Jours (+)",

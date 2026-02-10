@@ -9,8 +9,7 @@ const TouristVisaClientPage: React.FC = () => {
         <VisaPageTemplate
             pageKey="tourist_visa_page"
             heroImage={IMAGES.BEACH || "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=1920&q=80"}
-            ctaHelpLink="/contact"
-            ctaCompareLink="/exemption-visa"
+            ctaComparePageKey="exemption-visa"
             visaConfig={{
                 type: "Tourisme",
                 duration: "60 Jours (+30)",

@@ -11,8 +11,8 @@ const ReligiousClientPage: React.FC = () => {
             pageKey="religious_visa_page"
             heroImage="https://images.unsplash.com/photo-1528154291023-a6525fabe5b4"
             heroIcon={<Sun className="h-6 w-6" />}
-            ctaHelpLink="/contact"
-            ctaCompareLink="/retirement-visa"
+            
+            ctaComparePageKey="retirement-visa"
             visaConfig={{
                 type: "Religieux / Missionnaire",
                 duration: "1 An (Renouv.)",

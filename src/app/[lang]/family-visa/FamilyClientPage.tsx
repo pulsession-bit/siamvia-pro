@@ -11,8 +11,8 @@ const FamilyClientPage: React.FC = () => {
             pageKey="family_visa_page"
             heroImage={IMAGES.BEACH || "https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?auto=format&fit=crop&w=1920&q=80"}
             heroIcon={<Heart className="h-6 w-6" />}
-            ctaHelpLink="/contact"
-            ctaCompareLink="/retirement-visa"
+            
+            ctaComparePageKey="retirement-visa"
             visaConfig={{
                 type: "Famille / Mariage",
                 duration: "1 An (Renouvelable)",
