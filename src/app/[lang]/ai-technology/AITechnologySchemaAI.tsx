@@ -181,7 +181,7 @@ export const AITechnologySchemaAI: React.FC<AITechnologySchemaAIProps> = ({ lang
         'name': 'Siam Visa Pro AI Technology',
         'speakable': {
             '@type': 'SpeakableSpecification',
-            'cssSelector': ['h1', 'h2', '.sr-only']
+            'cssSelector': ['h1', 'h2', '.hero-description']
         },
         'url': pageUrl
     };

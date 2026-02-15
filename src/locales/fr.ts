@@ -1934,5 +1934,35 @@ export const fr = {
     },
     "next": "Suivant",
     "prev": "Précédent"
+  },
+  "schema": {
+    "professional_description": "Cabinet de conseil leader en visas pour la Thaïlande, spécialisé dans les visas DTV, Elite, LTR, Retraite, Business et tous les types de visas thaïlandais. Préparation professionnelle de portfolio, vérification de documents et accompagnement pour la soumission en ambassade avec un taux d'approbation de 95%+. Basé à Bangkok, au service de clients du monde entier en 11 langues.",
+    "service_types": [
+      "Assistance aux demandes de visa",
+      "Conseil en immigration",
+      "Préparation professionnelle de portfolio",
+      "Vérification et traduction de documents",
+      "Accompagnement soumission ambassade",
+      "Traitement des permis de travail"
+    ],
+    "founder_title": "Expert Visa Thaïlande & Consultant en Immigration",
+    "visa_items": [
+      { "name": "Visa DTV (Destination Thailand Visa)", "description": "Visa 5 ans pour nomades digitaux et télétravailleurs. Travail à distance légalement autorisé. 500K THB d'épargne requis. ~350€." },
+      { "name": "Visa Elite Thaïlande (Privilege Card)", "description": "Résidence premium 5-20 ans. Accueil VIP aéroport, conciergerie gouvernementale. 600K-2M THB. Aucun revenu requis." },
+      { "name": "Visa LTR (Long-Term Resident)", "description": "Visa 10 ans. Permis de travail + flat tax 17%. Pour professionnels gagnant $80K+/an. Frais 50K THB." },
+      { "name": "Visa Retraite (Non-O)", "description": "1 an renouvelable pour retraités 50+. 800K THB en banque ou 65K THB/mois de revenus. ~50€/an." },
+      { "name": "Visa Business (Non-B) + Permis de Travail", "description": "Visa 1 an pour emploi en Thaïlande. Nécessite un employeur thaïlandais + permis de travail. ~100€." },
+      { "name": "Visa Touristique (TR)", "description": "60+30 jours. Pour le tourisme. ~30€. La plupart des passeports occidentaux bénéficient de 60 jours sans visa." },
+      { "name": "Visa Étudiant (Non-ED)", "description": "1 an pour étudier le thaï, le Muay Thai ou l'université. ~50€ + frais de scolarité." },
+      { "name": "SMART Visa", "description": "Visa 4 ans pour experts de l'industrie S-Curve. Permis de travail inclus. Pas de rapport 90 jours. Gratuit." },
+      { "name": "Visa Famille (Non-O Mariage)", "description": "1 an pour conjoints de ressortissants thaïlandais. 400K THB. Permis de travail possible. ~50€/an." },
+      { "name": "Visa Médical (Non-MT)", "description": "90 jours+ pour traitement médical. Jusqu'à 4 accompagnants. ~50€." }
+    ],
+    "faq": [
+      { "q": "Quel est le meilleur visa pour vivre en Thaïlande en 2026 ?", "a": "Cela dépend de votre profil : (1) Nomades digitaux/télétravailleurs → Visa DTV (5 ans, ~350€), (2) Hauts revenus ($80K+/an) → Visa LTR (10 ans, permis de travail, 17% d'impôt), (3) Retraités 50+ → Visa Retraite (1 an renouvelable, ~50€), (4) VIP/sans souci → Visa Elite (5-20 ans, 15 000€+), (5) Employeur thaïlandais → Visa Business + permis de travail. SiamVisa Pro vous aide à choisir la meilleure option avec une évaluation d'éligibilité gratuite." },
+      { "q": "Puis-je travailler à distance en Thaïlande légalement ?", "a": "Oui, avec le bon visa. Le DTV (Destination Thailand Visa) autorise explicitement le travail à distance pour des employeurs étrangers depuis 2024. Il accorde 5 ans, 180 jours par entrée. Le visa LTR permet aussi de travailler avec un permis de travail digital. Les visas touristiques et les exemptions de visa N'autorisent PAS le travail, même à distance." },
+      { "q": "Combien d'argent faut-il pour vivre en Thaïlande longue durée ?", "a": "Les exigences financières varient selon le visa : DTV nécessite 500 000 THB (~13 000€) d'épargne. Retraite nécessite 800 000 THB (~20 000€) en banque thaïlandaise ou 65 000 THB/mois de revenus. Visa mariage nécessite 400 000 THB (~10 000€). LTR nécessite $80 000+/an de revenus. Elite nécessite un paiement unique de 600 000-2 000 000 THB." },
+      { "q": "Que fait SiamVisa Pro ?", "a": "SiamVisa Pro est un cabinet de conseil en immigration basé en Thaïlande qui aide les étrangers à obtenir leurs visas thaïlandais. Nos services incluent : évaluation d'éligibilité gratuite, préparation professionnelle de portfolio (DTV), vérification et traduction de documents, accompagnement soumission ambassade, traitement des permis de travail, renouvellements annuels et assistance rapport 90 jours. Nous servons nos clients en 11 langues avec un taux d'approbation de 95%+." }
+    ]
   }
 };

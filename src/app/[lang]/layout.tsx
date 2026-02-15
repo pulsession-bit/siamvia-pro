@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CartDrawer from '@/components/CartDrawer';
 import { translations } from '@/utils/translations';
+import { pickGlobalKeys } from '@/utils/pickGlobalKeys';
 import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '../globals.css';
@@ -52,9 +53,10 @@ export default async function LangLayout({ children, params }: Props) {
         notFound();
     }
 
-    // Load dictionaries on server
-    const dictionary = translations[lang as keyof typeof translations] || translations.en;
-    const englishFallback = translations.en;
+    // Load dictionaries on server — only pass global keys to reduce HTML size
+    const fullDictionary = translations[lang as keyof typeof translations] || translations.en;
+    const slimDictionary = pickGlobalKeys(fullDictionary);
+    const englishFallback = pickGlobalKeys(translations.en);
 
     return (
         <html lang={lang}>
@@ -86,7 +88,7 @@ export default async function LangLayout({ children, params }: Props) {
 
                 <LanguageProvider
                     initialLang={lang as any}
-                    dictionary={dictionary}
+                    dictionary={slimDictionary}
                     fallbackDictionary={lang !== 'en' ? englishFallback : undefined}
                 >
                     <CartProvider>

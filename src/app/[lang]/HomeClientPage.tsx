@@ -10,10 +10,11 @@ import { HomeVisas } from './home/components/HomeVisas';
 import { HomeAIBlock } from './home/components/HomeAIBlock';
 import { HomeCTA } from './home/components/HomeCTA';
 
-const LoadingState = () => {
-    const { t } = useLanguage();
-    return <div className="h-64 flex items-center justify-center bg-slate-50 rounded-2xl">{t('common.loading')}</div>;
-};
+const LoadingState = () => (
+    <div className="h-64 flex items-center justify-center bg-slate-50 rounded-2xl">
+        <div className="w-8 h-8 border-4 border-slate-200 border-t-amber-500 rounded-full animate-spin" />
+    </div>
+);
 
 const ExpertAppointmentForm = dynamic(() => import('@/components/ExpertAppointmentForm'), {
     ssr: false,

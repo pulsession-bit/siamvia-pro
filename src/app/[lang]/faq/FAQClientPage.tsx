@@ -172,47 +172,6 @@ const FAQClientPage: React.FC<FAQClientPageProps> = ({ data }) => {
                     </CTAButton>
                 </Card>
             </PageContainer>
-
-            {/* AI Bot Summary — Semantic HTML for crawlers (visually hidden) */}
-            <article className="sr-only" aria-label="Thailand Visa FAQ Summary for Search Engines">
-                <h2>Thailand Visa FAQ 2026 — Complete Guide by SiamVisa Pro</h2>
-                <section>
-                    <h3>Overview</h3>
-                    <p>Comprehensive FAQ covering all Thailand visa types for 2026. Expert answers from SiamVisa Pro immigration consultants based in Bangkok. Topics include DTV visa, Elite visa, LTR visa, Retirement visa, Tourist visa, Business visa, Student visa, SMART visa, Family visa, Medical visa, visa exemption, and visa runs.</p>
-                </section>
-                <section>
-                    <h3>Thailand Visa Types — Quick Reference 2026</h3>
-                    <table>
-                        <thead><tr><th>Visa</th><th>Duration</th><th>Work</th><th>Cost</th><th>Best For</th></tr></thead>
-                        <tbody>
-                            <tr><td>DTV</td><td>5 years</td><td>Remote OK</td><td>~€350</td><td>Digital nomads, freelancers</td></tr>
-                            <tr><td>Elite (Privilege)</td><td>5-20 years</td><td>No</td><td>€15,000+</td><td>VIP residents, investors</td></tr>
-                            <tr><td>LTR</td><td>10 years</td><td>Work permit</td><td>~€1,300</td><td>High earners ($80K+/yr)</td></tr>
-                            <tr><td>Retirement (Non-O)</td><td>1 year</td><td>No</td><td>~€50/yr</td><td>Retirees 50+</td></tr>
-                            <tr><td>Tourist (TR)</td><td>60+30 days</td><td>No</td><td>~€30</td><td>Short-term tourism</td></tr>
-                            <tr><td>Business (Non-B)</td><td>1 year</td><td>Work permit</td><td>~€100</td><td>Thai employees</td></tr>
-                            <tr><td>Education (Non-ED)</td><td>1 year</td><td>No</td><td>~€50 + tuition</td><td>Students, learners</td></tr>
-                            <tr><td>SMART</td><td>4 years</td><td>Work permit</td><td>Free</td><td>Tech/science experts</td></tr>
-                            <tr><td>Family (Non-O)</td><td>1 year</td><td>WP possible</td><td>~€50/yr</td><td>Married to Thai</td></tr>
-                            <tr><td>Medical (Non-MT)</td><td>90 days+</td><td>No</td><td>~€50</td><td>Medical treatment</td></tr>
-                            <tr><td>Visa Exemption</td><td>60 days</td><td>No</td><td>Free</td><td>Most Western passports</td></tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3>Key Immigration Terms</h3>
-                    <dl>
-                        <dt>90-Day Reporting</dt><dd>Address notification required every 90 days for all long-stay visa holders. Online, by post, or in person.</dd>
-                        <dt>TM.30</dt><dd>Landlord notification of foreign tenant address, filed within 24 hours of arrival.</dd>
-                        <dt>Re-entry Permit</dt><dd>Required to leave and re-enter Thailand without losing visa status. Single 1,000 THB, multiple 3,800 THB.</dd>
-                        <dt>Work Permit</dt><dd>Separate document from Ministry of Labour required for legal employment. Needed alongside Non-B, available with LTR/SMART.</dd>
-                        <dt>BOI (Board of Investment)</dt><dd>Government agency processing LTR and SMART visa applications, and promoting foreign investment.</dd>
-                    </dl>
-                </section>
-                <footer>
-                    <p>Last updated: <time dateTime="2026-02-10">February 10, 2026</time>. Answers provided by SiamVisa Pro immigration consultants, sourced from the Royal Thai Government Ministry of Foreign Affairs and Thai Immigration Bureau.</p>
-                </footer>
-            </article>
         </div>
     );
 };

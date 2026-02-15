@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import { translations } from '@/utils/translations';
 import HomeClientPage from './HomeClientPage';
 import { generateMetadataWithHreflang } from '@/utils/seo';
+import { SchemaOrg } from '@/components/SchemaOrg';
+import { HomeSchemaAI } from '@/components/HomeSchemaAI';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
@@ -20,6 +22,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   });
 }
 
-export default function Page() {
-  return <HomeClientPage />;
+export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  return (
+    <>
+      <SchemaOrg lang={lang} pageKey="home" title="SiamVisa Pro — Thailand Visa Expert" showGlobal={true} />
+      <HomeSchemaAI lang={lang} />
+      <HomeClientPage />
+    </>
+  );
 }

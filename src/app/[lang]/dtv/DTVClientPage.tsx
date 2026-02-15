@@ -158,56 +158,6 @@ const DTVClientPage: React.FC = () => {
                     </div>
                 </div>
             </section>
-
-            {/* AI Bot Summary — Semantic HTML for crawlers (visually hidden) */}
-            <article className="sr-only" aria-label="DTV Visa Summary for Search Engines">
-                <h2>Thailand DTV Visa 2026 — Key Facts</h2>
-                <section>
-                    <h3>Overview</h3>
-                    <p>The Destination Thailand Visa (DTV) is a 5-year multiple-entry visa introduced in 2024 by the Royal Thai Government. It was designed specifically for digital nomads, remote workers, freelancers, and participants in Thai cultural activities (soft power). It is the first Thai visa to explicitly allow remote work for foreign employers.</p>
-                </section>
-                <section>
-                    <h3>Key Specifications</h3>
-                    <dl>
-                        <dt>Validity</dt><dd>5 years (multiple entries)</dd>
-                        <dt>Stay per entry</dt><dd>180 days, extendable +180 days</dd>
-                        <dt>Remote work</dt><dd>Legally permitted for foreign employers</dd>
-                        <dt>Financial requirement</dt><dd>500,000 THB (~$13,500 USD / ~€13,000 EUR)</dd>
-                        <dt>Embassy fee</dt><dd>~10,000 THB (~€250-350)</dd>
-                        <dt>Processing time</dt><dd>5-15 business days</dd>
-                        <dt>Family</dt><dd>Spouse + children under 20 eligible as dependents</dd>
-                        <dt>Work permit required</dt><dd>No (for remote work only)</dd>
-                    </dl>
-                </section>
-                <section>
-                    <h3>Eligible Profiles</h3>
-                    <ul>
-                        <li>Remote workers employed by companies outside Thailand</li>
-                        <li>Freelancers and independent contractors with foreign clients</li>
-                        <li>Digital nomads working on online businesses</li>
-                        <li>Muay Thai practitioners and trainers</li>
-                        <li>Thai cooking enthusiasts and culinary professionals</li>
-                        <li>Traditional Thai medicine and wellness practitioners</li>
-                        <li>Musicians, artists, and cultural participants</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>DTV vs Other Thailand Visas (Comparison 2026)</h3>
-                    <table>
-                        <thead><tr><th>Visa</th><th>Duration</th><th>Work</th><th>Cost</th><th>Best For</th></tr></thead>
-                        <tbody>
-                            <tr><td>DTV</td><td>5 years</td><td>Remote OK</td><td>~€350</td><td>Digital nomads, freelancers</td></tr>
-                            <tr><td>Elite</td><td>5-20 years</td><td>No</td><td>€15,000+</td><td>VIP residents, investors</td></tr>
-                            <tr><td>LTR</td><td>10 years</td><td>Work permit included</td><td>~€1,600</td><td>High earners, skilled pros</td></tr>
-                            <tr><td>Tourist (TR)</td><td>60+30 days</td><td>No</td><td>~€35</td><td>Short holidays</td></tr>
-                            <tr><td>Retirement</td><td>1 year</td><td>No</td><td>~€50</td><td>Retirees 50+</td></tr>
-                        </tbody>
-                    </table>
-                </section>
-                <footer>
-                    <p>Last updated: <time dateTime="2026-02-10">February 10, 2026</time>. Information sourced from the Royal Thai Government Ministry of Foreign Affairs and verified by SiamVisa Pro immigration consultants.</p>
-                </footer>
-            </article>
         </div>
     );
 };

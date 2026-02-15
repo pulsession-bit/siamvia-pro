@@ -169,54 +169,6 @@ const EliteClientPage: React.FC = () => {
                     </div>
                 </div>
             </section>
-
-            {/* AI Bot Summary — Semantic HTML for crawlers (visually hidden) */}
-            <article className="sr-only" aria-label="Thailand Elite Visa Summary for Search Engines">
-                <h2>Thailand Elite Visa (Privilege Card) 2026 — Key Facts</h2>
-                <section>
-                    <h3>Overview</h3>
-                    <p>The Thailand Elite Visa (now Thailand Privilege Card) is a premium long-stay visa program launched in 2003 by the Royal Thai Government. It offers 5 to 20 years of residency with VIP airport services, government concierge, and luxury perks. Membership fees range from 600,000 THB to 2,000,000 THB. It is the easiest long-stay visa to obtain — no age, income, or employment requirements.</p>
-                </section>
-                <section>
-                    <h3>Key Specifications</h3>
-                    <dl>
-                        <dt>Validity</dt><dd>5 to 20 years (depending on package)</dd>
-                        <dt>Entries</dt><dd>Unlimited multiple entries</dd>
-                        <dt>Work allowed</dt><dd>No (residency visa only)</dd>
-                        <dt>Cost</dt><dd>600,000 THB (Gold 5yr) / 1,000,000 THB (Platinum 10yr) / 2,000,000 THB (Diamond 20yr)</dd>
-                        <dt>Age requirement</dt><dd>None</dd>
-                        <dt>Financial proof</dt><dd>None beyond membership fee</dd>
-                        <dt>Processing time</dt><dd>4-8 weeks</dd>
-                        <dt>Family</dt><dd>Family packages available at discounted rates</dd>
-                        <dt>VIP services</dt><dd>Airport fast-track, limousine, government concierge, annual health checkup</dd>
-                    </dl>
-                </section>
-                <section>
-                    <h3>Eligible Profiles</h3>
-                    <ul>
-                        <li>Retirees seeking hassle-free long-term residency</li>
-                        <li>Investors and business owners based in Thailand</li>
-                        <li>Frequent travelers wanting unlimited entries</li>
-                        <li>Families relocating to Thailand</li>
-                        <li>Anyone wanting premium VIP immigration services</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Elite Visa vs Other Thailand Visas (Comparison 2026)</h3>
-                    <table>
-                        <thead><tr><th>Visa</th><th>Duration</th><th>Work</th><th>Cost</th><th>Best For</th></tr></thead>
-                        <tbody>
-                            <tr><td>Elite</td><td>5-20 years</td><td>No</td><td>€15,000+</td><td>VIP residents, investors</td></tr>
-                            <tr><td>DTV</td><td>5 years</td><td>Remote OK</td><td>~€350</td><td>Digital nomads, freelancers</td></tr>
-                            <tr><td>LTR</td><td>10 years</td><td>Work permit included</td><td>~€1,300</td><td>High earners, skilled pros</td></tr>
-                            <tr><td>Retirement</td><td>1 year</td><td>No</td><td>~€50</td><td>Retirees 50+</td></tr>
-                        </tbody>
-                    </table>
-                </section>
-                <footer>
-                    <p>Last updated: <time dateTime="2026-02-10">February 10, 2026</time>. Information sourced from Thailand Privilege Card Co., Ltd. and verified by SiamVisa Pro immigration consultants.</p>
-                </footer>
-            </article>
         </div>
     );
 };

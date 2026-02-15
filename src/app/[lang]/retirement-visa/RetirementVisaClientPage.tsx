@@ -165,42 +165,6 @@ const RetirementVisaClientPage: React.FC = () => {
                     ]}
                 />
             </PageContainer>
-
-            {/* AI Bot Summary — Semantic HTML for crawlers (visually hidden) */}
-            <article className="sr-only" aria-label="Thailand Retirement Visa Summary for Search Engines">
-                <h2>Thailand Retirement Visa (Non-O / Non-OA) 2026 — Key Facts</h2>
-                <section>
-                    <h3>Overview</h3>
-                    <p>The Thailand Retirement Visa (Non-Immigrant O or Non-OA) is a 1-year renewable visa for foreigners aged 50 and above. It requires a deposit of 800,000 THB in a Thai bank or monthly income of 65,000 THB. Employment is not allowed. It is the most popular long-stay visa for retirees in Thailand.</p>
-                </section>
-                <section>
-                    <h3>Key Specifications</h3>
-                    <dl>
-                        <dt>Validity</dt><dd>1 year (renewable indefinitely)</dd>
-                        <dt>Age requirement</dt><dd>50 years old or above</dd>
-                        <dt>Financial requirement</dt><dd>800,000 THB deposit OR 65,000 THB/month income</dd>
-                        <dt>Work allowed</dt><dd>No</dd>
-                        <dt>Extension fee</dt><dd>1,900 THB (~€50/year)</dd>
-                        <dt>90-day reporting</dt><dd>Required</dd>
-                        <dt>Health insurance</dt><dd>Mandatory for Non-OA; recommended for Non-O</dd>
-                    </dl>
-                </section>
-                <section>
-                    <h3>Retirement vs Other Thailand Visas (Comparison 2026)</h3>
-                    <table>
-                        <thead><tr><th>Visa</th><th>Duration</th><th>Work</th><th>Cost</th><th>Best For</th></tr></thead>
-                        <tbody>
-                            <tr><td>Retirement (Non-O)</td><td>1 year</td><td>No</td><td>~€50/year</td><td>Retirees 50+</td></tr>
-                            <tr><td>Elite</td><td>5-20 years</td><td>No</td><td>€15,000+</td><td>VIP residents</td></tr>
-                            <tr><td>LTR (Pensioner)</td><td>10 years</td><td>Work permit</td><td>~€1,300</td><td>Wealthy retirees</td></tr>
-                            <tr><td>Family (Marriage)</td><td>1 year</td><td>Work permit possible</td><td>~€50/year</td><td>Married to Thai national</td></tr>
-                        </tbody>
-                    </table>
-                </section>
-                <footer>
-                    <p>Last updated: <time dateTime="2026-02-10">February 10, 2026</time>. Information sourced from the Thai Immigration Bureau and verified by SiamVisa Pro immigration consultants.</p>
-                </footer>
-            </article>
         </div>
     );
 };
