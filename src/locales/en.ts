@@ -462,37 +462,7 @@ export const en = {
     "partnership_title": "A DigitGpt LLC Company",
     "partnership_text": "Siam Visa Pro is powered by DigitGpt LLC, a technology firm specializing in AI-driven administrative automation. This partnership allows us to offer cutting-edge tools like our Visa Eligibility AI."
   },
-  "dtv_page": {
-    "meta": {
-      "title": "Thai DTV Visa 2026: 5-Year Nomad Visa Requirements & Application",
-      "description": "Work from Thailand for 5 years with the new DTV Visa. Low tax implications, multi-entry, family included. Apply online with our guaranteed approval service."
-    },
-    "hero": {
-      "title": "DTV Visa: Your 5-Year Ticket to Digital Freedom",
-      "subtitle": "Work legally from paradise. 5 years validity, 180 days per entry. The ultimate digital nomad solution.",
-      "badge": "New 2026",
-      "cta": "Start My DTV Application"
-    },
-    "intro": {
-      "title": "What is the DTV Visa?",
-      "content": "The Destination Thailand Visa (DTV) is a game-changer. Forget the expensive Elite Visa—get 5 years of access for a fraction of the cost (~$350 government fee)."
-    },
-    "requirements": {
-      "title": "Key Requirements",
-      "financial_proof": "Proof of funds: 500,000 THB (~$15,000 USD / £11,500 GBP). Liquid assets required.",
-      "portfolio": "Proof of status: Remote work contract or Professional Portfolio (we build this with you)."
-    },
-    "faq": [
-      {
-        "q": "Can I work for a US/UK company?",
-        "a": "Yes. The DTV is specifically designed for remote work for foreign employers. You are 100% legal provided your income sources are outside Thailand."
-      },
-      {
-        "q": "Is crypto income accepted?",
-        "a": "Thai immigration requires fiat currency bank statements. We help you structure your portfolio to prove solvency even if your primary wealth is on-chain."
-      }
-    ]
-  },
+
   "visa_run_page": {
     "meta": {
       "title": "Thailand Visa Run: Risks, Costs and Alternatives 2026",

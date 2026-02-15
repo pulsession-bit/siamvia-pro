@@ -502,37 +502,7 @@ export const fr = {
     "btn_more": "En savoir plus",
     "btn_rates": "Voir les tarifs"
   },
-  "dtv_page": {
-    "meta": {
-      "title": "Visa DTV Thaïlande 2026 : Télétravail & Expatriation (Guide Officiel)",
-      "description": "Obtenez le Visa Destination Thailand (DTV) valable 5 ans. Idéal pour freelances et retraités actifs. Analyse d'éligibilité gratuite & accompagnement francophone."
-    },
-    "hero": {
-      "title": "Visa DTV : Vivez et Travaillez légalement en Thaïlande",
-      "subtitle": "La révolution pour les nomades digitaux et expatriés. 5 ans de liberté, 180 jours par entrée, fiscalité avantageuse.",
-      "badge": "Nouveau 2026",
-      "cta": "Vérifier mon éligibilité (Gratuit)"
-    },
-    "intro": {
-      "title": "Le Visa DTV, c'est quoi ?",
-      "content": "Le Visa DTV (Destination Thailand Visa) est la solution officielle lancée fin 2024 pour les travailleurs à distance. Fini les 'Visa Runs' et l'incertitude : résidez jusqu'à 5 ans en Thaïlande en toute légalité."
-    },
-    "requirements": {
-      "title": "Conditions d'Éligibilité",
-      "financial_proof": "Justificatif bancaire de 500 000 THB (env. 13 500 €). Comptes français (BNP, SG, Revolut...) acceptés.",
-      "portfolio": "Contrat de travail étranger ou Portfolio professionnel solide (nous vous aidons à le constituer)."
-    },
-    "faq": [
-      {
-        "q": "Suis-je résident fiscal ?",
-        "a": "Au-delà de 180 jours par an, vous devenez résident fiscal. La convention France-Thaïlande protège de la double imposition. Nos experts vous guideront."
-      },
-      {
-        "q": "Puis-je postuler depuis la France ?",
-        "a": "Oui, via l'E-Visa (Ambassade de Paris). Attention : ils sont très exigeants sur les preuves professionnelles. Notre 'Pack Expert' sécurise votre dossier."
-      }
-    ]
-  },
+
   "tourist_visa_page": {
     "meta": {
       "title": "Visa Touristique Thaïlande (TR) | Extensions & Guide 2026",
@@ -1464,30 +1434,35 @@ export const fr = {
   "appointment": {
     "title": "Prendre rendez-vous avec un expert",
     "subtitle": "Choisissez une date et proposez deux créneaux horaires. Indiquez ensuite comment vous souhaitez être recontacté.",
-    "email_label": "Votre Email",
-    "email_placeholder": "votre@email.com",
-    "name_label": "Votre Nom",
-    "name_placeholder": "Jean Dupont",
     "google_btn": "S'enregistrer avec Google",
     "google_connected": "Connecté avec Google",
+    "name_label": "Votre Nom",
+    "name_placeholder": "Jean Dupont",
+    "email_label": "Votre Email",
+    "email_placeholder": "votre@email.com",
     "date_label": "Date souhaitée",
     "date_placeholder": "JJ/MM/AAAA",
     "time_label": "Heure",
     "time_placeholder": "--:--",
     "channel_label": "Canal de contact préféré",
     "phone_placeholder": "N° avec indicatif (ex: +33...)",
+    "create_account_label": "Créer un compte pour suivre mon dossier",
+    "password_label": "Mot de passe",
+    "password_help": "Minimum 6 caractères & 1 majuscule. Vous servira pour accéder à votre espace client.",
     "submit_btn_project": "CONFIER MON PROJET",
     "cancel_btn": "Annuler la demande",
+    "success_title": "Demande envoyée !",
+    "success_desc": "Un expert analysera votre demande et vous recontactera très prochainement.",
     "slot1_label": "Option 1 – Heure souhaitée",
     "slot1_hint": "Exemple : 09:30",
     "slot2_label": "Option 2 – Heure alternative",
     "slot2_hint": "Exemple : 15:00",
     "method_label": "Comment souhaitez-vous être recontacté ?",
     "methods": {
-      "phone": "Téléphone",
       "whatsapp": "WhatsApp",
-      "email": "E-mail",
-      "video": "Visio (Meet/Zoom)"
+      "phone": "Appel",
+      "email": "Email",
+      "video": "Vidéo"
     },
     "contact_value_label": "Coordonnée à utiliser",
     "notes_label": "Précisions complémentaires (optionnel)",
@@ -1500,12 +1475,7 @@ export const fr = {
     "error_weak_pass": "Le mot de passe doit contenir au moins 6 caractères.",
     "error_pass_uppercase": "Le mot de passe doit contenir au moins une majuscule.",
     "error_pass_requirements": "Le mot de passe ne respecte pas les critères de sécurité (min 6 caractères, 1 majuscule).",
-    "error_google": "Erreur lors de la connexion Google.",
-    "create_account_label": "Créer un compte pour suivre mon dossier",
-    "password_label": "Mot de passe",
-    "password_help": "6 caractères minimum, dont 1 majuscule",
-    "success_title": "Demande envoyée !",
-    "success_desc": "Un expert va analyser vos créneaux et vous confirmera le rendez-vous très rapidement."
+    "error_google": "Erreur lors de la connexion Google."
   },
   "contact_page": {
     "meta": {

@@ -25,7 +25,10 @@ export type PageKey =
     | 'scientific-visa'
     | 'apply'
     | 'about'
-    | 'ai-technology';
+    | 'ai-technology'
+    | 'dtv-documents'
+    | 'dtv-erreurs'
+    | 'dtv-comparatif';
 
 export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     fr: {
@@ -55,7 +58,10 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'scientific-visa': 'visa-scientifique-thailande',
         apply: 'demande-de-visa',
         about: 'a-propos',
-        'ai-technology': 'technologie-ia-visa'
+        'ai-technology': 'technologie-ia-visa',
+        'dtv-documents': 'visa-dtv-thailande/documents-requis',
+        'dtv-erreurs': 'visa-dtv-thailande/erreurs-frequentes',
+        'dtv-comparatif': 'visa-dtv-thailande/comparatif-visas'
     },
     en: {
         home: '',
@@ -84,7 +90,10 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply-visa',
         about: 'about-us',
-        'ai-technology': 'ai-visa-technology'
+        'ai-technology': 'ai-visa-technology',
+        'dtv-documents': 'dtv/documents',
+        'dtv-erreurs': 'dtv/erreurs',
+        'dtv-comparatif': 'dtv/comparatif'
     },
     de: {
         home: '',
@@ -113,7 +122,10 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply-visa',
         about: 'ueber-uns',
-        'ai-technology': 'ki-visum-technologie'
+        'ai-technology': 'ki-visum-technologie',
+        'dtv-documents': 'dtv/documents',
+        'dtv-erreurs': 'dtv/erreurs',
+        'dtv-comparatif': 'dtv/comparatif'
     },
     es: {
         home: '',
@@ -142,7 +154,10 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'solicitar-visa',
         about: 'sobre-nosotros',
-        'ai-technology': 'tecnologia-ia-visa'
+        'ai-technology': 'tecnologia-ia-visa',
+        'dtv-documents': 'dtv/documents',
+        'dtv-erreurs': 'dtv/erreurs',
+        'dtv-comparatif': 'dtv/comparatif'
     },
     it: {
         home: '',
@@ -171,7 +186,10 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'richiedi-visto',
         about: 'chi-siamo',
-        'ai-technology': 'tecnologia-ia-visto'
+        'ai-technology': 'tecnologia-ia-visto',
+        'dtv-documents': 'dtv/documents',
+        'dtv-erreurs': 'dtv/erreurs',
+        'dtv-comparatif': 'dtv/comparatif'
     },
     th: {
         home: '',
@@ -200,7 +218,10 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply',
         about: 'about',
-        'ai-technology': 'ai-technology'
+        'ai-technology': 'ai-technology',
+        'dtv-documents': 'dtv/documents',
+        'dtv-erreurs': 'dtv/erreurs',
+        'dtv-comparatif': 'dtv/comparatif'
     },
     ru: {
         home: '',
@@ -229,7 +250,10 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply',
         about: 'about',
-        'ai-technology': 'ai-technology'
+        'ai-technology': 'ai-technology',
+        'dtv-documents': 'dtv/documents',
+        'dtv-erreurs': 'dtv/erreurs',
+        'dtv-comparatif': 'dtv/comparatif'
     },
     zh: {
         home: '',
@@ -258,7 +282,10 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply',
         about: 'about',
-        'ai-technology': 'ai-technology'
+        'ai-technology': 'ai-technology',
+        'dtv-documents': 'dtv/documents',
+        'dtv-erreurs': 'dtv/erreurs',
+        'dtv-comparatif': 'dtv/comparatif'
     },
     ja: {
         home: '',
@@ -287,7 +314,10 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply',
         about: 'about',
-        'ai-technology': 'ai-technology'
+        'ai-technology': 'ai-technology',
+        'dtv-documents': 'dtv/documents',
+        'dtv-erreurs': 'dtv/erreurs',
+        'dtv-comparatif': 'dtv/comparatif'
     },
     ko: {
         home: '',
@@ -316,7 +346,10 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply',
         about: 'about',
-        'ai-technology': 'ai-technology'
+        'ai-technology': 'ai-technology',
+        'dtv-documents': 'dtv/documents',
+        'dtv-erreurs': 'dtv/erreurs',
+        'dtv-comparatif': 'dtv/comparatif'
     },
     ar: {
         home: '',
@@ -345,7 +378,10 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'scientific-visa': 'thailand-scientific-visa',
         apply: 'apply',
         about: 'about',
-        'ai-technology': 'ai-technology'
+        'ai-technology': 'ai-technology',
+        'dtv-documents': 'dtv/documents',
+        'dtv-erreurs': 'dtv/erreurs',
+        'dtv-comparatif': 'dtv/comparatif'
     }
 };
 

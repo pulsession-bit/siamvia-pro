@@ -96,7 +96,7 @@ const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
             className="w-full rounded-2xl border border-slate-100 bg-slate-50 px-5 py-4 focus:bg-white focus:ring-4 focus:ring-amber-500/10 focus:border-amber-500 outline-none transition-all font-bold text-slate-700"
             value={state.fullName}
             onChange={(e) => actions.setFullName(e.target.value)}
-            placeholder="Jean Dupont"
+            placeholder={t('appointment.name_placeholder') || "Jean Dupont"}
             required
           />
         </div>
@@ -110,7 +110,7 @@ const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
             className="w-full rounded-2xl border border-slate-100 bg-slate-50 px-5 py-4 focus:bg-white focus:ring-4 focus:ring-amber-500/10 focus:border-amber-500 outline-none transition-all font-bold text-slate-700"
             value={state.email}
             onChange={(e) => actions.setEmail(e.target.value)}
-            placeholder="votre@email.com"
+            placeholder={t('appointment.email_placeholder') || "votre@email.com"}
             required
           />
         </div>
