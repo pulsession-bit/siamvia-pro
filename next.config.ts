@@ -27,7 +27,10 @@ const slugMap: Record<string, Record<string, string>> = {
     'scientific-visa': 'visa-scientifique-thailande',
     apply: 'demande-de-visa',
     about: 'a-propos',
-    'ai-technology': 'technologie-ia-visa'
+    'ai-technology': 'technologie-ia-visa',
+    'dtv/documents': 'visa-dtv-thailande/documents-requis',
+    'dtv/erreurs': 'visa-dtv-thailande/erreurs-frequentes',
+    'dtv/comparatif': 'visa-dtv-thailande/comparatif-visas'
   },
   en: {
     dtv: 'thailand-dtv-visa',
