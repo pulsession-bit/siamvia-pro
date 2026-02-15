@@ -374,59 +374,62 @@ export const fr = {
   // ── DTV Satellite Pages (FR only) ──────────────────────────────
   "dtv_documents_page": {
     "meta": {
-      "title": "Documents Requis Visa DTV Thaïlande 2026 | Checklist Complète par Profil",
-      "description": "Liste officielle des documents nécessaires pour le visa DTV Thaïlande en 2026. Checklist par profil : nomade digital, freelance, retraité actif, artiste. Évitez les refus."
+      "title": "Documents Requis Visa DTV Thaïlande 2026 | Checklist France par Profil",
+      "description": "Liste complète des documents pour le visa DTV Thaïlande depuis la France en 2026. Checklist par profil : salarié en télétravail, auto-entrepreneur, retraité. Casier B3, relevé BNP/SG, URSSAF."
     },
     "hero_badge": "Checklist Documents DTV 2026",
     "hero_title": "Documents requis pour le Visa DTV Thaïlande",
-    "hero_subtitle": "La liste complète et à jour des pièces justificatives par profil — mise à jour février 2026.",
+    "hero_subtitle": "La liste complète des pièces justificatives depuis la France, par profil — mise à jour février 2026.",
     "breadcrumb_home": "Accueil",
     "breadcrumb_dtv": "Visa DTV",
     "breadcrumb_current": "Documents requis",
-    "intro": "Le visa DTV (Destination Thailand Visa) exige un dossier solide pour être approuvé. Les documents varient selon votre profil : nomade digital, freelance, retraité actif ou artiste. Voici la checklist complète pour maximiser vos chances d'approbation.",
+    "intro": "Le visa DTV (Destination Thailand Visa) exige un dossier solide pour être approuvé. Les documents varient selon votre profil : salarié en télétravail, auto-entrepreneur, retraité actif ou artiste. Voici la checklist complète adaptée aux résidents français pour maximiser vos chances d'approbation dès la première soumission.",
     "common_title": "Documents communs à tous les profils",
     "common_docs": [
-      { "doc": "Passeport valide 6+ mois", "detail": "Au moins 2 pages vierges. Copie de la page d'identité + toutes les pages avec tampons Thaïlande." },
-      { "doc": "Photo d'identité 4×6 cm", "detail": "Fond blanc, prise il y a moins de 6 mois, format ICAO." },
-      { "doc": "Formulaire de demande signé", "detail": "Téléchargeable sur le site de l'ambassade ou du consulat." },
-      { "doc": "Preuve financière : 500 000 THB", "detail": "Relevé bancaire des 6 derniers mois montrant un solde ≥ 500 000 THB (~13 000 €)." },
-      { "doc": "Assurance santé internationale", "detail": "Couverture minimum 50 000 USD, valide pour la Thaïlande." },
-      { "doc": "Casier judiciaire vierge", "detail": "Extrait de casier datant de moins de 3 mois, apostillé si nécessaire." }
+      { "doc": "Passeport français valide 6+ mois", "detail": "Au moins 2 pages vierges. Renouvellement en mairie (délai 3-6 semaines, gratuit). Copie de la page d'identité + toutes les pages avec tampons Thaïlande." },
+      { "doc": "Photo d'identité 4×6 cm norme ICAO", "detail": "Fond blanc, prise il y a moins de 6 mois. Cabines Photomaton agréées ANTS ou photographe agréé (~5 €). Format identique aux photos de passeport français." },
+      { "doc": "Formulaire de demande signé", "detail": "Téléchargeable sur le site de l'Ambassade Royale de Thaïlande à Paris (thaiembassy.fr) ou via TLS Contact." },
+      { "doc": "Preuve financière : 500 000 THB (~13 000 €)", "detail": "Relevé bancaire des 6 derniers mois tamponné par votre banque (BNP Paribas, Société Générale, Crédit Agricole, Boursorama…). Le solde de 13 000 € doit être visible et stable — pas de dépôt de dernière minute." },
+      { "doc": "Assurance santé couvrant la Thaïlande", "detail": "Couverture minimum 50 000 USD. Assureurs recommandés depuis la France : Chapka Cap Aventure (~40 €/mois), AXA Schengen, Allianz Travel, SafetyWing (~45 $/mois). Le contrat doit mentionner explicitement la Thaïlande." },
+      { "doc": "Extrait de casier judiciaire (bulletin n°3)", "detail": "Demande gratuite en ligne sur casier-judiciaire.justice.gouv.fr. Délai : 1 à 2 semaines par courrier. L'apostille n'est pas exigée pour la Thaïlande depuis la France, mais certaines ambassades en Asie la demandent." }
     ],
     "profiles_title": "Documents spécifiques par profil",
-    "profile_nomad_title": "Nomade Digital / Télétravailleur",
+    "profile_nomad_title": "Salarié en télétravail (CDI/CDD)",
     "profile_nomad_docs": [
-      { "doc": "Contrat de travail à distance", "detail": "Contrat avec un employeur étranger mentionnant le télétravail, traduit en anglais." },
-      { "doc": "Attestation employeur", "detail": "Lettre confirmant l'autorisation de télétravailler depuis la Thaïlande." },
-      { "doc": "Fiches de paie (3-6 mois)", "detail": "Preuves de revenus réguliers, minimum 1 500 €/mois recommandé." },
-      { "doc": "Portfolio professionnel", "detail": "CV + description de l'activité, recommandé pour renforcer le dossier." }
+      { "doc": "Contrat de travail mentionnant le télétravail", "detail": "Votre CDI ou CDD avec clause télétravail, ou avenant de télétravail signé par l'employeur. Traduction en anglais par traducteur assermenté (annuaire sur cour-de-cassation.fr, ~30-50 €/page)." },
+      { "doc": "Attestation employeur sur papier à en-tête", "detail": "Lettre signée par votre employeur confirmant : votre poste, l'autorisation de télétravailler depuis la Thaïlande, et la continuité de votre salaire. En anglais." },
+      { "doc": "3 derniers bulletins de salaire", "detail": "Minimum 1 500 €/mois net recommandé. Les bulletins Cesu ou Pajemploi ne suffisent pas." },
+      { "doc": "Dernier avis d'imposition (ASDIR)", "detail": "Téléchargeable sur impots.gouv.fr > Mes documents. Prouve vos revenus annuels déclarés en France." }
     ],
-    "profile_freelance_title": "Freelance / Indépendant",
+    "profile_freelance_title": "Auto-entrepreneur / Freelance",
     "profile_freelance_docs": [
-      { "doc": "Inscription auto-entrepreneur ou équivalent", "detail": "Extrait Kbis, attestation URSSAF, ou registration officielle de votre pays." },
-      { "doc": "Factures clients (6 derniers mois)", "detail": "Au moins 3 factures montrant une activité régulière avec des clients étrangers." },
-      { "doc": "Relevés de compte professionnel", "detail": "Montrant des revenus réguliers sur les 6 derniers mois." },
-      { "doc": "Portfolio de travaux", "detail": "Site web, projets réalisés, témoignages clients — format PDF recommandé." }
+      { "doc": "Attestation URSSAF ou avis de situation SIRENE", "detail": "Téléchargeable sur autoentrepreneur.urssaf.fr > Mon compte > Mes attestations. Prouve votre statut actif. Pour une société : extrait Kbis de moins de 3 mois via Infogreffe (3,12 €)." },
+      { "doc": "6 dernières factures clients", "detail": "Au moins 3-4 clients différents, montrant une activité régulière. Total recommandé : >1 500 €/mois minimum. Mentionner « prestations de services à distance »." },
+      { "doc": "Relevés bancaires du compte professionnel", "detail": "Compte pro (Qonto, Shine, BNP, SG…) montrant des encaissements réguliers sur les 6 derniers mois. Tampon et signature de la banque." },
+      { "doc": "Portfolio de travaux (PDF, 10-15 pages)", "detail": "Présentation visuelle : bio, compétences, projets réalisés, témoignages clients, liens vers votre site. Indispensable pour les développeurs, designers, rédacteurs, etc." }
     ],
     "profile_retiree_title": "Retraité Actif / Digital Senior",
     "profile_retiree_docs": [
-      { "doc": "Justificatif de pension ou revenus passifs", "detail": "Avis d'imposition, relevé de pension, revenus locatifs, dividendes." },
-      { "doc": "Lettre de motivation", "detail": "Expliquant votre intérêt pour la Thaïlande et vos activités prévues." },
-      { "doc": "Preuve d'hébergement", "detail": "Réservation d'hôtel ou contrat de location pour les premiers mois." }
+      { "doc": "Notification de pension (CNAV, AGIRC-ARRCO, MSA…)", "detail": "Dernière notification annuelle de votre caisse de retraite. Téléchargeable sur lassuranceretraite.fr ou votre espace AGIRC-ARRCO." },
+      { "doc": "Dernier avis d'imposition", "detail": "Depuis impots.gouv.fr. Prouve vos revenus de pension et éventuels revenus complémentaires (locatifs, dividendes)." },
+      { "doc": "Lettre de motivation", "detail": "Expliquant votre intérêt pour la Thaïlande : activités prévues (bénévolat, cours de cuisine/Muay Thai, exploration culturelle). 1 page suffit, en anglais." },
+      { "doc": "Preuve d'hébergement", "detail": "Réservation Booking/Agoda pour les premiers mois, ou contrat de location traduit en anglais." }
     ],
     "profile_artist_title": "Artiste / Créateur de Contenu",
     "profile_artist_docs": [
-      { "doc": "Portfolio artistique", "detail": "Galerie de vos œuvres, liens vers vos publications, chaîne YouTube, profil Behance, etc." },
-      { "doc": "Preuves de revenus créatifs", "detail": "Revenus YouTube, ventes d'art, contrats de création, commissions — 6 derniers mois." },
-      { "doc": "Lettre de projet en Thaïlande", "detail": "Description de votre projet créatif lié à la Thaïlande (optionnel mais recommandé)." }
+      { "doc": "Numéro de SIRET artiste-auteur ou Maison des Artistes", "detail": "Inscription sur artistes-auteurs.urssaf.fr. Si intermittent du spectacle : attestation Pôle Emploi Spectacle." },
+      { "doc": "Portfolio artistique (PDF ou liens)", "detail": "Galerie de vos œuvres, chaîne YouTube avec stats, profil Behance/Dribbble, publications Instagram pro. Minimum 10 pages pour un PDF." },
+      { "doc": "Preuves de revenus créatifs (6 mois)", "detail": "Revenus YouTube/Twitch, ventes Etsy/artistes, contrats de création, commissions, droits d'auteur SACEM/SACD. Notes d'auteur ou factures." },
+      { "doc": "Lettre de projet en Thaïlande (recommandé)", "detail": "Description de votre projet créatif lié à la Thaïlande : reportage photo, livre, documentaire, résidence artistique. Renforce considérablement le dossier." }
     ],
-    "tips_title": "Conseils pour un dossier solide",
+    "tips_title": "Conseils spécifiques pour les Français",
     "tips": [
-      "Faites traduire tous les documents en anglais par un traducteur assermenté.",
-      "Constituez un portfolio visuel de 10-15 pages minimum si vous êtes freelance ou artiste.",
-      "Les relevés bancaires doivent être tamponnés et signés par votre banque.",
-      "Préparez votre dossier au moins 4 semaines avant la date de soumission.",
-      "L'assurance santé doit explicitement mentionner la Thaïlande dans la zone de couverture."
+      "Traducteur assermenté : trouvez-en un sur l'annuaire de la Cour de cassation (cour-de-cassation.fr). Tarif moyen : 30-50 €/page.",
+      "Casier judiciaire B3 : commandez-le dès maintenant sur casier-judiciaire.justice.gouv.fr (gratuit, 1-2 semaines par courrier).",
+      "Relevé bancaire : demandez à votre agence un relevé tamponné et signé. Sur Boursorama/Fortuneo, imprimez le PDF et faites certifier en agence partenaire.",
+      "RDV ambassade Paris : prenez rendez-vous via TLS Contact le plus tôt possible (créneaux limités, délai 1-3 semaines).",
+      "Convention fiscale France-Thaïlande : si vous restez moins de 183 jours/an en Thaïlande, vos revenus restent imposés en France uniquement.",
+      "L'assurance Chapka Cap Aventure est très populaire chez les nomades français — couverture monde entier, ~40 €/mois."
     ],
     "cta_title": "Pas sûr de votre dossier ?",
     "cta_text": "Notre IA analyse votre profil et identifie les documents manquants en 30 secondes.",
@@ -434,21 +437,22 @@ export const fr = {
     "back_to_dtv": "← Retour au guide complet Visa DTV",
     "related_title": "Articles liés",
     "related_erreurs": "Les 10 erreurs qui font refuser un visa DTV",
-    "related_comparatif": "Comparatif DTV vs autres visas Thaïlande"
+    "related_comparatif": "Comparatif DTV vs autres visas Thaïlande",
+    "related_delais": "Délais de traitement du visa DTV par ambassade"
   },
 
   "dtv_erreurs_page": {
     "meta": {
-      "title": "10 Erreurs Visa DTV Thaïlande 2026 | Évitez le Refus de Votre Demande",
-      "description": "Découvrez les 10 erreurs les plus fréquentes qui entraînent un refus du visa DTV Thaïlande. Solutions concrètes pour chaque erreur — guide mis à jour 2026."
+      "title": "10 Erreurs Visa DTV Thaïlande 2026 | Français, Évitez le Refus",
+      "description": "Les 10 erreurs des Français qui font refuser un visa DTV Thaïlande. Relevé BNP/SG, casier B3, traduction assermentée, ambassade Paris. Solutions concrètes — guide 2026."
     },
     "hero_badge": "Évitez le Refus DTV",
     "hero_title": "Les 10 erreurs qui font refuser un visa DTV",
-    "hero_subtitle": "Classées par gravité — avec la solution pour chacune. Basé sur l'analyse de 500+ dossiers traités par SiamVisa Pro.",
+    "hero_subtitle": "Classées par gravité — avec la solution adaptée aux demandeurs français.",
     "breadcrumb_home": "Accueil",
     "breadcrumb_dtv": "Visa DTV",
     "breadcrumb_current": "Erreurs fréquentes",
-    "intro": "Le taux de refus du visa DTV varie entre 15% et 30% selon les ambassades. La majorité des refus sont évitables. Voici les 10 erreurs les plus courantes, classées par gravité, et comment les corriger.",
+    "intro": "Le taux de refus du visa DTV varie entre 15% et 30% selon les ambassades. Pour les Français, la majorité des refus sont évitables avec un dossier bien préparé. Voici les 10 erreurs les plus fréquentes et comment les corriger depuis la France.",
     "severity_critical": "Critique",
     "severity_high": "Élevée",
     "severity_medium": "Moyenne",
@@ -456,81 +460,81 @@ export const fr = {
       {
         "rank": 1,
         "severity": "critical",
-        "title": "Dossier financier insuffisant",
-        "description": "Le relevé bancaire ne montre pas 500 000 THB (~13 000 €) ou les fonds sont déposés récemment (« money parking »).",
-        "solution": "Maintenez un solde suffisant pendant au moins 3 mois avant la demande. Les mouvements réguliers (salaires) sont plus convaincants qu'un virement unique.",
+        "title": "Dossier financier insuffisant ou « money parking »",
+        "description": "Le relevé bancaire ne montre pas 500 000 THB (~13 000 €) ou un virement unique récent trahit un dépôt de complaisance. Les banques en ligne (Boursorama, Revolut) sans relevé tamponné posent aussi problème.",
+        "solution": "Maintenez 13 000 €+ sur votre compte principal (BNP, SG, Crédit Agricole) pendant au moins 3 mois. Demandez un relevé tamponné et signé en agence. Pour les banques en ligne, faites certifier le relevé PDF par courrier ou en agence partenaire.",
         "refusal_rate": "~35% des refus"
       },
       {
         "rank": 2,
         "severity": "critical",
         "title": "Aucune preuve de travail à distance",
-        "description": "Pas de contrat, pas de fiches de paie, pas de factures clients. L'ambassade ne peut pas vérifier votre activité professionnelle.",
-        "solution": "Fournissez un contrat de travail (même si freelance, un contrat-cadre avec vos clients). Ajoutez 3-6 fiches de paie ou factures.",
+        "description": "Pas de contrat CDI/CDD avec clause télétravail, pas de bulletins de salaire, pas de factures auto-entrepreneur. L'ambassade ne peut pas vérifier votre activité.",
+        "solution": "Salariés : fournissez votre contrat + avenant télétravail + 3 bulletins de salaire. Auto-entrepreneurs : attestation URSSAF + 6 factures + relevé pro (Qonto, Shine, BNP Pro). Tout en anglais (traducteur assermenté, annuaire Cour de cassation).",
         "refusal_rate": "~25% des refus"
       },
       {
         "rank": 3,
         "severity": "critical",
         "title": "Portfolio vide ou inexistant",
-        "description": "Pour les freelances et créatifs, ne pas fournir de portfolio est rédhibitoire. L'ambassade doit comprendre votre activité.",
-        "solution": "Créez un portfolio PDF de 10-15 pages : bio, compétences, projets réalisés, témoignages, liens vers votre site/profils professionnels.",
+        "description": "Pour les freelances et créatifs, ne pas fournir de portfolio est rédhibitoire. L'ambassade de Paris est particulièrement attentive à ce point.",
+        "solution": "Créez un portfolio PDF de 10-15 pages : bio, compétences, projets réalisés avec visuels, témoignages clients, liens vers votre site/LinkedIn/Malt. Les développeurs peuvent inclure leur profil GitHub avec des contributions visibles.",
         "refusal_rate": "~20% des refus"
       },
       {
         "rank": 4,
         "severity": "high",
-        "title": "Documents non traduits en anglais",
-        "description": "Des documents en français, allemand, espagnol, etc. soumis sans traduction certifiée.",
-        "solution": "Faites traduire tous les documents non-anglais par un traducteur assermenté. Certaines ambassades exigent une apostille.",
+        "title": "Documents français non traduits en anglais",
+        "description": "Bulletins de salaire, contrat de travail, extrait Kbis, avis d'imposition soumis uniquement en français. L'ambassade thaïlandaise exige l'anglais.",
+        "solution": "Faites traduire tous les documents par un traducteur assermenté (annuaire sur cour-de-cassation.fr). Tarif moyen : 30-50 €/page. Délai : 3-7 jours. Le bulletin de salaire et le contrat de travail sont les plus importants.",
         "refusal_rate": "~10% des refus"
       },
       {
         "rank": 5,
         "severity": "high",
-        "title": "Passeport bientôt expiré",
-        "description": "Le passeport doit être valide au moins 6 mois après la date d'entrée prévue. Beaucoup oublient cette règle.",
-        "solution": "Vérifiez la date d'expiration et renouvelez votre passeport si nécessaire AVANT de soumettre votre demande.",
+        "title": "Passeport français bientôt expiré",
+        "description": "Le passeport doit être valide au moins 6 mois après la date d'entrée prévue en Thaïlande. Le renouvellement en mairie prend 3-6 semaines.",
+        "solution": "Vérifiez la date d'expiration maintenant. Si elle est < 8 mois, faites votre pré-demande sur ants.gouv.fr et prenez rendez-vous en mairie. Comptez 3-6 semaines selon la période (plus long en été).",
         "refusal_rate": "~5% des refus"
       },
       {
         "rank": 6,
         "severity": "high",
         "title": "Assurance santé non conforme",
-        "description": "L'assurance ne couvre pas la Thaïlande, la couverture est inférieure à 50 000 USD, ou la durée ne couvre pas le séjour prévu.",
-        "solution": "Souscrivez une assurance internationale (SafetyWing, Allianz, AXA) couvrant la Thaïlande avec minimum 50 000 USD et hospitalisation.",
+        "description": "La mutuelle française (MGEN, Harmonie) ne suffit pas. Il faut une assurance spécifique couvrant la Thaïlande avec 50 000 USD minimum.",
+        "solution": "Souscrivez une assurance dédiée : Chapka Cap Aventure (~40 €/mois), AXA Schengen, Allianz Travel ou SafetyWing (~45 $/mois). Le contrat doit mentionner explicitement « Thaïlande » dans la zone de couverture.",
         "refusal_rate": "~5% des refus"
       },
       {
         "rank": 7,
         "severity": "medium",
-        "title": "Photo non conforme aux normes ICAO",
-        "description": "Photo trop ancienne, fond coloré, lunettes, cadrage incorrect.",
-        "solution": "Prenez une photo récente (< 6 mois), fond blanc, 4×6 cm, sans lunettes, visage centré, norme ICAO.",
+        "title": "Photo non conforme ICAO",
+        "description": "Photo d'identité française classique (35×45 mm) au lieu du format thaïlandais (4×6 cm). Fond coloré, lunettes, photo ancienne.",
+        "solution": "Prenez une photo spécifique 4×6 cm en cabine Photomaton (option « visa ») ou chez un photographe agréé ANTS. Fond blanc, sans lunettes, visage centré. Coût : ~5 €.",
         "refusal_rate": "~3% des refus"
       },
       {
         "rank": 8,
         "severity": "medium",
         "title": "Formulaire incomplet ou mal rempli",
-        "description": "Champs manquants, incohérences entre les dates, signature oubliée.",
-        "solution": "Relisez chaque champ, vérifiez les dates, signez toutes les pages requises. Faites relire par un tiers avant soumission.",
+        "description": "Champs manquants, dates au format français (JJ/MM/AAAA) au lieu du format anglais, signature oubliée.",
+        "solution": "Utilisez le format de date anglais (DD/MM/YYYY ou YYYY-MM-DD). Remplissez en anglais. Signez toutes les pages. Faites relire par un tiers avant soumission.",
         "refusal_rate": "~3% des refus"
       },
       {
         "rank": 9,
         "severity": "medium",
-        "title": "Casier judiciaire absent ou périmé",
-        "description": "Le casier judiciaire date de plus de 3 mois ou n'est pas apostillé pour les pays qui l'exigent.",
-        "solution": "Demandez votre extrait de casier en ligne (délai 2-4 semaines en France). Apostillez-le si votre ambassade le demande.",
+        "title": "Casier judiciaire B3 absent ou périmé",
+        "description": "Le bulletin n°3 date de plus de 3 mois ou n'a pas été demandé du tout. Erreur fréquente chez les primo-demandeurs.",
+        "solution": "Commandez-le gratuitement sur casier-judiciaire.justice.gouv.fr. Délai : 1-2 semaines par courrier postal. Commandez-le en tout premier pour ne pas retarder votre dossier.",
         "refusal_rate": "~2% des refus"
       },
       {
         "rank": 10,
         "severity": "medium",
-        "title": "Choix de la mauvaise ambassade",
-        "description": "Certaines ambassades ont un taux d'acceptation plus élevé. Soumettre au mauvais endroit peut compliquer les choses.",
-        "solution": "Renseignez-vous sur les ambassades recommandées pour le DTV. Paris, Vientiane et Kuala Lumpur sont réputées pour le DTV.",
+        "title": "Soumettre à Paris alors qu'on peut aller en Asie",
+        "description": "L'ambassade de Paris a des délais plus longs (3-5 semaines) et des créneaux TLS Contact limités. Certains Français déjà en Asie font l'erreur de ne pas envisager Vientiane ou KL.",
+        "solution": "Si vous êtes déjà en Asie du Sud-Est : Vientiane (Laos), Kuala Lumpur (Malaisie) ou Phnom Penh (Cambodge) traitent les DTV en 3-7 jours. Depuis la France : Paris reste la seule option, réservez votre créneau TLS Contact au plus tôt.",
         "refusal_rate": "~2% des refus"
       }
     ],
@@ -547,21 +551,22 @@ export const fr = {
     "back_to_dtv": "← Retour au guide complet Visa DTV",
     "related_title": "Articles liés",
     "related_documents": "Documents requis pour le visa DTV — Checklist par profil",
-    "related_comparatif": "Comparatif DTV vs autres visas Thaïlande"
+    "related_comparatif": "Comparatif DTV vs autres visas Thaïlande",
+    "related_delais": "Délais de traitement du visa DTV par ambassade"
   },
 
   "dtv_comparatif_page": {
     "meta": {
-      "title": "Comparatif Visa DTV vs Touriste, LTR, Elite, ED — Thaïlande 2026",
-      "description": "Comparez le visa DTV avec les visas Touriste, LTR, Elite et ED Thaïlande. Tableau comparatif complet : durée, coût, travail à distance, conditions. Guide 2026."
+      "title": "Comparatif Visa DTV vs Touriste, LTR, Elite, ED — France 2026",
+      "description": "Quel visa Thaïlande choisir depuis la France ? Comparatif DTV vs Touriste, LTR, Elite, ED. Coût, fiscalité, travail à distance, convention France-Thaïlande. Guide 2026."
     },
     "hero_badge": "Comparatif Visas 2026",
     "hero_title": "Visa DTV vs autres visas Thaïlande",
-    "hero_subtitle": "Tableau comparatif complet pour choisir le visa adapté à votre situation — mis à jour février 2026.",
+    "hero_subtitle": "Tableau comparatif complet pour les résidents français — coût, fiscalité, conditions.",
     "breadcrumb_home": "Accueil",
     "breadcrumb_dtv": "Visa DTV",
     "breadcrumb_current": "Comparatif visas",
-    "intro": "Le DTV n'est pas le seul visa pour vivre en Thaïlande. Selon votre profil (âge, revenus, durée de séjour), un autre visa peut être plus adapté. Voici un comparatif détaillé pour faire le bon choix.",
+    "intro": "Le DTV n'est pas le seul visa pour vivre en Thaïlande depuis la France. Selon votre profil (âge, revenus, statut professionnel), un autre visa peut être plus adapté. Ce comparatif inclut les implications fiscales pour les résidents fiscaux français.",
     "table_title": "Tableau comparatif",
     "col_criteria": "Critère",
     "col_dtv": "DTV",
@@ -574,36 +579,37 @@ export const fr = {
       { "criteria": "Séjour par entrée", "dtv": "180 jours", "tourist": "60 jours", "ltr": "1 an", "elite": "1 an", "ed": "90 jours" },
       { "criteria": "Travail à distance", "dtv": "Oui ✓", "tourist": "Non ✗", "ltr": "Oui ✓", "elite": "Non ✗", "ed": "Non ✗" },
       { "criteria": "Coût total", "dtv": "~350 €", "tourist": "~35 €", "ltr": "~1 500 €", "elite": "15 000-60 000 €", "ed": "~500 €/an" },
-      { "criteria": "Condition financière", "dtv": "500 000 THB épargne", "tourist": "20 000 THB/pers.", "ltr": "80 000 $/an revenu", "elite": "Paiement unique", "ed": "Inscription école" },
+      { "criteria": "Condition financière", "dtv": "13 000 € d'épargne", "tourist": "~530 €/pers.", "ltr": "~75 000 €/an revenu", "elite": "Paiement unique", "ed": "Inscription école" },
       { "criteria": "Permis de travail", "dtv": "Non inclus", "tourist": "Non", "ltr": "Inclus", "elite": "Non", "ed": "Non" },
       { "criteria": "Extensions", "dtv": "Sorties multiples", "tourist": "1 extension 30j", "ltr": "Renouvelable", "elite": "Automatique", "ed": "Tous les 90j" },
       { "criteria": "Difficulté dossier", "dtv": "Moyenne", "tourist": "Facile", "ltr": "Élevée", "elite": "Facile (payant)", "ed": "Facile" },
+      { "criteria": "Fiscalité pour un Français", "dtv": "Imposé en France si <183j/an en TH", "tourist": "N/A", "ltr": "17% flat tax en TH", "elite": "Imposé en France", "ed": "Imposé en France" },
       { "criteria": "Idéal pour", "dtv": "Nomades digitaux", "tourist": "Courts séjours", "ltr": "Hauts revenus", "elite": "VIP / sans souci", "ed": "Étudiants" }
     ],
     "reco_title": "Quel visa choisir selon votre profil ?",
     "recommendations": [
-      { "profile": "Nomade digital / freelance avec revenus modérés", "visa": "DTV", "reason": "Le seul visa qui autorise explicitement le travail à distance pour un employeur étranger, à un coût accessible (~350 €)." },
-      { "profile": "Voyageur en court séjour (< 60 jours)", "visa": "Touriste ou exemption", "reason": "Gratuit ou ~35 €. Pas besoin de documents complexes. Idéal pour un premier repérage." },
-      { "profile": "Haut revenu ($80K+/an) cherchant à s'installer", "visa": "LTR", "reason": "10 ans, permis de travail inclus, imposition réduite à 17%. Le plus avantageux fiscalement." },
-      { "profile": "Budget confortable, zéro paperasse", "visa": "Elite", "reason": "Service VIP, transferts aéroport, fast-track immigration. Aucun justificatif de revenu requis." },
-      { "profile": "Étudiant en Muay Thai, cuisine ou langue thaïe", "visa": "ED", "reason": "~500 €/an, renouvelable. Nécessite une inscription dans une école agréée par le MoE." },
-      { "profile": "Retraité 50+ avec pension régulière", "visa": "Retraite (O-A)", "reason": "1 an renouvelable, 800 000 THB en banque thaïe. Le plus simple pour les 50+." }
+      { "profile": "Salarié français en CDI avec clause télétravail", "visa": "DTV", "reason": "Le seul visa qui autorise le travail à distance pour un employeur français. ~350 €, 5 ans. Vous restez imposé en France (convention fiscale France-Thaïlande, art. 15)." },
+      { "profile": "Auto-entrepreneur français (< 75 000 €/an)", "visa": "DTV", "reason": "Idéal pour les freelances sur Malt, Upwork ou en direct. Attestation URSSAF + factures suffisent. Micro-BIC/BNC maintenu en France." },
+      { "profile": "Vacancier ou premier repérage (< 60 jours)", "visa": "Touriste ou exemption", "reason": "Les Français bénéficient d'une exemption de visa de 60 jours à l'arrivée. Gratuit. Extension possible de 30 jours à l'immigration (1 900 THB)." },
+      { "profile": "Cadre supérieur / dirigeant (> 75 000 €/an)", "visa": "LTR", "reason": "10 ans, permis de travail inclus, flat tax 17% en Thaïlande. Intéressant fiscalement si vous transférez votre résidence fiscale hors de France." },
+      { "profile": "Budget confortable, zéro paperasse", "visa": "Elite", "reason": "Service VIP, fast-track immigration. Aucun justificatif de revenu. À partir de 15 000 €. Populaire chez les entrepreneurs français installés à Bangkok." },
+      { "profile": "Retraité français 50+ (CNAV, AGIRC-ARRCO)", "visa": "Retraite (O-A)", "reason": "1 an renouvelable. 800 000 THB (~20 000 €) en banque thaïlandaise. Votre pension CNAV/AGIRC-ARRCO reste imposée en France (convention fiscale art. 18)." }
     ],
-    "dtv_advantages_title": "Avantages uniques du DTV",
+    "dtv_advantages_title": "Avantages du DTV pour les Français",
     "dtv_advantages": [
-      "Seul visa autorisant officiellement le travail à distance",
-      "Validité 5 ans avec entrées multiples",
-      "Coût très compétitif (~350 €) vs Elite (15 000 €+)",
-      "Pas d'obligation de résidence continue",
-      "Ouvert à tous les profils : salariés, freelances, artistes, retraités actifs"
+      "Seul visa autorisant officiellement le travail à distance pour un employeur français ou européen",
+      "Validité 5 ans avec entrées multiples — pas besoin de refaire la demande chaque année",
+      "Coût très compétitif (~350 €) vs Elite (15 000 €+) ou LTR (1 500 €+)",
+      "Convention fiscale France-Thaïlande : si < 183 jours/an en TH, vos revenus restent imposés en France uniquement",
+      "Compatible avec le statut auto-entrepreneur français (micro-BIC/BNC)"
     ],
     "dtv_limits_title": "Limites du DTV",
     "dtv_limits": [
-      "Séjour limité à 180 jours par entrée (nécessite border run)",
+      "Séjour limité à 180 jours par entrée (border run nécessaire — Vientiane, KL ou Phnom Penh)",
       "Pas de permis de travail — interdit de travailler pour un employeur thaïlandais",
-      "Exigence de 500 000 THB d'épargne",
-      "Dossier plus complexe qu'un visa touriste",
-      "Certaines ambassades plus strictes que d'autres"
+      "Exigence de 13 000 € d'épargne minimum visible sur le relevé bancaire",
+      "Dossier plus complexe qu'un visa touriste (portfolio, traductions assermentées)",
+      "Ambassade de Paris : délais 3-5 semaines, créneaux TLS Contact limités"
     ],
     "cta_title": "Vous hésitez entre plusieurs visas ?",
     "cta_text": "Notre IA compare votre profil avec les critères de chaque visa et vous recommande le meilleur choix.",
@@ -611,7 +617,76 @@ export const fr = {
     "back_to_dtv": "← Retour au guide complet Visa DTV",
     "related_title": "Articles liés",
     "related_documents": "Documents requis pour le visa DTV — Checklist par profil",
-    "related_erreurs": "Les 10 erreurs qui font refuser un visa DTV"
+    "related_erreurs": "Les 10 erreurs qui font refuser un visa DTV",
+    "related_delais": "Délais de traitement du visa DTV par ambassade"
+  },
+
+  "dtv_delais_page": {
+    "meta": {
+      "title": "Délais Visa DTV Thaïlande 2026 | Ambassade Paris, TLS Contact, Asie",
+      "description": "Combien de temps pour obtenir un visa DTV depuis la France en 2026 ? Délais ambassade Paris (TLS Contact), Vientiane, KL. Étapes, casier B3, traduction. Guide français."
+    },
+    "hero_badge": "Délais DTV 2026",
+    "hero_title": "Délais de traitement du visa DTV Thaïlande",
+    "hero_subtitle": "Depuis la France (Paris, TLS Contact) ou en Asie du Sud-Est — planifiez votre demande.",
+    "breadcrumb_home": "Accueil",
+    "breadcrumb_dtv": "Visa DTV",
+    "breadcrumb_current": "Délais de traitement",
+    "intro": "Le délai d'obtention du visa DTV varie considérablement selon que vous postulez depuis la France (ambassade de Paris via TLS Contact) ou depuis une ambassade en Asie du Sud-Est. Ce guide détaille les temps de traitement réels pour les demandeurs français.",
+    "timeline_title": "Les étapes du processus DTV depuis la France",
+    "steps": [
+      { "step": "1", "title": "Préparation du dossier", "duration": "2 à 4 semaines", "detail": "Casier judiciaire B3 (1-2 semaines sur casier-judiciaire.justice.gouv.fr), traduction assermentée des documents (3-7 jours, ~30-50 €/page), relevé bancaire tamponné en agence (BNP, SG, CA…), constitution du portfolio PDF." },
+      { "step": "2", "title": "Rendez-vous TLS Contact (Paris)", "duration": "1 à 3 semaines", "detail": "Inscription sur le site TLS Contact, choix d'un créneau. Les créneaux sont limités en haute saison (été, Noël). Alternative : en Asie, rendez-vous souvent disponible sous 1-3 jours." },
+      { "step": "3", "title": "Dépôt du dossier", "duration": "1 jour", "detail": "Paris : dépôt via TLS Contact (8 rue de Lota, 75116). Passeport original laissé sur place. En Asie : dépôt direct à l'ambassade." },
+      { "step": "4", "title": "Traitement par l'ambassade", "duration": "5 à 15 jours ouvrés", "detail": "Paris : 5-10 jours ouvrés en moyenne. Vientiane/KL : 3-5 jours ouvrés. Des documents complémentaires peuvent être demandés (+1-2 semaines)." },
+      { "step": "5", "title": "Récupération du passeport", "duration": "1 à 3 jours", "detail": "Paris : retrait chez TLS Contact ou envoi Chronopost (~20 €). Asie : retrait sur place le jour indiqué." }
+    ],
+    "embassies_title": "Délais par ambassade pour les Français",
+    "embassies_subtitle": "Estimations basées sur les retours de la communauté française — février 2026",
+    "col_embassy": "Ambassade / Consulat",
+    "col_rdv": "Délai de rendez-vous",
+    "col_processing": "Traitement",
+    "col_total": "Total estimé",
+    "col_notes": "Remarques",
+    "embassies": [
+      { "name": "Paris via TLS Contact", "rdv": "1-3 semaines", "processing": "5-10 jours ouvrés", "total": "3-6 semaines", "notes": "Seule option depuis la France métropolitaine. RDV via tlscontact.com. Prévoir 50 € de frais TLS en plus du visa." },
+      { "name": "Vientiane (Laos)", "rdv": "1-3 jours", "processing": "3-5 jours ouvrés", "total": "1-2 semaines", "notes": "Option favorite des Français déjà en Asie. Vol Paris-Vientiane via Bangkok (~500 €)." },
+      { "name": "Kuala Lumpur (Malaisie)", "rdv": "1-5 jours", "processing": "3-7 jours ouvrés", "total": "1-3 semaines", "notes": "Bon taux d'acceptation DTV. Vol direct Paris-KL (~400-600 € A/R avec AirAsia X)." },
+      { "name": "Phnom Penh (Cambodge)", "rdv": "1-3 jours", "processing": "3-5 jours ouvrés", "total": "1-2 semaines", "notes": "Option rapide et accessible. E-Visa Cambodge disponible pour les Français." },
+      { "name": "Savannakhet (Laos)", "rdv": "1-2 jours", "processing": "2-3 jours ouvrés", "total": "1 semaine", "notes": "Le plus rapide. File d'attente physique tôt le matin. Accessible depuis Bangkok en bus de nuit ou vol." },
+      { "name": "Marseille (Consul honoraire)", "rdv": "Variable", "processing": "Redirige vers Paris", "total": "4-6 semaines", "notes": "Le consul honoraire ne traite pas les DTV. Renvoi vers TLS Contact Paris." }
+    ],
+    "seasons_title": "Périodes à éviter pour les Français",
+    "seasons": [
+      { "period": "Décembre — Janvier", "impact": "Haute saison touristique + vacances de Noël → TLS Contact Paris saturé, délais doublés. Fermetures 25/12 et 01/01." },
+      { "period": "Avril (Songkran)", "impact": "Nouvel an thaïlandais → fermeture des ambassades en Asie pendant 3-5 jours. Paris reste ouvert mais ralenti." },
+      { "period": "Juillet — Août", "impact": "Vacances d'été → forte demande des Français sur TLS Contact Paris. Les créneaux se remplissent 2-3 semaines à l'avance." },
+      { "period": "Toussaint (fin octobre)", "impact": "Pic secondaire de demandes avant la haute saison thaïlandaise. Anticiper de 2 semaines." }
+    ],
+    "tips_title": "Conseils pour les demandeurs français",
+    "tips": [
+      "Commandez votre casier B3 en PREMIER (casier-judiciaire.justice.gouv.fr) — c'est le document le plus long à obtenir (1-2 semaines).",
+      "Réservez votre créneau TLS Contact Paris dès que votre dossier est prêt — les créneaux se remplissent vite en été et à Noël.",
+      "Si vous êtes flexible sur la date de départ, postulez depuis Vientiane ou KL pour un traitement 3× plus rapide.",
+      "Faites traduire vos documents par un traducteur assermenté AVANT de prendre rendez-vous — pas après (annuaire sur cour-de-cassation.fr).",
+      "Relevé bancaire : demandez-le tamponné et signé en agence. Les PDF Boursorama/Fortuneo sans tampon sont parfois refusés.",
+      "Budget total réaliste depuis la France : visa (~350 €) + TLS Contact (~50 €) + traductions (~150-200 €) + photos (~5 €) = ~550-600 €."
+    ],
+    "total_title": "Délai total réaliste pour un Français",
+    "total_min": "1 semaine",
+    "total_min_label": "Depuis l'Asie du Sud-Est, dossier parfait",
+    "total_avg": "4-5 semaines",
+    "total_avg_label": "Depuis Paris via TLS Contact, dossier complet",
+    "total_max": "8-10 semaines",
+    "total_max_label": "Haute saison + documents complémentaires demandés",
+    "cta_title": "Besoin d'accélérer votre demande ?",
+    "cta_text": "Notre équipe vérifie votre dossier avant soumission pour éviter les allers-retours avec l'ambassade.",
+    "cta_button": "Vérifier mon dossier DTV",
+    "back_to_dtv": "← Retour au guide complet Visa DTV",
+    "related_title": "Articles liés",
+    "related_documents": "Documents requis pour le visa DTV — Checklist par profil",
+    "related_erreurs": "Les 10 erreurs qui font refuser un visa DTV",
+    "related_comparatif": "Comparatif DTV vs autres visas Thaïlande"
   },
 
   "ai_technology_page": {

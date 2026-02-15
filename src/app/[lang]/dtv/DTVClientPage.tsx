@@ -130,10 +130,35 @@ const DTVClientPage: React.FC = () => {
                         }
                     ]}
                 />
+
+                {/* Articles liés — FR uniquement (satellites DTV) */}
+                {lang === 'fr' && (
+                    <section className="mt-12">
+                        <h2 className="text-xl font-bold text-gray-900 mb-4">Articles liés</h2>
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <a href={langPath('dtv-documents')} className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-blue-300 transition">
+                                <span className="text-blue-600 font-semibold">Documents requis — Checklist par profil</span>
+                                <p className="text-gray-500 text-sm mt-1">La liste complète des pièces justificatives pour le DTV.</p>
+                            </a>
+                            <a href={langPath('dtv-erreurs')} className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-blue-300 transition">
+                                <span className="text-blue-600 font-semibold">10 erreurs qui font refuser un DTV</span>
+                                <p className="text-gray-500 text-sm mt-1">Classées par gravité avec la solution pour chacune.</p>
+                            </a>
+                            <a href={langPath('dtv-comparatif')} className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-blue-300 transition">
+                                <span className="text-blue-600 font-semibold">Comparatif DTV vs autres visas</span>
+                                <p className="text-gray-500 text-sm mt-1">Tableau comparatif complet pour choisir le bon visa.</p>
+                            </a>
+                            <a href={langPath('dtv-delais')} className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-blue-300 transition">
+                                <span className="text-blue-600 font-semibold">Délais de traitement par ambassade</span>
+                                <p className="text-gray-500 text-sm mt-1">Temps moyen et conseils pour accélérer votre demande.</p>
+                            </a>
+                        </div>
+                    </section>
+                )}
             </div>
 
             {/* 7. Appointment Section */}
-            <section id="appointment-section" className="py-24 bg-slate-50 border-t">
+            <section id="appointment-section" className="py-24 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="bg-slate-900 rounded-[3rem] shadow-2xl overflow-hidden lg:grid lg:grid-cols-2">
                         <div className="p-12 lg:p-20 text-white flex flex-col justify-center">

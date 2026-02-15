@@ -35,6 +35,7 @@ export const PAGE_TRANSLATION_KEYS: Record<string, string[]> = {
     'dtv-documents': ['dtv_documents_page'],
     'dtv-erreurs': ['dtv_erreurs_page'],
     'dtv-comparatif': ['dtv_comparatif_page', 'visas'],
+    'dtv-delais': ['dtv_delais_page'],
 
     // Other pages
     about: ['about_page'],

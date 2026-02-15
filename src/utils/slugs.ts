@@ -28,7 +28,8 @@ export type PageKey =
     | 'ai-technology'
     | 'dtv-documents'
     | 'dtv-erreurs'
-    | 'dtv-comparatif';
+    | 'dtv-comparatif'
+    | 'dtv-delais';
 
 export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     fr: {
@@ -61,7 +62,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'ai-technology': 'technologie-ia-visa',
         'dtv-documents': 'visa-dtv-thailande/documents-requis',
         'dtv-erreurs': 'visa-dtv-thailande/erreurs-frequentes',
-        'dtv-comparatif': 'visa-dtv-thailande/comparatif-visas'
+        'dtv-comparatif': 'visa-dtv-thailande/comparatif-visas',
+        'dtv-delais': 'visa-dtv-thailande/delais-traitement'
     },
     en: {
         home: '',
@@ -93,7 +95,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'ai-technology': 'ai-visa-technology',
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
-        'dtv-comparatif': 'dtv/comparatif'
+        'dtv-comparatif': 'dtv/comparatif',
+        'dtv-delais': 'dtv/delais'
     },
     de: {
         home: '',
@@ -125,7 +128,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'ai-technology': 'ki-visum-technologie',
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
-        'dtv-comparatif': 'dtv/comparatif'
+        'dtv-comparatif': 'dtv/comparatif',
+        'dtv-delais': 'dtv/delais'
     },
     es: {
         home: '',
@@ -157,7 +161,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'ai-technology': 'tecnologia-ia-visa',
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
-        'dtv-comparatif': 'dtv/comparatif'
+        'dtv-comparatif': 'dtv/comparatif',
+        'dtv-delais': 'dtv/delais'
     },
     it: {
         home: '',
@@ -189,7 +194,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'ai-technology': 'tecnologia-ia-visto',
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
-        'dtv-comparatif': 'dtv/comparatif'
+        'dtv-comparatif': 'dtv/comparatif',
+        'dtv-delais': 'dtv/delais'
     },
     th: {
         home: '',
@@ -221,7 +227,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'ai-technology': 'ai-technology',
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
-        'dtv-comparatif': 'dtv/comparatif'
+        'dtv-comparatif': 'dtv/comparatif',
+        'dtv-delais': 'dtv/delais'
     },
     ru: {
         home: '',
@@ -253,7 +260,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'ai-technology': 'ai-technology',
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
-        'dtv-comparatif': 'dtv/comparatif'
+        'dtv-comparatif': 'dtv/comparatif',
+        'dtv-delais': 'dtv/delais'
     },
     zh: {
         home: '',
@@ -285,7 +293,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'ai-technology': 'ai-technology',
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
-        'dtv-comparatif': 'dtv/comparatif'
+        'dtv-comparatif': 'dtv/comparatif',
+        'dtv-delais': 'dtv/delais'
     },
     ja: {
         home: '',
@@ -317,7 +326,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'ai-technology': 'ai-technology',
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
-        'dtv-comparatif': 'dtv/comparatif'
+        'dtv-comparatif': 'dtv/comparatif',
+        'dtv-delais': 'dtv/delais'
     },
     ko: {
         home: '',
@@ -349,7 +359,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'ai-technology': 'ai-technology',
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
-        'dtv-comparatif': 'dtv/comparatif'
+        'dtv-comparatif': 'dtv/comparatif',
+        'dtv-delais': 'dtv/delais'
     },
     ar: {
         home: '',
@@ -381,7 +392,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'ai-technology': 'ai-technology',
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
-        'dtv-comparatif': 'dtv/comparatif'
+        'dtv-comparatif': 'dtv/comparatif',
+        'dtv-delais': 'dtv/delais'
     }
 };
 

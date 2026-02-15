@@ -30,7 +30,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'ai-technology': 'technologie-ia-visa',
     'dtv/documents': 'visa-dtv-thailande/documents-requis',
     'dtv/erreurs': 'visa-dtv-thailande/erreurs-frequentes',
-    'dtv/comparatif': 'visa-dtv-thailande/comparatif-visas'
+    'dtv/comparatif': 'visa-dtv-thailande/comparatif-visas',
+    'dtv/delais': 'visa-dtv-thailande/delais-traitement'
   },
   en: {
     dtv: 'thailand-dtv-visa',

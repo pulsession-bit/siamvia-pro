@@ -142,12 +142,15 @@ const DTVErreursClientPage: React.FC = () => {
                 {/* Articles liés */}
                 <section className="border-t border-gray-200 pt-8">
                     <h2 className="text-xl font-bold text-gray-900 mb-4">{p('related_title')}</h2>
-                    <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="grid sm:grid-cols-3 gap-4">
                         <Link href={langPath('dtv-documents')} className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-blue-300 transition">
                             <span className="text-blue-600 font-semibold">{p('related_documents')}</span>
                         </Link>
                         <Link href={langPath('dtv-comparatif')} className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-blue-300 transition">
                             <span className="text-blue-600 font-semibold">{p('related_comparatif')}</span>
+                        </Link>
+                        <Link href={langPath('dtv-delais')} className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-blue-300 transition">
+                            <span className="text-blue-600 font-semibold">{p('related_delais')}</span>
                         </Link>
                     </div>
                 </section>
