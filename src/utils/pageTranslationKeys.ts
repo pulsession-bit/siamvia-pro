@@ -10,7 +10,7 @@
 
 export const PAGE_TRANSLATION_KEYS: Record<string, string[]> = {
     // Homepage
-    home: ['home_page', 'hero', 'spotlight', 'visas', 'ai_block', 'meta', 'schema'],
+    home: ['home_page', 'hero', 'spotlight', 'visas', 'ai_block', 'meta', 'schema', 'cta_footer'],
 
     // Visa pages
     dtv: ['dtv_page', 'visas', 'faq_page'],
