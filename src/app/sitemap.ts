@@ -33,6 +33,14 @@ const pages: PageKey[] = [
     'sitemap'
 ];
 
+// DTV satellite pages — FR only
+const frOnlyPages: PageKey[] = [
+    'dtv-documents',
+    'dtv-erreurs',
+    'dtv-comparatif',
+    'dtv-delais'
+];
+
 
 const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'];
 
@@ -80,6 +88,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
                     languages: alternates,
                 },
             });
+        });
+    });
+
+    // FR-only satellite pages (no alternates for other languages)
+    frOnlyPages.forEach((page) => {
+        const translatedPath = getTranslatedPath(page, 'fr');
+        urls.push({
+            url: `${baseUrl}${translatedPath}`,
+            lastModified: currentDate,
+            changeFrequency: 'monthly',
+            priority: 0.7,
+            alternates: {
+                languages: {
+                    fr: `${baseUrl}${translatedPath}`,
+                    'x-default': `${baseUrl}${translatedPath}`,
+                },
+            },
         });
     });
 
