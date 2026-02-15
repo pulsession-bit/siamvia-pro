@@ -4,7 +4,7 @@ import { CartProvider } from '@/contexts/CartContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CartDrawer from '@/components/CartDrawer';
-import { translations } from '@/utils/translations';
+import { getSharedDictionary, getFullDictionary } from '@/utils/getSharedDictionary';
 import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '../globals.css';
@@ -20,7 +20,7 @@ import { generateMetadataWithHreflang } from '@/utils/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    const t = translations[lang as keyof typeof translations] || translations.en;
+    const t = getFullDictionary(lang as any);
 
     // Fallback to home metadata if available
     const meta = (t as any).meta || { title: "Siam Visa Pro", description: "Thailand Visa Expert" };
@@ -52,9 +52,12 @@ export default async function LangLayout({ children, params }: Props) {
         notFound();
     }
 
-    // Load dictionaries on server
-    const dictionary = translations[lang as keyof typeof translations] || translations.en;
-    const englishFallback = translations.en;
+    // Load ONLY shared dictionaries (nav, footer, cart) — page-specific translations
+    // are loaded directly in each page's Server Component to avoid bloating the RSC payload.
+    // Before: ~119 KB (FR) of translations sent to EVERY page
+    // After:  ~5 KB of shared keys only
+    const dictionary = getSharedDictionary(lang as any);
+    const englishFallback = lang !== 'en' ? getSharedDictionary('en') : undefined;
 
     return (
         <html lang={lang}>
@@ -87,7 +90,7 @@ export default async function LangLayout({ children, params }: Props) {
                 <LanguageProvider
                     initialLang={lang as any}
                     dictionary={dictionary}
-                    fallbackDictionary={lang !== 'en' ? englishFallback : undefined}
+                    fallbackDictionary={englishFallback}
                 >
                     <CartProvider>
                         <Navbar />

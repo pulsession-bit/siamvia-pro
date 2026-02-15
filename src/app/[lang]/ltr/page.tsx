@@ -1,25 +1,23 @@
 
 import { Metadata } from 'next';
+import { getFullDictionary, getPageDictionary, getPageFallbackDictionary } from '@/utils/getSharedDictionary';
+import { PAGE_TRANSLATION_KEYS } from '@/utils/pageTranslationKeys';
 import LTRClientPage from './LTRClientPage';
-import { translations } from '@/utils/translations';
-
-const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
+import PageTranslations from '@/components/PageTranslations';
+import { generateMetadataWithHreflang } from '@/utils/seo';
+import { SchemaOrg } from '@/components/SchemaOrg';
+import { VisaServiceSchemas } from '@/components/ServiceSchema';
+import { LTRSchemaAI } from '@/components/LTRSchemaAI';
 
 type Props = {
     params: Promise<{ lang: string }>;
 };
 
-import { generateMetadataWithHreflang } from '@/utils/seo';
-import { getTranslatedPath } from '@/utils/slugs';
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { lang } = await params;
-    const langTranslations = translations[lang as keyof typeof translations];
-    const ltrPage = (langTranslations && 'ltr_page' in langTranslations)
-        ? (langTranslations as any).ltr_page
-        : translations.fr.ltr_page;
-
-    const meta = ltrPage?.meta || translations.fr.ltr_page.meta;
+    const t = getFullDictionary(lang as any) as any;
+    const ltrPage = t.ltr_page || getFullDictionary('fr' as any).ltr_page;
+    const meta = ltrPage?.meta || (getFullDictionary('fr' as any) as any).ltr_page.meta;
 
     return generateMetadataWithHreflang({
         title: meta.title,
@@ -29,21 +27,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     });
 }
 
-import { SchemaOrg } from '@/components/SchemaOrg';
-import { VisaServiceSchemas } from '@/components/ServiceSchema';
-import { LTRSchemaAI } from '@/components/LTRSchemaAI';
-
 export default async function LTRPage({ params }: Props) {
     const { lang } = await params;
-    const t = translations[lang as keyof typeof translations] || translations.en;
+    const t = getFullDictionary(lang as any) as any;
+    const keys = PAGE_TRANSLATION_KEYS['ltr'];
+    const dict = getPageDictionary(lang, keys);
+    const fallback = lang !== 'en' ? getPageFallbackDictionary(keys) : undefined;
 
     return (
         <>
             <SchemaOrg lang={lang} pageKey="ltr" title={t.nav.ltr} showGlobal={false} />
             {VisaServiceSchemas.ltr(lang)}
             <LTRSchemaAI lang={lang} />
-            <LTRClientPage />
+            <PageTranslations dictionary={dict} fallbackDictionary={fallback}>
+                <LTRClientPage />
+            </PageTranslations>
         </>
     );
 }
-

@@ -1,7 +1,9 @@
 import React from 'react';
 import SitemapClientPage from './SitemapClientPage';
 import { Metadata } from 'next';
-import { translations } from '@/utils/translations';
+import { getFullDictionary, getPageDictionary, getPageFallbackDictionary } from '@/utils/getSharedDictionary';
+import { PAGE_TRANSLATION_KEYS } from '@/utils/pageTranslationKeys';
+import PageTranslations from '@/components/PageTranslations';
 import { generateMetadataWithHreflang } from '@/utils/seo';
 
 type Props = {
@@ -12,7 +14,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { lang } = await params;
-    const t = (translations as any)[lang] || translations.en;
+    const t = getFullDictionary(lang as any) as any;
 
     return generateMetadataWithHreflang({
         title: t.footer?.sitemap || "Sitemap",
@@ -23,5 +25,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function SitemapPage({ params }: Props) {
-    return <SitemapClientPage />;
+    const { lang } = await params;
+    const keys = PAGE_TRANSLATION_KEYS['sitemap'];
+    const dict = getPageDictionary(lang, keys);
+    const fallback = lang !== 'en' ? getPageFallbackDictionary(keys) : undefined;
+
+    return (
+        <PageTranslations dictionary={dict} fallbackDictionary={fallback}>
+            <SitemapClientPage />
+        </PageTranslations>
+    );
 }

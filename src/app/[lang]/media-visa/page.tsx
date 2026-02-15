@@ -1,19 +1,18 @@
 import { Metadata } from 'next';
-import { translations } from '@/utils/translations';
-import { getTranslatedPath } from '@/utils/slugs';
+import { getFullDictionary, getPageDictionary, getPageFallbackDictionary } from '@/utils/getSharedDictionary';
+import { PAGE_TRANSLATION_KEYS } from '@/utils/pageTranslationKeys';
 import MediaClientPage from './MediaClientPage';
-
-const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
-
+import PageTranslations from '@/components/PageTranslations';
 import { generateMetadataWithHreflang } from '@/utils/seo';
+import { SchemaOrg } from '@/components/SchemaOrg';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    const t = translations[lang as keyof typeof translations] || translations.en;
+    const t = getFullDictionary(lang as any) as any;
 
-    const meta = (t.media_visa_page as any).meta || {
-        title: t.media_visa_page.hero_title,
-        description: t.media_visa_page.hero_subtitle
+    const meta = t.media_visa_page?.meta || {
+        title: t.media_visa_page?.hero_title || 'Media Visa',
+        description: t.media_visa_page?.hero_subtitle || ''
     };
 
     return generateMetadataWithHreflang({
@@ -24,14 +23,18 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     });
 }
 
-import { SchemaOrg } from '@/components/SchemaOrg';
-
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
     const { lang } = await params;
+    const keys = PAGE_TRANSLATION_KEYS['media-visa'];
+    const dict = getPageDictionary(lang, keys);
+    const fallback = lang !== 'en' ? getPageFallbackDictionary(keys) : undefined;
+
     return (
         <>
             <SchemaOrg lang={lang} pageKey="media-visa" title="Media Visa" showGlobal={false} />
-            <MediaClientPage />
+            <PageTranslations dictionary={dict} fallbackDictionary={fallback}>
+                <MediaClientPage />
+            </PageTranslations>
         </>
     );
 }

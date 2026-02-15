@@ -1,9 +1,10 @@
 import React from 'react';
 import VisaRunClientPage from './VisaRunClientPage';
 import { Metadata } from 'next';
-import { translations } from '@/utils/translations';
-
-const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
+import { getFullDictionary, getPageDictionary, getPageFallbackDictionary } from '@/utils/getSharedDictionary';
+import { PAGE_TRANSLATION_KEYS } from '@/utils/pageTranslationKeys';
+import PageTranslations from '@/components/PageTranslations';
+import { generateMetadataWithHreflang } from '@/utils/seo';
 
 type Props = {
     params: Promise<{
@@ -11,19 +12,17 @@ type Props = {
     }>;
 };
 
-import { generateMetadataWithHreflang } from '@/utils/seo';
-import { getTranslatedPath } from '@/utils/slugs';
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { lang } = await params;
-    const t = (translations as any)[lang]?.visa_run_page?.meta || (translations as any)['en']?.visa_run_page?.meta || {
+    const t = getFullDictionary(lang as any) as any;
+    const meta = t.visa_run_page?.meta || {
         title: "Thailand Visa Run: Risks & Alternatives 2026",
         description: "Stop doing visa runs. Discover legal, long-term visa options for Thailand."
     };
 
     return generateMetadataWithHreflang({
-        title: t.title,
-        description: t.description,
+        title: meta.title,
+        description: meta.description,
         pageKey: 'visa-run',
         lang,
     });
@@ -31,9 +30,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function VisaRunPage({ params }: Props) {
     const { lang } = await params;
+    const keys = PAGE_TRANSLATION_KEYS['visa-run'];
+    const dict = getPageDictionary(lang, keys);
+    const fallback = lang !== 'en' ? getPageFallbackDictionary(keys) : undefined;
+
     return (
         <React.Suspense fallback={<div className="min-h-screen bg-slate-50 flex items-center justify-center">Loading content...</div>}>
-            <VisaRunClientPage />
+            <PageTranslations dictionary={dict} fallbackDictionary={fallback}>
+                <VisaRunClientPage />
+            </PageTranslations>
         </React.Suspense>
     );
 }

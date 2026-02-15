@@ -1,19 +1,17 @@
 import { Metadata } from 'next';
-import { translations } from '@/utils/translations';
-import { getTranslatedPath } from '@/utils/slugs';
+import { getFullDictionary, getPageDictionary, getPageFallbackDictionary } from '@/utils/getSharedDictionary';
+import { PAGE_TRANSLATION_KEYS } from '@/utils/pageTranslationKeys';
 import ContactClientPage from './ContactClientPage';
-
-const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
-
+import PageTranslations from '@/components/PageTranslations';
 import { generateMetadataWithHreflang } from '@/utils/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
-  const t = translations[lang as keyof typeof translations] || translations.en;
+  const t = getFullDictionary(lang as any) as any;
 
-  const meta = (t.contact_page as any)?.meta || {
-    title: t.contact_page.title,
-    description: t.contact_page.subtitle
+  const meta = t.contact_page?.meta || {
+    title: t.contact_page?.title || 'Contact',
+    description: t.contact_page?.subtitle || ''
   };
 
   return generateMetadataWithHreflang({
@@ -24,6 +22,15 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   });
 }
 
-export default function Page() {
-  return <ContactClientPage />;
+export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  const keys = PAGE_TRANSLATION_KEYS['contact'];
+  const dict = getPageDictionary(lang, keys);
+  const fallback = lang !== 'en' ? getPageFallbackDictionary(keys) : undefined;
+
+  return (
+    <PageTranslations dictionary={dict} fallbackDictionary={fallback}>
+      <ContactClientPage />
+    </PageTranslations>
+  );
 }

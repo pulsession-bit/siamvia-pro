@@ -63,6 +63,79 @@ export const LanguageProvider: React.FC<{
   );
 };
 
+/**
+ * DictionaryExtender merges page-specific translation keys into the
+ * LanguageProvider, creating a new nested provider. This allows the outer
+ * layout to pass only shared keys (~5 KB) and each page to add its own
+ * page-specific keys on top.
+ *
+ * The t() function will look up keys in both the extended dictionary AND
+ * the original (shared) dictionary, so Navbar/Footer/Cart translations
+ * continue to work seamlessly.
+ *
+ * Usage in a Server Component page.tsx:
+ *
+ *   const full = getFullDictionary(lang);
+ *   const pageDictionary = { dtv_page: full.dtv_page, hero: full.hero };
+ *   return (
+ *     <DictionaryExtender dictionary={pageDictionary} fallbackDictionary={...}>
+ *       <DTVClientPage />
+ *     </DictionaryExtender>
+ *   );
+ */
+export const DictionaryExtender: React.FC<{
+  children: ReactNode;
+  dictionary: Record<string, any>;
+  fallbackDictionary?: Record<string, any>;
+}> = ({ children, dictionary, fallbackDictionary }) => {
+  const parent = useContext(LanguageContext);
+  if (!parent) throw new Error('DictionaryExtender must be used within a LanguageProvider');
+
+  const { language, setLanguage } = parent;
+  const parentT = parent.t;
+
+  const t = useMemo(() => {
+    return (path: string): string => {
+      // 1. Try the extended (page-specific) dictionary first
+      const keys = path.split('.');
+      let current: any = dictionary;
+      for (const key of keys) {
+        if (!current || current[key] === undefined) {
+          current = undefined;
+          break;
+        }
+        current = current[key];
+      }
+      if (current !== undefined) return current as string;
+
+      // 2. Try the page-specific fallback dictionary
+      if (fallbackDictionary) {
+        let fallback: any = fallbackDictionary;
+        for (const key of keys) {
+          if (fallback && fallback[key] !== undefined) {
+            fallback = fallback[key];
+          } else {
+            fallback = undefined;
+            break;
+          }
+        }
+        if (fallback !== undefined) return fallback as string;
+      }
+
+      // 3. Fall through to the parent (layout-level) dictionary (nav, footer, cart)
+      return parentT(path);
+    };
+  }, [dictionary, fallbackDictionary, parentT]);
+
+  const value = useMemo(() => ({ language, setLanguage, t }), [language, setLanguage, t]);
+
+  return (
+    <LanguageContext.Provider value={value}>
+      {children}
+    </LanguageContext.Provider>
+  );
+};
+
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
   if (!context) {

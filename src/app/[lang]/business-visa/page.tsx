@@ -1,17 +1,18 @@
 import { Metadata } from 'next';
-import { translations } from '@/utils/translations';
-import { getTranslatedPath } from '@/utils/slugs';
+import { getFullDictionary, getPageDictionary, getPageFallbackDictionary } from '@/utils/getSharedDictionary';
+import { PAGE_TRANSLATION_KEYS } from '@/utils/pageTranslationKeys';
 import BusinessVisaClientPage from './BusinessVisaClientPage';
-
-const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
-
+import PageTranslations from '@/components/PageTranslations';
 import { generateMetadataWithHreflang } from '@/utils/seo';
+import { SchemaOrg } from '@/components/SchemaOrg';
+import { VisaServiceSchemas } from '@/components/ServiceSchema';
+import { BusinessSchemaAI } from '@/components/BusinessSchemaAI';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    const t = translations[lang as keyof typeof translations] || translations.en;
+    const t = getFullDictionary(lang as any) as any;
 
-    const meta = (t.business_visa_page as any).meta || {
+    const meta = t.business_visa_page?.meta || {
         title: t.business_visa_page.hero_title,
         description: t.business_visa_page.hero_subtitle
     };
@@ -24,20 +25,21 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     });
 }
 
-import { SchemaOrg } from '@/components/SchemaOrg';
-import { VisaServiceSchemas } from '@/components/ServiceSchema';
-import { BusinessSchemaAI } from '@/components/BusinessSchemaAI';
-
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
     const { lang } = await params;
-    const t = translations[lang as keyof typeof translations] || translations.en;
+    const t = getFullDictionary(lang as any) as any;
+    const keys = PAGE_TRANSLATION_KEYS['business-visa'];
+    const dict = getPageDictionary(lang, keys);
+    const fallback = lang !== 'en' ? getPageFallbackDictionary(keys) : undefined;
 
     return (
         <>
             <SchemaOrg lang={lang} pageKey="business-visa" title={t.nav.business || 'Business Visa'} showGlobal={false} />
             {VisaServiceSchemas.business(lang)}
             <BusinessSchemaAI lang={lang} />
-            <BusinessVisaClientPage />
+            <PageTranslations dictionary={dict} fallbackDictionary={fallback}>
+                <BusinessVisaClientPage />
+            </PageTranslations>
         </>
     );
 }
