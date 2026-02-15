@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
             {/* Social Links */}
             <div className="flex space-x-4 mb-8">
               <a
-                href="https://www.facebook.com/profile.php?id=61586864890065"
+                href="https://www.facebook.com/siamvisapro/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/5 p-2 rounded-lg text-slate-400 hover:text-blue-500 hover:bg-white/10 transition-all border border-white/5"
