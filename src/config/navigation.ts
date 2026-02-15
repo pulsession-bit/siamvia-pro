@@ -20,11 +20,12 @@ export const NAV_ITEMS = [
         items: []
     },
     {
-        key: 'work',
-        labelKey: 'nav.categories.work',
+        key: 'long_term',
+        labelKey: 'nav.categories.long_term',
         items: [
-            { key: 'business', labelKey: 'nav.business', path: 'business-visa' },
-            { key: 'smart', labelKey: 'nav.smart', path: 'smart-visa' },
+            { key: 'ltr', labelKey: 'nav.ltr', path: 'ltr' },
+            { key: 'dtv', labelKey: 'nav.dtv', path: 'dtv' },
+            { key: 'retirement', labelKey: 'nav.retirement', path: 'retirement-visa' },
         ],
     },
     {
@@ -36,12 +37,11 @@ export const NAV_ITEMS = [
         ],
     },
     {
-        key: 'long_term',
-        labelKey: 'nav.categories.long_term',
+        key: 'work',
+        labelKey: 'nav.categories.work',
         items: [
-            { key: 'ltr', labelKey: 'nav.ltr', path: 'ltr' },
-            { key: 'dtv', labelKey: 'nav.dtv', path: 'dtv' },
-            { key: 'retirement', labelKey: 'nav.retirement', path: 'retirement-visa' },
+            { key: 'business', labelKey: 'nav.business', path: 'business-visa' },
+            { key: 'smart', labelKey: 'nav.smart', path: 'smart-visa' },
         ],
     },
     {

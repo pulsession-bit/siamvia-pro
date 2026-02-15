@@ -110,7 +110,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-amber-50 border-b border-slate-800 pb-2 inline-block">{t('footer.col_support')}</h4>
             <ul className="space-y-3 text-slate-400 text-sm">
+
               <li><Link href={langPath('about')} className="hover:text-amber-400 transition-colors font-bold text-amber-500/80 tracking-wide uppercase text-xs">★ {t('about_page.hero_title')}</Link></li>
+              <li><Link href={langPath('ai-technology')} className="hover:text-amber-400 transition-colors">{t('footer.ai_technology')}</Link></li>
               <li><Link href={langPath('faq')} className="hover:text-amber-400 transition-colors">{t('nav.faq')}</Link></li>
               <li><Link href={langPath('terms')} className="hover:text-amber-400 transition-colors">{t('footer.legal')}</Link></li>
               <li><Link href={langPath('sitemap')} className="hover:text-amber-400 transition-colors">{t('footer.sitemap')}</Link></li>

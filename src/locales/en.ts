@@ -1852,6 +1852,7 @@ export const en = {
     "desc": "Your trusted partner for obtaining Thai visas. Specialists in the new DTV Visa and complex consular procedures.",
     "col_visas": "Visas",
     "col_support": "Support",
+    "ai_technology": "AI Technology",
     "col_contact": "Contact",
     "all_services": "All our services",
     "legal": "Terms & Conditions",

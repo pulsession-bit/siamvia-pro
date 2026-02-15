@@ -370,6 +370,250 @@ export const fr = {
     "cta": "Démarrer mon Audit IA Gratuit",
     "cta_sub": "Résultat instantané — Aucun engagement"
   },
+
+  // ── DTV Satellite Pages (FR only) ──────────────────────────────
+  "dtv_documents_page": {
+    "meta": {
+      "title": "Documents Requis Visa DTV Thaïlande 2026 | Checklist Complète par Profil",
+      "description": "Liste officielle des documents nécessaires pour le visa DTV Thaïlande en 2026. Checklist par profil : nomade digital, freelance, retraité actif, artiste. Évitez les refus."
+    },
+    "hero_badge": "Checklist Documents DTV 2026",
+    "hero_title": "Documents requis pour le Visa DTV Thaïlande",
+    "hero_subtitle": "La liste complète et à jour des pièces justificatives par profil — mise à jour février 2026.",
+    "breadcrumb_home": "Accueil",
+    "breadcrumb_dtv": "Visa DTV",
+    "breadcrumb_current": "Documents requis",
+    "intro": "Le visa DTV (Destination Thailand Visa) exige un dossier solide pour être approuvé. Les documents varient selon votre profil : nomade digital, freelance, retraité actif ou artiste. Voici la checklist complète pour maximiser vos chances d'approbation.",
+    "common_title": "Documents communs à tous les profils",
+    "common_docs": [
+      { "doc": "Passeport valide 6+ mois", "detail": "Au moins 2 pages vierges. Copie de la page d'identité + toutes les pages avec tampons Thaïlande." },
+      { "doc": "Photo d'identité 4×6 cm", "detail": "Fond blanc, prise il y a moins de 6 mois, format ICAO." },
+      { "doc": "Formulaire de demande signé", "detail": "Téléchargeable sur le site de l'ambassade ou du consulat." },
+      { "doc": "Preuve financière : 500 000 THB", "detail": "Relevé bancaire des 6 derniers mois montrant un solde ≥ 500 000 THB (~13 000 €)." },
+      { "doc": "Assurance santé internationale", "detail": "Couverture minimum 50 000 USD, valide pour la Thaïlande." },
+      { "doc": "Casier judiciaire vierge", "detail": "Extrait de casier datant de moins de 3 mois, apostillé si nécessaire." }
+    ],
+    "profiles_title": "Documents spécifiques par profil",
+    "profile_nomad_title": "Nomade Digital / Télétravailleur",
+    "profile_nomad_docs": [
+      { "doc": "Contrat de travail à distance", "detail": "Contrat avec un employeur étranger mentionnant le télétravail, traduit en anglais." },
+      { "doc": "Attestation employeur", "detail": "Lettre confirmant l'autorisation de télétravailler depuis la Thaïlande." },
+      { "doc": "Fiches de paie (3-6 mois)", "detail": "Preuves de revenus réguliers, minimum 1 500 €/mois recommandé." },
+      { "doc": "Portfolio professionnel", "detail": "CV + description de l'activité, recommandé pour renforcer le dossier." }
+    ],
+    "profile_freelance_title": "Freelance / Indépendant",
+    "profile_freelance_docs": [
+      { "doc": "Inscription auto-entrepreneur ou équivalent", "detail": "Extrait Kbis, attestation URSSAF, ou registration officielle de votre pays." },
+      { "doc": "Factures clients (6 derniers mois)", "detail": "Au moins 3 factures montrant une activité régulière avec des clients étrangers." },
+      { "doc": "Relevés de compte professionnel", "detail": "Montrant des revenus réguliers sur les 6 derniers mois." },
+      { "doc": "Portfolio de travaux", "detail": "Site web, projets réalisés, témoignages clients — format PDF recommandé." }
+    ],
+    "profile_retiree_title": "Retraité Actif / Digital Senior",
+    "profile_retiree_docs": [
+      { "doc": "Justificatif de pension ou revenus passifs", "detail": "Avis d'imposition, relevé de pension, revenus locatifs, dividendes." },
+      { "doc": "Lettre de motivation", "detail": "Expliquant votre intérêt pour la Thaïlande et vos activités prévues." },
+      { "doc": "Preuve d'hébergement", "detail": "Réservation d'hôtel ou contrat de location pour les premiers mois." }
+    ],
+    "profile_artist_title": "Artiste / Créateur de Contenu",
+    "profile_artist_docs": [
+      { "doc": "Portfolio artistique", "detail": "Galerie de vos œuvres, liens vers vos publications, chaîne YouTube, profil Behance, etc." },
+      { "doc": "Preuves de revenus créatifs", "detail": "Revenus YouTube, ventes d'art, contrats de création, commissions — 6 derniers mois." },
+      { "doc": "Lettre de projet en Thaïlande", "detail": "Description de votre projet créatif lié à la Thaïlande (optionnel mais recommandé)." }
+    ],
+    "tips_title": "Conseils pour un dossier solide",
+    "tips": [
+      "Faites traduire tous les documents en anglais par un traducteur assermenté.",
+      "Constituez un portfolio visuel de 10-15 pages minimum si vous êtes freelance ou artiste.",
+      "Les relevés bancaires doivent être tamponnés et signés par votre banque.",
+      "Préparez votre dossier au moins 4 semaines avant la date de soumission.",
+      "L'assurance santé doit explicitement mentionner la Thaïlande dans la zone de couverture."
+    ],
+    "cta_title": "Pas sûr de votre dossier ?",
+    "cta_text": "Notre IA analyse votre profil et identifie les documents manquants en 30 secondes.",
+    "cta_button": "Vérifier mon éligibilité DTV",
+    "back_to_dtv": "← Retour au guide complet Visa DTV",
+    "related_title": "Articles liés",
+    "related_erreurs": "Les 10 erreurs qui font refuser un visa DTV",
+    "related_comparatif": "Comparatif DTV vs autres visas Thaïlande"
+  },
+
+  "dtv_erreurs_page": {
+    "meta": {
+      "title": "10 Erreurs Visa DTV Thaïlande 2026 | Évitez le Refus de Votre Demande",
+      "description": "Découvrez les 10 erreurs les plus fréquentes qui entraînent un refus du visa DTV Thaïlande. Solutions concrètes pour chaque erreur — guide mis à jour 2026."
+    },
+    "hero_badge": "Évitez le Refus DTV",
+    "hero_title": "Les 10 erreurs qui font refuser un visa DTV",
+    "hero_subtitle": "Classées par gravité — avec la solution pour chacune. Basé sur l'analyse de 500+ dossiers traités par SiamVisa Pro.",
+    "breadcrumb_home": "Accueil",
+    "breadcrumb_dtv": "Visa DTV",
+    "breadcrumb_current": "Erreurs fréquentes",
+    "intro": "Le taux de refus du visa DTV varie entre 15% et 30% selon les ambassades. La majorité des refus sont évitables. Voici les 10 erreurs les plus courantes, classées par gravité, et comment les corriger.",
+    "severity_critical": "Critique",
+    "severity_high": "Élevée",
+    "severity_medium": "Moyenne",
+    "errors": [
+      {
+        "rank": 1,
+        "severity": "critical",
+        "title": "Dossier financier insuffisant",
+        "description": "Le relevé bancaire ne montre pas 500 000 THB (~13 000 €) ou les fonds sont déposés récemment (« money parking »).",
+        "solution": "Maintenez un solde suffisant pendant au moins 3 mois avant la demande. Les mouvements réguliers (salaires) sont plus convaincants qu'un virement unique.",
+        "refusal_rate": "~35% des refus"
+      },
+      {
+        "rank": 2,
+        "severity": "critical",
+        "title": "Aucune preuve de travail à distance",
+        "description": "Pas de contrat, pas de fiches de paie, pas de factures clients. L'ambassade ne peut pas vérifier votre activité professionnelle.",
+        "solution": "Fournissez un contrat de travail (même si freelance, un contrat-cadre avec vos clients). Ajoutez 3-6 fiches de paie ou factures.",
+        "refusal_rate": "~25% des refus"
+      },
+      {
+        "rank": 3,
+        "severity": "critical",
+        "title": "Portfolio vide ou inexistant",
+        "description": "Pour les freelances et créatifs, ne pas fournir de portfolio est rédhibitoire. L'ambassade doit comprendre votre activité.",
+        "solution": "Créez un portfolio PDF de 10-15 pages : bio, compétences, projets réalisés, témoignages, liens vers votre site/profils professionnels.",
+        "refusal_rate": "~20% des refus"
+      },
+      {
+        "rank": 4,
+        "severity": "high",
+        "title": "Documents non traduits en anglais",
+        "description": "Des documents en français, allemand, espagnol, etc. soumis sans traduction certifiée.",
+        "solution": "Faites traduire tous les documents non-anglais par un traducteur assermenté. Certaines ambassades exigent une apostille.",
+        "refusal_rate": "~10% des refus"
+      },
+      {
+        "rank": 5,
+        "severity": "high",
+        "title": "Passeport bientôt expiré",
+        "description": "Le passeport doit être valide au moins 6 mois après la date d'entrée prévue. Beaucoup oublient cette règle.",
+        "solution": "Vérifiez la date d'expiration et renouvelez votre passeport si nécessaire AVANT de soumettre votre demande.",
+        "refusal_rate": "~5% des refus"
+      },
+      {
+        "rank": 6,
+        "severity": "high",
+        "title": "Assurance santé non conforme",
+        "description": "L'assurance ne couvre pas la Thaïlande, la couverture est inférieure à 50 000 USD, ou la durée ne couvre pas le séjour prévu.",
+        "solution": "Souscrivez une assurance internationale (SafetyWing, Allianz, AXA) couvrant la Thaïlande avec minimum 50 000 USD et hospitalisation.",
+        "refusal_rate": "~5% des refus"
+      },
+      {
+        "rank": 7,
+        "severity": "medium",
+        "title": "Photo non conforme aux normes ICAO",
+        "description": "Photo trop ancienne, fond coloré, lunettes, cadrage incorrect.",
+        "solution": "Prenez une photo récente (< 6 mois), fond blanc, 4×6 cm, sans lunettes, visage centré, norme ICAO.",
+        "refusal_rate": "~3% des refus"
+      },
+      {
+        "rank": 8,
+        "severity": "medium",
+        "title": "Formulaire incomplet ou mal rempli",
+        "description": "Champs manquants, incohérences entre les dates, signature oubliée.",
+        "solution": "Relisez chaque champ, vérifiez les dates, signez toutes les pages requises. Faites relire par un tiers avant soumission.",
+        "refusal_rate": "~3% des refus"
+      },
+      {
+        "rank": 9,
+        "severity": "medium",
+        "title": "Casier judiciaire absent ou périmé",
+        "description": "Le casier judiciaire date de plus de 3 mois ou n'est pas apostillé pour les pays qui l'exigent.",
+        "solution": "Demandez votre extrait de casier en ligne (délai 2-4 semaines en France). Apostillez-le si votre ambassade le demande.",
+        "refusal_rate": "~2% des refus"
+      },
+      {
+        "rank": 10,
+        "severity": "medium",
+        "title": "Choix de la mauvaise ambassade",
+        "description": "Certaines ambassades ont un taux d'acceptation plus élevé. Soumettre au mauvais endroit peut compliquer les choses.",
+        "solution": "Renseignez-vous sur les ambassades recommandées pour le DTV. Paris, Vientiane et Kuala Lumpur sont réputées pour le DTV.",
+        "refusal_rate": "~2% des refus"
+      }
+    ],
+    "stats_title": "Statistiques de refus DTV",
+    "stats_total": "Taux de refus moyen estimé",
+    "stats_total_value": "15-30%",
+    "stats_avoidable": "Part des refus évitables",
+    "stats_avoidable_value": "90%+",
+    "stats_resubmit": "Taux d'acceptation après correction",
+    "stats_resubmit_value": "85%+",
+    "cta_title": "Évitez ces erreurs dès maintenant",
+    "cta_text": "Notre IA vérifie votre dossier et identifie les points faibles avant soumission.",
+    "cta_button": "Analyser mon dossier DTV",
+    "back_to_dtv": "← Retour au guide complet Visa DTV",
+    "related_title": "Articles liés",
+    "related_documents": "Documents requis pour le visa DTV — Checklist par profil",
+    "related_comparatif": "Comparatif DTV vs autres visas Thaïlande"
+  },
+
+  "dtv_comparatif_page": {
+    "meta": {
+      "title": "Comparatif Visa DTV vs Touriste, LTR, Elite, ED — Thaïlande 2026",
+      "description": "Comparez le visa DTV avec les visas Touriste, LTR, Elite et ED Thaïlande. Tableau comparatif complet : durée, coût, travail à distance, conditions. Guide 2026."
+    },
+    "hero_badge": "Comparatif Visas 2026",
+    "hero_title": "Visa DTV vs autres visas Thaïlande",
+    "hero_subtitle": "Tableau comparatif complet pour choisir le visa adapté à votre situation — mis à jour février 2026.",
+    "breadcrumb_home": "Accueil",
+    "breadcrumb_dtv": "Visa DTV",
+    "breadcrumb_current": "Comparatif visas",
+    "intro": "Le DTV n'est pas le seul visa pour vivre en Thaïlande. Selon votre profil (âge, revenus, durée de séjour), un autre visa peut être plus adapté. Voici un comparatif détaillé pour faire le bon choix.",
+    "table_title": "Tableau comparatif",
+    "col_criteria": "Critère",
+    "col_dtv": "DTV",
+    "col_tourist": "Touriste",
+    "col_ltr": "LTR",
+    "col_elite": "Elite",
+    "col_ed": "ED",
+    "rows": [
+      { "criteria": "Durée totale", "dtv": "5 ans", "tourist": "60 jours", "ltr": "10 ans", "elite": "5-20 ans", "ed": "1 an" },
+      { "criteria": "Séjour par entrée", "dtv": "180 jours", "tourist": "60 jours", "ltr": "1 an", "elite": "1 an", "ed": "90 jours" },
+      { "criteria": "Travail à distance", "dtv": "Oui ✓", "tourist": "Non ✗", "ltr": "Oui ✓", "elite": "Non ✗", "ed": "Non ✗" },
+      { "criteria": "Coût total", "dtv": "~350 €", "tourist": "~35 €", "ltr": "~1 500 €", "elite": "15 000-60 000 €", "ed": "~500 €/an" },
+      { "criteria": "Condition financière", "dtv": "500 000 THB épargne", "tourist": "20 000 THB/pers.", "ltr": "80 000 $/an revenu", "elite": "Paiement unique", "ed": "Inscription école" },
+      { "criteria": "Permis de travail", "dtv": "Non inclus", "tourist": "Non", "ltr": "Inclus", "elite": "Non", "ed": "Non" },
+      { "criteria": "Extensions", "dtv": "Sorties multiples", "tourist": "1 extension 30j", "ltr": "Renouvelable", "elite": "Automatique", "ed": "Tous les 90j" },
+      { "criteria": "Difficulté dossier", "dtv": "Moyenne", "tourist": "Facile", "ltr": "Élevée", "elite": "Facile (payant)", "ed": "Facile" },
+      { "criteria": "Idéal pour", "dtv": "Nomades digitaux", "tourist": "Courts séjours", "ltr": "Hauts revenus", "elite": "VIP / sans souci", "ed": "Étudiants" }
+    ],
+    "reco_title": "Quel visa choisir selon votre profil ?",
+    "recommendations": [
+      { "profile": "Nomade digital / freelance avec revenus modérés", "visa": "DTV", "reason": "Le seul visa qui autorise explicitement le travail à distance pour un employeur étranger, à un coût accessible (~350 €)." },
+      { "profile": "Voyageur en court séjour (< 60 jours)", "visa": "Touriste ou exemption", "reason": "Gratuit ou ~35 €. Pas besoin de documents complexes. Idéal pour un premier repérage." },
+      { "profile": "Haut revenu ($80K+/an) cherchant à s'installer", "visa": "LTR", "reason": "10 ans, permis de travail inclus, imposition réduite à 17%. Le plus avantageux fiscalement." },
+      { "profile": "Budget confortable, zéro paperasse", "visa": "Elite", "reason": "Service VIP, transferts aéroport, fast-track immigration. Aucun justificatif de revenu requis." },
+      { "profile": "Étudiant en Muay Thai, cuisine ou langue thaïe", "visa": "ED", "reason": "~500 €/an, renouvelable. Nécessite une inscription dans une école agréée par le MoE." },
+      { "profile": "Retraité 50+ avec pension régulière", "visa": "Retraite (O-A)", "reason": "1 an renouvelable, 800 000 THB en banque thaïe. Le plus simple pour les 50+." }
+    ],
+    "dtv_advantages_title": "Avantages uniques du DTV",
+    "dtv_advantages": [
+      "Seul visa autorisant officiellement le travail à distance",
+      "Validité 5 ans avec entrées multiples",
+      "Coût très compétitif (~350 €) vs Elite (15 000 €+)",
+      "Pas d'obligation de résidence continue",
+      "Ouvert à tous les profils : salariés, freelances, artistes, retraités actifs"
+    ],
+    "dtv_limits_title": "Limites du DTV",
+    "dtv_limits": [
+      "Séjour limité à 180 jours par entrée (nécessite border run)",
+      "Pas de permis de travail — interdit de travailler pour un employeur thaïlandais",
+      "Exigence de 500 000 THB d'épargne",
+      "Dossier plus complexe qu'un visa touriste",
+      "Certaines ambassades plus strictes que d'autres"
+    ],
+    "cta_title": "Vous hésitez entre plusieurs visas ?",
+    "cta_text": "Notre IA compare votre profil avec les critères de chaque visa et vous recommande le meilleur choix.",
+    "cta_button": "Trouver mon visa idéal",
+    "back_to_dtv": "← Retour au guide complet Visa DTV",
+    "related_title": "Articles liés",
+    "related_documents": "Documents requis pour le visa DTV — Checklist par profil",
+    "related_erreurs": "Les 10 erreurs qui font refuser un visa DTV"
+  },
+
   "ai_technology_page": {
     "meta": {
       "title": "Technologie IA Visa Thaïlande | Scoring, Agent Vocal & Audit — Siam Visa Pro",
@@ -1843,6 +2087,7 @@ export const fr = {
     "desc": "Votre partenaire de confiance pour l'obtention de visas thaïlandais. Spécialistes du nouveau Visa DTV et des procédures consulaires complexes.",
     "col_visas": "Visas",
     "col_support": "Support",
+    "ai_technology": "Technologie IA",
     "col_contact": "Contact",
     "all_services": "Tous nos services",
     "legal": "Conditions Générales",
