@@ -6,7 +6,7 @@ import {
     Plane, Heart, HelpCircle, Laptop, DollarSign
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { useLangPath } from '@/hooks/useLang';
+import { useLangPath, useCurrentLang } from '@/hooks/useLang';
 import { HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
 import { RelatedPages } from '@/components/RelatedPages';
 import { VisaHero } from '@/components/visa/VisaHero';
@@ -17,6 +17,7 @@ import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 const DTVClientPage: React.FC = () => {
     const { t } = useLanguage();
     const langPath = useLangPath();
+    const lang = useCurrentLang();
 
     return (
         <div className="bg-slate-50 min-h-screen pb-20">
