@@ -502,6 +502,37 @@ export const fr = {
     "btn_more": "En savoir plus",
     "btn_rates": "Voir les tarifs"
   },
+  "dtv_page": {
+    "meta": {
+      "title": "Visa DTV Thaïlande 2026 : Télétravail & Expatriation (Guide Officiel)",
+      "description": "Obtenez le Visa Destination Thailand (DTV) valable 5 ans. Idéal pour freelances et retraités actifs. Analyse d'éligibilité gratuite & accompagnement francophone."
+    },
+    "hero": {
+      "title": "Visa DTV : Vivez et Travaillez légalement en Thaïlande",
+      "subtitle": "La révolution pour les nomades digitaux et expatriés. 5 ans de liberté, 180 jours par entrée, fiscalité avantageuse.",
+      "badge": "Nouveau 2026",
+      "cta": "Vérifier mon éligibilité (Gratuit)"
+    },
+    "intro": {
+      "title": "Le Visa DTV, c'est quoi ?",
+      "content": "Le Visa DTV (Destination Thailand Visa) est la solution officielle lancée fin 2024 pour les travailleurs à distance. Fini les 'Visa Runs' et l'incertitude : résidez jusqu'à 5 ans en Thaïlande en toute légalité."
+    },
+    "requirements": {
+      "title": "Conditions d'Éligibilité",
+      "financial_proof": "Justificatif bancaire de 500 000 THB (env. 13 500 €). Comptes français (BNP, SG, Revolut...) acceptés.",
+      "portfolio": "Contrat de travail étranger ou Portfolio professionnel solide (nous vous aidons à le constituer)."
+    },
+    "faq": [
+      {
+        "q": "Suis-je résident fiscal ?",
+        "a": "Au-delà de 180 jours par an, vous devenez résident fiscal. La convention France-Thaïlande protège de la double imposition. Nos experts vous guideront."
+      },
+      {
+        "q": "Puis-je postuler depuis la France ?",
+        "a": "Oui, via l'E-Visa (Ambassade de Paris). Attention : ils sont très exigeants sur les preuves professionnelles. Notre 'Pack Expert' sécurise votre dossier."
+      }
+    ]
+  },
   "tourist_visa_page": {
     "meta": {
       "title": "Visa Touristique Thaïlande (TR) | Extensions & Guide 2026",
