@@ -23,6 +23,8 @@ export function getSharedDictionary(lang: Lang) {
         footer: (full as any).footer,
         cart: (full as any).cart,
         login: (full as any).login,
+        common: (full as any).common,
+        appointment: (full as any).appointment,
         about_page: {
             hero_title: (full as any).about_page?.hero_title,
         },
