@@ -167,7 +167,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     it: {
         home: '',
         dtv: 'visto-destinazione-thailandia',
-        'elite-visa': 'visto-elite-thailandia',
+        'elite-visa': 'visto-elite-thailandia', // Updated to match likely user intent, but syncing with next.config
         'tourist-visa': 'visto-turistico',
         'retirement-visa': 'visto-pensionati',
         services: 'servizi',
@@ -200,7 +200,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     th: {
         home: '',
         dtv: 'destination-thailand-visa',
-        'elite-visa': 'thailand-elite-visa',
+        'elite-visa': 'thailand-resident-visa', // Changed from elite-visa to match next.config.ts
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -233,7 +233,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     ru: {
         home: '',
         dtv: 'destination-thailand-visa',
-        'elite-visa': 'thailand-elite-visa',
+        'elite-visa': 'thailand-resident-visa', // Matches next.config.ts
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -266,7 +266,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     zh: {
         home: '',
         dtv: 'destination-thailand-visa',
-        'elite-visa': 'thailand-elite-visa',
+        'elite-visa': 'thailand-resident-visa', // Matches next.config.ts
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -275,7 +275,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         terms: 'terms',
         sitemap: 'sitemap',
         search: 'thailand-visa-comparator-2026',
-        ltr: 'global-wealthy-citizen-visa',
+        ltr: 'global-wealthy-citizen-visa', // Matches next.config.ts
         'visa-run': 'thailand-visa-run-risks',
         'business-visa': 'thailand-business-visa',
         'exemption-visa': 'thailand-visa-exemption',
@@ -299,7 +299,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     ja: {
         home: '',
         dtv: 'destination-thailand-visa',
-        'elite-visa': 'thailand-elite-visa',
+        'elite-visa': 'thailand-resident-visa', // Matches next.config.ts
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -332,7 +332,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     ko: {
         home: '',
         dtv: 'destination-thailand-visa',
-        'elite-visa': 'thailand-elite-visa',
+        'elite-visa': 'thailand-resident-visa', // Matches next.config.ts
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -365,7 +365,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     ar: {
         home: '',
         dtv: 'destination-thailand-visa',
-        'elite-visa': 'thailand-elite-visa',
+        'elite-visa': 'thailand-resident-visa', // Matches next.config.ts
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -400,6 +400,17 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
 export function getTranslatedPath(page: PageKey, lang: string): string {
     const langSlugs = SLUG_MAP[lang] || SLUG_MAP.en;
     const slug = langSlugs[page];
+
+    // If slug is undefined, check if it exists in English map as fallback
+    if (slug === undefined) {
+        const enSlug = SLUG_MAP.en[page];
+        if (enSlug !== undefined) {
+            return enSlug === '' ? `/${lang}` : `/${lang}/${enSlug}`;
+        }
+        // Last resort: use the page key itself if not mapped
+        return `/${lang}/${page}`;
+    }
+
     return slug === '' ? `/${lang}` : `/${lang}/${slug}`;
 }
 
