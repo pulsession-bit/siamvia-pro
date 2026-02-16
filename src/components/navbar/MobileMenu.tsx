@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { X, Globe, ChevronDown } from 'lucide-react';
 import { NAV_ITEMS } from '../../config/navigation';
+import { getTranslatedPath, PageKey, REVERSE_MAP } from '../../utils/slugs';
 
 interface MobileMenuProps {
     isOpen: boolean;
@@ -37,6 +39,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
     SCORING_ENGINE_URL
 }) => {
     const [showMobileLangs, setShowMobileLangs] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         if (showMobileLangs) {
@@ -110,20 +113,32 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                             </button>
 
                             <div className={`grid grid-cols-3 gap-2 transition-all duration-300 overflow-hidden ${showMobileLangs ? 'max-h-[500px] opacity-100 mb-4' : 'max-h-0 opacity-0'}`}>
-                                {languages.map((lang) => (
-                                    <button
-                                        key={lang.code}
-                                        onClick={() => {
-                                            switchLanguage(lang.code);
-                                            setIsOpen(false);
-                                            setShowMobileLangs(false);
-                                        }}
-                                        className={`flex flex-col items-center justify-center p-2 rounded-lg border transition ${currentLang === lang.code ? 'bg-white border-amber-400 shadow-sm' : 'bg-white border-slate-200'}`}
-                                    >
-                                        <span className="text-2xl mb-1">{lang.flag}</span>
-                                        <span className="text-[10px] font-bold text-slate-700">{lang.label}</span>
-                                    </button>
-                                ))}
+                                {languages.map((lang) => {
+                                    const pathWithoutLang = pathname?.replace(/^\/([a-z]{2})/, '') || '';
+                                    const cleanPath = pathWithoutLang.startsWith('/') ? pathWithoutLang.slice(1) : pathWithoutLang;
+                                    const currentLangSlugs = REVERSE_MAP[currentLang] || {};
+                                    const decodedPath = decodeURIComponent(cleanPath);
+                                    const pageKey = (decodedPath === '' ? 'home' : currentLangSlugs[decodedPath]) as PageKey;
+                                    const href = pageKey ? getTranslatedPath(pageKey, lang.code) : `/${lang.code}/${cleanPath}`;
+
+                                    return (
+                                        <Link
+                                            key={lang.code}
+                                            href={href}
+                                            hrefLang={lang.code}
+                                            onClick={(e) => {
+                                                // Call switchLanguage to set cookie, but use Link for nav
+                                                switchLanguage(lang.code);
+                                                setIsOpen(false);
+                                                setShowMobileLangs(false);
+                                            }}
+                                            className={`flex flex-col items-center justify-center p-2 rounded-lg border transition ${currentLang === lang.code ? 'bg-white border-amber-400 shadow-sm' : 'bg-white border-slate-200'}`}
+                                        >
+                                            <span className="text-2xl mb-1">{lang.flag}</span>
+                                            <span className="text-[10px] font-bold text-slate-700">{lang.label}</span>
+                                        </Link>
+                                    );
+                                })}
                             </div>
                         </div>
                     </div>
