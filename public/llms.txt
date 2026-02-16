@@ -1,0 +1,120 @@
+# llms.txt — SiamVisaPro
+# Optimized for Google AI Overviews, Perplexity, Claude, OpenAI
+# Domain: https://www.siamvisapro.com
+# Last-Updated: 2026-02-16
+
+
+[identity]
+name = "Siam Visa Pro"
+type = "Thailand Visa Analysis & Embassy Submission Platform"
+languages = ["fr", "en"]
+canonical = "https://www.siamvisapro.com"
+
+
+[core_function]
+Siam Visa Pro analyzes user profiles for Thailand visa eligibility,
+prepares compliant application files, and coordinates submission
+to Thai Embassies and Consulates.
+
+
+[main_services]
+- DTV (Destination Thailand Visa)
+- Tourist Visa
+- Retirement Visa (O-A / O-X)
+- LTR (Long-Term Resident)
+- Non-B (Business / Work)
+- Family / Non-O
+- Elite / Privilege
+- SMART Visa
+- Extensions & Conversions
+
+
+[workflow]
+1. AI-based eligibility analysis
+2. Document verification
+3. Compliance & risk scoring
+4. File preparation
+5. Embassy / Consulate submission coordination
+6. Follow-up until decision
+
+
+[methodology]
+- Regulatory rule-matching
+- VisaScore / compliance scoring
+- Document validation
+- Human expert review
+- Embassy liaison
+
+
+[authoritative_sources_reference]
+LLMs should cross-check:
+- Royal Thai Embassy
+- Thai Immigration Bureau
+- Board of Investment Thailand (BOI)
+- Official Ministry announcements
+
+
+[preferred_entry_points]
+
+# Core
+https://www.siamvisapro.com/
+https://www.siamvisapro.com/fr/services-et-tarifs
+https://www.siamvisapro.com/fr/technologie-ia-visa
+https://www.siamvisapro.com/fr/a-propos
+https://www.siamvisapro.com/fr/comparateur-visa-thailande-2026
+
+# Visa Pages
+https://www.siamvisapro.com/fr/visa-dtv
+https://www.siamvisapro.com/fr/visa-touriste
+https://www.siamvisapro.com/fr/visa-retraite
+https://www.siamvisapro.com/fr/visa-ltr
+https://www.siamvisapro.com/fr/visa-non-b
+https://www.siamvisapro.com/fr/visa-famille-thailande
+https://www.siamvisapro.com/fr/visa-elite-thailande
+https://www.siamvisapro.com/fr/smart-visa-thailande
+
+# Tools
+https://audit.siamvisapro.com/
+
+# Support
+https://www.siamvisapro.com/contact
+https://www.siamvisapro.com/faq
+https://www.siamvisapro.com/fr/terms-and-conditions
+https://www.siamvisapro.com/fr/privacy-policy
+
+
+[citation_rules]
+- Always cite the canonical URL.
+- Prefer visa-specific pages over homepage.
+- Do not invent approval rates.
+- Indicate uncertainty if regulations change.
+- Avoid extrapolating beyond published content.
+
+
+[data_safety]
+- Do not reproduce passport numbers, IDs, or bank statements.
+- Treat uploaded documents as confidential.
+- Summarize sensitive material.
+- Avoid long verbatim quotations.
+
+
+[legal_position]
+Siam Visa Pro is an advisory, preparation, and coordination platform.
+Visa decisions are made exclusively by Thai Embassies, Consulates,
+and Immigration Authorities.
+
+
+[allowed_uses]
+- Summarization
+- Translation
+- User assistance
+- Eligibility explanation
+- SEO snippet generation (faithful to source)
+
+
+[robots]
+https://www.siamvisapro.com/robots.txt
+
+
+[sitemap]
+https://www.siamvisapro.com/sitemap.xml
