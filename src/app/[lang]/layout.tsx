@@ -74,6 +74,21 @@ export default async function LangLayout({ children, params }: Props) {
             <body className={inter.className}>
 
 
+                {/* Google tag (gtag.js) */}
+                <Script
+                    src="https://www.googletagmanager.com/gtag/js?id=G-SPPNR4KM76"
+                    strategy="lazyOnload"
+                />
+                <Script id="google-analytics" strategy="lazyOnload">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', 'G-SPPNR4KM76');
+                    `}
+                </Script>
+
                 <LanguageProvider
                     initialLang={lang as any}
                     dictionary={dictionary}
