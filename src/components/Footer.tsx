@@ -157,6 +157,35 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
+        {/* SEO Language Links */}
+        <div className="border-t border-slate-800 pt-8 pb-8 mb-8">
+          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">{t('nav.languages')}</p>
+          <div className="flex flex-wrap gap-x-6 gap-y-3">
+            {languages.map((l) => {
+              // Calculate link for this language
+              const pathWithoutLang = pathname?.replace(/^\/([a-z]{2})/, '') || '';
+              const cleanPath = pathWithoutLang.startsWith('/') ? pathWithoutLang.slice(1) : pathWithoutLang;
+              const currentLangSlugs = REVERSE_MAP[lang] || {};
+              const decodedPath = decodeURIComponent(cleanPath);
+              const pageKey = (decodedPath === '' ? 'home' : currentLangSlugs[decodedPath]) as PageKey;
+
+              const href = pageKey ? getTranslatedPath(pageKey, l.code) : `/${l.code}/${cleanPath}`;
+
+              return (
+                <Link
+                  key={l.code}
+                  href={href}
+                  hrefLang={l.code}
+                  className={`text-sm hover:text-amber-400 transition-colors ${lang === l.code ? 'text-amber-500 font-bold' : 'text-slate-400'}`}
+                >
+                  <span className="mr-1.5">{l.flag}</span>
+                  {l.label}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+
         <div className="border-t border-slate-800 pt-8 text-center text-slate-500 text-xs flex flex-col md:flex-row justify-between items-center gap-4">
           <p>&copy; {new Date().getFullYear()} Siam Visa Pro. {t('footer.copyright')}</p>
           <div className="flex items-center space-x-6">

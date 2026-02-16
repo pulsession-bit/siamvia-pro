@@ -20,9 +20,10 @@ export const languages = [
 interface LanguageSelectorProps {
     currentLang: string;
     onSwitch: (lang: string) => void;
+    align?: 'left' | 'right';
 }
 
-export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ currentLang, onSwitch }) => {
+export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ currentLang, onSwitch, align = 'right' }) => {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -51,7 +52,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ currentLang,
             </button>
 
             {isOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-xl py-2 border border-slate-100 animate-in fade-in zoom-in-95 duration-100 z-50">
+                <div className={`absolute ${align === 'right' ? 'right-0' : 'left-0'} mt-2 w-48 bg-white rounded-xl shadow-xl py-2 border border-slate-100 animate-in fade-in zoom-in-95 duration-100 z-50`}>
                     <div className="max-h-64 overflow-y-auto custom-scrollbar">
                         {languages.map((lang) => (
                             <button

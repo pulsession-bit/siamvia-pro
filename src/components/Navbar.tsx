@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
               </button>
 
               {/* Logo */}
-              <Link href={langPath('')} className="flex items-center space-x-2 group mr-6">
+              <Link href={langPath('')} className="flex items-center space-x-2 group mr-2 sm:mr-6">
                 <div className="bg-amber-500 p-2 rounded-lg shadow-lg group-hover:bg-amber-400 transition text-slate-900">
                   <Plane className="h-6 w-6 transform -rotate-45" />
                 </div>
@@ -71,6 +71,11 @@ const Navbar: React.FC = () => {
                   Siam Visa <span className="text-amber-500">Pro</span>
                 </span>
               </Link>
+
+              {/* Mobile Language Selector (Visible only on mobile) */}
+              <div className="md:hidden">
+                <LanguageSelector currentLang={currentLang} onSwitch={switchLanguage} align="left" />
+              </div>
             </div>
 
             {/* Right Side: Search + Actions */}

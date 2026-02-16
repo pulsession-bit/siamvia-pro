@@ -40,49 +40,13 @@ export const HomeHero: React.FC<HomeHeroProps> = ({ t, langPath, SCORING_ENGINE_
                     {t('hero.subtitle')} <br className="hidden md:block" />
                     <span className="text-white font-medium">{t('hero.subtitle_suffix')}</span>
                 </p>
-                <div className="w-full max-w-2xl mx-auto mb-10 relative z-20">
-                    <form
-                        onSubmit={(e) => {
-                            e.preventDefault();
-                            const form = e.target as HTMLFormElement;
-                            const input = form.elements.namedItem('q') as HTMLInputElement;
-                            if (input.value.trim()) {
-                                window.location.href = `${langPath('search')}?q=${encodeURIComponent(input.value)}`;
-                            }
-                        }}
-                        className="relative flex items-center"
-                    >
-                        <div className="absolute left-4 text-slate-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
-                        </div>
-                        <input
-                            type="text"
-                            name="q"
-                            placeholder={t('nav.search') || "Rechercher un visa (ex: Retraite, DTV...)"}
-                            className="w-full py-4 pl-12 pr-4 rounded-xl text-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-4 focus:ring-amber-500/30 shadow-2xl bg-white/95 backdrop-blur-sm border border-slate-200/50"
-                        />
-                        <button
-                            type="submit"
-                            className="absolute right-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold py-2 px-6 rounded-lg transition-all"
-                        >
-                            GO
-                        </button>
-                    </form>
-                </div>
-
-                <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 w-full justify-center">
-                    <Link
-                        href={langPath('apply')}
-                        className="bg-amber-500 text-slate-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-400 transition shadow-lg shadow-amber-500/20 flex items-center justify-center group"
-                    >
-                        {t('login.start_request') || 'Commencer une demande'}
-                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 w-full justify-center mt-10">
                     <a
                         href={SCORING_ENGINE_URL}
-                        className="bg-transparent border-2 border-amber-400/50 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition flex items-center justify-center backdrop-blur-sm"
+                        className="bg-amber-500 text-slate-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-400 transition shadow-lg shadow-amber-500/20 flex items-center justify-center group"
                     >
                         {t('hero.cta_eligibility')}
+                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </a>
                 </div>
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
