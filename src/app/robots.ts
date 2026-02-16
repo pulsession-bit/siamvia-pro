@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
                 '*/test-search-ai',
             ],
         },
-        sitemap: `${baseUrl}/sitemap.xml`,
+        sitemap: [`${baseUrl}/sitemap.xml`, `${baseUrl}/llms.txt`],
     };
 }

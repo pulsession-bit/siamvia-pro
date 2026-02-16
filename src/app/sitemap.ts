@@ -108,5 +108,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         });
     });
 
+    // Add llms.txt
+    urls.push({
+        url: `${baseUrl}/llms.txt`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.5,
+    });
+
     return urls;
 }
