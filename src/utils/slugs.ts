@@ -200,7 +200,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     th: {
         home: '',
         dtv: 'destination-thailand-visa',
-        'elite-visa': 'thailand-resident-visa',
+        'elite-visa': 'thailand-elite-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -233,7 +233,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     ru: {
         home: '',
         dtv: 'destination-thailand-visa',
-        'elite-visa': 'thailand-resident-visa',
+        'elite-visa': 'thailand-elite-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -266,7 +266,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     zh: {
         home: '',
         dtv: 'destination-thailand-visa',
-        'elite-visa': 'thailand-resident-visa',
+        'elite-visa': 'thailand-elite-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -299,7 +299,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     ja: {
         home: '',
         dtv: 'destination-thailand-visa',
-        'elite-visa': 'thailand-resident-visa',
+        'elite-visa': 'thailand-elite-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -332,7 +332,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     ko: {
         home: '',
         dtv: 'destination-thailand-visa',
-        'elite-visa': 'thailand-resident-visa',
+        'elite-visa': 'thailand-elite-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
@@ -365,7 +365,7 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     ar: {
         home: '',
         dtv: 'destination-thailand-visa',
-        'elite-visa': 'thailand-resident-visa',
+        'elite-visa': 'thailand-elite-visa',
         'tourist-visa': 'tourist-visa',
         'retirement-visa': 'retirement-visa',
         services: 'services',
