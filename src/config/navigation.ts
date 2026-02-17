@@ -51,6 +51,14 @@ export const NAV_ITEMS = [
         ],
     },
     {
+        key: 'expatriation',
+        labelKey: 'nav.categories.expatriation',
+        items: [
+            { key: 'company_setup', labelKey: 'nav.company_setup', path: 'company-setup' },
+            { key: 'buy_property', labelKey: 'nav.buy_property', path: 'buy-property' },
+        ],
+    },
+    {
         key: 'family',
         labelKey: 'nav.categories.family',
         items: [
@@ -70,14 +78,6 @@ export const NAV_ITEMS = [
         path: 'elite-visa',
         items: [
             { key: 'elite_main', labelKey: 'nav.elite', path: 'elite-visa' }
-        ],
-    },
-    {
-        key: 'expatriation',
-        labelKey: 'nav.categories.expatriation',
-        items: [
-            { key: 'company_setup', labelKey: 'nav.company_setup', path: 'company-setup' },
-            { key: 'buy_property', labelKey: 'nav.buy_property', path: 'buy-property' },
         ],
     },
     {

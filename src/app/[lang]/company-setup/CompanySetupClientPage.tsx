@@ -73,7 +73,7 @@ const CompanySetupClientPage: React.FC<CompanySetupClientPageProps> = ({ lang })
                                 <p className="text-slate-600 mb-4"><strong>Best for:</strong> Tech startups, software, manufacturing, and export-led businesses.</p>
                                 <ul className="space-y-2 text-sm text-slate-600">
                                     <li className="flex items-center"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> <strong>100% Foreign Ownership</strong> allowed</li>
-                                    <li className="flex items-center"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> Visa & Work Permit Fast-Track (Ltr/Smart)</li>
+                                    <li className="flex items-center"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> Visa & Work Permit Fast-Track (<Link href={langPath('ltr')} className="hover:text-blue-600 underline decoration-dotted">LTR</Link> / <Link href={langPath('smart-visa')} className="hover:text-blue-600 underline decoration-dotted">Smart</Link>)</li>
                                     <li className="flex items-center"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> Corporate Tax Exemption (up to 8 years)</li>
                                 </ul>
                             </div>
@@ -296,7 +296,7 @@ const CompanySetupClientPage: React.FC<CompanySetupClientPageProps> = ({ lang })
                             <p className="text-slate-600 mb-4"><strong>Idéal si :</strong> ton activité est éligible BOI (tech, services qualifiés, industrie) et tu veux sécuriser le cadre 100% étranger.</p>
                             <ul className="space-y-2 text-sm text-slate-600">
                                 <li className="flex items-center"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> 100% actionnariat étranger</li>
-                                <li className="flex items-center"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> Visas & Work Permits facilités</li>
+                                <li className="flex items-center"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> Visas & Work Permits facilités (<Link href={langPath('ltr')} className="hover:text-blue-600 underline decoration-dotted">LTR</Link> / <Link href={langPath('smart-visa')} className="hover:text-blue-600 underline decoration-dotted">Smart</Link>)</li>
                                 <li className="flex items-center"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> Exonérations fiscales possibles</li>
                             </ul>
                         </div>
@@ -410,9 +410,24 @@ const CompanySetupClientPage: React.FC<CompanySetupClientPageProps> = ({ lang })
                             <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
                                 <h4 className="font-bold text-slate-800 mb-4">Le Trio Réalité :</h4>
                                 <ul className="space-y-3">
-                                    <li className="flex items-start"><span className="bg-slate-200 text-slate-700 text-xs font-bold px-2 py-0.5 rounded mr-2 mt-0.5">1</span> <span>Visa Non-Immigrant B (Entrée)</span></li>
-                                    <li className="flex items-start"><span className="bg-slate-200 text-slate-700 text-xs font-bold px-2 py-0.5 rounded mr-2 mt-0.5">2</span> <span>Work Permit (Autorisation travail)</span></li>
-                                    <li className="flex items-start"><span className="bg-slate-200 text-slate-700 text-xs font-bold px-2 py-0.5 rounded mr-2 mt-0.5">3</span> <span>Extension annuelle (Visa long terme)</span></li>
+                                    <li className="flex items-start">
+                                        <span className="bg-slate-200 text-slate-700 text-xs font-bold px-2 py-0.5 rounded mr-2 mt-0.5">1</span>
+                                        <Link href={langPath('business-visa')} className="hover:text-amber-600 transition-colors border-b border-slate-300 hover:border-amber-500">
+                                            Visa Non-Immigrant B (Entrée)
+                                        </Link>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="bg-slate-200 text-slate-700 text-xs font-bold px-2 py-0.5 rounded mr-2 mt-0.5">2</span>
+                                        <Link href={langPath('business-visa')} className="hover:text-amber-600 transition-colors border-b border-slate-300 hover:border-amber-500">
+                                            Work Permit (Autorisation travail)
+                                        </Link>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="bg-slate-200 text-slate-700 text-xs font-bold px-2 py-0.5 rounded mr-2 mt-0.5">3</span>
+                                        <Link href={langPath('business-visa')} className="hover:text-amber-600 transition-colors border-b border-slate-300 hover:border-amber-500">
+                                            Extension annuelle (Visa long terme)
+                                        </Link>
+                                    </li>
                                 </ul>
                                 <div className="mt-6 pt-6 border-t border-slate-200">
                                     <p className="text-sm font-semibold text-slate-700 mb-2">Règles pratiques standard :</p>
