@@ -121,25 +121,6 @@ const Footer: React.FC = () => {
               <li><Link href={langPath('terms')} className="hover:text-amber-400 transition-colors">{t('footer.legal')}</Link></li>
               <li><Link href={langPath('sitemap')} className="hover:text-amber-400 transition-colors">{t('footer.sitemap')}</Link></li>
             </ul>
-            {/* Mobile Language Grid (Visible only on mobile) */}
-            <div className="md:hidden mt-8 border-t border-slate-800 pt-8">
-              <h4 className="text-sm font-semibold mb-4 text-slate-400 uppercase tracking-wider">{t('nav.languages')}</h4>
-              <div className="grid grid-cols-4 gap-3">
-                {languages.map((l) => (
-                  <button
-                    key={l.code}
-                    onClick={() => switchLanguage(l.code)}
-                    className={`flex flex-col items-center p-2 rounded-lg border transition-all ${lang === l.code
-                      ? 'bg-amber-500/10 border-amber-500/50 text-amber-400'
-                      : 'bg-white/5 border-white/5 text-slate-400 hover:bg-white/10'
-                      }`}
-                  >
-                    <span className="text-2xl mb-1">{l.flag}</span>
-                    <span className="text-[10px] font-medium uppercase">{l.code}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
 
           <div>
