@@ -142,8 +142,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* SEO Language Links */}
-        <div className="border-t border-slate-800 pt-8 pb-8 mb-8">
+        {/* SEO Language Links — hidden on mobile (navbar already has language selector) */}
+        <div className="hidden md:block border-t border-slate-800 pt-8 pb-8 mb-8">
           <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">{t('nav.languages')}</p>
           <div className="flex flex-wrap gap-x-6 gap-y-3">
             {languages.map((l) => {
