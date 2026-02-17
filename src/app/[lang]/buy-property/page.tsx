@@ -39,7 +39,7 @@ export function generateStaticParams() {
 export default function BuyPropertyPage({ params }: PageProps) {
     return (
         <>
-            <BuyPropertySchema />
+            <BuyPropertySchema lang={params.lang} />
             <BuyPropertyClientPage lang={params.lang} />
         </>
     );

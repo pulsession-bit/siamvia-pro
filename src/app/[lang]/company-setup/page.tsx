@@ -36,11 +36,11 @@ export function generateStaticParams() {
     return languages.map((lang) => ({ lang: lang.code }));
 }
 
-export default function CompanySetupPage({ params }: PageProps) {
+export default function CompanySetupPage({ params: { lang } }: PageProps) {
     return (
         <>
-            <CompanySetupSchema />
-            <CompanySetupClientPage lang={params.lang} />
+            <CompanySetupSchema lang={lang} />
+            <CompanySetupClientPage lang={lang} />
         </>
     );
 }

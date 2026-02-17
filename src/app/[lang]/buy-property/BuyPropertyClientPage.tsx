@@ -2,8 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Home, SearchCheck, Scale, FileText, LandPlot, Key, CreditCard, AlertOctagon, CheckCircle2, ArrowRight } from 'lucide-react';
-import Container from '@/components/ui/Container';
+import { Home, SearchCheck, Scale, FileText, LandPlot, Key, CreditCard, AlertOctagon, CheckCircle2, ArrowRight, Building2 } from 'lucide-react';
+import { Container } from '@/components/ui/Container';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
 
@@ -12,33 +12,247 @@ interface BuyPropertyClientPageProps {
 }
 
 const BuyPropertyClientPage: React.FC<BuyPropertyClientPageProps> = ({ lang }) => {
-    const { t } = useLanguage();
     const langPath = useLangPath();
 
+    // English Content (Default for non-FR)
     if (lang !== 'fr') {
         return (
-            <div className="min-h-screen bg-slate-50 py-20">
-                <Container>
-                    <div className="max-w-3xl mx-auto text-center">
-                        <h1 className="text-4xl font-bold text-slate-900 mb-6">Real Estate in Thailand (2026 Guide)</h1>
-                        <p className="text-lg text-slate-600 mb-8">
-                            This comprehensive guide to buying property in Thailand (Condo, Villa, Land) is currently available in French. The English version is being prepared.
-                        </p>
-                        <p className="text-slate-500 mb-8">
-                            If you need assistance with property due diligence or legal structures, please contact our team directly.
-                        </p>
-                        <Link
-                            href={`/${lang}/contact`}
-                            className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 transition-colors"
-                        >
-                            Contact Us for Assistance
-                        </Link>
-                    </div>
-                </Container>
+            <div className="bg-slate-50 pb-20">
+                {/* Hero Section */}
+                <div className="bg-slate-900 text-white pt-32 pb-20 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512918760532-3c7908bf43be?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
+                    <Container className="relative z-10">
+                        <div className="max-w-3xl">
+                            <span className="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-sm font-semibold rounded-full mb-4 border border-amber-500/30">
+                                Real Estate Guide 2026
+                            </span>
+                            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                                Buying Property in Thailand <span className="text-amber-500">(2026)</span>
+                            </h1>
+                            <p className="text-xl text-slate-300 leading-relaxed mb-8">
+                                In Thailand, the golden rule is simple: Foreigners can own <strong>Condos</strong> (Freehold), but cannot own <strong>Land</strong> directly. For Villas, you secure a right of usage (Leasehold) rather than full ownership of the soil.
+                            </p>
+                            <div className="flex flex-wrap gap-4">
+                                <a href="#audit" className="bg-amber-500 text-slate-900 px-6 py-3 rounded-lg font-bold hover:bg-amber-400 transition-colors flex items-center">
+                                    Start Property Audit <ArrowRight className="ml-2 h-5 w-5" />
+                                </a>
+                            </div>
+                        </div>
+                    </Container>
+                </div>
+
+                {/* 1. What Foreigners Can Buy */}
+                <section className="py-16">
+                    <Container>
+                        <div className="flex items-center mb-10">
+                            <div className="bg-blue-100 p-3 rounded-xl mr-4">
+                                <Home className="h-8 w-8 text-blue-600" />
+                            </div>
+                            <h2 className="text-3xl font-bold text-slate-900">1. What Foreigners Can Legally Buy</h2>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-8">
+                            {/* Condo */}
+                            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-200 transition-all">
+                                <h3 className="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                                    <span className="text-blue-500 mr-2">A.</span> Condominium (Freehold)
+                                </h3>
+                                <p className="text-slate-600 mb-4">The cleanest and safest option.</p>
+                                <div className="space-y-3 text-sm text-slate-700">
+                                    <p>You get a Title Deed (Chanote) in your own name, just like a Thai citizen. This is possible as long as the building has available <strong>Foreign Quota</strong> (max 49% of total floor area).</p>
+                                    <div className="bg-blue-50 p-3 rounded border border-blue-100 font-semibold text-blue-800">
+                                        Must Do: Verify Foreign Quota availability before deposit.
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Land/Villa */}
+                            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-red-200 transition-all opacity-90">
+                                <h3 className="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                                    <span className="text-red-500 mr-2">B.</span> Land / Villa / House
+                                </h3>
+                                <p className="text-slate-600 mb-4">Direct land ownership is prohibited for foreigners.</p>
+                                <div className="space-y-3 text-sm text-slate-700">
+                                    <p>➡️ You can own the <strong>Building</strong> (House) in your name, but you must <strong>Lease</strong> the land (30 Years) or use Usufruct.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </Container>
+                </section>
+
+                {/* 2. Rights Options */}
+                <section className="py-16 bg-slate-50">
+                    <Container>
+                        <div className="flex items-center mb-10">
+                            <div className="bg-amber-100 p-3 rounded-xl mr-4">
+                                <Scale className="h-8 w-8 text-amber-600" />
+                            </div>
+                            <h2 className="text-3xl font-bold text-slate-900">2. Legal Structures (For Land/Villas)</h2>
+                        </div>
+
+                        <div className="grid md:grid-cols-3 gap-6">
+                            <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                                <h4 className="font-bold text-lg text-slate-900 mb-2">1) Leasehold (30 Years)</h4>
+                                <p className="text-sm text-slate-600 mb-4">Updated at the Land Office. The standard for foreigners.</p>
+                                <div className="text-xs bg-slate-100 p-2 rounded text-slate-500">
+                                    <strong>Real Talk:</strong> "30+30+30" renewals are contractual promises, not guaranteed property rights. Only the current 30-year block is ironclad.
+                                </div>
+                            </div>
+                            <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                                <h4 className="font-bold text-lg text-slate-900 mb-2">2) Usufruct</h4>
+                                <p className="text-sm text-slate-600">Right of usage (registered on title deed) typically for "Lifetime". Stronger than a lease in some aspects.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                                <h4 className="font-bold text-lg text-slate-900 mb-2">3) Superficies</h4>
+                                <p className="text-sm text-slate-600">Right to own the <strong>structures</strong> atop the land. Essential if you build a house on leased land.</p>
+                            </div>
+                        </div>
+                    </Container>
+                </section>
+
+                {/* 3. Due Diligence */}
+                <section className="py-16 bg-white">
+                    <Container>
+                        <div className="flex items-center mb-10">
+                            <div className="bg-indigo-100 p-3 rounded-xl mr-4">
+                                <SearchCheck className="h-8 w-8 text-indigo-600" />
+                            </div>
+                            <h2 className="text-3xl font-bold text-slate-900">3. Due Diligence Checklist</h2>
+                        </div>
+
+                        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
+                            <p className="text-slate-600 mb-8 font-medium">Never buy without checking these 4 pillars:</p>
+                            <div className="grid md:grid-cols-2 gap-8">
+                                <div>
+                                    <h4 className="font-bold text-slate-800 mb-3 flex items-center"><FileText className="h-4 w-4 mr-2 text-indigo-500" /> The Title Deed</h4>
+                                    <ul className="list-disc list-inside text-sm text-slate-600 space-y-2">
+                                        <li><strong>Chanote (Nor Sor 4 Jor):</strong> The only true title deed with GPS plotting. Safe.</li>
+                                        <li><strong>Nor Sor 3 Gor:</strong> Less precise. Acceptable but risky.</li>
+                                        <li>Avoid anything less than these.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-slate-800 mb-3 flex items-center"><LandPlot className="h-4 w-4 mr-2 text-indigo-500" /> Encumbrances</h4>
+                                    <ul className="list-disc list-inside text-sm text-slate-600 space-y-2">
+                                        <li>Is the land mortgaged to a bank?</li>
+                                        <li>Is there a servitude (legal road access)?</li>
+                                        <li>Construction zoning (Height limits?)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-slate-800 mb-3 flex items-center"><Building2 className="h-4 w-4 mr-2 text-indigo-500" /> Condo Specifics</h4>
+                                    <ul className="list-disc list-inside text-sm text-slate-600 space-y-2">
+                                        <li>Is Foreign Quota full?</li>
+                                        <li>Does the Juristic Person (Management) have debt?</li>
+                                        <li>Unpaid CAM Fees on the unit?</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-slate-800 mb-3 flex items-center"><Key className="h-4 w-4 mr-2 text-indigo-500" /> The Money Trail</h4>
+                                    <p className="text-sm text-slate-600">
+                                        To register a Freehold Condo, you MUST bring funds from abroad in foreign currency. You need a <strong>FET Form</strong> (Foreign Exchange Transaction) from the receiving Thai bank.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </Container>
+                </section>
+
+                {/* 4. Fees */}
+                <section className="py-16 bg-slate-50">
+                    <Container>
+                        <div className="flex items-center mb-6">
+                            <CreditCard className="h-8 w-8 text-slate-600 mr-4" />
+                            <h2 className="text-2xl font-bold text-slate-900">4. Transfer Fees & Taxes</h2>
+                        </div>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                            <div className="bg-white p-4 rounded-lg shadow-sm">
+                                <div className="text-xl font-bold text-slate-800">2%</div>
+                                <div className="text-xs text-slate-500 uppercase tracking-wide">Transfer Fee</div>
+                                <div className="text-[10px] text-slate-400 mt-1">(Usually shared 50/50)</div>
+                            </div>
+                            <div className="bg-white p-4 rounded-lg shadow-sm">
+                                <div className="text-xl font-bold text-slate-800">0.5%</div>
+                                <div className="text-xs text-slate-500 uppercase tracking-wide">Stamp Duty</div>
+                                <div className="text-[10px] text-slate-400 mt-1">(If no SBT)</div>
+                            </div>
+                            <div className="bg-white p-4 rounded-lg shadow-sm">
+                                <div className="text-xl font-bold text-slate-800">3.3%</div>
+                                <div className="text-xs text-slate-500 uppercase tracking-wide">Specific Business Tax</div>
+                                <div className="text-[10px] text-slate-400 mt-1">(If held &lt; 5 years)</div>
+                            </div>
+                            <div className="bg-white p-4 rounded-lg shadow-sm">
+                                <div className="text-xl font-bold text-slate-800">Variable</div>
+                                <div className="text-xs text-slate-500 uppercase tracking-wide">Withholding Tax</div>
+                                <div className="text-[10px] text-slate-400 mt-1">(Income Tax on seller)</div>
+                            </div>
+                        </div>
+                    </Container>
+                </section>
+
+                {/* 5. Red Flags */}
+                <section className="py-12 bg-red-50 border-y border-red-100">
+                    <Container>
+                        <div className="flex items-start gap-4">
+                            <AlertOctagon className="h-8 w-8 text-red-600 flex-shrink-0" />
+                            <div>
+                                <h2 className="text-xl font-bold text-red-900 mb-4">5. Major Red Flags</h2>
+                                <ul className="space-y-2 text-red-800">
+                                    <li>• <strong>"Just use a Thai Nominee company"</strong>: Illegal for land holding. The government is cracking down on this.</li>
+                                    <li>• <strong>"Guaranteed 90-year lease"</strong>: Not recognized by Thai Civil Code. Automatic renewals are not binding against a new land owner (if land is sold).</li>
+                                    <li>• <strong>"No Title Deed yet"</strong>: Do not deposit money on "Sor Kor 1" or un-upgraded land titles without a lawyer.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </Container>
+                </section>
+
+                {/* 6. CTA & Internal Links */}
+                <section className="py-20 bg-slate-900 text-white" id="audit">
+                    <Container>
+                        <div className="grid md:grid-cols-2 gap-16">
+                            <div>
+                                <h2 className="text-3xl font-bold mb-6">Property & Visa Strategy</h2>
+                                <p className="text-slate-300 mb-8">
+                                    Buying property connects you to Thailand long-term. Ensure your Visa strategy matches your investment.
+                                </p>
+
+                                <div className="space-y-4 mb-8">
+                                    <h4 className="font-semibold text-amber-500">Related Visas:</h4>
+                                    <ul className="space-y-2">
+                                        <li><Link href={langPath('retirement-visa')} className="text-slate-300 hover:text-white hover:underline flex items-center"><ArrowRight className="h-4 w-4 mr-2" /> Retirement Visa (Live in your Condo)</Link></li>
+                                        <li><Link href={langPath('dtv')} className="text-slate-300 hover:text-white hover:underline flex items-center"><ArrowRight className="h-4 w-4 mr-2" /> DTV Visa (Work from your Condo)</Link></li>
+                                        <li><Link href={langPath('family-visa')} className="text-slate-300 hover:text-white hover:underline flex items-center"><ArrowRight className="h-4 w-4 mr-2" /> Family Visa (Relocation)</Link></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-sm">
+                                <h3 className="text-2xl font-bold text-amber-500 mb-2">Property Due Diligence Audit</h3>
+                                <ul className="space-y-3 mt-6 mb-8 text-sm text-slate-300">
+                                    <li className="flex"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> Contract Review (Thai/English)</li>
+                                    <li className="flex"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> Title Deed Check (Land Office)</li>
+                                    <li className="flex"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> Legality of Structure (Condo/Villa)</li>
+                                    <li className="flex"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> Full Tax Calculation</li>
+                                </ul>
+                                <Link
+                                    href={`/${lang}/contact`}
+                                    className="w-full block text-center bg-amber-500 text-slate-900 font-bold py-4 rounded-lg hover:bg-amber-400 transition-colors shadow-lg shadow-amber-500/20"
+                                >
+                                    Book Property Audit
+                                </Link>
+                            </div>
+                        </div>
+                    </Container>
+                </section>
             </div>
         );
     }
 
+
+
+    // French Content (Default)
     return (
         <div className="bg-slate-50 pb-20">
             {/* Hero Section */}
@@ -287,31 +501,5 @@ const BuyPropertyClientPage: React.FC<BuyPropertyClientPageProps> = ({ lang }) =
         </div>
     );
 };
-
-// Helper component for Building icon which was missing in imports on previous file but added here
-function Building2(props: any) {
-    return (
-        <svg
-            {...props}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
-            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
-            <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
-            <path d="M10 6h4" />
-            <path d="M10 10h4" />
-            <path d="M10 14h4" />
-            <path d="M10 18h4" />
-        </svg>
-    )
-}
 
 export default BuyPropertyClientPage;
