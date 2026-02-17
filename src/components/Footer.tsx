@@ -100,6 +100,8 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-6 text-amber-50 border-b border-slate-800 pb-2 inline-block">{t('footer.col_visas')}</h4>
             <ul className="space-y-3 text-slate-400 text-sm">
               <li><Link href={langPath('dtv')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.dtv')}</Link></li>
+              <li><Link href={langPath('elite-visa')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.elite')}</Link></li>
+              <li><Link href={langPath('business-visa')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.business')}</Link></li>
               <li><Link href={langPath('tourist-visa')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.tourist')}</Link></li>
               <li><Link href={langPath('retirement-visa')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.retirement')}</Link></li>
               <li><Link href={langPath('visa-run')} className="hover:text-amber-400 transition-colors flex items-center"><span className="text-amber-500 mr-2">›</span> {t('nav.visa_run')}</Link></li>
