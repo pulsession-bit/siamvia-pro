@@ -5,12 +5,15 @@ import Link from 'next/link';
 import { Building2, FileCheck, ShieldAlert, Briefcase, Landmark, CheckCircle2, ArrowRight, AlertTriangle, Scale, Globe } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useLangPath } from '@/hooks/useLang';
 
 interface CompanySetupClientPageProps {
     lang: string;
 }
 
 const CompanySetupClientPage: React.FC<CompanySetupClientPageProps> = ({ lang }) => {
+    const langPath = useLangPath();
+
     // English Content (Default for non-FR)
     if (lang !== 'fr') {
         return (
@@ -223,7 +226,7 @@ const CompanySetupClientPage: React.FC<CompanySetupClientPageProps> = ({ lang })
                                 Confused about BOI vs Thai Limited? Not sure about the 4:1 ratio? Let our experts analyze your business model and recommend the safest structure.
                             </p>
                             <Link
-                                href={`/${lang}/contact`}
+                                href={langPath('contact')}
                                 className="inline-block bg-amber-500 text-slate-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition-colors shadow-lg"
                             >
                                 Book Free Consultation
@@ -505,7 +508,7 @@ const CompanySetupClientPage: React.FC<CompanySetupClientPageProps> = ({ lang })
                                 </div>
                             </div>
                             <Link
-                                href="/fr/contact"
+                                href={langPath('contact')}
                                 className="mt-8 w-full block text-center bg-amber-500 text-slate-900 font-bold py-4 rounded-lg hover:bg-amber-400 transition-colors shadow-lg shadow-amber-500/20"
                             >
                                 Demander mon Audit Gratuit

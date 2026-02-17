@@ -237,7 +237,7 @@ const BuyPropertyClientPage: React.FC<BuyPropertyClientPageProps> = ({ lang }) =
                                     <li className="flex"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> Full Tax Calculation</li>
                                 </ul>
                                 <Link
-                                    href={`/${lang}/contact`}
+                                    href={langPath('contact')}
                                     className="w-full block text-center bg-amber-500 text-slate-900 font-bold py-4 rounded-lg hover:bg-amber-400 transition-colors shadow-lg shadow-amber-500/20"
                                 >
                                     Book Property Audit
@@ -472,7 +472,7 @@ const BuyPropertyClientPage: React.FC<BuyPropertyClientPageProps> = ({ lang }) =
                                 <li className="flex"><CheckCircle2 className="h-4 w-4 text-green-500 mr-2" /> Estimation Taxes & Frais</li>
                             </ul>
                             <Link
-                                href="/fr/contact"
+                                href={langPath('contact')}
                                 className="w-full block text-center bg-amber-500 text-slate-900 font-bold py-4 rounded-lg hover:bg-amber-400 transition-colors shadow-lg shadow-amber-500/20"
                             >
                                 Demander mon Audit Immo
