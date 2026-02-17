@@ -29,6 +29,7 @@ export function middleware(req: NextRequest) {
     if (
         pathname.startsWith("/_next") ||
         pathname.startsWith("/api") ||
+        pathname.startsWith("/admin") ||
         pathname.startsWith("/robots.txt") ||
         pathname.startsWith("/sitemap.xml") ||
         pathname.startsWith("/favicon.ico") ||
@@ -80,5 +81,5 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-    matcher: ["/((?!api|_next/static|_next/image|favicon.ico|sitemap.*|robots.txt|.*\\.svg|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.webp).*)"],
+    matcher: ["/((?!api|admin|_next/static|_next/image|favicon.ico|sitemap.*|robots.txt|.*\\.svg|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.webp).*)"],
 };
