@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { REVERSE_MAP } from "@/utils/slugs";
 
 const LOCALES = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
 const DEFAULT_LOCALE = "fr";
@@ -38,8 +39,29 @@ export function middleware(req: NextRequest) {
     }
 
     // 1) Check if already has locale prefix
-    const first = pathname.split("/")[1];
-    if (LOCALES.includes(first as any)) return NextResponse.next();
+    const parts = pathname.split("/");
+    const first = parts[1];
+
+    if (LOCALES.includes(first as any)) {
+        // It has a locale. Check if we strictly need to rewrite a localized slug to an internal folder structure.
+        const locale = first;
+        const slug = parts.slice(2).join("/"); // everything after /fr/
+
+        // Check REVERSE_MAP
+        // REVERSE_MAP['fr']['creer-entreprise-thailande'] => 'company-setup'
+        const internalKey = REVERSE_MAP[locale]?.[slug];
+
+        if (internalKey) {
+            // We found a corresponding internal key.
+            // Rewrite the URL to point to the actual Next.js folder (e.g. /fr/company-setup)
+            // But keep the URL in the browser bar as is.
+            const url = req.nextUrl.clone();
+            url.pathname = `/${locale}/${internalKey}`;
+            return NextResponse.rewrite(url);
+        }
+
+        return NextResponse.next();
+    }
 
     // 2) Detect locale: cookie > accept-language > default
     const cookieLocale = req.cookies.get(LOCALE_COOKIE)?.value;

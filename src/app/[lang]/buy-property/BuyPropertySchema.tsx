@@ -13,6 +13,14 @@ const BuyPropertySchema: React.FC<BuyPropertySchemaProps> = ({ lang }) => {
         questions = [
             {
                 "@type": "Question",
+                "name": "Est-ce qu'acheter un bien en Thaïlande donne un visa ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. Même en achetant un condo de luxe, vous n'obtenez pas de droit de séjour automatique. Vous devez sécuriser un visa valide (Retraite, LTR, DTV) pour résider en Thaïlande."
+                }
+            },
+            {
+                "@type": "Question",
                 "name": "Un étranger peut-il acheter une villa en Thaïlande ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
@@ -39,6 +47,14 @@ const BuyPropertySchema: React.FC<BuyPropertySchemaProps> = ({ lang }) => {
     } else {
         // English (Default)
         questions = [
+            {
+                "@type": "Question",
+                "name": "Does buying property in Thailand grant a visa?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Buying property (even a luxury condo) does NOT automatically grant residency or a visa. You must secure a separate valid visa (Retirement, LTR, DTV, Thailand Privilege) to stay long-term."
+                }
+            },
             {
                 "@type": "Question",
                 "name": "Can foreigners own land in Thailand?",
