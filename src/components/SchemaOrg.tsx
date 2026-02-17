@@ -90,7 +90,7 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang, pageKey, title, show
         'url': baseUrl,
         'potentialAction': {
             '@type': 'SearchAction',
-            'target': `${baseUrl}/${lang}/search?q={search_term_string}`,
+            'target': `${baseUrl}${getTranslatedPath('search', lang)}?q={search_term_string}`,
             'query-input': 'required name=search_term_string'
         }
     };

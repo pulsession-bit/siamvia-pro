@@ -29,7 +29,9 @@ export type PageKey =
     | 'dtv-documents'
     | 'dtv-erreurs'
     | 'dtv-comparatif'
-    | 'dtv-delais';
+    | 'dtv-delais'
+    | 'company-setup'
+    | 'buy-property';
 
 export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     fr: {
@@ -63,7 +65,9 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-documents': 'visa-dtv-thailande/documents-requis',
         'dtv-erreurs': 'visa-dtv-thailande/erreurs-frequentes',
         'dtv-comparatif': 'visa-dtv-thailande/comparatif-visas',
-        'dtv-delais': 'visa-dtv-thailande/delais-traitement'
+        'dtv-delais': 'visa-dtv-thailande/delais-traitement',
+        'company-setup': 'creer-entreprise-thailande',
+        'buy-property': 'acheter-immobilier-thailande'
     },
     en: {
         home: '',
@@ -96,7 +100,9 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
         'dtv-comparatif': 'dtv/comparatif',
-        'dtv-delais': 'dtv/delais'
+        'dtv-delais': 'dtv/delais',
+        'company-setup': 'company-registration-thailand',
+        'buy-property': 'buy-property-thailand'
     },
     de: {
         home: '',
@@ -129,7 +135,9 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
         'dtv-comparatif': 'dtv/comparatif',
-        'dtv-delais': 'dtv/delais'
+        'dtv-delais': 'dtv/delais',
+        'company-setup': 'company-registration-thailand',
+        'buy-property': 'buy-property-thailand'
     },
     es: {
         home: '',
@@ -162,7 +170,9 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
         'dtv-comparatif': 'dtv/comparatif',
-        'dtv-delais': 'dtv/delais'
+        'dtv-delais': 'dtv/delais',
+        'company-setup': 'company-registration-thailand',
+        'buy-property': 'buy-property-thailand'
     },
     it: {
         home: '',
@@ -195,7 +205,9 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
         'dtv-comparatif': 'dtv/comparatif',
-        'dtv-delais': 'dtv/delais'
+        'dtv-delais': 'dtv/delais',
+        'company-setup': 'company-registration-thailand',
+        'buy-property': 'buy-property-thailand'
     },
     th: {
         home: '',
@@ -228,7 +240,9 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
         'dtv-comparatif': 'dtv/comparatif',
-        'dtv-delais': 'dtv/delais'
+        'dtv-delais': 'dtv/delais',
+        'company-setup': 'company-registration-thailand',
+        'buy-property': 'buy-property-thailand'
     },
     ru: {
         home: '',
@@ -261,7 +275,9 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
         'dtv-comparatif': 'dtv/comparatif',
-        'dtv-delais': 'dtv/delais'
+        'dtv-delais': 'dtv/delais',
+        'company-setup': 'company-registration-thailand',
+        'buy-property': 'buy-property-thailand'
     },
     zh: {
         home: '',
@@ -294,7 +310,9 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
         'dtv-comparatif': 'dtv/comparatif',
-        'dtv-delais': 'dtv/delais'
+        'dtv-delais': 'dtv/delais',
+        'company-setup': 'company-registration-thailand',
+        'buy-property': 'buy-property-thailand'
     },
     ja: {
         home: '',
@@ -327,7 +345,9 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
         'dtv-comparatif': 'dtv/comparatif',
-        'dtv-delais': 'dtv/delais'
+        'dtv-delais': 'dtv/delais',
+        'company-setup': 'company-registration-thailand',
+        'buy-property': 'buy-property-thailand'
     },
     ko: {
         home: '',
@@ -360,7 +380,9 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
         'dtv-comparatif': 'dtv/comparatif',
-        'dtv-delais': 'dtv/delais'
+        'dtv-delais': 'dtv/delais',
+        'company-setup': 'company-registration-thailand',
+        'buy-property': 'buy-property-thailand'
     },
     ar: {
         home: '',
@@ -393,7 +415,9 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-documents': 'dtv/documents',
         'dtv-erreurs': 'dtv/erreurs',
         'dtv-comparatif': 'dtv/comparatif',
-        'dtv-delais': 'dtv/delais'
+        'dtv-delais': 'dtv/delais',
+        'company-setup': 'company-registration-thailand',
+        'buy-property': 'buy-property-thailand'
     }
 };
 

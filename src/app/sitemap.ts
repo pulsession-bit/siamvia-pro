@@ -30,7 +30,9 @@ const pages: PageKey[] = [
     'faq',
     'contact',
     'terms',
-    'sitemap'
+    'sitemap',
+    'company-setup',
+    'buy-property'
 ];
 
 // DTV satellite pages — FR only
@@ -57,7 +59,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             const priority =
                 page === 'home' || page === 'dtv'
                     ? 0.9
-                    : ['services', 'tourist-visa', 'elite-visa', 'retirement-visa', 'ltr', 'visa-run'].includes(page)
+                    : ['services', 'tourist-visa', 'elite-visa', 'retirement-visa', 'ltr', 'visa-run', 'company-setup', 'buy-property'].includes(page)
                         ? 0.8
                         : page === 'search'
                             ? 0.7

@@ -31,7 +31,9 @@ const slugMap: Record<string, Record<string, string>> = {
     'dtv/documents': 'visa-dtv-thailande/documents-requis',
     'dtv/erreurs': 'visa-dtv-thailande/erreurs-frequentes',
     'dtv/comparatif': 'visa-dtv-thailande/comparatif-visas',
-    'dtv/delais': 'visa-dtv-thailande/delais-traitement'
+    'dtv/delais': 'visa-dtv-thailande/delais-traitement',
+    'company-setup': 'creer-entreprise-thailande',
+    'buy-property': 'acheter-immobilier-thailande'
   },
   en: {
     dtv: 'thailand-dtv-visa',
@@ -59,7 +61,9 @@ const slugMap: Record<string, Record<string, string>> = {
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply-visa',
     about: 'about-us',
-    'ai-technology': 'ai-visa-technology'
+    'ai-technology': 'ai-visa-technology',
+    'company-setup': 'company-registration-thailand',
+    'buy-property': 'buy-property-thailand'
   },
   de: {
     dtv: 'destination-thailand-visum',
@@ -87,7 +91,9 @@ const slugMap: Record<string, Record<string, string>> = {
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply-visa',
     about: 'ueber-uns',
-    'ai-technology': 'ki-visum-technologie'
+    'ai-technology': 'ki-visum-technologie',
+    'company-setup': 'company-registration-thailand',
+    'buy-property': 'buy-property-thailand'
   },
   es: {
     dtv: 'visado-destino-tailandia',
@@ -115,7 +121,9 @@ const slugMap: Record<string, Record<string, string>> = {
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'solicitar-visa',
     about: 'sobre-nosotros',
-    'ai-technology': 'tecnologia-ia-visa'
+    'ai-technology': 'tecnologia-ia-visa',
+    'company-setup': 'company-registration-thailand',
+    'buy-property': 'buy-property-thailand'
   },
   it: {
     dtv: 'visto-destinazione-thailandia',
@@ -143,7 +151,9 @@ const slugMap: Record<string, Record<string, string>> = {
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'richiedi-visto',
     about: 'chi-siamo',
-    'ai-technology': 'tecnologia-ia-visto'
+    'ai-technology': 'tecnologia-ia-visto',
+    'company-setup': 'company-registration-thailand',
+    'buy-property': 'buy-property-thailand'
   },
   th: {
     dtv: 'destination-thailand-visa',
@@ -171,7 +181,9 @@ const slugMap: Record<string, Record<string, string>> = {
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply',
     about: 'about',
-    'ai-technology': 'ai-technology'
+    'ai-technology': 'ai-technology',
+    'company-setup': 'company-registration-thailand',
+    'buy-property': 'buy-property-thailand'
   },
   ru: {
     dtv: 'destination-thailand-visa',
@@ -199,7 +211,9 @@ const slugMap: Record<string, Record<string, string>> = {
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply',
     about: 'about',
-    'ai-technology': 'ai-technology'
+    'ai-technology': 'ai-technology',
+    'company-setup': 'company-registration-thailand',
+    'buy-property': 'buy-property-thailand'
   },
   zh: {
     dtv: 'destination-thailand-visa',
@@ -227,7 +241,9 @@ const slugMap: Record<string, Record<string, string>> = {
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply',
     about: 'about',
-    'ai-technology': 'ai-technology'
+    'ai-technology': 'ai-technology',
+    'company-setup': 'company-registration-thailand',
+    'buy-property': 'buy-property-thailand'
   },
   ja: {
     dtv: 'destination-thailand-visa',
@@ -255,7 +271,9 @@ const slugMap: Record<string, Record<string, string>> = {
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply',
     about: 'about',
-    'ai-technology': 'ai-technology'
+    'ai-technology': 'ai-technology',
+    'company-setup': 'company-registration-thailand',
+    'buy-property': 'buy-property-thailand'
   },
   ko: {
     dtv: 'destination-thailand-visa',
@@ -283,7 +301,9 @@ const slugMap: Record<string, Record<string, string>> = {
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply',
     about: 'about',
-    'ai-technology': 'ai-technology'
+    'ai-technology': 'ai-technology',
+    'company-setup': 'company-registration-thailand',
+    'buy-property': 'buy-property-thailand'
   },
   ar: {
     dtv: 'destination-thailand-visa',
@@ -311,7 +331,9 @@ const slugMap: Record<string, Record<string, string>> = {
     'scientific-visa': 'thailand-scientific-visa',
     apply: 'apply',
     about: 'about',
-    'ai-technology': 'ai-technology'
+    'ai-technology': 'ai-technology',
+    'company-setup': 'company-registration-thailand',
+    'buy-property': 'buy-property-thailand'
   }
 };
 
@@ -349,7 +371,7 @@ const nextConfig: NextConfig = {
         redirects.push({
           source: `/${lang}/${internal}`,
           destination: `/${lang}/${translated}`,
-          permanent: true,
+          statusCode: 301,
         });
       });
     });
