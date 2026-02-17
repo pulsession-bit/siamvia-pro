@@ -33,6 +33,7 @@ export const fr = {
     "visa_run": "Risques Visa Run",
     "company_setup": "Créer son Entreprise",
     "buy_property": "Acheter un Bien",
+    "blog": "Blog",
     "categories": {
       "work": "Travail & Business",
       "tourism": "Tourisme",

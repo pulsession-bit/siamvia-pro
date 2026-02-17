@@ -14,6 +14,12 @@ export const NAV_ITEMS = [
         items: []
     },
     {
+        key: 'blog',
+        labelKey: 'nav.blog',
+        path: 'blog',
+        items: []
+    },
+    {
         key: 'faq',
         labelKey: 'nav.faq',
         path: 'faq',

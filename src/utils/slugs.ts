@@ -31,7 +31,8 @@ export type PageKey =
     | 'dtv-comparatif'
     | 'dtv-delais'
     | 'company-setup'
-    | 'buy-property';
+    | 'buy-property'
+    | 'blog';
 
 export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     fr: {
@@ -67,7 +68,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-comparatif': 'visa-dtv-thailande/comparatif-visas',
         'dtv-delais': 'visa-dtv-thailande/delais-traitement',
         'company-setup': 'creer-entreprise-thailande',
-        'buy-property': 'acheter-immobilier-thailande'
+        'buy-property': 'acheter-immobilier-thailande',
+        blog: 'blog-visa-thailande'
     },
     en: {
         home: '',
@@ -102,7 +104,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-comparatif': 'dtv/comparatif',
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
-        'buy-property': 'buy-property-thailand'
+        'buy-property': 'buy-property-thailand',
+        blog: 'thailand-visa-blog'
     },
     de: {
         home: '',
@@ -137,7 +140,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-comparatif': 'dtv/comparatif',
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
-        'buy-property': 'buy-property-thailand'
+        'buy-property': 'buy-property-thailand',
+        blog: 'blog'
     },
     es: {
         home: '',
@@ -172,7 +176,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-comparatif': 'dtv/comparatif',
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
-        'buy-property': 'buy-property-thailand'
+        'buy-property': 'buy-property-thailand',
+        blog: 'blog'
     },
     it: {
         home: '',
@@ -207,7 +212,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-comparatif': 'dtv/comparatif',
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
-        'buy-property': 'buy-property-thailand'
+        'buy-property': 'buy-property-thailand',
+        blog: 'blog'
     },
     th: {
         home: '',
@@ -242,7 +248,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-comparatif': 'dtv/comparatif',
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
-        'buy-property': 'buy-property-thailand'
+        'buy-property': 'buy-property-thailand',
+        blog: 'blog'
     },
     ru: {
         home: '',
@@ -277,7 +284,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-comparatif': 'dtv/comparatif',
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
-        'buy-property': 'buy-property-thailand'
+        'buy-property': 'buy-property-thailand',
+        blog: 'blog'
     },
     zh: {
         home: '',
@@ -312,7 +320,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-comparatif': 'dtv/comparatif',
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
-        'buy-property': 'buy-property-thailand'
+        'buy-property': 'buy-property-thailand',
+        blog: 'blog'
     },
     ja: {
         home: '',
@@ -347,7 +356,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-comparatif': 'dtv/comparatif',
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
-        'buy-property': 'buy-property-thailand'
+        'buy-property': 'buy-property-thailand',
+        blog: 'blog'
     },
     ko: {
         home: '',
@@ -382,7 +392,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-comparatif': 'dtv/comparatif',
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
-        'buy-property': 'buy-property-thailand'
+        'buy-property': 'buy-property-thailand',
+        blog: 'blog'
     },
     ar: {
         home: '',
@@ -417,7 +428,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-comparatif': 'dtv/comparatif',
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
-        'buy-property': 'buy-property-thailand'
+        'buy-property': 'buy-property-thailand',
+        blog: 'blog'
     }
 };
 

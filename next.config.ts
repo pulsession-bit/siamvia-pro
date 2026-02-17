@@ -33,7 +33,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'dtv/comparatif': 'visa-dtv-thailande/comparatif-visas',
     'dtv/delais': 'visa-dtv-thailande/delais-traitement',
     'company-setup': 'creer-entreprise-thailande',
-    'buy-property': 'acheter-immobilier-thailande'
+    'buy-property': 'acheter-immobilier-thailande',
+    blog: 'blog-visa-thailande'
   },
   en: {
     dtv: 'thailand-dtv-visa',
@@ -63,7 +64,8 @@ const slugMap: Record<string, Record<string, string>> = {
     about: 'about-us',
     'ai-technology': 'ai-visa-technology',
     'company-setup': 'company-registration-thailand',
-    'buy-property': 'buy-property-thailand'
+    'buy-property': 'buy-property-thailand',
+    blog: 'thailand-visa-blog'
   },
   de: {
     dtv: 'destination-thailand-visum',

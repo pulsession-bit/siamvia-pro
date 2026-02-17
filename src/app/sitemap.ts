@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getTranslatedPath, PageKey } from '@/utils/slugs';
+import { getAllPosts } from '@/lib/blog/posts';
 
 export const dynamic = 'force-static';
 
@@ -32,7 +33,8 @@ const pages: PageKey[] = [
     'terms',
     'sitemap',
     'company-setup',
-    'buy-property'
+    'buy-property',
+    'blog'
 ];
 
 // DTV satellite pages — FR only
@@ -109,6 +111,33 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             },
         });
     });
+
+    // Blog article URLs (FR, EN, TH only)
+    const blogSlugs: Record<string, string> = { fr: 'blog-visa-thailande', en: 'thailand-visa-blog', th: 'blog' };
+    const blogLangs = ['fr', 'en', 'th'];
+    for (const lang of blogLangs) {
+        const posts = getAllPosts(lang);
+        const blogSlug = blogSlugs[lang];
+        for (const post of posts) {
+            const articleUrl = `${baseUrl}/${lang}/${blogSlug}/${post.frontmatter.slug}`;
+            const articleAlternates: Record<string, string> = {};
+
+            if (post.frontmatter.hreflang) {
+                for (const [hLang, hSlug] of Object.entries(post.frontmatter.hreflang)) {
+                    articleAlternates[hLang] = `${baseUrl}/${hLang}/${blogSlugs[hLang] || 'blog'}/${hSlug}`;
+                }
+                articleAlternates['x-default'] = articleAlternates['en'] || articleUrl;
+            }
+
+            urls.push({
+                url: articleUrl,
+                lastModified: new Date(post.frontmatter.updated_at || post.frontmatter.published_at),
+                changeFrequency: 'monthly',
+                priority: 0.7,
+                alternates: Object.keys(articleAlternates).length > 0 ? { languages: articleAlternates } : undefined,
+            });
+        }
+    }
 
     // Add llms.txt
     urls.push({

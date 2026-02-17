@@ -29,6 +29,7 @@ export const th = {
     "official": "วีซ่าราชการ",
     "scientific": "วีซ่าวิจัยทางวิทยาศาสตร์",
     "visa_run": "ความเสี่ยง Visa Run",
+    "blog": "บล็อก",
     "categories": {
       "work": "งานและธุรกิจ",
       "tourism": "การท่องเที่ยว",

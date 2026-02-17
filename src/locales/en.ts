@@ -34,6 +34,7 @@ export const en = {
     "visa_run": "Visa Run Risks",
     "company_setup": "Company Setup",
     "buy_property": "Buy Property",
+    "blog": "Blog",
     "categories": {
       "work": "Work & Business",
       "tourism": "Tourism",
