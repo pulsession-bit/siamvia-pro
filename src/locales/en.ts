@@ -32,6 +32,8 @@ export const en = {
     "official": "Official Visa",
     "scientific": "Scientific Visa",
     "visa_run": "Visa Run Risks",
+    "company_setup": "Company Setup",
+    "buy_property": "Buy Property",
     "categories": {
       "work": "Work & Business",
       "tourism": "Tourism",
@@ -39,7 +41,8 @@ export const en = {
       "family": "Family & Marriage",
       "education": "Education",
       "elite": "Elite Privilege",
-      "others": "Other Visas"
+      "others": "Other Visas",
+      "expatriation": "Expat & Property"
     }
   },
   "ltr_page": {

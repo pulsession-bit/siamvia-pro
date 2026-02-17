@@ -67,6 +67,14 @@ export const NAV_ITEMS = [
         ],
     },
     {
+        key: 'expatriation',
+        labelKey: 'nav.categories.expatriation',
+        items: [
+            { key: 'company_setup', labelKey: 'nav.company_setup', path: 'company-setup' },
+            { key: 'buy_property', labelKey: 'nav.buy_property', path: 'buy-property' },
+        ],
+    },
+    {
         key: 'others',
         labelKey: 'nav.categories.others',
         items: [

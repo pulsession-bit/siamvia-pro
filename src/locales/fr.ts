@@ -31,6 +31,8 @@ export const fr = {
     "official": "Visa Officiel",
     "scientific": "Visa Scientifique",
     "visa_run": "Risques Visa Run",
+    "company_setup": "Créer son Entreprise",
+    "buy_property": "Acheter un Bien",
     "categories": {
       "work": "Travail & Business",
       "tourism": "Tourisme",
@@ -38,7 +40,8 @@ export const fr = {
       "family": "Famille & Mariage",
       "education": "Éducation",
       "elite": "Privilège Elite",
-      "others": "Autres Visas"
+      "others": "Autres Visas",
+      "expatriation": "Expatriation & Immo"
     },
     "member": "Espace Client"
   },
