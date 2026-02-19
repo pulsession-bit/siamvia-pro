@@ -352,6 +352,14 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'img.antiquiscore.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'image.siamvisapro.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+      },
     ],
   },
   async rewrites() {
