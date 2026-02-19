@@ -146,6 +146,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ lang:
                     </Container>
                 </div>
 
+                {post.frontmatter.video && (
+                    <div className="bg-slate-900">
+                        <div className="max-w-5xl mx-auto px-4">
+                            <div className="relative w-full rounded-xl overflow-hidden shadow-2xl" style={{ paddingBottom: '56.25%' }}>
+                                <iframe
+                                    className="absolute inset-0 w-full h-full"
+                                    src={post.frontmatter.video}
+                                    title={post.frontmatter.title}
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                />
+                            </div>
+                        </div>
+                        <div className="h-12 bg-gradient-to-b from-slate-900 to-slate-50" />
+                    </div>
+                )}
+
                 <Container>
                     <article className="max-w-3xl py-12 prose-slate">
                         <MDXRemote

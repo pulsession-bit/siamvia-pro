@@ -16,6 +16,7 @@ export interface PostFrontmatter {
     clusters?: string[];
     tags?: string[];
     featured_image?: string;
+    video?: string;
     reading_time?: number;
     hreflang?: Record<string, string>;
 }
