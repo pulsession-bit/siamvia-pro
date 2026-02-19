@@ -13,12 +13,7 @@ export const NAV_ITEMS = [
         path: 'services',
         items: []
     },
-    {
-        key: 'blog',
-        labelKey: 'nav.blog',
-        path: 'blog',
-        items: []
-    },
+
     {
         key: 'insurance',
         labelKey: 'nav.insurance',
