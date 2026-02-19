@@ -363,6 +363,13 @@ const nextConfig: NextConfig = {
           source: `/${lang}/${translated}`,
           destination: `/${lang}/${internal}`,
         });
+        // Blog sub-routes: /fr/blog-visa-thailande/:slug → /fr/blog/:slug
+        if (internal === 'blog') {
+          rewrites.push({
+            source: `/${lang}/${translated}/:slug`,
+            destination: `/${lang}/blog/:slug`,
+          });
+        }
       });
     });
     return rewrites;
@@ -389,7 +396,7 @@ const nextConfig: NextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "default-src 'self'; img-src 'self' https: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; connect-src 'self' https:; frame-ancestors 'self';",
+              "default-src 'self'; img-src 'self' https: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; connect-src 'self' https:; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; frame-ancestors 'self';",
           },
           {
             key: "X-Frame-Options",
