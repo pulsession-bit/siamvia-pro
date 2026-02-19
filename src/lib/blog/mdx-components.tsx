@@ -92,11 +92,22 @@ export const mdxComponents: MDXComponents = {
         <strong className="font-semibold text-slate-900" {...props}>{children}</strong>
     ),
     hr: () => <hr className="my-8 border-slate-200" />,
-    iframe: ({ ...props }) => (
-        <div className="relative w-full my-6 rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-            <iframe className="absolute inset-0 w-full h-full" {...props} />
-        </div>
-    ),
+    iframe: ({ style, ...props }: React.ComponentProps<'iframe'>) => {
+        // If the iframe has an explicit height style (e.g. presentations), use block layout
+        if (style?.height) {
+            return (
+                <div className="w-full my-6 rounded-xl overflow-hidden shadow-lg border border-slate-200">
+                    <iframe className="w-full" style={style} {...props} />
+                </div>
+            );
+        }
+        // Default: 16:9 responsive (YouTube etc.)
+        return (
+            <div className="relative w-full my-6 rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+                <iframe className="absolute inset-0 w-full h-full" {...props} />
+            </div>
+        );
+    },
     code: ({ children, ...props }) => (
         <code className="bg-slate-100 text-amber-700 px-1.5 py-0.5 rounded text-sm font-mono" {...props}>{children}</code>
     ),
