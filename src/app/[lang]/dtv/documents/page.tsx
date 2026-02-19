@@ -23,20 +23,20 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   return generateMetadataWithHreflang({
     title: meta.title,
     description: meta.description,
-    pageKey: 'dtv-documents',
+    pageKey: 'dtv/documents',
     lang,
   });
 }
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  const keys = PAGE_TRANSLATION_KEYS['dtv-documents'];
+  const keys = PAGE_TRANSLATION_KEYS['dtv/documents'];
   const dict = getPageDictionary(lang, keys);
   const fallback = lang !== 'en' ? getPageFallbackDictionary(keys) : undefined;
 
   return (
     <>
-      <SchemaOrg lang={lang} pageKey="dtv-documents" title="Documents Requis Visa DTV Thaïlande" showGlobal={false} />
+      <SchemaOrg lang={lang} pageKey="dtv/documents" title="Documents Requis Visa DTV Thaïlande" showGlobal={false} />
       <PageTranslations dictionary={dict} fallbackDictionary={fallback}>
         <DTVDocumentsClientPage />
       </PageTranslations>

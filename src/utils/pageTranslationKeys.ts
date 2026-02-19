@@ -32,10 +32,10 @@ export const PAGE_TRANSLATION_KEYS: Record<string, string[]> = {
     'visa-run': ['visa_run_page', 'visas'],
 
     // DTV satellite pages (FR only)
-    'dtv-documents': ['dtv_documents_page'],
-    'dtv-erreurs': ['dtv_erreurs_page'],
-    'dtv-comparatif': ['dtv_comparatif_page', 'visas'],
-    'dtv-delais': ['dtv_delais_page'],
+    'dtv/documents': ['dtv_documents_page'],
+    'dtv/erreurs': ['dtv_erreurs_page'],
+    'dtv/comparatif': ['dtv_comparatif_page', 'visas'],
+    'dtv/delais': ['dtv_delais_page'],
 
     // Other pages
     about: ['about_page'],

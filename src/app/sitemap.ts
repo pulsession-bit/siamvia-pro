@@ -40,10 +40,10 @@ const pages: PageKey[] = [
 
 // DTV satellite pages — FR only
 const frOnlyPages: PageKey[] = [
-    'dtv-documents',
-    'dtv-erreurs',
-    'dtv-comparatif',
-    'dtv-delais'
+    'dtv/documents',
+    'dtv/erreurs',
+    'dtv/comparatif',
+    'dtv/delais'
 ];
 
 

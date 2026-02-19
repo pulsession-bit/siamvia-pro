@@ -16,27 +16,27 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const t = getFullDictionary(lang as any) as any;
 
   const meta = t.dtv_erreurs_page?.meta || {
-    title: '10 Erreurs Visa DTV Thaïlande 2026',
-    description: 'Les erreurs les plus fréquentes qui font refuser un visa DTV.',
+    title: '10 Erreurs à éviter Visa DTV Thaïlande',
+    description: 'Guide des erreurs fréquentes lors de la demande DTV.',
   };
 
   return generateMetadataWithHreflang({
     title: meta.title,
     description: meta.description,
-    pageKey: 'dtv-erreurs',
+    pageKey: 'dtv/erreurs',
     lang,
   });
 }
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  const keys = PAGE_TRANSLATION_KEYS['dtv-erreurs'];
+  const keys = PAGE_TRANSLATION_KEYS['dtv/erreurs'];
   const dict = getPageDictionary(lang, keys);
   const fallback = lang !== 'en' ? getPageFallbackDictionary(keys) : undefined;
 
   return (
     <>
-      <SchemaOrg lang={lang} pageKey="dtv-erreurs" title="10 Erreurs Visa DTV Thaïlande" showGlobal={false} />
+      <SchemaOrg lang={lang} pageKey="dtv/erreurs" title="10 Erreurs Visa DTV Thaïlande" showGlobal={false} />
       <PageTranslations dictionary={dict} fallbackDictionary={fallback}>
         <DTVErreursClientPage />
       </PageTranslations>

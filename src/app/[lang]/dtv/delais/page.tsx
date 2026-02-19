@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   return generateMetadataWithHreflang({
     title: meta.title,
     description: meta.description,
-    pageKey: 'dtv-delais',
+    pageKey: 'dtv/delais',
     lang,
   });
 }
@@ -36,7 +36,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
 
   return (
     <>
-      <SchemaOrg lang={lang} pageKey="dtv-delais" title="Délais Visa DTV Thaïlande" showGlobal={false} />
+      <SchemaOrg lang={lang} pageKey="dtv/delais" title="Délais Visa DTV Thaïlande" showGlobal={false} />
       <PageTranslations dictionary={dict} fallbackDictionary={fallback}>
         <DTVDelaisClientPage />
       </PageTranslations>
