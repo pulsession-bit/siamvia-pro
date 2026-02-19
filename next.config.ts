@@ -34,7 +34,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'dtv/delais': 'visa-dtv-thailande/delais-traitement',
     'company-setup': 'creer-entreprise-thailande',
     'buy-property': 'acheter-immobilier-thailande',
-    blog: 'blog-visa-thailande'
+    blog: 'blog-visa-thailande',
+    insurance: 'assurance-voyage-thailande'
   },
   en: {
     dtv: 'thailand-dtv-visa',
@@ -65,7 +66,8 @@ const slugMap: Record<string, Record<string, string>> = {
     'ai-technology': 'ai-visa-technology',
     'company-setup': 'company-registration-thailand',
     'buy-property': 'buy-property-thailand',
-    blog: 'thailand-visa-blog'
+    blog: 'thailand-visa-blog',
+    insurance: 'thailand-travel-insurance'
   },
   de: {
     dtv: 'destination-thailand-visum',
@@ -378,6 +380,37 @@ const nextConfig: NextConfig = {
       });
     });
     return redirects;
+  },
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'self'; img-src 'self' https: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; connect-src 'self' https:; frame-ancestors 'self';",
+          },
+          {
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
+          },
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+          {
+            key: "Referrer-Policy",
+            value: "strict-origin-when-cross-origin",
+          },
+          {
+            key: "Permissions-Policy",
+            value:
+              "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+          },
+        ],
+      },
+    ];
   },
 };
 

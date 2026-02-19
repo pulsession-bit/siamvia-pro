@@ -32,7 +32,8 @@ export type PageKey =
     | 'dtv-delais'
     | 'company-setup'
     | 'buy-property'
-    | 'blog';
+    | 'blog'
+    | 'insurance';
 
 export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     fr: {
@@ -69,7 +70,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-delais': 'visa-dtv-thailande/delais-traitement',
         'company-setup': 'creer-entreprise-thailande',
         'buy-property': 'acheter-immobilier-thailande',
-        blog: 'blog-visa-thailande'
+        blog: 'blog-visa-thailande',
+        insurance: 'assurance-voyage-thailande'
     },
     en: {
         home: '',
@@ -105,7 +107,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
         'buy-property': 'buy-property-thailand',
-        blog: 'thailand-visa-blog'
+        blog: 'thailand-visa-blog',
+        insurance: 'thailand-travel-insurance'
     },
     de: {
         home: '',
@@ -141,7 +144,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
         'buy-property': 'buy-property-thailand',
-        blog: 'blog'
+        blog: 'blog',
+        insurance: 'reiseversicherung-thailand'
     },
     es: {
         home: '',
@@ -177,7 +181,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
         'buy-property': 'buy-property-thailand',
-        blog: 'blog'
+        blog: 'blog',
+        insurance: 'seguro-viaje-tailandia'
     },
     it: {
         home: '',
@@ -213,7 +218,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
         'buy-property': 'buy-property-thailand',
-        blog: 'blog'
+        blog: 'blog',
+        insurance: 'assicurazione-viaggio-thailandia'
     },
     th: {
         home: '',
@@ -249,7 +255,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
         'buy-property': 'buy-property-thailand',
-        blog: 'blog'
+        blog: 'blog',
+        insurance: 'insurance'
     },
     ru: {
         home: '',
@@ -285,7 +292,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
         'buy-property': 'buy-property-thailand',
-        blog: 'blog'
+        blog: 'blog',
+        insurance: 'insurance'
     },
     zh: {
         home: '',
@@ -321,7 +329,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
         'buy-property': 'buy-property-thailand',
-        blog: 'blog'
+        blog: 'blog',
+        insurance: 'insurance'
     },
     ja: {
         home: '',
@@ -357,7 +366,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
         'buy-property': 'buy-property-thailand',
-        blog: 'blog'
+        blog: 'blog',
+        insurance: 'insurance'
     },
     ko: {
         home: '',
@@ -393,7 +403,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
         'buy-property': 'buy-property-thailand',
-        blog: 'blog'
+        blog: 'blog',
+        insurance: 'insurance'
     },
     ar: {
         home: '',
@@ -429,7 +440,8 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
         'dtv-delais': 'dtv/delais',
         'company-setup': 'company-registration-thailand',
         'buy-property': 'buy-property-thailand',
-        blog: 'blog'
+        blog: 'blog',
+        insurance: 'insurance'
     }
 };
 

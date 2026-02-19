@@ -34,7 +34,8 @@ const pages: PageKey[] = [
     'sitemap',
     'company-setup',
     'buy-property',
-    'blog'
+    'blog',
+    'insurance'
 ];
 
 // DTV satellite pages — FR only

@@ -47,4 +47,5 @@ export const PAGE_TRANSLATION_KEYS: Record<string, string[]> = {
     sitemap: ['sitemap_page', 'visas'],
     apply: ['apply_page'],
     'ai-technology': ['ai_technology_page', 'ai_block'],
+    insurance: ['insurance_page', 'visas'],
 };

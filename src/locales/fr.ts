@@ -34,6 +34,7 @@ export const fr = {
     "company_setup": "Créer son Entreprise",
     "buy_property": "Acheter un Bien",
     "blog": "Blog",
+    "insurance": "Assurance Voyage",
     "categories": {
       "work": "Travail & Business",
       "tourism": "Tourisme",
@@ -2293,5 +2294,102 @@ export const fr = {
       { "q": "Combien d'argent faut-il pour vivre en Thaïlande longue durée ?", "a": "Les exigences financières varient selon le visa : DTV nécessite 500 000 THB (~13 000€) d'épargne. Retraite nécessite 800 000 THB (~20 000€) en banque thaïlandaise ou 65 000 THB/mois de revenus. Visa mariage nécessite 400 000 THB (~10 000€). LTR nécessite $80 000+/an de revenus. Elite nécessite un paiement unique de 600 000-2 000 000 THB." },
       { "q": "Que fait SiamVisa Pro ?", "a": "SiamVisa Pro est un cabinet de conseil en immigration basé en Thaïlande qui aide les étrangers à obtenir leurs visas thaïlandais. Nos services incluent : évaluation d'éligibilité gratuite, préparation professionnelle de portfolio (DTV), vérification et traduction de documents, accompagnement soumission ambassade, traitement des permis de travail, renouvellements annuels et assistance rapport 90 jours. Nous servons nos clients en 11 langues avec un taux d'approbation de 95%+." }
     ]
+  },
+
+  "insurance_page": {
+    "meta_title": "Assurance Voyage Thaïlande 2026 — Comparatif & Guide Complet | SiamVisa Pro",
+    "meta_description": "Guide complet des assurances voyage pour la Thaïlande : comparatif Heymondo, Chapka, April, SafetyWing. Obligations visa O-A, digital nomads et retraités.",
+    "badge": "Guide Assurance",
+    "hero_h1": "Assurance Voyage Thaïlande",
+    "hero_title": "Protégez votre séjour en Thaïlande",
+    "hero_subtitle": "Guide complet des assurances voyage : garanties essentielles, comparatif des meilleurs prestataires et obligations par type de visa.",
+    "hero_tagline": "Rapatriement • Frais médicaux • Responsabilité civile",
+
+    "why_title": "Pourquoi souscrire une assurance voyage ?",
+    "stat_hospital_cost": "500 000 €+",
+    "stat_hospital_label": "Coût potentiel d'une hospitalisation dans une clinique privée thaïlandaise",
+    "stat_recommended": "300 000 €",
+    "stat_recommended_label": "Plafond minimum recommandé pour les frais médicaux",
+    "stat_repatriation": "Vital",
+    "stat_repatriation_label": "Rapatriement sanitaire : indispensable en cas d'accident grave",
+
+    "mandatory_title": "Visas avec assurance obligatoire",
+    "mandatory_intro": "Certains visas thaïlandais imposent une assurance comme condition d'obtention. Sans attestation conforme, votre demande sera refusée.",
+    "mandatory_badge": "Obligatoire",
+    "visa_oa_title": "Visa O-A (Long séjour 1 an)",
+    "visa_oa_coverage": "Couverture min. 3 000 000 THB (~85 000 €) pour frais médicaux et hospitalisation",
+    "visa_oa_duration": "Validité d'un an minimum, couvrant toute la durée du visa",
+    "visa_oa_certificate": "Formulaire « Foreign Insurance Certificate » obligatoire, signé par l'assureur",
+    "visa_ow_title": "Visa O-W (10 ans)",
+    "visa_ow_coverage": "Couverture min. ~11 500 € pour l'hospitalisation",
+    "visa_ow_duration": "Valable sur toute la durée du visa long séjour",
+
+    "nomad_title": "Meilleures assurances pour Digital Nomads",
+    "nomad_subtitle": "Comparatif 2026 des assurances adaptées aux travailleurs à distance et freelances",
+    "safetywing_desc": "Abonnement mensuel flexible, couverture mondiale. Très populaire chez les nomades pour ses tarifs abordables.",
+    "april_desc": "Recommandée pour les Français, couverture complète incluant le tiers payant aux États-Unis. Séjours longs et expatriation.",
+    "ava_desc": "Protection du matériel professionnel (ordinateur, smartphone) en plus des frais médicaux et sports extrêmes.",
+    "genki_desc": "Couverture internationale, souscription en ligne même si vous êtes déjà à l'étranger.",
+    "axa_desc": "Réseau mondial fiable, accès rapide à des soins de qualité partout dans le monde.",
+    "chapka_desc": "Référence pour les séjours de +90 jours et tours du monde. Couvre les sports à risque sans franchise.",
+
+    "other_options_title": "Autres options recommandées",
+    "heymondo_desc": "Application mobile innovante, téléconsultation médicale 24h/24, assistance en un clic.",
+    "acs_desc": "Option la plus économique, idéale pour les voyageurs de moins de 40 ans cherchant une couverture essentielle.",
+
+    "criteria_title": "Critères essentiels pour bien choisir",
+    "criteria_flexibility": "Flexibilité",
+    "criteria_flexibility_desc": "Sans engagement, modification ou résiliation facile",
+    "criteria_repatriation": "Rapatriement",
+    "criteria_repatriation_desc": "Indispensable en cas d'accident grave",
+    "criteria_liability": "Responsabilité civile",
+    "criteria_liability_desc": "Protection contre les dommages causés à des tiers",
+    "criteria_ceiling": "Plafond élevé",
+    "criteria_ceiling_desc": "Minimum 150 000 €, idéalement 500 000 €+",
+
+    "retirement_title": "Assurances pour retraités expatriés",
+    "retirement_subtitle": "Options par tranche d'âge pour les seniors souhaitant s'installer en Thaïlande",
+    "table_insurer": "Assureur",
+    "table_age_limit": "Âge max.",
+    "table_highlight": "Point fort",
+    "no_limit": "Sans limite",
+    "retirement_mondial": "Champion du rapport qualité-prix pour les seniors",
+    "retirement_axa": "Solution fiable sans limite d'âge",
+    "retirement_heymondo": "App mobile pratique, téléconsultation 24h/24",
+    "retirement_april": "Couverture santé et rapatriement complète",
+    "retirement_acs": "Multirisque flexible, tarif compétitif",
+
+    "age_impact_title": "Impact de l'âge sur les tarifs",
+    "age_impact_1": "Après 60 ans : primes plus élevées (ex. 80 € pour un trentenaire → 350 € pour 70 ans, sur 30 jours)",
+    "age_impact_2": "65-75 ans : majoration de 30 à 50 %. Au-delà de 75 ans, tarif peut doubler ou refus de souscription",
+    "age_impact_3": "Dès 65 ans : certains contrats cessent de couvrir le capital décès ou la perte d'autonomie",
+
+    "card_title": "Limites de l'assurance carte bancaire",
+    "card_duration_title": "Durée limitée",
+    "card_duration_desc": "Couverture limitée aux 90 premiers jours du séjour uniquement.",
+    "card_ceiling_title": "Plafonds insuffisants",
+    "card_ceiling_desc": "Entre 30 000 € et 155 000 € — insuffisant pour une hospitalisation lourde en Thaïlande.",
+    "card_advance_title": "Avance de frais",
+    "card_advance_desc": "Vous devez avancer la totalité des frais médicaux avant remboursement ultérieur.",
+    "card_conditions_title": "Conditions strictes",
+    "card_conditions_desc": "Obligation de payer le transport avec la carte. Ne couvre que le titulaire et sa famille proche.",
+    "card_exclusions_title": "Exclusions nombreuses",
+    "card_exclusions_desc": "Maladies tropicales (dengue), accidents de scooter, sports à risque, franchises élevées.",
+    "card_conclusion": "L'assurance carte bancaire est insuffisante dès qu'on voyage plus de 3 mois ou hors d'Europe.",
+
+    "faq_title": "Questions fréquentes sur l'assurance voyage",
+    "faqs": [
+      { "q": "Quels visas thaïlandais imposent une assurance obligatoire ?", "a": "Le visa O-A (long séjour 1 an) exige une assurance couvrant au minimum 3 000 000 THB (~85 000 €) pour les frais médicaux, avec un formulaire « Foreign Insurance Certificate » signé par l'assureur. Le visa O-W (10 ans) impose aussi une couverture minimale (~11 500 € hospitalisation). Pour les autres visas (touristique, DTV, Elite), l'assurance n'est pas obligatoire mais fortement recommandée." },
+      { "q": "Quelles sont les limites de l'assurance carte bancaire en Thaïlande ?", "a": "L'assurance carte bancaire (Visa Premier, Mastercard Gold) est limitée à 90 jours, avec des plafonds souvent insuffisants (30 000 € à 155 000 €). Elle impose l'avance de frais, exclut les maladies tropicales, les accidents de deux-roues et les sports à risque, et comporte des franchises élevées. Elle est systématiquement insuffisante pour un séjour prolongé." },
+      { "q": "Comment choisir entre Heymondo, Chapka et April ?", "a": "Heymondo excelle par son app mobile et sa téléconsultation 24h/24. Chapka (Cap Aventure) est la référence pour les séjours de +90 jours et peut fournir le Foreign Insurance Certificate pour le visa O-A. April International convient particulièrement aux Français avec le tiers payant USA et une couverture expatriation. Comparez les plafonds (min 300 000 € recommandé), les exclusions et votre durée de séjour." },
+      { "q": "Quelle est la meilleure assurance pour un digital nomad en Thaïlande ?", "a": "SafetyWing est la plus populaire avec son abonnement mensuel flexible. April International convient aux Français. Ava Diginomad se distingue par la couverture du matériel professionnel. Critères clés : flexibilité (sans engagement), rapatriement, responsabilité civile, et un plafond médical d'au moins 150 000 € (idéalement 500 000 €+)." }
+    ],
+
+    "cta_title": "Besoin de conseils",
+    "cta_highlight": "assurance ?",
+    "cta_desc": "Nos experts vous aident à choisir l'assurance adaptée à votre visa et votre profil.",
+    "cta_item1": "Attestation conforme pour visa O-A / O-W",
+    "cta_item2": "Comparatif personnalisé selon votre profil",
+    "cta_item3": "Accompagnement démarches d'expatriation"
   }
 };

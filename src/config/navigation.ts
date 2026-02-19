@@ -20,6 +20,12 @@ export const NAV_ITEMS = [
         items: []
     },
     {
+        key: 'insurance',
+        labelKey: 'nav.insurance',
+        path: 'insurance',
+        items: []
+    },
+    {
         key: 'faq',
         labelKey: 'nav.faq',
         path: 'faq',
