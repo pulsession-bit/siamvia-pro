@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  const keys = PAGE_TRANSLATION_KEYS['dtv-delais'];
+  const keys = PAGE_TRANSLATION_KEYS['dtv/delais'];
   const dict = getPageDictionary(lang, keys);
   const fallback = lang !== 'en' ? getPageFallbackDictionary(keys) : undefined;
 
