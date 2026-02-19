@@ -5,6 +5,7 @@ import {
     Shield, AlertTriangle, CreditCard, Clock, Heart, Users,
     Check, X, ChevronRight, Plane, HelpCircle, Star, ExternalLink
 } from 'lucide-react';
+import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath, useCurrentLang } from '@/hooks/useLang';
 import { FAQAccordion } from '@/components/ui/PageComponents';
@@ -122,16 +123,21 @@ const InsuranceClientPage: React.FC = () => {
                         </div>
 
                         {/* O-W Visa */}
-                        <div className="border-2 border-amber-200 rounded-xl p-6 bg-amber-50/30">
-                            <div className="flex items-center gap-3 mb-4">
-                                <span className="bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">{t('insurance_page.mandatory_badge')}</span>
-                                <h3 className="text-lg font-bold text-slate-900">{t('insurance_page.visa_ow_title')}</h3>
+                        <Link href={langPath('retirement-visa')} className="block group">
+                            <div className="border-2 border-amber-200 rounded-xl p-6 bg-amber-50/30 transition-all hover:bg-amber-50 hover:shadow-md hover:border-amber-300">
+                                <div className="flex items-center justify-between mb-4">
+                                    <div className="flex items-center gap-3">
+                                        <span className="bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">{t('insurance_page.mandatory_badge')}</span>
+                                        <h3 className="text-lg font-bold text-slate-900 group-hover:text-amber-700 transition-colors">{t('insurance_page.visa_ow_title')}</h3>
+                                    </div>
+                                    <ChevronRight className="h-5 w-5 text-amber-500 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                </div>
+                                <ul className="space-y-2 text-sm text-slate-700">
+                                    <li className="flex items-start gap-2"><Check className="h-4 w-4 text-amber-500 mt-0.5 flex-shrink-0" />{t('insurance_page.visa_ow_coverage')}</li>
+                                    <li className="flex items-start gap-2"><Check className="h-4 w-4 text-amber-500 mt-0.5 flex-shrink-0" />{t('insurance_page.visa_ow_duration')}</li>
+                                </ul>
                             </div>
-                            <ul className="space-y-2 text-sm text-slate-700">
-                                <li className="flex items-start gap-2"><Check className="h-4 w-4 text-amber-500 mt-0.5 flex-shrink-0" />{t('insurance_page.visa_ow_coverage')}</li>
-                                <li className="flex items-start gap-2"><Check className="h-4 w-4 text-amber-500 mt-0.5 flex-shrink-0" />{t('insurance_page.visa_ow_duration')}</li>
-                            </ul>
-                        </div>
+                        </Link>
                     </div>
                 </section>
 
