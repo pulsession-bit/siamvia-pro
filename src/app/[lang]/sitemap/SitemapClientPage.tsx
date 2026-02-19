@@ -34,6 +34,7 @@ export default function SitemapClientPage() {
 
     const tools = [
         { title: t('nav.home'), href: langPath(''), icon: <ShieldCheck className="w-5 h-5" /> },
+        { title: t('nav.blog'), href: langPath('blog'), icon: <FileText className="w-5 h-5" /> },
         { title: t('nav.search'), href: langPath('search'), icon: <Map className="w-5 h-5" /> },
         { title: t('nav.services'), href: langPath('services'), icon: <Globe className="w-5 h-5" /> },
         { title: t('nav.faq'), href: langPath('faq'), icon: <FileText className="w-5 h-5" /> },
