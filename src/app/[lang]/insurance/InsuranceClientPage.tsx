@@ -218,15 +218,15 @@ const InsuranceClientPage: React.FC = () => {
                             </thead>
                             <tbody className="divide-y divide-slate-100">
                                 {[
-                                    { name: 'Mondial Care', age: '85 ans', highlight: 'retirement_mondial', url: 'https://www.mondialcare.eu/?lang=fr' },
-                                    { name: 'AXA', age: t('insurance_page.no_limit'), highlight: 'retirement_axa', url: 'https://www.axa-schengen.com/fr/visa/demarches/limite-age-assurance-visa-schengen' },
-                                    { name: 'Heymondo', age: '74 ans', highlight: 'retirement_heymondo', url: 'https://heymondo.fr/' },
-                                    { name: 'April International', age: '75 ans', highlight: 'retirement_april', url: 'https://www.april.fr/assurance-sante-internationale/assurance-voyage' },
-                                    { name: 'ACS Globe Traveller', age: '66 ans', highlight: 'retirement_acs', url: 'https://www.acs-ami.com/fr/assurance-voyage/globe-traveller/' },
-                                ].map(({ name, age, highlight, url }) => (
+                                    { name: 'Mondial Care', age: '85', highlight: 'retirement_mondial', provider: 'mondialcare' },
+                                    { name: 'AXA', age: t('insurance_page.no_limit'), highlight: 'retirement_axa', provider: 'axa_schengen' },
+                                    { name: 'Heymondo', age: '74', highlight: 'retirement_heymondo', provider: 'heymondo' },
+                                    { name: 'April International', age: '75', highlight: 'retirement_april', provider: 'april' },
+                                    { name: 'ACS Globe Traveller', age: '66', highlight: 'retirement_acs', provider: 'acs' },
+                                ].map(({ name, age, highlight, provider }) => (
                                     <tr key={name} className="hover:bg-slate-50">
                                         <td className="px-4 py-3 font-medium text-slate-900">
-                                            <a href={url} target="_blank" rel="noopener noreferrer" className="hover:text-amber-600 transition-colors inline-flex items-center gap-1.5">
+                                            <a href={getProviderUrl(provider, lang)} target="_blank" rel="noopener noreferrer" className="hover:text-amber-600 transition-colors inline-flex items-center gap-1.5">
                                                 {name} <ExternalLink className="h-3.5 w-3.5 text-slate-400" />
                                             </a>
                                         </td>
