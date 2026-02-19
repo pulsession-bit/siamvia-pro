@@ -3,7 +3,7 @@
 import React from 'react';
 import {
     Shield, AlertTriangle, CreditCard, Clock, Heart, Users,
-    Check, X, ChevronRight, Plane, HelpCircle, Star
+    Check, X, ChevronRight, Plane, HelpCircle, Star, ExternalLink
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath, useCurrentLang } from '@/hooks/useLang';
@@ -12,6 +12,54 @@ import { RelatedPages } from '@/components/RelatedPages';
 import { VisaHero } from '@/components/visa/VisaHero';
 import { AuthorEEAT } from '@/components/AuthorEEAT';
 import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
+
+// Localized URLs for insurance providers — fallback to EN when not available
+const PROVIDER_URLS: Record<string, Record<string, string>> = {
+    mondialcare: {
+        en: 'https://www.mondialcare.eu/',
+        fr: 'https://www.mondialcare.eu/?lang=fr',
+        de: 'https://www.mondialcare.eu/?lang=de',
+        es: 'https://www.mondialcare.eu/?lang=es',
+        it: 'https://www.mondialcare.eu/?lang=it',
+        ru: 'https://www.mondialcare.eu/?lang=ru',
+        zh: 'https://www.mondialcare.eu/?lang=zh-hans',
+        ja: 'https://www.mondialcare.eu/?lang=ja',
+        ko: 'https://www.mondialcare.eu/?lang=ko',
+        ar: 'https://www.mondialcare.eu/?lang=ar',
+    },
+    axa_schengen: {
+        en: 'https://www.axa-schengen.com/en/products/axa-schengen-europe-travel',
+        fr: 'https://www.axa-schengen.com/fr/produits/axa-schengen-europe-travel',
+        de: 'https://www.axa-schengen.com/de/produkte/axa-schengen-europe-travel',
+        es: 'https://www.axa-schengen.com/es/productos/axa-schengen-europe-travel',
+        ru: 'https://www.axa-schengen.com/ru/produkty/axa-schengen-europe-travel',
+        zh: 'https://www.axa-schengen.com/zh/products/axa-schengen-europe-travel',
+    },
+    heymondo: {
+        en: 'https://heymondo.com/',
+        fr: 'https://heymondo.fr/',
+        es: 'https://heymondo.com/es/seguro-de-viaje-temporal/',
+        it: 'https://heymondo.it/',
+    },
+    april: {
+        en: 'https://www.april-international.com/en/travel-and-holiday-insurance',
+        fr: 'https://www.april-international.com/fr/guides/voyage',
+        es: 'https://www.april-international.com/es/guias/viajar',
+        de: 'https://www.april-international.com/de/unbefristete-auslandskrankenversicherung/guide/unterschiede-reisekrankenversicherung-und-auslandskrankenversicherung',
+    },
+    acs: {
+        en: 'https://www.acs-ami.com/en/travel-insurance/globe-traveller/',
+        fr: 'https://www.acs-ami.com/fr/assurance-voyage/globe-traveller/',
+    },
+    safetywing: { en: 'https://safetywing.com' },
+    ava: { en: 'https://www.ava.fr' },
+    genki: { en: 'https://www.genki.world' },
+    axa_voyage: { en: 'https://www.assurance-voyage.axa-assistance.fr/' },
+    chapka: { en: 'https://www.chapkadirect.fr' },
+};
+
+const getProviderUrl = (provider: string, lang: string) =>
+    PROVIDER_URLS[provider]?.[lang] || PROVIDER_URLS[provider]?.en || '#';
 
 const InsuranceClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -94,16 +142,18 @@ const InsuranceClientPage: React.FC = () => {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
-                            { name: 'SafetyWing', key: 'safetywing', star: true },
-                            { name: 'April International', key: 'april', star: true },
-                            { name: 'Ava – Diginomad', key: 'ava', star: false },
-                            { name: 'Genki', key: 'genki', star: false },
-                            { name: 'AXA International', key: 'axa', star: false },
-                            { name: 'Chapka – Cap Aventure', key: 'chapka', star: true },
-                        ].map(({ name, key, star }) => (
+                            { name: 'SafetyWing', key: 'safetywing', star: true, provider: 'safetywing' },
+                            { name: 'April International', key: 'april', star: true, provider: 'april' },
+                            { name: 'Ava – Diginomad', key: 'ava', star: false, provider: 'ava' },
+                            { name: 'Genki', key: 'genki', star: false, provider: 'genki' },
+                            { name: 'AXA International', key: 'axa', star: false, provider: 'axa_voyage' },
+                            { name: 'Chapka – Cap Aventure', key: 'chapka', star: true, provider: 'chapka' },
+                        ].map(({ name, key, star, provider }) => (
                             <div key={key} className="border border-slate-200 rounded-xl p-5 hover:shadow-md transition-shadow">
                                 <div className="flex items-center justify-between mb-3">
-                                    <h3 className="font-bold text-slate-900">{name}</h3>
+                                    <a href={getProviderUrl(provider, lang)} target="_blank" rel="noopener noreferrer" className="font-bold text-slate-900 hover:text-amber-600 transition-colors inline-flex items-center gap-1.5">
+                                        {name} <ExternalLink className="h-3.5 w-3.5 text-slate-400" />
+                                    </a>
                                     {star && <Star className="h-4 w-4 text-amber-500 fill-amber-500" />}
                                 </div>
                                 <p className="text-sm text-slate-600">{t(`insurance_page.${key}_desc`)}</p>
@@ -117,11 +167,11 @@ const InsuranceClientPage: React.FC = () => {
                         <div className="grid sm:grid-cols-2 gap-4 text-sm">
                             <div className="flex items-start gap-2">
                                 <ChevronRight className="h-4 w-4 text-amber-500 mt-0.5 flex-shrink-0" />
-                                <div><strong>Heymondo</strong> — {t('insurance_page.heymondo_desc')}</div>
+                                <div><a href={getProviderUrl('heymondo', lang)} target="_blank" rel="noopener noreferrer" className="font-bold text-slate-900 hover:text-amber-600 transition-colors">Heymondo <ExternalLink className="h-3 w-3 inline" /></a> — {t('insurance_page.heymondo_desc')}</div>
                             </div>
                             <div className="flex items-start gap-2">
                                 <ChevronRight className="h-4 w-4 text-amber-500 mt-0.5 flex-shrink-0" />
-                                <div><strong>ACS Globe Partner</strong> — {t('insurance_page.acs_desc')}</div>
+                                <div><a href={getProviderUrl('acs', lang)} target="_blank" rel="noopener noreferrer" className="font-bold text-slate-900 hover:text-amber-600 transition-colors">ACS Globe Partner <ExternalLink className="h-3 w-3 inline" /></a> — {t('insurance_page.acs_desc')}</div>
                             </div>
                         </div>
                     </div>
@@ -162,14 +212,18 @@ const InsuranceClientPage: React.FC = () => {
                             </thead>
                             <tbody className="divide-y divide-slate-100">
                                 {[
-                                    { name: 'Mondial Care', age: '85 ans', highlight: 'retirement_mondial' },
-                                    { name: 'AXA', age: t('insurance_page.no_limit'), highlight: 'retirement_axa' },
-                                    { name: 'Heymondo', age: '74 ans', highlight: 'retirement_heymondo' },
-                                    { name: 'April International', age: '75 ans', highlight: 'retirement_april' },
-                                    { name: 'ACS Globe Traveller', age: '66 ans', highlight: 'retirement_acs' },
-                                ].map(({ name, age, highlight }) => (
+                                    { name: 'Mondial Care', age: '85 ans', highlight: 'retirement_mondial', url: 'https://www.mondialcare.eu/?lang=fr' },
+                                    { name: 'AXA', age: t('insurance_page.no_limit'), highlight: 'retirement_axa', url: 'https://www.axa-schengen.com/fr/visa/demarches/limite-age-assurance-visa-schengen' },
+                                    { name: 'Heymondo', age: '74 ans', highlight: 'retirement_heymondo', url: 'https://heymondo.fr/' },
+                                    { name: 'April International', age: '75 ans', highlight: 'retirement_april', url: 'https://www.april.fr/assurance-sante-internationale/assurance-voyage' },
+                                    { name: 'ACS Globe Traveller', age: '66 ans', highlight: 'retirement_acs', url: 'https://www.acs-ami.com/fr/assurance-voyage/globe-traveller/' },
+                                ].map(({ name, age, highlight, url }) => (
                                     <tr key={name} className="hover:bg-slate-50">
-                                        <td className="px-4 py-3 font-medium text-slate-900">{name}</td>
+                                        <td className="px-4 py-3 font-medium text-slate-900">
+                                            <a href={url} target="_blank" rel="noopener noreferrer" className="hover:text-amber-600 transition-colors inline-flex items-center gap-1.5">
+                                                {name} <ExternalLink className="h-3.5 w-3.5 text-slate-400" />
+                                            </a>
+                                        </td>
                                         <td className="px-4 py-3 text-slate-600">{age}</td>
                                         <td className="px-4 py-3 text-slate-600">{t(`insurance_page.${highlight}`)}</td>
                                     </tr>

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useLangPath } from '@/hooks/useLang';
 import { URLS, IMAGES } from '@/constants';
 import { PageContainer, Card } from '@/components/ui/PageComponents';
 import { VisaHero } from '@/components/visa/VisaHero';
@@ -16,6 +17,7 @@ const ExpertAppointmentForm = dynamic(() => import('@/components/ExpertAppointme
 
 const ServicesClientPage: React.FC = () => {
     const { t } = useLanguage();
+    const langPath = useLangPath();
     const [showAppointment, setShowAppointment] = useState(false);
 
     const tiers = [
@@ -96,7 +98,7 @@ const ServicesClientPage: React.FC = () => {
                             {t('services_page.insurance_desc')}
                         </p>
                         <a
-                            href="#"
+                            href={langPath('insurance')}
                             className="inline-flex items-center text-amber-600 font-black hover:text-amber-700 transition"
                         >
                             <span className="uppercase tracking-widest text-xs mr-2">{t('services_page.insurance_link')}</span>
