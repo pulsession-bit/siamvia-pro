@@ -772,7 +772,7 @@ export const fr = {
     "cta_sub": "Sans engagement — Résultat immédiat"
   },
   "meta": {
-    "title": "Siam Visa Pro | Expert Visa Thaïlande - DTV, Tourisme & Retraite",
+    "title": "Siam Visa Pro | Visa pour la Thaïlande - DTV, Tourisme & Retraite",
     "description": "Obtenez votre visa pour la Thaïlande sans stress. Experts en Visa DTV, Touristique et Retraite. Accompagnement complet, Portfolio optimisé et suivi E-Visa."
   },
   "hero": {
