@@ -2315,9 +2315,9 @@ export const fr = {
     "hero_tagline": "Rapatriement • Frais médicaux • Responsabilité civile",
 
     "why_title": "Pourquoi souscrire une assurance voyage ?",
-    "stat_hospital_cost": "500 000 €+",
+    "stat_hospital_cost": "500 000 €+ (~18,000,000 THB)",
     "stat_hospital_label": "Coût potentiel d'une hospitalisation dans une clinique privée thaïlandaise",
-    "stat_recommended": "300 000 €",
+    "stat_recommended": "300 000 € (~11,000,000 THB)",
     "stat_recommended_label": "Plafond minimum recommandé pour les frais médicaux",
     "stat_repatriation": "Vital",
     "stat_repatriation_label": "Rapatriement sanitaire : indispensable en cas d'accident grave",
