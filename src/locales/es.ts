@@ -1955,5 +1955,305 @@ export const es = {
     "cta_item1": "Certificado conforme para visa O-A / O-W",
     "cta_item2": "Comparación personalizada para tu perfil",
     "cta_item3": "Acompañamiento en expatriación"
+  },
+  "dtv_documents_page": {
+    "meta": {
+      "title": "Documentos Requisitos Visa DTV Tailandia 2026 | Checklist por Perfil",
+      "description": "Lista completa de documentos para la Visa DTV de Tailandia en 2026. Checklist por perfil: nómada, freelance, jubilado. Antecedentes, extracto bancario."
+    },
+    "hero_badge": "Checklist de Documentos DTV 2026",
+    "hero_title": "Documentos requeridos para la Visa DTV Tailandia",
+    "hero_subtitle": "La lista completa de documentos justificativos por perfil — actualización febrero 2026.",
+    "breadcrumb_home": "Inicio",
+    "breadcrumb_dtv": "Visa DTV",
+    "breadcrumb_current": "Documentos requeridos",
+    "intro": "La visa DTV (Destination Thailand Visa) exige un expediente sólido para ser aprobada. Los documentos varían según su perfil: empleado en teletrabajo, profesional independiente, jubilado activo o artista. Esta es la checklist adaptada a solicitantes internacionales para maximizar sus posibilidades de aprobación.",
+    "common_title": "Documentos comunes a todos los perfiles",
+    "common_docs": [
+      { "doc": "Pasaporte válido por 6+ meses", "detail": "Al menos 2 páginas en blanco. Copia de la página de identidad + todas las páginas con sellos de Tailandia." },
+      { "doc": "Foto de identidad 4×6 cm (norma ICAO)", "detail": "Fondo blanco, tomada hace menos de 6 meses. Tamaño pasaporte estándar sin gafas." },
+      { "doc": "Formulario de solicitud firmado", "detail": "Subido al sistema oficial E-Visa tailandés (thaievisa.go.th) o entregado en la embajada." },
+      { "doc": "Prueba financiera: 500,000 THB (~14,000 €)", "detail": "Extracto bancario de los últimos 6 meses emitido formalmente por su banco (ej. Santander, BBVA, CaixaBank). El saldo equivalente a 500,000 THB debe mantenerse estable — no depósitos masivos de última hora." },
+      { "doc": "Seguro de viaje o salud que cubra Tailandia", "detail": "Cobertura mínima de $50,000 USD. Ejemplos recomendados: SafetyWing, IATI, Mondo, Allianz. La póliza DEBE mencionar explícitamente Tailandia o cobertura mundial." },
+      { "doc": "Certificado de antecedentes penales", "detail": "Emitido por la autoridad de su país (ej. Ministerio de Justicia, FBI, Policía Nacional). Puede requerir apostilla dependiendo de la embajada." }
+    ],
+    "profiles_title": "Documentos específicos por perfil",
+    "profile_nomad_title": "Empleado en Teletrabajo (Tiempo completo/parcial)",
+    "profile_nomad_docs": [
+      { "doc": "Contrato de trabajo con cláusula de teletrabajo", "detail": "Su contrato oficial o anexo certificando que está autorizado para teletrabajar desde el extranjero. Debe estar en inglés o contar con traducción oficial." },
+      { "doc": "Certificado del empleador (Membrete de la empresa)", "detail": "Carta firmada por Recursos Humanos confirmando su puesto, permiso para trabajar desde Tailandia, y continuidad del salario. Debe nombrarle, al igual que a la empresa." },
+      { "doc": "Últimas 3 nóminas / Recibos de sueldo", "detail": "Deben mostrar transferencias regulares de salario que coincidan con sus extractos bancarios." },
+      { "doc": "Última declaración de impuestos (ej. IRPF, Modelo 100)", "detail": "Prueba de sus ingresos anuales declarados en su país de residencia." }
+    ],
+    "profile_freelance_title": "Trabajador Autónomo / Freelance",
+    "profile_freelance_docs": [
+      { "doc": "Registro de Actividad Comercial / Autónomo", "detail": "Prueba de estado activo (ej. Alta en RETA de Seguridad Social, Modelo 036/037 de Hacienda, Certificado de Empresa, LLC, etc.)." },
+      { "doc": "Últimas 6 facturas a clientes", "detail": "De al menos 3-4 clientes diferentes para mostrar actividad regular. Se recomienda mostrar ingresos continuos por 'servicios digitales remotos'." },
+      { "doc": "Extractos de la cuenta bancaria profesional", "detail": "Cuentas que reflejen depósitos coincidentes con las facturas en los últimos 6 meses. Deben ser en formato oficial en PDF o estar sellados." },
+      { "doc": "Portafolio profesional (PDF, 10-15 páginas)", "detail": "Cualquier presentación visual: biografía, habilidades, proyectos completados, testimonios de clientes, y enlaces web. Indispensable para programadores, diseñadores, asesores." }
+    ],
+    "profile_retiree_title": "Jubilado Activo / Digital Senior",
+    "profile_retiree_docs": [
+      { "doc": "Certificado o notificación de pensión", "detail": "Notificación anual de su fondo de pensiones o de la Seguridad Social." },
+      { "doc": "Última declaración de impuestos", "detail": "Prueba de ingresos declarados por jubilación y cualquier ingreso adicional (alquileres, dividendos)." },
+      { "doc": "Carta de motivación", "detail": "Explicando su interés por Tailandia: actividades de ocio (voluntariado, Muay Thai, cursos). Manténgalo en 1 página." },
+      { "doc": "Prueba de alojamiento", "detail": "Reserva de hotel/Airbnb para los primeros meses, o contrato de arrendamiento en Tailandia." }
+    ],
+    "profile_artist_title": "Artista / Creador de Contenido",
+    "profile_artist_docs": [
+      { "doc": "Número de Registro de Artista/Autónomo", "detail": "Su número de registro fiscal o inscripción en una entidad de gestión de derechos de autor (ej. SGAE)." },
+      { "doc": "Portafolio artístico (PDF o Enlaces)", "detail": "Galería de obras, canal de YouTube con analíticas, Behance/Dribbble, Instagram profesional. Mínimo 10 páginas para un PDF." },
+      { "doc": "Pruebas de ingresos creativos (6 meses)", "detail": "Ingresos de YouTube/Twitch, ventas directas de Etsy, comisiones, regalías por derechos de autor. Facturas o declaración de regalías." },
+      { "doc": "Carta del proyecto en Tailandia (Recomendado)", "detail": "Descripción de su proyecto creativo ligado a Tailandia: documentación, documental, escribir un libro o reportaje. Refuerza en gran medida la solicitud." }
+    ],
+    "tips_title": "Consejos específicos para solicitantes internacionales",
+    "tips": [
+      "Traducción jurada: Todos los documentos que no estén en inglés o tailandés DEBEN ser traducidos por un traductor jurado o certificado oficialmente.",
+      "Antecedentes penales: Solicítelo con prontitud. Los certificados del Ministerio de Justicia pueden demorarse semanas.",
+      "Extractos bancarios: No use capturas de pantalla de la aplicación móvil. Pida extractos sellados oficialmente a su banco físico, o PDFs digitales debidamente certificados.",
+      "Sistema E-Visa: Debe solicitar desde el país en donde reside legalmente. No puede aplicar por el E-Visa estando ya físicamente dentro de Tailandia.",
+      "Impuestos: Tailandia grava los ingresos extranjeros enviados a cuentas si permanece más de 180 días en un año calendario. Consulte a un asesor fiscal local."
+    ],
+    "cta_title": "¿No está seguro sobre su solicitud?",
+    "cta_text": "Nuestra IA analiza su perfil y detecta los documentos faltantes en 30 segundos.",
+    "cta_button": "Verificar mi Elegibilidad DTV",
+    "back_to_dtv": "← Volver a la guía completa de la Visa DTV",
+    "related_title": "Artículos relacionados",
+    "related_erreurs": "Los 10 errores por los que rechazan una Visa DTV",
+    "related_comparatif": "Comparativa de DTV con otras visas tailandesas",
+    "related_delais": "Tiempos de procesamiento de DTV por embajada"
+  },
+  "dtv_erreurs_page": {
+    "meta": {
+      "title": "10 Errores por los que rechazan la Visa DTV Tailandia 2026",
+      "description": "Los 10 errores que provocan el rechazo de la visa DTV para Tailandia. Falta de fondos, portafolio incorrecto, traducciones. Soluciones – guía 2026."
+    },
+    "hero_badge": "Evite el Rechazo DTV",
+    "hero_title": "Los 10 errores que provocan el rechazo de la visa DTV",
+    "hero_subtitle": "Clasificados por gravedad — con las soluciones adecuadas para solicitantes internacionales.",
+    "breadcrumb_home": "Inicio",
+    "breadcrumb_dtv": "Visa DTV",
+    "breadcrumb_current": "Errores frecuentes",
+    "intro": "La tasa de rechazo de la Visa DTV varía entre el 15% y el 30% dependiendo de la embajada. La mayoría de los rechazos son evitables con un expediente bien preparado. Estos son los 10 errores más frecuentes y cómo corregirlos.",
+    "severity_critical": "Crítico",
+    "severity_high": "Alto",
+    "severity_medium": "Medio",
+    "errors": [
+      {
+        "rank": 1,
+        "severity": "critical",
+        "title": "Prueba financiera insuficiente o 'Money parking'",
+        "description": "El extracto bancario no muestra 500.000 THB (~14.000 €) de saldo, o presenta un único gran ingreso repentino solo para el momento del visado. Los bancos online sin extractos sellados también pueden ser un problema.",
+        "solution": "Mantenga el saldo equivalente en su cuenta principal durante mínimo 3 meses. Pida un extracto firmado y sellado por su sucursal. En caso de banco online (como N26 o Revolut), certifique el PDF si es posible.",
+        "refusal_rate": "~35% de los rechazos"
+      },
+      {
+        "rank": 2,
+        "severity": "critical",
+        "title": "Sin prueba de trabajo a distancia",
+        "description": "Falta de un contrato laboral con cláusula de teletrabajo, nóminas inexistentes o, en caso de autónomos, falta de facturas. La embajada no puede verificar su actividad o que puede realizarla de manera remota.",
+        "solution": "Empleados: proporcione su contrato + anexo de teletrabajo + 3 últimas nóminas. Autónomos/Freelance: certificado de alta como autónomo + 6 facturas + sus extractos bancarios correspondientes. Todo en inglés.",
+        "refusal_rate": "~25% de los rechazos"
+      },
+      {
+        "rank": 3,
+        "severity": "critical",
+        "title": "Portafolio vacío o inexistente",
+        "description": "Para los freelance y profesionales creativos, no adjuntar un portafolio de trabajo es motivo directo de rechazo. Los funcionarios necesitan ver lo que usted hace.",
+        "solution": "Haga un archivo PDF de 10-15 páginas: sobre mí, lista de habilidades, proyectos anteriores, clientes y enlaces (LinkedIn, GitHub, Web personal).",
+        "refusal_rate": "~20% de los rechazos"
+      },
+      {
+        "rank": 4,
+        "severity": "high",
+        "title": "Documentos no traducidos al inglés",
+        "description": "Nóminas, contratos de trabajo, alta de autónomos (Modelo 036, RETA) entregados únicamente en español. La embajada tailandesa requiere que los documentos estén en inglés.",
+        "solution": "Encarguen a un Traductor Jurado Oficial la traducción de todos los documentos fundamentales (el contrato y la prueba de registro fiscal como mínimo).",
+        "refusal_rate": "~10% de los rechazos"
+      },
+      {
+        "rank": 5,
+        "severity": "high",
+        "title": "Pasaporte próximo a caducar",
+        "description": "El pasaporte deberá seguir siendo válido durante al menos 6 meses DESPUÉS de la fecha de llegada a Tailandia.",
+        "solution": "Verifique esto inmediatamente. Las embajadas se negarán a poner un visado de 5 años si a su pasaporte le quedan 4 meses de vida.",
+        "refusal_rate": "~5% de los rechazos"
+      },
+      {
+        "rank": 6,
+        "severity": "high",
+        "title": "Seguro de salud no conforme",
+        "description": "Las tarjetas sanitarias europeas, o algunas aseguradoras muy básicas nacionales, no se aceptan. Tiene que constar específicamente Tailandia y cubrir al menos $50.000 USD.",
+        "solution": "Elija aseguradoras destinadas a nómadas o viajes de largo recorrido como SafetyWing, IATI, o Mondo. La póliza tiene que decir 'WorldWide' o 'Tailandia'.",
+        "refusal_rate": "~5% de los rechazos"
+      },
+      {
+        "rank": 7,
+        "severity": "medium",
+        "title": "Fotografía no apta (Norma ICAO)",
+        "description": "Subir una foto mal iluminada, con fondo que no sea blanco, tipo selfie, o portando gafas oscuras/cascos. Se exige el formato 4×6 cm.",
+        "solution": "Tómese una foto nueva, tipo pasaporte (4×6 cm), específica en un fotomatón oficial, de frente sin gafas.",
+        "refusal_rate": "~3% de los rechazos"
+      },
+      {
+        "rank": 8,
+        "severity": "medium",
+        "title": "Formulario incompleto o con errores tipográficos",
+        "description": "Uso de formato de fecha español en lugar del formato estándar en inglés, dejar campos vitales en blanco o no firmar el impreso digital o manual.",
+        "solution": "Use siempre DD/MM/YYYY o YYYY/MM/DD, rellene íntegramente en inglés, y asegúrese de que la firma (física o digital) concuerde con el pasaporte.",
+        "refusal_rate": "~3% de los rechazos"
+      },
+      {
+        "rank": 9,
+        "severity": "medium",
+        "title": "Falta de Certificado de Antecedentes Penales",
+        "description": "A veces es olvidado por completo, o la fecha de expedición tiene más de 3 meses de antigüedad.",
+        "solution": "Solicítelo a su Ministerio de Justicia respectivo con suficiente antelación, ya que puede tardar en expedirse o en apostillarse.",
+        "refusal_rate": "~2% de los rechazos"
+      },
+      {
+        "rank": 10,
+        "severity": "medium",
+        "title": "Solictar el visado desde una jurisdicción incorrecta",
+        "description": "Aplicar por la E-Visa mientras se está de turista en Tailandia, o hacerlo a una embajada en un país donde usted no tiene residencia legal prolongada.",
+        "solution": "Para usar el sistema E-Visa debe estar en su país de origen (donde paga impuestos/vive). Si es un nómada actualmente en Tailandia, tendrá que volar a Laos (Vientián) o Malasia para un trámite en persona de 3 días.",
+        "refusal_rate": "~2% de los rechazos"
+      }
+    ],
+    "stats_title": "Estadísticas de rechazo de DTV",
+    "stats_total": "Tasa promedio estimada de denegaciones",
+    "stats_total_value": "15-30%",
+    "stats_avoidable": "Porcentaje de rechazos por errores evitables",
+    "stats_avoidable_value": "90%+",
+    "stats_resubmit": "Tasa de aprobación tras las correcciones",
+    "stats_resubmit_value": "85%+",
+    "cta_title": "Evite fallar desde el primer intento",
+    "cta_text": "Nuestra inteligencia artificial examina su expediente en busca de puntos débiles antes de presentarlo oficialmente.",
+    "cta_button": "Verificar mi Expediente DTV",
+    "back_to_dtv": "← Volver a la guía completa de la Visa DTV",
+    "related_title": "Artículos relacionados",
+    "related_documents": "Documentos requeridos Visa DTV — Checklist por perfil",
+    "related_comparatif": "Comparativa de DTV con otras visas tailandesas",
+    "related_delais": "Tiempos de procesamiento de DTV por embajada"
+  },
+  "dtv_comparatif_page": {
+    "meta": {
+      "title": "Comparativa de Visas: DTV vs Turista, LTR, Elite, ED — Tailandia 2026",
+      "description": "¿Qué visa elegir para Tailandia? Análisis de la DTV frente a Turista, LTR, Elite y ED. Costes, duración, posibilidad de teletrabajo e impuestos. Guía 2026."
+    },
+    "hero_badge": "Comparativa Visas 2026",
+    "hero_title": "Visa DTV frente a otros visados",
+    "hero_subtitle": "Tabla completa de análisis — gastos, impuestos y requerimientos para vivir en Tailandia.",
+    "breadcrumb_home": "Inicio",
+    "breadcrumb_dtv": "Visa DTV",
+    "breadcrumb_current": "Comparativa",
+    "intro": "La visa DTV no es la única manera de residir en Tailandia. Dependiendo de si está jubilado, es alto directivo o solo quiere vacaciones largas, otro programa podría convenirle más. Este desglose destaca los pros y contras críticos de cada uno.",
+    "table_title": "Tabla Comparativa General",
+    "col_criteria": "Criterio",
+    "col_dtv": "DTV",
+    "col_tourist": "Turista/TR",
+    "col_ltr": "LTR",
+    "col_elite": "Elite",
+    "col_ed": "ED (Educación)",
+    "rows": [
+      { "criteria": "Total de años", "dtv": "5 años", "tourist": "60 días", "ltr": "10 años", "elite": "5-20 años", "ed": "1 año" },
+      { "criteria": "Duración de la entrada", "dtv": "180 días", "tourist": "60 días", "ltr": "1 año", "elite": "1 año", "ed": "90 días a la vez" },
+      { "criteria": "Permite Teletrabajo", "dtv": "Sí ✓", "tourist": "No ✗", "ltr": "Sí ✓", "elite": "No ✗", "ed": "No ✗" },
+      { "criteria": "Precio inicial del visado", "dtv": "~400 €", "tourist": "~40 €", "ltr": "~1.500 €", "elite": "+25.000 €", "ed": "~500 € / año" },
+      { "criteria": "Demostración de saldo", "dtv": "500k THB en el banco", "tourist": "20k THB", "ltr": "80.000 $/año ingresos", "elite": "Pensión no requerida", "ed": "Carta de escuela" },
+      { "criteria": "Permiso de Trabajo Local", "dtv": "No válido para empresas Thai", "tourist": "No", "ltr": "Incluido", "elite": "No", "ed": "No" },
+      { "criteria": "Trámites de visado", "dtv": "Nivel medio. Traducciones.", "tourist": "Fácil", "ltr": "Muy complejo (Auditoría BOI)", "elite": "Fácil pero costoso", "ed": "Fácil y mediado por escuelas" },
+      { "criteria": "Impuestos", "dtv": "Sujeto de impuesto tras 180 d.", "tourist": "Sin fiscalidad local", "ltr": "17% tarifa plana profesionales", "elite": "Normativa estándar", "ed": "Normativa estándar" },
+      { "criteria": "Ideal para...", "dtv": "Nómadas, Agencias, Remotos", "tourist": "Mochileros y Vacaciones", "ltr": "Directivos millonarios", "elite": "Inversores sin preocupaciones", "ed": "Estudiar Muay Thai o Idioma" }
+    ],
+    "reco_title": "Sugerencias según el perfil",
+    "recommendations": [
+      { "profile": "Profesional empleado en remoto por empresa extranjera", "visa": "DTV", "reason": "Es la única vía legal de 5 años para no tener que depender de extensiones constantes por turismo." },
+      { "profile": "Autónomos Digitales (Upwork, SEO, Marketing)", "visa": "DTV", "reason": "Fácil de solicitar si tiene alta en la Seguridad Social o Hacienda y emite facturas al extranjero." },
+      { "profile": "Retiro activo (Más de 50, ingresos recurrentes o ahorros limitados)", "visa": "Visa Jubilados (Non-O / OA)", "reason": "Se renueva anualmente en Tailandia. Solicita ~20.000€ euros en el banco o ingresos mensuales de 65.000 THB." },
+      { "profile": "Multimillonarios e Inversores", "visa": "LTR", "reason": "La vía rápida hacia optimización fiscal (17%) por 10 años, trayendo la residencia fiscal oficial a Tailandia." },
+      { "profile": "Crypto-Trader, Rentas Vivas altas, Fuerte capital", "visa": "Elite", "reason": "Usted paga 900.000 THB a cambio de 5 años completos VIP, sin importar de dónde saca el dinero ni pedir certificados." }
+    ],
+    "dtv_advantages_title": "Principal fortaleza de la DTV",
+    "dtv_advantages": [
+      "No existe la obligación de presentar reportes de estatus de inmigración cada 90 días (salvo que decida no salir del país y extienda sus 180 días a 1 año, muy raro).",
+      "Le permite entrar cuantas veces quiera durante 5 años (Mulitple-Entry), re-empezando sus 180 días cada regreso.",
+      "El coste de 10.000 THB frente a un visado Elite es de un 98% más barato para quienes realmente trabajan remoto.",
+      "Traiga a los suyos: Cónyuges e hijos también son cubiertos."
+    ],
+    "dtv_limits_title": "Los puntos flacos de la DTV",
+    "dtv_limits": [
+      "A los 180 días, usted tiene que cruzar una frontera física sí o sí (border-run) para poder iniciar los siguientes 180. No se puede permanecer 5 años sin moverse.",
+      "No podrá trabajar legalmente prestando servicios para compañías o ciudadanos tailandeses.",
+      "Los $15,000 acumulados en la cuenta bancaria deben ser líquidos."
+    ],
+    "cta_title": "¿Todavía indeciso?",
+    "cta_text": "Responda a nuestro cuestionario de Inteligencia Artificial para obtener el dictamen sobre qué visado cuadra al 100% con su situación de vida.",
+    "cta_button": "Encontrar mi Visa Ideal",
+    "back_to_dtv": "← Volver a la guía de la DTV",
+    "related_title": "Artículos relacionados",
+    "related_documents": "Lista de documentos obligatorios para el visado DTV",
+    "related_erreurs": "10 obstáculos a superar si no quieres fallar con el DTV",
+    "related_delais": "Cronología y tiempos de procesado"
+  },
+  "dtv_delais_page": {
+    "meta": {
+      "title": "Tiempos de Procesamiento Visa DTV Tailandia 2026 | Embajadas y E-Visa",
+      "description": "¿Cuánto tarda en enviarse el DTV de Tailandia en 2026? Repasamos los plazos de E-Visa online, embajadas y pasos previos administrativos."
+    },
+    "hero_badge": "Estimación de Plazos 2026",
+    "hero_title": "Plazos y Tiempos de Procesamiento DTV",
+    "hero_subtitle": "Desde la recolección inicial hasta obtener su PDF listo para viajar.",
+    "breadcrumb_home": "Inicio",
+    "breadcrumb_dtv": "Visa DTV",
+    "breadcrumb_current": "Tiempos de Espera",
+    "intro": "Calcular los plazos es imperativo. Un simple retraso en unas actas ministeriales puede poner en peligro los tickets de avión. Dependiendo del lugar desde donde lo haga asigne más o menos tiempo.",
+    "timeline_title": "Línea de Vida General de la Aplicación",
+    "steps": [
+      { "step": "1", "title": "Obtención de documentos base", "duration": "2 a 4 semanas", "detail": "Incluye el certificado de penales emitido por su Ministerio local de Justicia (suele ser el más lento en salir), las traducciones de documentos, actas y facturas de la cámara de comercio, y sellos de bancos." },
+      { "step": "2", "title": "Alta en plataforma / o solicitud de cita", "duration": "1 a 3 semanas", "detail": "Entrar a la E-Visa, rellenar los metadatos o buscar turno en el sistema VFS/TLS o Embajadas locales físicas." },
+      { "step": "3", "title": "Intervención de los oficiales Thai", "duration": "5 a 15 días laborales", "detail": "Tras abonar la tasa, el equipo consular del Ministerio de Asuntos Exteriores analizará los PDF. La velocidad depende del país occidental desde donde apliques." },
+      { "step": "4", "title": "Expedición final", "duration": "Instantáneo (via email)", "detail": "Le enviarán su E-Visa como formato PDF, el cual bastará con imprimir a color. Si fue a una embajada, le dirán fecha de recogida del pasaporte estampado físico." }
+    ],
+    "embassies_title": "Desglose por ubicación de Embajada",
+    "embassies_subtitle": "Feedback verificado por la comunidad – Periodo 2026",
+    "col_embassy": "Localización / Sistema",
+    "col_rdv": "Citas Previas",
+    "col_processing": "Análisis",
+    "col_total": "Total Global Estimado",
+    "col_notes": "A considerar",
+    "embassies": [
+      { "name": "Sistema E-Visa Mundial (ES, LATAM, USA)", "rdv": "Mismo día por red", "processing": "5 a 15 min. hasta 30 días", "total": "Recomendable apartar 3-5 semanas", "notes": "Fuerte volumen acumulado; las subidas sin justificaciones ralentizan todo. Imprescindible presentar traducciones para no ser frenado al final." },
+      { "name": "Vientián (Rep. Laolandesa)", "rdv": "1 o 2 días", "processing": "3-5 días hábiles", "total": "Apenas 1 Semana", "notes": "Cita en línea de las más solicitadas. Es el sitio top1 de los nómadas para hacer la Visa-run." },
+      { "name": "Kuala Lumpur (Malasia)", "rdv": "Suele haber en la semana", "processing": "4-6 días hábiles", "total": "Sobre las 1.5 a 2 Sems.", "notes": "Se aplica online bajo el paraguas regional de KL, volando allá para el recabado físico posible. Excepcionalmente exigentes." },
+      { "name": "Phnom Penh (Camboya)", "rdv": "En la semana", "processing": "3-5 días", "total": "Sobre las 1.5 a 2 Sems.", "notes": "Tramitación ágil. Buena zona cercana" }
+    ],
+    "seasons_title": "Riesgo extremo de Demoras",
+    "seasons": [
+      { "period": "Mitades de Diciembre a principios Enero", "impact": "La marea de migrante turísticos por Navidad rompe el embalse del E-Visa en occidente." },
+      { "period": "Mitades de Abril (Songkran)", "impact": "Año nuevo Tailandés. Todos los consulados vecinos cierran durante hasta una semana seguida (Vientián, KL...)" },
+      { "period": "Meses Veraniegos Europeos (Jul/Ago)", "impact": "Demoras en emitir documentos locales (antecedentes o firmas juradas) y embajadas en medio gas." }
+    ],
+    "tips_title": "Tácticas de aceleración",
+    "tips": [
+      "Inicie ya o el mismo día el trámite de Antecedentes Penales, de hecho hágalo antes de pensar siquiera el visado. Puede pedir cita en su comisaría un mes previo...",
+      "Tener saldo en la cuenta al menos los 3 meses estáticos reduce las alertas con un alto porcentaje, acelerando revisiones de agentes.",
+      "Use archivos livianos pero visuales. Un agente cansado que mira 10 JPG pesados y ladeados puede pedir anexos para dar prórrogas. PDF bien hecho, lectura rápida, visto veloz."
+    ],
+    "total_title": "Terminando plazos realistas",
+    "total_min": "1 semana de margen general",
+    "total_min_label": "Hipersíntesis aplicando en el sudeste asiático en persona, 0 errores.",
+    "total_avg": "4 a 5 semanas de margen general",
+    "total_avg_label": "Hacerlo cómodamente por E-visa desde el hogar, documentando en tiempo normal.",
+    "total_max": "10 semanas o más",
+    "total_max_label": "Errores garrafales mandados de ida y de vuelta + Vacaciones Navideñas.",
+    "cta_title": "Rebaje los tiempos de la burocracia con nuestra App",
+    "cta_text": "Los expedientes que pasan el escrutinio de Siam Visa Pro suelen tener 0 peticiones extra.",
+    "cta_button": "Auditar Plazos y Visto",
+    "back_to_dtv": "← A la vista general",
+    "related_title": "Otras áreas",
+    "related_documents": "Compendio de documentación para el éxito en DTV",
+    "related_erreurs": "Conozca sus errores para no sufrirlos",
+    "related_comparatif": "Compare para quedarse tranquilo"
   }
 };

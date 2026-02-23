@@ -2080,5 +2080,314 @@ export const en = {
     "cta_item1": "Compliant certificate for O-A / O-W visa",
     "cta_item2": "Personalized comparison for your profile",
     "cta_item3": "Expatriation support"
+  },
+  "dtv_documents_page": {
+    "meta": {
+      "title": "Thailand DTV Visa Required Documents 2026 | Checklist by Profile",
+      "description": "Complete list of documents for the Thailand DTV Visa in 2026. Checklist by profile: remote worker, freelancer, retiree. Criminal record, Bank statement, Tax return."
+    },
+    "hero_badge": "DTV Documents Checklist 2026",
+    "hero_title": "Required Documents for the Thailand DTV Visa",
+    "hero_subtitle": "The complete list of supporting documents by profile — updated February 2026.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_dtv": "DTV Visa",
+    "breadcrumb_current": "Required Documents",
+    "intro": "The DTV (Destination Thailand Visa) requires a solid application to be approved. Documents vary depending on your profile: remote employee, freelancer, active retiree, or artist. Here is the complete checklist adapted for international applicants to maximize your chances of approval.",
+    "common_title": "Common Documents for All Profiles",
+    "common_docs": [
+      { "doc": "Valid Passport (6+ months remaining)", "detail": "At least 2 blank pages. Copy of the identity page + all pages with Thailand stamps." },
+      { "doc": "ICAO Standard Passport Photo (4×6 cm)", "detail": "White background, taken within the last 6 months. Standard passport size photo without glasses." },
+      { "doc": "Signed Application Form", "detail": "Submitted officially via the Thai E-Visa system (thaievisa.go.th) or local embassy." },
+      { "doc": "Financial Proof: 500,000 THB (~$15,000 USD)", "detail": "Bank statement for the last 6 months formally issued by your bank (e.g., Chase, HSBC, BofA, Barclays). The balance equivalent to 500,000 THB must be consistently maintained — no last-minute massive deposits." },
+      { "doc": "Travel or Health Insurance covering Thailand", "detail": "Minimum coverage equivalent to $50,000 USD. Recommended options: SafetyWing, Genki, Cigna Global, Allianz. The policy MUST explicitly state coverage in Thailand or Worldwide." },
+      { "doc": "Clean Criminal Record Certificate", "detail": "Issued by your home country (e.g., FBI Background Check for US, ACRO for UK, AFP for Australia). May need to be apostilled or notarized depending on the embassy." }
+    ],
+    "profiles_title": "Specific Documents by Profile",
+    "profile_nomad_title": "Remote Employee (Full-time/Part-time)",
+    "profile_nomad_docs": [
+      { "doc": "Employment Contract with Remote Work Clause", "detail": "Your employment contract or an official addendum clearly stating you are authorized to work remotely from abroad. Must be in English or officially translated." },
+      { "doc": "Employer Certificate (Company Letterhead)", "detail": "A letter signed by HR or management confirming your position, permission to work remotely from Thailand, and continuity of salary. Must explicitly name you and the company." },
+      { "doc": "Last 3 Payslips", "detail": "Showing consistent salary transfers matching your bank statements." },
+      { "doc": "Latest Tax Return (e.g., IRS Form 1040, HMRC P60)", "detail": "Proves your declared annual income in your home country." }
+    ],
+    "profile_freelance_title": "Freelancer / Independent Contractor",
+    "profile_freelance_docs": [
+      { "doc": "Business Registration / Freelance License", "detail": "Proof of active status (e.g., LLC Certificate of Formation, EIN Letter, Sole Proprietor registration, Companies House Extract, Trade License)." },
+      { "doc": "Last 6 Client Invoices", "detail": "From at least 3-4 different clients showing regular activity. It's recommended to show a steady stream of income for 'remote digital services'." },
+      { "doc": "Business Bank Statements", "detail": "Checking accounts showing matching invoice deposits over the last 6 months. Must be official bank PDFs or stamped." },
+      { "doc": "Professional Portfolio (PDF, 10-15 pages)", "detail": "A visual presentation of your background, skills, completed projects, client testimonials, and website links. Crucial for developers, designers, writers, marketers, etc." }
+    ],
+    "profile_retiree_title": "Active Retiree / Digital Senior",
+    "profile_retiree_docs": [
+      { "doc": "Pension Statement (Social Security, 401k, State Pension)", "detail": "Latest annual notification from your pension fund or government body (e.g., SSA.gov, HMRC, Superannuation)." },
+      { "doc": "Latest Tax Return", "detail": "Proof of declared pension income and any supplementary revenue (rental, dividends, capital gains)." },
+      { "doc": "Motivation Letter", "detail": "Explaining your interest in Thailand: planned activities (volunteering, cooking/Muay Thai classes, cultural exploration). Keep it to 1 page." },
+      { "doc": "Proof of Accommodation", "detail": "Hotel/Airbnb booking for the first few months, or a signed lease agreement in Thailand." }
+    ],
+    "profile_artist_title": "Artist / Content Creator",
+    "profile_artist_docs": [
+      { "doc": "Creator/Artist Registration Number", "detail": "Your official tax ID or union membership (e.g., Screen Actors Guild, Musician's Union, national artist registry)." },
+      { "doc": "Artistic Portfolio (PDF or Links)", "detail": "Gallery of your work, YouTube channel with analytics, Behance/Dribbble profile, professional Instagram. Minimum 10 pages for a PDF." },
+      { "doc": "Proof of Creative Income (6 months)", "detail": "YouTube/Twitch earnings, Etsy sales, creation contracts, commissions, copyright royalties (e.g., ASCAP, BMI, PRS). Invoices or royalty statements." },
+      { "doc": "Thailand Project Letter (Recommended)", "detail": "Description of your creative project tied to Thailand: photo report, book writing, documentary, artistic residency. Strongly reinforces the application." }
+    ],
+    "tips_title": "Specific Tips for International Applicants",
+    "tips": [
+      "Certified Translation: All non-English/non-Thai documents MUST be translated by a certified court translator.",
+      "Criminal Background Check: Apply early. FBI checks or local police certificates can take weeks to process.",
+      "Bank Statements: Do not use screenshots. Request officially stamped statements from your physical bank, or verified digital PDFs.",
+      "Visa E-system: Apply from the country where you have legal long-term residence. You cannot apply for an E-Visa while physically inside Thailand.",
+      "Taxation: Thailand taxes remitted foreign income if you stay more than 180 days in a calendar year. Consult a local tax advisor."
+    ],
+    "cta_title": "Not sure about your application?",
+    "cta_text": "Our AI analyzes your profile and identifies missing documents in 30 seconds.",
+    "cta_button": "Check my DTV Eligibility",
+    "back_to_dtv": "← Back to the complete DTV Visa guide",
+    "related_title": "Related Articles",
+    "related_erreurs": "The 10 Errors that get a DTV Visa refused",
+    "related_comparatif": "DTV vs other Thai Visas Comparison",
+    "related_delais": "DTV Visa processing times by embassy"
+  },
+  "dtv_erreurs_page": {
+    "meta": {
+      "title": "10 Errors that get a Thailand DTV Visa Refused 2026 | Guide",
+      "description": "The top 10 mistakes that cause a Thailand DTV Visa refusal. Insufficient funds, bad portfolio, lack of translations. Concrete solutions — 2026 guide."
+    },
+    "hero_badge": "Avoid DTV Refusal",
+    "hero_title": "The 10 Errors that get a DTV Visa refused",
+    "hero_subtitle": "Ranked by severity — with the proper solutions for international applicants.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_dtv": "DTV Visa",
+    "breadcrumb_current": "Frequent Errors",
+    "intro": "The refusal rate for the DTV Visa varies between 15% and 30% depending on the embassy. The majority of refusals are preventable with a well-prepared application. Here are the 10 most frequent mistakes and how to fix them.",
+    "severity_critical": "Critical",
+    "severity_high": "High",
+    "severity_medium": "Medium",
+    "errors": [
+      {
+        "rank": 1,
+        "severity": "critical",
+        "title": "Insufficient Financial Proof or 'Money Parking'",
+        "description": "The bank statement does not show 500,000 THB (~$15,000 USD) or a recent single transfer betrays a deposit made just for the visa. Online banks without stamped statements are also an issue.",
+        "solution": "Maintain $15,000+ on your main checking account for at least 3 months. Request a signed and stamped statement from your bank branch. For online banks, get the PDF statement officially certified if possible.",
+        "refusal_rate": "~35% of refusals"
+      },
+      {
+        "rank": 2,
+        "severity": "critical",
+        "title": "No Proof of Remote Work",
+        "description": "No employment contract with a remote work clause, no payslips, no freelance invoices. The embassy cannot verify your activity.",
+        "solution": "Employees: provide your contract + remote work addendum + 3 payslips. Freelancers: official registration + 6 invoices + business bank statements. Everything must be in English or officially translated.",
+        "refusal_rate": "~25% of refusals"
+      },
+      {
+        "rank": 3,
+        "severity": "critical",
+        "title": "Empty or Missing Portfolio",
+        "description": "For freelancers and creatives, failing to provide a portfolio is a dealbreaker. Consular officers want to see your actual work.",
+        "solution": "Create a 10-15 page PDF portfolio: bio, skills, completed projects with visuals, client testimonials, links to your website or LinkedIn. Developers can include their GitHub profile with visible contributions.",
+        "refusal_rate": "~20% of refusals"
+      },
+      {
+        "rank": 4,
+        "severity": "high",
+        "title": "Documents Not Translated into English",
+        "description": "Payslips, employment contracts, business registrations, or tax returns submitted in a language other than English or Thai. The Thai embassy requires English.",
+        "solution": "Have all documents translated by a certified court/official translator. The payslip and employment contract are the most important.",
+        "refusal_rate": "~10% of refusals"
+      },
+      {
+        "rank": 5,
+        "severity": "high",
+        "title": "Passport Expiring Soon",
+        "description": "The passport must be valid for at least 6 months AFTER the intended date of entry into Thailand.",
+        "solution": "Check your expiration date now. If it is < 8 months, apply for a passport renewal immediately. The embassy will not issue a 5-year visa on a passport expiring in 4 months.",
+        "refusal_rate": "~5% of refusals"
+      },
+      {
+        "rank": 6,
+        "severity": "high",
+        "title": "Non-Compliant Health Insurance",
+        "description": "Basic national health coverage from your home country is not enough. You need specific insurance covering Thailand with at least $50,000 USD.",
+        "solution": "Subscribe to a dedicated insurance: SafetyWing (~$45/month), Genki, Allianz Travel, Cigna Global. The contract must explicitly mention 'Thailand' or 'Worldwide' in the coverage zone.",
+        "refusal_rate": "~5% of refusals"
+      },
+      {
+        "rank": 7,
+        "severity": "medium",
+        "title": "Non-ICAO Compliant Photo",
+        "description": "Submitting a poorly lit photo, a headshot with a busy background, wearing glasses, or an old photo not matching the Thai standard (4x6 cm).",
+        "solution": "Take a specific 4x6 cm photo at an official photo booth or photographer. White background, no glasses, face centered.",
+        "refusal_rate": "~3% of refusals"
+      },
+      {
+        "rank": 8,
+        "severity": "medium",
+        "title": "Incomplete or Incorrectly Filled Form",
+        "description": "Missing fields, wrong date format, or forgetting to sign. These small errors delay or cancel the process.",
+        "solution": "Use the standard English date format (DD/MM/YYYY or YYYY-MM-DD). Fill everything in English. Sign all pages. Have someone proofread before submitting.",
+        "refusal_rate": "~3% of refusals"
+      },
+      {
+        "rank": 9,
+        "severity": "medium",
+        "title": "Missing Criminal Record Certificate",
+        "description": "Failing to provide a background check or providing an expired one (older than 3 months). A common mistake for first-time applicants.",
+        "solution": "Order it as soon as possible from your national police or justice department. Order it first so it doesn't delay your application.",
+        "refusal_rate": "~2% of refusals"
+      },
+      {
+        "rank": 10,
+        "severity": "medium",
+        "title": "Applying from the Wrong Location",
+        "description": "Applying via the E-Visa system while physically inside Thailand, or applying to an embassy in a country where you don't have residency.",
+        "solution": "If applying via E-Visa, you MUST be physically present in the country of the embassy you are applying to, and hold legal long-term residence there. Otherwise, apply in person at a neighboring embassy in SE Asia.",
+        "refusal_rate": "~2% of refusals"
+      }
+    ],
+    "stats_title": "DTV Refusal Statistics",
+    "stats_total": "Estimated average refusal rate",
+    "stats_total_value": "15-30%",
+    "stats_avoidable": "Share of preventable refusals",
+    "stats_avoidable_value": "90%+",
+    "stats_resubmit": "Acceptance rate after correction",
+    "stats_resubmit_value": "85%+",
+    "cta_title": "Avoid these errors right now",
+    "cta_text": "Our AI checks your application and identifies weak points before submission.",
+    "cta_button": "Analyze my DTV application",
+    "back_to_dtv": "← Back to the complete DTV Visa guide",
+    "related_title": "Related Articles",
+    "related_documents": "Documents required for the DTV Visa — Checklist by profile",
+    "related_comparatif": "DTV vs other Thai Visas Comparison",
+    "related_delais": "DTV Visa processing times by embassy"
+  },
+  "dtv_comparatif_page": {
+    "meta": {
+      "title": "Comparison: DTV vs Tourist, LTR, Elite, ED Visa — Thailand 2026",
+      "description": "Which Thailand visa to choose? Comparison of DTV vs Tourist, LTR, Elite, ED. Cost, taxes, remote work. 2026 guide."
+    },
+    "hero_badge": "Visa Comparison 2026",
+    "hero_title": "DTV Visa vs other Thai visas",
+    "hero_subtitle": "Complete comparison table — cost, taxes, conditions.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_dtv": "DTV Visa",
+    "breadcrumb_current": "Visa Comparison",
+    "intro": "The DTV is not the only visa for living in Thailand. Depending on your profile (age, income, professional status), another visa might be more suitable. This comparison breaks down the key differences.",
+    "table_title": "Comparison Table",
+    "col_criteria": "Criteria",
+    "col_dtv": "DTV",
+    "col_tourist": "Tourist",
+    "col_ltr": "LTR",
+    "col_elite": "Elite",
+    "col_ed": "ED",
+    "rows": [
+      { "criteria": "Total Duration", "dtv": "5 years", "tourist": "60 days", "ltr": "10 years", "elite": "5-20 years", "ed": "1 year" },
+      { "criteria": "Stay per entry", "dtv": "180 days", "tourist": "60 days", "ltr": "1 year", "elite": "1 year", "ed": "90 days" },
+      { "criteria": "Remote Work", "dtv": "Yes ✓", "tourist": "No ✗", "ltr": "Yes ✓", "elite": "No ✗", "ed": "No ✗" },
+      { "criteria": "Total Cost", "dtv": "~$400", "tourist": "~$40", "ltr": "~$1,500", "elite": "$25k-$150k", "ed": "~$500/yr" },
+      { "criteria": "Financial Req.", "dtv": "500k THB savings", "tourist": "20k THB", "ltr": "$80k/yr income", "elite": "One-time fee", "ed": "School enroll." },
+      { "criteria": "Work Permit", "dtv": "Not included", "tourist": "No", "ltr": "Included", "elite": "No", "ed": "No" },
+      { "criteria": "Extensions", "dtv": "Multiple entries", "tourist": "1 ext. (30d)", "ltr": "Renewable", "elite": "Automatic", "ed": "Every 90d" },
+      { "criteria": "Application Diff.", "dtv": "Medium", "tourist": "Easy", "ltr": "High", "elite": "Easy (paid)", "ed": "Easy" },
+      { "criteria": "Taxation", "dtv": "If >180 days/yr", "tourist": "N/A", "ltr": "17% flat tax", "elite": "Standard", "ed": "Standard" },
+      { "criteria": "Ideal for", "dtv": "Digital Nomads", "tourist": "Short vacation", "ltr": "High earners", "elite": "VIP / wealthy", "ed": "Students" }
+    ],
+    "reco_title": "Which visa to choose based on your profile?",
+    "recommendations": [
+      { "profile": "Remote Employee with remote work permission", "visa": "DTV", "reason": "The only visa that officially authorizes remote work for a foreign employer for up to 5 years." },
+      { "profile": "Freelancer / Digital Nomad", "visa": "DTV", "reason": "Ideal for freelancers on Upwork, Fiverr, or direct clients. Business registration and invoices suffice." },
+      { "profile": "Vacationer or initial scouting (< 60 days)", "visa": "Tourist or Exemption", "reason": "Many nationalities get a 60-day visa exemption on arrival. Free. Possible 30-day extension at immigration." },
+      { "profile": "Senior Executive / Leader (> $80,000/yr)", "visa": "LTR", "reason": "10 years, work permit included, 17% flat tax in Thailand for professionals. Great tax benefits." },
+      { "profile": "Comfortable budget, zero paperwork", "visa": "Elite", "reason": "VIP service, fast-track immigration. No income proof. Starting at ~$25,000 for 5 years." },
+      { "profile": "Retiree 50+ with pension", "visa": "Retirement (O-A/O)", "reason": "1 year renewable. Requires 800,000 THB in a Thai bank or 65,000 THB monthly income." }
+    ],
+    "dtv_advantages_title": "Advantages of the DTV",
+    "dtv_advantages": [
+      "Only visa officially authorizing remote work for a foreign company",
+      "5-year validity with multiple entries — no need to reapply every year",
+      "Very competitive cost (~$400) vs Elite ($25k+) or LTR ($1,500+)",
+      "Does not require a Thai sponsor or Thai company setup",
+      "Allows you to bring a spouse and children under 20"
+    ],
+    "dtv_limits_title": "Limits of the DTV",
+    "dtv_limits": [
+      "Stay limited to 180 days per entry (border run necessary to renew the 180 days)",
+      "No Thai work permit — forbidden to work for a Thai employer or Thai clients",
+      "Strict requirement of 500,000 THB (~$15k) in a bank account",
+      "Application is more complex than a tourist visa (portfolio, translations)",
+      "Processing times can be long depending on the embassy"
+    ],
+    "cta_title": "Hesitating between multiple visas?",
+    "cta_text": "Our AI compares your profile with the criteria of each visa and recommends the best choice.",
+    "cta_button": "Find my ideal visa",
+    "back_to_dtv": "← Back to the complete DTV Visa guide",
+    "related_title": "Related Articles",
+    "related_documents": "Documents required for the DTV Visa — Checklist by profile",
+    "related_erreurs": "The 10 Errors that get a DTV Visa refused",
+    "related_delais": "DTV Visa processing times by embassy"
+  },
+  "dtv_delais_page": {
+    "meta": {
+      "title": "Thailand DTV Visa Processing Times 2026 | Embassies & E-Visa",
+      "description": "How long does it take to get a DTV visa in 2026? Processing times for E-Visa, Vientiane, KL. Steps, background check, translations."
+    },
+    "hero_badge": "DTV Processing Times 2026",
+    "hero_title": "DTV Visa Processing Times",
+    "hero_subtitle": "Understand the timeline from application gathering to visa issuance.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_dtv": "DTV Visa",
+    "breadcrumb_current": "Processing Times",
+    "intro": "The time required to obtain a DTV visa varies significantly depending on whether you apply via the E-Visa system from your home country or in person at an embassy in Southeast Asia. This guide details the realistic processing times.",
+    "timeline_title": "Application Steps Timeline",
+    "steps": [
+      { "step": "1", "title": "Document Preparation", "duration": "2 to 4 weeks", "detail": "Criminal background check (can take weeks), translating documents, obtaining stamped bank statements, building the PDF portfolio." },
+      { "step": "2", "title": "Securing an Appointment / E-Visa Submission", "duration": "1 to 3 weeks", "detail": "If applying in-person, getting an appointment during high season can take weeks. E-Visa submission is instant but processing queue varies." },
+      { "step": "3", "title": "Document Submission", "duration": "1 day", "detail": "Uploading files to the E-Visa portal or dropping off your passport physically at an embassy/consulate." },
+      { "step": "4", "title": "Processing by the Embassy", "duration": "5 to 15 business days", "detail": "E-Visa processing averages 5-15 business days. SE Asia embassies (Vientiane/KL) usually take 3-5 business days. Additional documents may be requested, adding delays." },
+      { "step": "5", "title": "Receiving the Visa", "duration": "Instant to 3 days", "detail": "E-Visas are emailed instantly once approved (PDF format). Physical visas require picking up the passport at the embassy." }
+    ],
+    "embassies_title": "Processing Times by Embassy (Estimates)",
+    "embassies_subtitle": "Based on community feedback — February 2026",
+    "col_embassy": "Embassy / Consulate",
+    "col_rdv": "Appointment Wait",
+    "col_processing": "Processing Time",
+    "col_total": "Estimated Total",
+    "col_notes": "Notes",
+    "embassies": [
+      { "name": "E-Visa (US, UK, EU, Aus)", "rdv": "N/A", "processing": "5-15 business days", "total": "2-4 weeks", "notes": "Must apply from inside your country of residence. High volume can lead to longer wait times." },
+      { "name": "Vientiane (Laos)", "rdv": "1-3 days", "processing": "3-5 business days", "total": "1-2 weeks", "notes": "Popular option for nomads already in Asia. In-person application." },
+      { "name": "Kuala Lumpur (Malaysia)", "rdv": "1-5 days", "processing": "3-7 business days", "total": "1-3 weeks", "notes": "Good acceptance rate. Requires flying into Malaysia." },
+      { "name": "Phnom Penh (Cambodia)", "rdv": "1-3 days", "processing": "3-5 business days", "total": "1-2 weeks", "notes": "Fast and accessible option in Southeast Asia." },
+      { "name": "Savannakhet (Laos)", "rdv": "Walk-in", "processing": "2-3 business days", "total": "1 week", "notes": "Often the fastest. Physical queue early in the morning." }
+    ],
+    "seasons_title": "Periods of High Delay",
+    "seasons": [
+      { "period": "December — January", "impact": "High tourist season + Christmas holidays limit consular staff. Processing times often double." },
+      { "period": "April (Songkran)", "impact": "Thai New Year. Embassies in SE Asia close for 3-5 days. Expect significant delays." },
+      { "period": "July — August", "impact": "Summer vacations in Western countries lead to a surge in applications. E-Visa processing queues grow longer." }
+    ],
+    "tips_title": "Tips to Speed Up Your Application",
+    "tips": [
+      "Order your criminal background check FIRST — it is often the document that takes the longest to arrive.",
+      "If you are applying in-person, book your embassy appointment as soon as you start gathering documents.",
+      "If you are already in SE Asia and flexible, apply from Vientiane or KL for much faster processing than western embassies.",
+      "Have all documents translated by a certified translator BEFORE submitting to avoid 'request for additional documents'.",
+      "Ensure your bank statement meets requirements perfectly (officially stamped or proper PDF) to prevent rejection."
+    ],
+    "total_title": "Realistic Total Timeline",
+    "total_min": "1 week",
+    "total_min_label": "From SE Asia in-person, perfect application",
+    "total_avg": "4-5 weeks",
+    "total_avg_label": "Via E-Visa from Home Country, standard processing",
+    "total_max": "8-10 weeks",
+    "total_max_label": "High season + background check delays + requests for extra docs",
+    "cta_title": "Need to speed up your application?",
+    "cta_text": "Our team verifies your application before submission to avoid back-and-forth delays with the embassy.",
+    "cta_button": "Check my DTV Application",
+    "back_to_dtv": "← Back to the complete DTV Visa guide",
+    "related_title": "Related Articles",
+    "related_documents": "Documents required for the DTV Visa — Checklist by profile",
+    "related_erreurs": "The 10 Errors that get a DTV Visa refused",
+    "related_comparatif": "DTV vs other Thai Visas Comparison"
   }
 };

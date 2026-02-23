@@ -1947,5 +1947,305 @@ export const de = {
     "cta_item1": "Konformes Zertifikat für O-A / O-W Visum",
     "cta_item2": "Personalisierter Vergleich für Ihr Profil",
     "cta_item3": "Auswanderungsbegleitung"
+  },
+  "dtv_documents_page": {
+    "meta": {
+      "title": "Thailand DTV Visum Erforderliche Dokumente 2026 | Checkliste nach Profil",
+      "description": "Vollständige Liste der Dokumente für das Thailand DTV Visum 2026. Checkliste nach Profil: Remote-Arbeiter, Freelancer, Rentner. Führungszeugnis, Bankauszug."
+    },
+    "hero_badge": "DTV Dokumenten-Checkliste 2026",
+    "hero_title": "Erforderliche Dokumente für das Thailand DTV Visum",
+    "hero_subtitle": "Die komplette Liste der Nachweise geordnet nach Profil — Update Februar 2026.",
+    "breadcrumb_home": "Startseite",
+    "breadcrumb_dtv": "DTV Visum",
+    "breadcrumb_current": "Erforderliche Dokumente",
+    "intro": "Das DTV Visum (Destination Thailand Visa) erfordert ein fundiertes Dossier, um genehmigt zu werden. Die Dokumente variieren je nach Ihrem Profil: angestellter Fernarbeiter, unabhängiger Profi, aktiver Rentner oder Künstler. Hier ist die Checkliste, die für internationale Antragsteller angepasst wurde, um Ihre Genehmigungschancen zu optimieren.",
+    "common_title": "Allgemeine Dokumente (Für alle Profile)",
+    "common_docs": [
+      { "doc": "Reisepass, noch mindestens 6 Monate gültig", "detail": "Mit mindestens 2 leeren Seiten. Eine Kopie der Datenseite + aller Seiten mit thailändischen Stempeln." },
+      { "doc": "Passfoto in Farbe (4x6 cm)", "detail": "Weißer Hintergrund, darf nicht älter als 6 Monate sein. Standardfoto, ohne Brille oder Kopfbedeckung (außer aus religiösen Gründen)." },
+      { "doc": "Unterschriebenes Antragsformular", "detail": "Das offizielle Formular, das auf dem thailändischen E-Visa Portal (thaievisa.go.th) ausgefüllt und hochgeladen wird." },
+      { "doc": "Finanznachweis: 500.000 THB (~13.500 €)", "detail": "Offizielle Bankauszüge der letzten 6 Monate. Der entsprechende Betrag von 500.000 THB muss konstant verfügbar sein – keine kurzfristigen, plötzlichen Einzahlungen." },
+      { "doc": "Reise- oder Krankenversicherung", "detail": "Mindestdeckung von 50.000 USD. Empfohlene Anbieter: SafetyWing, Allianz, HanseMerkur. Die Police MUSS eine weltweite Deckung oder eine explizite Deckung für Thailand aufweisen." },
+      { "doc": "Führungszeugnis (Strafregisterauszug)", "detail": "Ausgestellt von der zuständigen Behörde in Ihrem Heimatland oder Wohnsitzland (z.B. Bundesamt für Justiz). Kann je nach Anforderung der Botschaft eine Apostille oder Beglaubigung erfordern." }
+    ],
+    "profiles_title": "Spezifische Dokumente nach Profil",
+    "profile_nomad_title": "Remote-Mitarbeiter / Fernarbeiter",
+    "profile_nomad_docs": [
+      { "doc": "Arbeitsvertrag mit Zusatz für mobiles Arbeiten", "detail": "Ihr offizieller Vertrag, der ausdrücklich erlaubt, im Ausland oder vollständig remote zu arbeiten. Sollte idealerweise auf Englisch sein oder beglaubigt übersetzt." },
+      { "doc": "Bestätigungsschreiben des Arbeitgebers", "detail": "Offizieller Brief (auf Firmenpapier), der Ihre Position, das fortlaufende Gehalt und die Erlaubnis, von Thailand aus zu arbeiten, bestätigt." },
+      { "doc": "Gehaltsabrechnungen der letzten 3 Monate", "detail": "Müssen die regelmäßigen Gehaltszahlungen widerspiegeln, die mit den Geldeingängen auf Ihrem Kontoauszug übereinstimmen." },
+      { "doc": "Letzter Einkommensteuerbescheid", "detail": "Ein offizieller Nachweis über Ihr deklariertes Jahreseinkommen in Ihrem Wohnsitzland." }
+    ],
+    "profile_freelance_title": "Freelancer / Selbstständige",
+    "profile_freelance_docs": [
+      { "doc": "Gewerbeanmeldung oder Handelsregisterauszug", "detail": "Nachweis, dass Sie ein eingetragenes und aktives Unternehmen führen (z.B. Gewerbeschein oder Bestätigung vom Finanzamt)." },
+      { "doc": "Die letzten 6 Rechnungen an Kunden", "detail": "Rechnungen an mindestens 3-4 verschiedene Kunden, als Beweis für kontinuierliche berufliche Tätigkeit." },
+      { "doc": "Geschäftskonto-Auszüge", "detail": "Offizielle Kontoauszüge, die die Zahlungen Ihrer Kunden in den letzten 6 Monaten belegen. Müssen im PDF-Format vorliegen oder von der Bank gestempelt sein." },
+      { "doc": "Wichtig: Professionelles Portfolio", "detail": "Eine PDF-Datei (10-15 Seiten), die Ihre Dienstleistungen, Projekte, Fähigkeiten, Kundenrezensionen und Referenzlinks präsentiert. Unerlässlich für alle Dienstleister." }
+    ],
+    "profile_retiree_title": "Aktive Rentner (Pensionäre)",
+    "profile_retiree_docs": [
+      { "doc": "Rentenbescheid", "detail": "Offizielles Dokument der Rentenversicherung oder Pensionskasse über die Höhe Ihrer derzeitigen Rente." },
+      { "doc": "Letzter Einkommensteuerbescheid", "detail": "Bestätigung über die Versteuerung Ihrer Rente sowie möglicher Nebeneinkünfte (Mieteinnahmen, Dividenden)." },
+      { "doc": "Motivationsschreiben für Thailand", "detail": "Eine kurze Beschreibung (max. 1 Seite), warum Sie für längere Zeit nach Thailand reisen (Kultur, Sprachkurse, Kochkurse, Muay Thai)." },
+      { "doc": "Nachweis einer Unterkunft", "detail": "Mietvertrag in Thailand oder bestätigte Hotelbuchungen für zumindest den Beginn Ihres Aufenthalts." }
+    ],
+    "profile_artist_title": "Künstler / Content Creator",
+    "profile_artist_docs": [
+      { "doc": "Nachweis der künstlerischen Tätigkeit", "detail": "Z.B. Mitgliedschaft in der Künstlersozialkasse (KSK) oder anderen berufsspezifischen Kammern/Gewerben." },
+      { "doc": "Künstlerisches Portfolio (PDF/Links)", "detail": "Ihre YouTube-Kanal-Statistiken, ein Instagram-Arbeitsaccount, Behance, Spotify, Veröffentlichungen etc." },
+      { "doc": "Nachweise der Einnahmen (letzte 6 Monate)", "detail": "Einnahmen durch Kreativarbeit, Tantiemen, Sponsorenverträge, Werbeeinnahmen (monetarisierte Kanäle) oder Etsy-Verkäufe." },
+      { "doc": "Projektbeschreibung für Thailand", "detail": "Ein formales Dokument, das erklärt, an welchem Projekt Sie in Thailand arbeiten wollen (Reisebericht, Buch, Dokumentation)." }
+    ],
+    "tips_title": "Wichtige Ratschläge für internationale Antragsteller",
+    "tips": [
+      "Beglaubigte Übersetzung: Alle Dokumente, die nicht auf Englisch oder Thai sind (z.B. deutsche Vertragsdokumente), MÜSSEN in der Regel von einem vereidigten Übersetzer übersetzt werden.",
+      "Führungszeugnis: Beantragen Sie dies frühzeitig, da die Ausstellung in einigen Bundesländern/Behörden mehrere Wochen in Anspruch nehmen kann.",
+      "Kontoauszüge: Keine einfachen Screenshots verwenden! Es müssen generierte und verifizierbare PDFs der Bank oder gestempelte Auszüge aus der Filiale sein.",
+      "E-Visa System: Sie MÜSSEN sich zum Zeitpunkt der Antragsstellung zwingend außerhalb Thailands und gemäß der Regel in Ihrem Wohnsitzland befinden.",
+      "Steuern in Thailand: Aufenthalte von mehr als 180 Tagen im Jahr können Sie in Thailand steuerpflichtig machen, insbesondere auf eingeführtes ausländisches Einkommen."
+    ],
+    "cta_title": "Sichergehen, dass Ihre Unterlagen stimmen?",
+    "cta_text": "Nutzen Sie unseren Service. Unsere KI prüft Ihre Dokumente und unser Experten-Team baut mit Ihnen ein starkes Portfolio auf.",
+    "cta_button": "Eignung für das DTV visum prüfen",
+    "back_to_dtv": "← Zurück zum kompletten Leitfaden des DTV Visums",
+    "related_title": "Verwandte Artikel",
+    "related_erreurs": "Die 10 Fehler, die zu einer DTV-Ablehnung führen",
+    "related_comparatif": "Vergleich: DTV vs. andere thailändische Visa",
+    "related_delais": "DTV Bearbeitungszeiten nach Botschaft"
+  },
+  "dtv_erreurs_page": {
+    "meta": {
+      "title": "10 Fehler, die zur Ablehnung eines DTV Visums führen | Leitfaden 2026",
+      "description": "Die 10 häufigsten Fehler bei der Beantragung des DTV Visums für Thailand. Unzureichende Konten, fehlendes Portfolio, fehlende Übersetzungen."
+    },
+    "hero_badge": "DTV Ablehnung vermeiden",
+    "hero_title": "Die 10 Fehler, die zur Ablehnung des DTV Visums führen",
+    "hero_subtitle": "Nach Schweregrad sortiert – mit passenden Lösungen für internationale Antragsteller.",
+    "breadcrumb_home": "Startseite",
+    "breadcrumb_dtv": "DTV Visum",
+    "breadcrumb_current": "Häufige Fehler",
+    "intro": "Die Ablehnungsquote beim DTV-Visum liegt je nach Botschaft zwischen 15 % und 30 %. Die meisten Ablehnungen lassen sich durch ein gut vorbereitetes Dossier vermeiden. Hier sind die 10 häufigsten Fehler und wie man sie behebt.",
+    "severity_critical": "Kritisch",
+    "severity_high": "Hoch",
+    "severity_medium": "Mittel",
+    "errors": [
+      {
+        "rank": 1,
+        "severity": "critical",
+        "title": "Unzureichender Finanznachweis oder 'Money Parking'",
+        "description": "Der Bankauszug weist nicht das equivalente Guthaben von 500.000 THB (~13.500 €) aus oder zeigt eine einmalige hohe Einzahlung, die nur für das Visum getätigt wurde. Online-Banken ohne gestempelte Kontoauszüge sind ebenfalls ein Problem.",
+        "solution": "Halten Sie mindestens 13.500 € auf Ihrem Hauptkonto für mindestens 3 Monate bereit. Fordern Sie einen von Ihrer Bank unterschriebenen und gestempelten Auszug an. Bei Online-Banken wie N26 oder Revolut sollte das PDF wenn möglich zertifiziert sein.",
+        "refusal_rate": "~35 % der Ablehnungen"
+      },
+      {
+        "rank": 2,
+        "severity": "critical",
+        "title": "Kein Nachweis über Remote-Arbeit",
+        "description": "Fehlender Arbeitsvertrag mit Homeoffice-Klausel, keine Gehaltsabrechnungen oder bei Freelancern keine Rechnungen. Die Botschaft kann Ihre Tätigkeit nicht überprüfen.",
+        "solution": "Angestellte: Vertrag + Homeoffice-Zusatz + letzte 3 Gehaltsabrechnungen einreichen. Freelancer: Gewerbeanmeldung + 6 Rechnungen + dazugehörige Kontoauszüge. Alles auf Englisch oder offiziell übersetzt.",
+        "refusal_rate": "~25 % der Ablehnungen"
+      },
+      {
+        "rank": 3,
+        "severity": "critical",
+        "title": "Leeres oder fehlendes Portfolio",
+        "description": "Für Freelancer und Kreative ist das Fehlen eines Portfolios ein direkter Ablehnungsgrund. Die Konsularbeamten müssen sehen, was Sie tun.",
+        "solution": "Erstellen Sie ein PDF mit 10-15 Seiten: Bio, Fähigkeiten, bisherige Projekte mit Bildern, Kundenbewertungen und Links (Website, LinkedIn, GitHub).",
+        "refusal_rate": "~20 % der Ablehnungen"
+      },
+      {
+        "rank": 4,
+        "severity": "high",
+        "title": "Dokumente nicht auf Englisch übersetzt",
+        "description": "Gehaltsabrechnungen, Arbeitsverträge oder Gewerbeanmeldungen nur auf Deutsch eingereicht. Die thailändische Botschaft verlangt englische Dokumente.",
+        "solution": "Lassen Sie alle wichtigen Dokumente (mindestens Vertrag und steuerliche Anmeldung) von einem vereidigten Übersetzer ins Englische übersetzen.",
+        "refusal_rate": "~10 % der Ablehnungen"
+      },
+      {
+        "rank": 5,
+        "severity": "high",
+        "title": "Pass läuft bald ab",
+        "description": "Der Reisepass muss NACH dem beabsichtigten Einreisedatum in Thailand noch mindestens 6 Monate gültig sein.",
+        "solution": "Prüfen Sie Ihr Ablaufdatum sofort. Die Botschaften stellen kein 5-Jahres-Visum in einen Pass ein, der in 4 Monaten abläuft.",
+        "refusal_rate": "~5 % der Ablehnungen"
+      },
+      {
+        "rank": 6,
+        "severity": "high",
+        "title": "Unzureichende Krankenversicherung",
+        "description": "Grundversicherungen aus dem Heimatland werden oft nicht akzeptiert. Es muss explizit auf eine Deckung für Thailand von mindestens 50.000 USD hingewiesen werden.",
+        "solution": "Wählen Sie auf Langzeitreisen oder Nomaden ausgerichtete Versicherer wie SafetyWing, HanseMerkur, Allianz. Die Police muss 'Weltweit' oder 'Thailand' ausweisen.",
+        "refusal_rate": "~5 % der Ablehnungen"
+      },
+      {
+        "rank": 7,
+        "severity": "medium",
+        "title": "Eingereichtes Foto nicht passend (ICAO-Format)",
+        "description": "Ein schlecht beleuchtetes Foto, kein weißer Hintergrund, ein Selfie oder das Tragen von Brillen/Kopfhörern. Es ist zwingend das Format 4×6 cm vorgeschrieben.",
+        "solution": "Lassen Sie ein neues Passfoto (4×6 cm) in einem Automaten oder bei einem professionellen Fotografen machen, frontal und ohne Brille.",
+        "refusal_rate": "~3 % der Ablehnungen"
+      },
+      {
+        "rank": 8,
+        "severity": "medium",
+        "title": "Unvollständiges oder fehlerhaftes Formular",
+        "description": "Europäisches Datumsformat statt englischem Standard, nicht ausgefüllte Pflichtfelder oder fehlende Unterschrift.",
+        "solution": "Nutzen Sie immer DD/MM/YYYY oder YYYY/MM/DD, füllen Sie alles auf Englisch aus und stellen Sie sicher, dass Ihre Unterschrift mit der im Pass übereinstimmt.",
+        "refusal_rate": "~3 % der Ablehnungen"
+      },
+      {
+        "rank": 9,
+        "severity": "medium",
+        "title": "Fehlendes Führungszeugnis",
+        "description": "Wird manchmal komplett vergessen oder das Ausstellungsdatum liegt mehr als 3 Monate zurück.",
+        "solution": "Beantragen Sie es rechtzeitig beim Bundesamt für Justiz (oder in Ihrem jeweiligen Wohnsitzland), da Ausstellung und evtl. Beglaubigung Zeit in Anspruch nehmen.",
+        "refusal_rate": "~2 % der Ablehnungen"
+      },
+      {
+        "rank": 10,
+        "severity": "medium",
+        "title": "Antrag aus der falschen gerichtlichen Zuständigkeit",
+        "description": "Das E-Visa System von Thailand aus im Touristenstatus zu nutzen, oder einen Antrag bei einer Botschaft in einem Land zu stellen, in dem man keinen Daueraufenthalt hat.",
+        "solution": "Für das E-Visa-System müssen Sie sich im Land Ihres Wohnsitzes aufhalten. Reisende, die bereits in Thailand sind, müssen für den Antrag meist nach Laos oder Malaysia ausreisen.",
+        "refusal_rate": "~2 % der Ablehnungen"
+      }
+    ],
+    "stats_title": "DTV Ablehnungsstatistiken",
+    "stats_total": "Geschätzte durchschnittliche Ablehnungsquote",
+    "stats_total_value": "15-30 %",
+    "stats_avoidable": "Anteil vermeidbarer Ablehnungen",
+    "stats_avoidable_value": "90 %+",
+    "stats_resubmit": "Genehmigungsrate nach Korrekturen",
+    "stats_resubmit_value": "85 %+",
+    "cta_title": "Vermeiden Sie Fehler beim ersten Versuch",
+    "cta_text": "Unsere Künstliche Intelligenz untersucht Ihre Unterlagen auf Schwachstellen, bevor diese offiziell eingereicht werden.",
+    "cta_button": "Mein DTV-Dossier prüfen",
+    "back_to_dtv": "← Zurück zum kompletten DTV-Leitfaden",
+    "related_title": "Ähnliche Artikel",
+    "related_documents": "Erforderliche Dokumente für das DTV Visum",
+    "related_comparatif": "Vergleich: DTV vs. andere Visa",
+    "related_delais": "Bearbeitungszeiten DTV je Botschaft"
+  },
+  "dtv_comparatif_page": {
+    "meta": {
+      "title": "Visa-Vergleich: DTV vs. Touristenvisum, LTR, Elite, ED — Thailand 2026",
+      "description": "Welches Visum für Thailand wählen? Vergleich von DTV vs. Tourist, LTR, Elite und ED. Kosten, Dauer, Remote-Work, Steuern. Guide 2026."
+    },
+    "hero_badge": "Visa Vergleich 2026",
+    "hero_title": "DTV Visum im Vergleich mit anderen Visa",
+    "hero_subtitle": "Die große Vergleichstabelle — Kosten, Steuern, Bedingungen.",
+    "breadcrumb_home": "Startseite",
+    "breadcrumb_dtv": "DTV Visum",
+    "breadcrumb_current": "Visa-Vergleich",
+    "intro": "Das DTV Visum ist nicht die einzige Möglichkeit für einen Aufenthalt. Je nachdem, ob Sie aktiver Rentner, Manager, Student oder Urlauber sind, kann ein anderes Programm besser passen. Dieser Ratgeber vergleicht die wichtigsten Kriterien.",
+    "table_title": "Umfassende Vergleichstabelle",
+    "col_criteria": "Kriterium",
+    "col_dtv": "DTV",
+    "col_tourist": "Touristenvisum",
+    "col_ltr": "LTR",
+    "col_elite": "Elite",
+    "col_ed": "ED (Bildung)",
+    "rows": [
+      { "criteria": "Gesamtdauer", "dtv": "5 Jahre", "tourist": "60 Tage", "ltr": "10 Jahre", "elite": "5-20 Jahre", "ed": "1 Jahr" },
+      { "criteria": "Aufenthalt je Einreise", "dtv": "180 Tage", "tourist": "60 Tage", "ltr": "1 Jahr", "elite": "1 Jahr", "ed": "90 Tage max" },
+      { "criteria": "Erlaubt Remote-Arbeit", "dtv": "Ja ✓", "tourist": "Nein ✗", "ltr": "Ja ✓", "elite": "Nein ✗", "ed": "Nein ✗" },
+      { "criteria": "Grundpreis des Visums", "dtv": "~400 €", "tourist": "~40 €", "ltr": "~1.500 €", "elite": "ab 25.000 €", "ed": "~500 € / Jahr" },
+      { "criteria": "Erforderliches Guthaben", "dtv": "500.000 THB im Konto", "tourist": "20.000 THB", "ltr": "80.000 $/Jahr Gehalt", "elite": "Nicht erforderlich", "ed": "Schulanmeldung" },
+      { "criteria": "Lokales Work Permit", "dtv": "Nein", "tourist": "Nein", "ltr": "Inklusive", "elite": "Nein", "ed": "Nein" },
+      { "criteria": "Antragsaufwand", "dtv": "Mittel (Übersetzungen)", "tourist": "Sehr einfach", "ltr": "Sehr hoch (BOI)", "elite": "Einfach (aber teuer)", "ed": "Durch Schule geregelt" },
+      { "criteria": "Steuerpflicht (Thailand)", "dtv": "Ab 180 Tagen im Jahr", "tourist": "Keine", "ltr": "17% Pauschalsteuer", "elite": "Normale Regelung", "ed": "Normale Regelung" },
+      { "criteria": "Ideal für...", "dtv": "Nomaden, Freelancer", "tourist": "Kurzer Urlaub", "ltr": "Top-Verdiener", "elite": "Wohlhabende, VIP", "ed": "Sprachschüler" }
+    ],
+    "reco_title": "Empfehlungen je nach Profil",
+    "recommendations": [
+      { "profile": "Remote-Mitarbeiter einer ausländischen Firma", "visa": "DTV", "reason": "Der legale Weg für 5 Jahre, ohne nach 60 Tagen via Touristenvisum ständig verlängern zu müssen." },
+      { "profile": "Digitale Freelancer (IT, Marketing)", "visa": "DTV", "reason": "Leicht beantragt, wenn steuerliche Anmeldung im Heimatland besteht und Rechnungen an ausländische Kunden vorliegen." },
+      { "profile": "Aktiver Rentner (Über 50, wiederkehrende Rente)", "visa": "Rentnervisum (Non-O / O-A)", "reason": "Wird jährlich verlängert. Erfordert ein Guthaben von 800.000 THB oder eine monatliche Rente von 65.000 THB." },
+      { "profile": "Top-Investoren und Multimillionäre", "visa": "LTR", "reason": "Günstiger Steuersatz von 17% für Professionals bei Verlegung des steuerlichen Wohnsitzes nach Thailand." },
+      { "profile": "Krypto-Trader, Personen mit hohem Kapital", "visa": "Elite", "reason": "Ab 900.000 THB gibt es volle 5 Jahre VIP-Service, ohne dass das genaue Einkommen ständig kontrolliert wird." }
+    ],
+    "dtv_advantages_title": "Die Stärken des DTV",
+    "dtv_advantages": [
+      "Befreiung von der Meldepflicht alle 90 Tage (es sei denn, Sie bleiben am Stück in Thailand und verlängern intern, was eher unüblich ist).",
+      "Erlaubt unbegrenzt viele Ein- und Ausreisen (Multiple-Entry) für 5 Jahre, wobei 180 Tage bei jeder Einreise neu starten.",
+      "Die 10.000 THB Gebühr ist ~98% günstiger als ein Elite Visum für alle, die wirklich remote arbeiten.",
+      "Ehepartner und Kinder unter 20 Jahren können ebenfalls das DTV erhalten."
+    ],
+    "dtv_limits_title": "Die Grenzen des DTV",
+    "dtv_limits": [
+      "Nach 180 Tagen müssen Sie nachweislich einmal ausreisen (Border-Run), um weitere 180 Tage zu erhalten. 5 Jahre am Stück vor Ort durchgängig bleiben ist intern nur 1x pro Einreise gegen Gebühr verlängerbar.",
+      "Arbeiten für ein thailändisches Unternehmen oder thailändische Kunden ist untersagt.",
+      "Die 500.000 THB im Konto müssen flüssig, also frei verfügbar (ohne Sperrfrist) sein."
+    ],
+    "cta_title": "Noch unentschlossen?",
+    "cta_text": "Nutzen Sie unsere KI-Unterstützung, um in wenigen Sekunden herauszufinden, welches Visum wirklich zu Ihren Voraussetzungen passt.",
+    "cta_button": "Mein ideales Visum finden",
+    "back_to_dtv": "← Zurück zum DTV Leitfaden",
+    "related_title": "Mehr zum Thema",
+    "related_documents": "Erforderliche Dokumente für das DTV",
+    "related_erreurs": "Die 10 Fehler, die zur DTV Ablehnung führen",
+    "related_delais": "Bearbeitungszeiten und Prozesslängen"
+  },
+  "dtv_delais_page": {
+    "meta": {
+      "title": "Bearbeitungszeiten DTV Visum Thailand 2026 | Botschaften & E-Visa",
+      "description": "Wie lange dauert es bis zum DTV Visum in 2026? Bearbeitungszeiten für E-Visa, Botschaften vor Ort und Vorbereitungsphasen."
+    },
+    "hero_badge": "Dauer & Fristen 2026",
+    "hero_title": "DTV Visum: Dauer und Bearbeitungszeit",
+    "hero_subtitle": "Von der Beschaffung der Dokumente bis zum fertigen PDF.",
+    "breadcrumb_home": "Startseite",
+    "breadcrumb_dtv": "DTV Visum",
+    "breadcrumb_current": "Bearbeitungszeiten",
+    "intro": "Die Planung der Vorlaufzeiten ist essenziell. Flugtickets sollten erst gebucht werden, wenn das Visum bestätigt ist oder als umbuchbar gelten. Die Dauer variiert stark je nach Ort der Antragstellung.",
+    "timeline_title": "Der allgemeine Zeitplan der Beantragung",
+    "steps": [
+      { "step": "1", "title": "Beschaffung der Nachweise", "duration": "2 bis 4 Wochen", "detail": "Das offizielle polizeiliche Führungszeugnis dauert meistens am längsten. Hinzu kommen Übersetzungen durch vereidigte Büros und das Einholen von offiziellen Auszügen der Bank." },
+      { "step": "2", "title": "Termin / Hochladen im System", "duration": "1 bis 3 Wochen", "detail": "Einrichtung des Accounts im E-Visa System der Regierung oder das Vereinbaren eines Termins über Agenturen wie VFS oder TLS für den Vor-Ort-Antrag in einigen Ländern." },
+      { "step": "3", "title": "Prüfung durch Thailands Beamte", "duration": "5 bis 15 Werktage", "detail": "Nach Bezahlung prüft das Konsulat die PDFs. Das Tempo hängt dabei stark von Ihrem Herkunftsland und der Auslastung ab." },
+      { "step": "4", "title": "Zustellung", "duration": "Direkt (via E-Mail)", "detail": "Das E-Visa wird bei Genehmigung als PDF verschickt, das Sie für den Grenzübertritt farbig ausdrucken. Bei Beantragung in Asien ohne E-Visa wird der Pass nach einigen Tagen gestempelt zurückgegeben." }
+    ],
+    "embassies_title": "Übersicht nach Region / Konsulat",
+    "embassies_subtitle": "Verifiziertes Feedback der Community – Stand 2026",
+    "col_embassy": "Botschaft / System",
+    "col_rdv": "Dauer bis Termin",
+    "col_processing": "Interne Prüfung",
+    "col_total": "Geschätzte Gesamtzeit",
+    "col_notes": "Wichtige Anmerkung",
+    "embassies": [
+      { "name": "E-Visa System (Europa, DACH)", "rdv": "Digital jederzeit", "processing": "5 – 15 Tage (teils 30)", "total": "Einplanen: 3-5 Wochen", "notes": "Hohes Antragsaufkommen; fehlende englische Übersetzungen bremsen den Prozess massiv. Unbedingt alle Nachweise zertifiziert vorliegen haben." },
+      { "name": "Vientiane (Laos)", "rdv": "1 bis 2 Tage", "processing": "3-5 Werktage", "total": "Knapp 1 Woche", "notes": "Einer der Top-Spots in Asien für schnelle Beantragungen. Online Termin erforderlich." },
+      { "name": "Kuala Lumpur (Malaysia)", "rdv": "Innerhalb einer Woche", "processing": "4-6 Werktage", "total": "Ca. 1,5 Wochen", "notes": "Antragstellung über regionales Portal mit physischem Besuch. Gelten aktuell als sehr genau." },
+      { "name": "Phnom Penh (Kambodscha)", "rdv": "Kurzfristig", "processing": "3-5 Werktage", "total": "Ca. 1,5 Wochen", "notes": "Sehr schneller Durchlauf. Beliebter Standort nahe Bangkok." }
+    ],
+    "seasons_title": "Zeiten mit besonders langer Wartezeit",
+    "seasons": [
+      { "period": "Mitte Dezember bis Anfang Januar", "impact": "Hohe Flut an touristischen Urlaubsanträgen über Weihnachten überlastet das E-Visa Portal." },
+      { "period": "Mitte April (Songkran)", "impact": "Das thailändische Neujahrsfest. Botschaften in den Nachbarländern sind oft tagelang komplett geschlossen." },
+      { "period": "Europäischer Sommer (Juli/August)", "impact": "Viele Beamte im Urlaub, Verzögerungen bei Auszügen (z. B. Führungszeugnis) im eigenen Land summieren sich." }
+    ],
+    "tips_title": "Tipps für einen schnelleren Ablauf",
+    "tips": [
+      "Stellen Sie den Antrag für das Zeugnis sofort, noch bevor Sie Bankauszüge holen oder Flugtickets buchen.",
+      "Ein solides Kontoguthaben ohne ungewohnte Transaktionen in den letzten drei Monaten verhindert zeitraubende Rückfragen der Botschaft.",
+      "Nutzen Sie zusammengefasste PDFs statt 15 einzelner, teils verdrehter Bilder. Wenn der Konsul alles sofort erkennen kann, geht es schnell."
+    ],
+    "total_title": "Zusammenfassende realistische Planung",
+    "total_min": "1 Woche Minimum",
+    "total_min_label": "Physisch in Südostasien, perfektes Englisch, sofortiger Termin.",
+    "total_avg": "4 bis 5 Wochen im Schnitt",
+    "total_avg_label": "Von Zuhause aus via E-Visa mit Standardbürokratie.",
+    "total_max": "10 Wochen oder mehr",
+    "total_max_label": "Fehlerhafte Dokumente + Rückfragen + Weihnachtszeit.",
+    "cta_title": "Verkürzen Sie Ihre Wartezeit mit fehlerfreien Akten",
+    "cta_text": "Dossiers, die von unserer KI geprüft sind, haben eine weitaus geringere Rückfragequote und gehen sofort in den Druck.",
+    "cta_button": "Prüfung jetzt starten",
+    "back_to_dtv": "← Zurück zur DTV Übersicht",
+    "related_title": "Weitere Ratgeber",
+    "related_documents": "Komplette Checkliste der Unterlagen",
+    "related_erreurs": "Die 10 fatalsten Fehler beim Visumsantrag",
+    "related_comparatif": "Vergleich mit anderen Visatypen"
   }
 };

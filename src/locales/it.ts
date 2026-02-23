@@ -1945,5 +1945,300 @@ export const it = {
     "cta_item1": "Certificato conforme per visto O-A / O-W",
     "cta_item2": "Confronto personalizzato per il tuo profilo",
     "cta_item3": "Accompagnamento nell'espatrio"
+  },
+  "dtv_documents_page": {
+    "meta": {
+      "title": "Documenti Requisiti Visto DTV Thailandia 2026 | Checklist per Profilo",
+      "description": "Elenco completo dei documenti per il Visto DTV in Thailandia nel 2026. Checklist per profilo: nomade digitale, libero professionista, pensionato. Casellario giudiziale, estratto conto."
+    },
+    "hero_badge": "Checklist Documenti DTV 2026",
+    "hero_title": "Documenti Richiesti per il Visto DTV Thailandia",
+    "hero_subtitle": "L'elenco completo dei documenti giustificativi per profilo — aggiornato a febbraio 2026.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_dtv": "Visto DTV",
+    "breadcrumb_current": "Documenti richiesti",
+    "intro": "Il visto DTV (Destination Thailand Visa) richiede un fascicolo solido per essere approvato. I documenti variano in base al tuo profilo: dipendente in telelavoro, libero professionista indipendente, pensionato attivo o artista. Questa è la checklist adattata per i richiedenti internazionali per massimizzare le possibilità di approvazione.",
+    "common_title": "Documenti Comuni a Tutti i Profili",
+    "common_docs": [
+      { "doc": "Passaporto valido per oltre 6 mesi", "detail": "Con almeno 2 pagine vuote. Copia della pagina dei dati personali + tutte le pagine con timbri thailandesi." },
+      { "doc": "Fototessera 4×6 cm (standard ICAO)", "detail": "Sfondo bianco, scattata negli ultimi 6 mesi. Foto standard senza occhiali o copricapo (salvo motivi religiosi)." },
+      { "doc": "Modulo di richiesta firmato", "detail": "Caricato sul sistema ufficiale E-Visa thailandese (thaievisa.go.th) o consegnato in ambasciata." },
+      { "doc": "Prova Finanziaria: 500.000 THB (~14.000 €)", "detail": "Estratti conto bancari degli ultimi 6 mesi emessi formalmente dalla tua banca. Il saldo equivalente a 500.000 THB deve essere mantenuto stabile in questo periodo — vietati depositi massicci all'ultimo minuto." },
+      { "doc": "Assicurazione di viaggio o medica per la Thailandia", "detail": "Copertura minima di 50.000 USD. Esempi consigliati: SafetyWing, Allianz. La polizza DEVE menzionare esplicitamente la Thailandia o avere copertura mondiale." },
+      { "doc": "Certificato del Casellario Giudiziale", "detail": "Rilasciato dall'autorità competente del tuo paese (es. Procura della Repubblica). Può richiedere apostille/legalizzazione a seconda dell'ambasciata." }
+    ],
+    "profiles_title": "Documenti Specifici per Profilo",
+    "profile_nomad_title": "Dipendente in Telelavoro (Full-time/Part-time)",
+    "profile_nomad_docs": [
+      { "doc": "Contratto di lavoro con clausola di telelavoro", "detail": "Il tuo contratto ufficiale o un allegato che certifichi che sei autorizzato a lavorare da remoto dall'estero. Deve essere in inglese o tradotto ufficialmente." },
+      { "doc": "Certificato del Datore di Lavoro", "detail": "Lettera ufficiale firmata dalle Risorse Umane che confermi la tua posizione, il permesso di lavorare dalla Thailandia e il mantenimento dello stipendio." },
+      { "doc": "Ultime 3 Buste Paga", "detail": "Devono dimostrare trasferimenti regolari di stipendio che corrispondano ai tuoi estratti conto bancari." },
+      { "doc": "Ultima dichiarazione dei redditi (es. Modello 730, Modello Redditi)", "detail": "Prova del reddito annuale dichiarato nel tuo paese di residenza." }
+    ],
+    "profile_freelance_title": "Lavoratore Autonomo / Freelance",
+    "profile_freelance_docs": [
+      { "doc": "Certificato di Attribuzione Partita IVA / Visura Camerale", "detail": "Prova di stato d'attività (es. registrazione alla Camera di Commercio, Partita IVA, ecc.)." },
+      { "doc": "Ultime 6 fatture ai clienti", "detail": "Di almeno 3-4 clienti diversi per dimostrare un'attività regolare." },
+      { "doc": "Estratti del conto bancario professionale", "detail": "Conti che mostrino depositi che corrispondono alle fatture negli ultimi 6 mesi. Devono essere in formato PDF ufficiale o timbrati." },
+      { "doc": "Portfolio Professionale (PDF, 10-15 pagine)", "detail": "Qualsiasi presentazione visiva: biografia, competenze, progetti completati, recensioni e link ai tuoi lavori. Indispensabile per programmatori, designer e consulenti." }
+    ],
+    "profile_retiree_title": "Pensionato Attivo / Senior Digitale",
+    "profile_retiree_docs": [
+      { "doc": "Certificato o Modulo OBIS/M (INPS)", "detail": "Comunicazione ufficiale annuale del tuo ente previdenziale che indica l'importo della pensione." },
+      { "doc": "Ultima dichiarazione dei redditi", "detail": "Prova del reddito dichiarato dalla pensione e qualsiasi altra entrata supplementare (affitti, dividendi)." },
+      { "doc": "Lettera Motivazionale", "detail": "Che spieghi il tuo interesse per la Thailandia (es. volontariato, corsi, turismo prolungato). Mantienila di 1 pagina al massimo." },
+      { "doc": "Prova di Alloggio", "detail": "Prenotazione hotel/Airbnb per i primi mesi o contratto d'affitto firmato in Thailandia." }
+    ],
+    "profile_artist_title": "Artista / Creatore di Contenuti",
+    "profile_artist_docs": [
+      { "doc": "Numero di Partita IVA o Iscrizione ad Associazione Categoria", "detail": "Iscrizione fiscale per attività artistiche o registrazione SIAE." },
+      { "doc": "Portfolio Artistico (PDF o Link)", "detail": "Galleria di opere d'arte, canale YouTube con le statistiche (analytics), account Instagram professionale. Almeno 10 pagine se in PDF." },
+      { "doc": "Prove delle entrate creative (6 mesi)", "detail": "Entrate da YouTube/Twitch, vendite su Etsy, contratti artistici o royalties sui diritti d'autore." },
+      { "doc": "Presentazione del progetto in Thailandia", "detail": "Spiegazione del tuo progetto artistico legato al paese: reportage fotografico, documentario, scrittura di un libro, ecc." }
+    ],
+    "tips_title": "Consigli specifici per richiedenti internazionali",
+    "tips": [
+      "Traduzione giurata: Tutti i documenti non in lingua inglese o thailandese DEVONO essere tradotti da un traduttore giurato o certificati ufficialmente.",
+      "Casellario giudiziale: Richiedilo in anticipo. L'emissione e la legalizzazione da parte delle procure possono richiedere settimane.",
+      "Estratti Conto: Non utilizzare screenshot dell'app mobile bancaria. Richiedi estratti conto timbrati ufficialmente dalla tua banca o file PDF digitali verificabili.",
+      "Sistema E-Visa: Devi fare domanda dal paese in cui risiedi legalmente. Non puoi fare domanda per l'E-Visa mentre sei fisicamente all'interno del territorio thailandese.",
+      "Tasse: La Thailandia tassa i redditi esteri inviati su conti thailandesi se soggiorni nel paese per più di 180 giorni in un anno solare. Consulta un consulente fiscale."
+    ],
+    "cta_title": "Non sei sicuro della tua documentazione?",
+    "cta_text": "La nostra IA analizza il tuo profilo e rileva i documenti mancanti in 30 secondi.",
+    "cta_button": "Verifica la mia Idoneità DTV",
+    "back_to_dtv": "← Torna alla guida completa del Visto DTV",
+    "related_title": "Articoli Correlati",
+    "related_erreurs": "I 10 errori per cui viene rifiutato un Visto DTV",
+    "related_comparatif": "Confronto del DTV con altri visti thailandesi",
+    "related_delais": "Tempi di elaborazione del DTV per ambasciata"
+  },
+  "dtv_erreurs_page": {
+    "meta": {
+      "title": "I 10 Errori per cui Rifiutano il Visto DTV Thailandia 2026",
+      "description": "I 10 errori principali che causano il rifiuto del visto DTV in Thailandia. Fondi insufficienti, portfolio inesistente, mancanza di traduzioni."
+    },
+    "hero_badge": "Evita il Rifiuto DTV",
+    "hero_title": "I 10 Errori per cui Rifiutano il Visto DTV",
+    "hero_subtitle": "Classificati per gravità — con le giuste soluzioni per i richiedenti internazionali.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_dtv": "Visto DTV",
+    "breadcrumb_current": "Errori Frequenti",
+    "intro": "Il tasso di rifiuto per il visto DTV varia tra il 15% e il 30% a seconda dell'ambasciata. La maggior parte dei rifiuti è prevenibile con un fascicolo ben preparato. Ecco i 10 errori più frequenti e come rimediare.",
+    "severity_critical": "Critico",
+    "severity_high": "Alto",
+    "severity_medium": "Medio",
+    "errors": [
+      {
+        "rank": 1,
+        "severity": "critical",
+        "title": "Prova finanziaria insufficiente o 'Money Parking'",
+        "description": "L'estratto conto non mostra un saldo costante di 500.000 THB (~14.000 €) o presenta un unico, recente bonifico effettuato solo per il visto. Anche i conti digitali (es. Revolut, N26, Hype) senza estratti conto formali possono causare problemi.",
+        "solution": "Mantieni l'equivalente nel tuo conto corrente principale per almeno 3-6 mesi. Richiedi un estratto conto firmato e timbrato dalla tua filiale bancaria o certificato digitalmente.",
+        "refusal_rate": "~35% dei rifiuti"
+      },
+      {
+        "rank": 2,
+        "severity": "critical",
+        "title": "Assenza di prova del Lavoro da Remoto",
+        "description": "Nessun contratto di lavoro con clausola di telelavoro, nessuna busta paga e, per i freelance, mancanza di fatture. L'ambasciata non può stabilire cosa fai.",
+        "solution": "Dipendenti: fornire il contratto + appendice di smart working + le ultime 3 buste paga. Freelance: Partita IVA/Visura + 6 fatture + estratti conto corrispondenti. Tutto rigorosamente in inglese.",
+        "refusal_rate": "~25% dei rifiuti"
+      },
+      {
+        "rank": 3,
+        "severity": "critical",
+        "title": "Portfolio Inesistente o Vuoto",
+        "description": "Per i liberi professionisti e i creativi, non includere un portfolio dimostrativo è motivo di rifiuto automatico. Il console vuole vedere il tuo lavoro.",
+        "solution": "Crea un PDF di 10-15 pagine contenente: biografia, competenze, progetti realizzati con immagini, recensioni dei clienti, link al tuo sito o profilo LinkedIn.",
+        "refusal_rate": "~20% dei rifiuti"
+      },
+      {
+        "rank": 4,
+        "severity": "high",
+        "title": "Documenti NON tradotti in Inglese",
+        "description": "Buste paga, contratti di lavoro o certificati della Camera di Commercio/Agenzia delle Entrate forniti interamente in italiano. Il consolato thailandese richiede la lingua inglese.",
+        "solution": "Rivolgiti a un traduttore giurato per la traduzione dei documenti fiscali (il contratto, e come minimo l'iscrizione IVA o Camera di Commercio).",
+        "refusal_rate": "~10% dei rifiuti"
+      },
+      {
+        "rank": 5,
+        "severity": "high",
+        "title": "Passaporto in Prossima Scadenza",
+        "description": "Il passaporto deve essere obbligatoriamente valido per almeno 6 mesi DOPO la data di ingresso in Thailandia.",
+        "solution": "Verifica subito la scadenza. L'ambasciata rifiuterà di emettere un visto per 5 anni su un libretto che scade tra 4 mesi.",
+        "refusal_rate": "~5% dei rifiuti"
+      },
+      {
+        "rank": 6,
+        "severity": "high",
+        "title": "Assicurazione medica non conforme",
+        "description": "Una polizza base nazionale o della Tessera Europea (TEAM) non sono valide. Occorre una polizza che copra specificamente i viaggi in Thailandia o che sia per \"Nomadi Digitali\".",
+        "solution": "Sottoscrivi una polizza dedicata come SafetyWing, HeyMondo, o Allianz. Deve includere una copertura di almeno 50.000$ e specificare validità \"WorldWide\" o \"Thailand\".",
+        "refusal_rate": "~5% dei rifiuti"
+      },
+      {
+        "rank": 7,
+        "severity": "medium",
+        "title": "Fototessera errata (Formato ICAO)",
+        "description": "Caricare una foto mal illuminata, uno sfondo che non sia perfettamente bianco, occhiali da sole/indumenti vistosi. Ricorda, il formato richiesto è 4x6 cm.",
+        "solution": "Rivolgiti a un fotografo o USA una cabina automatica per formato passaporto (senza occhiali, visuale frontale chiara).",
+        "refusal_rate": "~3% dei rifiuti"
+      },
+      {
+        "rank": 8,
+        "severity": "medium",
+        "title": "Modulo Indecifrabile o Incompleto",
+        "description": "L'uso del formato data italiano (DD/MM/YYYY invece di quello preferito dal sistema se differente), oppure mancate firme elettroniche/fisiche.",
+        "solution": "Segui rigorosamente la guida passo dopo passo. Compila il modulo in inglese. Firma sempre come sul passaporto.",
+        "refusal_rate": "~3% dei rifiuti"
+      },
+      {
+        "rank": 9,
+        "severity": "medium",
+        "title": "Assenza del Casellario Giudiziale",
+        "description": "Tale documento viene spesso saltato o consegnato scaduto (oltre 3 mesi dalla sua emissione).",
+        "solution": "Richiedilo tempestivamente presso la Procura della Repubblica competente o al Ministero della Giustizia. A seconda della sede del consolato, potrebbero esserci richieste di apostillarlo.",
+        "refusal_rate": "~2% dei rifiuti"
+      },
+      {
+        "rank": 10,
+        "severity": "medium",
+        "title": "Domanda presentata dalla Nazione Sbagliata",
+        "description": "Applicare tramite il circuito dell'E-Visa mentre ti trovi alle Canarie/Tailandia in vacanza, senza essere un residente legittimo di quel paese.",
+        "solution": "L'E-Visa per gli italiani si applica da territorio italiano. Se sei in giro per il mondo in modo nomade, dovrai farti rilasciare il DTV da ambasciate terrestri (ad es. Vientiane in Laos o in Malesia).",
+        "refusal_rate": "~2% dei rifiuti"
+      }
+    ],
+    "stats_title": "Statistiche Rifiuti Visto DTV",
+    "stats_total": "Tasso medio di rifiuto stimato",
+    "stats_total_value": "15-30%",
+    "stats_avoidable": "Percentuale di errori prevenibili",
+    "stats_avoidable_value": "Oltre il 90%",
+    "stats_resubmit": "Tasso di approvazione alla ri-presentazione corretta",
+    "stats_resubmit_value": "Oltre l'85%",
+    "cta_title": "Evita tutti gli errori al primo click",
+    "cta_text": "L'Intelligenza Artificiale della nostra piattaforma verificherà il tuo PDF portfolio e tutti gli estratti tradotti per darti il semaforo verde prima dell'ambasciata.",
+    "cta_button": "Esegui un Controllo della mia Pratica",
+    "back_to_dtv": "← Ritorno al fascicolo DTV",
+    "related_title": "In Evidenza",
+    "related_documents": "Quali documenti fornire divisi in base alla Professione",
+    "related_comparatif": "Perché il DTV è il miglior piano tra tutti i visti",
+    "related_delais": "Tempi di attesa dalle ambasciate"
+  },
+  "dtv_comparatif_page": {
+    "meta": {
+      "title": "Confronto Visto DTV vs Turistico, LTR, Elite, ED — Thailandia 2026",
+      "description": "Quale visto thailandese scegliere? Tutto il confronto del DTV vs il Turistico, LTR (Long-Term), Elite, o visto Studio. Cifre, tassazione ed espatrio."
+    },
+    "hero_badge": "Confronto Visti 2026",
+    "hero_title": "Il Visto DTV a confronto con altri visti",
+    "hero_subtitle": "Spese vive, autorizzazioni di lavoro e scadenze messi a nudo.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_dtv": "Visto DTV",
+    "breadcrumb_current": "Confronti",
+    "intro": "L'ecosistema dei visti del Regno inquadra ora una nuova offerta (DTV). Ma qual è la più adatta per un viaggiatore di affari che vuole passare le estati a Phuket rispetto allo speculatore informatico? O rispetto a un semplice riposo pensionistico? Iniziamo con l'ossatura.",
+    "table_title": "Riepilogo Parametri Visivi",
+    "col_criteria": "Campi Analizzati",
+    "col_dtv": "Visto DTV",
+    "col_tourist": "Turista Base",
+    "col_ltr": "LTR (Residenti)",
+    "col_elite": "Visto Elite",
+    "col_ed": "ED (Visto Studio)",
+    "rows": [
+      { "criteria": "Longevità Estrema", "dtv": "5 Anni Totali", "tourist": "Di base 60 Giorni", "ltr": "Valido 10 Anni", "elite": "Tra i 5 e 20 Anni", "ed": "Da 6 Mesi a 1 Anno" },
+      { "criteria": "Ingresso / Stazionamento", "dtv": "Un reset ogni 180g", "tourist": "60 giorni", "ltr": "Permanenza Senza Uscita", "elite": "Senza limiti fissi", "ed": "Ripresentarsi ogni 90 giorni all'Immigration" },
+      { "criteria": "Legalizzazione del Telelavoro", "dtv": "Il solo a dirlo (Sì)", "tourist": "Severamente vietato", "ltr": "Sì", "elite": "In zona d'ombra permanente", "ed": "Severamente vietato" },
+      { "criteria": "Quanto Costa Pagare l'Emissione?", "dtv": "Appena ~350-400 €", "tourist": "Inferiore ai 40 €", "ltr": "Alberga sui 1500 € l'Avvio BOI", "elite": "Abnorme (dai 25,000 dollari in su)", "ed": "Rette scolastiche circa 600€" },
+      { "criteria": "Dimostrazioni o Vincoli in Denaro", "dtv": "Capitale statico in banca di mezzo milione di Baht (14k EUR)", "tourist": "Irrisorio (pochissimi k)", "ltr": "Prove di un guadagno di 80,000 $ USA Annuali (Meno se laureati/brevetti)", "elite": "Assenti: paghi a fondo perduto ai burocrati. Niente altre prove.", "ed": "Assenti (la scuola ti ratifica)" },
+      { "criteria": "Dà Accesso ad Entrare in Fabbriche THAI o Uffici dell'Asse?", "dtv": "NO (Divieto totale intra-thailandia)", "tourist": "No", "ltr": "Ti elargiscono inclusivo il Work-Permit Thailandese Assicurato", "elite": "Mai concesso il Work Permit", "ed": "Divieto di lavoro" },
+      { "criteria": "Complicazione Esecutiva", "dtv": "Intermedia (traduzioni)", "tourist": "Bassa", "ltr": "Alta, revisionata da ministeri economici.", "elite": "La fai fare a delegati esterni. Zero.", "ed": "Cura delle università al 90%." },
+      { "criteria": "Scudo o Fiscale", "dtv": "Subentra sopra i 180 giorni fisici continui", "tourist": "Slegata", "ltr": "Ti omaggiano della Flat-Tax agevolata speciale (17%) per l'alto reddito estero", "elite": "Dipende unicamente dalle convenzioni e giorni", "ed": "Come i normali dtv/turisti." },
+      { "criteria": "Il Client Ideale di questo", "dtv": "Gente Autonoma con Desktop o Laptop", "tourist": "Esploratori stagionali", "ltr": "Ceo C-LEVEL, Manager di Corporation Digitali", "elite": "Coloro che monetizzano dividendi pesanti che vogliono solo rilassarsi a Pattaya e Bangkok in piscine da Re", "ed": "Ragazzi dai 20 che studiano Kick-Boxing, Immersioni subacquee o cultura dell'idioma del Siam" }
+    ],
+    "reco_title": "Sintesi per i Tipici Profili da Espatrio",
+    "recommendations": [
+      { "profile": "Dottorando, Dipendente Corporate (remoto aziendale IT, Architetta, Grafica Web)", "visa": "DTV", "reason": "Basta farsi redigere una documentazione contrattuale dall'ufficio personale del proprio capo, attestante lo Smart-Working consentito." },
+      { "profile": "L'Agenzia, l'Autonomo E-commerciante, o lo Youtuber.", "visa": "DTV", "reason": "Si mostra al consolato che la fonte primaria del proprio sostentamento sgorga dai confini digitali trans-nazionali, e non minaccia mai la manodopera locale in Thailandia. Lo adorano." },
+      { "profile": "Fascia Anagrafica dei 55 anni; Contributi Riscossi tutti i mesi (Pensione dell'INPS o Fondo)", "visa": "Retirement/Pensionati Tradizionali", "reason": "Per chi riscuote da un ente, il visto Retirment O-A è collaudatissimo. Prevede circa 800k in un conto Thailandese a proprio nome per essere rinnovato annualmente." },
+      { "profile": "Capitalisti d'assalto / Venture Funds", "visa": "LTR Elite Special", "reason": "Il sistema del BOE ha impalcato un LTR da 10 anni che non deve neanche passare dall'immigrazione per dire «ciao». In aggiunta con aliquota ferma al 17% su tutti i fronti. Bisogna solo essere ultra-certificati nell'alto reddito." },
+      { "profile": "Ricchi anonimi che smerciano fondi neri (O non hanno dichiarazioni formali e trasparenti della propria ricchezza fiscale che lo stato italiano accetta)", "visa": "Thai Elite Standard", "reason": "Per entrare di diritto nei VIP e in corsie celeri all'aeroporto, per non avere mai un dipendente di immigrazione che ti farà un colloquio sulla natura del tuo reddito in Europa, l'Elite chiede solo quel grosso bonifico. Esistono visti che arrivano a 20 anni. Privilegio garantito al 100%." }
+    ],
+    "dtv_advantages_title": "I Lati d'Oro del DTV",
+    "dtv_advantages": [
+      "È l'unica patente legislativa creata interamente per l'ecosistema che oggi chiamiamo \"Internet\".",
+      "Il concetto di In-&-Out (Il Multiple Entry): Esci la domenica al casino in Cambogia, o vai a Singapore 3 giorni; Ritorni, ed il count-down che prima diceva \"Giorno di Residenza 109\", ora magicamente dice di nuovo Giorno Zero di 180. E lo fa per un arco temporale lungo un quinquennio intero. Insuperabile per chi vola costantemente nell'ASEAN."
+    ],
+    "dtv_limits_title": "E dove fatica rispetto ad altre manovre d'espatrio?",
+    "dtv_limits": [
+      "A differenza dei pensionistici ritirati, chi resta con il DTV lo fa per una stagione. Costringe in un modo o nell'altro a volare o attraversare un cancello fisico via terra entro i 6 Mesi netti.",
+      "Per il governo italiano restano sempre in auge gli articoli circa i 183 giorni solari (A.I.R.E. e domicili). Trasferirsi con DTV ed ignorare le normative tributarie occidentali porta comunque ai ricalcoli domestici sulle imposte di origine e all'esterovestizione."
+    ],
+    "cta_title": "Sei smarrito dal coacervo di sigle burocratiche?",
+    "cta_text": "Non devi interpretare a mano. Il nostro sistema telematico farà le domande che farebbero loro e calcolerà quale dei tre percorsi si apre per le tue buste paga o per la tua pensione/società SAS-SRL.",
+    "cta_button": "Rispondi alle domande dell'IA",
+    "back_to_dtv": "← Lasciare i confronti.",
+    "related_title": "Vai Avanti con le scoperte",
+    "related_documents": "Compilare le cartelle per l'E-Visa e passaporto verde, la checklist assoluta.",
+    "related_erreurs": "Le catastrofi documentali che distruggeranno l'attesa.",
+    "related_delais": "Orologio e Calendari Consolari: i giorni che servono."
+  },
+  "dtv_delais_page": {
+    "meta": {
+      "title": "Tempi di Elaborazione Visto DTV Tailandia 2026 | Date ed Ambasciate",
+      "description": "Hai fretta di partire da Roma o Milano? Tutto l'iter di consegna del DTV Thailandia per il 2026. Online ed E-Visa."
+    },
+    "hero_badge": "Le Spicciole Numeriche Consolari (2026)",
+    "hero_title": "Calendari Esatti di Rilascio per il Visto d'Oro Digitale DTV",
+    "hero_subtitle": "Dalle apostille sino ad avere il Ticket pronto in aereo.",
+    "breadcrumb_home": "Sede Web",
+    "breadcrumb_dtv": "Prerogative DTV",
+    "breadcrumb_current": "Settimane di Processione",
+    "intro": "Pianificare le ferie od un ritiro remoto non ammette colli di bottiglia da una casella di posta statale che non ti invia in tempo reale il nullaosta. I dati mostrano profonde cesure in base a quanto in là ci si prenderà lo scarto.",
+    "timeline_title": "Diario Standard di Produzione",
+    "steps": [
+      { "step": "1", "title": "Ricerca ed Esecuzione Cartacea ed Elettronica", "duration": "Ben più di tre settimane totali", "detail": "Il 90% dell'onere cade sulle tue spalle e su quelli dei giuristi al tuo soldo: richiedere un certificato di Carichi Pendenti non si consuma in due minuti. Farli convertire in Inglese è il secondo gradino temporale ingente oltre ai visti d'estratti ed alle bolle del tuo commercialista." },
+      { "step": "2", "title": "Registrazione nel Database Centrale Ministeriale Thailandese, l'E-Visa.", "duration": "Uno sprazzo da 3 ad un massimo di 15 giorni", "detail": "Una volta che il sito E-Visa macina le imposte d'onboarding da 10,000 Baht, subentri legalmente alla visura di un esaminatore estero." },
+      { "step": "3", "title": "Responso o Ripresa Documentale", "duration": "7 Giorni lavorativi a seguito.", "detail": "Il Console ti dice \"Bravo\" emettendo un file compresso nella tua INBOX allegandoti la copia finale d'approdo, oppure rispedisce via Web il plico asserendo una insufficienza che causa ulteriore arresto." },
+      { "step": "4", "title": "Lo Stampo se vai alloggiato fuori dall'Italia ma in Asia Continentale.", "duration": "Solo due mattinate (In base locale d'Oltremare)", "detail": "I viaggi d'immigrazione fisici tra il nord-est asiatico sono tutt'oggi un fulmine in termini di burocrazia. Lasci il passaporto lunedì in ambasciata (A Vientiane), paghi in locale valuta, sparisci due giorni per ostelli lì vicini e mercoledì te lo riconsegnano in portineria col bollone verde incollato a spina laterale." }
+    ],
+    "embassies_title": "Come si muovono le Ambasciate di Confine vs Ambasciate Italiane.",
+    "embassies_subtitle": "Le code e le faticose discrepanze dei siti in terra straniera.",
+    "col_embassy": "Locazione Sede",
+    "col_rdv": "Attesa per l'invio E-visa o Appuntamento",
+    "col_processing": "Firma e Processo Reale del Funzionario",
+    "col_total": "Orologio Totale per il Nomade.",
+    "col_notes": "Note Tecniche Extra",
+    "embassies": [
+      { "name": "E-Visa Diretto (Esempio, Richieste da IP ed abitazioni site in ROMA)", "rdv": "Drammaticamente Istantaneo via browser", "processing": "A loro uso discrezionale: Si attesta tuttavia sui 12 giorni di Lavoro (Sabati assenti).", "total": "La garanzia della sicurezza si ha in un Mese scarso", "notes": "Le traduzioni giurate faranno da arbitro severo. Una cattiva stesura e si bloccherà ad un ufficiale severo. Da applicarsi SEMPRE ed unicamente ad atterraggi ancora lontani." },
+      { "name": "Laos Occidentale, Vientiane Capitale", "rdv": "Tocca combattere virtualmente per assicurarsi un turno virtuale a distanza che vada bene con il Visto Run della settimana X, di norma qualche giorno di pre-prenotazione", "processing": "Spaventosamente Celere, tre o massimo quattro rintocchi di orizzonte", "total": "Una sola settimana", "notes": "Culla per nomadi pre-esistenti già sparsi tra le isole e Chiang Mai che prendono voli locali per regolarizzarsi, non indicativa ed illegalesca per un soggetto residente tuttora al duomo di Milano che inviano il file via web senza essere al confine. Si va di persona fisica." },
+      { "name": "Kuala Lumpur via Aeree Asiatiche.", "rdv": "Semplice e disponibile.", "processing": "Hanno allentato la cintura sul protocollo. Non più di 5 giorni.", "total": "Non sopra i 15 giorni.", "notes": "Tappa intermedia formidabile per i transiti al sud ed isole tropicali o scali enormi. Hanno reputazione pignola sul versante foto cartacee." },
+      { "name": "Laos Centro (Savannakhet o limitrofi).", "rdv": "Scolastico: walk-out and walk-on in prima alba col cartaceo da porgere in fila al poliziotto del checkpoint dell'ufficio.", "processing": "Quarantotto / Novantasei Ore.", "total": "Non supera mai i Sei Giorni Lavorativi.", "notes": "L'ambiente del sud-laotiano offre ritmi distensivi ed altissima efficienza sul posto. Pochi aerei, viaggi più faticosi da affrontare per strada." }
+    ],
+    "seasons_title": "Mesi Torridi: in cui la Tailandia cessa o soffoca i battiti dei Visti.",
+    "seasons": [
+      { "period": "Da Natale fino a metà del mese di Gennaio. E oltre nei capodanni cinesi.", "impact": "Una folla indescrivibile ed imponente di esseri umani intasa globalmente ogni forma d'E-visa del pianeta diretti verso le calde lagune dell'ASEAN. I ritardi cresceranno di una quindicina di giorni. Nessuno scampo per chi si organizza a corto raggio." },
+      { "period": "Metà Aprile (Songkran)", "impact": "La gemma temporale dell'acqua. Tutte le burocrazie continentali della regione ed adiacenze staccano la spina. Vi rida indietro lo stato per l'elaborazione un vuoto pneumatico assiso." }
+    ],
+    "tips_title": "Come si passa avanti alla Coda?",
+    "tips": [
+      "I soldi stanziali: mostrate la grana in anticipo senza strane entrate uscite dai mercati ed un file nitido non compresso malamente per lo spessore dell'anagrafe che fa stancare gli occhi per controllar.",
+      "L'Appostilla o Fedina Penale: I Governi europei emettono fogliacci lunghissimi, avvatene in prima data."
+    ],
+    "total_title": "Riassumendo I Patti di Attesa",
+    "total_min": "Solo Tre o Quattro Giorni Liberi",
+    "total_min_label": "Tu, un aeroplano dal raggio interno all'Asia ed una pila di documenti di ferro stampati alla mano per un ufficio trans-frontaliero senza resse folli (e magari con tutti i moduli corretti passati).",
+    "total_avg": "Un Mese d'Attesa, Quattro spaccate Settimane.",
+    "total_avg_label": "La maggior parte dell'Europa ed Esuli Digitali che usano la comodità dello schermo casalingo prima d'alzarsi ed andare in un consolato a pagare tasse da poltrone in pigiama col The Inverno.",
+    "total_max": "Quasi Otto o Dieci Settimane ed Infinite Sofferenze per mancati file PDF.",
+    "total_max_label": "Hai atteso la festività asiatica o dicembre. L'INPS/Il commercialista va in sciopero, il ministero penale della giustizia blocca il server per settimane, l'ambasciatore trova delle pecche sul documento non inglese che costringe a rivolgersi in tribunale ad un avvocato civilista della corona o notaio d'ufficio per delle righe di traduzione in spagnolo dell'ISEE. Non fidatevi del Fato.",
+    "cta_title": "Lavora d'ingegno, non lavorare sodo.",
+    "cta_text": "Manda giù il programma della nostra A.I., controllalo e poi ti fai inviare l'E-visa, in questo ordine vincerai la scommessa statistica.",
+    "cta_button": "Sgrana e Riprendi a Respirare per partre.",
+    "back_to_dtv": "← Arretrare all'Intro del DTV DTV DTV",
+    "related_title": "Continua l'Educazione Digitale Sulla Buona Emigrazione",
+    "related_documents": "Di nuovo: Cosa devo prendere, e dove dal fisco.",
+    "related_erreurs": "Le punizioni da 10mila Baht per Errori Banalissimi al Console",
+    "related_comparatif": "Rivali del DTV in Competizione sul Filo Del Rasoio"
   }
 };
