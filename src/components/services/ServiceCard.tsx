@@ -4,6 +4,7 @@ import { Check, Star, ArrowRight } from 'lucide-react';
 interface ServiceTier {
     id: string;
     name: string;
+    price?: string;
     description: string;
     recommended?: boolean;
     features: string[];
@@ -44,6 +45,9 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
             {/* Contenu */}
             <div className="flex-1">
                 <h3 className="text-2xl font-black text-slate-900 mb-2">{tier.name}</h3>
+                {tier.price && (
+                    <p className="text-4xl font-black text-amber-600 mb-2">{tier.price}</p>
+                )}
                 <p className="text-slate-500 text-sm leading-relaxed mb-8">{tier.description}</p>
 
                 {/* Features List */}

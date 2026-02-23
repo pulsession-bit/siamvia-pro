@@ -8,7 +8,7 @@ import { URLS, IMAGES } from '@/constants';
 import { PageContainer, Card } from '@/components/ui/PageComponents';
 import { VisaHero } from '@/components/visa/VisaHero';
 import { ServiceCard } from '@/components/services/ServiceCard';
-import { X } from 'lucide-react';
+import { X, Info, Check, AlertTriangle } from 'lucide-react';
 
 const ExpertAppointmentForm = dynamic(() => import('@/components/ExpertAppointmentForm'), {
     ssr: false,
@@ -22,49 +22,58 @@ const ServicesClientPage: React.FC = () => {
 
     const tiers = [
         {
-            id: 'audit',
-            name: t('services_page.tier_audit'),
-            description: t('services_page.tier_audit_desc'),
+            id: 'standard',
+            name: t('services_page.tier_standard'),
+            price: t('services_page.tier_standard_price'),
+            description: t('services_page.tier_standard_desc'),
             features: [
-                t('services_page.audit_feat1'),
-                t('services_page.audit_feat2'),
-                t('services_page.audit_feat3'),
-                t('services_page.audit_feat4'),
-                t('services_page.audit_feat5'),
+                t('services_page.pack_feat1'),
+                t('services_page.pack_feat2'),
+                t('services_page.pack_feat3'),
+                t('services_page.pack_feat4'),
+                t('services_page.pack_feat5'),
             ],
         },
         {
-            id: 'serenite',
-            name: t('services_page.tier_serenity'),
-            description: t('services_page.tier_serenity_desc'),
+            id: 'express',
+            name: t('services_page.tier_express'),
+            price: t('services_page.tier_express_price'),
+            description: t('services_page.tier_express_desc'),
             recommended: true,
             features: [
-                t('services_page.serenity_feat1'),
-                t('services_page.serenity_feat2'),
-                t('services_page.serenity_feat3'),
-                t('services_page.serenity_feat4'),
-                t('services_page.serenity_feat5'),
-                t('services_page.serenity_feat6'),
+                t('services_page.pack_feat1'),
+                t('services_page.pack_feat2'),
+                t('services_page.pack_feat3'),
+                t('services_page.pack_feat4'),
+                t('services_page.pack_feat5'),
             ],
         },
         {
-            id: 'vip',
-            name: t('services_page.tier_vip'),
-            description: t('services_page.tier_vip_desc'),
+            id: 'premium',
+            name: t('services_page.tier_premium'),
+            price: t('services_page.tier_premium_price'),
+            description: t('services_page.tier_premium_desc'),
             features: [
-                t('services_page.vip_feat1'),
-                t('services_page.vip_feat2'),
-                t('services_page.vip_feat3'),
-                t('services_page.vip_feat4'),
-                t('services_page.vip_feat5'),
-                t('services_page.vip_feat6'),
+                t('services_page.pack_feat1'),
+                t('services_page.pack_feat2'),
+                t('services_page.pack_feat3'),
+                t('services_page.pack_feat4'),
+                t('services_page.pack_feat5'),
             ],
         },
     ];
 
+    const options = [
+        { label: t('services_page.option_traduction'), price: t('services_page.option_traduction_price') },
+        { label: t('services_page.option_legalisation'), price: t('services_page.option_legalisation_price') },
+        { label: t('services_page.option_assurance'), price: t('services_page.option_assurance_price') },
+        { label: t('services_page.option_rdv'), price: t('services_page.option_rdv_price') },
+        { label: t('services_page.option_suivi'), price: t('services_page.option_suivi_price') },
+    ];
+
     return (
         <div className="bg-slate-50 min-h-screen pb-20">
-            {/* 1. Hero Section - Unified with Visa pages */}
+            {/* 1. Hero Section */}
             <VisaHero
                 badge="● NOS SOLUTIONS"
                 title={t('services_page.hero_title')}
@@ -74,7 +83,7 @@ const ServicesClientPage: React.FC = () => {
                 backgroundImage={IMAGES.OFFICE}
             />
 
-            {/* 2. Services Grid */}
+            {/* 2. Packs Pricing Grid */}
             <PageContainer negativeMargin>
                 <div className="grid md:grid-cols-3 gap-8 mb-16">
                     {tiers.map(tier => (
@@ -88,7 +97,75 @@ const ServicesClientPage: React.FC = () => {
                     ))}
                 </div>
 
-                {/* 3. Insurance & Extra Info Section */}
+                {/* 3. Ce qui est inclus */}
+                <div className="mb-12">
+                    <h2 className="text-2xl font-black text-slate-900 mb-6">{t('services_page.included_title')}</h2>
+                    <div className="bg-white rounded-2xl shadow-lg p-8 border border-slate-100">
+                        <ul className="grid md:grid-cols-2 gap-4">
+                            {[1, 2, 3, 4, 5].map(i => (
+                                <li key={i} className="flex items-start">
+                                    <div className="bg-amber-100 rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                                        <Check className="h-4 w-4 text-amber-600" />
+                                    </div>
+                                    <span className="text-slate-700 leading-relaxed">{t(`services_page.pack_feat${i}`)}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+
+                {/* 4. Frais administratifs */}
+                <div className="mb-12">
+                    <h2 className="text-2xl font-black text-slate-900 mb-6">{t('services_page.admin_fees_title')}</h2>
+                    <div className="bg-blue-50 rounded-2xl p-8 border border-blue-100">
+                        <div className="flex items-start mb-4">
+                            <Info className="h-5 w-5 text-blue-500 mr-3 mt-0.5 shrink-0" />
+                            <p className="text-sm font-semibold text-blue-800">{t('services_page.admin_fees_subtitle')}</p>
+                        </div>
+                        <ul className="space-y-3 ml-8">
+                            <li className="text-slate-700 text-sm leading-relaxed">{t('services_page.admin_fees_visa')}</li>
+                            <li className="text-slate-700 text-sm leading-relaxed">{t('services_page.admin_fees_center')}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                {/* 5. Options complémentaires */}
+                <div className="mb-12">
+                    <h2 className="text-2xl font-black text-slate-900 mb-6">{t('services_page.options_title')}</h2>
+                    <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden">
+                        <div className="overflow-x-auto">
+                            <table className="w-full">
+                                <tbody>
+                                    {options.map((opt, idx) => (
+                                        <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
+                                            <td className="px-6 py-4 text-slate-700 font-medium">{opt.label}</td>
+                                            <td className="px-6 py-4 text-right text-amber-600 font-bold whitespace-nowrap">{opt.price}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 6. Conditions */}
+                <div className="mb-16">
+                    <h2 className="text-2xl font-black text-slate-900 mb-6">{t('services_page.conditions_title')}</h2>
+                    <div className="bg-amber-50 rounded-2xl p-8 border border-amber-100">
+                        <ul className="space-y-4">
+                            <li className="flex items-start">
+                                <AlertTriangle className="h-5 w-5 text-amber-500 mr-3 mt-0.5 shrink-0" />
+                                <span className="text-slate-700 text-sm leading-relaxed">{t('services_page.condition1')}</span>
+                            </li>
+                            <li className="flex items-start">
+                                <AlertTriangle className="h-5 w-5 text-amber-500 mr-3 mt-0.5 shrink-0" />
+                                <span className="text-slate-700 text-sm leading-relaxed">{t('services_page.condition2')}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                {/* 7. Insurance & Custom Support */}
                 <div className="grid md:grid-cols-2 gap-8">
                     <Card variant="white" className="p-10 border-slate-100 shadow-xl rounded-[2rem]">
                         <h3 className="text-xl font-black text-slate-900 mb-4">
