@@ -32,17 +32,26 @@ const Navbar: React.FC = () => {
       console.error('Failed to set locale cookie:', error);
     }
 
-    // 2. Redirect to translated path
-    const pathWithoutLang = pathname?.replace(/^\/([a-z]{2})/, '') || '';
+    // 2. Détection du slug courant (FR n'a pas de préfixe dans l'URL)
+    const NON_DEFAULT_LANGS = ['en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'];
+    const pathSegments = pathname?.split('/').filter(Boolean) || [];
+    const hasLangPrefix = pathSegments.length > 0 && NON_DEFAULT_LANGS.includes(pathSegments[0]);
+
+    const pathWithoutLang = hasLangPrefix
+      ? '/' + pathSegments.slice(1).join('/')
+      : pathname || '';
     const cleanPath = pathWithoutLang.startsWith('/') ? pathWithoutLang.slice(1) : pathWithoutLang;
+
     const currentLangSlugs = REVERSE_MAP[currentLang] || {};
     const decodedPath = decodeURIComponent(cleanPath);
     const pageKey = (decodedPath === '' ? 'home' : currentLangSlugs[decodedPath]) as PageKey;
 
     if (pageKey) {
+      // getTranslatedPath génère déjà la bonne URL (sans /fr/ pour le FR)
       router.push(getTranslatedPath(pageKey, newLang));
     } else {
-      router.push(`/${newLang}/${cleanPath}`);
+      // Fallback : FR sans préfixe, autres avec préfixe
+      router.push(newLang === 'fr' ? (cleanPath ? `/${cleanPath}` : '/') : `/${newLang}/${cleanPath}`);
     }
   };
 

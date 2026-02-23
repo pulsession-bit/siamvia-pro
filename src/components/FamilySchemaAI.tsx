@@ -155,13 +155,7 @@ export const FamilySchemaAI: React.FC<FamilySchemaAIProps> = ({ lang }) => {
             'offerCount': '3',
             'availability': 'https://schema.org/InStock'
         },
-        'aggregateRating': {
-            '@type': 'AggregateRating',
-            'ratingValue': '4.9',
-            'reviewCount': '95',
-            'bestRating': '5',
-            'worstRating': '1'
-        }
+
     };
 
     const speakableSchema = {

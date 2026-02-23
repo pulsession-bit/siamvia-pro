@@ -218,43 +218,7 @@ export const DTVSchemaAI: React.FC<DTVSchemaAIProps> = ({ lang }) => {
             'offerCount': '3',
             'availability': 'https://schema.org/InStock'
         },
-        'aggregateRating': {
-            '@type': 'AggregateRating',
-            'ratingValue': '4.9',
-            'reviewCount': '127',
-            'bestRating': '5',
-            'worstRating': '1'
-        },
-        'review': [
-            {
-                '@type': 'Review',
-                'reviewRating': {
-                    '@type': 'Rating',
-                    'ratingValue': '5',
-                    'bestRating': '5'
-                },
-                'author': {
-                    '@type': 'Person',
-                    'name': 'Marie L.'
-                },
-                'reviewBody': 'Service impeccable. Mon visa DTV a été approuvé en 8 jours. Le portfolio préparé par Siam Visa Pro était parfait.',
-                'datePublished': '2025-11-15'
-            },
-            {
-                '@type': 'Review',
-                'reviewRating': {
-                    '@type': 'Rating',
-                    'ratingValue': '5',
-                    'bestRating': '5'
-                },
-                'author': {
-                    '@type': 'Person',
-                    'name': 'Thomas K.'
-                },
-                'reviewBody': 'En tant que freelance, j\'avais peur du portfolio. Leur équipe a tout géré. Visa obtenu du premier coup.',
-                'datePublished': '2025-12-03'
-            }
-        ]
+
     };
 
     // 5. Speakable Schema — For voice assistants (Alexa, Google Assistant, Siri)

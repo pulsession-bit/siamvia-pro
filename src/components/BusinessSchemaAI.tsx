@@ -155,13 +155,7 @@ export const BusinessSchemaAI: React.FC<BusinessSchemaAIProps> = ({ lang }) => {
             'offerCount': '3',
             'availability': 'https://schema.org/InStock'
         },
-        'aggregateRating': {
-            '@type': 'AggregateRating',
-            'ratingValue': '4.8',
-            'reviewCount': '112',
-            'bestRating': '5',
-            'worstRating': '1'
-        }
+
     };
 
     const speakableSchema = {

@@ -155,13 +155,7 @@ export const StudentSchemaAI: React.FC<StudentSchemaAIProps> = ({ lang }) => {
             'offerCount': '2',
             'availability': 'https://schema.org/InStock'
         },
-        'aggregateRating': {
-            '@type': 'AggregateRating',
-            'ratingValue': '4.7',
-            'reviewCount': '78',
-            'bestRating': '5',
-            'worstRating': '1'
-        }
+
     };
 
     const speakableSchema = {

@@ -162,13 +162,7 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang, pageKey, title, show
             'Document Preparation',
             'Immigration Services'
         ],
-        'aggregateRating': {
-            '@type': 'AggregateRating',
-            'ratingValue': '4.9',
-            'reviewCount': '127',
-            'bestRating': '5',
-            'worstRating': '1'
-        }
+
     };
 
     return (

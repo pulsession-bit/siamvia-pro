@@ -80,8 +80,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
                 alternates[l] = `${baseUrl}${getTranslatedPath(page, l)}`;
             });
 
-            // Add x-default pointing to English
-            alternates['x-default'] = `${baseUrl}${getTranslatedPath(page, 'en')}`;
+            // Add x-default pointing to French (default language, no prefix)
+            alternates['x-default'] = `${baseUrl}${getTranslatedPath(page, 'fr')}`;
 
             urls.push({
                 url: `${baseUrl}${translatedPath}`,
@@ -120,14 +120,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         const posts = getAllPosts(lang);
         const blogSlug = blogSlugs[lang];
         for (const post of posts) {
-            const articleUrl = `${baseUrl}/${lang}/${blogSlug}/${post.frontmatter.slug}`;
+            // FR blog: URL sans préfixe /fr/
+            const articleUrl = lang === 'fr'
+                ? `${baseUrl}/${blogSlug}/${post.frontmatter.slug}`
+                : `${baseUrl}/${lang}/${blogSlug}/${post.frontmatter.slug}`;
             const articleAlternates: Record<string, string> = {};
 
             if (post.frontmatter.hreflang) {
                 for (const [hLang, hSlug] of Object.entries(post.frontmatter.hreflang)) {
                     articleAlternates[hLang] = `${baseUrl}/${hLang}/${blogSlugs[hLang] || 'blog'}/${hSlug}`;
                 }
-                articleAlternates['x-default'] = articleAlternates['en'] || articleUrl;
+                articleAlternates['x-default'] = articleAlternates['fr'] || articleUrl;
             }
 
             urls.push({

@@ -91,8 +91,8 @@ export function generateMetadataWithHreflang(options: {
         languages[l] = `${baseUrl}${getTranslatedPath(pageKey, l)}`;
     });
 
-    // Add x-default pointing to English version
-    languages['x-default'] = `${baseUrl}${getTranslatedPath(pageKey, 'en')}`;
+    // x-default = version française (langue par défaut sans préfixe)
+    languages['x-default'] = `${baseUrl}${getTranslatedPath(pageKey, 'fr')}`;
 
     // Default OG image - using a professional Thailand visa themed image
     const ogImage = 'https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200&h=630&fit=crop&q=80';

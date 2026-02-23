@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { REVERSE_MAP } from "@/utils/slugs";
 
 const LOCALES = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
+const NON_DEFAULT_LOCALES = ['en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
 const DEFAULT_LOCALE = "fr";
 const LOCALE_COOKIE = "NEXT_LOCALE";
 
@@ -25,37 +26,44 @@ function isBot(ua: string | null) {
 export function middleware(req: NextRequest) {
     const { pathname } = req.nextUrl;
 
-    // 0) Exclusions
+    // 0) Exclusions statiques
     if (
         pathname.startsWith("/_next") ||
         pathname.startsWith("/api") ||
         pathname.startsWith("/admin") ||
         pathname.startsWith("/robots.txt") ||
-        pathname.startsWith("/sitemap.xml") ||
+        pathname.startsWith("/sitemap") ||
         pathname.startsWith("/favicon.ico") ||
-        pathname.includes("/@") || // Exclude Next.js/Vite dev assets
+        pathname.includes("/@") ||
         pathname.match(/\.(?:png|jpg|jpeg|gif|webp|svg|ico|css|js|map|txt|xml|woff2?|tsx|jsx|ts)$/)
     ) {
         return NextResponse.next();
     }
 
-    // 1) Check if already has locale prefix
     const parts = pathname.split("/");
     const first = parts[1];
 
-    if (LOCALES.includes(first as any)) {
-        // It has a locale. Check if we strictly need to rewrite a localized slug to an internal folder structure.
+    // ─────────────────────────────────────────────────────────────────
+    // 1) URL avec préfixe /fr/ → 301 vers URL sans préfixe (FR = défaut)
+    // ─────────────────────────────────────────────────────────────────
+    if (first === DEFAULT_LOCALE) {
+        const url = req.nextUrl.clone();
+        // /fr → /   |   /fr/slug → /slug
+        const rest = parts.slice(2).join("/");
+        url.pathname = rest ? `/${rest}` : "/";
+        return NextResponse.redirect(url, 301);
+    }
+
+    // ─────────────────────────────────────────────────────────────────
+    // 2) URL avec préfixe d'une autre langue (/en/, /de/, etc.)
+    // ─────────────────────────────────────────────────────────────────
+    if (NON_DEFAULT_LOCALES.includes(first as any)) {
         const locale = first;
-        const slug = parts.slice(2).join("/"); // everything after /fr/
+        const slug = parts.slice(2).join("/"); // tout après /en/
 
-        // Check REVERSE_MAP
-        // REVERSE_MAP['fr']['creer-entreprise-thailande'] => 'company-setup'
+        // Résolution du slug localisé → clé interne
         const internalKey = REVERSE_MAP[locale]?.[slug];
-
         if (internalKey) {
-            // We found a corresponding internal key.
-            // Rewrite the URL to point to the actual Next.js folder (e.g. /fr/company-setup)
-            // But keep the URL in the browser bar as is.
             const url = req.nextUrl.clone();
             url.pathname = `/${locale}/${internalKey}`;
             return NextResponse.rewrite(url);
@@ -64,20 +72,26 @@ export function middleware(req: NextRequest) {
         return NextResponse.next();
     }
 
-    // 2) Detect locale: cookie > accept-language > default
-    const cookieLocale = req.cookies.get(LOCALE_COOKIE)?.value;
-    const detected =
-        (cookieLocale && LOCALES.includes(cookieLocale as any) ? cookieLocale : null) ||
-        detectFromAcceptLanguage(req.headers.get("accept-language")) ||
-        DEFAULT_LOCALE;
+    // ─────────────────────────────────────────────────────────────────
+    // 3) URL sans préfixe → traitement FR (langue par défaut)
+    // ─────────────────────────────────────────────────────────────────
 
-    // 3) SEO for bots
-    const targetLocale = isBot(req.headers.get("user-agent")) ? DEFAULT_LOCALE : detected;
+    // 3a) Résolution du slug FR localisé → clé interne
+    //     Ex: /visa-dtv-thailande → rewrite interne vers /fr/dtv
+    const slug = parts.slice(1).join("/");
+    const internalKey = REVERSE_MAP[DEFAULT_LOCALE]?.[slug];
+    if (internalKey) {
+        const url = req.nextUrl.clone();
+        url.pathname = `/fr/${internalKey}`;
+        return NextResponse.rewrite(url);
+    }
 
+    // 3b) URL racine ou path direct → rewrite silencieux vers /fr/...
+    //     Le navigateur voit "/" mais Next.js sert "/fr/"
+    //     Les bots voient bien du contenu FR sur l'URL canonique
     const url = req.nextUrl.clone();
-    url.pathname = `/${targetLocale}${pathname === '/' ? '' : pathname}`;
-
-    return NextResponse.redirect(url, 307);
+    url.pathname = `/fr${pathname === "/" ? "" : pathname}`;
+    return NextResponse.rewrite(url);
 }
 
 export const config = {

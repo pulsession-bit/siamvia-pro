@@ -211,43 +211,7 @@ export const LTRSchemaAI: React.FC<LTRSchemaAIProps> = ({ lang }) => {
             'offerCount': '3',
             'availability': 'https://schema.org/InStock'
         },
-        'aggregateRating': {
-            '@type': 'AggregateRating',
-            'ratingValue': '4.8',
-            'reviewCount': '64',
-            'bestRating': '5',
-            'worstRating': '1'
-        },
-        'review': [
-            {
-                '@type': 'Review',
-                'reviewRating': {
-                    '@type': 'Rating',
-                    'ratingValue': '5',
-                    'bestRating': '5'
-                },
-                'author': {
-                    '@type': 'Person',
-                    'name': 'Michael R.'
-                },
-                'reviewBody': 'Applied for LTR as a Work-from-Thailand Professional. SiamVisa Pro handled the entire BOI process. Approved in 25 days. Highly recommend.',
-                'datePublished': '2025-11-08'
-            },
-            {
-                '@type': 'Review',
-                'reviewRating': {
-                    '@type': 'Rating',
-                    'ratingValue': '5',
-                    'bestRating': '5'
-                },
-                'author': {
-                    '@type': 'Person',
-                    'name': 'Catherine D.'
-                },
-                'reviewBody': 'Processus LTR complexe mais très bien accompagné. Le 17% flat tax est un énorme avantage. Merci SiamVisa Pro !',
-                'datePublished': '2025-12-22'
-            }
-        ]
+
     };
 
     // 5. Speakable Schema

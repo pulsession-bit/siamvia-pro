@@ -5,19 +5,23 @@ import { getTranslatedPath, PageKey } from '../utils/slugs';
 
 export type SupportedLang = 'fr' | 'en' | 'de' | 'es' | 'it' | 'th' | 'ru' | 'zh' | 'ja' | 'ko' | 'ar';
 
+const ALL_LANGS: SupportedLang[] = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'];
+// Langues avec préfixe dans l'URL (FR est la langue par défaut, sans préfixe)
+const NON_DEFAULT_LANGS = ['en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'];
+
 export function useCurrentLang(): SupportedLang {
     const pathname = usePathname();
 
-    // Extract language from pathname (e.g., /fr/contact -> fr)
-    const match = pathname?.match(/^\/([a-z]{2})/);
-    const lang = match?.[1] as SupportedLang;
+    // Extraire le premier segment du path
+    // Ex: /en/contact → 'en' | /visa-dtv-thailande → 'visa-dtv-...' (pas une langue)
+    const firstSegment = pathname?.split('/')?.[1] || '';
 
-    const languages = ['fr', 'en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'];
-
-    if (lang && languages.includes(lang)) {
-        return lang;
+    // FR n'a pas de préfixe : si le premier segment n'est pas une langue connue → FR
+    if (NON_DEFAULT_LANGS.includes(firstSegment as SupportedLang)) {
+        return firstSegment as SupportedLang;
     }
 
+    // Par défaut : français (langue par défaut sans préfixe)
     return 'fr';
 }
 
@@ -32,10 +36,14 @@ export function useLangPath() {
         const pageKey = (cleanPath === '' ? 'home' : cleanPath) as PageKey;
 
         try {
+            // getTranslatedPath génère déjà la bonne URL :
+            // FR → /slug-fr (sans préfixe), autres → /[lang]/slug
             return getTranslatedPath(pageKey, lang);
         } catch (e) {
-            // Fallback to simple language prefix if not in map
-            return `/${lang}/${cleanPath}`;
+            // Fallback : FR sans préfixe, autres avec préfixe
+            return lang === 'fr'
+                ? (cleanPath ? `/${cleanPath}` : '/')
+                : `/${lang}/${cleanPath}`;
         }
     };
 }

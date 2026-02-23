@@ -155,13 +155,7 @@ export const MedicalSchemaAI: React.FC<MedicalSchemaAIProps> = ({ lang }) => {
             'offerCount': '2',
             'availability': 'https://schema.org/InStock'
         },
-        'aggregateRating': {
-            '@type': 'AggregateRating',
-            'ratingValue': '4.9',
-            'reviewCount': '47',
-            'bestRating': '5',
-            'worstRating': '1'
-        }
+
     };
 
     const speakableSchema = {

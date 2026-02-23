@@ -367,16 +367,32 @@ const nextConfig: NextConfig = {
     Object.entries(slugMap).forEach(([lang, slugs]) => {
       Object.entries(slugs).forEach(([internal, translated]) => {
         if (internal === translated) return;
-        rewrites.push({
-          source: `/${lang}/${translated}`,
-          destination: `/${lang}/${internal}`,
-        });
-        // Blog sub-routes: /fr/blog-visa-thailande/:slug → /fr/blog/:slug
-        if (internal === 'blog') {
+        if (lang === 'fr') {
+          // FR (langue par défaut) : URL publique sans préfixe /fr/
+          // /visa-dtv-thailande → /fr/dtv (rewrite transparent)
           rewrites.push({
-            source: `/${lang}/${translated}/:slug`,
-            destination: `/${lang}/blog/:slug`,
+            source: `/${translated}`,
+            destination: `/fr/${internal}`,
           });
+          // Blog sub-routes FR : /blog-visa-thailande/:slug → /fr/blog/:slug
+          if (internal === 'blog') {
+            rewrites.push({
+              source: `/${translated}/:slug`,
+              destination: `/fr/blog/:slug`,
+            });
+          }
+        } else {
+          // Autres langues : on garde le préfixe /[lang]/
+          rewrites.push({
+            source: `/${lang}/${translated}`,
+            destination: `/${lang}/${internal}`,
+          });
+          if (internal === 'blog') {
+            rewrites.push({
+              source: `/${lang}/${translated}/:slug`,
+              destination: `/${lang}/blog/:slug`,
+            });
+          }
         }
       });
     });
@@ -384,16 +400,34 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     const redirects: any[] = [];
+
+    // ── 1) 301 : /fr/* → /* (French = langue par défaut sans préfixe) ──
+    // /fr → /
+    redirects.push({
+      source: '/fr',
+      destination: '/',
+      permanent: true,
+    });
+    // /fr/:path* → /:path*
+    redirects.push({
+      source: '/fr/:path*',
+      destination: '/:path*',
+      permanent: true,
+    });
+
+    // ── 2) 301 : /[lang]/internal → /[lang]/slug (toutes langues sauf FR) ──
     Object.entries(slugMap).forEach(([lang, slugs]) => {
+      if (lang === 'fr') return; // FR géré par le middleware
       Object.entries(slugs).forEach(([internal, translated]) => {
         if (internal === translated) return;
         redirects.push({
           source: `/${lang}/${internal}`,
           destination: `/${lang}/${translated}`,
-          statusCode: 301,
+          permanent: true,
         });
       });
     });
+
     return redirects;
   },
   async headers() {

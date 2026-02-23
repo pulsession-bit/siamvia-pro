@@ -211,43 +211,7 @@ export const RetirementSchemaAI: React.FC<RetirementSchemaAIProps> = ({ lang }) 
             'offerCount': '3',
             'availability': 'https://schema.org/InStock'
         },
-        'aggregateRating': {
-            '@type': 'AggregateRating',
-            'ratingValue': '4.9',
-            'reviewCount': '156',
-            'bestRating': '5',
-            'worstRating': '1'
-        },
-        'review': [
-            {
-                '@type': 'Review',
-                'reviewRating': {
-                    '@type': 'Rating',
-                    'ratingValue': '5',
-                    'bestRating': '5'
-                },
-                'author': {
-                    '@type': 'Person',
-                    'name': 'Robert P.'
-                },
-                'reviewBody': 'Retired to Thailand at 55. SiamVisa Pro handled everything — bank account, documents, immigration visit. Visa approved same day. Renewed twice with their help.',
-                'datePublished': '2025-09-15'
-            },
-            {
-                '@type': 'Review',
-                'reviewRating': {
-                    '@type': 'Rating',
-                    'ratingValue': '5',
-                    'bestRating': '5'
-                },
-                'author': {
-                    '@type': 'Person',
-                    'name': 'Pierre L.'
-                },
-                'reviewBody': 'Service parfait pour mon visa retraite. Aide pour l\'ouverture du compte bancaire et le dépôt des 800K. Tout s\'est fait en douceur.',
-                'datePublished': '2025-11-28'
-            }
-        ]
+
     };
 
     // 5. Speakable Schema

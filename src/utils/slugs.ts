@@ -445,17 +445,27 @@ export const SLUG_MAP: Record<string, Record<PageKey, string>> = {
     }
 };
 
+const DEFAULT_LANG = 'fr';
+
 export function getTranslatedPath(page: PageKey, lang: string): string {
     const langSlugs = SLUG_MAP[lang] || SLUG_MAP.en;
     const slug = langSlugs[page];
 
-    // If slug is undefined, check if it exists in English map as fallback
+    // Langue par défaut (FR) : pas de préfixe dans l'URL
+    if (lang === DEFAULT_LANG) {
+        if (slug === undefined) {
+            // Fallback sur la clé de page elle-même
+            return `/${page}`;
+        }
+        return slug === '' ? '/' : `/${slug}`;
+    }
+
+    // Autres langues : on garde le préfixe /[lang]/
     if (slug === undefined) {
         const enSlug = SLUG_MAP.en[page];
         if (enSlug !== undefined) {
             return enSlug === '' ? `/${lang}` : `/${lang}/${enSlug}`;
         }
-        // Last resort: use the page key itself if not mapped
         return `/${lang}/${page}`;
     }
 

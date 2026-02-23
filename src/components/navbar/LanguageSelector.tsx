@@ -46,8 +46,17 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ currentLang,
     const currentFlag = languages.find(l => l.code === currentLang)?.flag || '🇬🇧';
 
     // Calculate current page key to generate correct URLs
-    const pathWithoutLang = pathname?.replace(/^\/([a-z]{2})/, '') || '';
+    // FR (défaut) n'a pas de préfixe dans l'URL, les autres ont /[lang]/
+    const NON_DEFAULT_LANGS = ['en', 'de', 'es', 'it', 'th', 'ru', 'zh', 'ja', 'ko', 'ar'];
+    const pathSegments = pathname?.split('/').filter(Boolean) || [];
+    const hasLangPrefix = pathSegments.length > 0 && NON_DEFAULT_LANGS.includes(pathSegments[0]);
+
+    // Slug de la page dans la langue courante
+    const pathWithoutLang = hasLangPrefix
+        ? '/' + pathSegments.slice(1).join('/')
+        : pathname || '';
     const cleanPath = pathWithoutLang.startsWith('/') ? pathWithoutLang.slice(1) : pathWithoutLang;
+
     const currentLangSlugs = REVERSE_MAP[currentLang] || {};
     const decodedPath = decodeURIComponent(cleanPath);
     const pageKey = (decodedPath === '' ? 'home' : currentLangSlugs[decodedPath]) as PageKey;
@@ -67,7 +76,10 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ currentLang,
                 <div className={`absolute ${align === 'right' ? 'right-0' : 'left-0'} mt-2 w-48 bg-white rounded-xl shadow-xl py-2 border border-slate-100 animate-in fade-in zoom-in-95 duration-100 z-50`}>
                     <div className="max-h-64 overflow-y-auto custom-scrollbar">
                         {languages.map((lang) => {
-                            const href = pageKey ? getTranslatedPath(pageKey, lang.code) : `/${lang.code}/${cleanPath}`;
+                            const fallback = lang.code === 'fr'
+                                ? (cleanPath ? `/${cleanPath}` : '/')
+                                : `/${lang.code}/${cleanPath}`;
+                            const href = pageKey ? getTranslatedPath(pageKey, lang.code) : fallback;
 
                             return (
                                 <Link

@@ -155,13 +155,7 @@ export const TouristSchemaAI: React.FC<TouristSchemaAIProps> = ({ lang }) => {
             'offerCount': '2',
             'availability': 'https://schema.org/InStock'
         },
-        'aggregateRating': {
-            '@type': 'AggregateRating',
-            'ratingValue': '4.8',
-            'reviewCount': '203',
-            'bestRating': '5',
-            'worstRating': '1'
-        }
+
     };
 
     const speakableSchema = {

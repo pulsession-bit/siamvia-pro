@@ -62,13 +62,7 @@ export const HomeSchemaAI: React.FC<HomeSchemaAIProps> = ({ lang }) => {
             'url': 'https://www.linkedin.com/in/raphael-buresi-4a9562a/',
             'jobTitle': schema.founder_title
         },
-        'aggregateRating': {
-            '@type': 'AggregateRating',
-            'ratingValue': '4.9',
-            'reviewCount': '340',
-            'bestRating': '5',
-            'worstRating': '1'
-        },
+
         'hasOfferCatalog': {
             '@type': 'OfferCatalog',
             'name': 'Thailand Visa Services',

@@ -211,43 +211,7 @@ export const EliteSchemaAI: React.FC<EliteSchemaAIProps> = ({ lang }) => {
             'offerCount': '3',
             'availability': 'https://schema.org/InStock'
         },
-        'aggregateRating': {
-            '@type': 'AggregateRating',
-            'ratingValue': '4.9',
-            'reviewCount': '89',
-            'bestRating': '5',
-            'worstRating': '1'
-        },
-        'review': [
-            {
-                '@type': 'Review',
-                'reviewRating': {
-                    '@type': 'Rating',
-                    'ratingValue': '5',
-                    'bestRating': '5'
-                },
-                'author': {
-                    '@type': 'Person',
-                    'name': 'James W.'
-                },
-                'reviewBody': 'SiamVisa Pro made the Elite Visa process seamless. Got my Platinum membership approved in 3 weeks. VIP service from start to finish.',
-                'datePublished': '2025-10-20'
-            },
-            {
-                '@type': 'Review',
-                'reviewRating': {
-                    '@type': 'Rating',
-                    'ratingValue': '5',
-                    'bestRating': '5'
-                },
-                'author': {
-                    '@type': 'Person',
-                    'name': 'Sophie M.'
-                },
-                'reviewBody': 'Excellent conseil pour choisir le bon package Elite. L\'équipe a tout géré, de la candidature à l\'accueil VIP à l\'aéroport.',
-                'datePublished': '2025-12-10'
-            }
-        ]
+
     };
 
     // 5. Speakable Schema
