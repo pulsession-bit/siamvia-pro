@@ -318,7 +318,7 @@ export const zh = {
     "pack_feat1": "资格审核 + 个性化清单",
     "pack_feat2": "表格准备/填写",
     "pack_feat3": "材料审核与合规检查（护照、照片、财务证明等）",
-    "pack_feat4": "最终材料整理（"大使馆版"）",
+    "pack_feat4": "最终材料整理（\\\"大使馆版\\\"）",
     "pack_feat5": "大使馆/领事馆递交 + 护照返还全程跟踪",
     "admin_fees_title": "行政费用",
     "admin_fees_subtitle": "直接支付给大使馆/领事馆",
@@ -338,7 +338,7 @@ export const zh = {
     "included_title": "每个套餐包含的内容",
     "conditions_title": "条款",
     "condition1": "大使馆费用另计（且不可退还）。",
-    "condition2": "如大使馆要求申请人亲自到场：将提供"陪同递交"服务（我们陪同您前往）而非"代理递交"。"
+    "condition2": "如大使馆要求申请人亲自到场：将提供\\\"陪同递交\\\"服务（我们陪同您前往）而非\\\"代理递交\\\"。"
   },
   "eligibility": {
     "steps": [
