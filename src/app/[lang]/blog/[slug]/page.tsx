@@ -26,13 +26,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
     const baseUrl = 'https://www.siamvisapro.com';
     const blogSlug = BLOG_SLUGS[lang] || 'blog';
-    const canonical = `${baseUrl}/${lang}/${blogSlug}/${slug}`;
+    const canonical = lang === 'fr' ? `${baseUrl}/${blogSlug}/${slug}` : `${baseUrl}/${lang}/${blogSlug}/${slug}`;
 
     const languages: Record<string, string> = {};
     if (post.frontmatter.hreflang) {
         for (const [hLang, hSlug] of Object.entries(post.frontmatter.hreflang)) {
             const hBlogSlug = BLOG_SLUGS[hLang] || 'blog';
-            languages[hLang] = `${baseUrl}/${hLang}/${hBlogSlug}/${hSlug}`;
+            languages[hLang] = hLang === 'fr' ? `${baseUrl}/${hBlogSlug}/${hSlug}` : `${baseUrl}/${hLang}/${hBlogSlug}/${hSlug}`;
         }
         languages['x-default'] = languages['en'] || canonical;
     }
@@ -79,7 +79,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ lang:
         dateModified: post.frontmatter.updated_at || post.frontmatter.published_at,
         author: { '@type': 'Organization', name: post.frontmatter.author || 'SiamVisa Pro' },
         publisher: { '@type': 'Organization', name: 'SiamVisa Pro', url: baseUrl },
-        mainEntityOfPage: `${baseUrl}/${lang}/${blogSlug}/${slug}`,
+        mainEntityOfPage: lang === 'fr' ? `${baseUrl}/${blogSlug}/${slug}` : `${baseUrl}/${lang}/${blogSlug}/${slug}`,
         image: post.frontmatter.featured_image,
         inLanguage: lang,
     };
@@ -89,7 +89,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ lang:
         '@type': 'BreadcrumbList',
         itemListElement: [
             { '@type': 'ListItem', position: 1, name: t.breadcrumb_home, item: `${baseUrl}/${lang}` },
-            { '@type': 'ListItem', position: 2, name: t.breadcrumb_blog, item: `${baseUrl}/${lang}/${blogSlug}` },
+            { '@type': 'ListItem', position: 2, name: t.breadcrumb_blog, item: lang === 'fr' ? `${baseUrl}/${blogSlug}` : `${baseUrl}/${lang}/${blogSlug}` },
             { '@type': 'ListItem', position: 3, name: post.frontmatter.title },
         ],
     };
@@ -110,7 +110,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ lang:
                         <nav className="text-sm text-slate-400 mb-6">
                             <Link href={getTranslatedPath('home', lang)} className="hover:text-white">{t.breadcrumb_home}</Link>
                             <span className="mx-2">/</span>
-                            <Link href={`/${lang}/${blogSlug}`} className="hover:text-white">{t.breadcrumb_blog}</Link>
+                            <Link href={lang === 'fr' ? `/${blogSlug}` : `/${lang}/${blogSlug}`} className="hover:text-white">{t.breadcrumb_blog}</Link>
                             <span className="mx-2">/</span>
                             <span className="text-slate-300">{post.frontmatter.title}</span>
                         </nav>
@@ -175,7 +175,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ lang:
 
                     <div className="max-w-3xl pt-8 border-t border-slate-200">
                         <Link
-                            href={`/${lang}/${blogSlug}`}
+                            href={lang === 'fr' ? `/${blogSlug}` : `/${lang}/${blogSlug}`}
                             className="inline-flex items-center text-amber-600 hover:text-amber-700 font-medium"
                         >
                             <ArrowLeft className="h-4 w-4 mr-2" />

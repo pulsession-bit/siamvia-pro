@@ -76,7 +76,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
     const languages: Record<string, string> = {};
     for (const l of BLOG_LANGS) {
-        languages[l] = `${baseUrl}/${l}/${BLOG_SLUGS[l] || 'blog'}`;
+        languages[l] = l === 'fr'
+            ? `${baseUrl}/${BLOG_SLUGS[l] || 'blog'}`
+            : `${baseUrl}/${l}/${BLOG_SLUGS[l] || 'blog'}`;
     }
     languages['x-default'] = languages['en'];
 
@@ -84,7 +86,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         title: t.meta_title,
         description: t.meta_description,
         alternates: {
-            canonical: `${baseUrl}/${lang}/${blogSlug}`,
+            canonical: lang === 'fr' ? `${baseUrl}/${blogSlug}` : `${baseUrl}/${lang}/${blogSlug}`,
             languages,
         },
     };
@@ -137,7 +139,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ lang
                                 return (
                                     <Link
                                         key={post.frontmatter.slug}
-                                        href={`/${lang}/${blogSlug}/${post.frontmatter.slug}`}
+                                        href={lang === 'fr' ? `/${blogSlug}/${post.frontmatter.slug}` : `/${lang}/${blogSlug}/${post.frontmatter.slug}`}
                                         className="group bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-md hover:border-amber-200 transition-all"
                                     >
                                         {post.frontmatter.featured_image && (
