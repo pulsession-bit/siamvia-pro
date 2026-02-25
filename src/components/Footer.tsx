@@ -149,9 +149,13 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start space-x-3 group">
                 <MapPin className="h-5 w-5 text-amber-500 mt-0.5" />
-                <div className="flex flex-col space-y-2">
-                  <span className="group-hover:text-slate-200 transition-colors font-bold text-slate-300">{t('footer.office_usa')}</span>
-                  <span className="group-hover:text-slate-200 transition-colors">{t('footer.office_bkk')}</span>
+                <div className="flex flex-col space-y-2 text-slate-400">
+                  <span className="group-hover:text-amber-400/80 transition-colors font-bold text-slate-200">
+                    {t('footer.office_bkk')}
+                  </span>
+                  <span className="group-hover:text-slate-300 transition-colors text-xs opacity-80">
+                    {t('footer.office_usa')}
+                  </span>
                   <span className="text-[10px] text-slate-600 font-mono tracking-tighter uppercase">{t('footer.tax_id')}</span>
                 </div>
               </li>
