@@ -67,7 +67,11 @@ const ServicesClientPage: React.FC = () => {
         { label: t('services_page.option_traduction'), price: t('services_page.option_traduction_price') },
         { label: t('services_page.option_legalisation'), price: t('services_page.option_legalisation_price') },
         { label: t('services_page.option_assurance'), price: t('services_page.option_assurance_price'), link: langPath('insurance') },
-        { label: t('services_page.option_rdv'), price: t('services_page.option_rdv_price') },
+        {
+            label: t('services_page.option_rdv'),
+            price: t('services_page.option_rdv_price'),
+            action: () => setShowAppointment(true)
+        },
         { label: t('services_page.option_suivi'), price: t('services_page.option_suivi_price') },
     ];
 
@@ -136,11 +140,18 @@ const ServicesClientPage: React.FC = () => {
                         <div className="overflow-x-auto">
                             <table className="w-full">
                                 <tbody>
-                                    {options.map((opt, idx) => (
+                                    {options.map((opt: any, idx) => (
                                         <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
                                             <td className="px-6 py-4 text-slate-700 font-medium">
                                                 {opt.link ? (
                                                     <a href={opt.link} className="text-amber-600 hover:text-amber-700 underline underline-offset-2">{opt.label}</a>
+                                                ) : opt.action ? (
+                                                    <button
+                                                        onClick={opt.action}
+                                                        className="text-amber-600 hover:text-amber-700 underline underline-offset-2 text-left"
+                                                    >
+                                                        {opt.label}
+                                                    </button>
                                                 ) : opt.label}
                                             </td>
                                             <td className="px-6 py-4 text-right text-amber-600 font-bold whitespace-nowrap">{opt.price}</td>
