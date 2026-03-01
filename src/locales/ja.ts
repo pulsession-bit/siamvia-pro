@@ -12,6 +12,7 @@ export const ja = {
     "insurance": "旅行保険",
     "contact": "お問い合わせ",
     "member": "会員エリア",
+    "book_appointment": "📅 予約する",
     "eligibility": "無料診断を始める",
     "ltr": "LTRビザ",
     "languages": "言語",

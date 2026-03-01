@@ -98,8 +98,19 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                         ))}
                     </div>
                     <div className="p-6 border-t border-slate-100 bg-slate-50">
-                        <a href={SCORING_ENGINE_URL} className="block w-full text-center bg-amber-500 text-slate-900 py-4 rounded-xl font-bold text-lg shadow-lg mb-6">
+                        <a href={SCORING_ENGINE_URL} className="block w-full text-center bg-amber-500 text-slate-900 py-4 rounded-xl font-bold text-lg shadow-lg mb-3">
                             {t('nav.eligibility')}
+                        </a>
+
+                        <a
+                            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3jkouOVtd1LAjPwzOklBSnyFlyY1_JUcBGeZtF5djNfgDe3zPHye5FZaPitzyoXeGYEQoonCtX"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center gap-2 w-full text-center bg-blue-600 hover:bg-blue-500 text-white py-4 rounded-xl font-bold text-base shadow-lg mb-6 transition-colors"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            <span>📅</span>
+                            <span>{t('nav.book_appointment')}</span>
                         </a>
 
                         <div className="relative">

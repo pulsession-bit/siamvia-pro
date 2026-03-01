@@ -45,7 +45,8 @@ export const fr = {
       "others": "Autres Visas",
       "expatriation": "Expatriation & Immo"
     },
-    "member": "Espace Client"
+    "member": "Espace Client",
+    "book_appointment": "📅 Prendre RDV"
   },
   "ltr_page": {
     "meta": {

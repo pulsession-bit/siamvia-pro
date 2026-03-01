@@ -13,6 +13,7 @@ export const en = {
     "faq": "FAQ",
     "contact": "Contact",
     "member": "Client Area",
+    "book_appointment": "📅 Book a Meeting",
     "eligibility": "Start your Audit",
     "ltr": "Visa LTR",
     "languages": "Languages",

@@ -12,6 +12,7 @@ export const ko = {
     "insurance": "여행 보험",
     "contact": "문의하기",
     "member": "회원 공간",
+    "book_appointment": "📅 예약하기",
     "eligibility": "무료 진단 시작",
     "ltr": "LTR 비자",
     "languages": "언어",

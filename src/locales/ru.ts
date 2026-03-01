@@ -12,6 +12,7 @@ export const ru = {
     "insurance": "Страхование",
     "contact": "Контакты",
     "member": "Кабинет",
+    "book_appointment": "📅 Записаться",
     "eligibility": "Начать аудит",
     "ltr": "Виза LTR",
     "languages": "Языки",

@@ -12,6 +12,7 @@ export const es = {
     "insurance": "Seguro de Viaje",
     "contact": "Contacto",
     "member": "Área Cliente",
+    "book_appointment": "📅 Reservar Cita",
     "eligibility": "Iniciar su Auditoría",
     "ltr": "Visa LTR",
     "languages": "Idiomas",

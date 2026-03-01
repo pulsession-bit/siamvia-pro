@@ -15,6 +15,7 @@ export const de = {
     "insurance": "Reiseversicherung",
     "contact": "Kontakt",
     "member": "Kundenbereich",
+    "book_appointment": "📅 Termin buchen",
     "eligibility": "Audit starten",
     "ltr": "Visa LTR",
     "languages": "Sprachen",

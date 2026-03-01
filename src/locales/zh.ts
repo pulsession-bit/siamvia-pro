@@ -12,6 +12,7 @@ export const zh = {
     "insurance": "旅行保险",
     "contact": "联系我们",
     "member": "会员中心",
+    "book_appointment": "📅 预约咨询",
     "eligibility": "开始您的评估",
     "ltr": "LTR 签证",
     "languages": "语言",

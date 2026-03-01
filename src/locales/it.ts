@@ -15,6 +15,7 @@ export const it = {
     "insurance": "Assicurazione Viaggio",
     "contact": "Contatti",
     "member": "Area Clienti",
+    "book_appointment": "📅 Prenota Appuntamento",
     "eligibility": "Inizia il tuo Audit",
     "ltr": "Visto LTR",
     "languages": "Lingue",
