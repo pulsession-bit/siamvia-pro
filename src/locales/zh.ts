@@ -396,6 +396,8 @@ export const zh = {
     "phone_placeholder": "带区号的号码 (如: +86...)",
     "submit_btn_project": "委托我的项目",
     "cancel_btn": "取消申请",
+    "or_divider": "或直接预约",
+    "google_calendar_btn": "📅 在 Google 日历上预约时段",
     "slot1_label": "选项 1",
     "slot1_hint": "例如：09:30",
     "slot2_label": "选项 2",

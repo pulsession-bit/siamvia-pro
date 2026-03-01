@@ -396,6 +396,8 @@ export const ko = {
     "phone_placeholder": "국가 번호 포함 연락처",
     "submit_btn_project": "프로젝트 맡기기",
     "cancel_btn": "취소",
+    "or_divider": "또는 직접 예약하기",
+    "google_calendar_btn": "📅 Google 캘린더에서 슬롯 예약",
     "error_init": "초기화 오류",
     "error_service": "서비스 이용 불가",
     "error_generic": "오류가 발생했습니다",

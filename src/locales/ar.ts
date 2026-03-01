@@ -396,6 +396,8 @@ export const ar = {
     "phone_placeholder": "الرقم مع الرمز الدولي",
     "submit_btn_project": "إرسال الطلب",
     "cancel_btn": "إلغاء",
+    "or_divider": "أو احجز مباشرةً",
+    "google_calendar_btn": "📅 احجز موعداً في Google Calendar",
     "error_init": "خطأ في التهيئة",
     "error_service": "الخدمة غير متاحة حاليا",
     "error_generic": "حدث خطأ",

@@ -1784,6 +1784,8 @@ export const fr = {
     "password_help": "Minimum 6 caractères & 1 majuscule. Vous servira pour accéder à votre espace client.",
     "submit_btn_project": "CONFIER MON PROJET",
     "cancel_btn": "Annuler la demande",
+    "or_divider": "ou réservez directement",
+    "google_calendar_btn": "📅 Réserver un créneau sur Google Calendar",
     "success_title": "Demande envoyée !",
     "success_desc": "Un expert analysera votre demande et vous recontactera très prochainement.",
     "slot1_label": "Option 1 – Heure souhaitée",

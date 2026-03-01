@@ -1004,6 +1004,8 @@ export const de = {
     "phone_placeholder": "Nr. mit Vorwahl (z.B. +49...)",
     "submit_btn_project": "PROJEKT ANVERTRAUEN",
     "cancel_btn": "Anfrage stornieren",
+    "or_divider": "oder direkt buchen",
+    "google_calendar_btn": "📅 Termin im Google Kalender buchen",
     "error_init": "Initialisierungsfehler",
     "error_service": "Dienst nicht verfügbar.",
     "error_generic": "Ein Fehler ist aufgetreten.",

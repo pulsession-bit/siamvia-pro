@@ -1437,6 +1437,8 @@ export const en = {
     "phone_placeholder": "No. with country code (e.g. +1...)",
     "submit_btn_project": "ENTRUST MY PROJECT",
     "cancel_btn": "Cancel request",
+    "or_divider": "or book directly",
+    "google_calendar_btn": "📅 Book a slot on Google Calendar",
     "error_init": "Initialization error",
     "error_service": "Booking service temporarily unavailable.",
     "error_generic": "An error occurred.",

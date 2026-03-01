@@ -396,6 +396,8 @@ export const ja = {
     "phone_placeholder": "国番号付き電話番号",
     "submit_btn_project": "プロジェクトを依頼",
     "cancel_btn": "キャンセル",
+    "or_divider": "または直接予約する",
+    "google_calendar_btn": "📅 Google カレンダーでスロットを予約",
     "error_init": "初期化エラー",
     "error_service": "サービス一時停止中",
     "error_generic": "エラーが発生しました",

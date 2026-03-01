@@ -396,6 +396,8 @@ export const it = {
     "phone_placeholder": "N. con prefisso (es: +39...)",
     "submit_btn_project": "AFFIDARE IL PROGETTO",
     "cancel_btn": "Annulla richiesta",
+    "or_divider": "oppure prenota direttamente",
+    "google_calendar_btn": "📅 Prenota uno slot su Google Calendar",
     "error_init": "Errore in.",
     "error_service": "Servizio non disponibile.",
     "error_generic": "Si è verificato un errore.",

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useLanguage } from "../contexts/LanguageContext";
-import { Loader2, Phone, MessageSquare, Mail, Video, Calendar, Clock, User } from "lucide-react";
+import { Loader2, Phone, MessageSquare, Mail, Video, Calendar, Clock, User, CalendarDays, ExternalLink } from "lucide-react";
 import { useAppointmentForm, ContactMethod } from "./appointment/useAppointmentForm";
 import { AppointmentSuccess } from "./appointment/AppointmentSuccess";
 
@@ -227,8 +227,35 @@ const ExpertAppointmentForm: React.FC<ExpertAppointmentFormProps> = ({
         )
       }
 
+      {/* Google Calendar Fast-Track */}
+      <div className="relative">
+        <div className="absolute inset-0 flex items-center">
+          <div className="w-full border-t border-slate-100" />
+        </div>
+        <div className="relative flex justify-center">
+          <span className="bg-white px-4 text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">
+            {t('appointment.or_divider') || 'ou réservez directement'}
+          </span>
+        </div>
+      </div>
+
+      <a
+        href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3jkouOVtd1LAjPwzOklBSnyFlyY1_JUcBGeZtF5djNfgDe3zPHye5FZaPitzyoXeGYEQoonCtX"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 hover:border-blue-400 hover:from-blue-100 hover:to-indigo-100 text-blue-700 font-black py-5 rounded-2xl transition-all group shadow-sm hover:shadow-md hover:shadow-blue-500/10 active:scale-95"
+      >
+        <div className="w-9 h-9 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform border border-blue-100">
+          <CalendarDays className="w-5 h-5 text-blue-600" />
+        </div>
+        <span className="text-base">
+          {t('appointment.google_calendar_btn') || '📅 Réserver un créneau sur Google Calendar'}
+        </span>
+        <ExternalLink className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
+      </a>
+
       {/* Submit */}
-      <div className="pt-4">
+      <div className="pt-2">
         <button
           type="submit"
           disabled={state.isSubmitting}

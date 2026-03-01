@@ -394,6 +394,8 @@ export const es = {
     "phone_placeholder": "Nº con prefijo (ej: +34...)",
     "submit_btn_project": "CONFIAR MI PROYECTO",
     "cancel_btn": "Cancelar solicitud",
+    "or_divider": "o reserva directamente",
+    "google_calendar_btn": "📅 Reservar un horario en Google Calendar",
     "error_init": "Error de inicio",
     "error_service": "Servicio no disponible.",
     "error_generic": "Ocurrió un error.",
