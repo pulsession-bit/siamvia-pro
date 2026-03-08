@@ -42,6 +42,26 @@ const CompanySetupClientPage: React.FC<CompanySetupClientPageProps> = ({ lang })
                     </Container>
                 </div>
 
+                {/* Video Section */}
+                <section className="py-16 bg-white border-b border-slate-100">
+                    <Container>
+                        <div className="max-w-4xl mx-auto">
+                            <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-xl">
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src="https://www.youtube.com/embed/eIkPZvpMU4U"
+                                    title="Company Registration Video"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </Container>
+                </section>
+
                 {/* 1. Structure Choice */}
                 <section className="py-16">
                     <Container>
@@ -264,6 +284,26 @@ const CompanySetupClientPage: React.FC<CompanySetupClientPageProps> = ({ lang })
                     </div>
                 </Container>
             </div>
+
+            {/* Video Section */}
+            <section className="py-16 bg-white border-b border-slate-100">
+                <Container>
+                    <div className="max-w-4xl mx-auto">
+                        <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-xl">
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src="https://www.youtube.com/embed/eIkPZvpMU4U"
+                                title="Création d'entreprise Vidéo"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </Container>
+            </section>
 
             {/* 1. Structure Choice */}
             <section className="py-16">
