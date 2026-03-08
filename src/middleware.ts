@@ -61,12 +61,24 @@ export function middleware(req: NextRequest) {
         const locale = first;
         const slug = parts.slice(2).join("/"); // tout après /en/
 
-        // Résolution du slug localisé → clé interne
-        const internalKey = REVERSE_MAP[locale]?.[slug];
+        // Résolution du slug localisé → clé interne globale
+        let internalKey = REVERSE_MAP[locale]?.[slug];
         if (internalKey) {
             const url = req.nextUrl.clone();
             url.pathname = `/${locale}/${internalKey}`;
             return NextResponse.rewrite(url);
+        }
+
+        // Résolution partielle (ex: /en/thailand-visa-blog/mon-article)
+        const baseSlug = parts[2];
+        const baseInternalKey = REVERSE_MAP[locale]?.[baseSlug];
+        if (baseInternalKey) {
+            const rest = parts.slice(3).join("/");
+            if (rest) {
+                const url = req.nextUrl.clone();
+                url.pathname = `/${locale}/${baseInternalKey}/${rest}`;
+                return NextResponse.rewrite(url);
+            }
         }
 
         return NextResponse.next();
@@ -84,6 +96,18 @@ export function middleware(req: NextRequest) {
         const url = req.nextUrl.clone();
         url.pathname = `/fr/${internalKey}`;
         return NextResponse.rewrite(url);
+    }
+
+    // Résolution partielle (ex: /blog-visa-thailande/mon-article)
+    const baseSlug = parts[1];
+    const baseInternalKey = REVERSE_MAP[DEFAULT_LOCALE]?.[baseSlug];
+    if (baseInternalKey) {
+        const rest = parts.slice(2).join("/");
+        if (rest) {
+            const url = req.nextUrl.clone();
+            url.pathname = `/fr/${baseInternalKey}/${rest}`;
+            return NextResponse.rewrite(url);
+        }
     }
 
     // 3b) URL racine ou path direct → rewrite silencieux vers /fr/...
