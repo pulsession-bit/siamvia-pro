@@ -8,7 +8,7 @@ import { URLS, IMAGES } from '@/constants';
 import { PageContainer, Card } from '@/components/ui/PageComponents';
 import { VisaHero } from '@/components/visa/VisaHero';
 import { ServiceCard } from '@/components/services/ServiceCard';
-import { X, Info, Check, AlertTriangle } from 'lucide-react';
+import { X, Info, Check, AlertTriangle, Shield, UserCheck, ClipboardCheck, Zap } from 'lucide-react';
 
 const ExpertAppointmentForm = dynamic(() => import('@/components/ExpertAppointmentForm'), {
     ssr: false,
@@ -26,12 +26,14 @@ const ServicesClientPage: React.FC = () => {
             name: t('services_page.tier_standard'),
             price: t('services_page.tier_standard_price'),
             description: t('services_page.tier_standard_desc'),
+            idealFor: t('services_page.tier_standard_ideal'),
             features: [
-                t('services_page.pack_feat1'),
-                t('services_page.pack_feat2'),
-                t('services_page.pack_feat3'),
-                t('services_page.pack_feat4'),
-                t('services_page.pack_feat5'),
+                t('services_page.standard_feat1'),
+                t('services_page.standard_feat2'),
+                t('services_page.standard_feat3'),
+                t('services_page.standard_feat4'),
+                t('services_page.standard_feat5'),
+                t('services_page.standard_feat6'),
             ],
         },
         {
@@ -39,13 +41,14 @@ const ServicesClientPage: React.FC = () => {
             name: t('services_page.tier_express'),
             price: t('services_page.tier_express_price'),
             description: t('services_page.tier_express_desc'),
+            idealFor: t('services_page.tier_express_ideal'),
             recommended: true,
+            includesLabel: t('services_page.express_includes'),
             features: [
-                t('services_page.pack_feat1'),
-                t('services_page.pack_feat2'),
-                t('services_page.pack_feat3'),
-                t('services_page.pack_feat4'),
-                t('services_page.pack_feat5'),
+                t('services_page.express_feat1'),
+                t('services_page.express_feat2'),
+                t('services_page.express_feat3'),
+                t('services_page.express_feat4'),
             ],
         },
         {
@@ -53,14 +56,24 @@ const ServicesClientPage: React.FC = () => {
             name: t('services_page.tier_premium'),
             price: t('services_page.tier_premium_price'),
             description: t('services_page.tier_premium_desc'),
+            idealFor: t('services_page.tier_premium_ideal'),
+            includesLabel: t('services_page.premium_includes'),
             features: [
-                t('services_page.pack_feat1'),
-                t('services_page.pack_feat2'),
-                t('services_page.pack_feat3'),
-                t('services_page.pack_feat4'),
-                t('services_page.pack_feat5'),
+                t('services_page.premium_feat1'),
+                t('services_page.premium_feat2'),
+                t('services_page.premium_feat3'),
+                t('services_page.premium_feat4'),
+                t('services_page.premium_feat5'),
+                t('services_page.premium_feat6'),
             ],
         },
+    ];
+
+    const reassuranceItems = [
+        { icon: UserCheck, text: t('services_page.reassurance1') },
+        { icon: Shield, text: t('services_page.reassurance2') },
+        { icon: ClipboardCheck, text: t('services_page.reassurance3') },
+        { icon: Zap, text: t('services_page.reassurance4') },
     ];
 
     const options = [
@@ -101,20 +114,26 @@ const ServicesClientPage: React.FC = () => {
                     ))}
                 </div>
 
-                {/* 3. Ce qui est inclus */}
-                <div className="mb-12">
-                    <h2 className="text-2xl font-black text-slate-900 mb-6">{t('services_page.included_title')}</h2>
-                    <div className="bg-white rounded-2xl shadow-lg p-8 border border-slate-100">
-                        <ul className="grid md:grid-cols-2 gap-4">
-                            {[1, 2, 3, 4, 5].map(i => (
-                                <li key={i} className="flex items-start">
-                                    <div className="bg-amber-100 rounded-full p-1 mr-3 mt-0.5 shrink-0">
-                                        <Check className="h-4 w-4 text-amber-600" />
+                {/* 3. Bloc Réassurance */}
+                <div className="mb-16">
+                    <h2 className="text-2xl font-black text-slate-900 mb-8 text-center">
+                        {t('services_page.reassurance_title')}
+                    </h2>
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {reassuranceItems.map((item, idx) => {
+                            const Icon = item.icon;
+                            return (
+                                <div
+                                    key={idx}
+                                    className="bg-white rounded-2xl p-6 shadow-md border border-slate-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 text-center"
+                                >
+                                    <div className="w-12 h-12 mx-auto mb-4 bg-amber-50 rounded-xl flex items-center justify-center">
+                                        <Icon className="h-6 w-6 text-amber-600" />
                                     </div>
-                                    <span className="text-slate-700 leading-relaxed">{t(`services_page.pack_feat${i}`)}</span>
-                                </li>
-                            ))}
-                        </ul>
+                                    <p className="text-slate-700 font-semibold text-sm leading-snug">{item.text}</p>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
 
@@ -141,7 +160,7 @@ const ServicesClientPage: React.FC = () => {
                             <table className="w-full">
                                 <tbody>
                                     {options.map((opt: any, idx) => (
-                                        <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
+                                        <tr key={idx} className={`${idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'} transition-colors hover:bg-amber-50/40`}>
                                             <td className="px-6 py-4 text-slate-700 font-medium">
                                                 {opt.link ? (
                                                     <a href={opt.link} className="text-amber-600 hover:text-amber-700 underline underline-offset-2">{opt.label}</a>
