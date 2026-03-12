@@ -101,8 +101,8 @@ const ServicesClientPage: React.FC = () => {
             />
 
             {/* 2. Packs Pricing Grid */}
-            <PageContainer negativeMargin>
-                <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <PageContainer>
+                <div className="grid md:grid-cols-3 gap-8 mb-16 -mt-[30px]">
                     {tiers.map(tier => (
                         <ServiceCard
                             key={tier.id}

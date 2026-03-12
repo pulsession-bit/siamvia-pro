@@ -96,7 +96,7 @@ const Navbar: React.FC = () => {
                 href={langPath('ai-technology')}
                 className="md:hidden flex items-center gap-1 bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 py-1.5 rounded-lg shadow-md text-xs font-bold border border-amber-300 transition-all whitespace-nowrap"
               >
-                Audit Gratuit IA
+                {t('nav.free_audit')}
               </Link>
 
               <div className="hidden md:block">
@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
                 href={langPath('ai-technology')}
                 className="hidden md:flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 md:px-5 py-2 rounded-lg shadow-lg shadow-amber-400/20 text-sm font-bold border border-amber-300 transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
               >
-                Audit Gratuit IA
+                {t('nav.free_audit')}
               </Link>
             </div>
           </div>

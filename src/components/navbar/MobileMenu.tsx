@@ -98,13 +98,6 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                         ))}
                     </div>
                     <div className="p-6 border-t border-slate-100 bg-slate-50">
-                        <Link
-                            href={langPath('ai-technology')}
-                            onClick={() => setIsOpen(false)}
-                            className="block w-full text-center bg-transparent border border-amber-500 text-amber-600 hover:bg-amber-50 py-4 rounded-xl font-bold text-lg mb-3 transition-colors"
-                        >
-                            Audit Gratuit IA
-                        </Link>
 
                         <a href={SCORING_ENGINE_URL} className="block w-full text-center bg-amber-500 text-slate-900 py-4 rounded-xl font-bold text-lg shadow-lg mb-3">
                             {t('nav.eligibility')}
