@@ -109,7 +109,6 @@ const Navbar: React.FC = () => {
                 rel="noopener noreferrer"
                 className="hidden md:flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-3 md:px-4 py-2 rounded-lg shadow-lg shadow-blue-600/20 text-sm font-bold border border-blue-500 transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
               >
-                <span>📅</span>
                 <span className="hidden lg:inline">{t('nav.book_appointment')}</span>
               </a>
 
