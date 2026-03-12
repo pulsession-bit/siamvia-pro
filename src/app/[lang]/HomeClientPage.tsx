@@ -54,6 +54,27 @@ const HomeClientPage: React.FC = () => {
                 SCORING_ENGINE_URL={SCORING_ENGINE_URL}
             />
 
+            {/* 3.6. Video Demo Section */}
+            <section className="py-20 bg-slate-900">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 className="text-3xl md:text-4xl font-black text-white mb-3">
+                        {t('home_page.video_title') !== 'home_page.video_title' ? t('home_page.video_title') : 'Découvrez notre Audit IA en action'}
+                    </h2>
+                    <p className="text-slate-400 text-lg mb-10">
+                        {t('home_page.video_subtitle') !== 'home_page.video_subtitle' ? t('home_page.video_subtitle') : 'Analysez votre éligibilité visa en quelques minutes grâce à notre technologie IA.'}
+                    </p>
+                    <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl shadow-amber-500/10">
+                        <iframe
+                            src="https://www.youtube.com/embed/R4u39WDlrsY"
+                            title="Siam Visa Pro - Audit IA Demo"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            className="absolute inset-0 w-full h-full"
+                        />
+                    </div>
+                </div>
+            </section>
+
             {/* 4. Appointment Form Section */}
             <section className="py-24 bg-slate-50 border-t border-slate-200">
                 <div className="max-w-4xl mx-auto px-4">
