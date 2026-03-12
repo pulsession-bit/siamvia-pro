@@ -30,6 +30,8 @@ const RetirementVisaClientPage: React.FC = () => {
                 description="Le visa de long séjour pour les retraités de 50 ans et plus."
                 tagline="Renouvelable chaque année sans quitter le pays."
                 backgroundImage={IMAGES.LTR}
+                ctaText={t('nav.see_services')}
+                ctaHref={langPath('services')}
             />
 
             <PageContainer maxWidth="max-w-5xl" negativeMargin>

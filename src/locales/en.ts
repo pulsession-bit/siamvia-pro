@@ -38,6 +38,7 @@ export const en = {
     "buy_property": "Buy Property",
     "blog": "Blog",
     "insurance": "Travel Insurance",
+    "apply": "Apply Now",
     "categories": {
       "work": "Work & Business",
       "tourism": "Tourism",

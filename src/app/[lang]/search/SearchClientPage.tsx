@@ -11,6 +11,7 @@ import { VisaComparatorTable } from './components/VisaComparatorTable';
 import { CategoryFilters } from './components/CategoryFilters';
 import { VisaCard } from './components/VisaCard';
 import { VisaComparatorGuide } from './components/VisaComparatorGuide';
+import { BlogCTA } from '@/components/blog/BlogCTA';
 
 // Chargement dynamique des composants lourds
 const ExpertAppointmentForm = dynamic(() => import('@/components/ExpertAppointmentForm'), {
@@ -132,6 +133,10 @@ const SearchClientPage: React.FC<SearchClientPageProps> = ({ localI18n }) => {
 
             {/* 4. FAQ & Conseils SEO */}
             <VisaComparatorGuide i18n={localT.comparator_guide} />
+
+            <div className="max-w-7xl mx-auto px-4 pb-20">
+                <BlogCTA />
+            </div>
 
             {/* 4. Detail Modal */}
             {selectedVisa && (

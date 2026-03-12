@@ -10,6 +10,7 @@ export const es = {
     "see_services": "Ver servicios",
     "faq": "FAQ",
     "insurance": "Seguro de Viaje",
+    "apply": "Solicitar ahora",
     "contact": "Contacto",
     "member": "Área Cliente",
     "book_appointment": "📅 Reservar Cita",

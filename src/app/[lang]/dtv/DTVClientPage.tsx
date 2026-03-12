@@ -29,6 +29,8 @@ const DTVClientPage: React.FC = () => {
                 description={t('dtv_page.hero_subtitle')}
                 tagline={t('dtv_page.hero_tagline')}
                 backgroundImage="https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&w=1920&q=80"
+                ctaText={t('nav.see_services')}
+                ctaHref={langPath('services')}
             />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">

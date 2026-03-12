@@ -8,6 +8,7 @@ import { Container } from '@/components/ui/Container';
 import { getTranslatedPath } from '@/utils/slugs';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, Clock } from 'lucide-react';
+import { BlogCTA } from '@/components/blog/BlogCTA';
 
 const BLOG_SLUGS: Record<string, string> = {
     fr: 'blog-visa-thailande',
@@ -172,6 +173,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ lang:
                             options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
                         />
                     </article>
+
+                    <BlogCTA />
 
                     <div className="max-w-3xl pt-8 border-t border-slate-200">
                         <Link

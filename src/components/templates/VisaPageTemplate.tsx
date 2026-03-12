@@ -68,6 +68,8 @@ export const VisaPageTemplate: React.FC<VisaPageTemplateProps> = ({
                 subtitle={`${t(`${pageKey}.hero_subtitle`)} (${new Date().getFullYear()})`}
                 icon={heroIcon}
                 badge={t(`${pageKey}.hero_badge`)}
+                ctaText={t('nav.see_services')}
+                ctaHref={langPath('services')}
             />
 
             <PageContainer maxWidth="max-w-4xl" negativeMargin>

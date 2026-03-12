@@ -6,6 +6,7 @@ import { Home, SearchCheck, Scale, FileText, LandPlot, Key, CreditCard, AlertOct
 import { Container } from '@/components/ui/Container';
 
 import { useLangPath } from '@/hooks/useLang';
+import { BlogCTA } from '@/components/blog/BlogCTA';
 
 interface BuyPropertyClientPageProps {
     lang: string;
@@ -176,6 +177,10 @@ const BuyPropertyClientPage: React.FC<BuyPropertyClientPageProps> = ({ lang }) =
                         </div>
                     </Container>
                 </section>
+
+                <div className="max-w-7xl mx-auto px-4 pb-20 -mt-10">
+                    <BlogCTA />
+                </div>
             </div>
         );
     }
@@ -343,6 +348,10 @@ const BuyPropertyClientPage: React.FC<BuyPropertyClientPageProps> = ({ lang }) =
                     </div>
                 </Container>
             </section>
+
+            <div className="max-w-7xl mx-auto px-4 pb-20 -mt-10">
+                <BlogCTA />
+            </div>
         </div>
     );
 };

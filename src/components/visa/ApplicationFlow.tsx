@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { PageContainer, Card, HeroSection, SectionTitle } from '@/components/ui/PageComponents';
-import { Check, ArrowRight, ArrowLeft, User, Globe, Plane, Calendar, Clock, Send, Loader2, AlertCircle } from 'lucide-react';
+import { Check, ArrowRight, ArrowLeft, User, Globe, Plane, Calendar, Send, Loader2, AlertCircle } from 'lucide-react';
 import { VISAS_DATA } from '@/app/[lang]/search/data/visas';
 import { IMAGES } from '@/constants';
 import { db } from '@/lib/firebase';
@@ -13,6 +14,7 @@ type Step = 'selection' | 'personal' | 'trip' | 'confirm' | 'success';
 
 const ApplicationFlow: React.FC = () => {
     const { t, language } = useLanguage();
+    const router = useRouter();
     const [step, setStep] = useState<Step>('selection');
     const [formData, setFormData] = useState({
         visaId: '',
@@ -65,10 +67,9 @@ const ApplicationFlow: React.FC = () => {
                 source: 'website',
             };
 
-            await addDoc(collection(db, 'visa_applications'), applicationData);
-
-            // Send notification email to admin
-            await addDoc(collection(db, 'mail'), {
+            await Promise.all([
+            addDoc(collection(db, 'visa_applications'), applicationData),
+            addDoc(collection(db, 'mail'), {
                 to: 'info@siamvisapro.com',
                 message: {
                     subject: `[PRO] Nouvelle demande de Visa : ${formData.firstName} ${formData.lastName}`,
@@ -94,13 +95,14 @@ const ApplicationFlow: React.FC = () => {
                         </div>
                     `
                 }
-            });
+            }),
+        ]);
 
             // Success - move to success step
             setStep('success');
         } catch (error) {
             console.error('Submission error:', error);
-            setSubmitError(error instanceof Error ? error.message : 'Une erreur est survenue. Veuillez réessayer.');
+            setSubmitError(error instanceof Error ? error.message : t('apply_page.error_generic'));
         } finally {
             setIsSubmitting(false);
         }
@@ -113,7 +115,7 @@ const ApplicationFlow: React.FC = () => {
             <HeroSection
                 title={t('apply_page.hero_title')}
                 subtitle={t('apply_page.hero_subtitle')}
-                badge="DEMANDE EN LIGNE"
+                badge={t('apply_page.badge')}
                 backgroundImage={IMAGES.HERO_THAILAND}
             />
 
@@ -243,7 +245,7 @@ const ApplicationFlow: React.FC = () => {
                                 <button onClick={handlePrev} className="flex-1 py-4 px-6 rounded-2xl font-black uppercase tracking-widest text-[10px] border-2 border-slate-100 text-slate-400 hover:text-slate-600 hover:border-slate-200 transition-all flex items-center justify-center gap-2">
                                     <ArrowLeft size={14} /> {t('apply_page.prev')}
                                 </button>
-                                <button onClick={handleNext} disabled={!formData.firstName || !formData.lastName || !formData.email} className="flex-[2] py-4 px-6 rounded-2xl font-black uppercase tracking-widest text-xs bg-slate-900 text-white hover:bg-slate-800 transition-all flex items-center justify-center gap-3 disabled:opacity-50">
+                                <button onClick={handleNext} disabled={!formData.firstName || !formData.lastName || !formData.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) || !formData.phone || !formData.nationality} className="flex-[2] py-4 px-6 rounded-2xl font-black uppercase tracking-widest text-xs bg-slate-900 text-white hover:bg-slate-800 transition-all flex items-center justify-center gap-3 disabled:opacity-50">
                                     {t('apply_page.next')} <ArrowRight size={16} />
                                 </button>
                             </div>
@@ -261,6 +263,7 @@ const ApplicationFlow: React.FC = () => {
                                     <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">{t('apply_page.steps.trip.entry_date')}</label>
                                     <input
                                         type="date"
+                                        min={new Date().toISOString().split('T')[0]}
                                         className="w-full rounded-2xl border border-slate-100 bg-slate-50 px-6 py-4 focus:bg-white focus:ring-4 focus:ring-amber-500/10 focus:border-amber-500 outline-none transition-all font-bold text-slate-700"
                                         value={formData.entryDate}
                                         onChange={(e) => setFormData({ ...formData, entryDate: e.target.value })}
@@ -271,6 +274,8 @@ const ApplicationFlow: React.FC = () => {
                                     <input
                                         type="number"
                                         placeholder="ex: 60"
+                                        min={1}
+                                        max={3650}
                                         className="w-full rounded-2xl border border-slate-100 bg-slate-50 px-6 py-4 focus:bg-white focus:ring-4 focus:ring-amber-500/10 focus:border-amber-500 outline-none transition-all font-bold text-slate-700"
                                         value={formData.duration}
                                         onChange={(e) => setFormData({ ...formData, duration: e.target.value })}
@@ -298,7 +303,7 @@ const ApplicationFlow: React.FC = () => {
                             <div className="space-y-6">
                                 <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                                     <h4 className="text-[10px] font-black text-amber-500 uppercase tracking-widest mb-4 flex items-center">
-                                        <Plane className="w-3 h-3 mr-2" /> Visa Sélectionné
+                                        <Plane className="w-3 h-3 mr-2" /> {t('apply_page.confirm_visa')}
                                     </h4>
                                     <p className="text-xl font-bold text-slate-900">
                                         {selectedVisa?.name[language] || selectedVisa?.name.en}

@@ -35,6 +35,7 @@ export const de = {
     "official": "Offizielles Visum",
     "scientific": "Wissenschaftliches Visum",
     "visa_run": "Visa-Run-Risiken",
+    "apply": "Jetzt beantragen",
     "categories": {
       "work": "Arbeit & Geschäft",
       "tourism": "Tourismus",

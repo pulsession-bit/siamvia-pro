@@ -33,6 +33,7 @@ export const th = {
     "visa_run": "ความเสี่ยง Visa Run",
     "blog": "บล็อก",
     "insurance": "ประกันการเดินทาง",
+    "apply": "สมัครเลย",
     "categories": {
       "work": "งานและธุรกิจ",
       "tourism": "การท่องเที่ยว",

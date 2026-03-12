@@ -4,6 +4,7 @@ import React from 'react';
 import { Brain, Phone, FileSearch, ArrowRight, Shield, Zap, Globe, CheckCircle, Bot, Cpu, Lock, BarChart3, Users, Clock, FileText, AlertTriangle, Target, Headphones, ClipboardCheck, TrendingUp, Calendar, Scale } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
+import { BlogCTA } from '@/components/blog/BlogCTA';
 
 const AITechnologyClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -362,6 +363,10 @@ const AITechnologyClientPage: React.FC = () => {
                     <p className="text-slate-500 text-sm mt-4">{t('ai_technology_page.cta_sub')}</p>
                 </div>
             </section>
+
+            <div className="max-w-7xl mx-auto px-4 pb-20">
+                <BlogCTA />
+            </div>
         </div>
     );
 };

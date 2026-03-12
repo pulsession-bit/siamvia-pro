@@ -6,6 +6,7 @@ import { Building2, FileCheck, ShieldAlert, Briefcase, Landmark, CheckCircle2, A
 import { Container } from '@/components/ui/Container';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
+import { BlogCTA } from '@/components/blog/BlogCTA';
 
 interface CompanySetupClientPageProps {
     lang: string;
@@ -254,6 +255,10 @@ const CompanySetupClientPage: React.FC<CompanySetupClientPageProps> = ({ lang })
                         </div>
                     </Container>
                 </section>
+
+                <div className="max-w-7xl mx-auto px-4 pb-20 mt-16">
+                    <BlogCTA />
+                </div>
             </div>
         );
     }
@@ -589,6 +594,10 @@ const CompanySetupClientPage: React.FC<CompanySetupClientPageProps> = ({ lang })
                     </div>
                 </Container>
             </section>
+
+            <div className="max-w-7xl mx-auto px-4 pb-20">
+                <BlogCTA />
+            </div>
         </div>
     );
 };

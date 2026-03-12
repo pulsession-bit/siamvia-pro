@@ -4,6 +4,7 @@ import React from 'react';
 import { Shield, TrendingUp, Award, DollarSign, Briefcase, Globe, Check } from 'lucide-react';
 import ExpertAppointmentForm from '@/components/ExpertAppointmentForm';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useLangPath } from '@/hooks/useLang';
 import { HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageComponents';
 import { VisaHero } from '@/components/visa/VisaHero';
 import { VisaFeatureSummary } from '@/components/visa/VisaFeatureSummary';
@@ -11,6 +12,7 @@ import { AuthorEEAT } from '@/components/AuthorEEAT';
 
 const LTRClientPage: React.FC = () => {
     const { t } = useLanguage();
+    const langPath = useLangPath();
 
     return (
         <div className="bg-white min-h-screen">
@@ -22,6 +24,8 @@ const LTRClientPage: React.FC = () => {
                 description={t('ltr_page.subtitle') || "Le statut fiscal et résidentiel le plus avantageux pour les citoyens fortunés."}
                 tagline="Optimisation fiscale et mobilité totale."
                 backgroundImage="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80"
+                ctaText={t('nav.see_services')}
+                ctaHref={langPath('services')}
             />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">

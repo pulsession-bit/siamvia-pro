@@ -13,6 +13,7 @@ export const it = {
     "see_services": "Vedi servizi",
     "faq": "FAQ",
     "insurance": "Assicurazione Viaggio",
+    "apply": "Invia domanda",
     "contact": "Contatti",
     "member": "Area Clienti",
     "book_appointment": "📅 Prenota Appuntamento",

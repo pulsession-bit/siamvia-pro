@@ -8,6 +8,8 @@ interface HeroSectionProps {
     subtitle: string | React.ReactNode;
     icon?: React.ReactNode;
     overlayOpacity?: number;
+    ctaText?: string;
+    ctaHref?: string;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
@@ -18,6 +20,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     subtitle,
     icon,
     overlayOpacity = 0.5,
+    ctaText,
+    ctaHref,
 }) => {
     return (
         <div className="bg-slate-900 text-white py-24 relative overflow-hidden">
@@ -39,7 +43,19 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                     </span>
                 )}
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">{title}</h1>
-                <p className="text-xl text-slate-200 max-w-2xl mx-auto">{subtitle}</p>
+                <p className="text-xl text-slate-200 max-w-2xl mx-auto mb-10">{subtitle}</p>
+
+                {ctaText && ctaHref && (
+                    <div className="flex justify-center">
+                        <a 
+                            href={ctaHref}
+                            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-black py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-xl inline-flex items-center gap-2"
+                        >
+                            {ctaText}
+                            <span className="text-xl">→</span>
+                        </a>
+                    </div>
+                )}
             </div>
         </div>
     );

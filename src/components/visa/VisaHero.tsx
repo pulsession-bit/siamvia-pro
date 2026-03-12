@@ -8,6 +8,8 @@ interface VisaHeroProps {
     description: string;
     tagline: string;
     backgroundImage: string;
+    ctaText?: string;
+    ctaHref?: string;
 }
 
 export const VisaHero: React.FC<VisaHeroProps> = ({
@@ -16,7 +18,9 @@ export const VisaHero: React.FC<VisaHeroProps> = ({
     subtitle,
     description,
     tagline,
-    backgroundImage
+    backgroundImage,
+    ctaText,
+    ctaHref
 }) => {
     return (
         <div className="bg-slate-900 text-white py-20 relative overflow-hidden">
@@ -37,11 +41,23 @@ export const VisaHero: React.FC<VisaHeroProps> = ({
                 </span>
                 <h1 className="text-5xl md:text-6xl font-extrabold mt-6 mb-2 text-white">{title}</h1>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-200">{subtitle}</h2>
-                <p className="text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed">
+                <p className="text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed mb-8">
                     {description}
                     <br />
                     <span className="text-slate-400 text-lg">{tagline}</span>
                 </p>
+
+                {ctaText && ctaHref && (
+                    <div className="flex justify-center">
+                        <a 
+                            href={ctaHref}
+                            className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-black py-4 px-8 rounded-xl transition-all transform hover:scale-105 shadow-xl inline-flex items-center gap-2"
+                        >
+                            {ctaText}
+                            <span className="text-xl">→</span>
+                        </a>
+                    </div>
+                )}
             </div>
         </div>
     );

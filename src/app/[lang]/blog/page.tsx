@@ -5,6 +5,7 @@ import { Container } from '@/components/ui/Container';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
+import { BlogCTA } from '@/components/blog/BlogCTA';
 
 const BLOG_LANGS = ['fr', 'en', 'th'] as const;
 
@@ -187,6 +188,10 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ lang
                             })}
                         </div>
                     )}
+
+                    <div className="mt-16">
+                        <BlogCTA />
+                    </div>
                 </Container>
             </div>
         </>

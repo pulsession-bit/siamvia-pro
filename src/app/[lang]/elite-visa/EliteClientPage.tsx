@@ -9,9 +9,11 @@ import { HighsLows, FAQAccordion, HighValueBlock } from '@/components/ui/PageCom
 import { QuickSummaryModal } from '@/components/ui/QuickSummaryModal';
 import { VisaHero } from '@/components/visa/VisaHero';
 import { AuthorEEAT } from '@/components/AuthorEEAT';
+import { useLangPath } from '@/hooks/useLang';
 
 const EliteClientPage: React.FC = () => {
     const { t } = useLanguage();
+    const langPath = useLangPath();
     const eliteT = (key: string) => t(`elite_page.${key}` as any);
     const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
 
@@ -73,6 +75,12 @@ const EliteClientPage: React.FC = () => {
                             <Zap className="w-5 h-5 text-amber-400" />
                             <span>{eliteT('quick_view.btn')}</span>
                         </button>
+                        <a
+                            href={langPath('services')}
+                            className="bg-white text-slate-900 px-8 py-5 rounded-2xl font-bold text-lg hover:bg-slate-50 transition transform hover:-translate-y-1 shadow-lg"
+                        >
+                            {t('nav.see_services')}
+                        </a>
                     </div>
                 </div>
             </section>
