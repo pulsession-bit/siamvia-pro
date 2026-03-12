@@ -18,7 +18,7 @@ import {
 const RetirementVisaClientPage: React.FC = () => {
     const { t } = useLanguage();
     const langPath = useLangPath();
-    const SCORING_ENGINE_URL = 'https://desk.siamvisapro.com';
+    const SCORING_ENGINE_URL = 'https://audit.siamvisapro.com/';
 
     return (
         <div className="bg-slate-50 min-h-screen">

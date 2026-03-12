@@ -9,7 +9,7 @@ export const fr = {
     "tourist": "Visa Touriste",
     "elite": "Visa Elite",
     "retirement": "Visa Retraite",
-    "services": "Services",
+    "services": "Services & Tarifs",
     "faq": "FAQ",
     "search": "Recherche",
     "search_placeholder": "Posez une question à l'IA...",
@@ -36,6 +36,7 @@ export const fr = {
     "buy_property": "Acheter un Bien",
     "blog": "Blog",
     "insurance": "Assurance Voyage",
+    "apply": "Faire ma demande",
     "categories": {
       "work": "Travail & Business",
       "tourism": "Tourisme",
@@ -313,7 +314,8 @@ export const fr = {
     "member": "Espace Membre",
     "eligibility": "Éligibilité",
     "appointment_title": "Parlons de votre projet",
-    "appointment_subtitle": "Réservez un appel gratuit avec un expert visa Thaïlande."
+    "appointment_subtitle": "Réservez un appel gratuit avec un expert visa Thaïlande.",
+    "video_cta": "Démarrer mon Audit IA Gratuit"
   },
   "visa_run_page": {
     "meta": {
@@ -1860,6 +1862,7 @@ export const fr = {
     "btn_sending": "Envoi en cours...",
     "success_title": "Message envoyé !",
     "success_desc": "Nous avons bien reçu votre demande. Nous vous répondrons sous 24h.",
+    "btn_send_another": "Envoyer un autre message",
     "info_title": "Nos Coordonnées",
     "address_title": "Bureaux",
     "phone_title": "Téléphone",
@@ -1882,7 +1885,10 @@ export const fr = {
     "founder_role": "Fondateur & Stratège Visa",
     "founder_bio": "Avec des années d'expérience dans l'écosystème tech et administratif thaïlandais, Raphaël a créé Siam Visa Pro pour aider la communauté nomade à s'épanouir en Thaïlande.",
     "partnership_title": "Une Entreprise DigitGpt LLC",
-    "partnership_text": "Siam Visa Pro est propulsée par DigitGpt LLC, une société technologique spécialisée dans l'automatisation administrative par IA. Ce partenariat nous permet d'offrir des outils de pointe comme notre IA d'éligibilité visa."
+    "partnership_text": "Siam Visa Pro est propulsée par DigitGpt LLC, une société technologique spécialisée dans l'automatisation administrative par IA. Ce partenariat nous permet d'offrir des outils de pointe comme notre IA d'éligibilité visa.",
+    "cta_title": "Prêt à démarrer votre projet ?",
+    "cta_desc": "Analysez votre éligibilité gratuitement en quelques minutes grâce à notre IA visa.",
+    "cta_btn": "Démarrer mon Audit IA Gratuit"
   },
   "tourist_page": {
     "badge": "Tourisme & Loisirs",
@@ -2277,6 +2283,7 @@ export const fr = {
     },
     "hero_title": "Demande de Visa",
     "hero_subtitle": "Commencez votre projet de voyage en quelques clics",
+    "btn_back_home": "Retour à l'accueil",
     "steps": {
       "selection": {
         "title": "Choisissez votre Visa",

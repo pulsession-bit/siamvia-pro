@@ -2,9 +2,10 @@
 'use client';
 
 import React from 'react';
-import { ShieldCheck, Target, Users, Landmark, Linkedin, ExternalLink } from 'lucide-react';
+import { ShieldCheck, Target, Users, Landmark, Linkedin, ExternalLink, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { URLS } from '@/constants';
 
 const AboutClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -123,6 +124,25 @@ const AboutClientPage: React.FC = () => {
                             <ExternalLink className="h-4 w-4" />
                         </a>
                     </div>
+                </div>
+
+                {/* CTA Block */}
+                <div className="mt-16 bg-amber-500 rounded-3xl p-10 md:p-16 text-center shadow-xl shadow-amber-500/20">
+                    <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">
+                        {t('about_page.cta_title')}
+                    </h2>
+                    <p className="text-slate-800 text-lg mb-8 max-w-xl mx-auto">
+                        {t('about_page.cta_desc')}
+                    </p>
+                    <a
+                        href={URLS.SCORING_ENGINE}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-3 bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl transition-all transform hover:-translate-y-0.5 active:scale-95"
+                    >
+                        {t('about_page.cta_btn')}
+                        <ArrowRight className="h-4 w-4" />
+                    </a>
                 </div>
             </div>
         </div>

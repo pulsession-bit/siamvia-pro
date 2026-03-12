@@ -66,7 +66,7 @@ const ContactClientPage: React.FC = () => {
                                 <h3 className="text-2xl font-bold text-slate-900 mb-2">{t('contact_page.success_title')}</h3>
                                 <p className="text-slate-600 mb-8">{t('contact_page.success_desc')}</p>
                                 <button onClick={() => setIsSuccess(false)} className="text-amber-600 font-bold hover:underline transition">
-                                    Envoyer un autre message
+                                    {t('contact_page.btn_send_another')}
                                 </button>
                             </div>
                         ) : (

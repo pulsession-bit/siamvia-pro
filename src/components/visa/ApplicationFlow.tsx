@@ -148,7 +148,16 @@ const ApplicationFlow: React.FC = () => {
                                 <p className="text-slate-500 font-medium">{t('apply_page.steps.selection.subtitle')}</p>
                             </div>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
-                                {VISAS_DATA.map((visa) => (
+                                {[...VISAS_DATA].sort((a, b) => {
+                                    const topIds = ['dtv', 'non-o-ret', 'non-oa-ret'];
+                                    const aIdx = topIds.indexOf(a.id);
+                                    const bIdx = topIds.indexOf(b.id);
+                                    
+                                    if (aIdx !== -1 && bIdx !== -1) return aIdx - bIdx;
+                                    if (aIdx !== -1) return -1;
+                                    if (bIdx !== -1) return 1;
+                                    return 0;
+                                }).map((visa) => (
                                     <button
                                         key={visa.id}
                                         onClick={() => {
@@ -375,7 +384,7 @@ const ApplicationFlow: React.FC = () => {
                                 onClick={() => window.location.href = `/${language}`}
                                 className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-slate-800 transition-all shadow-2xl shadow-slate-900/20 active:scale-95"
                             >
-                                RETOUR À L'ACCUEIL
+                                {t('apply_page.btn_back_home')}
                             </button>
                         </Card>
                     )}

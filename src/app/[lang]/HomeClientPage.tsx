@@ -72,6 +72,18 @@ const HomeClientPage: React.FC = () => {
                             className="absolute inset-0 w-full h-full"
                         />
                     </div>
+                    <div className="mt-10">
+                        <a
+                            href={SCORING_ENGINE_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-3 bg-amber-500 hover:bg-amber-400 text-slate-900 px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:scale-95"
+                        >
+                            {t('home_page.video_cta')}
+                            <span className="text-lg">→</span>
+                        </a>
+                        <p className="text-slate-500 text-sm mt-3">{t('ai_block.cta_sub')}</p>
+                    </div>
                 </div>
             </section>
 

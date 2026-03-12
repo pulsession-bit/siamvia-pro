@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
               </button>
 
               {/* Logo */}
-              <Link href={langPath('')} className="flex items-center space-x-2 group mr-2 sm:mr-6">
+              <Link href={langPath('')} className="flex items-center space-x-2 group mr-2 sm:mr-8 transition-transform hover:scale-[1.02]">
                 <div className="bg-amber-500 p-2 rounded-lg shadow-lg group-hover:bg-amber-400 transition text-slate-900">
                   <Plane className="h-6 w-6 transform -rotate-45" />
                 </div>
@@ -80,6 +80,34 @@ const Navbar: React.FC = () => {
                   Siam Visa <span className="text-amber-500">Pro</span>
                 </span>
               </Link>
+
+              {/* Desktop Menu Links */}
+              <div className="hidden md:flex items-center space-x-8 ml-2">
+                <Link
+                  href={langPath('services')}
+                  className={`text-sm font-bold transition-colors hover:text-amber-500 ${pathname?.includes('/services') ? 'text-amber-500' : 'text-white/90'}`}
+                >
+                  {t('nav.services')}
+                </Link>
+                <Link
+                  href={langPath('search')}
+                  className={`text-sm font-bold transition-colors hover:text-amber-500 ${pathname?.includes('/search') || pathname?.includes('/comparateur') ? 'text-amber-500' : 'text-white/90'}`}
+                >
+                  {t('nav.comparator')}
+                </Link>
+                <Link
+                  href={langPath('insurance')}
+                  className={`text-sm font-bold transition-colors hover:text-amber-500 ${pathname?.includes('/insurance') || pathname?.includes('/assurance') ? 'text-amber-500' : 'text-white/90'}`}
+                >
+                  {t('nav.insurance')}
+                </Link>
+                <Link
+                  href={langPath('apply')}
+                  className={`text-sm font-bold transition-colors hover:text-amber-500 ${pathname?.includes('/apply') ? 'text-amber-500' : 'text-white/90'}`}
+                >
+                  {t('nav.apply')}
+                </Link>
+              </div>
 
               {/* Mobile Language Selector (Visible only on mobile) */}
               <div className="md:hidden">
@@ -92,12 +120,14 @@ const Navbar: React.FC = () => {
               <NavbarSearch />
 
               {/* Mobile: Audit IA CTA */}
-              <Link
-                href={langPath('ai-technology')}
+              <a
+                href={SCORING_ENGINE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="md:hidden flex items-center gap-1 bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 py-1.5 rounded-lg shadow-md text-xs font-bold border border-amber-300 transition-all whitespace-nowrap"
               >
                 {t('nav.free_audit')}
-              </Link>
+              </a>
 
               <div className="hidden md:block">
                 <LanguageSelector currentLang={currentLang} onSwitch={switchLanguage} />
@@ -112,12 +142,14 @@ const Navbar: React.FC = () => {
                 <span className="hidden lg:inline">{t('nav.book_appointment')}</span>
               </a>
 
-              <Link
-                href={langPath('ai-technology')}
+              <a
+                href={SCORING_ENGINE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hidden md:flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 md:px-5 py-2 rounded-lg shadow-lg shadow-amber-400/20 text-sm font-bold border border-amber-300 transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
               >
                 {t('nav.free_audit')}
-              </Link>
+              </a>
             </div>
           </div>
         </div>

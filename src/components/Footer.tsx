@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-6 text-amber-50 border-b border-slate-800 pb-2 inline-block">{t('footer.col_support')}</h4>
             <ul className="space-y-3 text-slate-400 text-sm">
               <li><Link href={langPath('about')} className="hover:text-amber-400 transition-colors font-bold text-amber-500/80 tracking-wide uppercase text-xs">★ {t('about_page.hero_title')}</Link></li>
-              <li><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3jkouOVtd1LAjPwzOklBSnyFlyY1_JUcBGeZtF5djNfgDe3zPHye5FZaPitzyoXeGYEQoonCtX" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors font-bold text-amber-500">★ {t('nav.eligibility')}</a></li>
+              <li><a href="https://audit.siamvisapro.com/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors font-bold text-amber-500">★ {t('nav.eligibility')}</a></li>
               <li><Link href={langPath('blog')} className="hover:text-amber-400 transition-colors">{t('nav.blog')}</Link></li>
               <li><Link href={langPath('company-setup')} className="hover:text-amber-400 transition-colors">{t('nav.company_setup')}</Link></li>
               <li><Link href={langPath('buy-property')} className="hover:text-amber-400 transition-colors">{t('nav.buy_property')}</Link></li>
