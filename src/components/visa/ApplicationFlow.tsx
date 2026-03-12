@@ -7,8 +7,9 @@ import { PageContainer, Card, HeroSection, SectionTitle } from '@/components/ui/
 import { Check, ArrowRight, ArrowLeft, User, Globe, Plane, Calendar, Send, Loader2, AlertCircle } from 'lucide-react';
 import { VISAS_DATA } from '@/app/[lang]/search/data/visas';
 import { IMAGES } from '@/constants';
-import { db } from '@/lib/firebase';
+import { db, auth } from '@/lib/firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { signInAnonymously, onAuthStateChanged } from 'firebase/auth';
 
 type Step = 'selection' | 'personal' | 'trip' | 'confirm' | 'success';
 
@@ -26,6 +27,24 @@ const ApplicationFlow: React.FC = () => {
         entryDate: '',
         duration: '',
     });
+
+    const [isAuthReady, setIsAuthReady] = useState(false);
+
+    // Ensure anonymous auth for Firestore permissions
+    React.useEffect(() => {
+        if (!auth) return;
+
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setIsAuthReady(true);
+            } else {
+                signInAnonymously(auth)
+                    .then(() => setIsAuthReady(true))
+                    .catch((err) => console.error("Auth error:", err));
+            }
+        });
+        return () => unsubscribe();
+    }, []);
 
     const steps = ['selection', 'personal', 'trip', 'confirm'];
     const currentStepIndex = steps.indexOf(step);
@@ -47,6 +66,16 @@ const ApplicationFlow: React.FC = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        
+        if (!isAuthReady) {
+            setSubmitError(language === 'fr' ? "Initialisation en cours... Veuillez réessayer." : "Initializing... Please try again.");
+            // Try to force sign in if not ready
+            if (auth && !auth.currentUser) {
+                signInAnonymously(auth).then(() => setIsAuthReady(true)).catch(console.error);
+            }
+            return;
+        }
+
         setIsSubmitting(true);
         setSubmitError(null);
 
