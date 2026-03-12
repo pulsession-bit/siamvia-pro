@@ -111,6 +111,8 @@ const ApplicationFlow: React.FC = () => {
             try {
                 await addDoc(collection(db, 'mail'), {
                     to: 'info@siamvisapro.com',
+                    from: 'Siam Visa Pro <info@siamvisapro.com>',
+                    replyTo: formData.email.trim().toLowerCase(),
                     message: {
                         subject: `[PRO] Nouvelle demande de Visa : ${formData.firstName} ${formData.lastName}`,
                         html: `
@@ -130,7 +132,8 @@ const ApplicationFlow: React.FC = () => {
                                 </div>
                                 
                                 <p style="margin-top: 20px; font-size: 12px; color: #64748b;">
-                                    Ce message a été généré automatiquement par le système de gestion des demandes.
+                                    Ce message a été généré automatiquement par le système de gestion des demandes. 
+                                    Vous pouvez répondre directement à cet email pour contacter le client.
                                 </p>
                             </div>
                         `
