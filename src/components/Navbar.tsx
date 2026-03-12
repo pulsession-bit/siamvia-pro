@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
                 <div className="bg-amber-500 p-2 rounded-lg shadow-lg group-hover:bg-amber-400 transition text-slate-900">
                   <Plane className="h-6 w-6 transform -rotate-45" />
                 </div>
-                <span className="text-xl font-bold tracking-tight text-white transition-colors hidden sm:inline-block">
+                <span className="text-base sm:text-xl font-bold tracking-tight text-white transition-colors">
                   Siam Visa <span className="text-amber-500">Pro</span>
                 </span>
               </Link>
@@ -90,6 +90,14 @@ const Navbar: React.FC = () => {
             {/* Right Side: Search + Actions */}
             <div className="flex items-center space-x-3 lg:space-x-4">
               <NavbarSearch />
+
+              {/* Mobile: Audit IA CTA */}
+              <a
+                href={SCORING_ENGINE_URL}
+                className="md:hidden flex items-center gap-1 bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 py-1.5 rounded-lg shadow-md text-xs font-bold border border-amber-300 transition-all whitespace-nowrap"
+              >
+                <span>🤖</span> Audit IA
+              </a>
 
               <div className="hidden md:block">
                 <LanguageSelector currentLang={currentLang} onSwitch={switchLanguage} />
