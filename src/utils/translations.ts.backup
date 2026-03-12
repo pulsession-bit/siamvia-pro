@@ -618,7 +618,7 @@ export const translations = {
       privacy_list2: "Ils sont supprimés de nos bases de données 30 jours après l'obtention de votre visa.",
       privacy_list3: "Aucune donnée n'est revendue à des tiers.",
       contact_title: "Contact",
-      contact_text: "Pour toute question relative à ces conditions, contactez-nous à legal@siamvisapro.com."
+      contact_text: "Pour toute question relative à ces conditions, contactez-nous à info@siamvisapro.com."
     },
     cta_footer: {
       title: "Ne laissez pas un refus gâcher votre projet",
@@ -677,7 +677,7 @@ export const translations = {
       swift: "BIC/SWIFT :",
       transfer_note: "Indiquez votre NOM en référence du virement.",
       btn_confirm_transfer: "J'ai effectué le virement",
-      transfer_success_desc: "Merci. Votre commande est enregistrée en attente de fonds. Veuillez envoyer la preuve de virement à contact@siamvisapro.com pour activer le service."
+      transfer_success_desc: "Merci. Votre commande est enregistrée en attente de fonds. Veuillez envoyer la preuve de virement à info@siamvisapro.com pour activer le service."
     }
   },
   en: {
@@ -1281,7 +1281,7 @@ export const translations = {
       privacy_list2: "They are deleted from our databases 30 days after obtaining your visa.",
       privacy_list3: "No data is sold to third parties.",
       contact_title: "Contact",
-      contact_text: "For any questions regarding these terms, contact us at legal@siamvisapro.com."
+      contact_text: "For any questions regarding these terms, contact us at info@siamvisapro.com."
     },
     cta_footer: {
       title: "Don't let a refusal ruin your project",
@@ -1340,7 +1340,7 @@ export const translations = {
       swift: "BIC/SWIFT:",
       transfer_note: "Include your NAME in the transfer reference.",
       btn_confirm_transfer: "I have made the transfer",
-      transfer_success_desc: "Thank you. Your order is pending funds arrival. Please email payment proof to contact@siamvisapro.com to activate service."
+      transfer_success_desc: "Thank you. Your order is pending funds arrival. Please email payment proof to info@siamvisapro.com to activate service."
     }
   },
   de: {
@@ -1935,7 +1935,7 @@ export const translations = {
       privacy_list2: "Löschung nach 30 Tagen.",
       privacy_list3: "Kein Verkauf an Dritte.",
       contact_title: "Kontakt",
-      contact_text: "Bei Fragen: legal@siamvisapro.com."
+      contact_text: "Bei Fragen: info@siamvisapro.com."
     },
     cta_footer: {
       title: "Lassen Sie sich nicht ablehnen",
@@ -2544,7 +2544,7 @@ export const translations = {
       privacy_list2: "Borrado en 30 días.",
       privacy_list3: "Sin venta a terceros.",
       contact_title: "Contacto",
-      contact_text: "legal@siamvisapro.com"
+      contact_text: "info@siamvisapro.com"
     },
     cta_footer: {
       title: "No deje que un rechazo arruine su plan",
@@ -2979,7 +2979,7 @@ export const translations = {
       privacy_list2: "Cancellazione 30gg.",
       privacy_list3: "No vendita dati.",
       contact_title: "Contatti",
-      contact_text: "legal@siamvisapro.com"
+      contact_text: "info@siamvisapro.com"
     },
     cta_footer: {
       title: "Non lasciare che un rifiuto rovini i piani",
@@ -3414,7 +3414,7 @@ export const translations = {
       privacy_list2: "ลบใน 30 วัน",
       privacy_list3: "ไม่ขายข้อมูล",
       contact_title: "ติดต่อ",
-      contact_text: "legal@siamvisapro.com"
+      contact_text: "info@siamvisapro.com"
     },
     cta_footer: {
       title: "อย่าให้การถูกปฏิเสธทำลายแผนของคุณ",
@@ -3849,7 +3849,7 @@ export const translations = {
       privacy_list2: "Удаление через 30 дней.",
       privacy_list3: "Не продаем.",
       contact_title: "Контакт",
-      contact_text: "legal@siamvisapro.com"
+      contact_text: "info@siamvisapro.com"
     },
     cta_footer: {
       title: "Не дайте отказу испортить планы",
@@ -4284,7 +4284,7 @@ export const translations = {
       privacy_list2: "30天删除。",
       privacy_list3: "不售卖。",
       contact_title: "联系",
-      contact_text: "legal@siamvisapro.com"
+      contact_text: "info@siamvisapro.com"
     },
     cta_footer: {
       title: "别让拒签毁了计划",
@@ -4719,7 +4719,7 @@ export const translations = {
       privacy_list2: "30日で削除。",
       privacy_list3: "販売しません。",
       contact_title: "連絡先",
-      contact_text: "legal@siamvisapro.com"
+      contact_text: "info@siamvisapro.com"
     },
     cta_footer: {
       title: "拒否で計画を台無しにしないでください",
@@ -5154,7 +5154,7 @@ export const translations = {
       privacy_list2: "30일 후 삭제.",
       privacy_list3: "판매 안함.",
       contact_title: "연락처",
-      contact_text: "legal@siamvisapro.com"
+      contact_text: "info@siamvisapro.com"
     },
     cta_footer: {
       title: "거절로 계획을 망치지 마세요",
@@ -5589,7 +5589,7 @@ export const translations = {
       privacy_list2: "حذف بعد 30 يوم.",
       privacy_list3: "لا نبيع البيانات.",
       contact_title: "اتصال",
-      contact_text: "legal@siamvisapro.com"
+      contact_text: "info@siamvisapro.com"
     },
     cta_footer: {
       title: "لا تدع الرفض يفسد خططك",

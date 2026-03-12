@@ -15,8 +15,8 @@ export const URLS = {
  */
 export const CONTACT = {
     PHONE: '+33 7 73 72 68 87',
-    EMAIL: 'contact@siamvisapro.com',
-    LEGAL_EMAIL: 'legal@siamvisapro.com',
+    EMAIL: 'info@siamvisapro.com',
+    LEGAL_EMAIL: 'info@siamvisapro.com',
 } as const;
 
 /**
