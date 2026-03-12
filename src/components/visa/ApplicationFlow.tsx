@@ -314,14 +314,14 @@ const ApplicationFlow: React.FC = () => {
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                                         <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center">
-                                            <User className="w-3 h-3 mr-2" /> Identité
+                                            <User className="w-3 h-3 mr-2" /> {t('apply_page.confirm_identity')}
                                         </h4>
                                         <p className="font-bold text-slate-800">{formData.firstName} {formData.lastName}</p>
                                         <p className="text-xs text-slate-500 mt-1">{formData.nationality}</p>
                                     </div>
                                     <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                                         <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center">
-                                            <Globe className="w-3 h-3 mr-2" /> Contact
+                                            <Globe className="w-3 h-3 mr-2" /> {t('apply_page.confirm_contact')}
                                         </h4>
                                         <p className="font-bold text-slate-800 truncate">{formData.email}</p>
                                         <p className="text-xs text-slate-500 mt-1">{formData.phone}</p>
@@ -330,12 +330,12 @@ const ApplicationFlow: React.FC = () => {
 
                                 <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                                     <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center">
-                                        <Calendar className="w-3 h-3 mr-2" /> Voyage
+                                        <Calendar className="w-3 h-3 mr-2" /> {t('apply_page.confirm_trip')}
                                     </h4>
                                     <p className="font-bold text-slate-800">
-                                        Entrée le {formData.entryDate || 'Non spécifiée'}
+                                        {t('apply_page.confirm_entry')} {formData.entryDate || t('apply_page.confirm_not_specified')}
                                     </p>
-                                    <p className="text-sm text-slate-500 font-medium">{formData.duration ? `${formData.duration} jours prévus` : 'Durée non spécifiée'}</p>
+                                    <p className="text-sm text-slate-500 font-medium">{formData.duration ? `${formData.duration} ${t('apply_page.confirm_days')}` : t('apply_page.confirm_duration_none')}</p>
                                 </div>
                             </div>
 
@@ -362,7 +362,7 @@ const ApplicationFlow: React.FC = () => {
                                     {isSubmitting ? (
                                         <>
                                             <Loader2 size={20} className="animate-spin" />
-                                            Envoi en cours...
+                                            {t('apply_page.steps.confirm.btn_loading')}
                                         </>
                                     ) : (
                                         <>
@@ -376,7 +376,7 @@ const ApplicationFlow: React.FC = () => {
 
                     {step === 'success' && (
                         <Card variant="white" className="p-12 md:p-20 text-center flex flex-col items-center justify-center min-h-[500px]">
-                            <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mb-8 animate-bounce">
+                            <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mb-8">
                                 <Check className="w-12 h-12 text-green-500" strokeWidth={4} />
                             </div>
                             <h2 className="text-4xl font-black text-slate-900 tracking-tight mb-4">
@@ -386,7 +386,7 @@ const ApplicationFlow: React.FC = () => {
                                 {t('apply_page.steps.confirm.success_desc')}
                             </p>
                             <button
-                                onClick={() => window.location.href = `/${language}`}
+                                onClick={() => router.push(language === 'fr' ? '/' : `/${language}`)}
                                 className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-slate-800 transition-all shadow-2xl shadow-slate-900/20 active:scale-95"
                             >
                                 {t('apply_page.btn_back_home')}

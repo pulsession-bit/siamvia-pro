@@ -1794,6 +1794,17 @@ export const es = {
     },
     "hero_title": "Solicitud de Visa",
     "hero_subtitle": "Inicie su proyecto de viaje en solo unos clics",
+    "badge": "SOLICITUD EN LÍNEA",
+    "btn_back_home": "Volver al inicio",
+    "error_generic": "Se ha producido un error. Por favor, inténtelo de nuevo.",
+    "confirm_visa": "Visa Seleccionada",
+    "confirm_identity": "Identidad",
+    "confirm_contact": "Contacto",
+    "confirm_trip": "Viaje",
+    "confirm_entry": "Entrada el",
+    "confirm_not_specified": "No especificada",
+    "confirm_days": "días previstos",
+    "confirm_duration_none": "Duración no especificada",
     "steps": {
       "selection": {
         "title": "Elija su Visa",
@@ -1818,6 +1829,7 @@ export const es = {
         "title": "Confirmación",
         "subtitle": "Verifique su información antes de enviar",
         "btn_submit": "ENVIAR MI SOLICITUD",
+        "btn_loading": "Enviando...",
         "success_title": "¡Solicitud Recibida!",
         "success_desc": "Su solicitud ha sido enviada a nuestros expertos. Recibirá una respuesta por correo electrónico en un plazo de 24 horas."
       }

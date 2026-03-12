@@ -1888,6 +1888,17 @@ export const en = {
     },
     "hero_title": "Visa Application",
     "hero_subtitle": "Start your travel project in just a few clicks",
+    "badge": "ONLINE APPLICATION",
+    "btn_back_home": "Back to Home",
+    "error_generic": "An error occurred. Please try again.",
+    "confirm_visa": "Selected Visa",
+    "confirm_identity": "Identity",
+    "confirm_contact": "Contact",
+    "confirm_trip": "Trip",
+    "confirm_entry": "Entry on",
+    "confirm_not_specified": "Not specified",
+    "confirm_days": "days planned",
+    "confirm_duration_none": "Duration not specified",
     "steps": {
       "selection": {
         "title": "Choose your Visa",
@@ -1912,6 +1923,7 @@ export const en = {
         "title": "Confirmation",
         "subtitle": "Verify your information before sending",
         "btn_submit": "SUBMIT MY APPLICATION",
+        "btn_loading": "Sending...",
         "success_title": "Application Received!",
         "success_desc": "Your application has been sent to our experts. You will receive an email response within 24 hours."
       }

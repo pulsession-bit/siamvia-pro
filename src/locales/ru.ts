@@ -1752,6 +1752,17 @@ export const ru = {
     },
     "hero_title": "Оформление визы",
     "hero_subtitle": "Начните планировать поездку всего за несколько кликов",
+    "badge": "ОНЛАЙН-ЗАЯВКА",
+    "btn_back_home": "На главную",
+    "error_generic": "Произошла ошибка. Пожалуйста, попробуйте снова.",
+    "confirm_visa": "Выбранная виза",
+    "confirm_identity": "Личность",
+    "confirm_contact": "Контакт",
+    "confirm_trip": "Поездка",
+    "confirm_entry": "Въезд",
+    "confirm_not_specified": "Не указано",
+    "confirm_days": "дней запланировано",
+    "confirm_duration_none": "Длительность не указана",
     "steps": {
       "selection": {
         "title": "Выберите вашу визу",
@@ -1776,6 +1787,7 @@ export const ru = {
         "title": "Подтверждение",
         "subtitle": "Проверьте данные перед отправкой",
         "btn_submit": "ОТПРАВИТЬ ЗАЯВКУ",
+        "btn_loading": "Отправка...",
         "success_title": "Заявка получена!",
         "success_desc": "Ваша заявка отправлена нашим экспертам. Вы получите ответ по электронной почте в течение 24 часов."
       }

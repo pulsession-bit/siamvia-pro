@@ -1794,6 +1794,17 @@ export const ko = {
     },
     "hero_title": "비자 신청",
     "hero_subtitle": "몇 번의 클릭만으로 여행 계획을 시작하세요",
+    "badge": "온라인 신청",
+    "btn_back_home": "홈으로 돌아가기",
+    "error_generic": "오류가 발생했습니다. 다시 시도해 주세요.",
+    "confirm_visa": "선택한 비자",
+    "confirm_identity": "신원",
+    "confirm_contact": "연락처",
+    "confirm_trip": "여행",
+    "confirm_entry": "입국 예정일",
+    "confirm_not_specified": "미지정",
+    "confirm_days": "일 예정",
+    "confirm_duration_none": "기간 미지정",
     "steps": {
       "selection": {
         "title": "비자 선택",
@@ -1818,6 +1829,7 @@ export const ko = {
         "title": "확인",
         "subtitle": "전송 전 정보를 다시 한 번 확인하세요",
         "btn_submit": "신청서 제출하기",
+        "btn_loading": "제출 중...",
         "success_title": "신청 완료!",
         "success_desc": "신청서가 전문가에게 전송되었습니다. 24시간 이내에 이메일 답변을 받으실 수 있습니다."
       }

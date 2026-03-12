@@ -1784,6 +1784,17 @@ export const it = {
     },
     "hero_title": "Domanda di Visto",
     "hero_subtitle": "Inizia il tuo progetto di viaggio in pochi clic",
+    "badge": "RICHIESTA ONLINE",
+    "btn_back_home": "Torna alla home",
+    "error_generic": "Si è verificato un errore. Riprova.",
+    "confirm_visa": "Visto Selezionato",
+    "confirm_identity": "Identità",
+    "confirm_contact": "Contatto",
+    "confirm_trip": "Viaggio",
+    "confirm_entry": "Ingresso il",
+    "confirm_not_specified": "Non specificata",
+    "confirm_days": "giorni previsti",
+    "confirm_duration_none": "Durata non specificata",
     "steps": {
       "selection": {
         "title": "Scegli il tuo Visto",
@@ -1808,6 +1819,7 @@ export const it = {
         "title": "Conferma",
         "subtitle": "Verifica le tue informazioni prima di inviare",
         "btn_submit": "INVIA LA MIA DOMANDA",
+        "btn_loading": "Invio in corso...",
         "success_title": "Domanda Ricevuta!",
         "success_desc": "La tua domanda è stata inviata ai nostri esperti. Riceverai una risposta via email entro 24 ore."
       }

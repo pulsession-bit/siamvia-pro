@@ -1786,6 +1786,17 @@ export const de = {
     },
     "hero_title": "Visumantrag",
     "hero_subtitle": "Starten Sie Ihr Reiseprojekt mit nur wenigen Klicks",
+    "badge": "ONLINE-ANTRAG",
+    "btn_back_home": "Zurück zur Startseite",
+    "error_generic": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "confirm_visa": "Gewähltes Visum",
+    "confirm_identity": "Identität",
+    "confirm_contact": "Kontakt",
+    "confirm_trip": "Reise",
+    "confirm_entry": "Einreise am",
+    "confirm_not_specified": "Nicht angegeben",
+    "confirm_days": "geplante Tage",
+    "confirm_duration_none": "Dauer nicht angegeben",
     "steps": {
       "selection": {
         "title": "Wählen Sie Ihr Visum",
@@ -1810,6 +1821,7 @@ export const de = {
         "title": "Bestätigung",
         "subtitle": "Überprüfen Sie Ihre Informationen vor dem Senden",
         "btn_submit": "MEINEN ANTRAG ABSENDEN",
+        "btn_loading": "Wird gesendet...",
         "success_title": "Antrag eingegangen!",
         "success_desc": "Ihr Antrag wurde an unsere Experten gesendet. Sie erhalten innerhalb von 24 Stunden eine Antwort per E-Mail."
       }

@@ -2283,7 +2283,17 @@ export const fr = {
     },
     "hero_title": "Demande de Visa",
     "hero_subtitle": "Commencez votre projet de voyage en quelques clics",
+    "badge": "DEMANDE EN LIGNE",
     "btn_back_home": "Retour à l'accueil",
+    "error_generic": "Une erreur est survenue. Veuillez réessayer.",
+    "confirm_visa": "Visa Sélectionné",
+    "confirm_identity": "Identité",
+    "confirm_contact": "Contact",
+    "confirm_trip": "Voyage",
+    "confirm_entry": "Entrée le",
+    "confirm_not_specified": "Non spécifiée",
+    "confirm_days": "jours prévus",
+    "confirm_duration_none": "Durée non spécifiée",
     "steps": {
       "selection": {
         "title": "Choisissez votre Visa",
@@ -2308,6 +2318,7 @@ export const fr = {
         "title": "Confirmation",
         "subtitle": "Vérifiez vos informations avant l'envoi",
         "btn_submit": "ENVOYER MA DEMANDE",
+        "btn_loading": "Envoi en cours...",
         "success_title": "Demande Reçue !",
         "success_desc": "Votre demande a été transmise à nos experts. Vous recevrez une réponse par email sous 24h."
       }

@@ -21,12 +21,6 @@ export const NAV_ITEMS = [
         items: []
     },
     {
-        key: 'apply',
-        labelKey: 'nav.apply',
-        path: 'apply',
-        items: []
-    },
-    {
         key: 'blog',
         labelKey: 'nav.blog',
         path: 'blog',

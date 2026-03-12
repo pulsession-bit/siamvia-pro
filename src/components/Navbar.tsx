@@ -101,12 +101,6 @@ const Navbar: React.FC = () => {
                 >
                   {t('nav.insurance')}
                 </Link>
-                <Link
-                  href={langPath('apply')}
-                  className={`text-sm font-bold transition-colors hover:text-amber-500 ${pathname?.includes('/apply') ? 'text-amber-500' : 'text-white/90'}`}
-                >
-                  {t('nav.apply')}
-                </Link>
               </div>
 
               {/* Mobile Language Selector (Visible only on mobile) */}

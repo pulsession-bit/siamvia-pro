@@ -1796,6 +1796,17 @@ export const th = {
     },
     "hero_title": "การสมัครวีซ่า",
     "hero_subtitle": "เริ่มต้นโครงการเดินทางของคุณในเวลาเพียงไม่กี่คลิก",
+    "badge": "สมัครออนไลน์",
+    "btn_back_home": "กลับหน้าหลัก",
+    "error_generic": "เกิดข้อผิดพลาด กรุณาลองอีกครั้ง",
+    "confirm_visa": "วีซ่าที่เลือก",
+    "confirm_identity": "ตัวตน",
+    "confirm_contact": "ติดต่อ",
+    "confirm_trip": "การเดินทาง",
+    "confirm_entry": "เข้าประเทศวันที่",
+    "confirm_not_specified": "ไม่ระบุ",
+    "confirm_days": "วันที่วางแผน",
+    "confirm_duration_none": "ไม่ระบุระยะเวลา",
     "steps": {
       "selection": {
         "title": "เลือกวีซ่าของคุณ",
@@ -1820,6 +1831,7 @@ export const th = {
         "title": "ยืนยันข้อมูล",
         "subtitle": "ตรวจสอบข้อมูลของคุณก่อนส่ง",
         "btn_submit": "ส่งใบสมัครของฉัน",
+        "btn_loading": "กำลังส่ง...",
         "success_title": "ได้รับใบสมัครแล้ว!",
         "success_desc": "ใบสมัครของคุณถูกส่งไปยังผู้เชี่ยวชาญของเราแล้ว คุณจะได้รับการตอบกลับทางอีเมลภายใน 24 ชั่วโมง"
       }

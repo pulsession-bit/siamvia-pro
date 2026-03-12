@@ -1794,6 +1794,17 @@ export const ja = {
     },
     "hero_title": "ビザ申請",
     "hero_subtitle": "わずか数クリックでタイへの一歩を",
+    "badge": "オンライン申請",
+    "btn_back_home": "ホームに戻る",
+    "error_generic": "エラーが発生しました。もう一度お試しください。",
+    "confirm_visa": "選択したビザ",
+    "confirm_identity": "身元",
+    "confirm_contact": "連絡先",
+    "confirm_trip": "旅行",
+    "confirm_entry": "入国予定日",
+    "confirm_not_specified": "未指定",
+    "confirm_days": "日間の予定",
+    "confirm_duration_none": "期間未指定",
     "steps": {
       "selection": {
         "title": "ビザを選択",
@@ -1818,6 +1829,7 @@ export const ja = {
         "title": "確認",
         "subtitle": "送信前に情報を確認してください",
         "btn_submit": "申請を送信する",
+        "btn_loading": "送信中...",
         "success_title": "申請を受け付けました！",
         "success_desc": "申請内容が専門家に送信されました。24時間以内にメールで回答いたします。"
       }

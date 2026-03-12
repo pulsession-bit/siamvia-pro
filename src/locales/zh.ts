@@ -1794,6 +1794,17 @@ export const zh = {
     },
     "hero_title": "签证申请",
     "hero_subtitle": "只需点击几下即可开启您的旅程",
+    "badge": "在线申请",
+    "btn_back_home": "返回首页",
+    "error_generic": "发生错误，请重试。",
+    "confirm_visa": "已选签证",
+    "confirm_identity": "身份",
+    "confirm_contact": "联系方式",
+    "confirm_trip": "行程",
+    "confirm_entry": "入境日期",
+    "confirm_not_specified": "未指定",
+    "confirm_days": "计划天数",
+    "confirm_duration_none": "未指定时长",
     "steps": {
       "selection": {
         "title": "选择您的签证",
@@ -1818,6 +1829,7 @@ export const zh = {
         "title": "确认信息",
         "subtitle": "发送前请核实您的信息",
         "btn_submit": "提交我的申请",
+        "btn_loading": "提交中...",
         "success_title": "申请已收到！",
         "success_desc": "您的申请已发送给我们的专家。您将在 24 小时内收到电子邮件回复。"
       }
