@@ -134,7 +134,15 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
 export default async function BlogIndexPage({ params }: { params: Promise<{ lang: string }> }) {
     const { lang } = await params;
-    const posts = getAllPosts(lang);
+    let posts = getAllPosts(lang);
+    let usedLang = lang;
+
+    // Fallback to English if no posts in current language
+    if (posts.length === 0 && lang !== 'en') {
+        posts = getAllPosts('en');
+        usedLang = 'en';
+    }
+
     const t = TRANSLATIONS[lang] || TRANSLATIONS.en;
     const blogSlug = BLOG_SLUGS[lang] || 'blog';
     const baseUrl = 'https://www.siamvisapro.com';

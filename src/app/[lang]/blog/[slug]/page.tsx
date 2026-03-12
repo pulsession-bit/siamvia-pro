@@ -25,7 +25,12 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
     const { lang, slug } = await params;
-    const post = getPostBySlug(lang, slug);
+    
+    let post = getPostBySlug(lang, slug);
+    if (!post && lang !== 'en') {
+        post = getPostBySlug('en', slug);
+    }
+    
     if (!post) return { title: 'Article not found' };
 
     const baseUrl = 'https://www.siamvisapro.com';
@@ -62,7 +67,16 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
 export default async function BlogPostPage({ params }: { params: Promise<{ lang: string; slug: string }> }) {
     const { lang, slug } = await params;
-    const post = getPostBySlug(lang, slug);
+    
+    let post = getPostBySlug(lang, slug);
+    let usedLang = lang;
+
+    // Fallback to English if post not found in current language
+    if (!post && lang !== 'en') {
+        post = getPostBySlug('en', slug);
+        usedLang = 'en';
+    }
+
     if (!post) notFound();
 
     const blogSlug = BLOG_SLUGS[lang] || 'blog';

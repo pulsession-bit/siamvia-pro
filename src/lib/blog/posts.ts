@@ -77,10 +77,23 @@ export function getAllPosts(lang: string): Post[] {
 
 export function getAllSlugs(): { lang: string; slug: string }[] {
     const slugs: { lang: string; slug: string }[] = [];
+    const englishPosts = getAllPosts('en');
+
     for (const lang of BLOG_LANGS) {
         const posts = getAllPosts(lang);
+        
+        // Use own posts
         for (const post of posts) {
             slugs.push({ lang, slug: post.frontmatter.slug });
+        }
+
+        // If not english, and language has no posts, or even if it has some, 
+        // we might want English fallback. For now, let's at least ensure 
+        // that if a language is empty, it gets English posts routes.
+        if (lang !== 'en' && posts.length === 0) {
+            for (const post of englishPosts) {
+                slugs.push({ lang, slug: post.frontmatter.slug });
+            }
         }
     }
     return slugs;
