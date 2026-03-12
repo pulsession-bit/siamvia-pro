@@ -92,12 +92,12 @@ const Navbar: React.FC = () => {
               <NavbarSearch />
 
               {/* Mobile: Audit IA CTA */}
-              <a
-                href={SCORING_ENGINE_URL}
+              <Link
+                href={langPath('ai-technology')}
                 className="md:hidden flex items-center gap-1 bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 py-1.5 rounded-lg shadow-md text-xs font-bold border border-amber-300 transition-all whitespace-nowrap"
               >
-                <span>🤖</span> Audit IA
-              </a>
+                Audit Gratuit IA
+              </Link>
 
               <div className="hidden md:block">
                 <LanguageSelector currentLang={currentLang} onSwitch={switchLanguage} />
@@ -113,12 +113,12 @@ const Navbar: React.FC = () => {
                 <span className="hidden lg:inline">{t('nav.book_appointment')}</span>
               </a>
 
-              <a
-                href={SCORING_ENGINE_URL}
-                className="hidden md:block bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 md:px-5 py-2 rounded-lg shadow-lg shadow-amber-400/20 text-sm font-bold border border-amber-300 transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
+              <Link
+                href={langPath('ai-technology')}
+                className="hidden md:flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 md:px-5 py-2 rounded-lg shadow-lg shadow-amber-400/20 text-sm font-bold border border-amber-300 transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
               >
-                {t('nav.eligibility')}
-              </a>
+                Audit Gratuit IA
+              </Link>
             </div>
           </div>
         </div>

@@ -48,6 +48,24 @@ const AITechnologyClientPage: React.FC = () => {
                 </div>
             </section>
 
+            {/* Video Demo Section */}
+            <section className="py-16 border-t border-slate-800/50">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 className="text-2xl md:text-3xl font-black mb-8">
+                        {t('ai_technology_page.hero_badge')} — <span className="text-amber-400">Démo</span>
+                    </h2>
+                    <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl shadow-amber-500/10">
+                        <iframe
+                            src="https://www.youtube.com/embed/R4u39WDlrsY"
+                            title="Siam Visa Pro - Audit IA Demo"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            className="absolute inset-0 w-full h-full"
+                        />
+                    </div>
+                </div>
+            </section>
+
             {/* Section 1: Audit IA d'Éligibilité */}
             <section className="py-24 border-t border-slate-800/50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
