@@ -438,11 +438,7 @@ const nextConfig: NextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "default-src 'self'; img-src 'self' https: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://code.tidio.co https://*.tidio.co https://www.googletagmanager.com https://www.google-analytics.com https://va.vercel-scripts.com https://apis.google.com https://www.gstatic.com https://*.firebaseapp.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://*.tidio.co data:; connect-src 'self' https: wss:; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com https://*.tidio.co https://*.firebaseapp.com https://accounts.google.com; media-src 'self' https://code.tidio.co https://*.tidio.co; worker-src 'self' blob:; frame-ancestors 'self';",
-          },
-          {
-            key: "X-Frame-Options",
-            value: "SAMEORIGIN",
+              "default-src 'self' https://*.tidio.co https://*.tidio.com https://*.firebaseapp.com https://*.google.com; img-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://code.tidio.co https://*.tidio.co https://*.tidio.com https://www.googletagmanager.com https://www.google-analytics.com https://va.vercel-scripts.com https://apis.google.com https://*.googleapis.com https://www.gstatic.com https://*.firebaseapp.com https://accounts.google.com https://www.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.tidio.co https://*.tidio.com; font-src 'self' https://fonts.gstatic.com https://*.tidio.co https://*.tidio.com data:; connect-src 'self' https: wss: blob:; frame-src 'self' https:; media-src 'self' https: data: blob:; worker-src 'self' blob:; frame-ancestors 'self' https://*.tidio.co https://*.tidio.com;",
           },
           {
             key: "X-Content-Type-Options",
