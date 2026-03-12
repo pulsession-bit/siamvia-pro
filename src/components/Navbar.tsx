@@ -81,27 +81,7 @@ const Navbar: React.FC = () => {
                 </span>
               </Link>
 
-              {/* Desktop Menu Links */}
-              <div className="hidden md:flex items-center space-x-8 ml-2">
-                <Link
-                  href={langPath('services')}
-                  className={`text-sm font-bold transition-colors hover:text-amber-500 ${pathname?.includes('/services') ? 'text-amber-500' : 'text-white/90'}`}
-                >
-                  {t('nav.services')}
-                </Link>
-                <Link
-                  href={langPath('search')}
-                  className={`text-sm font-bold transition-colors hover:text-amber-500 ${pathname?.includes('/search') || pathname?.includes('/comparateur') ? 'text-amber-500' : 'text-white/90'}`}
-                >
-                  {t('nav.comparator')}
-                </Link>
-                <Link
-                  href={langPath('insurance')}
-                  className={`text-sm font-bold transition-colors hover:text-amber-500 ${pathname?.includes('/insurance') || pathname?.includes('/assurance') ? 'text-amber-500' : 'text-white/90'}`}
-                >
-                  {t('nav.insurance')}
-                </Link>
-              </div>
+
 
               {/* Mobile Language Selector (Visible only on mobile) */}
               <div className="md:hidden">
