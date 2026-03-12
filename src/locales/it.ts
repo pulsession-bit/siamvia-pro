@@ -2246,7 +2246,8 @@ export const it = {
     "related_erreurs": "Le punizioni da 10mila Baht per Errori Banalissimi al Console",
     "related_comparatif": "Rivali del DTV in Competizione sul Filo Del Rasoio"
   }
-,\n  "services_page": {
+,
+  "services_page": {
     "solutions_badge": "● LE NOSTRE SOLUZIONI",
     "meta": {
         "title": "I Nostri Servizi e Prezzi Visto Thailandia | Siam Visa Pro",

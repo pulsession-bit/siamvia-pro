@@ -1962,7 +1962,8 @@ export const ko = {
     "cta_item2": "프로필에 맞는 맞춤 비교",
     "cta_item3": "이민 지원"
   }
-,\n  "services_page": {
+,
+  "services_page": {
     "solutions_badge": "● 당사의 솔루션",
     "meta": {
         "title": "태국 비자 서비스 요금안내 | Siam Visa Pro",

@@ -2270,7 +2270,8 @@ export const ja = {
     "related_erreurs": "DTVビザが却下される10の理由",
     "related_comparatif": "DTVと他のタイビザの比較"
   }
-,\n  "services_page": {
+,
+  "services_page": {
     "solutions_badge": "● 当社のソリューション",
     "meta": {
         "title": "料金とサービス タイビザ | 弊社 Siam Visa Pro",

@@ -2261,7 +2261,8 @@ export const es = {
     "related_erreurs": "Conozca sus errores para no sufrirlos",
     "related_comparatif": "Compare para quedarse tranquilo"
   }
-,\n  "services_page": {
+,
+  "services_page": {
     "solutions_badge": "● NUESTRAS SOLUCIONES",
     "meta": {
         "title": "Servicios y Precios Visado Tailandia | Siam Visa Pro",

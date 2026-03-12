@@ -2262,7 +2262,8 @@ export const th = {
     "related_erreurs": "เรื่องข้อห้ามที่หลายคนมองข้าม 10 ข้อ",
     "related_comparatif": "สิทธิระหว่างการอยู่ด้วย DTV และสายพรีเมียม"
   }
-,\n  "services_page": {
+,
+  "services_page": {
     "solutions_badge": "● โซลูชันของเรา",
     "meta": {
         "title": "บริการและราคา รับทำวีซ่าไทย | Siam Visa Pro",

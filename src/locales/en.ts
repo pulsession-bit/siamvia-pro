@@ -2395,7 +2395,8 @@ export const en = {
     "related_erreurs": "The 10 Errors that get a DTV Visa refused",
     "related_comparatif": "DTV vs other Thai Visas Comparison"
   }
-,\n  "services_page": {
+,
+  "services_page": {
     "solutions_badge": "● OUR SOLUTIONS",
     "meta": {
         "title": "Thailand Visa Services & Pricing | Siam Visa Pro",

@@ -1920,7 +1920,8 @@ export const ru = {
     "cta_item2": "Персональное сравнение для вашего профиля",
     "cta_item3": "Сопровождение при эмиграции"
   }
-,\n  "services_page": {
+,
+  "services_page": {
     "solutions_badge": "● НАШИ РЕШЕНИЯ",
     "meta": {
         "title": "Услуги и Цены Виза в Таиланд | Siam Visa Pro",

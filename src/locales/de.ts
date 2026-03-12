@@ -2253,7 +2253,8 @@ export const de = {
     "related_erreurs": "Die 10 fatalsten Fehler beim Visumsantrag",
     "related_comparatif": "Vergleich mit anderen Visatypen"
   }
-,\n  "services_page": {
+,
+  "services_page": {
     "solutions_badge": "● UNSERE LÖSUNGEN",
     "meta": {
         "title": "Dienstleistungen & Preise Thailand Visum | Siam Visa Pro",

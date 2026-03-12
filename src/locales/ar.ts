@@ -2260,7 +2260,8 @@ export const ar = {
     "related_erreurs": "ما الذي سيدفع الإدارة لرفض طموحك؟ اعلم",
     "related_comparatif": "جدول المغايرة مع تأشيرات سياحية ومستثمرة"
   }
-,\n  "services_page": {
+,
+  "services_page": {
     "solutions_badge": "● حلولنا",
     "meta": {
         "title": "خدماتنا والأسعار لتأشيرات تايلاند | Siam Visa Pro",

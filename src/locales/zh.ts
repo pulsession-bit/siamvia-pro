@@ -1962,7 +1962,8 @@ export const zh = {
     "cta_item2": "针对您情况的个性化比较",
     "cta_item3": "移居全程陪伴"
   }
-,\n  "services_page": {
+,
+  "services_page": {
     "solutions_badge": "● 我们的解决方案",
     "meta": {
         "title": "泰国签证代办 价格与服务指南 | Siam Visa Pro",
