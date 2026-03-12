@@ -28,6 +28,7 @@ export function getSharedDictionary(lang: Lang) {
         about_page: {
             hero_title: (full as any).about_page?.hero_title,
         },
+        blog_cta: (full as any).blog_cta,
     };
 }
 

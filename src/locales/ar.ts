@@ -2303,4 +2303,15 @@ export const ar = {
     "condition1": "رسوم السفارة دائمًا إضافية (وغير قابلة للاسترداد).",
     "condition2": "إذا اشترطت السفارة حضور مقدم الطلب شخصيًا: تقديم 'بمرافقة' بدلاً من 'بالنيابة'."
 }
+  ,
+  "blog_cta": {
+    "title": "Your visa project,",
+    "title_highlight": "100% secured.",
+    "subtitle": "Avoid administrative rejections. Our experts and AI analyze your eligibility in real time.",
+    "badge": "Siam Visa Pro Expertise",
+    "feature1": "Optimized DTV file",
+    "feature2": "VIP Assistance",
+    "feature3": "AI Eligibility Analysis",
+    "feature4": "7/7 Support"
+  }
 };
