@@ -451,7 +451,7 @@ export const ar = {
     "account_number": "Account Number:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "شكرًا لك. طلبك قيد انتظار وصول الأموال. يرجى إرسال إثبات الدفع عبر البريد الإلكتروني إلى contact@siamvisapro.com لتفعيل الخدمة."
+    "transfer_success_desc": "شكرًا لك. طلبك قيد انتظار وصول الأموال. يرجى إرسال إثبات الدفع عبر البريد الإلكتروني إلى info@siamvisapro.com لتفعيل الخدمة."
   },
   "login": {
     "title": "منطقة العملاء",
@@ -2258,4 +2258,55 @@ export const ar = {
     "related_erreurs": "ما الذي سيدفع الإدارة لرفض طموحك؟ اعلم",
     "related_comparatif": "جدول المغايرة مع تأشيرات سياحية ومستثمرة"
   }
+,\n  "services_page": {
+    "meta": {
+        "title": "خدماتنا والأسعار لتأشيرات تايلاند | Siam Visa Pro",
+        "description": "إعداد الملف بالكامل + التقديم للسفارة. الأسعار والخدمات."
+    },
+    "hero_title": "خدماتنا والأسعار",
+    "hero_subtitle": "إعداد الملف بالكامل + التقديم للسفارة",
+    "hero_tagline": "نحن لسنا السفارة، نحن حلفاؤك.",
+    "hero_tagline_secondary": "خبرة كاملة لراحة بالك في تايلاند.",
+    "custom_support_title": "بحاجة إلى دعم مخصص؟",
+    "custom_support_desc": "خبراؤنا متاحون لتحليل ملفك المحدد واقتراح أفضل استراتيجية للاغتراب.",
+    "custom_support_btn": "تحدث مع خبير",
+    "tier_standard": "أساسي",
+    "tier_standard_desc": "ملف كامل + تقديم للسفارة",
+    "tier_standard_price": "390 €",
+    "tier_express": "سريع 48 ساعة",
+    "tier_express_desc": "ملف كامل + تقديم عاجل للسفارة",
+    "tier_express_price": "590 €",
+    "tier_premium": "مميز",
+    "tier_premium_desc": "ملف كامل + تقديم للسفارة + متابعة مستمرة",
+    "tier_premium_price": "890 €",
+    "btn_start": "ابدأ طلبك",
+    "recommended": "موصى به",
+    "insurance_title": "بحاجة إلى تأمين سفر؟",
+    "insurance_desc": "قد يكون التأمين الصحي مطلوبًا.",
+    "insurance_link": "عرض شركائنا في التأمين",
+    "pack_feat1": "التحقق من الأهلية + قائمة تحقق مخصصة",
+    "pack_feat2": "إعداد/إكمال النماذج",
+    "pack_feat3": "مراجعة المستندات (جواز السفر، الصور، الإثبات المالي...)",
+    "pack_feat4": "تجميع الملف النهائي",
+    "pack_feat5": "التقديم للسفارة/القنصلية + المتابعة",
+    "admin_fees_title": "الرسوم الإدارية",
+    "admin_fees_subtitle": "تدفع مباشرة للسفارة/القنصلية",
+    "admin_fees_visa": "رسوم التأشيرة (تختلف حسب نوع التأشيرة)",
+    "admin_fees_center": "رسوم مركز التأشيرات محتملة",
+    "options_title": "خيارات إضافية",
+    "option_traduction": "ترجمات معتمدة",
+    "option_traduction_price": "39–89 € / مستند",
+    "option_legalisation": "تصديق / أبوستيل",
+    "option_legalisation_price": "49–129 € / مستند",
+    "option_assurance": "تأمين سفر متوافق",
+    "option_assurance_price": "0 €",
+    "option_rdv": "موعد / رحلة تقديم",
+    "option_rdv_price": "49–149 €",
+    "option_suivi": "تتبع ما بعد التقديم & متابعات",
+    "option_suivi_price": "متضمن في المميز، وإلا 49 €",
+    "included_title": "محتويات كل باقة",
+    "conditions_title": "الشروط",
+    "condition1": "رسوم السفارة دائما إضافية (وغير قابلة للاسترداد).",
+    "condition2": "تقديم بمرافقة بدلاً من تقديم نيابة عند اللزوم."
+}
 };

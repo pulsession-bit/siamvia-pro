@@ -451,7 +451,7 @@ export const it = {
     "account_number": "Account Number:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "Grazie. Il tuo ordine è in attesa dell'arrivo dei fondi. Invia la prova del pagamento a contact@siamvisapro.com per attivare il servizio."
+    "transfer_success_desc": "Grazie. Il tuo ordine è in attesa dell'arrivo dei fondi. Invia la prova del pagamento a info@siamvisapro.com per attivare il servizio."
   },
   "login": {
     "title": "Area Clienti",
@@ -2244,4 +2244,55 @@ export const it = {
     "related_erreurs": "Le punizioni da 10mila Baht per Errori Banalissimi al Console",
     "related_comparatif": "Rivali del DTV in Competizione sul Filo Del Rasoio"
   }
+,\n  "services_page": {
+    "meta": {
+        "title": "I Nostri Servizi e Prezzi Visto Thailandia | Siam Visa Pro",
+        "description": "Preparazione pratica + presentazione all'ambasciata. Pacchetti Standard, Express e Premium."
+    },
+    "hero_title": "I Nostri Servizi e Prezzi",
+    "hero_subtitle": "Preparazione completa della pratica + presentazione all'ambasciata",
+    "hero_tagline": "Non siamo l'ambasciata, siamo i tuoi alleati.",
+    "hero_tagline_secondary": "Competenza completa per la tua tranquillità.",
+    "custom_support_title": "Supporto su misura?",
+    "custom_support_desc": "I nostri esperti analizzano il caso specifico e la strategia di espatrio.",
+    "custom_support_btn": "Parla con un esperto",
+    "tier_standard": "Standard",
+    "tier_standard_desc": "Pratica completa + presentazione",
+    "tier_standard_price": "390 €",
+    "tier_express": "Express 48h",
+    "tier_express_desc": "Pratica completa + urgente presentazione",
+    "tier_express_price": "590 €",
+    "tier_premium": "Premium",
+    "tier_premium_desc": "Pratica + presentazione + monitoraggio",
+    "tier_premium_price": "890 €",
+    "btn_start": "Inizia la pratica",
+    "recommended": "Consigliato",
+    "insurance_title": "Assicurazione di viaggio?",
+    "insurance_desc": "Richiesta copertura minima in alcune liste.",
+    "insurance_link": "Partner assicurativi",
+    "pack_feat1": "Controllo documentazione idoneità",
+    "pack_feat2": "Form da riempire",
+    "pack_feat3": "Conformità allegati",
+    "pack_feat4": "Faldone completo",
+    "pack_feat5": "Invio e attesa per il visto",
+    "admin_fees_title": "Spese amministrative",
+    "admin_fees_subtitle": "Dal governo / Ambasciata",
+    "admin_fees_visa": "Prezzo ufficiale",
+    "admin_fees_center": "Gestione centro locale",
+    "options_title": "Opzioni aggiuntive",
+    "option_traduction": "Traduzioni giurate",
+    "option_traduction_price": "39–89 € / doc",
+    "option_legalisation": "Apostille/Autenticazione",
+    "option_legalisation_price": "49–129 € / doc",
+    "option_assurance": "Consultazione per Assicurazioni",
+    "option_assurance_price": "0 €",
+    "option_rdv": "Consulenza/Appuntamento presenziale",
+    "option_rdv_price": "49–149 €",
+    "option_suivi": "SMS/Email status",
+    "option_suivi_price": "Gratis in premium (oppure 49 €)",
+    "included_title": "Che cosa è nel pacchetto",
+    "conditions_title": "Condizioni",
+    "condition1": "Costi Ambasciata son da calcolare.",
+    "condition2": "Richiesta personale dell'individuo se necessaria dal VFS o Ambasciata."
+}
 };

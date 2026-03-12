@@ -1059,7 +1059,7 @@ export const de = {
     "swift": "BIC/SWIFT:",
     "btn_confirm_transfer": "Ich habe die Überweisung getätigt",
     "transfer_note": "Namen im Verwendungszweck angeben.",
-    "transfer_success_desc": "Vielen Dank. Ihre Bestellung wartet auf den Zahlungseingang. Bitte senden Sie einen Zahlungsbeleg an contact@siamvisapro.com, um den Service zu aktivieren."
+    "transfer_success_desc": "Vielen Dank. Ihre Bestellung wartet auf den Zahlungseingang. Bitte senden Sie einen Zahlungsbeleg an info@siamvisapro.com, um den Service zu aktivieren."
   },
   "login": {
     "title": "Kundenbereich",
@@ -2251,4 +2251,55 @@ export const de = {
     "related_erreurs": "Die 10 fatalsten Fehler beim Visumsantrag",
     "related_comparatif": "Vergleich mit anderen Visatypen"
   }
+,\n  "services_page": {
+    "meta": {
+        "title": "Dienstleistungen & Preise Thailand Visum | Siam Visa Pro",
+        "description": "Vollständige Aktenbearbeitung + Einreichung bei der Botschaft. Standard, Express und Premium Pakete."
+    },
+    "hero_title": "Unsere Dienstleistungen & Preise",
+    "hero_subtitle": "Vollständige Aktenbearbeitung + Einreichung bei der Botschaft",
+    "hero_tagline": "Wir sind nicht die Botschaft, wir sind Ihre Verbündeten.",
+    "hero_tagline_secondary": "Umfassende Expertise für Ihre Sorgenfreiheit in Thailand.",
+    "custom_support_title": "Benötigen Sie maßgeschneiderte Unterstützung?",
+    "custom_support_desc": "Unsere Experten analysieren Ihre Akte für die beste Expatriierungsstrategie.",
+    "custom_support_btn": "Mit einem Experten sprechen",
+    "tier_standard": "Standard",
+    "tier_standard_desc": "Vollständige Akte + Einreichung",
+    "tier_standard_price": "390 €",
+    "tier_express": "Express 48h",
+    "tier_express_desc": "Vollständige Akte + dringende Einreichung",
+    "tier_express_price": "590 €",
+    "tier_premium": "Premium",
+    "tier_premium_desc": "Akte + Einreichung + verstärkte Nachverfolgung",
+    "tier_premium_price": "890 €",
+    "btn_start": "Ihren Antrag starten",
+    "recommended": "Empfohlen",
+    "insurance_title": "Reiseversicherung benötigt?",
+    "insurance_desc": "Eine Krankenversicherung über 100k USD kann erforderlich sein.",
+    "insurance_link": "Versicherungspartner ansehen",
+    "pack_feat1": "Mappe prüfen + personalisierte Checkliste",
+    "pack_feat2": "Ausfüllen der Formulare",
+    "pack_feat3": "Überprüfung & Konformität der Unterlagen",
+    "pack_feat4": "Endgültige Aktenzusammenstellung",
+    "pack_feat5": "Botschaftseinreichung + Nachverfolgung",
+    "admin_fees_title": "Verwaltungsgebühren",
+    "admin_fees_subtitle": "Direkt an die Botschaft zu zahlen",
+    "admin_fees_visa": "Visagebühren der Regierung",
+    "admin_fees_center": "Gebühren für Visazentrum",
+    "options_title": "Zusätzliche Optionen",
+    "option_traduction": "Beglaubigte Übersetzungen",
+    "option_traduction_price": "39–89 € / Dokument",
+    "option_legalisation": "Legalisierung / Apostille",
+    "option_legalisation_price": "49–129 € / Dokument",
+    "option_assurance": "Konforme Reiseversicherung",
+    "option_assurance_price": "0 €",
+    "option_rdv": "Termin / Einreichungsfahrt",
+    "option_rdv_price": "49–149 €",
+    "option_suivi": "Nachverfolgung",
+    "option_suivi_price": "Im Premium enthalten, sonst 49 €",
+    "included_title": "Enthalten in Paketen",
+    "conditions_title": "Bedingungen",
+    "condition1": "Botschaftsgebühren zzgl.",
+    "condition2": "Begleitete Einreichung bei Anwesenheitspflicht."
+}
 };

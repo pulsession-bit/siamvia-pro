@@ -451,7 +451,7 @@ export const ru = {
     "account_number": "Account Number:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "Спасибо. Ваш заказ ожидает поступления средств. Пожалуйста, отправьте подтверждение оплаты на почту contact@siamvisapro.com для активации услуги."
+    "transfer_success_desc": "Спасибо. Ваш заказ ожидает поступления средств. Пожалуйста, отправьте подтверждение оплаты на почту info@siamvisapro.com для активации услуги."
   },
   "login": {
     "title": "Клиентская зона",
@@ -1918,4 +1918,55 @@ export const ru = {
     "cta_item2": "Персональное сравнение для вашего профиля",
     "cta_item3": "Сопровождение при эмиграции"
   }
+,\n  "services_page": {
+    "meta": {
+        "title": "Услуги и Цены Виза в Таиланд | Siam Visa Pro",
+        "description": "Сборка документов под ключ + подача в посольство. Пакеты: Стандарт, Экспресс, Премиум."
+    },
+    "hero_title": "Услуги и Цены",
+    "hero_subtitle": "Полная подготовка документов + подача в посольство",
+    "hero_tagline": "Мы ваш надежный партнер, а не консул.",
+    "hero_tagline_secondary": "Опыт экспертов для вашего спокойствия в Таиланде.",
+    "custom_support_title": "Нужна индивидуальная поддержка?",
+    "custom_support_desc": "Наши эксперты помогут найти оптимальную стратегию релокации.",
+    "custom_support_btn": "Связаться с экспертом",
+    "tier_standard": "Стандарт",
+    "tier_standard_desc": "Все документы + подача",
+    "tier_standard_price": "390 €",
+    "tier_express": "Экспресс 48ч",
+    "tier_express_desc": "Все документы + срочная подача",
+    "tier_express_price": "590 €",
+    "tier_premium": "Премиум",
+    "tier_premium_desc": "Документы + подача + VIP сопровождение",
+    "tier_premium_price": "890 €",
+    "btn_start": "Оформить заявку",
+    "recommended": "Рекомендуем",
+    "insurance_title": "Нужна туристическая страховка?",
+    "insurance_desc": "Часто требуется полис минимум на 100 000 долларов.",
+    "insurance_link": "Смотреть страховых брокеров",
+    "pack_feat1": "Персональный чеклист и проверка",
+    "pack_feat2": "Помощь с анкетами",
+    "pack_feat3": "Аудит и ревью ваших бумаг",
+    "pack_feat4": "Сборка в \"ready to embassy\" формат",
+    "pack_feat5": "Отправка в посольство / консульство",
+    "admin_fees_title": "Государственные сборы",
+    "admin_fees_subtitle": "Оплачивается отдельно в МИД Таиланда",
+    "admin_fees_visa": "Официальные сборы за визу",
+    "admin_fees_center": "Сервисные и визовые центры",
+    "options_title": "Дополнительные услуги",
+    "option_traduction": "Аккредитованные переводы",
+    "option_traduction_price": "39–89 € / документ",
+    "option_legalisation": "Консульская легализация",
+    "option_legalisation_price": "49–129 € / документ",
+    "option_assurance": "Подбор медицинской страховки",
+    "option_assurance_price": "0 € (оплата в страховую)",
+    "option_rdv": "Переезд/запись",
+    "option_rdv_price": "49–149 €",
+    "option_suivi": "СМС и трекинг отправки",
+    "option_suivi_price": "Бесплатно в Премиум (отдельно 49 €)",
+    "included_title": "Включено в пакеты",
+    "conditions_title": "Условия",
+    "condition1": "Консульский и сервисный сбор не входят.",
+    "condition2": "Сопровождение доступно при личной подаче."
+}
 };

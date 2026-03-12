@@ -451,7 +451,7 @@ export const ja = {
     "account_number": "口座番号:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "ありがとうございます。ご注文は入金待ちの状態です。サービスを有効にするには、支払い証明をcontact@siamvisapro.comまでメールでお送りください。"
+    "transfer_success_desc": "ありがとうございます。ご注文は入金待ちの状態です。サービスを有効にするには、支払い証明をinfo@siamvisapro.comまでメールでお送りください。"
   },
   "login": {
     "title": "クライアントエリア",
@@ -2268,4 +2268,55 @@ export const ja = {
     "related_erreurs": "DTVビザが却下される10の理由",
     "related_comparatif": "DTVと他のタイビザの比較"
   }
+,\n  "services_page": {
+    "meta": {
+        "title": "料金とサービス タイビザ | 弊社 Siam Visa Pro",
+        "description": "書類作成から大使館への提出まで一貫サポート。スタンダード、お急ぎ、プレミアムコースをご用意しております。"
+    },
+    "hero_title": "料金とサービス",
+    "hero_subtitle": "書類作成・翻訳 ＋ 大使館提出",
+    "hero_tagline": "面倒な手続きは私たちにお任せください。",
+    "hero_tagline_secondary": "あなたのタイ移住を安心サポート。",
+    "custom_support_title": "個別のサポートが必要ですか？",
+    "custom_support_desc": "専門家がケースを詳しく分析し、最適なプランをご提案します。",
+    "custom_support_btn": "専門家に相談",
+    "tier_standard": "スタンダード",
+    "tier_standard_desc": "書類作成 ＋ 申請サポート",
+    "tier_standard_price": "390 €",
+    "tier_express": "エクスプレス 48時間",
+    "tier_express_desc": "書類作成 ＋ 緊急申請",
+    "tier_express_price": "590 €",
+    "tier_premium": "プレミアム",
+    "tier_premium_desc": "書類作成 ＋ 申請 ＋ 優先サポート",
+    "tier_premium_price": "890 €",
+    "btn_start": "お申し込み",
+    "recommended": "推奨",
+    "insurance_title": "旅行保険 / 医療保険のご案内",
+    "insurance_desc": "ビザの種類により保険加入が必須となるケースがございます。",
+    "insurance_link": "提携保険会社",
+    "pack_feat1": "資格審査と必要書類リスト",
+    "pack_feat2": "各種フォームの準備と記入",
+    "pack_feat3": "書類の詳細チェックと適合確認",
+    "pack_feat4": "大使館へ提出する形式の整頓",
+    "pack_feat5": "申請ならびにパスポート返却までの代行",
+    "admin_fees_title": "政府・大使館の手数料",
+    "admin_fees_subtitle": "別途かかります",
+    "admin_fees_visa": "ビザ実費（各政府指定額）",
+    "admin_fees_center": "申請センター手数料等",
+    "options_title": "オプション",
+    "option_traduction": "公式翻訳",
+    "option_traduction_price": "39–89 € / 一部",
+    "option_legalisation": "アポスティーユ等公証",
+    "option_legalisation_price": "49–129 € / 一部",
+    "option_assurance": "タイに適した保険サービス",
+    "option_assurance_price": "0 € （自己申告）",
+    "option_rdv": "面接等の予約サポート",
+    "option_rdv_price": "49–149 €",
+    "option_suivi": "最新状況の追跡",
+    "option_suivi_price": "プレミアム無料 (通常 49 €)",
+    "included_title": "各パッケージ内容",
+    "conditions_title": "注意事項",
+    "condition1": "政府への支払いは別途ご負担。",
+    "condition2": "来館指定がある場合は同行サポート等を提供いたします。"
+}
 };

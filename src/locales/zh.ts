@@ -451,7 +451,7 @@ export const zh = {
     "account_number": "Account Number:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "谢谢。您的订单正在等待资金到账。请将付款凭证发送至 contact@siamvisapro.com 以激活服务。"
+    "transfer_success_desc": "谢谢。您的订单正在等待资金到账。请将付款凭证发送至 info@siamvisapro.com 以激活服务。"
   },
   "login": {
     "title": "客户中心",
@@ -1960,4 +1960,55 @@ export const zh = {
     "cta_item2": "针对您情况的个性化比较",
     "cta_item3": "移居全程陪伴"
   }
+,\n  "services_page": {
+    "meta": {
+        "title": "泰国签证代办 价格与服务指南 | Siam Visa Pro",
+        "description": "提供完整的材料审核与大使馆递送。涵盖普通、急件和尊享加急等多层级服务价格。"
+    },
+    "hero_title": "服务与价格",
+    "hero_subtitle": "完整文件准备 + 代客递签服务",
+    "hero_tagline": "我们是您最可靠的泰国签证代理。",
+    "hero_tagline_secondary": "为您的泰居之路保驾护航。",
+    "custom_support_title": "找不到心仪的签证路线？",
+    "custom_support_desc": "我们的签证专家可以仔细为您剖析各类政策并制定专属的合法落户方案。",
+    "custom_support_btn": "与专家一对一沟通",
+    "tier_standard": "标准套餐",
+    "tier_standard_desc": "所有表单材料的起草整合＋递签",
+    "tier_standard_price": "390 €",
+    "tier_express": "48小时加急",
+    "tier_express_desc": "最快响应制单＋使领馆紧急送签",
+    "tier_express_price": "590 €",
+    "tier_premium": "钻石尊享版",
+    "tier_premium_desc": "完整材料准备＋领事馆递交＋人工时刻追踪",
+    "tier_premium_price": "890 €",
+    "btn_start": "现在注册申请",
+    "recommended": "最高性价比",
+    "insurance_title": "正在寻找出境旅行医疗保险？",
+    "insurance_desc": "泰国政府对于特殊签证或时期会有硬性的十万美金报销项要求。",
+    "insurance_link": "查阅本站保险合作商提供商",
+    "pack_feat1": "在线评分及为您准备对应要求列表",
+    "pack_feat2": "多语言表单填写与修正",
+    "pack_feat3": "人工把关财务证明、照片护照的硬性规范",
+    "pack_feat4": "编撰为高通过率的签证申请标准件",
+    "pack_feat5": "领馆往返寄收业务及大使馆审批代表",
+    "admin_fees_title": "领馆官方工本费用结算",
+    "admin_fees_subtitle": "交给各辖区泰国使馆",
+    "admin_fees_visa": "因国家区域或逗留长短而异的强制性官费",
+    "admin_fees_center": "VFS中心驻地代收费（各地具体略有变动）",
+    "options_title": "扩展支持业务",
+    "option_traduction": "公证翻译／涉外翻译",
+    "option_traduction_price": "39–89 € / 单张",
+    "option_legalisation": "海牙认证 / 使馆认证",
+    "option_legalisation_price": "49–129 € / 单张",
+    "option_assurance": "外方保险直通渠道匹配",
+    "option_assurance_price": "零中间商差价，官网直购结费",
+    "option_rdv": "代客排队预约或亲赴代理",
+    "option_rdv_price": "49–149 €",
+    "option_suivi": "全透明进度追查与反馈",
+    "option_suivi_price": "尊享版内免费包容，单独 49 €起",
+    "included_title": "基础内嵌于各个礼包",
+    "conditions_title": "法律条文",
+    "condition1": "官费均为硬性收取且领馆存在拒签不退回制度。",
+    "condition2": "涉及被特定使馆要求强制面签的情节，不适用全代理规则，需本人同行但可提供协助面谈环节。"
+}
 };

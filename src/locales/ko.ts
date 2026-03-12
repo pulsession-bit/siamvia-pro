@@ -451,7 +451,7 @@ export const ko = {
     "account_number": "Account Number:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "감사합니다. 입금이 확인될 때까지 주문이 대기 상태입니다. 서비스를 활성화하려면 결제 증명서를 contact@siamvisapro.com으로 이메일 보내주세요."
+    "transfer_success_desc": "감사합니다. 입금이 확인될 때까지 주문이 대기 상태입니다. 서비스를 활성화하려면 결제 증명서를 info@siamvisapro.com으로 이메일 보내주세요."
   },
   "login": {
     "title": "고객 센터",
@@ -1960,4 +1960,55 @@ export const ko = {
     "cta_item2": "프로필에 맞는 맞춤 비교",
     "cta_item3": "이민 지원"
   }
+,\n  "services_page": {
+    "meta": {
+        "title": "태국 비자 서비스 요금안내 | Siam Visa Pro",
+        "description": "서류 준비부터 대사관 최종 심사까지 통합 제공. 등급별 서비스 요금을 확인하세요."
+    },
+    "hero_title": "서비스 및 요금",
+    "hero_subtitle": "제반 서류 준비 + 대사관 최종 심사 지원",
+    "hero_tagline": "안전하고 신뢰받는 여러분의 파트너",
+    "hero_tagline_secondary": "여러분의 태국생활을 지원합니다.",
+    "custom_support_title": "맞춤상담이 필요하십니까?",
+    "custom_support_desc": "전문가가 여러분의 서류를 파악해 최적의 진행 일정을 세웁니다.",
+    "custom_support_btn": "전문가와 상담",
+    "tier_standard": "스탠다드",
+    "tier_standard_desc": "서류준비 + 대사관 신청",
+    "tier_standard_price": "390 €",
+    "tier_express": "익스프레스 48시간",
+    "tier_express_desc": "서류준비 + 긴급 신청",
+    "tier_express_price": "590 €",
+    "tier_premium": "프리미엄",
+    "tier_premium_desc": "서류준비 + 신청 + 사후 밀착 모니터링",
+    "tier_premium_price": "890 €",
+    "btn_start": "지금 신청",
+    "recommended": "추천 등급",
+    "insurance_title": "의료보험 안내",
+    "insurance_desc": "비자 요건상 일정 금액 이상의 생명/의료 보험이 필수입니다.",
+    "insurance_link": "추천사 확인",
+    "pack_feat1": "고객 적합성 심사",
+    "pack_feat2": "신청서 작성대행",
+    "pack_feat3": "필수 서류 누락 방지 체크",
+    "pack_feat4": "완벽한 포맷의 심사제출물 정돈",
+    "pack_feat5": "결과 확인 시까지 트래킹 지원",
+    "admin_fees_title": "대사관 접수 비용",
+    "admin_fees_subtitle": "대사관 실비 (개별 부담)",
+    "admin_fees_visa": "태국 정부 지정 비자 심사 비용",
+    "admin_fees_center": "비자센터 접수 대행료",
+    "options_title": "추가 비용 옵션",
+    "option_traduction": "번역 인증 서류",
+    "option_traduction_price": "39–89 € / 장",
+    "option_legalisation": "아포스티유 및 외교부 인증",
+    "option_legalisation_price": "49–129 € / 장",
+    "option_assurance": "태국 장기 체류 보험 연계",
+    "option_assurance_price": "0 € (보험사 직결제)",
+    "option_rdv": "오프라인 방문 예약",
+    "option_rdv_price": "49–149 €",
+    "option_suivi": "실시간 진행상황 조회 서비스",
+    "option_suivi_price": "프리미엄 혜택(일반 49 € 추가)",
+    "included_title": "공통 지원서비스",
+    "conditions_title": "유의 사항",
+    "condition1": "부결된 경우에도 환불 의무가 발생하지 않는 대사관 규정",
+    "condition2": "직접 출석이 필요한 상황 등에 대한 안내 제공"
+}
 };

@@ -2266,7 +2266,7 @@ export const fr = {
     "swift": "BIC/SWIFT :",
     "transfer_note": "Indiquez votre NOM en référence du virement.",
     "btn_confirm_transfer": "J'ai effectué le virement",
-    "transfer_success_desc": "Merci. Votre commande est enregistrée en attente de fonds. Veuillez envoyer la preuve de virement à contact@siamvisapro.com pour activer le service."
+    "transfer_success_desc": "Merci. Votre commande est enregistrée en attente de fonds. Veuillez envoyer la preuve de virement à info@siamvisapro.com pour activer le service."
   },
   "apply_page": {
     "meta": {

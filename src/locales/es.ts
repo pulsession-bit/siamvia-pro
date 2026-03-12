@@ -449,7 +449,7 @@ export const es = {
     "account_number": "Número de cuenta:",
     "iban": "IBAN:",
     "swift": "BIC/SWIFT:",
-    "transfer_success_desc": "Gracias. Su pedido está pendiente de la llegada de los fondos. Por favor, envíe el comprobante de pago por correo electrónico a contact@siamvisapro.com para activar el servicio."
+    "transfer_success_desc": "Gracias. Su pedido está pendiente de la llegada de los fondos. Por favor, envíe el comprobante de pago por correo electrónico a info@siamvisapro.com para activar el servicio."
   },
   "login": {
     "title": "Área Cliente",
@@ -2259,4 +2259,55 @@ export const es = {
     "related_erreurs": "Conozca sus errores para no sufrirlos",
     "related_comparatif": "Compare para quedarse tranquilo"
   }
+,\n  "services_page": {
+    "meta": {
+        "title": "Servicios y Precios Visado Tailandia | Siam Visa Pro",
+        "description": "Preparación completa + presentación en la embajada. Paquetes estándar, exprés y premium."
+    },
+    "hero_title": "Nuestros Servicios y Precios",
+    "hero_subtitle": "Preparación completa + presentación en la embajada",
+    "hero_tagline": "No somos la embajada, somos tus aliados.",
+    "hero_tagline_secondary": "Experiencia para tu tranquilidad en Tailandia.",
+    "custom_support_title": "¿Apoyo personalizado?",
+    "custom_support_desc: ": "Los expertos analizan tu expediente para la mejor estrategia.",
+    "custom_support_btn": "Hablar con un experto",
+    "tier_standard": "Estándar",
+    "tier_standard_desc": "Expediente completo + embajada",
+    "tier_standard_price": "390 €",
+    "tier_express": "Exprés 48h",
+    "tier_express_desc": "Expediente + urgente embajada",
+    "tier_express_price": "590 €",
+    "tier_premium": "Premium",
+    "tier_premium_desc": "Expediente + embajada + seguimiento",
+    "tier_premium_price": "890 €",
+    "btn_start": "Iniciar solicitud",
+    "recommended": "Recomendado",
+    "insurance_title": "¿Seguro de viaje?",
+    "insurance_desc": "Podría exigirse seguro médico (según visado).",
+    "insurance_link": "Socios de seguros",
+    "pack_feat1": "Revisión elegibilidad + control",
+    "pack_feat2": "Formularios lista",
+    "pack_feat3": "Documentos (pasaporte, dinero, etc)",
+    "pack_feat4": "Ensamblaje del expediente",
+    "pack_feat5": "Representación y/o presentación embajada",
+    "admin_fees_title": "Tarifas administrativas",
+    "admin_fees_subtitle": "Pagas directamente embajada/consulado",
+    "admin_fees_visa": "Tarifas oficiales de visa",
+    "admin_fees_center": "Posibles tarifas centro",
+    "options_title": "Opciones extra",
+    "option_traduction": "Traducciones",
+    "option_traduction_price": "39–89 € / doc",
+    "option_legalisation": "Apostilla",
+    "option_legalisation_price": "49–129 € / doc",
+    "option_assurance": "Seguro de viaje",
+    "option_assurance_price": "0 €",
+    "option_rdv": "Viaje o cita",
+    "option_rdv_price": "49–149 €",
+    "option_suivi": "Seguimiento",
+    "option_suivi_price": "Premium, o 49 €",
+    "included_title": "Incluido en paquetes",
+    "conditions_title": "Condiciones",
+    "condition1": "Tarifas consulares no regresan.",
+    "condition2": "Asistencia local en embajadas que solicitan cita."
+}
 };
