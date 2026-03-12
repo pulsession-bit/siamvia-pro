@@ -15,6 +15,7 @@ export const ru = {
     "book_appointment": "📅 Записаться",
     "eligibility": "Начать аудит",
     "ltr": "Виза LTR",
+    "free_audit": "Бесплатный ИИ-Аудит",
     "languages": "Языки",
     "search": "Поиск",
     "comparator": "Сравнение виз 2026",
@@ -291,6 +292,7 @@ export const ru = {
     "btn_rates": "Цены"
   },
   "services_page": {
+    "solutions_badge": "● НАШИ РЕШЕНИЯ",
     "meta": {
       "title": "Услуги & Тарифы Виза Таиланд | Siam Visa Pro",
       "description": "Полное досье + подача в посольство. Пакеты Standard (390 €), Express 48ч (590 €) и Premium (890 €). Сопровождение визы в Таиланд."
@@ -1513,7 +1515,7 @@ export const ru = {
     "privacy_list2": "Удаление через 30 дней.",
     "privacy_list3": "Не продаем.",
     "contact_title": "Контакт",
-    "contact_text": "legal@siamvisapro.com"
+    "contact_text": "info@siamvisapro.com"
   },
   "cta_footer": {
     "title": "Не дайте отказу испортить планы",
@@ -1919,6 +1921,7 @@ export const ru = {
     "cta_item3": "Сопровождение при эмиграции"
   }
 ,\n  "services_page": {
+    "solutions_badge": "● НАШИ РЕШЕНИЯ",
     "meta": {
         "title": "Услуги и Цены Виза в Таиланд | Siam Visa Pro",
         "description": "Сборка документов под ключ + подача в посольство. Пакеты: Стандарт, Экспресс, Премиум."

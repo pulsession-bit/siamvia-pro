@@ -18,6 +18,7 @@ export const it = {
     "book_appointment": "📅 Prenota Appuntamento",
     "eligibility": "Inizia il tuo Audit",
     "ltr": "Visto LTR",
+    "free_audit": "Audit IA Gratuito",
     "languages": "Lingue",
     "search": "Ricerca",
     "comparator": "Comparatore di Visti 2026",
@@ -291,6 +292,7 @@ export const it = {
     "btn_rates": "Vedi prezzi"
   },
   "services_page": {
+    "solutions_badge": "● LE NOSTRE SOLUZIONI",
     "meta": {
       "title": "Servizi & Tariffe Visto Thailandia | Siam Visa Pro",
       "description": "Pratica completa + deposito in ambasciata. Pacchetti Standard (390 €), Express 48h (590 €) e Premium (890 €). Assistenza visto Thailandia."
@@ -1544,7 +1546,7 @@ export const it = {
     "privacy_list2": "Cancellazione 30gg.",
     "privacy_list3": "No vendita dati.",
     "contact_title": "Contatti",
-    "contact_text": "legal@siamvisapro.com"
+    "contact_text": "info@siamvisapro.com"
   },
   "cta_footer": {
     "title": "Non lasciare che un rifiuto rovini i piani",
@@ -2245,6 +2247,7 @@ export const it = {
     "related_comparatif": "Rivali del DTV in Competizione sul Filo Del Rasoio"
   }
 ,\n  "services_page": {
+    "solutions_badge": "● LE NOSTRE SOLUZIONI",
     "meta": {
         "title": "I Nostri Servizi e Prezzi Visto Thailandia | Siam Visa Pro",
         "description": "Preparazione pratica + presentazione all'ambasciata. Pacchetti Standard, Express e Premium."

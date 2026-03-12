@@ -15,6 +15,7 @@ export const zh = {
     "book_appointment": "📅 预约咨询",
     "eligibility": "开始您的评估",
     "ltr": "LTR 签证",
+    "free_audit": "免费 AI 审计",
     "languages": "语言",
     "search": "搜索",
     "comparator": "2026 签证比较",
@@ -291,6 +292,7 @@ export const zh = {
     "btn_rates": "查看价格"
   },
   "services_page": {
+    "solutions_badge": "● 我们的解决方案",
     "meta": {
       "title": "泰国签证服务与价格 | Siam Visa Pro",
       "description": "完整材料准备 + 大使馆递交。标准套餐（390 €）、48小时加急套餐（590 €）及尊享套餐（890 €）。泰国签证全程协助。"
@@ -1555,7 +1557,7 @@ export const zh = {
     "privacy_list2": "30天删除。",
     "privacy_list3": "不售卖。",
     "contact_title": "联系",
-    "contact_text": "legal@siamvisapro.com"
+    "contact_text": "info@siamvisapro.com"
   },
   "cta_footer": {
     "title": "别让拒签毁了计划",
@@ -1961,6 +1963,7 @@ export const zh = {
     "cta_item3": "移居全程陪伴"
   }
 ,\n  "services_page": {
+    "solutions_badge": "● 我们的解决方案",
     "meta": {
         "title": "泰国签证代办 价格与服务指南 | Siam Visa Pro",
         "description": "提供完整的材料审核与大使馆递送。涵盖普通、急件和尊享加急等多层级服务价格。"

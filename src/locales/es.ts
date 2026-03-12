@@ -15,6 +15,7 @@ export const es = {
     "book_appointment": "📅 Reservar Cita",
     "eligibility": "Iniciar su Auditoría",
     "ltr": "Visa LTR",
+    "free_audit": "Auditoría IA Gratuita",
     "languages": "Idiomas",
     "search": "Buscar",
     "comparator": "Comparador de Visas 2026",
@@ -289,6 +290,7 @@ export const es = {
     }
   },
   "services_page": {
+    "solutions_badge": "● NUESTRAS SOLUCIONES",
     "meta": {
       "title": "Servicios y Tarifas Visa Tailandia | Siam Visa Pro",
       "description": "Expediente completo + presentación en la embajada. Packs Standard (390 €), Express 48h (590 €) y Premium (890 €). Acompañamiento visa Tailandia."
@@ -1702,7 +1704,7 @@ export const es = {
     "privacy_list2": "Borrado en 30 días.",
     "privacy_list3": "Sin venta a terceros.",
     "contact_title": "Contacto",
-    "contact_text": "legal@siamvisapro.com"
+    "contact_text": "info@siamvisapro.com"
   },
   "cta_footer": {
     "title": "No deje que un rechazo arruine su plan",
@@ -2260,6 +2262,7 @@ export const es = {
     "related_comparatif": "Compare para quedarse tranquilo"
   }
 ,\n  "services_page": {
+    "solutions_badge": "● NUESTRAS SOLUCIONES",
     "meta": {
         "title": "Servicios y Precios Visado Tailandia | Siam Visa Pro",
         "description": "Preparación completa + presentación en la embajada. Paquetes estándar, exprés y premium."

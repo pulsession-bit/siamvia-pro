@@ -61,7 +61,7 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang, pageKey, title, show
         'contactPoint': {
             '@type': 'ContactPoint',
             'contactType': 'customer service',
-            'email': 'support@siamvisapro.com',
+            'email': 'info@siamvisapro.com',
             'availableLanguage': ['French', 'English', 'Thai']
         },
         'sameAs': [
@@ -142,7 +142,7 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({ lang, pageKey, title, show
             'longitude': 100.5018
         },
         'telephone': '+66-XXX-XXX-XXXX',
-        'email': 'support@siamvisapro.com',
+        'email': 'info@siamvisapro.com',
         'openingHoursSpecification': [
             {
                 '@type': 'OpeningHoursSpecification',

@@ -18,6 +18,7 @@ export const de = {
     "book_appointment": "📅 Termin buchen",
     "eligibility": "Audit starten",
     "ltr": "Visa LTR",
+    "free_audit": "Kostenloses KI-Audit",
     "languages": "Sprachen",
     "search": "Suche",
     "comparator": "Visa-Vergleich 2026",
@@ -278,6 +279,7 @@ export const de = {
     }
   },
   "services_page": {
+    "solutions_badge": "● UNSERE LÖSUNGEN",
     "meta": {
       "title": "Dienstleistungen & Preise Thailand Visum | Siam Visa Pro",
       "description": "Vollständige Aktenbearbeitung + Einreichung bei der Botschaft. Standard (390 €), Express 48h (590 €) und Premium (890 €) Pakete. Thailand Visum Begleitung."
@@ -1780,7 +1782,7 @@ export const de = {
     "privacy_list2": "Sie werden 30 Tage nach Erhalt Ihres Visums aus unseren Datenbanken gelöscht.",
     "privacy_list3": "Es werden keine Daten an Dritte verkauft.",
     "contact_title": "Kontakt",
-    "contact_text": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns unter legal@siamvisapro.com."
+    "contact_text": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns unter info@siamvisapro.com."
   },
   "cta_footer": {
     "title": "Lassen Sie sich nicht ablehnen",
@@ -2252,6 +2254,7 @@ export const de = {
     "related_comparatif": "Vergleich mit anderen Visatypen"
   }
 ,\n  "services_page": {
+    "solutions_badge": "● UNSERE LÖSUNGEN",
     "meta": {
         "title": "Dienstleistungen & Preise Thailand Visum | Siam Visa Pro",
         "description": "Vollständige Aktenbearbeitung + Einreichung bei der Botschaft. Standard, Express und Premium Pakete."

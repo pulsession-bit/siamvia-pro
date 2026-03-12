@@ -14,6 +14,7 @@ export const th = {
     "book_appointment": "📅 นัดหมาย",
     "eligibility": "เริ่มการตรวจสอบของคุณ",
     "ltr": "วีซ่า LTR",
+    "free_audit": "ตรวจสอบด้วย AI ฟรี",
     "languages": "ภาษา",
     "search": "ค้นหา",
     "comparator": "เปรียบเทียบวีซ่า 2026",
@@ -292,6 +293,7 @@ export const th = {
     "btn_rates": "ดูราคา"
   },
   "services_page": {
+    "solutions_badge": "● โซลูชันของเรา",
     "meta": {
       "title": "บริการ & อัตราค่าบริการวีซ่าไทย | Siam Visa Pro",
       "description": "จัดเตรียมเอกสารครบชุด + ยื่นที่สถานทูต แพ็กเกจ Standard (390 €), Express 48 ชม. (590 €) และ Premium (890 €) บริการช่วยเหลือวีซ่าไทย"
@@ -1556,7 +1558,7 @@ export const th = {
     "privacy_list2": "ลบใน 30 วัน",
     "privacy_list3": "ไม่ขายข้อมูล",
     "contact_title": "ติดต่อ",
-    "contact_text": "legal@siamvisapro.com"
+    "contact_text": "info@siamvisapro.com"
   },
   "cta_footer": {
     "title": "อย่าให้การถูกปฏิเสธทำลายแผนของคุณ",
@@ -2261,6 +2263,7 @@ export const th = {
     "related_comparatif": "สิทธิระหว่างการอยู่ด้วย DTV และสายพรีเมียม"
   }
 ,\n  "services_page": {
+    "solutions_badge": "● โซลูชันของเรา",
     "meta": {
         "title": "บริการและราคา รับทำวีซ่าไทย | Siam Visa Pro",
         "description": "เตรียมเอกสารและยื่นวีซ่า ราบรื่นไม่มีสะดุด มั่นใจในทุกการจัดการทั้ง Standard, Express และ Premium"

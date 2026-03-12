@@ -15,6 +15,7 @@ export const ko = {
     "book_appointment": "📅 예약하기",
     "eligibility": "무료 진단 시작",
     "ltr": "LTR 비자",
+    "free_audit": "무료 AI 진단",
     "languages": "언어",
     "search": "검색",
     "comparator": "2026년 비자 비교",
@@ -291,6 +292,7 @@ export const ko = {
     "btn_rates": "가격 보기"
   },
   "services_page": {
+    "solutions_badge": "● 당사의 솔루션",
     "meta": {
       "title": "태국 비자 서비스 및 가격 | Siam Visa Pro",
       "description": "완벽한 서류 준비 + 대사관 접수. 스탠다드(390 €), 익스프레스 48시간(590 €), 프리미엄(890 €). 태국 비자 전문 지원."
@@ -1555,7 +1557,7 @@ export const ko = {
     "privacy_list2": "30일 후 삭제.",
     "privacy_list3": "판매 안함.",
     "contact_title": "연락처",
-    "contact_text": "legal@siamvisapro.com"
+    "contact_text": "info@siamvisapro.com"
   },
   "cta_footer": {
     "title": "거절로 계획을 망치지 마세요",
@@ -1961,6 +1963,7 @@ export const ko = {
     "cta_item3": "이민 지원"
   }
 ,\n  "services_page": {
+    "solutions_badge": "● 당사의 솔루션",
     "meta": {
         "title": "태국 비자 서비스 요금안내 | Siam Visa Pro",
         "description": "서류 준비부터 대사관 최종 심사까지 통합 제공. 등급별 서비스 요금을 확인하세요."

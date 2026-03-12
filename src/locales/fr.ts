@@ -18,6 +18,7 @@ export const fr = {
     "eligibility": "Démarrer votre Audit",
     "see_services": "Voir nos services",
     "ltr": "Visa LTR",
+    "free_audit": "Audit Gratuit IA",
     "languages": "Langues",
     "business": "Visa Business",
     "smart": "Visa SMART",
@@ -1070,6 +1071,7 @@ export const fr = {
     }
   },
   "services_page": {
+    "solutions_badge": "● NOS SOLUTIONS",
     "meta": {
       "title": "Services & Tarifs Visa Thaïlande | Siam Visa Pro",
       "description": "Dossier complet + dépôt à l'ambassade. Packs Standard (390 €), Express (590 €) et Premium (890 €). Accompagnement visa Thaïlande."
@@ -2197,7 +2199,7 @@ export const fr = {
     "privacy_list2": "Ils sont supprimés de nos bases de données 30 jours après l'obtention de votre visa.",
     "privacy_list3": "Aucune donnée n'est revendue à des tiers.",
     "contact_title": "Contact",
-    "contact_text": "Pour toute question relative à ces conditions, contactez-nous à legal@siamvisapro.com."
+    "contact_text": "Pour toute question relative à ces conditions, contactez-nous à info@siamvisapro.com."
   },
   "cta_footer": {
     "title": "Ne laissez pas un refus gâcher votre projet",

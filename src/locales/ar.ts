@@ -15,6 +15,7 @@ export const ar = {
     "book_appointment": "📅 احجز موعداً",
     "eligibility": "ابدأ تقييمك",
     "ltr": "تأشيرة LTR",
+    "free_audit": "تدقيق ذكاء اصطناعي مجاني",
     "languages": "اللغات",
     "search": "بحث",
     "comparator": "مقارنة التأشيرات 2026",
@@ -291,6 +292,7 @@ export const ar = {
     "btn_rates": "شاهد الأسعار"
   },
   "services_page": {
+    "solutions_badge": "● حلولنا",
     "meta": {
       "title": "خدمات وأسعار تأشيرات تايلاند | Siam Visa Pro",
       "description": "ملف كامل + تقديم في السفارة. الباقة القياسية (390 €)، الباقة السريعة 48 ساعة (590 €) والباقة المميزة (890 €). مرافقة كاملة لتأشيرة تايلاند."
@@ -1555,7 +1557,7 @@ export const ar = {
     "privacy_list2": "حذف بعد 30 يوم.",
     "privacy_list3": "لا نبيع البيانات.",
     "contact_title": "اتصال",
-    "contact_text": "legal@siamvisapro.com"
+    "contact_text": "info@siamvisapro.com"
   },
   "cta_footer": {
     "title": "لا تدع الرفض يفسد خططك",
@@ -2259,6 +2261,7 @@ export const ar = {
     "related_comparatif": "جدول المغايرة مع تأشيرات سياحية ومستثمرة"
   }
 ,\n  "services_page": {
+    "solutions_badge": "● حلولنا",
     "meta": {
         "title": "خدماتنا والأسعار لتأشيرات تايلاند | Siam Visa Pro",
         "description": "إعداد الملف بالكامل + التقديم للسفارة. الأسعار والخدمات."

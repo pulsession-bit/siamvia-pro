@@ -16,6 +16,7 @@ export const en = {
     "book_appointment": "📅 Book a Meeting",
     "eligibility": "Start your Audit",
     "ltr": "Visa LTR",
+    "free_audit": "Free AI Audit",
     "languages": "Languages",
     "search": "Search",
     "search_placeholder": "Ask AI...",
@@ -722,6 +723,7 @@ export const en = {
     }
   },
   "services_page": {
+    "solutions_badge": "● OUR SOLUTIONS",
     "meta": {
       "title": "Services & Pricing Thailand Visa | Siam Visa Pro",
       "description": "Complete file preparation + embassy submission. Standard (390 €), Express 48h (590 €) and Premium (890 €) packs. Thailand visa assistance."
@@ -1858,7 +1860,7 @@ export const en = {
     "privacy_list2": "They are deleted from our databases 30 days after obtaining your visa.",
     "privacy_list3": "No data is sold to third parties.",
     "contact_title": "Contact",
-    "contact_text": "For any questions regarding these terms, contact us at legal@siamvisapro.com."
+    "contact_text": "For any questions regarding these terms, contact us at info@siamvisapro.com."
   },
   "cta_footer": {
     "title": "Don't let a refusal ruin your project",
@@ -2394,6 +2396,7 @@ export const en = {
     "related_comparatif": "DTV vs other Thai Visas Comparison"
   }
 ,\n  "services_page": {
+    "solutions_badge": "● OUR SOLUTIONS",
     "meta": {
         "title": "Thailand Visa Services & Pricing | Siam Visa Pro",
         "description": "Complete file preparation + embassy submission. Standard, Express 48h, and Premium packages. Complete expertise for your peace of mind."

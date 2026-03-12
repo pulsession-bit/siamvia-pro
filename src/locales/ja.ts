@@ -15,6 +15,7 @@ export const ja = {
     "book_appointment": "📅 予約する",
     "eligibility": "無料診断を始める",
     "ltr": "LTRビザ",
+    "free_audit": "無料 AI 監査",
     "languages": "言語",
     "search": "検索",
     "comparator": "2026年 ビザ比較",
@@ -291,6 +292,7 @@ export const ja = {
     "btn_rates": "料金を見る"
   },
   "services_page": {
+    "solutions_badge": "● 当社のソリューション",
     "meta": {
       "title": "タイビザ申請代行サービスと料金 | Siam Visa Pro",
       "description": "書類一式の作成 + 大使館への提出。スタンダード（390 €）、エクスプレス48時間（590 €）、プレミアム（890 €）。タイビザの完全サポート。"
@@ -1555,7 +1557,7 @@ export const ja = {
     "privacy_list2": "30日で削除。",
     "privacy_list3": "販売しません。",
     "contact_title": "連絡先",
-    "contact_text": "legal@siamvisapro.com"
+    "contact_text": "info@siamvisapro.com"
   },
   "cta_footer": {
     "title": "拒否で計画を台無しにしないでください",
@@ -2269,6 +2271,7 @@ export const ja = {
     "related_comparatif": "DTVと他のタイビザの比較"
   }
 ,\n  "services_page": {
+    "solutions_badge": "● 当社のソリューション",
     "meta": {
         "title": "料金とサービス タイビザ | 弊社 Siam Visa Pro",
         "description": "書類作成から大使館への提出まで一貫サポート。スタンダード、お急ぎ、プレミアムコースをご用意しております。"

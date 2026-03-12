@@ -92,7 +92,7 @@ const ServicesClientPage: React.FC = () => {
         <div className="bg-slate-50 min-h-screen pb-20">
             {/* 1. Hero Section */}
             <VisaHero
-                badge="● NOS SOLUTIONS"
+                badge={t('services_page.solutions_badge')}
                 title={t('services_page.hero_title')}
                 subtitle={t('services_page.hero_subtitle')}
                 description={t('services_page.hero_tagline')}

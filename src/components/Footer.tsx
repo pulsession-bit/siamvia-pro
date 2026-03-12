@@ -145,7 +145,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-slate-400 text-sm">
               <li className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-amber-500 mt-0.5" />
-                <span>contact@siamvisapro.com<br /><span className="text-xs text-slate-500">24h response</span></span>
+                <span>info@siamvisapro.com<br /><span className="text-xs text-slate-500">24h response</span></span>
               </li>
               <li className="flex items-start space-x-3 group">
                 <MapPin className="h-5 w-5 text-amber-500 mt-0.5" />
