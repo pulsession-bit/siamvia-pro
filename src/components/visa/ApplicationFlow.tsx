@@ -67,6 +67,35 @@ const ApplicationFlow: React.FC = () => {
 
             await addDoc(collection(db, 'visa_applications'), applicationData);
 
+            // Send notification email to admin
+            await addDoc(collection(db, 'mail'), {
+                to: 'info@siamvisapro.com',
+                message: {
+                    subject: `[PRO] Nouvelle demande de Visa : ${formData.firstName} ${formData.lastName}`,
+                    html: `
+                        <div style="font-family: sans-serif; padding: 20px; color: #333;">
+                            <h2 style="color: #f59e0b;">Nouvelle demande de visa reçue</h2>
+                            <p>Un utilisateur vient de soumettre une demande via le site <strong>siamvisapro.com</strong>.</p>
+                            
+                            <div style="background: #f8fafc; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                                <p><strong>Type de Visa :</strong> ${formData.visaId}</p>
+                                <p><strong>Nom complet :</strong> ${formData.firstName} ${formData.lastName}</p>
+                                <p><strong>Email :</strong> <a href="mailto:${formData.email}">${formData.email}</a></p>
+                                <p><strong>Téléphone :</strong> ${formData.phone}</p>
+                                <p><strong>Nationalité :</strong> ${formData.nationality}</p>
+                                <p><strong>Date d'entrée prévue :</strong> ${formData.entryDate || 'N/A'}</p>
+                                <p><strong>Durée du séjour :</strong> ${formData.duration ? `${formData.duration} jours` : 'N/A'}</p>
+                                <p><strong>Langue du site :</strong> ${language.toUpperCase()}</p>
+                            </div>
+                            
+                            <p style="margin-top: 20px; font-size: 12px; color: #64748b;">
+                                Ce message a été généré automatiquement par le système de gestion des demandes.
+                            </p>
+                        </div>
+                    `
+                }
+            });
+
             // Success - move to success step
             setStep('success');
         } catch (error) {

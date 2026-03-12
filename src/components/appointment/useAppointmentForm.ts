@@ -133,6 +133,34 @@ export const useAppointmentForm = (visaContext?: string, onSuccess?: () => void)
                 hasAccount: createAccount || isGoogleLinked
             });
 
+            // Send notification email to admin
+            await addDoc(collection(db, 'mail'), {
+                to: 'info@siamvisapro.com',
+                message: {
+                    subject: `[PRO] Nouveau RDV Expert : ${fullName}`,
+                    html: `
+                        <div style="font-family: sans-serif; padding: 20px; color: #333;">
+                            <h2 style="color: #2563eb;">Nouvelle demande de rendez-vous expert</h2>
+                            <p>Un utilisateur souhaite être contacté par un expert via le site <strong>siamvisapro.com</strong>.</p>
+                            
+                            <div style="background: #f8fafc; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                                <p><strong>Nom complet :</strong> ${fullName}</p>
+                                <p><strong>Email :</strong> <a href="mailto:${email}">${email}</a></p>
+                                <p><strong>Date souhaitée :</strong> ${date}</p>
+                                <p><strong>Heure/Créneau :</strong> ${slot}</p>
+                                <p><strong>Méthode de contact :</strong> ${contactMethod.toUpperCase()}</p>
+                                <p><strong>Coordonnées de contact :</strong> ${contactValue}</p>
+                                <p><strong>Contexte (Page) :</strong> ${visaContext || 'Général'}</p>
+                            </div>
+                            
+                            <p style="margin-top: 20px; font-size: 12px; color: #64748b;">
+                                Ce message a été généré automatiquement par le système de gestion des rendez-vous.
+                            </p>
+                        </div>
+                    `
+                }
+            });
+
             setSubmitStatus('success');
             if (onSuccess) {
                 setTimeout(onSuccess, 3000);

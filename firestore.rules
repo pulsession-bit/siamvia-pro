@@ -78,6 +78,12 @@ service cloud.firestore {
       allow read, update, delete: if hasStaffAccess() || isSystemAdmin();
     }
 
+    // EMAIL NOTIFICATIONS (Trigger Email Extension)
+    match /mail/{mailId} {
+      allow create: if true; // Allow website to trigger notifications
+      allow read, update, delete: if isSystemAdmin();
+    }
+
     // INGRESS EVENTS (Événements d'ingestion - Server-side only)
     // Ces événements sont créés par des scripts backend/Cloud Functions
     match /ingress_events/{eventId} {
