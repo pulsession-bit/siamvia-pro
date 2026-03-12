@@ -2296,5 +2296,15 @@ export const de = {
     "conditions_title": "Bedingungen",
     "condition1": "Botschaftsgebühren sind stets zusätzlich (und nicht erstattungsfähig).",
     "condition2": "Falls die Botschaft die persönliche Anwesenheit verlangt: begleitete Einreichung statt vollständiger Vertretung."
-}
+},
+  "blog_cta": {
+    "title": "Ihr Visum-Projekt,",
+    "title_highlight": "100% sicher.",
+    "subtitle": "Vermeiden Sie administrative Ablehnungen. Unsere Experten und unsere KI analysieren Ihre Berechtigung in Echtzeit.",
+    "badge": "Siam Visa Pro Expertise",
+    "feature1": "Optimierte DTV-Unterlagen",
+    "feature2": "VIP-Unterstützung",
+    "feature3": "KI-Berechtigungsanalyse",
+    "feature4": "Support 7/7"
+  }
 };

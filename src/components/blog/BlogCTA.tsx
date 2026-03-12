@@ -19,22 +19,22 @@ export const BlogCTA: React.FC = () => {
                 <div className="flex-1 text-center lg:text-left">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-widest mb-6 border border-amber-500/30">
                         <Sparkles className="h-3 w-3" />
-                        <span>Siam Visa Pro Expertise</span>
+                        <span>{t('blog_cta.badge') || "Siam Visa Pro Expertise"}</span>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-black mb-6 leading-tight">
-                        {t('home_page.appointment_title') || "Votre projet de visa,"} <br className="hidden md:block"/>
-                        <span className="text-amber-500">{t('home_page.title_highlight') || "100% sécurisé."}</span>
+                        {t('blog_cta.title') || "Votre projet de visa,"} <br className="hidden md:block"/>
+                        <span className="text-amber-500">{t('blog_cta.title_highlight') || "100% sécurisé."}</span>
                     </h2>
                     <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto lg:mx-0">
-                        {t('home_page.appointment_subtitle') || "Évitez les refus administratifs. Nos experts et notre IA analysent votre éligibilité en temps réel."}
+                        {t('blog_cta.subtitle') || "Évitez les refus administratifs. Nos experts et notre IA analysent votre éligibilité en temps réel."}
                     </p>
                     
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 text-left max-w-lg mx-auto lg:mx-0">
                         {[
-                            t('dtv_page.high_value.item1') || "Dossier DTV optimisé",
-                            t('elite_page.high_value.item3') || "Accompagnement VIP",
-                            t('nav.eligibility_check') || "Analyse d'éligibilité IA",
-                            t('footer.support') || "Soutien 7j/7"
+                            t('blog_cta.feature1') || "Dossier DTV optimisé",
+                            t('blog_cta.feature2') || "Accompagnement VIP",
+                            t('blog_cta.feature3') || "Analyse d'éligibilité IA",
+                            t('blog_cta.feature4') || "Soutien 7j/7"
                         ].map((item, i) => (
                             <li key={i} className="flex items-center gap-2 text-slate-300 font-medium">
                                 <CheckCircle className="h-5 w-5 text-amber-500 flex-shrink-0" />

@@ -2305,6 +2305,15 @@ export const es = {
     "conditions_title": "Condiciones",
     "condition1": "Las tasas de la embajada no son reembolsables.",
     "condition2": "Asistencia en el lugar para embajadas que requieren cita personal."
+  },
+  "blog_cta": {
+    "title": "Su proyecto de visa,",
+    "title_highlight": "100% seguro.",
+    "subtitle": "Evite rechazos administrativos. Nuestros expertos y nuestra IA analizan su elegibilidad en tiempo real.",
+    "badge": "Experiencia Siam Visa Pro",
+    "feature1": "Expediente DTV optimizado",
+    "feature2": "Acompañamiento VIP",
+    "feature3": "Análisis de elegibilidad IA",
+    "feature4": "Soporte 7/7"
   }
-
 };

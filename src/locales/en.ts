@@ -2438,5 +2438,15 @@ export const en = {
     "conditions_title": "Conditions",
     "condition1": "Embassy fees are non-refundable.",
     "condition2": "On-site assistance for embassies requiring personal appointment."
+  },
+  "blog_cta": {
+    "title": "Your visa project,",
+    "title_highlight": "100% secured.",
+    "subtitle": "Avoid administrative rejections. Our experts and AI analyze your eligibility in real time.",
+    "badge": "Siam Visa Pro Expertise",
+    "feature1": "Optimized DTV file",
+    "feature2": "VIP Assistance",
+    "feature3": "AI Eligibility Analysis",
+    "feature4": "7/7 Support"
   }
 };

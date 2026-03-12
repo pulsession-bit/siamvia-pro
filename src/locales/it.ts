@@ -2289,5 +2289,15 @@ export const it = {
     "conditions_title": "Condizioni",
     "condition1": "Le spese dell'ambasciata sono sempre aggiuntive (e non rimborsabili).",
     "condition2": "Se l'ambasciata richiede la presenza del richiedente: deposito 'assistito' invece di 'rappresentato'."
-}
+},
+  "blog_cta": {
+    "title": "Il tuo progetto di visto,",
+    "title_highlight": "sicuro al 100%.",
+    "subtitle": "Evita i rifiuti amministrativi. I nostri esperti e la nostra IA analizzano la tua idoneità in tempo reale.",
+    "badge": "Esperienza Siam Visa Pro",
+    "feature1": "Pratica DTV ottimizzata",
+    "feature2": "Supporto VIP",
+    "feature3": "Analisi idoneità IA",
+    "feature4": "Supporto 7/7"
+  }
 };

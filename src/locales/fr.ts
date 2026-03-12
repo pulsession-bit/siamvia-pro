@@ -2452,5 +2452,15 @@ export const fr = {
     "cta_item1": "Attestation conforme pour visa O-A / O-W",
     "cta_item2": "Comparatif personnalisé selon votre profil",
     "cta_item3": "Accompagnement démarches d'expatriation"
+  },
+  "blog_cta": {
+    "title": "Votre projet de visa,",
+    "title_highlight": "100% sécurisé.",
+    "subtitle": "Évitez les refus administratifs. Nos experts et notre IA analysent votre éligibilité en temps réel.",
+    "badge": "Expertise Siam Visa Pro",
+    "feature1": "Dossier DTV optimisé",
+    "feature2": "Accompagnement VIP",
+    "feature3": "Analyse d'éligibilité IA",
+    "feature4": "Soutien 7j/7"
   }
 };
