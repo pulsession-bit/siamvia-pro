@@ -1792,38 +1792,50 @@ export const ar = {
       "title": "Thailand Visa Application | SiamVisa Pro",
       "description": "Start your Thailand visa application online. Simple and fast process with expert support."
     },
-    "hero_title": "Visa Application",
-    "hero_subtitle": "Start your travel project in just a few clicks",
+    "hero_title": "طلب التأشيرة",
+    "hero_subtitle": "ابدأ مشروع سفرك بنقرات قليلة",
+    "badge": "طلب إلكتروني",
+    "btn_back_home": "العودة إلى الرئيسية",
+    "error_generic": "حدث خطأ. يرجى المحاولة مرة أخرى.",
+    "confirm_visa": "التأشيرة المختارة",
+    "confirm_identity": "الهوية",
+    "confirm_contact": "التواصل",
+    "confirm_trip": "السفر",
+    "confirm_entry": "الدخول في",
+    "confirm_not_specified": "غير محدد",
+    "confirm_days": "أيام مخططة",
+    "confirm_duration_none": "المدة غير محددة",
     "steps": {
       "selection": {
-        "title": "Choose your Visa",
-        "subtitle": "Select the visa type that matches your project"
+        "title": "اختر تأشيرتك",
+        "subtitle": "حدد نوع التأشيرة المناسب لمشروعك"
       },
       "personal": {
-        "title": "Personal Information",
-        "subtitle": "Tell us more about yourself",
-        "first_name": "First Name",
-        "last_name": "Last Name",
-        "email": "Email",
-        "phone": "Phone",
-        "nationality": "Nationality"
+        "title": "المعلومات الشخصية",
+        "subtitle": "أخبرنا المزيد عن نفسك",
+        "first_name": "الاسم الأول",
+        "last_name": "اسم العائلة",
+        "email": "البريد الإلكتروني",
+        "phone": "الهاتف",
+        "nationality": "الجنسية"
       },
       "trip": {
-        "title": "Trip Details",
-        "subtitle": "Information about your stay",
-        "entry_date": "Planned Entry Date",
-        "duration": "Stay Duration (days)"
+        "title": "تفاصيل الرحلة",
+        "subtitle": "معلومات عن إقامتك",
+        "entry_date": "تاريخ الدخول المتوقع",
+        "duration": "مدة الإقامة (أيام)"
       },
       "confirm": {
-        "title": "Confirmation",
-        "subtitle": "Verify your information before sending",
-        "btn_submit": "SUBMIT MY APPLICATION",
-        "success_title": "Application Received!",
-        "success_desc": "Your application has been sent to our experts. You will receive an email response within 24 hours."
+        "title": "التأكيد",
+        "subtitle": "تحقق من معلوماتك قبل الإرسال",
+        "btn_submit": "إرسال طلبي",
+        "btn_loading": "جارٍ الإرسال...",
+        "success_title": "تم استلام الطلب!",
+        "success_desc": "تم إرسال طلبك إلى خبرائنا. ستتلقى ردًا عبر البريد الإلكتروني خلال 24 ساعة."
       }
     },
-    "next": "Next",
-    "prev": "Previous"
+    "next": "التالي",
+    "prev": "السابق"
   },
   "insurance_page": {
     "meta_title": "تأمين السفر إلى تايلاند 2026 — مقارنة ودليل شامل | SiamVisa Pro",
