@@ -14,6 +14,9 @@ const BLOG_SLUGS: Record<string, string> = {
     fr: 'blog-visa-thailande',
     en: 'thailand-visa-blog',
     th: 'blog',
+    es: 'blog-visado-tailandia',
+    it: 'blog-visti-thailandia',
+    de: 'thailand-visum-blog',
 };
 
 export function generateStaticParams() {
@@ -66,9 +69,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ lang:
     const baseUrl = 'https://www.siamvisapro.com';
 
     const t = {
-        fr: { back: 'Retour au blog', published: 'Publie le', reading: 'min de lecture', breadcrumb_home: 'Accueil', breadcrumb_blog: 'Blog' },
+        fr: { back: 'Retour au blog', published: 'Publié le', reading: 'min de lecture', breadcrumb_home: 'Accueil', breadcrumb_blog: 'Blog' },
         en: { back: 'Back to blog', published: 'Published on', reading: 'min read', breadcrumb_home: 'Home', breadcrumb_blog: 'Blog' },
         th: { back: 'กลับไปบล็อก', published: 'เผยแพร่เมื่อ', reading: 'นาทีอ่าน', breadcrumb_home: 'หน้าแรก', breadcrumb_blog: 'บล็อก' },
+        es: { back: 'Volver al blog', published: 'Publicado el', reading: 'min de lectura', breadcrumb_home: 'Inicio', breadcrumb_blog: 'Blog' },
+        it: { back: 'Torna al blog', published: 'Pubblicato il', reading: 'min di lettura', breadcrumb_home: 'Home', breadcrumb_blog: 'Blog' },
+        de: { back: 'Zurück zum Blog', published: 'Veröffentlicht am', reading: 'Min. Lesezeit', breadcrumb_home: 'Startseite', breadcrumb_blog: 'Blog' },
     }[lang] || { back: 'Back to blog', published: 'Published on', reading: 'min read', breadcrumb_home: 'Home', breadcrumb_blog: 'Blog' };
 
     const articleSchema = {

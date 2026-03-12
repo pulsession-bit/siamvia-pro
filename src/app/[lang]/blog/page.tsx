@@ -7,12 +7,15 @@ import Image from 'next/image';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { BlogCTA } from '@/components/blog/BlogCTA';
 
-const BLOG_LANGS = ['fr', 'en', 'th'] as const;
+const BLOG_LANGS = ['fr', 'en', 'th', 'es', 'it', 'de', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
 
 const BLOG_SLUGS: Record<string, string> = {
     fr: 'blog-visa-thailande',
     en: 'thailand-visa-blog',
     th: 'blog',
+    es: 'blog-visado-tailandia',
+    it: 'blog-visti-thailandia',
+    de: 'thailand-visum-blog',
 };
 
 const TRANSLATIONS: Record<string, {
@@ -28,13 +31,13 @@ const TRANSLATIONS: Record<string, {
     breadcrumb_blog: string;
 }> = {
     fr: {
-        meta_title: 'Blog Visa Thailande — Guides & Actualites | SiamVisa Pro',
-        meta_description: 'Articles, guides et analyses sur les visas thailandais : DTV, Elite, Retraite, Business. Informations a jour pour 2026.',
-        hero_title: 'Blog & Actualites',
-        hero_subtitle: 'Guides, analyses et actualites sur les visas thailandais',
+        meta_title: 'Blog Visa Thaïlande — Guides & Actualités | SiamVisa Pro',
+        meta_description: 'Articles, guides et analyses sur les visas thaïlandais : DTV, Elite, Retraite, Business. Informations à jour pour 2026.',
+        hero_title: 'Blog & Actualités',
+        hero_subtitle: 'Guides, analyses et actualités sur les visas thaïlandais',
         read_more: "Lire l'article",
         reading_time: 'min de lecture',
-        published_on: 'Publie le',
+        published_on: 'Publié le',
         no_articles: 'Aucun article pour le moment.',
         breadcrumb_home: 'Accueil',
         breadcrumb_blog: 'Blog',
@@ -49,6 +52,42 @@ const TRANSLATIONS: Record<string, {
         published_on: 'Published on',
         no_articles: 'No articles yet.',
         breadcrumb_home: 'Home',
+        breadcrumb_blog: 'Blog',
+    },
+    es: {
+        meta_title: 'Blog de Visados para Tailandia — Guías y Noticias | SiamVisa Pro',
+        meta_description: 'Artículos, guías y análisis sobre los visados para Tailandia: DTV, Elite, Jubilación, Negocios. Información actualizada para 2026.',
+        hero_title: 'Blog y Noticias',
+        hero_subtitle: 'Guías, análisis y actualizaciones sobre los visados para Tailandia',
+        read_more: 'Leer artículo',
+        reading_time: 'min de lectura',
+        published_on: 'Publicado el',
+        no_articles: 'No hay artículos por el momento.',
+        breadcrumb_home: 'Inicio',
+        breadcrumb_blog: 'Blog',
+    },
+    it: {
+        meta_title: 'Blog Visti Thailandia — Guide e Notizie | SiamVisa Pro',
+        meta_description: 'Articoli, guide e analisi sui visti per la Thailandia: DTV, Elite, Pensionamento, Business. Informazioni aggiornate per il 2026.',
+        hero_title: 'Blog e Notizie',
+        hero_subtitle: 'Guide, analisi e aggiornamenti sui visti per la Thailandia',
+        read_more: 'Leggi articolo',
+        reading_time: 'min di lettura',
+        published_on: 'Pubblicato il',
+        no_articles: 'Nessun articolo al momento.',
+        breadcrumb_home: 'Home',
+        breadcrumb_blog: 'Blog',
+    },
+    de: {
+        meta_title: 'Thailand Visum Blog — Leitfäden & News | SiamVisa Pro',
+        meta_description: 'Artikel, Leitfäden und Analysen zu Thailand-Visa: DTV, Elite, Ruhestand, Business. Aktuelle Informationen für 2026.',
+        hero_title: 'Blog & News',
+        hero_subtitle: 'Leitfäden, Analysen und Updates zu Thailand-Visa',
+        read_more: 'Artikel lesen',
+        reading_time: 'Min. Lesezeit',
+        published_on: 'Veröffentlicht am',
+        no_articles: 'Noch keine Artikel vorhanden.',
+        breadcrumb_home: 'Startseite',
         breadcrumb_blog: 'Blog',
     },
     th: {

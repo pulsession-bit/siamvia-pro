@@ -27,7 +27,7 @@ export interface Post {
     readingTime: number;
 }
 
-const BLOG_LANGS = ['fr', 'en', 'th'] as const;
+const BLOG_LANGS = ['fr', 'en', 'th', 'es', 'it', 'de', 'ru', 'zh', 'ja', 'ko', 'ar'] as const;
 const CONTENT_DIR = path.join(process.cwd(), 'src/content/blog');
 
 function getPostFiles(lang: string): string[] {
