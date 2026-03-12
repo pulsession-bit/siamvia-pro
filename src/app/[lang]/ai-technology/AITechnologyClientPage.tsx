@@ -56,7 +56,7 @@ const AITechnologyClientPage: React.FC = () => {
                     </h2>
                     <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl shadow-amber-500/10">
                         <iframe
-                            src="https://www.youtube.com/embed/R4u39WDlrsY"
+                            src="https://www.youtube.com/embed/6KG1mbu-33Y"
                             title="Siam Visa Pro - Audit IA Demo"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
