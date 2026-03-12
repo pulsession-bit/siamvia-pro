@@ -74,13 +74,13 @@ service cloud.firestore {
 
     // VISA APPLICATIONS (Demandes de visa)
     match /visa_applications/{applicationId} {
-      allow create: if true; // Public form submission
+      allow create: if isAuthenticated(); // Public form submission (Anonymously authenticated)
       allow read, update, delete: if hasStaffAccess() || isSystemAdmin();
     }
 
     // EMAIL NOTIFICATIONS (Trigger Email Extension)
     match /mail/{mailId} {
-      allow create: if true; // Allow website to trigger notifications
+      allow create: if isAuthenticated(); // Allow website to trigger notifications
       allow read, update, delete: if isSystemAdmin();
     }
 

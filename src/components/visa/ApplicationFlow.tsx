@@ -93,44 +93,59 @@ const ApplicationFlow: React.FC = () => {
                 language,
                 status: 'pending',
                 createdAt: serverTimestamp(),
-                source: 'website',
+                source: 'website_v2',
             };
 
-            await Promise.all([
-            addDoc(collection(db, 'visa_applications'), applicationData),
-            addDoc(collection(db, 'mail'), {
-                to: 'info@siamvisapro.com',
-                message: {
-                    subject: `[PRO] Nouvelle demande de Visa : ${formData.firstName} ${formData.lastName}`,
-                    html: `
-                        <div style="font-family: sans-serif; padding: 20px; color: #333;">
-                            <h2 style="color: #f59e0b;">Nouvelle demande de visa reçue</h2>
-                            <p>Un utilisateur vient de soumettre une demande via le site <strong>siamvisapro.com</strong>.</p>
-                            
-                            <div style="background: #f8fafc; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0;">
-                                <p><strong>Type de Visa :</strong> ${formData.visaId}</p>
-                                <p><strong>Nom complet :</strong> ${formData.firstName} ${formData.lastName}</p>
-                                <p><strong>Email :</strong> <a href="mailto:${formData.email}">${formData.email}</a></p>
-                                <p><strong>Téléphone :</strong> ${formData.phone}</p>
-                                <p><strong>Nationalité :</strong> ${formData.nationality}</p>
-                                <p><strong>Date d'entrée prévue :</strong> ${formData.entryDate || 'N/A'}</p>
-                                <p><strong>Durée du séjour :</strong> ${formData.duration ? `${formData.duration} jours` : 'N/A'}</p>
-                                <p><strong>Langue du site :</strong> ${language.toUpperCase()}</p>
+            // 1. First, save the application
+            try {
+                await addDoc(collection(db, 'visa_applications'), applicationData);
+                console.log("✓ Application saved to visa_applications");
+            } catch (err: any) {
+                console.error("❌ Error saving to visa_applications:", err);
+                throw new Error(language === 'fr' 
+                    ? `Erreur lors de la sauvegarde (visa_applications): ${err.message}` 
+                    : `Error saving to visa_applications: ${err.message}`);
+            }
+
+            // 2. Then, trigger the email (non-blocking if possible, but here we wait to be sure)
+            try {
+                await addDoc(collection(db, 'mail'), {
+                    to: 'info@siamvisapro.com',
+                    message: {
+                        subject: `[PRO] Nouvelle demande de Visa : ${formData.firstName} ${formData.lastName}`,
+                        html: `
+                            <div style="font-family: sans-serif; padding: 20px; color: #333;">
+                                <h2 style="color: #f59e0b;">Nouvelle demande de visa reçue</h2>
+                                <p>Un utilisateur vient de soumettre une demande via le site <strong>siamvisapro.com</strong>.</p>
+                                
+                                <div style="background: #f8fafc; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                                    <p><strong>Type de Visa :</strong> ${formData.visaId}</p>
+                                    <p><strong>Nom complet :</strong> ${formData.firstName} ${formData.lastName}</p>
+                                    <p><strong>Email :</strong> <a href="mailto:${formData.email}">${formData.email}</a></p>
+                                    <p><strong>Téléphone :</strong> ${formData.phone}</p>
+                                    <p><strong>Nationalité :</strong> ${formData.nationality}</p>
+                                    <p><strong>Date d'entrée prévue :</strong> ${formData.entryDate || 'N/A'}</p>
+                                    <p><strong>Durée du séjour :</strong> ${formData.duration ? `${formData.duration} jours` : 'N/A'}</p>
+                                    <p><strong>Langue du site :</strong> ${language.toUpperCase()}</p>
+                                </div>
+                                
+                                <p style="margin-top: 20px; font-size: 12px; color: #64748b;">
+                                    Ce message a été généré automatiquement par le système de gestion des demandes.
+                                </p>
                             </div>
-                            
-                            <p style="margin-top: 20px; font-size: 12px; color: #64748b;">
-                                Ce message a été généré automatiquement par le système de gestion des demandes.
-                            </p>
-                        </div>
-                    `
-                }
-            }),
-        ]);
+                        `
+                    }
+                });
+                console.log("✓ Notification email triggered");
+            } catch (mailErr: any) {
+                // If only mail fails, we might still want to consider the application as sent
+                console.error("⚠️ Error triggering notification mail:", mailErr);
+            }
 
             // Success - move to success step
             setStep('success');
         } catch (error) {
-            console.error('Submission error:', error);
+            console.error('Final submission error:', error);
             setSubmitError(error instanceof Error ? error.message : t('apply_page.error_generic'));
         } finally {
             setIsSubmitting(false);
