@@ -109,7 +109,7 @@ const ServicesClientPage: React.FC = () => {
                             tier={tier}
                             recommendedLabel={t('services_page.recommended')}
                             ctaLabel={t('services_page.btn_start')}
-                            ctaHref={URLS.SCORING_ENGINE}
+                            ctaHref={langPath('apply')}
                         />
                     ))}
                 </div>
