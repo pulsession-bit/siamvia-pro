@@ -104,6 +104,15 @@ export default async function LangLayout({ children, params }: Props) {
                 <Analytics />
                 <SpeedInsights />
                 <Script src="https://code.tidio.co/uqia2uffujyfrwmdhfzniodpqgvgy73b.js" strategy="lazyOnload" />
+                {/* HubSpot Embed Code */}
+                <Script 
+                    type="text/javascript" 
+                    id="hs-script-loader" 
+                    async 
+                    defer 
+                    src="//js-eu1.hs-scripts.com/148041516.js" 
+                    strategy="lazyOnload"
+                />
             </body>
         </html>
     );
