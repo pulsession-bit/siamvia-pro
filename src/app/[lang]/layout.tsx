@@ -111,7 +111,7 @@ export default async function LangLayout({ children, params }: Props) {
                     async 
                     defer 
                     src="//js-eu1.hs-scripts.com/148041516.js" 
-                    strategy="lazyOnload"
+                    strategy="afterInteractive"
                 />
             </body>
         </html>
