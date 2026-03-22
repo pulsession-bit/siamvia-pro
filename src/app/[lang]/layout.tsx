@@ -10,6 +10,7 @@ import { Inter } from 'next/font/google';
 import '../globals.css';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -76,20 +77,6 @@ export default async function LangLayout({ children, params }: Props) {
             <body className={inter.className}>
 
 
-                {/* Google tag (gtag.js) */}
-                <Script
-                    src="https://www.googletagmanager.com/gtag/js?id=G-SPPNR4KM76"
-                    strategy="lazyOnload"
-                />
-                <Script id="google-analytics" strategy="lazyOnload">
-                    {`
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-
-                        gtag('config', 'G-SPPNR4KM76');
-                    `}
-                </Script>
 
                 <LanguageProvider
                     initialLang={lang as any}
@@ -105,6 +92,8 @@ export default async function LangLayout({ children, params }: Props) {
                 </LanguageProvider>
                 <Analytics />
                 <SpeedInsights />
+                {/* Google Analytics — géré nativement par Vercel (@next/third-parties) */}
+                <GoogleAnalytics gaId="G-SPPNR4KM76" />
                 <Script src="https://code.tidio.co/uqia2uffujyfrwmdhfzniodpqgvgy73b.js" strategy="lazyOnload" />
                 {/* HubSpot Embed Code - Strategie optimisée */}
                 <Script 
