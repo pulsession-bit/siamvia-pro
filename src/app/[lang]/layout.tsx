@@ -70,6 +70,8 @@ export default async function LangLayout({ children, params }: Props) {
                 <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                <link rel="preconnect" href="https://js-eu1.hs-scripts.com" crossOrigin="anonymous" />
+                <link rel="preconnect" href="https://js.hsadspixel.net" crossOrigin="anonymous" />
             </head>
             <body className={inter.className}>
 
@@ -104,14 +106,14 @@ export default async function LangLayout({ children, params }: Props) {
                 <Analytics />
                 <SpeedInsights />
                 <Script src="https://code.tidio.co/uqia2uffujyfrwmdhfzniodpqgvgy73b.js" strategy="lazyOnload" />
-                {/* HubSpot Embed Code */}
+                {/* HubSpot Embed Code - Strategie optimisée */}
                 <Script 
                     type="text/javascript" 
                     id="hs-script-loader" 
                     async 
                     defer 
                     src="//js-eu1.hs-scripts.com/148041516.js" 
-                    strategy="afterInteractive"
+                    strategy="lazyOnload"
                 />
             </body>
         </html>

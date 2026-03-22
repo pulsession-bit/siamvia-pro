@@ -18,8 +18,8 @@ export const HomeHero: React.FC<HomeHeroProps> = ({ t, langPath, SCORING_ENGINE_
                     src={IMAGES.HERO_THAILAND}
                     alt="Thailand Background - Phi Phi Islands"
                     fill
-                    loading="lazy"
-                    quality={75}
+                    priority={true}
+                    quality={85}
                     className="object-cover"
                     sizes="100vw"
                 />

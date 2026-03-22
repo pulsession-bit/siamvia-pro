@@ -5,16 +5,35 @@ import dynamic from 'next/dynamic';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
 import { HomeHero } from './home/components/HomeHero';
-import { HomeSpotlight } from './home/components/HomeSpotlight';
-import { HomeVisas } from './home/components/HomeVisas';
-import { HomeAIBlock } from './home/components/HomeAIBlock';
-import { HomeCTA } from './home/components/HomeCTA';
+
+const LoadingSection = ({ className = "h-96" }: { className?: string }) => (
+    <div className={`${className} bg-slate-50 animate-pulse flex items-center justify-center`}>
+        <div className="w-8 h-8 border-4 border-slate-200 border-t-amber-500 rounded-full animate-spin opacity-50" />
+    </div>
+);
 
 const LoadingState = () => (
     <div className="h-64 flex items-center justify-center bg-slate-50 rounded-2xl">
         <div className="w-8 h-8 border-4 border-slate-200 border-t-amber-500 rounded-full animate-spin" />
     </div>
 );
+
+// Dynamic Components for Code Splitting
+const HomeSpotlight = dynamic(() => import('./home/components/HomeSpotlight').then(m => m.HomeSpotlight), {
+    loading: () => <LoadingSection className="h-[800px]" />,
+});
+
+const HomeVisas = dynamic(() => import('./home/components/HomeVisas').then(m => m.HomeVisas), {
+    loading: () => <LoadingSection className="h-[600px]" />,
+});
+
+const HomeAIBlock = dynamic(() => import('./home/components/HomeAIBlock').then(m => m.HomeAIBlock), {
+    loading: () => <LoadingSection className="h-[700px] bg-slate-950" />,
+});
+
+const HomeCTA = dynamic(() => import('./home/components/HomeCTA').then(m => m.HomeCTA), {
+    loading: () => <LoadingSection className="h-[400px] bg-slate-900" />,
+});
 
 const ExpertAppointmentForm = dynamic(() => import('@/components/ExpertAppointmentForm'), {
     ssr: false,
