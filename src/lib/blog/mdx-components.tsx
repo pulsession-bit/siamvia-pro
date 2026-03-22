@@ -1,6 +1,7 @@
 import type { MDXComponents } from 'mdx/types';
 import Link from 'next/link';
 import Image from 'next/image';
+import { LiteYoutube } from '@/components/LiteYoutube';
 
 function slugify(text: string): string {
     return text
@@ -92,19 +93,30 @@ export const mdxComponents: MDXComponents = {
         <strong className="font-semibold text-slate-900" {...props}>{children}</strong>
     ),
     hr: () => <hr className="my-8 border-slate-200" />,
-    iframe: ({ style, ...props }: React.ComponentProps<'iframe'>) => {
-        // If the iframe has an explicit height style (e.g. presentations), use block layout
+    iframe: ({ src, title, style, ...props }: React.ComponentProps<'iframe'>) => {
+        // YouTube embed → use LiteYoutube for performance
+        const youtubeMatch = src?.match(/youtube\.com\/embed\/([^?&]+)/);
+        if (youtubeMatch) {
+            return (
+                <LiteYoutube
+                    videoId={youtubeMatch[1]}
+                    title={title || 'Vidéo YouTube'}
+                    className="my-6 rounded-xl overflow-hidden"
+                />
+            );
+        }
+        // Explicit height (e.g. presentations)
         if (style?.height) {
             return (
                 <div className="w-full my-6 rounded-xl overflow-hidden shadow-lg border border-slate-200">
-                    <iframe className="w-full" style={style} {...props} />
+                    <iframe className="w-full" src={src} title={title} style={style} {...props} />
                 </div>
             );
         }
-        // Default: 16:9 responsive (YouTube etc.)
+        // Default 16:9 non-YouTube
         return (
             <div className="relative w-full my-6 rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-                <iframe className="absolute inset-0 w-full h-full" {...props} />
+                <iframe className="absolute inset-0 w-full h-full" src={src} title={title} {...props} />
             </div>
         );
     },

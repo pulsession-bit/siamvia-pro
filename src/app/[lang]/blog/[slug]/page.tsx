@@ -9,6 +9,7 @@ import { getTranslatedPath } from '@/utils/slugs';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, Clock } from 'lucide-react';
 import { BlogCTA } from '@/components/blog/BlogCTA';
+import { LiteYoutube } from '@/components/LiteYoutube';
 
 const BLOG_SLUGS: Record<string, string> = {
     fr: 'blog-visa-thailande',
@@ -167,23 +168,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ lang:
                     </Container>
                 </div>
 
-                {post.frontmatter.video && (
-                    <div className="bg-slate-900">
-                        <div className="max-w-5xl mx-auto px-4">
-                            <div className="relative w-full rounded-xl overflow-hidden shadow-2xl" style={{ paddingBottom: '56.25%' }}>
-                                <iframe
-                                    className="absolute inset-0 w-full h-full"
-                                    src={post.frontmatter.video}
+                {post.frontmatter.video && (() => {
+                    const videoId = post.frontmatter.video.split('/embed/')[1]?.split('?')[0];
+                    return videoId ? (
+                        <div className="bg-slate-900">
+                            <div className="max-w-5xl mx-auto px-4">
+                                <LiteYoutube
+                                    videoId={videoId}
                                     title={post.frontmatter.title}
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
+                                    className="rounded-xl overflow-hidden shadow-2xl"
                                 />
                             </div>
+                            <div className="h-12 bg-gradient-to-b from-slate-900 to-slate-50" />
                         </div>
-                        <div className="h-12 bg-gradient-to-b from-slate-900 to-slate-50" />
-                    </div>
-                )}
+                    ) : null;
+                })()}
 
                 <Container>
                     <article className="max-w-3xl py-12 prose-slate">
