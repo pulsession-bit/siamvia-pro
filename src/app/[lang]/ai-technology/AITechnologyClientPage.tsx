@@ -5,6 +5,7 @@ import { Brain, Phone, FileSearch, ArrowRight, Shield, Zap, Globe, CheckCircle, 
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
 import { BlogCTA } from '@/components/blog/BlogCTA';
+import { LiteYoutube } from '@/components/LiteYoutube';
 
 const AITechnologyClientPage: React.FC = () => {
     const { t } = useLanguage();
@@ -55,15 +56,11 @@ const AITechnologyClientPage: React.FC = () => {
                     <h2 className="text-2xl md:text-3xl font-black mb-8">
                         {t('ai_technology_page.hero_badge')} — <span className="text-amber-400">Démo</span>
                     </h2>
-                    <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl shadow-amber-500/10">
-                        <iframe
-                            src="https://www.youtube.com/embed/6KG1mbu-33Y"
-                            title="Siam Visa Pro - Audit IA Demo"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            className="absolute inset-0 w-full h-full"
-                        />
-                    </div>
+                    <LiteYoutube
+                        videoId="6KG1mbu-33Y"
+                        title="Siam Visa Pro - Audit IA Demo"
+                        className="rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl shadow-amber-500/10"
+                    />
                 </div>
             </section>
 

@@ -7,6 +7,7 @@ import { Container } from '@/components/ui/Container';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useLangPath } from '@/hooks/useLang';
 import { BlogCTA } from '@/components/blog/BlogCTA';
+import { LiteYoutube } from '@/components/LiteYoutube';
 
 interface CompanySetupClientPageProps {
     lang: string;
@@ -47,18 +48,11 @@ const CompanySetupClientPage: React.FC<CompanySetupClientPageProps> = ({ lang })
                 <section className="py-16 bg-white border-b border-slate-100">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-xl">
-                                <iframe
-                                    width="100%"
-                                    height="100%"
-                                    src="https://www.youtube.com/embed/eIkPZvpMU4U"
-                                    title="Company Registration Video"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin"
-                                    allowFullScreen
-                                ></iframe>
-                            </div>
+                            <LiteYoutube
+                                videoId="eIkPZvpMU4U"
+                                title="Company Registration in Thailand - Video Guide"
+                                className="rounded-2xl shadow-xl"
+                            />
                         </div>
                     </Container>
                 </section>
@@ -294,18 +288,11 @@ const CompanySetupClientPage: React.FC<CompanySetupClientPageProps> = ({ lang })
             <section className="py-16 bg-white border-b border-slate-100">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-xl">
-                            <iframe
-                                width="100%"
-                                height="100%"
-                                src="https://www.youtube.com/embed/eIkPZvpMU4U"
-                                title="Création d'entreprise Vidéo"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
+                        <LiteYoutube
+                            videoId="eIkPZvpMU4U"
+                            title="Créer une entreprise en Thaïlande - Guide Vidéo"
+                            className="rounded-2xl shadow-xl"
+                        />
                     </div>
                 </Container>
             </section>
